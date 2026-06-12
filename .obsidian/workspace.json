@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5c16492f92fe68c2",
+        "id": "014815b2a8d6129c",
         "type": "tabs",
         "children": [
           {
-            "id": "77df5ad8db739236",
+            "id": "d644cfd7b7b641e6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ]
@@ -203,8 +207,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "d644cfd7b7b641e6",
   "lastOpenFiles": [
+    "📅 Piano di Studio — Maturità 2026/💻 Informatica/📐 Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
+    "📅 Piano di Studio — Maturità 2026/💻 Informatica/🔄 Progettazione Logica.md",
     "📐 Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
     "Untitled.base",
     "📅 Piano di Studio — Maturità 2026.md",
@@ -215,7 +221,6 @@
     "📅 Piano di Studio — Maturità 2026/💻 Informatica/🗄️ Appunti DBMS & DB Distribuiti.md",
     "📅 Piano di Studio — Maturità 2026/💻 Informatica/🗃️ Appunti Archivi Non Sequenziali — Relative, Hash, B-alberi.md",
     "📅 Piano di Studio — Maturità 2026/💻 Informatica/🔒 Vincoli, Viste e Ristrutturazione — Progettazione.md",
-    "📅 Piano di Studio — Maturità 2026/💻 Informatica/🔄 Progettazione Logica.md",
     "📅 Piano di Studio — Maturità 2026/💻 Informatica/💾 Appunti Archivi e File — Concetti Base e Organiz.md",
     "📅 Piano di Studio — Maturità 2026/🌐 Sistemi/🛡️ Appunti CIA · Attacchi e Minacce · Malware · Te.md",
     "📅 Piano di Studio — Maturità 2026/🌐 Sistemi/🖥️ Appunti Architettura Client-Server, HTTP, URI U.md",
