@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "06663085fbe24865",
+        "id": "891530f833ef29e3",
         "type": "tabs",
         "children": [
           {
-            "id": "3f49cc721e87ab6b",
+            "id": "740952a0359ccf44",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📅 Piano di Studio — Maturità 2026/🌐 Sistemi/Appunti CIA · Attacchi e Minacce · Malware · Te.md",
+                "file": "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Appunti CIA · Attacchi e Minacce · Malware · Te"
+              "title": "Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📅 Piano di Studio — Maturità 2026/🌐 Sistemi/Appunti CIA · Attacchi e Minacce · Malware · Te.md",
+                "file": "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Appunti CIA · Attacchi e Minacce · Malware · Te"
+              "title": "Backlinks for Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📅 Piano di Studio — Maturità 2026/🌐 Sistemi/Appunti CIA · Attacchi e Minacce · Malware · Te.md",
+                "file": "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Appunti CIA · Attacchi e Minacce · Malware · Te"
+              "title": "Outgoing links from Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF"
             }
           },
           {
@@ -207,43 +207,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3f49cc721e87ab6b",
+  "active": "41c9241263f38e27",
   "lastOpenFiles": [
-    "📅 Piano di Studio — Maturità 2026/🌐 Sistemi/Appunti Architettura Client-Server, HTTP, URI U.md",
-    "📅 Piano di Studio — Maturità 2026/🌐 Sistemi/Appunti Firewall · ACL · Proxy · DMZ · Port Forw.md",
-    "📅 Piano di Studio — Maturità 2026/🌐 Sistemi/Appunti Crittografia Simmetrica, Asimmetrica e R.md",
-    "📅 Piano di Studio — Maturità 2026/🌐 Sistemi/Appunti IPSec · TLS SSL · HTTPS.md",
-    "📅 Piano di Studio — Maturità 2026/🌐 Sistemi/Appunti DNS · SMTP · POP3 · ICMP · FTP.md",
-    "📅 Piano di Studio — Maturità 2026/🌐 Sistemi/Appunti Classificazione delle Reti.md",
-    "📅 Piano di Studio — Maturità 2026/Sistemi.md",
-    "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano/Primo Levi.md",
-    "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano/Sigmund Freud e la Psicanalisi.md",
-    "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano/Luigi Pirandello.md",
-    "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano/Italo Svevo.md",
-    "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano/Giuseppe Ungaretti.md",
-    "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano/Giovanni Verga.md",
-    "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano/Giovanni Pascoli.md",
-    "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano/Gabriele D'Annunzio.md",
-    "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano/Franz Kafka.md",
-    "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano/Fine '800 — Positivismo, Naturalismo, Realismo.md",
-    "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano/Fëdor Dostoevskij.md",
-    "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano/Eugenio Montale.md",
-    "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano/Decadentismo e Simbolismo Francese.md",
-    "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano/Ciclo dei vinti.md",
-    "📅 Piano di Studio — Maturità 2026/🌐 Sistemi/Appunti CIA · Attacchi e Minacce · Malware · Te.md",
+    "Piano di Studio — Maturità 2026/Informatica.md",
+    "Piano di Studio — Maturità 2026.md",
+    "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
+    "Piano di Studio — Maturità 2026/Informatica/Vincoli, Viste e Ristrutturazione — Progettazione.md",
+    "Piano di Studio — Maturità 2026/Informatica/Progettazione Logica.md",
+    "Piano di Studio — Maturità 2026/Informatica/Progettazione Concettuale.md",
+    "Piano di Studio — Maturità 2026/Sistemi.md",
+    "Piano di Studio — Maturità 2026/Italiano.md",
+    "Piano di Studio — Maturità 2026/Informatica/Appunti Archivi Non Sequenziali — Relative, Hash, B-alberi.md",
     "📅 Piano di Studio — Maturità 2026/💻 Informatica/Vincoli, Viste e Ristrutturazione — Progettazione.md",
-    "📅 Piano di Studio — Maturità 2026/💻 Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
-    "📅 Piano di Studio — Maturità 2026/💻 Informatica/🧩 Progettazione Concettuale.md",
-    "📅 Piano di Studio — Maturità 2026/💻 Informatica/🗄️ Appunti DBMS & DB Distribuiti.md",
+    "University Hub/Templates 3362b96c97f5813089c6ffeba7d3fa1f.md",
+    "University Hub/Lecture Notes 3362b96c97f581868e23def179927676.md",
+    "University Hub/Study Planner 3362b96c97f581d7a41cc1dea1065360.md",
+    "University Hub/Courses 3362b96c97f5810ea185f1d29e08302e.md",
+    "University Hub/Resources 3362b96c97f581f98679c9e272c651a6.md",
+    "University Hub/Assignments 3362b96c97f581f999e5c55a7e093aca.md",
+    "University Hub/Templates/Study Group Notes Template 3362b96c97f58115a4cbf81eb6e3c8aa.md",
+    "University Hub/Templates/Lecture Notes Template 3362b96c97f5817e8ea2fdb8de1ee97d.md",
+    "University Hub/Templates/Lab Report Template 3362b96c97f581b1b7d3e190d378c60a.md",
+    "University Hub/Templates/Exam Study Guide Template 3362b96c97f581dbaa2bc964c3ecd2e4.md",
+    "University Hub/Templates/Essay Report Template 3362b96c97f581e9ab25c8ed9d35d47f.md",
+    "University Hub/Templates/Book Paper Summary Template 3362b96c97f58123ae19d77b7731cf01.md",
+    "University Hub/Templates/Assignment Brief Template 3362b96c97f5819a8a58d409aa790ef4.md",
+    "University Hub/Templates",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti IPSec · TLS SSL · HTTPS.md",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti Firewall · ACL · Proxy · DMZ · Port Forw.md",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti DNS · SMTP · POP3 · ICMP · FTP.md",
+    "Piano di Studio — Maturità 2026/Sistemi",
+    "Piano di Studio — Maturità 2026/Italiano",
+    "Piano di Studio — Maturità 2026/Informatica",
+    "Piano di Studio — Maturità 2026",
     "Untitled.base",
     "📅 Piano di Studio — Maturità 2026/💻 Informatica",
     "📅 Piano di Studio — Maturità 2026/🌐 Sistemi",
     "📅 Piano di Studio — Maturità 2026/🇮🇹 Italiano",
-    "University Hub/📋 Templates",
-    "📅 Piano di Studio — Maturità 2026",
-    "University Hub",
-    "Private & Shared/People d3d2b96c97f582dfb0d8014512d331ec_all.csv",
-    "Private & Shared/People d3d2b96c97f582dfb0d8014512d331ec.csv",
-    "Private & Shared/People"
+    "University Hub/📋 Templates"
   ]
 }
