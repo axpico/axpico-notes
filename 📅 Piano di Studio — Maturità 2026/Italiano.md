@@ -1,9 +1,6 @@
-# 🇮🇹 Italiano
-
 Appunti di letteratura italiana — Maturità 2026.
 
 > 📌 Ogni pagina copre un autore o un movimento. Naviga in sequenza o salta dove serve.
-> 
 
 ---
 

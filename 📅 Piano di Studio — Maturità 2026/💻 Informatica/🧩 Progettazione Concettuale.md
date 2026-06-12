@@ -1,7 +1,3 @@
-# 🧩 Progettazione Concettuale
-
----
-
 ## 🗺️ Cos'è la progettazione concettuale?
 
 La **progettazione di un database** si articola in tre fasi:

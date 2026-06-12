@@ -1,8 +1,3 @@
-# 📡 Appunti: DNS · SMTP · POP3 · ICMP · FTP
-
-> 📚 Parte di: 📅 Piano di Studio — Maturità 2026 | 🗓️ Sistemi — 14 giugno
-> 
-
 ---
 
 # 🌐 Panoramica
@@ -10,7 +5,6 @@
 Questa pagina copre i principali protocolli applicativi (livello 7 OSI) che rendono funzionante Internet nella pratica quotidiana: risoluzione dei nomi (DNS), posta elettronica (SMTP, POP3), diagnostica di rete (ICMP) e trasferimento file (FTP).
 
 ---
-
 # 1️⃣ DNS — Domain Name System
 
 ## Il problema che risolve

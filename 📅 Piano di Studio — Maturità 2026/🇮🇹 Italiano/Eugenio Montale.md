@@ -1,12 +1,3 @@
-# Eugenio Montale
-
-> 📚 Parte di: [🇮🇹 Italiano](https://www.notion.so/3682b96c97f5812097d2c93f885baa5a) → [📅 Piano di Studio](https://www.notion.so/3682b96c97f580ed81dbe56f2ee33316)
-> 
-
-**← Precedente**: [Giuseppe Ungaretti](https://www.notion.so/3682b96c97f581f180e3c3f74ce237a0)  |  **Successivo →**: [Primo Levi](https://www.notion.so/3682b96c97f5814f9465eff1b1502ae8)
-
----
-
 ## Profilo generale
 
 Montale è difficile da inquadrare in una corrente letteraria: è al tempo stesso critico letterario, scrittore, giornalista e responsabile di circoli culturali. È un autore che **crea una spaccatura** rispetto alla tradizione.

@@ -1,25 +1,16 @@
-# Ciclo dei vinti
-
-> 📚 Parte di: [🇮🇹 Italiano](https://www.notion.so/3682b96c97f5812097d2c93f885baa5a) → [📅 Piano di Studio](https://www.notion.so/3682b96c97f580ed81dbe56f2ee33316)
-> 
-
-**← Precedente**: [Giovanni Verga](https://www.notion.so/3682b96c97f581878993dcfaefab001d)
-
----
-
 ## Cos'è
 
 Insieme di romanzi su **persone vinte dalla propria storia**: protagonisti che cercano di innalzare il proprio status sociale ma vengono travolti dalla fiumana del progresso.
 
 **Progetto originale**: 5 romanzi. **Pubblicati**: 2. **Bozze incomplete**: 3.
 
-| Romanzo | Classe sociale | Stato |
-| --- | --- | --- |
-| *I Malavoglia* | Pescatori (bassa) | ✅ Pubblicato (1881) |
-| *Mastro Don Gesualdo* | Artigiani / nuovi ricchi | ✅ Pubblicato (1889) |
-| *La Duchessa de Leyra* | Nobiltà decadente | ❌ Bozza |
-| *L'On. Scipioni* | Politici borghesi | ❌ Bozza |
-| *L'Uomo di lusso* | Alta aristocrazia | ❌ Bozza |
+| Romanzo                | Classe sociale           | Stato               |
+| ---------------------- | ------------------------ | ------------------- |
+| *I Malavoglia*         | Pescatori (bassa)        | ✅ Pubblicato (1881) |
+| *Mastro Don Gesualdo*  | Artigiani / nuovi ricchi | ✅ Pubblicato (1889) |
+| *La Duchessa de Leyra* | Nobiltà decadente        | ❌ Bozza             |
+| *L'On. Scipioni*       | Politici borghesi        | ❌ Bozza             |
+| *L'Uomo di lusso*      | Alta aristocrazia        | ❌ Bozza             |
 
 Verga si blocca dopo il secondo romanzo: la tesi è sempre la stessa (chi sale è sconfitto), e i romanzi rischiano di essere ridondanti.
 

@@ -1,10 +1,3 @@
-# 💾 Appunti: Archivi e File — Concetti Base e Organizzazione Sequenziale
-
-> 📚 Parte di: 📅 Piano di Studio — Maturità 2026 | 🗓️ Informatica — 3 giu
-> 
-
----
-
 # 💾 Panoramica
 
 Un **archivio** è un insieme di informazioni relative a oggetti dello stesso tipo, memorizzato su un supporto di memoria permanente (memoria di massa). Il **file** è la struttura fisica concreta che implementa l'archivio.

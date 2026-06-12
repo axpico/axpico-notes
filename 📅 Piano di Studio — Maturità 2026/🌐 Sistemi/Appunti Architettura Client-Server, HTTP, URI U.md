@@ -1,8 +1,3 @@
-# 🖥️ Appunti: Architettura Client-Server, HTTP, URI/URL e Storia del Web
-
-> 📚 Parte di: 📅 Piano di Studio — Maturità 2026 | 🗓️ Sistemi — 13 giugno
-> 
-
 ---
 
 # 🌐 Panoramica
@@ -10,7 +5,6 @@
 Questa pagina copre il livello applicazione del modello OSI: come è strutturata la comunicazione web, come funziona HTTP, cosa sono URI e URL, e come si è evoluto il Web dalla sua nascita.
 
 ---
-
 # 1️⃣ Architettura Client-Server
 
 ## Cos'è

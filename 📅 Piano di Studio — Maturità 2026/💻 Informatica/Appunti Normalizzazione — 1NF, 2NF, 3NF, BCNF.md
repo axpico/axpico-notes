@@ -1,7 +1,3 @@
-# 📐 Normalizzazione — 1NF, 2NF, 3NF, BCNF
-
----
-
 ## 🎯 Perché normalizzare?
 
 La **normalizzazione** è il processo che porta uno schema relazionale a rispettare progressivamente le **forme normali**, eliminando ridondanze e le **anomalie** che ne derivano. È l'ultimo passo della progettazione logica, dopo la traduzione ER → Relazionale.
@@ -118,7 +114,7 @@ ISCRIZIONE(
 
 ## 3️⃣ Terza Forma Normale (3NF)
 
-Una relazione è in **3NF** se:
+Una relazione è in **3NF** se:e
 
 - è in **2NF**, **e**
 - non esistono **dipendenze transitive** verso attributi non-chiave → ogni attributo non-chiave dipende **direttamente** dalla chiave, non tramite un altro attributo non-chiave

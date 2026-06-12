@@ -1,10 +1,3 @@
-# Fine '800 — Positivismo, Naturalismo, Realismo
-
-> 📚 Parte di: [🇮🇹 Italiano](https://www.notion.so/3682b96c97f5812097d2c93f885baa5a) → [📅 Piano di Studio](https://www.notion.so/3682b96c97f580ed81dbe56f2ee33316)
-> 
-
-**Successivo →**: [Giovanni Verga](https://www.notion.so/3682b96c97f581878993dcfaefab001d)
-
 ---
 
 ## Contesto storico
@@ -21,7 +14,6 @@ Con la **fine del Romanticismo** questo clima si trasforma. Il Romanticismo avev
 Inizia una nuova tendenza: il **Positivismo**.
 
 ---
-
 ## Il Positivismo
 
 Etimologia: dal latino *positum* = ciò che è posto, ciò che è concreto e verificabile.

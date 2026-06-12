@@ -1,12 +1,3 @@
-# Fëdor Dostoevskij
-
-> 📚 Parte di: [🇮🇹 Italiano](https://www.notion.so/3682b96c97f5812097d2c93f885baa5a) → [📅 Piano di Studio](https://www.notion.so/3682b96c97f580ed81dbe56f2ee33316)
-> 
-
-**← Precedente**: [Fëdor Dostoevskij](https://www.notion.so/3682b96c97f581209d63c2bd46b6d9c9)  |  **Successivo →**: [Franz Kafka](https://www.notion.so/3682b96c97f5816daa3bd11fa98e6030)
-
----
-
 ## Ruolo nella letteratura
 
 Dostoevskij è considerato un **precursore della psicanalisi letteraria**: apre alla narrativa l’“abisso della coscienza umana” prima che Freud ne fornisca gli strumenti teorici.

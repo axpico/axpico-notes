@@ -1,12 +1,3 @@
-# Luigi Pirandello
-
-> 📚 Parte di: [🇮🇹 Italiano](https://www.notion.so/3682b96c97f5812097d2c93f885baa5a) → [📅 Piano di Studio](https://www.notion.so/3682b96c97f580ed81dbe56f2ee33316)
-> 
-
-**← Precedente**: [Italo Svevo](https://www.notion.so/3682b96c97f5815c9d64ecfcfbca897d)  |  **Successivo →**: [Giuseppe Ungaretti](https://www.notion.so/3682b96c97f581f180e3c3f74ce237a0)
-
----
-
 ## Vita
 
 |  |  |

@@ -1,12 +1,3 @@
-# Sigmund Freud e la Psicanalisi
-
-> 📚 Parte di: [🇮🇹 Italiano](https://www.notion.so/3682b96c97f5812097d2c93f885baa5a) → [📅 Piano di Studio](https://www.notion.so/3682b96c97f580ed81dbe56f2ee33316)
-> 
-
-**← Precedente**: [Giovanni Pascoli](https://www.notion.so/3682b96c97f5819b96cfda02182a1822)  |  **Successivo →**: [Fëdor Dostoevskij](https://www.notion.so/3682b96c97f581209d63c2bd46b6d9c9)
-
----
-
 ## Che cos'è la psicanalisi
 
 - **Etimologia**: *psyché* (anima/mente) + *analisi* = metodo di indagine della mente

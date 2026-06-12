@@ -1,12 +1,3 @@
-# Gabriele D'Annunzio
-
-> 📚 Parte di: [🇮🇹 Italiano](https://www.notion.so/3682b96c97f5812097d2c93f885baa5a) → [📅 Piano di Studio](https://www.notion.so/3682b96c97f580ed81dbe56f2ee33316)
-> 
-
-**← Precedente**: [Decadentismo e Simbolismo Francese](https://www.notion.so/3682b96c97f581d4814eea9f92bc5dfa)
-
----
-
 ## Vita e personaggio
 
 |  |  |

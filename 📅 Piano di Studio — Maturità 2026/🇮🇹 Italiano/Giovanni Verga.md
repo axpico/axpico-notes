@@ -1,12 +1,3 @@
-# Giovanni Verga
-
-> 📚 Parte di: [🇮🇹 Italiano](https://www.notion.so/3682b96c97f5812097d2c93f885baa5a) → [📅 Piano di Studio](https://www.notion.so/3682b96c97f580ed81dbe56f2ee33316)
-> 
-
-**← Precedente**: [Fine '800 — Positivismo, Naturalismo, Realismo](https://www.notion.so/3682b96c97f5810284c5d34cedb0e536)  |  **Successivo →**: [Ciclo dei vinti](https://www.notion.so/3682b96c97f581c6baf0fbf265ebd95b)
-
----
-
 ## Vita
 
 |  |  |

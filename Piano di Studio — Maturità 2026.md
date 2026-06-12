@@ -1,4 +1,4 @@
-# 📅 Piano di Studio — Maturità 2026
+# Piano di Studio — Maturità 2026
 
 > 🎯 23 maggio → 17 giugno · 26 giorni · Buona fortuna!
 ---
@@ -78,7 +78,7 @@
         - [ ]  La Lupa
     - [ ]  Il lavoro delle fanciulle nelle miniere siciliane
 
-[🇮🇹 Italiano](🇮🇹%20Italiano%203682b96c97f5812097d2c93f885baa5a.md)
+[🇮🇹 Italiano](Italiano.md)
 
 ---
 
@@ -103,15 +103,15 @@
     - [ ]  Progettazione concettuale di un DB
     - [ ]  Schema ER — entità, attributi, associazioni
 - 7 giu (dom) — Dal concettuale al relazionale
-    [🔄 Appunti: Progettazione Logica — Da ER a Relazionale](🔄%20Progettazione%20Logica.md) | [🔒 Appunti: Vincoli, Viste e Ristrutturazione](🔒%20Vincoli,%20Viste%20e%20Ristrutturazione%20—%20Progettazione.md)
+    [🔄 Appunti: Progettazione Logica — Da ER a Relazionale](🔄%20Progettazione%20Logica.md) | [🔒 Appunti: Vincoli, Viste e Ristrutturazione](Vincoli,%20Viste%20e%20Ristrutturazione%20—%20Progettazione.md)
     - [ ]  Regole aziendali e vincoli di integrità
     - [ ]  Dalla progettazione al modello relazionale (relazioni e viste)
 - 8 giu (lun) — Progettazione logica
-    [🔒 Appunti: Vincoli, Viste e Ristrutturazione](🔒%20Vincoli,%20Viste%20e%20Ristrutturazione%20—%20Progettazione.md)
+    [🔒 Appunti: Vincoli, Viste e Ristrutturazione](Vincoli,%20Viste%20e%20Ristrutturazione%20—%20Progettazione.md)
     - [ ]  Ristrutturazione dello schema concettuale
     - [ ]  Regole di derivazione
 - 9 giu (mar) — Normalizzazione
-    [📐 Appunti: Normalizzazione — 1NF, 2NF, 3NF, BCNF](📐%20Appunti%20Normalizzazione%20—%201NF,%202NF,%203NF,%20BCNF.md)
+    [📐 Appunti: Normalizzazione — 1NF, 2NF, 3NF, BCNF](Appunti%20Normalizzazione%20—%201NF,%202NF,%203NF,%20BCNF.md)
     - [ ]  1NF
     - [ ]  2NF
     - [ ]  3NF
@@ -131,7 +131,7 @@
     - [ ]  Tecniche di progettazione DB distribuiti
     - [ ]  Big data — le quattro V
 
-[💻 Informatica](💻%20Informatica%2037c2b96c97f581beabe0fcaed8a419c5.md)
+[Informatica](Informatica.md)
 
 ---
 
@@ -139,13 +139,13 @@
 
 - 12 giu (ven) — Sistemi: Classificazione reti + Livello trasporto
     
-    [🌐 Appunti: Classificazione delle Reti](🌐%20Appunti%20Classificazione%20delle%20Reti.md)
+    [🌐 Appunti: Classificazione delle Reti](Appunti%20Classificazione%20delle%20Reti.md)
     
     - [x]  Classificazione reti — strutturali, servizi, standard tecnologici
     - [ ]  Livelli del protocollo di trasporto (pp. 282–292)
 - 13 giu (sab) — Sistemi: Livello applicazione + Inglese 1–5
     
-    [🖥️ Appunti: Architettura Client-Server, HTTP, URI/URL e Storia del Web](🖥️%20Appunti%20Architettura%20Client-Server,%20HTTP,%20URI%20U.md)
+    [🖥️ Appunti: Architettura Client-Server, HTTP, URI/URL e Storia del Web](Appunti%20Architettura%20Client-Server,%20HTTP,%20URI%20U.md)
     
     - [x]  Architettura client-server · Protocollo HTTP · URI e URL · Il web e la sua storia (pp. 4–19)
     - [ ]  The Internet of Things (13)
@@ -155,7 +155,7 @@
     - [ ]  What Are Multi-core Processors (63)
 - 14 giu (dom) — Sistemi: DNS + Email + Inglese 6–10
     
-    [📡 Appunti: DNS · SMTP · POP3 · ICMP · FTP](📡%20Appunti%20DNS%20·%20SMTP%20·%20POP3%20·%20ICMP%20·%20FTP.md)
+    [📡 Appunti: DNS · SMTP · POP3 · ICMP · FTP](Appunti%20DNS%20·%20SMTP%20·%20POP3%20·%20ICMP%20·%20FTP.md)
     
     - [x]  DNS · SMTP · POP3 · ICMP · FTP (pp. 42–67)
     - [ ]  Your Data Is in the Cloud (77)
@@ -165,7 +165,7 @@
     - [ ]  Java & JavaScript (126)
 - 15 giu (lun) — Sistemi: Cybersecurity + Inglese 11–15
     
-    [🛡️ Appunti: CIA · Attacchi e Minacce · Malware · Tecniche di Difesa](🛡️%20Appunti%20CIA%20·%20Attacchi%20e%20Minacce%20·%20Malware%20·%20Te.md)
+    [🛡️ Appunti: CIA · Attacchi e Minacce · Malware · Tecniche di Difesa](Appunti%20CIA%20·%20Attacchi%20e%20Minacce%20·%20Malware%20·%20Te.md)
     
     - [x]  CIA · Attacchi e minacce · Malware · Tecniche di difesa (pp. 114–127)
     - [ ]  An Intro to Database (138)
@@ -175,18 +175,18 @@
     - [ ]  Optical Fibre: The Way of the Future (166)
 - 16 giu (mar) — Sistemi: Crittografia
     
-    [🔒 Appunti: Crittografia Simmetrica, Asimmetrica e RSA](🔒%20Appunti%20Crittografia%20Simmetrica,%20Asimmetrica%20e%20R.md)
+    [🔒 Appunti: Crittografia Simmetrica, Asimmetrica e RSA](Appunti%20Crittografia%20Simmetrica,%20Asimmetrica%20e%20R.md)
     
     - [x]  Crittografia simmetrica e asimmetrica · RSA
     - [ ]  Autenticazione · Password · Autenticazione multifattore
     - [ ]  Firma digitale · Certificati digitali · Server AAA (pp. 160–178)
 - 17 giu (mer) — Sistemi: Sicurezza perimetrale + VPN · RIPASSO FINALE 🏁
     
-    [🔥 Appunti: Firewall · ACL · Proxy · DMZ · Port Forwarding](🔥%20Appunti%20Firewall%20·%20ACL%20·%20Proxy%20·%20DMZ%20·%20Port%20Forw.md) | [🔐 Appunti: IPSec · TLS/SSL · HTTPS](🔐%20Appunti%20IPSec%20·%20TLS%20SSL%20·%20HTTPS.md)
+    [🔥 Appunti: Firewall · ACL · Proxy · DMZ · Port Forwarding](Appunti%20Firewall%20·%20ACL%20·%20Proxy%20·%20DMZ%20·%20Port%20Forw.md) | [🔐 Appunti: IPSec · TLS/SSL · HTTPS](Appunti%20IPSec%20·%20TLS%20SSL%20·%20HTTPS.md)
     
     - [ ]  Firewall · ACL · Proxy server · DMZ · Port forwarding (pp. 200–220)
     - [ ]  VPN: site-to-site · personal · secure · trusted
     - [ ]  IPsec · TLS/SSL · HTTPS (pp. 234–252)
     - [ ]  Ripasso generale trasversale
 
-[🌐 Sistemi](🌐%20Sistemi%2037a2b96c97f581b7a5f7f7e665842391.md)
+[🌐 Sistemi](Sistemi.md)

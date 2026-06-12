@@ -1,12 +1,3 @@
-# Giuseppe Ungaretti
-
-> 📚 Parte di: [🇮🇹 Italiano](https://www.notion.so/3682b96c97f5812097d2c93f885baa5a) → [📅 Piano di Studio](https://www.notion.so/3682b96c97f580ed81dbe56f2ee33316)
-> 
-
-**← Precedente**: [Luigi Pirandello](https://www.notion.so/3682b96c97f581b686d7f56f1764a210)  |  **Successivo →**: [Eugenio Montale](https://www.notion.so/3682b96c97f5819ba41afe1f1b062581)
-
----
-
 ## Vita
 
 |  |  |

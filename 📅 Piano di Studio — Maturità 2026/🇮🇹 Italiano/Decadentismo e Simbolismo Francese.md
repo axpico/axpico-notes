@@ -1,12 +1,3 @@
-# Decadentismo e Simbolismo Francese
-
-> 📚 Parte di: [🇮🇹 Italiano](https://www.notion.so/3682b96c97f5812097d2c93f885baa5a) → [📅 Piano di Studio](https://www.notion.so/3682b96c97f580ed81dbe56f2ee33316)
-> 
-
-**← Precedente**: [Ciclo dei vinti](https://www.notion.so/3682b96c97f581c6baf0fbf265ebd95b)
-
----
-
 ## Superamento del Positivismo
 
 Vers la fine dell'800 alcuni autori avvertono i **limiti del Positivismo**: la scienza non riesce a spiegare tutto, soprattutto le dimensioni più profonde dell'esperienza umana.

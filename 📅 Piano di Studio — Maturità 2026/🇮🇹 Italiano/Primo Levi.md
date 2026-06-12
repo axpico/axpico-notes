@@ -1,12 +1,3 @@
-# Primo Levi
-
-> 📚 Parte di: [🇮🇹 Italiano](https://www.notion.so/3682b96c97f5812097d2c93f885baa5a) → [📅 Piano di Studio](https://www.notion.so/3682b96c97f580ed81dbe56f2ee33316)
-> 
-
-**← Precedente**: [Eugenio Montale](https://www.notion.so/3682b96c97f5819ba41afe1f1b062581)
-
----
-
 ## Profilo
 
 |  |  |

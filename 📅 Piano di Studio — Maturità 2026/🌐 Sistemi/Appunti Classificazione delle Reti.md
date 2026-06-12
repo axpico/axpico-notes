@@ -1,10 +1,3 @@
-# 🌐 Appunti: Classificazione delle Reti
-
-> 📚 Parte di: 📅 Piano di Studio — Maturità 2026 | 🗓️ Sistemi — 12 giugno
-> 
-
----
-
 # 🗺️ Panoramica
 
 Classificare una rete significa descriverla secondo **tre assi distinti**:

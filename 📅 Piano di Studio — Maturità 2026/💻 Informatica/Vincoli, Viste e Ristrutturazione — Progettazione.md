@@ -1,4 +1,3 @@
-# 🔒 Vincoli, Viste e Ristrutturazione — Progettazione Logica Avanzata
 
 ---
 

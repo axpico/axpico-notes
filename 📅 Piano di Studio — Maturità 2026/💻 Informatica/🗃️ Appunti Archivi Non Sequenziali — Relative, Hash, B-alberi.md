@@ -1,10 +1,3 @@
-# 🗃️ Appunti: Archivi Non Sequenziali — Relative, Hash, B-alberi
-
-> 📚 Parte di: 📅 Piano di Studio — Maturità 2026 | 🗓️ Informatica — 3-4 giu
-> 
-
----
-
 # 🗃️ Panoramica
 
 L'**organizzazione non sequenziale** consente di accedere a un record **senza dover attraversare tutti quelli precedenti**, ricavando direttamente l'indirizzo tramite la chiave del record stesso.
