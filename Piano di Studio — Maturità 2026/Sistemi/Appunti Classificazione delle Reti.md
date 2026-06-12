@@ -10,7 +10,7 @@ Questi tre assi sono **ortogonali**: puoi avere una LAN (strutturale) con topolo
 
 ---
 
-# 1Classificazione Strutturale
+# Classificazione Strutturale
 
 La classificazione strutturale risponde alla domanda: **quanto è grande la rete e com'è organizzata nello spazio?**
 
@@ -24,7 +24,6 @@ La classificazione strutturale risponde alla domanda: **quanto è grande la rete
 | **WAN** | Wide Area Network | > 100 km (fino a globale) | Internet, reti aziendali intercontinentali |
 
 > **Osservazione critica**: i confini tra LAN, MAN, WAN sono sfumati. Quello che conta davvero è la **tecnologia** e il **gestore**, non i km esatti. Una fibra ottica che collega due edifici a 500 m può essere gestita come WAN se passa da un ISP.
->
 
 ## 1.2 — Topologia
 
@@ -36,7 +35,6 @@ La **topologia** descrive la struttura di una rete: come i nodi sono collegati e
 - **Topologia logica**: il percorso che seguono i dati — che può essere completamente diverso da quello fisico
 
 > **Esempio classico**: una rete con **hub** ha topologia fisica a stella (tutti i cavi convergono sull'hub), ma topologia logica a **bus** (l'hub non smista: riceve il segnale e lo ritrasmette su tutte le porte contemporaneamente, esattamente come farebbe un bus condiviso). Con uno **switch** invece la topologia logica diventa punta-a-punta (punto-punto): il frame viene inoltrato solo sulla porta del destinatario.
->
 
 ### Topologie fisiche principali
 
@@ -152,7 +150,7 @@ La **topologia** descrive la struttura di una rete: come i nodi sono collegati e
 
 ---
 
-# 2Classificazione per Servizi
+# Classificazione per Servizi
 
 La classificazione per servizi risponde a: **cosa offre la rete agli utenti e alle applicazioni?**
 
@@ -171,7 +169,6 @@ La classificazione per servizi risponde a: **cosa offre la rete agli utenti e al
 - Esempio: UDP, IP, Ethernet
 
 > **Attenzione**: TCP è connection-oriented ma gira su IP che è connectionless. I livelli OSI hanno caratteristiche indipendenti!
->
 
 ## 2.2 — Modalità di accesso al canale di comunicazione
 
@@ -204,7 +201,7 @@ Le reti **best-effort** (come Internet pubblica) non garantiscono nulla. Le reti
 
 ---
 
-# 3Standard Tecnologici
+# Standard Tecnologici
 
 Gli standard tecnologici definiscono **come si parla** sulla rete: formati dei frame, metodi di accesso al mezzo, velocità, modulazione.
 
@@ -256,7 +253,6 @@ Lo standard dominante per LAN cablate. Funziona a livello fisico e datalink.
 | FCS | 4 byte | Frame Check Sequence (CRC per rilevare errori) |
 
 > Il **MTU** (Maximum Transmission Unit) di Ethernet è **1500 byte**. Se un pacchetto IP è più grande, viene frammentato.
->
 
 ### Metodi di accesso al mezzo: CSMA/CD e CSMA/CA
 
@@ -412,4 +408,3 @@ Standard per LAN wireless. Gestisce il mezzo condiviso tramite **CSMA/CA** (Coll
 ---
 
 > **Collegamento con altri argomenti**: questa pagina è propedeutica al livello di trasporto (TCP/UDP — 12 giu), al livello applicazione (HTTP, DNS — 13 giu), e alla cybersecurity (15 giu).
->

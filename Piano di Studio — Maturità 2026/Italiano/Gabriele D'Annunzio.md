@@ -105,5 +105,4 @@ Riprende il concetto nietzschiano di *Übermensch* e lo riadatta:
 
 ---
 
-> Continua con: [Giovanni Pascoli](https://www.notion.so/3682b96c97f5819b96cfda02182a1822)
->
+> Continua con: [Giovanni Pascoli](Giovanni%20Pascoli.md)

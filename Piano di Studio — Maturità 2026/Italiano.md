@@ -38,4 +38,4 @@ Appunti di letteratura italiana — Maturità 2026.
 
 ## Link utili
 
-[Piano di Studio — Maturità 2026](https://www.notion.so/3682b96c97f580ed81dbe56f2ee33316)
+[Piano di Studio — Maturità 2026](../Piano%20di%20Studio%20—%20Maturità%202026.md)

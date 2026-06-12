@@ -49,7 +49,6 @@ Il tema centrale di tutta la produzione montaliana. Non una malattia, ma una **c
 Tecnica poetica teorizzata da **T.S. Eliot** e adottata da Montale:
 
 > *“L’unico modo per esprimere un’emozione in forma d’arte consiste nel trovare un ‘correlativo oggettivo’, una serie di oggetti, una situazione, una catena di eventi che costituiranno la formula di quella particolare emozione; così che, quando siano dati i fatti esterni che devono concludersi in un’esperienza sensibile, l’emozione ne risulti immediatamente evocata.”*
->
 
 Montale usa **immagini concrete e oggetti semplici** per esprimere stati interiori complessi e intraducibili direttamente. Il lettore deve ricomporre a ritroso il grumo di pensieri e emozioni che l’autore ha tradotto in immagini.
 

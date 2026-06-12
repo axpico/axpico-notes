@@ -153,7 +153,6 @@ Quando esce, vede la **luna** per la prima volta — non l’aveva mai vista cos
 **Tema pirandelliano**:
 
 > *“Noi siamo molto di più rispetto a quello che gli altri pensano di noi, e rispetto a quello che pensiamo di noi stessi.”*
->
 
 Di fronte alla luna l’ideologia non vale: Ciaula non è “solo” un minatore. In lui c’è la capacità di commozione, di bellezza, di umanità profonda che il suo ruolo nascondeva.
 

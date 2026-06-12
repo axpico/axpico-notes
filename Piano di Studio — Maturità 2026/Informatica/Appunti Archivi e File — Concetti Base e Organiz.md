@@ -4,7 +4,7 @@ Un **archivio** è un insieme di informazioni relative a oggetti dello stesso ti
 
 ---
 
-# 1Concetti Base
+# Concetti Base
 
 ## Record, Campo, Archivio
 
@@ -16,7 +16,6 @@ Un **archivio** è un insieme di informazioni relative a oggetti dello stesso ti
 | **File** | Struttura fisica di memoria che implementa l'archivio. Sequenza di byte o di record fisici su disco. |
 
 > **Distinzione fondamentale**: un archivio è sempre implementato da uno o più file, ma un file non è sempre l'implementazione di un archivio (es. un file Word, un'immagine, un audio non sono archivi strutturati).
->
 
 ## Caratteristiche fondamentali di un archivio
 
@@ -33,7 +32,6 @@ Il disco non legge e scrive un record alla volta: lavora sempre per **blocchi**,
 **Record fisico (blocco)** — l'unità minima che il disco legge o scrive in una singola operazione. La sua dimensione è fissa e decisa dal sistema operativo, non dal programmatore.
 
 > Esempio concreto: se un record logico pesa 16 byte e il blocco fisico è 512 byte, in un blocco ci stanno 32 record logici. Il disco non può leggere solo 1 di quei 32 record: legge tutto il blocco da 512 byte in una volta sola e lo copia in RAM.
->
 
 **Buffer**: area della RAM dove il sistema operativo copia il blocco fisico appena letto dal disco. Il programma poi legge i record logici che gli servono direttamente dal buffer, senza tornare ogni volta sul disco — molto più veloce.
 
@@ -47,7 +45,7 @@ Il disco non legge e scrive un record alla volta: lavora sempre per **blocchi**,
 
 ---
 
-# 2Chiave Primaria e Chiave Secondaria
+# Chiave Primaria e Chiave Secondaria
 
 ## Chiave primaria
 
@@ -75,11 +73,10 @@ Chiave **non primaria** che identifica in genere **più record** (non uno solo).
 - `IdentifCorrentista`: identifica tutti i conti di una stessa persona
 
 > Le chiavi secondarie si usano per velocizzare la ricerca su campi che non sono la chiave primaria (es. cerca tutti i clienti di Milano).
->
 
 ---
 
-# 3Organizzazione degli Archivi
+# Organizzazione degli Archivi
 
 ## Organizzazione fisica
 
@@ -107,11 +104,10 @@ Riguarda **come i record sono disposti** nell'archivio e come possono essere rep
 | **Diretto** (random) | Ci si posiziona direttamente sul record tramite indirizzo | Indipendente dalla posizione |
 
 > I supporti fisici ad accesso sequenziale possono ospitare **solo** archivi sequenziali. I supporti ad accesso diretto possono ospitare sia archivi sequenziali sia non sequenziali.
->
 
 ---
 
-# 4Organizzazione Sequenziale
+# Organizzazione Sequenziale
 
 ## Caratteristiche
 
@@ -200,7 +196,7 @@ Nessuna di queste strategie risolve davvero la frammentazione nel lungo periodo 
 
 ---
 
-# 5Organizzazione Sequenziale con Indice (Indexed Sequential)
+# Organizzazione Sequenziale con Indice (Indexed Sequential)
 
 ## Struttura
 
@@ -290,7 +286,7 @@ Ogni livello riduce drasticamente il numero di posizioni da esaminare al livello
 
 ---
 
-# 6Formati di File Sequenziali
+# Formati di File Sequenziali
 
 - File di testo
 
@@ -336,7 +332,7 @@ Ogni livello riduce drasticamente il numero di posizioni da esaminare al livello
 
 ---
 
-# 7Operazioni Fisiche e Logiche
+# Operazioni Fisiche e Logiche
 
 ## Operazioni fisiche
 
@@ -357,7 +353,6 @@ Coinvolgono il file come struttura fisica: **lettura** e **scrittura** di record
 | **Chiusura** | Termina le operazioni, completa il trasferimento a disco |
 
 > **Ordine fisico vs logico**: un archivio si dice **ordinato** quando ordine fisico e logico coincidono. È possibile avere un ordine logico diverso da quello fisico usando puntatori.
->
 
 ---
 
@@ -387,4 +382,3 @@ Coinvolgono il file come struttura fisica: **lettura** e **scrittura** di record
 ---
 
 > **Collegamento con altri argomenti**: Archivi non sequenziali (hash, b-alberi) — Informatica 3-11 giu | DBMS e SQL — già studiato | PHP e accesso ai dati — 3-5 giu
->

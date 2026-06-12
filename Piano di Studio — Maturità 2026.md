@@ -7,7 +7,7 @@
 
 - 23 mag (sab) — Montale + Primo Levi
 
-    [Appunti: Eugenio Montale](https://www.notion.so/3682b96c97f5819ba41afe1f1b062581) | [Appunti: Primo Levi](https://www.notion.so/3682b96c97f5814f9465eff1b1502ae8)
+    [Appunti: Eugenio Montale](Eugenio%20Montale.md) | [Appunti: Primo Levi](Primo%20Levi.md)
 
     - [x]  Montale: I limoni · Non chiederci la parola · Meriggiare pallido e assorto
     - [x]  Montale: Spesso il male di vivere · Prima del viaggio · Cigola la carrucola nel pozzo
@@ -15,14 +15,14 @@
     - [x]  Primo Levi — Se questo è un uomo
 - 24 mag (dom) — Ungaretti
 
-    [Appunti: Giuseppe Ungaretti](https://www.notion.so/3682b96c97f581f180e3c3f74ce237a0)
+    [Appunti: Giuseppe Ungaretti](Giuseppe%20Ungaretti.md)
 
     - [x]  Il porto sepolto · In memoria di Mohamed Sceab · Veglia
     - [x]  Fratelli · I fiumi · Mattina · Soldati
     - [x]  San Martino del Carso · Dannazione · Destino
 - 25 mag (lun) — Pirandello
 
-    [Appunti: Luigi Pirandello](https://www.notion.so/3682b96c97f581b686d7f56f1764a210)
+    [Appunti: Luigi Pirandello](Luigi%20Pirandello.md)
 
     - [x]  Il fu Mattia Pascal
     - [x]  Il teatro
@@ -30,14 +30,14 @@
     - [x]  Ciaula scopre la luna
 - 26 mag (mar) — Svevo
 
-    [Appunti: Italo Svevo](https://www.notion.so/3682b96c97f5815c9d64ecfcfbca897d)
+    [Appunti: Italo Svevo](Italo%20Svevo.md)
 
     - [ ]  Una vita
     - [ ]  Senilità
     - [ ]  La coscienza di Zeno
 - 27 mag (mer) — Freud + Dostoevskij + Kafka
 
-    [Appunti: Freud](https://www.notion.so/3682b96c97f581b087b0f80e1945b105) | [Appunti: Dostoevskij](https://www.notion.so/3682b96c97f581209d63c2bd46b6d9c9) | [Appunti: Kafka](https://www.notion.so/3682b96c97f5816daa3bd11fa98e6030)
+    [Appunti: Freud](Sigmund%20Freud%20e%20la%20Psicanalisi.md) | [Appunti: Dostoevskij](Fëdor%20Dostoevskij.md) | [Appunti: Kafka](Franz%20Kafka.md)
 
     - [ ]  Freud
     - [ ]  Dostoevskij — Delitto e castigo (cap. 1)
@@ -45,32 +45,32 @@
     - [ ]  Kafka — Lettera al padre
 - 28 mag (gio) — D'Annunzio
 
-    [Appunti: Gabriele D'Annunzio](https://www.notion.so/3682b96c97f58134bbbcc8a20a73ef90)
+    [Appunti: Gabriele D'Annunzio](Gabriele%20D'Annunzio.md)
 
     - [ ]  D'Annunzio — vita e poetica
     - [ ]  Opere principali
 - 29 mag (ven) — Pascoli
-    [Appunti: Giovanni Pascoli](https://www.notion.so/3682b96c97f5819b96cfda02182a1822)
+    [Appunti: Giovanni Pascoli](Giovanni%20Pascoli.md)
     - [ ]  Il fanciullo — tematica
     - [ ]  Myricae: Novembre · X Agosto · Temporale · Il tuono · Il lampo · L'assiuolo
     - [ ]  Canti di Castelvecchio: Il gelsomino notturno
 - 30 mag (sab) — Decadentismo + Verlaine + Wilde
 
-    [Appunti: Decadentismo e Simbolismo Francese](https://www.notion.so/3682b96c97f581d4814eea9f92bc5dfa)
+    [Appunti: Decadentismo e Simbolismo Francese](Decadentismo%20e%20Simbolismo%20Francese.md)
 
     - [ ]  Decadentismo e Simbolismo francese
     - [ ]  Verlaine — Languore
     - [ ]  Oscar Wilde — Il ritratto di Dorian Gray
 - 31 mag (dom) — Verga II + Ciclo dei vinti
 
-    [Appunti: Giovanni Verga](https://www.notion.so/3682b96c97f581878993dcfaefab001d) | [Appunti: Ciclo dei vinti](https://www.notion.so/3682b96c97f581c6baf0fbf265ebd95b)
+    [Appunti: Giovanni Verga](Giovanni%20Verga.md) | [Appunti: Ciclo dei vinti](Ciclo%20dei%20vinti.md)
 
     - [ ]  Novelle rusticane: La Roba · Rosso Malpelo · Nedda
     - [ ]  I Malavoglia — prefazione + arrivo e addio di Ntoni
     - [ ]  Maestro Don Gesualdo — l'addio alla roba
 - 1 giu (lun) — Naturalismo, Positivismo, Verga I
 
-    [Appunti: Fine '800 — Positivismo, Naturalismo, Realismo](https://www.notion.so/3682b96c97f5810284c5d34cedb0e536)
+    [Appunti: Fine '800 — Positivismo, Naturalismo, Realismo](Fine%20'800%20—%20Positivismo,%20Naturalismo,%20Realismo.md)
 
     - [ ]  Naturalismo e Positivismo — contesto storico-culturale
     - [ ]  Verga — Vita nei campi
@@ -123,7 +123,7 @@
     - [ ]  Viste
     - [ ]  Cenni a trigger
 - 11 giu (gio) — PDO + Sicurezza + DB distribuiti + Big data giornata densa
-    [Appunti: DBMS & DB Distribuiti](https://www.notion.so/36b2b96c97f58164af85c7400bcc9524)
+    [Appunti: DBMS & DB Distribuiti](Appunti%20DBMS%20&%20DB%20Distribuiti.md)
     - [ ]  Interfacciamento DBMS con libreria PDO
     - [ ]  Autenticazione attraverso login
     - [ ]  Sicurezza dei dati

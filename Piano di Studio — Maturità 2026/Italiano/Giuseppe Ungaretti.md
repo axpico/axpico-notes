@@ -51,7 +51,6 @@ Ungaretti **scardina le leggi della poetica ottocentesca**:
 Influenze: **Mallarmé** (simbolismo, la parola come cristallo di significato) e **Leopardi** (esistenzialismo, dolore, infinito).
 
 > La parola viene **caricata di significato**: ogni termine è scelto per portare il massimo peso semantico con il minimo di suono.
->
 
 A differenza del futurismo (che puntava alla velocità e alla modernità come spettacolo), Ungaretti usa le stesse tecniche formali per esprimere il **vissuto interiore e umano**.
 
@@ -86,25 +85,18 @@ A differenza del futurismo (che puntava alla velocità e alla modernità come sp
 **Contesto**: Ungaretti scopre che Alessandria d'Egitto aveva un antico porto sommerso. Il porto sepolto diventa **metafora della poesia**.
 
 > *Vi arriva il poeta*
->
 
 > *e poi torna alla luce con i suoi canti*
->
 
 > *e li disperse*
->
 
 > *Di questa poesia*
->
 
 > *mi resta*
->
 
 > *quel nulla*
->
 
 > *d'inesauribile segreto*
->
 
 **Significato**:
 
@@ -122,37 +114,26 @@ La poesia per Ungaretti è quindi la traduzione parziale di qualcosa che resta s
 **Destinatario**: Ettore Serra, giovane ufficiale conosciuto al fronte.
 
 > *poesia*
->
 
 > *è il mondo l’umanità*
->
 
 > *la propria vita*
->
 
 > *fioriti dalla parola*
->
 
 > *la limpida meraviglia*
->
 
 > *di un delirante fermento*
->
 
 > *Quando trovo*
->
 
 > *in questo mio silenzio*
->
 
 > *una parola*
->
 
 > *scavata è nella mia vita*
->
 
 > *come un abisso*
->
 
 **No punteggiatura** — il testo scorre senza interruzioni imposte.
 
@@ -172,25 +153,18 @@ La poesia per Ungaretti è quindi la traduzione parziale di qualcosa che resta s
 **Struttura**: costruita come una **lapide funebre** — nome, origini, fine, dove riposa.
 
 > *Si chiamava*
->
 
 > *Moammed Sceab*
->
 
 > *Discendente*
->
 
 > *di emiri di nomadi*
->
 
 > *suicida*
->
 
 > *perché non aveva più*
->
 
 > *Patria*
->
 
 **Le tre ragioni del suicidio**:
 
@@ -243,16 +217,12 @@ Una parola urlata o sussurrata: *fratelli* — rivolta a un soldato incontrato.
 Poesia brevissima (4 versi). Inserita in *L’allegria*.
 
 > *Si sta come*
->
 
 > *d'autunno*
->
 
 > *sugli alberi*
->
 
 > *le foglie*
->
 
 **Temi**:
 

@@ -3,7 +3,6 @@
 Prendere lo **schema ER** prodotto nella fase concettuale e tradurlo in **tabelle relazionali** (schema relazionale), pronto per essere implementato in un DBMS relazionale (es. MySQL, PostgreSQL).
 
 > La fase logica è indipendente dal DBMS specifico — si parla ancora di modello astratto.
->
 
 ---
 
@@ -18,7 +17,6 @@ Ogni **entità** diventa una **tabella**.
 - L'attributo chiave → **Primary Key (PK)**
 
 > Esempio: `STUDENTE(CodiceStudente, Nome, Cognome, DataNascita)` dove `CodiceStudente` è PK.
->
 
 ---
 
@@ -36,10 +34,8 @@ B(PK_B, ..., FK_A)  ← FK_A referenzia A
 **Caso entrambe parziali:** si può anche creare una tabella separata per la relazione, con le due FK.
 
 > Esempio: PERSONA(CF, Nome) e PASSAPORTO(NumPassaporto, DataScadenza, CF_Persona)
->
 
 > CF_Persona è FK che referenzia PERSONA, e ha anche vincolo UNIQUE (per mantenere 1:1).
->
 
 ---
 
@@ -56,7 +52,6 @@ IMPIEGATO(Matricola, Nome, Stipendio, CodDip_FK)  ← CodDip_FK referenzia DIPAR
 - `CodDip_FK` può essere **NULL** se la partecipazione è parziale
 
 > Regola da memorizzare: **la FK va sul lato N**.
->
 
 ---
 
@@ -191,7 +186,6 @@ INDIRIZZO_CITTA VARCHAR(50)
 ```
 
 > Alternativa: conservarlo come unica stringa se i singoli componenti non servono separatamente.
->
 
 ---
 
@@ -262,10 +256,8 @@ Prima di capire le forme normali serve capire cos'è una **dipendenza funzionale
 Una dipendenza funzionale **X → Y** significa: *dato il valore di X, il valore di Y è univocamente determinato*.
 
 > Esempio: `Matricola → Nome` — conoscendo la matricola si conosce esattamente il nome dello studente.
->
 
 > Esempio: `(CodCorso, Matricola) → Voto` — il voto dipende dalla coppia corso+studente, non da uno solo dei due.
->
 
 **Dipendenza parziale:** Y dipende solo da *parte* della chiave composita (problema 2NF).
 
@@ -393,5 +385,5 @@ PROPEDEUTICO(
 ## Collegamento con altri argomenti
 
 - Schema ER (progettazione concettuale) — [Progettazione Concettuale — Schema ER (Parte 1)](Progettazione%20Concettuale.md)
-- DBMS & DB Distribuiti — [Appunti: DBMS & DB Distribuiti](https://app.notion.com/p/36b2b96c97f58138b8d7d77b97823f18?pvs=21)
+- DBMS & DB Distribuiti — [Appunti: DBMS & DB Distribuiti](Appunti%20DBMS%20&%20DB%20Distribuiti.md)
 - SQL DDL (CREATE TABLE, vincoli FK, PK) — appunti SQL separati

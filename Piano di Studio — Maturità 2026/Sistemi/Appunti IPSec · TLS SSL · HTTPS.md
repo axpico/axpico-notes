@@ -4,7 +4,7 @@ Questa pagina copre i tre protocolli che rendono sicure le comunicazioni su reti
 
 ---
 
-# 1IPSec — Internet Protocol Security
+# IPSec — Internet Protocol Security
 
 ## Cos'è
 
@@ -124,7 +124,6 @@ IPSec:    [NEW IP Header | ESP Header | IP Header | TCP | Data (tutto cifrato) |
 - Nasconde completamente la topologia interna (gli indirizzi IP originali sono cifrati)
 
 > **Quando si usa quale**: Transport mode per IPSec tra due host specifici (es. due server che si parlano). Tunnel mode per VPN: i due gateway cifrano tutto il traffico tra le due reti, i dispositivi interni non sanno nulla di IPSec.
->
 
 ## IPSec e le VPN
 
@@ -139,7 +138,7 @@ I gateway (router o firewall) gestiscono tutto IPSec. I PC delle due sedi comuni
 
 ---
 
-# 2SSL e TLS
+# SSL e TLS
 
 ## Storia e relazione SSL/TLS
 
@@ -154,7 +153,6 @@ I gateway (router o firewall) gestiscono tutto IPSec. I PC delle due sedi comuni
 | TLS 1.3 | 2018 (RFC 8446) | **Standard attuale**, più veloce e sicuro |
 
 > **SSL è morto.** Quando si dice "SSL" oggi si intende quasi sempre TLS. I certificati si chiamano ancora "SSL certificate" per abitudine storica, ma usano TLS.
->
 
 ## Cosa offre TLS
 
@@ -311,7 +309,7 @@ Il browser ha pre-installati i certificati delle Root CA fidate (~150 CA nel mon
 
 ---
 
-# 3HTTPS
+# HTTPS
 
 ## Cos'è
 
@@ -336,7 +334,6 @@ Il browser ha pre-installati i certificati delle Root CA fidate (~150 CA nel mon
 - La dimensione approssimativa del traffico (un attaccante vede quanto dati vengono trasferiti)
 
 > **SNI** (Server Name Indication): estensione TLS che il client invia all'inizio dell'handshake per indicare quale dominio vuole raggiungere. Necessario per i server che ospitano più domini sullo stesso IP (virtual hosting). È in chiaro, quindi l'ISP e chi intercetta il traffico vede quale sito si sta visitando, anche se non il contenuto.
->
 
 ## HTTPS e il processo completo di connessione
 
@@ -395,7 +392,7 @@ Una pagina HTTPS che carica risorse (immagini, script, CSS) via HTTP è detta **
 
 ---
 
-# 4Confronto IPSec vs TLS
+# Confronto IPSec vs TLS
 
 |  | IPSec | TLS |
 | --- | --- | --- |
@@ -484,4 +481,3 @@ Livello 1 — Fisico           [cavi, onde radio]
 ---
 
 > **Collegamento con altri argomenti**: Crittografia simmetrica/asimmetrica/RSA — 16 giu | Firewall e DMZ — 17 giu | CIA e HTTPS — 15 giu | DNS over HTTPS — 14 giu
->

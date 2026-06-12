@@ -5,7 +5,7 @@
 Questa pagina copre i principali protocolli applicativi (livello 7 OSI) che rendono funzionante Internet nella pratica quotidiana: risoluzione dei nomi (DNS), posta elettronica (SMTP, POP3), diagnostica di rete (ICMP) e trasferimento file (FTP).
 
 ---
-# 1DNS — Domain Name System
+# DNS — Domain Name System
 
 ## Il problema che risolve
 
@@ -125,7 +125,7 @@ Quando il browser richiede `www.example.com`:
 
 ---
 
-# 2SMTP — Simple Mail Transfer Protocol
+# SMTP — Simple Mail Transfer Protocol
 
 ## Cos'è
 
@@ -240,7 +240,7 @@ JVBERi0xLjQK...
 
 ---
 
-# 3POP3 e IMAP — Protocolli di ricezione email
+# POP3 e IMAP — Protocolli di ricezione email
 
 ## Cos'è POP3
 
@@ -316,7 +316,6 @@ Il comportamento classico di POP3 è **scarica il messaggio sul client e cancell
 | **Uso oggi** | In declino | Standard de facto |
 
 > IMAP (Internet Message Access Protocol, RFC 3501) è il successore moderno di POP3. Gmail, Outlook e quasi tutti i client moderni usano IMAP o protocolli proprietari (Exchange ActiveSync).
->
 
 ---
 
@@ -401,7 +400,6 @@ Ogni messaggio in IMAP ha dei **flag** che ne descrivono lo stato. I flag di sis
 | `\Recent` | Nuovo dall'ultima connessione |
 
 > In IMAP eliminare un messaggio è un processo in due fasi: prima si imposta il flag `\Deleted`, poi si esegue `EXPUNGE` che rimuove fisicamente tutti i messaggi marcati. Questo permette di "annullare" una cancellazione prima di fare EXPUNGE.
->
 
 ## IMAP e la sincronizzazione multi-dispositivo
 
@@ -423,7 +421,7 @@ Oggi **IMAP è sempre la scelta giusta** tranne in casi molto specifici:
 
 ---
 
-# 4ICMP — Internet Control Message Protocol
+# ICMP — Internet Control Message Protocol
 
 ## Cos'è
 
@@ -459,10 +457,8 @@ Oggi **IMAP è sempre la scelta giusta** tranne in casi molto specifici:
 | **11** | 1 | Time Exceeded — Fragment | Timeout nel riassemblaggio dei frammenti |
 
 > **Nota sui codici Destination Unreachable**: anche se ICMP opera al livello 3 e non conosce le porte, il Code 3 (Port Unreachable) esiste perché è generato dall’**host di destinazione** — non da un router intermedio. Il pacchetto è già arrivato a destinazione, ma nessun processo UDP è in ascolto su quella porta: l’host usa ICMP come meccanismo di notifica verso il mittente. I codici 0 e 1 invece vengono generati da un **router** che non riesce a instradare il pacchetto verso la rete o l’host.
->
 
 > Per **TCP** il messaggio Port Unreachable non serve: se la porta è chiusa, il TCP stack risponde direttamente con un segmento **RST** — nessun ICMP coinvolto.
->
 
 ## ping
 
@@ -517,7 +513,7 @@ Per questo molti firewall bloccano o limitano ICMP, anche se questo rende più d
 
 ---
 
-# 5FTP — File Transfer Protocol
+# FTP — File Transfer Protocol
 
 ## Cos'è
 
@@ -625,7 +621,6 @@ S: 221 Goodbye
 | **SCP** | Copia file su SSH, più semplice di SFTP | **22** |
 
 > FTPS e SFTP sono protocolli diversi nonostante i nomi simili. SFTP non ha nulla a che fare con FTP dal punto di vista tecnico — usa SSH, non FTP.
->
 
 ---
 
@@ -680,4 +675,3 @@ S: 221 Goodbye
 ---
 
 > **Collegamento con altri argomenti**: HTTP e architettura client-server — 13 giu | Cybersecurity (sniffing, spoofing, firewall) — 15 giu | Socket e programmazione di rete — Informatica
->

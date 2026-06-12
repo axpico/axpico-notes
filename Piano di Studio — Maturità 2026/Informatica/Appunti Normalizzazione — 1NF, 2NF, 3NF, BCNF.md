@@ -13,7 +13,6 @@ La **normalizzazione** è il processo che porta uno schema relazionale a rispett
 | **Aggiornamento** | Lo stesso dato è ripetuto in più righe → rischio di incoerenza se non aggiornato ovunque | Se cambia il nome di un corso, devo aggiornare tutte le righe di ISCRIZIONE che lo riportano |
 
 > Esempio di tabella **non normalizzata**:
->
 
 ```
 ISCRIZIONI(Matricola, NomeStudente, CodCorso, NomeCorso, CFU, Docente, Voto)
@@ -40,8 +39,10 @@ Una **dipendenza funzionale (FD)** `X → Y` significa: *per ogni coppia di righ
 
 > **Attributo primo (prime)**: fa parte di almeno una chiave candidata.
 > **Attributo non primo**: non fa parte di nessuna chiave candidata.
+
 ---
-## 1Prima Forma Normale (1NF)
+
+## Prima Forma Normale (1NF)
 
 Una relazione è in **1NF** se:
 
@@ -50,7 +51,6 @@ Una relazione è in **1NF** se:
 - ogni riga è distinguibile (esiste una chiave)
 
 > Violazione:
->
 
 ```
 STUDENTE(Matricola, Nome, Telefoni)
@@ -60,7 +60,6 @@ STUDENTE(Matricola, Nome, Telefoni)
 `Telefoni` contiene più valori nella stessa cella → non atomico.
 
 > Correzione — Regola 7 (attributo multivalore → tabella separata):
->
 
 ```sql
 STUDENTE(Matricola PK, Nome)
@@ -69,7 +68,7 @@ TELEFONO(Matricola_FK, Numero, PRIMARY KEY (Matricola_FK, Numero))
 
 ---
 
-## 2Seconda Forma Normale (2NF)
+## Seconda Forma Normale (2NF)
 
 Una relazione è in **2NF** se:
 
@@ -77,10 +76,8 @@ Una relazione è in **2NF** se:
 - ogni attributo non-chiave dipende dalla **chiave primaria nella sua interezza** (nessuna dipendenza parziale)
 
 > La 2NF è rilevante **solo se la PK è composita**. Se la PK è formata da un solo attributo, la relazione è automaticamente in 2NF (non possono esistere dipendenze "parziali" da una chiave singola).
->
 
 > Violazione:
->
 
 ```
 ISCRIZIONE(Matricola_FK, CodCorso_FK, NomeCorso, CFU, Voto)
@@ -91,7 +88,6 @@ PK = (Matricola_FK, CodCorso_FK)
 - `NomeCorso` e `CFU` dipendono **solo da** `CodCorso_FK` → dipendenza **parziale**
 
 > Decomposizione:
->
 
 ```sql
 CORSO(CodCorso PK, NomeCorso, CFU)
@@ -106,15 +102,14 @@ ISCRIZIONE(
 
 ---
 
-## 3Terza Forma Normale (3NF)
+## Terza Forma Normale (3NF)
 
-Una relazione è in **3NF** se:e
+Una relazione è in **3NF** se:
 
 - è in **2NF**, **e**
 - non esistono **dipendenze transitive** verso attributi non-chiave → ogni attributo non-chiave dipende **direttamente** dalla chiave, non tramite un altro attributo non-chiave
 
 > Violazione:
->
 
 ```
 IMPIEGATO(Matricola PK, Nome, CodDip, NomeDip, Budget)
@@ -125,7 +120,6 @@ IMPIEGATO(Matricola PK, Nome, CodDip, NomeDip, Budget)
 - quindi `Matricola → CodDip → NomeDip` è una **dipendenza transitiva**
 
 > Decomposizione:
->
 
 ```sql
 DIPARTIMENTO(CodDip PK, NomeDip, Budget)
@@ -138,12 +132,9 @@ IMPIEGATO(
 ```
 
 > **Definizione formale equivalente di 3NF**: per ogni FD non banale `X → A` nella relazione, deve valere almeno una di:
->
 > 1. X è una **superchiave**, oppure
 > 2. A è un attributo **primo** (fa parte di una chiave candidata)
->
 > Questa seconda condizione è ciò che **distingue 3NF da BCNF** (vedi sotto).
->
 
 ---
 
@@ -154,7 +145,6 @@ Una relazione è in **BCNF** se:
 - per **ogni** dipendenza funzionale non banale `X → Y`, **X è una superchiave**
 
 > A differenza della 3NF, la BCNF **non ammette eccezioni** per gli attributi primi: anche se Y è parte di una chiave candidata, se X non è una superchiave la dipendenza viola la BCNF.
->
 
 ### Esempio classico — 3NF ma non BCNF
 
@@ -176,7 +166,6 @@ Verifica `Docente → Corso`:
 - `Docente` **non è una superchiave** (da solo non determina la riga) → la **BCNF è violata**
 
 > Decomposizione BCNF:
->
 
 ```sql
 DOCENTE_CORSO(Docente PK, Corso)
@@ -189,7 +178,6 @@ ISCRIZIONE(
 ```
 
 > Nota: questa decomposizione **non preserva** la dipendenza `(Studente, Corso)` come vincolo direttamente verificabile in un'unica tabella — è il classico **trade-off BCNF**: si elimina ogni ridondanza, ma a volte si perde la possibilità di verificare una dipendenza con un semplice vincolo (serve un JOIN).
->
 
 ### Algoritmo di decomposizione BCNF (idea generale)
 
@@ -212,7 +200,6 @@ ISCRIZIONE(
 | Uso pratico | Livello standard richiesto in un progetto | Obiettivo ideale, non sempre raggiungibile senza perdere FD |
 
 > **In pratica**: la maggior parte degli schemi ottenuti applicando correttamente le regole ER → Relazionale sono **già in BCNF**. Le violazioni emergono soprattutto quando ci sono **più chiavi candidate che si sovrappongono** (come nell'esempio Studente/Corso/Docente).
->
 
 ---
 
@@ -289,11 +276,3 @@ RIGA_ORDINE(NumOrdine_FK, CodProdotto_FK, Quantità,
 | **BCNF** | Ogni determinante è superchiave | Ridondanza residua tra chiavi candidate sovrapposte |
 
 > Da ricordare per l'esame: **1NF → atomicità**, **2NF → dipendenza parziale (solo con PK composita)**, **3NF → dipendenza transitiva**, **BCNF → ogni X→Y richiede X superchiave, senza eccezioni**.
->
-
----
-
-## Collegamento con altri argomenti
-
-- Dipendenze funzionali e cenni normalizzazione — [Appunti: Progettazione Logica — Da ER a Relazionale](Progettazione%20Logica%2037c2b96c97f581089651ff08719d6281.md)
-- Traduzione ER → Relazionale (le tabelle da normalizzare) — [Appunti: Progettazione Concettuale](Progettazione%20Concettuale%2037c2b96c97f581ef814ec358325f8630.md)

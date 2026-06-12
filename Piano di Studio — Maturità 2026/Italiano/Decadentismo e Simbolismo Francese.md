@@ -34,7 +34,6 @@ Deriva dal termine francese *décadence* = decadenza.
 **Il nome**: deriva dalla poesia *Langueur* (1883) di Paul **Verlaine**, in cui il poeta si identifica con l'Impero Romano in decadenza. Un gruppo di poeti parigini lo adottò come etichetta con orgoglio provocatorio.
 
 > Movimento difficile da classificare: non ha un manifesto preciso né confini netti. È più un **clima culturale** che una scuola.
->
 
 ---
 
@@ -170,5 +169,4 @@ Autore irlandese, massimo esponente dell'Estetismo anglosassone.
 
 ---
 
-> Continua con: [Gabriele D'Annunzio](https://www.notion.so/3682b96c97f58134bbbcc8a20a73ef90)
->
+> Continua con: [Gabriele D'Annunzio](Gabriele%20D'Annunzio.md)

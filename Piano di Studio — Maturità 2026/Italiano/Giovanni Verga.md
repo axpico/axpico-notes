@@ -47,7 +47,6 @@ Corrente italiana del naturalismo francese, con caratteristiche proprie:
 Principio cardine: **l'autore deve sparire** dal testo.
 
 > "Il romanzo fatto da sé, che sembrerà essersi fatto da sé."
->
 
 Tecniche concrete:
 
@@ -60,7 +59,6 @@ Tecniche concrete:
 Tecnica narrativa chiave: i pensieri e le parole del personaggio vengono riportati senza verbi introduttivi ("disse che", "pensò che"), fondendosi con la voce del narratore.
 
 > Es.: *"Che diavolo veniva a fare a quell'ora?"* — non è chiaro se parla il narratore o un personaggio: è effetto voluto.
->
 
 ### Straniamento
 
@@ -105,5 +103,4 @@ Dalla **Prefazione ai Malavoglia**:
 
 ---
 
-> Continua con: [Ciclo dei vinti](https://www.notion.so/3682b96c97f581c6baf0fbf265ebd95b)
->
+> Continua con: [Ciclo dei vinti](Ciclo%20dei%20vinti.md)

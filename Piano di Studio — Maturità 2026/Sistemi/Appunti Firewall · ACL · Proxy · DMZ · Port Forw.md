@@ -5,7 +5,7 @@
 Questa pagina copre la **sicurezza perimetrale**: i meccanismi che proteggono il confine tra la rete interna (trusted) e il mondo esterno (untrusted). Firewall, ACL, proxy, DMZ e port forwarding sono i mattoni fondamentali di qualsiasi architettura di rete sicura.
 
 ---
-# 1Firewall
+# Firewall
 
 ## Cos'è
 
@@ -107,11 +107,10 @@ Ogni firewall ha una **politica di default** che si applica quando nessuna regol
 - **Default allow (blacklist)**: permette tutto ciò che non è esplicitamente bloccato. Più comodo, molto meno sicuro.
 
 > La regola `DENY ALL` alla fine di ogni ACL implementa il **default deny**. In pratica: si aprono solo le porte strettamente necessarie, tutto il resto è bloccato.
->
 
 ---
 
-# 2ACL — Access Control List
+# ACL — Access Control List
 
 ## Cos'è
 
@@ -198,7 +197,7 @@ access-list 110 deny ip any any
 
 ---
 
-# 3Proxy Server
+# Proxy Server
 
 ## Cos'è
 
@@ -263,7 +262,7 @@ Esempi: Nginx, HAProxy, Apache (mod_proxy), Cloudflare.
 
 ---
 
-# 4DMZ — Demilitarized Zone
+# DMZ — Demilitarized Zone
 
 ## Cos'è
 
@@ -327,7 +326,7 @@ Senza DMZ, il web server sarebbe direttamente nella LAN. Se un attaccante compro
 
 ---
 
-# 5NAT — Network Address Translation
+# NAT — Network Address Translation
 
 ## Cos'è
 
@@ -361,11 +360,10 @@ Quando arriva la risposta sulla porta esterna 10001, il router sa di doverla gir
 NAT fornisce un **effetto collaterale di sicurezza**: i dispositivi interni non sono direttamente raggiungibili da Internet (non hanno un IP pubblico). Un attaccante esterno non può iniziare una connessione verso un host interno — il router non sa dove instradarla.
 
 > NAT **non è** un meccanismo di sicurezza intenzionale — è una soluzione all'esaurimento degli indirizzi IPv4. Non sostituisce un firewall.
->
 
 ---
 
-# 6Port Forwarding
+# Port Forwarding
 
 ## Cos'è
 
@@ -399,7 +397,6 @@ Il client esterno vede solo l'IP pubblico del router. Non sa nulla dell'IP inter
 | NAS | 5000 | 192.168.1.20 | 5000 |
 
 > **Best practice**: non esporre la porta SSH standard (22) su Internet — viene scansionata e attaccata in continuazione. Usare una porta esterna non standard (es. 2222) riduce il rumore degli attacchi automatizzati (security through obscurity, non una difesa reale, ma riduce il log di brute-force).
->
 
 ## Usi tipici del port forwarding
 
@@ -504,4 +501,3 @@ I router home hanno spesso un'opzione chiamata **"DMZ host"** (non confondere co
 ---
 
 > **Collegamento con altri argomenti**: CIA e attacchi — 15 giu | Crittografia e TLS — 16 giu | VPN, IPSec, HTTPS — 17 giu (prossimo)
->

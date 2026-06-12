@@ -141,5 +141,4 @@ Zola si schiera a difesa del capitano **Alfred Dreyfus** (ufficiale ebreo falsam
 
 ---
 
-> Continua con: [Giovanni Verga](https://www.notion.so/3682b96c97f581878993dcfaefab001d)
->
+> Continua con: [Giovanni Verga](Giovanni%20Verga.md)

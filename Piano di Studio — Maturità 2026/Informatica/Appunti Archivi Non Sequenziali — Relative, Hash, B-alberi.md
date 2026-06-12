@@ -10,7 +10,7 @@ Tre implementazioni principali:
 
 ---
 
-# 1Organizzazione Logica Non Sequenziale
+# Organizzazione Logica Non Sequenziale
 
 ## Concetti fondamentali
 
@@ -35,14 +35,13 @@ Un archivio fisico non sequenziale è composto da blocchi non necessariamente co
 
 ---
 
-# 2Organizzazione Relative
+# Organizzazione Relative
 
 ## Definizione
 
 Nell'organizzazione relative la **chiave primaria identifica univocamente sia il record sia l'indirizzo logico** in cui è registrato. La chiave corrisponde alla posizione del record all'interno dell'archivio.
 
 > Esempio: archivio delle temperature rilevate ogni ora — la temperatura delle ore 12 è nella dodicesima riga. Archivio dei posti di un aereo numerati 1…N — il record del posto k è alla posizione k.
->
 
 ## Come si calcola l'indirizzo fisico
 
@@ -64,7 +63,7 @@ Indirizzo fisico del record k =
 
 ---
 
-# 3Organizzazione Hash
+# Organizzazione Hash
 
 ## Definizione e principio
 
@@ -87,7 +86,6 @@ L'indirizzo X deve essere ricalcolato ogni volta che si accede al record di chia
 7. **Minimo numero di collisioni**: con procedure per gestire i sinonimi
 
 > La **trasformazione perfetta** (corrispondenza 1-a-1 tra chiave e indirizzo) è quasi impossibile nella pratica: richiederebbe che il numero di record fisici sia uguale al numero di possibili valori della chiave, con enorme spreco di memoria.
->
 
 ## Collisioni e sinonimi
 
@@ -97,7 +95,7 @@ La funzione hash reale produce una corrispondenza **molti-a-uno**: bisogna quind
 
 ---
 
-# 4Metodi di Calcolo degli Indirizzi Hash
+# Metodi di Calcolo degli Indirizzi Hash
 
 - Metodo del troncamento
 
@@ -173,15 +171,13 @@ La funzione hash reale produce una corrispondenza **molti-a-uno**: bisogna quind
 
 ---
 
-# 5Gestione delle Collisioni
+# Gestione delle Collisioni
 
 Le tecniche di gestione delle collisioni servono a individuare un **indirizzo libero** per la chiave K quando H(K) restituisce un indirizzo già occupato.
 
 > In fase di **inserimento**: si calcola H(K), si testa se la posizione è libera; se occupata si cerca la prossima posizione libera.
->
 
 > In fase di **ricerca**: si calcola H(K), si accede al record; se la chiave non coincide, si scandisce secondo la stessa strategia usata in inserimento.
->
 - Scansione lineare (indirizzamento aperto)
 
     When a collision occurs, the archive is scanned linearly to find the first free position, moving by a fixed step p.
@@ -225,7 +221,7 @@ Le tecniche di gestione delle collisioni servono a individuare un **indirizzo li
 
 ---
 
-# 6B-alberi (Balanced Trees)
+# B-alberi (Balanced Trees)
 
 ## Perché i B-alberi?
 
@@ -250,7 +246,6 @@ Un B-albero di ordine m soddisfa le seguenti proprietà:
 6. La radice contiene al massimo **2m chiavi**
 
 > Esempio di B-albero di ordine 3: radice con al massimo 6 chiavi e fino a 7 figli. Ogni nodo non radice ha tra 3 e 6 chiavi.
->
 
 ## Struttura di un nodo
 
@@ -288,7 +283,7 @@ L'inserimento deve mantenere l'albero sempre bilanciato.
 
 ---
 
-# 7Altezza di un B-albero (grado minimo t)
+# Altezza di un B-albero (grado minimo t)
 
 Notazione: **grado minimo t** — ogni nodo (tranne la radice) ha tra **t-1** e **2t-1** chiavi, e tra **t** e **2t** figli.
 
@@ -334,11 +329,10 @@ Un B-albero di grado minimo 2 con 200 chiavi ha altezza compresa tra **3 e 6**.
 | 7 | 255 | 65535 | da 255 a 65535 |
 
 > **Come leggere la tabella**: se N = 200, l'altezza non può essere < 3 (perché 200 > 63 = N_max a h=2) e non può essere > 6 (perché 200 < 255 = N_min a h=7). Quindi altezza tra 3 e 6.
->
 
 ---
 
-# 8Confronto tra le Organizzazioni
+# Confronto tra le Organizzazioni
 
 | Organizzazione | Accesso | Quando usarla | Limite principale |
 | --- | --- | --- | --- |
@@ -384,4 +378,3 @@ Un B-albero di grado minimo 2 con 200 chiavi ha altezza compresa tra **3 e 6**.
 ---
 
 > **Collegamento con altri argomenti**: Archivi sequenziali → [Appunti: Archivi e File — Concetti Base e Organizzazione Sequenziale](Appunti%20Archivi%20e%20File%20—%20Concetti%20Base%20e%20Organiz.md) | DBMS e SQL → [Appunti: DBMS & DB Distribuiti](Appunti%20DBMS%20&%20DB%20Distribuiti.md)
->

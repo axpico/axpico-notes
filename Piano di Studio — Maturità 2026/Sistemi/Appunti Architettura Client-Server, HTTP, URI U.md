@@ -5,7 +5,7 @@
 Questa pagina copre il livello applicazione del modello OSI: come è strutturata la comunicazione web, come funziona HTTP, cosa sono URI e URL, e come si è evoluto il Web dalla sua nascita.
 
 ---
-# 1Architettura Client-Server
+# Architettura Client-Server
 
 ## Cos'è
 
@@ -65,7 +65,7 @@ Nelle applicazioni web moderne l'architettura client-server si articola in livel
 
 ---
 
-# 2URI e URL
+# URI e URL
 
 ## URI — Uniform Resource Identifier
 
@@ -77,7 +77,6 @@ Si divide in due sottotipi:
 - **URN** (Uniform Resource **Name**): identifica la risorsa per nome, indipendentemente dalla posizione (es. `urn:isbn:978-88-386-6525-8`)
 
 > In pratica, nella navigazione web si usano sempre URL. URI è il termine formale che li include entrambi.
->
 
 ## Struttura di un URL
 
@@ -116,7 +115,7 @@ Esempi: spazio → `%20`, `@` → `%40`, `/` nel path → `%2F`
 
 ---
 
-# 3Protocollo HTTP
+# Protocollo HTTP
 
 ## Cos'è
 
@@ -166,7 +165,6 @@ Connection: keep-alive
 | **OPTIONS** | Chiede quali metodi supporta il server | No | Sì | Sì |
 
 > **Idempotente**: fare la stessa richiesta N volte produce lo stesso risultato di farla una volta sola. **Safe**: non modifica lo stato del server.
->
 
 ## Struttura di una HTTP Response
 
@@ -246,7 +244,6 @@ HTTP è **stateless**: il server non ricorda nulla tra una richiesta e la succes
 | **HTTP/3** | 2022 | Abbandona TCP: usa **QUIC** (basato su UDP). Elimina il problema del head-of-line blocking. Connessione più rapida (0-RTT). TLS integrato. |
 
 > **Head-of-line blocking in HTTP/1.1**: con il pipelining, se una richiesta si blocca, tutte le successive aspettano. HTTP/2 risolve con il multiplexing a livello applicativo; HTTP/3 risolve anche a livello di trasporto (QUIC su UDP gestisce ogni stream indipendentemente).
->
 
 ## HTTPS
 
@@ -259,7 +256,7 @@ HTTP è **stateless**: il server non ricorda nulla tra una richiesta e la succes
 
 ---
 
-# 4Il Web e la sua storia
+# Il Web e la sua storia
 
 ## Le origini — ARPANET e Internet
 
@@ -371,4 +368,3 @@ Il primo sito web è ancora online: [http://info.cern.ch](http://info.cern.ch)
 ---
 
 > **Collegamento con altri argomenti**: DNS, SMTP, POP3, ICMP, FTP — 14 giu | Cybersecurity e HTTPS — 15 giu | Cookie e sessioni → Informatica (già studiato)
->

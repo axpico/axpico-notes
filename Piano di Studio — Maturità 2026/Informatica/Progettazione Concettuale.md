@@ -7,7 +7,6 @@ La **progettazione di un database** si articola in tre fasi:
 3. **Fisica** — si ottimizza la memorizzazione su disco (indici, partizionamento, ecc.)
 
 > La fase concettuale è la più importante: un errore qui si propaga a tutto il sistema.
->
 
 ---
 
@@ -26,7 +25,6 @@ Il modello **ER** (Entity-Relationship), proposto da *Peter Chen nel 1976*, è i
 Un'**entità** rappresenta una classe di oggetti del mondo reale con esistenza autonoma e con proprietà comuni.
 
 > Esempi: `STUDENTE`, `CORSO`, `PROFESSORE`, `ORDINE`, `PRODOTTO`
->
 
 **Rappresentazione grafica:** rettangolo con il nome dell'entità al centro (nome sempre in MAIUSCOLO per convenzione).
 
@@ -47,7 +45,6 @@ Una buona entità:
 - Partecipa a **relazioni** con altre e**Relationship**ntità
 
 > Non è un'entità: qualcosa che ha solo un valore e nessuna proprietà aggiuntiva (quello è un attributo).
->
 
 ---
 
@@ -111,7 +108,6 @@ Un'**associazione** rappresenta un legame logico tra due o più entità.
 **Rappresentazione grafica:** rombo collegato alle entità partecipanti.
 
 > Esempi: `STUDIA` (tra STUDENTE e CORSO), `INSEGNA` (tra PROFESSORE e CORSO), `LAVORA_IN` (tra IMPIEGATO e DIPARTIMENTO)
->
 
 ### Grado di un'associazione
 
@@ -140,7 +136,6 @@ La **cardinalità** specifica quante istanze di un'entità possono essere associ
 | **N:M** (molti a molti) | N — M | Molte A associate a molte B | STUDENTE — *frequenta* — CORSO |
 
 > Le relazioni N:M nella fase logica richiedono sempre una **tabella intermedia** (tabella di giunzione).
->
 
 ### Notazione (min, max) — cardinalità vincolata
 
@@ -163,10 +158,8 @@ La notazione estesa **(min, max)** specifica quante volte **al minimo** e **al m
 | Ogni persona ha 0 o 1 passaporti; ogni passaporto appartiene a esattamente 1 persona | `(0,1)` su PERSONA | `(1,1)` su PASSAPORTO | 1:1 con partecipazione parziale |
 
 > **Attenzione alla direzione di lettura:** il vincolo `(min, max)` si legge dal lato dell'entità, non dell'associazione. `(1,N)` sul lato DIPARTIMENTO significa: *ogni dipartimento partecipa da 1 a N volte all'associazione*, cioè ha da 1 a N impiegati.
->
 
 > La notazione `(0, N)` corrisponde alla partecipazione **parziale** della notazione base; `(1, N)` o `(1, 1)` alla **totale**.
->
 
 ### Partecipazione (vincolo di esistenza)
 
@@ -194,10 +187,8 @@ Un'**entità debole** è un'entità che **non possiede un identificatore proprio
 - La chiave parziale (discriminatore) ha il nome **sottolineato tratteggiato**
 
 > Esempio classico: `ORDINE` (entità forte) — *contiene* — `RIGA_ORDINE` (entità debole). Una riga d'ordine è identificata dal numero di riga *più* il riferimento all'ordine a cui appartiene. Senza l'ordine, la riga non ha senso.
->
 
 > Altro esempio: `EDIFICIO` — *ha* — `APPARTAMENTO`. L'appartamento ha un numero interno (es. "Scala A, Piano 2, Int. 3") ma è univoco solo all'interno dello stesso edificio.
->
 
 **Distinzione importante:**
 
@@ -209,7 +200,6 @@ Un'**entità debole** è un'entità che **non possiede un identificatore proprio
 | Relazione con owner | — | Doppio rombo |
 
 > Le entità deboli nella fase logica diventano tabelle con chiave primaria **composta**: (FK verso entità forte) + discriminatore.
->
 
 ---
 
@@ -243,10 +233,8 @@ Le **regole aziendali** (business rules) sono informazioni che completano lo sch
 La definizione precisa di un'entità, un attributo o un'associazione rilevante per l'applicazione. Chiarisce il significato esatto del concetto nel contesto specifi;co, eliminando ambiguità.
 
 > Esempio: `STUDENTE` — persona regolarmente iscritta al corso di laurea, con matricola assegnata dalla segreteria. Non include uditori o iscritti a singoli esami.
->
 
 > Esempio: `DataIscrizione` in ISCRIZIONE — data in cui lo studente ha effettuato l'iscrizione all'esame, non la data in cui lo ha sostenuto.
->
 
 ### Vincolo di integrità
 
@@ -256,23 +244,18 @@ Un vincolo sui dati dell'applicazione. Può essere:
 - **Non esprimibile direttamente** nel diagramma ER, e quindi documentato testualmente nel dizionario dei dati
 
 > Esempio esprimibile: ogni IMPIEGATO deve appartenere a esattamente un DIPARTIMENTO → cardinalità `(1,1)` su IMPIEGATO.
->
 
 > Esempio non esprimibile: `DataFine >= DataInizio` per un contratto; lo stipendio non può diminuire nel tempo. Questi vanno documentati a parte e implementati con trigger o CHECK nella fase logica.
->
 
 ### Derivazione
 
 Un concetto che può essere ottenuto per inferenza o per calcolo aritmetico da altri concetti già presenti nello schema. Non viene memorizzato direttamente, ma calcolato al momento del bisogno.
 
 > Esempio: `Età` — derivata da `DataNascita` e dalla data corrente.
->
 
 > Esempio: `TotaleOrdine` — derivato dalla somma di `Quantità × PrezzoUnitario` delle righe d'ordine associate.
->
 
 > Esempio: `NumeroImpiegati` di un dipartimento — derivato dal conteggio delle istanze di IMPIEGATO collegate a quel dipartimento.
->
 
 Nello schema ER gli attributi derivati si rappresentano con **ellisse tratteggiata**. Nella fase logica si gestiscono con una query, una vista, o un trigger che mantiene il valore aggiornato.
 
@@ -281,5 +264,5 @@ Nello schema ER gli attributi derivati si rappresentano con **ellisse tratteggia
 ## Collegamento con altri argomenti
 
 - Progettazione logica (trasformazione ER → Relazionale) — [Progettazione Logica — Da ER a Relazionale (Parte 2)](Appunti%20DBMS%20&%20DB%20Distribuiti.md)
-- DBMS & DB Distribuiti — [Appunti: DBMS & DB Distribuiti](https://app.notion.com/p/36b2b96c97f58138b8d7d77b97823f18?pvs=21)
+- DBMS & DB Distribuiti — [Appunti: DBMS & DB Distribuiti](Appunti%20DBMS%20&%20DB%20Distribuiti.md)
 - SQL (DDL — creazione tabelle dallo schema logico) — appunti SQL separati

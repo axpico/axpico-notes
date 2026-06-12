@@ -23,7 +23,6 @@ Verga si blocca dopo il secondo romanzo: la tesi è sempre la stessa (chi sale �
 Documento teorico fondamentale. Verga espone la sua visione della storia e della letteratura:
 
 > La storia dell'umanità è come una **fiumana** — un fiume in piena che scorre inesorabilmente. Ogni individuo è travolto dalla corrente. Chi cerca di uscire dalla propria condizione per salire socialmente viene sbattuto contro gli scogli e soccombe.
->
 
 **L'ideale dell'ostrica**: chi resta attaccato alla propria roccia — fedele alle tradizioni, alla famiglia, al proprio posto nella gerarchia sociale — sopravvive. Chi si stacca per ambire a qualcosa di più viene travolto.
 

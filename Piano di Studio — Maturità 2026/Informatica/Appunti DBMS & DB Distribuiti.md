@@ -66,7 +66,6 @@ Tecniche di recovery:
 Un **DB distribuito** è un insieme di basi di dati logicamente correlate, fisicamente distribuite su nodi diversi (server, siti) collegati da una rete.
 
 > L'utente vede il sistema come se fosse un unico database centralizzato — **trasparenza della distribuzione**.
->
 
 ### 2.1 Vantaggi dei DB distribuiti
 
@@ -178,7 +177,6 @@ I DBMS distribuiti gestiscono due grandi categorie di carichi di lavoro, con obi
 | Priorità | Velocità, integrità, ACID | Throughput lettura, prestazioni aggregazioni |
 
 > In un DDBMS: l'**OLTP** è distribuito per garantire disponibilità e velocità locale. L'**OLAP** è tipicamente centralizzato in un Data Warehouse alimentato dai nodi OLTP.
->
 
 ### Elaborazione Online vs Offline
 
@@ -262,12 +260,10 @@ Quando l'utente esegue una query su un DB distribuito, il DDBMS non la esegue su
 | 5. Assemblaggio | Coordinatore | Unione risultati → tabella finale |
 
 > Il **costo di rete** (latenza + banda) è il fattore critico nelle query distribuite — l'ottimizzatore cerca sempre di spostare il meno possibile tra i nodi.
->
 
 ## 3. Big Data — Le quattro V
 
 > Il termine **Big Data** indica dataset di dimensioni talmente grandi e complessi che i tradizionali strumenti di gestione dei dati non sono sufficienti per elaborarli.
->
 
 ### Le 4 V fondamentali
 

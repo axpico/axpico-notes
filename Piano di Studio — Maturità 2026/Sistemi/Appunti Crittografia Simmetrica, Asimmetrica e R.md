@@ -6,7 +6,7 @@ Due paradigmi fondamentali: **crittografia simmetrica** (una chiave) e **crittog
 
 ---
 
-# 1Concetti Base
+# Concetti Base
 
 ## Terminologia
 
@@ -23,7 +23,6 @@ Due paradigmi fondamentali: **crittografia simmetrica** (una chiave) e **crittog
 ## Principio di Kerckhoffs (1883)
 
 > *"La sicurezza di un sistema crittografico non deve dipendere dalla segretezza dell'algoritmo, ma solo dalla segretezza della chiave."*
->
 
 In pratica: gli algoritmi sono pubblici e analizzati da tutta la community scientifica. La sicurezza sta interamente nella chiave. Un algoritmo segreto che nessuno ha potuto analizzare è molto meno affidabile di uno pubblico e ampiamente testato.
 
@@ -41,7 +40,7 @@ In pratica: gli algoritmi sono pubblici e analizzati da tutta la community scien
 
 ---
 
-# 2Crittografia Simmetrica
+# Crittografia Simmetrica
 
 ## Principio
 
@@ -135,11 +134,10 @@ Il blocco di 128 bit è rappresentato come una matrice 4×4 di byte. Ad ogni rou
 L'ultimo round omette MixColumns. La sicurezza deriva dalla combinazione di confusione (SubBytes) e diffusione (ShiftRows + MixColumns).
 
 > **Confusione e diffusione** (Shannon, 1949): la confusione rende complessa la relazione tra chiave e ciphertext (S-box), la diffusione distribuisce l'influenza di ogni bit del plaintext su tutto il ciphertext (ShiftRows + MixColumns). Ogni buon cifrario moderno implementa entrambe.
->
 
 ---
 
-# 3Crittografia Asimmetrica
+# Crittografia Asimmetrica
 
 ## Il problema che risolve
 
@@ -185,7 +183,7 @@ Si ottiene la sicurezza dello scambio di chiavi + la velocità della simmetrica.
 
 ---
 
-# 4RSA
+# RSA
 
 ## Storia e contesto
 
@@ -295,7 +293,6 @@ La firma digitale inverte l'uso delle chiavi:
 - **Non-repudiation**: il mittente non può negare di aver firmato
 
 > Si firma l'**hash**, non il messaggio intero, perché RSA è lento. L'hash ha dimensione fissa e piccola (es. 256 bit per SHA-256), il messaggio potrebbe essere gigabyte.
->
 
 ## Lunghezze di chiave RSA e sicurezza
 
@@ -307,7 +304,6 @@ La firma digitale inverte l'uso delle chiavi:
 | 4096 bit | ~140 bit | Alta sicurezza, più lento |
 
 > Le chiavi RSA devono essere molto più lunghe di quelle AES per lo stesso livello di sicurezza, perché la fattorizzazione è un problema più facile del brute-force su AES.
->
 
 ## RSA e il futuro: minaccia quantistica
 
@@ -317,7 +313,7 @@ Per questo il NIST sta standardizzando algoritmi **post-quantum** (PQC): CRYSTAL
 
 ---
 
-# 5Diffie-Hellman Key Exchange
+# Diffie-Hellman Key Exchange
 
 ## Il problema
 
@@ -343,7 +339,7 @@ DH non cifra nulla da solo: serve solo per scambiare una chiave simmetrica. È v
 
 ---
 
-# 6ECC — Elliptic Curve Cryptography
+# ECC — Elliptic Curve Cryptography
 
 ## Cos'è
 
@@ -405,4 +401,3 @@ Alternativa moderna a RSA, basata sulla matematica delle **curve ellittiche** su
 ---
 
 > **Collegamento con altri argomenti**: TLS/HTTPS — 13 giu | Firma digitale e certificati — 16 giu (prossimo) | CIA e attacchi — 15 giu
->

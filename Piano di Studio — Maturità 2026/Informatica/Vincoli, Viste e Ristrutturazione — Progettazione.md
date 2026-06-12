@@ -1,4 +1,4 @@
-## 1Regole aziendali e vincoli di integrità
+## Regole aziendali e vincoli di integrità
 
 I **vincoli di integrità** sono condizioni che i dati devono rispettare in ogni istante. Si dividono in due categorie:
 
@@ -50,7 +50,6 @@ Tipo CHAR(1) CHECK (Tipo IN ('A', 'B', 'C'))
 Permette di esprimere qualsiasi condizione booleana sui valori della riga.
 
 > I vincoli CHECK vengono valutati a ogni INSERT e UPDATE. Se la condizione è FALSE, l'operazione viene rifiutata.
->
 
 **DEFAULT**
 
@@ -107,7 +106,6 @@ CREATE ASSERTION max_impiegati_per_dip
 ```
 
 > Le asserzioni sono previste dallo standard SQL ma supportate da pochissimi DBMS reali. In pratica si usano i **trigger** per lo stesso scopo.
->
 
 ---
 
@@ -146,11 +144,10 @@ CREATE TRIGGER check_stipendio
 - `SIGNAL` → lancia un errore e annulla l'operazione
 
 > I trigger sono lo strumento principale per vincoli dinamici, derivazioni automatiche e log di audit.
->
 
 ---
 
-## 2Dalla progettazione al modello relazionale: relazioni e viste
+## Dalla progettazione al modello relazionale: relazioni e viste
 
 ### Tabella base vs Vista
 
@@ -266,7 +263,7 @@ CREATE VIEW IscrizioniComplete AS
 
 ---
 
-## 3Ristrutturazione dello schema concettuale
+## Ristrutturazione dello schema concettuale
 
 Prima di tradurre lo schema ER in relazionale, si esegue una fase di **ristrutturazione** per semplificarlo e ottimizzarlo. È un passaggio intermedio tra progettazione concettuale e logica.
 
@@ -292,7 +289,6 @@ Una **ridondanza** nello schema ER è un'informazione derivabile da altre inform
 | Consistenza | Rischio di inconsistenza | Sempre consistente |
 
 > La scelta dipende dal carico di lavoro: se il dato viene letto spesso e aggiornato raramente, conviene mantenerlo.
->
 
 ---
 
@@ -339,11 +335,10 @@ Ogni entità deve avere un identificatore che diventerà la PK nella traduzione 
 | **Non significatività** | Meglio una chiave surrogata (ID auto-increment) che un codice con significato che potrebbe cambiare |
 
 > Se un'entità non ha un identificatore naturale adatto, si introduce un **identificatore surrogato** (es. `ID INT AUTO_INCREMENT`).
->
 
 ---
 
-## 4Regole di derivazione
+## Regole di derivazione
 
 Un **attributo derivato** è un valore calcolabile a partire da altri dati già presenti nel DB. Nello schema ER viene marcato con una linea tratteggiata.
 
@@ -426,4 +421,4 @@ CREATE VIEW DipartimentoConContatore AS
 
 - Schema ER — [Progettazione Concettuale — Schema ER (Parte 1)](Progettazione%20Concettuale.md)
 - Trasformazione ER → Relazionale — [Progettazione Logica — Da ER a Relazionale](Progettazione%20Logica.md)
-- DBMS & DB Distribuiti — [Appunti: DBMS & DB Distribuiti](https://app.notion.com/p/36b2b96c97f58138b8d7d77b97823f18?pvs=21)
+- DBMS & DB Distribuiti — [Appunti: DBMS & DB Distribuiti](Appunti%20DBMS%20&%20DB%20Distribuiti.md)
