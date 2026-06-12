@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "891530f833ef29e3",
+        "id": "73f1e8b02bdf6902",
         "type": "tabs",
         "children": [
           {
-            "id": "740952a0359ccf44",
+            "id": "190a44d249c8a5f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
+                "file": "Piano di Studio — Maturità 2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF"
+              "title": "Piano di Studio — Maturità 2026"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
+                "file": "Piano di Studio — Maturità 2026.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF"
+              "title": "Backlinks for Piano di Studio — Maturità 2026"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
+                "file": "Piano di Studio — Maturità 2026.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF"
+              "title": "Outgoing links from Piano di Studio — Maturità 2026"
             }
           },
           {
@@ -190,7 +190,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 402
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,11 +207,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "41c9241263f38e27",
+  "active": "190a44d249c8a5f7",
   "lastOpenFiles": [
-    "Piano di Studio — Maturità 2026/Informatica.md",
+    "University Hub.md",
     "Piano di Studio — Maturità 2026.md",
     "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
+    "Piano di Studio — Maturità 2026/Informatica.md",
     "Piano di Studio — Maturità 2026/Informatica/Vincoli, Viste e Ristrutturazione — Progettazione.md",
     "Piano di Studio — Maturità 2026/Informatica/Progettazione Logica.md",
     "Piano di Studio — Maturità 2026/Informatica/Progettazione Concettuale.md",
@@ -235,7 +236,6 @@
     "University Hub/Templates",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti IPSec · TLS SSL · HTTPS.md",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti Firewall · ACL · Proxy · DMZ · Port Forw.md",
-    "Piano di Studio — Maturità 2026/Sistemi/Appunti DNS · SMTP · POP3 · ICMP · FTP.md",
     "Piano di Studio — Maturità 2026/Sistemi",
     "Piano di Studio — Maturità 2026/Italiano",
     "Piano di Studio — Maturità 2026/Informatica",

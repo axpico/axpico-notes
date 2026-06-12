@@ -3,7 +3,6 @@
 La **normalizzazione** è il processo che porta uno schema relazionale a rispettare progressivamente le **forme normali**, eliminando ridondanze e le **anomalie** che ne derivano. È l'ultimo passo della progettazione logica, dopo la traduzione ER → Relazionale.
 
 > Decomposizione **senza perdita di informazione** (lossless join): scomponendo una tabella in due o più tabelle più piccole, deve essere sempre possibile ricostruire (via JOIN) esattamente i dati originali.
->
 
 ### Le tre anomalie
 
@@ -40,13 +39,8 @@ Una **dipendenza funzionale (FD)** `X → Y` significa: *per ogni coppia di righ
 | **Banale** | `X → Y` con Y ⊆ X (sempre vera, non interessante) | — |
 
 > **Attributo primo (prime)**: fa parte di almeno una chiave candidata.
->
->
 > **Attributo non primo**: non fa parte di nessuna chiave candidata.
->
-
 ---
-
 ## 1Prima Forma Normale (1NF)
 
 Una relazione è in **1NF** se:
