@@ -428,6 +428,6 @@ CREATE VIEW DipartimentoConContatore AS
 
 ## 📎 Collegamento con altri argomenti
 
-- Schema ER — [🧩 Progettazione Concettuale — Schema ER (Parte 1)](%F0%9F%A7%A9%20Progettazione%20Concettuale%2037c2b96c97f581ef814ec358325f8630.md)
-- Trasformazione ER → Relazionale — [🔄 Progettazione Logica — Da ER a Relazionale](%F0%9F%94%84%20Progettazione%20Logica%2037c2b96c97f581089651ff08719d6281.md)
+- Schema ER — [🧩 Progettazione Concettuale — Schema ER (Parte 1)](🧩%20Progettazione%20Concettuale.md)
+- Trasformazione ER → Relazionale — [🔄 Progettazione Logica — Da ER a Relazionale](🔄%20Progettazione%20Logica.md)
 - DBMS & DB Distribuiti — [🗄️ Appunti: DBMS & DB Distribuiti](https://app.notion.com/p/36b2b96c97f58138b8d7d77b97823f18?pvs=21)

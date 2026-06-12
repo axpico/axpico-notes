@@ -390,5 +390,5 @@ Un B-albero di grado minimo 2 con 200 chiavi ha altezza compresa tra **3 e 6**.
 
 ---
 
-> 📌 **Collegamento con altri argomenti**: Archivi sequenziali → [💾 Appunti: Archivi e File — Concetti Base e Organizzazione Sequenziale](%F0%9F%92%BE%20Appunti%20Archivi%20e%20File%20%E2%80%94%20Concetti%20Base%20e%20Organiz%2037b2b96c97f5817fa592f4201151619f.md) | DBMS e SQL → [🗄️ Appunti: DBMS & DB Distribuiti](%F0%9F%97%84%EF%B8%8F%20Appunti%20DBMS%20&%20DB%20Distribuiti%2036b2b96c97f58164af85c7400bcc9524.md)
+> 📌 **Collegamento con altri argomenti**: Archivi sequenziali → [💾 Appunti: Archivi e File — Concetti Base e Organizzazione Sequenziale](💾%20Appunti%20Archivi%20e%20File%20—%20Concetti%20Base%20e%20Organiz.md) | DBMS e SQL → [🗄️ Appunti: DBMS & DB Distribuiti](🗄️%20Appunti%20DBMS%20&%20DB%20Distribuiti.md)
 >

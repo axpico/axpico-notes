@@ -284,6 +284,6 @@ Nello schema ER gli attributi derivati si rappresentano con **ellisse tratteggia
 
 ## 📎 Collegamento con altri argomenti
 
-- Progettazione logica (trasformazione ER → Relazionale) — [🧩 Progettazione Logica — Da ER a Relazionale (Parte 2)](%F0%9F%97%84%EF%B8%8F%20Appunti%20DBMS%20&%20DB%20Distribuiti%2036b2b96c97f58164af85c7400bcc9524.md)
+- Progettazione logica (trasformazione ER → Relazionale) — [🧩 Progettazione Logica — Da ER a Relazionale (Parte 2)](🗄️%20Appunti%20DBMS%20&%20DB%20Distribuiti.md)
 - DBMS & DB Distribuiti — [🗄️ Appunti: DBMS & DB Distribuiti](https://app.notion.com/p/36b2b96c97f58138b8d7d77b97823f18?pvs=21)
 - SQL (DDL — creazione tabelle dallo schema logico) — appunti SQL separati
