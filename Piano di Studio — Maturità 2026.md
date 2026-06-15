@@ -1,8 +1,3 @@
-# Piano di Studio — Maturità 2026
-
-> 23 maggio → 17 giugno · 26 giorni · Buona fortuna!
----
-
 ## ITALIANO — 23 mag / 1 giu
 
 - 23 mag (sab) — Montale + Primo Levi
@@ -50,7 +45,9 @@
     - [ ]  D'Annunzio — vita e poetica
     - [ ]  Opere principali
 - 29 mag (ven) — Pascoli
+
     [Appunti: Giovanni Pascoli](Giovanni%20Pascoli.md)
+
     - [ ]  Il fanciullo — tematica
     - [ ]  Myricae: Novembre · X Agosto · Temporale · Il tuono · Il lampo · L'assiuolo
     - [ ]  Canti di Castelvecchio: Il gelsomino notturno
@@ -85,45 +82,62 @@
 ## INFORMATICA — 3 giu / 11 giu
 
 - 3 giu (mer) — Architettura web + PHP + Archivi
+
     [Appunti: Archivi Non Sequenziali — Relative, Hash, B-alberi](Appunti%20Archivi%20Non%20Sequenziali%20—%20Relative,%20Hash,%20B-alberi.md) | [Appunti: Archivi e File — Concetti Base e Organizzazione Sequenziale](Appunti%20Archivi%20e%20File%20—%20Concetti%20Base%20e%20Organiz.md)
+
     - [ ]  Architettura applicazione web — elaborazione client vs server
     - [ ]  Sintassi e costrutti base del linguaggio PHP
     - [x]  Archivi
 - 4 giu (gio) — Array superglobali + Form + Archivi
+
     [Appunti: Archivi Non Sequenziali — Relative, Hash, B-alberi](Appunti%20Archivi%20Non%20Sequenziali%20—%20Relative,%20Hash,%20B-alberi.md)
+
     - [ ]  Array superglobali
     - [ ]  Tecniche di trasferimento sincrono dei dati via form
     - [x]  Archivi
 - 5 giu (ven) — Validazione + AJAX + Cookie
+
     - [ ]  Validazione lato client e lato server
     - [ ]  AJAX
     - [ ]  Cookie e sessioni
 - 6 giu (sab) — Progettazione concettuale DB + Schema ER
+
     [Appunti: Progettazione Concettuale](Progettazione%20Concettuale.md)
+
     - [ ]  Progettazione concettuale di un DB
     - [ ]  Schema ER — entità, attributi, associazioni
 - 7 giu (dom) — Dal concettuale al relazionale
+
     [Appunti: Progettazione Logica — Da ER a Relazionale](Progettazione%20Logica.md) | [Appunti: Vincoli, Viste e Ristrutturazione](Vincoli,%20Viste%20e%20Ristrutturazione%20—%20Progettazione.md)
+
     - [ ]  Regole aziendali e vincoli di integrità
     - [ ]  Dalla progettazione al modello relazionale (relazioni e viste)
 - 8 giu (lun) — Progettazione logica
+
     [Appunti: Vincoli, Viste e Ristrutturazione](Vincoli,%20Viste%20e%20Ristrutturazione%20—%20Progettazione.md)
+
     - [ ]  Ristrutturazione dello schema concettuale
     - [ ]  Regole di derivazione
 - 9 giu (mar) — Normalizzazione
+
     [Appunti: Normalizzazione — 1NF, 2NF, 3NF, BCNF](Appunti%20Normalizzazione%20—%201NF,%202NF,%203NF,%20BCNF.md)
+
     - [ ]  1NF
     - [ ]  2NF
     - [ ]  3NF
     - [ ]  Boyce-Codd (BCNF)
 - 10 giu (mer) — DBMS MySQL
+
     [Appunti: DBMS & DB Distribuiti](Appunti%20DBMS%20&%20DB%20Distribuiti.md)
+
     - [ ]  DDL · DML · DCL
     - [ ]  Query nidificate
     - [ ]  Viste
     - [ ]  Cenni a trigger
 - 11 giu (gio) — PDO + Sicurezza + DB distribuiti + Big data giornata densa
+
     [Appunti: DBMS & DB Distribuiti](Appunti%20DBMS%20&%20DB%20Distribuiti.md)
+
     - [ ]  Interfacciamento DBMS con libreria PDO
     - [ ]  Autenticazione attraverso login
     - [ ]  Sicurezza dei dati

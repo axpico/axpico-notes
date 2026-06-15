@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4a01766dcbb63b7a",
+        "id": "d3198677c31a8261",
         "type": "tabs",
         "children": [
           {
-            "id": "03af2f11e44209fa",
+            "id": "7a5ec36893ba62bb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
-                "mode": "source",
+                "file": "Piano di Studio — Maturità 2026/Sistemi.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF"
+              "title": "Sistemi"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
+                "file": "Piano di Studio — Maturità 2026/Informatica/Appunti DBMS & DB Distribuiti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF"
+              "title": "Backlinks for Appunti DBMS & DB Distribuiti"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
+                "file": "Piano di Studio — Maturità 2026/Informatica/Appunti DBMS & DB Distribuiti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF"
+              "title": "Outgoing links from Appunti DBMS & DB Distribuiti"
             }
           },
           {
@@ -166,16 +166,6 @@
             }
           },
           {
-            "id": "5d8ad56d8c9c79f1",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
             "id": "a4a367f756b05e11",
             "type": "leaf",
             "state": {
@@ -184,9 +174,29 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "5565b038db07ac30",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
+            }
+          },
+          {
+            "id": "1b3e28835abd32a7",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -207,30 +217,38 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "03af2f11e44209fa",
+  "active": "7a5ec36893ba62bb",
   "lastOpenFiles": [
+    "Piano di Studio — Maturità 2026/Informatica/Appunti DBMS & DB Distribuiti.md",
     "Piano di Studio — Maturità 2026/Informatica.md",
+    "Piano di Studio — Maturità 2026/Italiano.md",
+    "Piano di Studio — Maturità 2026/Sistemi.md",
     "Piano di Studio — Maturità 2026.md",
+    "Piano di Studio — Maturità 2026/Informatica/Appunti DBMS & DB Distribuiti.md.tmp.89406.6b5382ff3996",
+    "Piano di Studio — Maturità 2026/Img/query_ddbms.svg",
+    "Piano di Studio — Maturità 2026/Img/two_phase_commit.svg",
+    "Piano di Studio — Maturità 2026/Img/frammentazione_db.svg",
+    "Piano di Studio — Maturità 2026/Img/ciclo_query.svg",
+    "Piano di Studio — Maturità 2026/Img/architettura_dbms.svg",
+    "Piano di Studio — Maturità 2026/Img",
+    "Piano di Studio — Maturità 2026/Informatica/Vincoli, Viste e Ristrutturazione — Progettazione.md",
+    "Piano di Studio — Maturità 2026/Informatica/Progettazione Concettuale.md",
+    "Untitled.base",
+    "Untitled Kanban 1.md",
+    "Untitled Kanban.md",
+    "Piano di Studio — Maturità 2026/Sistemi.md.tmp.93213.c3cfb8b1cac0",
+    "Piano di Studio — Maturità 2026/Informatica.md.tmp.93213.7d62b734fab9",
     "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
+    "Piano di Studio — Maturità 2026/Italiano/Fine '800 — Positivismo, Naturalismo, Realismo.md.tmp.93213.5611ebc1774a",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti Firewall · ACL · Proxy · DMZ · Port Forw.md.tmp.93213.97fa4fcfe48d",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti DNS · SMTP · POP3 · ICMP · FTP.md.tmp.93213.4943fe036eb6",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti Architettura Client-Server, HTTP, URI U.md.tmp.93213.7813610ae871",
+    "Piano di Studio — Maturità 2026.md.tmp.93213.4c837487416f",
     "Progettazione Concettuale 37c2b96c97f581ef814ec358325f8630.md",
     "Progettazione Logica 37c2b96c97f581089651ff08719d6281.md",
     "Piano di Studio — Maturità 2026/Italiano/Primo Levi.md",
-    "Piano di Studio — Maturità 2026/Informatica/Vincoli, Viste e Ristrutturazione — Progettazione.md.tmp.80654.354215b66930",
-    "Piano di Studio — Maturità 2026/Informatica/Progettazione Logica.md.tmp.80654.0f3a7bf800e1",
-    "Piano di Studio — Maturità 2026/Informatica/Progettazione Concettuale.md.tmp.80654.9f771d38480a",
-    "Piano di Studio — Maturità 2026/Italiano/Giovanni Verga.md.tmp.80654.a8b190169a35",
-    "Piano di Studio — Maturità 2026/Italiano/Gabriele D'Annunzio.md.tmp.80654.5bf1ddc252e4",
-    "Piano di Studio — Maturità 2026/Italiano/Fine '800 — Positivismo, Naturalismo, Realismo.md.tmp.80654.4f18c7b6e156",
-    "Piano di Studio — Maturità 2026/Italiano/Decadentismo e Simbolismo Francese.md.tmp.80654.4d8acfa6217f",
-    "Piano di Studio — Maturità 2026/Italiano.md.tmp.80654.81f8853dfdc3",
-    "Piano di Studio — Maturità 2026.md.tmp.80654.4f186cee7206",
-    "Piano di Studio — Maturità 2026.md.tmp.80654.d3fa8687d589",
     "University Hub.md",
-    "Piano di Studio — Maturità 2026/Informatica/Vincoli, Viste e Ristrutturazione — Progettazione.md",
     "Piano di Studio — Maturità 2026/Informatica/Progettazione Logica.md",
-    "Piano di Studio — Maturità 2026/Informatica/Progettazione Concettuale.md",
-    "Piano di Studio — Maturità 2026/Sistemi.md",
-    "Piano di Studio — Maturità 2026/Italiano.md",
     "Piano di Studio — Maturità 2026/Informatica/Appunti Archivi Non Sequenziali — Relative, Hash, B-alberi.md",
     "📅 Piano di Studio — Maturità 2026/💻 Informatica/Vincoli, Viste e Ristrutturazione — Progettazione.md",
     "University Hub/Templates 3362b96c97f5813089c6ffeba7d3fa1f.md",
@@ -240,10 +258,6 @@
     "University Hub/Resources 3362b96c97f581f98679c9e272c651a6.md",
     "University Hub/Assignments 3362b96c97f581f999e5c55a7e093aca.md",
     "University Hub/Templates/Study Group Notes Template 3362b96c97f58115a4cbf81eb6e3c8aa.md",
-    "University Hub/Templates/Lecture Notes Template 3362b96c97f5817e8ea2fdb8de1ee97d.md",
-    "University Hub/Templates/Lab Report Template 3362b96c97f581b1b7d3e190d378c60a.md",
-    "University Hub/Templates/Exam Study Guide Template 3362b96c97f581dbaa2bc964c3ecd2e4.md",
-    "University Hub/Templates/Essay Report Template 3362b96c97f581e9ab25c8ed9d35d47f.md",
-    "University Hub/Templates/Book Paper Summary Template 3362b96c97f58123ae19d77b7731cf01.md"
+    "University Hub/Templates/Lecture Notes Template 3362b96c97f5817e8ea2fdb8de1ee97d.md"
   ]
 }

@@ -1,5 +1,9 @@
+Appunti di sistemi e reti — Maturità 2026.
+
 > Ogni pagina copre un argomento del programma. Naviga in sequenza o salta dove serve.
+
 ---
+
 ## Moduli
 
 [Appunti: Classificazione delle Reti](Appunti%20Classificazione%20delle%20Reti.md)
@@ -17,3 +21,7 @@
 [Appunti: IPSec · TLS/SSL · HTTPS](Appunti%20IPSec%20·%20TLS%20SSL%20·%20HTTPS.md)
 
 ---
+
+## Link utili
+
+[Piano di Studio — Maturità 2026](../Piano%20di%20Studio%20—%20Maturità%202026.md)
