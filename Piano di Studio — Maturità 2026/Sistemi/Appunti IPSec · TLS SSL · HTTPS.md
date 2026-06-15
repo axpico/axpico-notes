@@ -480,4 +480,4 @@ Livello 1 — Fisico           [cavi, onde radio]
 
 ---
 
-> **Collegamento con altri argomenti**: Crittografia simmetrica/asimmetrica/RSA — 16 giu | Firewall e DMZ — 17 giu | CIA e HTTPS — 15 giu | DNS over HTTPS — 14 giu
+> **Collegamento con altri argomenti**: VPN, tunneling e protocolli — [[Appunti VPN — Tipologie, Tunneling, Protocolli]] | Crittografia simmetrica/asimmetrica/RSA — 16 giu | Firewall e DMZ — 17 giu | CIA e HTTPS — 15 giu | DNS over HTTPS — 14 giu

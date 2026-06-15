@@ -196,7 +196,7 @@
     - [ ]  Firma digitale · Certificati digitali · Server AAA (pp. 160–178)
 - 17 giu (mer) — Sistemi: Sicurezza perimetrale + VPN · RIPASSO FINALE
 
-    [Appunti: Firewall · ACL · Proxy · DMZ · Port Forwarding](Appunti%20Firewall%20·%20ACL%20·%20Proxy%20·%20DMZ%20·%20Port%20Forw.md) | [Appunti: IPSec · TLS/SSL · HTTPS](Appunti%20IPSec%20·%20TLS%20SSL%20·%20HTTPS.md)
+    [Appunti: Firewall · ACL · Proxy · DMZ · Port Forwarding](Appunti%20Firewall%20·%20ACL%20·%20Proxy%20·%20DMZ%20·%20Port%20Forw.md) | [Appunti: IPSec · TLS/SSL · HTTPS](Appunti%20IPSec%20·%20TLS%20SSL%20·%20HTTPS.md) | [Appunti: VPN — Tipologie, Tunneling e Protocolli](Appunti%20VPN%20—%20Tipologie,%20Tunneling,%20Protocolli.md)
 
     - [ ]  Firewall · ACL · Proxy server · DMZ · Port forwarding (pp. 200–220)
     - [ ]  VPN: site-to-site · personal · secure · trusted

@@ -407,4 +407,4 @@ Standard per LAN wireless. Gestisce il mezzo condiviso tramite **CSMA/CA** (Coll
 
 ---
 
-> **Collegamento con altri argomenti**: questa pagina è propedeutica al livello di trasporto (TCP/UDP — 12 giu), al livello applicazione (HTTP, DNS — 13 giu), e alla cybersecurity (15 giu).
+> **Collegamento con altri argomenti**: questa pagina è propedeutica al livello di trasporto (TCP/UDP — 12 giu), al livello applicazione (HTTP, DNS — 13 giu), e alla cybersecurity (15 giu). Vedi anche le reti private virtuali: [[Appunti VPN — Tipologie, Tunneling, Protocolli]].

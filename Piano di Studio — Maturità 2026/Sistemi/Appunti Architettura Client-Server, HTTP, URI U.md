@@ -365,4 +365,4 @@ Il primo sito web è ancora online: [http://info.cern.ch](http://info.cern.ch)
 
 ---
 
-> **Collegamento con altri argomenti**: DNS, SMTP, POP3, ICMP, FTP — 14 giu | Cybersecurity e HTTPS — 15 giu | Cookie e sessioni → Informatica (già studiato)
+> **Collegamento con altri argomenti**: DNS, SMTP, POP3, ICMP, FTP — 14 giu | Cybersecurity e HTTPS — 15 giu | VPN (tunnel sicuro per HTTP/app) — [[Appunti VPN — Tipologie, Tunneling, Protocolli]] | Cookie e sessioni → Informatica (già studiato)

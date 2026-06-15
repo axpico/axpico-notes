@@ -20,6 +20,8 @@ Appunti di sistemi e reti — Maturità 2026.
 
 [Appunti: IPSec · TLS/SSL · HTTPS](Appunti%20IPSec%20·%20TLS%20SSL%20·%20HTTPS.md)
 
+[Appunti: VPN — Tipologie, Tunneling e Protocolli](Appunti%20VPN%20—%20Tipologie,%20Tunneling,%20Protocolli.md)
+
 ---
 
 ## Link utili

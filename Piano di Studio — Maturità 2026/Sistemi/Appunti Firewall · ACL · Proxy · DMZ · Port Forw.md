@@ -498,4 +498,4 @@ I router home hanno spesso un'opzione chiamata **"DMZ host"** (non confondere co
 
 ---
 
-> **Collegamento con altri argomenti**: CIA e attacchi — 15 giu | Crittografia e TLS — 16 giu | VPN, IPSec, HTTPS — 17 giu (prossimo)
+> **Collegamento con altri argomenti**: CIA e attacchi — 15 giu | Crittografia e TLS — 16 giu | VPN, tunneling e NAT traversal — [[Appunti VPN — Tipologie, Tunneling, Protocolli]] | IPSec, HTTPS — 17 giu

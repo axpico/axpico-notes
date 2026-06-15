@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Piano di Studio — Maturità 2026/Sistemi.md",
-                "mode": "preview",
+                "file": "Piano di Studio — Maturità 2026/Sistemi/Appunti VPN — Tipologie, Tunneling, Protocolli.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sistemi"
+              "title": "Appunti VPN — Tipologie, Tunneling, Protocolli"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -219,31 +220,32 @@
   },
   "active": "7a5ec36893ba62bb",
   "lastOpenFiles": [
+    "Piano di Studio — Maturità 2026/Sistemi.md",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti VPN — Tipologie, Tunneling, Protocolli.md",
+    "Piano di Studio — Maturità 2026.md",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti DNS · SMTP · POP3 · ICMP · FTP.md.tmp.2624.555918d88c2d",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti Classificazione delle Reti.md.tmp.2624.06405cec2db2",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti Architettura Client-Server, HTTP, URI U.md.tmp.2624.2dab5697b577",
+    "Piano di Studio — Maturità 2026.md.tmp.2624.e5d67dd489e3",
+    "Piano di Studio — Maturità 2026.md.tmp.2624.49ae9fdeb327",
+    "Piano di Studio — Maturità 2026/Sistemi.md.tmp.2624.8b4e9bb094ba",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti CIA · Attacchi e Minacce · Malware · Te.md.tmp.2624.6be6b8fb8bdd",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti Firewall · ACL · Proxy · DMZ · Port Forw.md.tmp.2624.56dfe9729e4d",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti Crittografia Simmetrica, Asimmetrica e R.md.tmp.2624.49184f8fbc3f",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti IPSec · TLS SSL · HTTPS.md.tmp.2624.09be5e8a9b3d",
     "Piano di Studio — Maturità 2026/Informatica/Appunti DBMS & DB Distribuiti.md",
     "Piano di Studio — Maturità 2026/Informatica.md",
     "Piano di Studio — Maturità 2026/Italiano.md",
-    "Piano di Studio — Maturità 2026/Sistemi.md",
-    "Piano di Studio — Maturità 2026.md",
-    "Piano di Studio — Maturità 2026/Informatica/Appunti DBMS & DB Distribuiti.md.tmp.89406.6b5382ff3996",
     "Piano di Studio — Maturità 2026/Img/query_ddbms.svg",
     "Piano di Studio — Maturità 2026/Img/two_phase_commit.svg",
     "Piano di Studio — Maturità 2026/Img/frammentazione_db.svg",
     "Piano di Studio — Maturità 2026/Img/ciclo_query.svg",
     "Piano di Studio — Maturità 2026/Img/architettura_dbms.svg",
-    "Piano di Studio — Maturità 2026/Img",
     "Piano di Studio — Maturità 2026/Informatica/Vincoli, Viste e Ristrutturazione — Progettazione.md",
     "Piano di Studio — Maturità 2026/Informatica/Progettazione Concettuale.md",
-    "Untitled.base",
     "Untitled Kanban 1.md",
     "Untitled Kanban.md",
-    "Piano di Studio — Maturità 2026/Sistemi.md.tmp.93213.c3cfb8b1cac0",
-    "Piano di Studio — Maturità 2026/Informatica.md.tmp.93213.7d62b734fab9",
     "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
-    "Piano di Studio — Maturità 2026/Italiano/Fine '800 — Positivismo, Naturalismo, Realismo.md.tmp.93213.5611ebc1774a",
-    "Piano di Studio — Maturità 2026/Sistemi/Appunti Firewall · ACL · Proxy · DMZ · Port Forw.md.tmp.93213.97fa4fcfe48d",
-    "Piano di Studio — Maturità 2026/Sistemi/Appunti DNS · SMTP · POP3 · ICMP · FTP.md.tmp.93213.4943fe036eb6",
-    "Piano di Studio — Maturità 2026/Sistemi/Appunti Architettura Client-Server, HTTP, URI U.md.tmp.93213.7813610ae871",
-    "Piano di Studio — Maturità 2026.md.tmp.93213.4c837487416f",
     "Progettazione Concettuale 37c2b96c97f581ef814ec358325f8630.md",
     "Progettazione Logica 37c2b96c97f581089651ff08719d6281.md",
     "Piano di Studio — Maturità 2026/Italiano/Primo Levi.md",
@@ -257,7 +259,6 @@
     "University Hub/Courses 3362b96c97f5810ea185f1d29e08302e.md",
     "University Hub/Resources 3362b96c97f581f98679c9e272c651a6.md",
     "University Hub/Assignments 3362b96c97f581f999e5c55a7e093aca.md",
-    "University Hub/Templates/Study Group Notes Template 3362b96c97f58115a4cbf81eb6e3c8aa.md",
-    "University Hub/Templates/Lecture Notes Template 3362b96c97f5817e8ea2fdb8de1ee97d.md"
+    "University Hub/Templates/Study Group Notes Template 3362b96c97f58115a4cbf81eb6e3c8aa.md"
   ]
 }

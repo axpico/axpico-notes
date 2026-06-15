@@ -400,4 +400,4 @@ Alternativa moderna a RSA, basata sulla matematica delle **curve ellittiche** su
 
 ---
 
-> **Collegamento con altri argomenti**: TLS/HTTPS — 13 giu | Firma digitale e certificati — 16 giu (prossimo) | CIA e attacchi — 15 giu
+> **Collegamento con altri argomenti**: VPN (cifratura del tunnel) — [[Appunti VPN — Tipologie, Tunneling, Protocolli]] | TLS/HTTPS — 13 giu | Firma digitale e certificati — 16 giu (prossimo) | CIA e attacchi — 15 giu
