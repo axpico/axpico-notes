@@ -27,6 +27,8 @@ CON VPN — tunnel cifrato gateway-to-gateway
                            per chi intercetta)
 ```
 
+![[vpn_tunnel_concept.svg|697]]
+
 Una VPN fornisce le tre garanzie di sicurezza (vedi [[Appunti CIA · Attacchi e Minacce · Malware · Te]]):
 
 - **Confidenzialità**: il traffico è cifrato (es. AES) → chi intercetta vede solo dati casuali
@@ -50,6 +52,8 @@ Dopo incapsulamento + cifratura nel tunnel:
      └─────── visibile su Internet ──────┘ └──── illeggibile ────┘
 ```
 
+![[vpn_tunneling_encapsulation.svg|697]]
+
 - I router di Internet instradano in base al **nuovo header esterno** (IP pubblici dei gateway)
 - Il pacchetto interno con gli indirizzi privati è **nascosto e cifrato**
 - Arrivato a destinazione, il gateway **decapsula** e **decifra**, ottenendo il pacchetto originale che inoltra nella LAN
@@ -59,6 +63,8 @@ Dopo incapsulamento + cifratura nel tunnel:
 ---
 
 # Tipologie di VPN (per architettura)
+
+![[vpn_site_to_site_vs_client_v4.svg|697]]
 
 ## 1. VPN Site-to-Site (rete-rete)
 
@@ -211,6 +217,8 @@ Dopo `wg-quick up`, il laptop ha un IP `10.8.0.7` nella rete aziendale e tutto i
 # Full Tunnel vs Split Tunnel
 
 Decisione importante: **quale traffico** del client deve passare nella VPN?
+
+![[vpn_full_vs_split_tunnel.svg|697]]
 
 ## Full Tunnel — tutto nella VPN
 

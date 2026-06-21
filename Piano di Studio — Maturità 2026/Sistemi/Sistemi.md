@@ -26,4 +26,4 @@ Appunti di sistemi e reti — Maturità 2026.
 
 ## Link utili
 
-[Piano di Studio — Maturità 2026](../Piano%20di%20Studio%20—%20Maturità%202026.md)
+[Piano di Studio — Maturità 2026](Piano%20di%20Studio%20—%20Maturità%202026.md)

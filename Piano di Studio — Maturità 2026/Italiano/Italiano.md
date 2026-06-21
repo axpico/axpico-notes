@@ -1,9 +1,3 @@
-Appunti di letteratura italiana — Maturità 2026.
-
-> Ogni pagina copre un autore o un movimento. Naviga in sequenza o salta dove serve.
-
----
-
 ## Moduli
 
 [Fine '800 — Positivismo, Naturalismo, Realismo](Fine%20'800%20—%20Positivismo,%20Naturalismo,%20Realismo.md)
@@ -38,4 +32,4 @@ Appunti di letteratura italiana — Maturità 2026.
 
 ## Link utili
 
-[Piano di Studio — Maturità 2026](../Piano%20di%20Studio%20—%20Maturità%202026.md)
+[Piano di Studio — Maturità 2026](Piano%20di%20Studio%20—%20Maturità%202026.md)

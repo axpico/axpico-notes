@@ -1,11 +1,10 @@
 ## Vita
 
-|  |  |
-| --- | --- |
-| **Nascita** | 1840, Catania (Sicilia) |
-| **Morte** | 1922 |
+| **Nascita**  | 1840, Catania (Sicilia)                                  |
+| ------------ | -------------------------------------------------------- |
+| **Morte**    | 1922                                                     |
 | **Famiglia** | Proprietari terrieri, origini nobili (non più il titolo) |
-| **Politica** | Liberale → poi meno ideologico |
+| **Politica** | Liberale → poi meno ideologico                           |
 
 ---
 

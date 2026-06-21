@@ -20,8 +20,10 @@ Appunti di informatica — Maturità 2026.
 
 [Appunti: DBMS & DB Distribuiti](Appunti%20DBMS%20&%20DB%20Distribuiti.md)
 
+[[Appunti SQL]]
+
 ---
 
 ## Link utili
 
-[Piano di Studio — Maturità 2026](../Piano%20di%20Studio%20—%20Maturità%202026.md)
+[Piano di Studio — Maturità 2026](Piano%20di%20Studio%20—%20Maturità%202026.md)

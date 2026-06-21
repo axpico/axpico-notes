@@ -199,7 +199,7 @@ access-list 110 deny ip any any
 
 ## Cos'è
 
-Un **proxy** è un intermediario che si interpone tra i client della rete interna e i server esterni. I client non comunicano direttamente con i server: inviano le richieste al proxy, che le inoltro per loro conto.
+Un **proxy** è un intermediario che si interpone tra i client della rete interna e i server esterni. I client non comunicano direttamente con i server: inviano le richieste al proxy, che le inoltro Qper loro conto.
 
 ```
 [Client interno] ──► [Proxy] ──► [Server esterno]

@@ -147,12 +147,12 @@ In pratica frammentazione e allocazione sono due fasi collegate: prima si decide
 
 Il DBMS distribuito deve nascondere all'utente la complessità della distribuzione:
 
-|Livello|Cosa nasconde|
-|---|---|
-|**Trasparenza di frammentazione**|L'utente non sa che i dati sono divisi in frammenti|
-|**Trasparenza di replicazione**|L'utente non sa che esistono copie multiple dei dati|
-|**Trasparenza di locazione**|L'utente non sa su quale nodo fisico si trovano i dati|
-|**Trasparenza di esecuzione (transazionale)**|L'utente non sa che la propria query/transazione viene eseguita coinvolgendo più nodi|
+| Livello                                       | Cosa nasconde                                                                         |
+| --------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Trasparenza di frammentazione**             | L'utente non sa che i dati sono divisi in frammenti                                   |
+| **Trasparenza di replicazione**               | L'utente non sa che esistono copie multiple dei dati                                  |
+| **Trasparenza di locazione**                  | L'utente non sa su quale nodo fisico si trovano i dati                                |
+| **Trasparenza di esecuzione (transazionale)** | L'utente non sa che la propria query/transazione viene eseguita coinvolgendo più nodi |
 
 ### 2.5 Transazioni distribuite e Two-Phase Commit
 
@@ -178,15 +178,15 @@ Se il coordinatore si guasta dopo aver raccolto i voti ma prima di inviare l'esi
 
 I DBMS distribuiti gestiscono due grandi categorie di carichi di lavoro, con obiettivi opposti:
 
-||**OLTP**|**OLAP**|
-|---|---|---|
-|Nome esteso|Online Transaction Processing|Online Analytical Processing|
-|Scopo|Gestire operazioni quotidiane (inserimenti, aggiornamenti, letture puntuali)|Analizzare grandi volumi di dati storici per decisioni aziendali|
-|Tipo di query|Semplici, brevi, molte in parallelo|Complesse, lunghe, pochi utenti|
-|Dati coinvolti|Poche righe per volta|Milioni di righe (aggregazioni, tendenze)|
-|Esempi|Prenotazione biglietto, pagamento POS, login utente|Report vendite annuali, analisi trend, Data Mining|
-|DB tipico|DB relazionale normalizzato|Data Warehouse, DB denormalizzato|
-|Priorità|Velocità, integrità, ACID|Throughput lettura, prestazioni aggregazioni|
+| **OLTP**       | **OLAP**                                                                     |                                                                  |
+| -------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Nome esteso    | Online Transaction Processing                                                | Online Analytical Processing                                     |
+| Scopo          | Gestire operazioni quotidiane (inserimenti, aggiornamenti, letture puntuali) | Analizzare grandi volumi di dati storici per decisioni aziendali |
+| Tipo di query  | Semplici, brevi, molte in parallelo                                          | Complesse, lunghe, pochi utenti                                  |
+| Dati coinvolti | Poche righe per volta                                                        | Milioni di righe (aggregazioni, tendenze)                        |
+| Esempi         | Prenotazione biglietto, pagamento POS, login utente                          | Report vendite annuali, analisi trend, Data Mining               |
+| DB tipico      | DB relazionale normalizzato                                                  | Data Warehouse, DB denormalizzato                                |
+| Priorità       | Velocità, integrità, ACID                                                    | Throughput lettura, prestazioni aggregazioni                     |
 
 > In un DDBMS è comune (ma non obbligatorio) che l'**OLTP** sia distribuito sui vari nodi per garantire disponibilità e velocità locale, mentre l'**OLAP** sia centralizzato in un Data Warehouse alimentato dai nodi OLTP tramite processi ETL. Questa è una scelta architetturale tipica, non un requisito intrinseco del modello distribuito.
 
@@ -210,7 +210,7 @@ Le operazioni vengono **accumulate** e processate in blocco in un momento succes
 - Esempi: calcolo stipendi mensili, generazione estratti conto, backup notturno, ETL verso il Data Warehouse
 - Richiede alto throughput, non bassa latenza
 
-||**Online**|**Offline (Batch)**|
+|**Online**|**Offline (Batch)**|
 |---|---|---|
 |Tempistica|Immediata, real-time|Differita, pianificata|
 |Interazione utente|Diretta|Nessuna durante l'esecuzione|
