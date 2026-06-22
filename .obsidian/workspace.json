@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "25ef6e0e13a65888",
+        "id": "29b5edc55135138f",
         "type": "tabs",
         "children": [
           {
-            "id": "f59b6a8942b6dab6",
+            "id": "7523185434f6675f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ]
@@ -213,7 +217,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f59b6a8942b6dab6",
+  "active": "7523185434f6675f",
   "lastOpenFiles": [
     "Piano di Studio — Maturità 2026/Piano di Studio — Maturità 2026.md",
     "Piano di Studio — Maturità 2026/Inglese/Inglese.md",
