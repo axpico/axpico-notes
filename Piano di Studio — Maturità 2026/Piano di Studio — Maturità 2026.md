@@ -203,4 +203,4 @@
     - [ ]  IPsec · TLS/SSL · HTTPS (pp. 234–252)
     - [ ]  Ripasso generale trasversale
 
-[Sistemi](Sistemi.md)
+[Sistemi](Sistemi.md) | [[Inglese]]
