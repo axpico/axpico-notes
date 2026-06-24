@@ -27,9 +27,9 @@
 
     [Appunti: Italo Svevo](Italo%20Svevo.md)
 
-    - [ ]  Una vita
-    - [ ]  Senilità
-    - [ ]  La coscienza di Zeno
+    - [x]  Una vita
+    - [x]  Senilità
+    - [x]  La coscienza di Zeno
 - 27 mag (mer) — Freud + Dostoevskij + Kafka
 
     [Appunti: Freud](Sigmund%20Freud%20e%20la%20Psicanalisi.md) | [Appunti: Dostoevskij](Fëdor%20Dostoevskij.md) | [Appunti: Kafka](Franz%20Kafka.md)

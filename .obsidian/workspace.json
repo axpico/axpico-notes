@@ -11,10 +11,14 @@
             "id": "3df673d1b6d56742",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "Piano di Studio — Maturità 2026/Italiano/Giovanni Pascoli.md",
+                "bFile": "Piano di Studio — Maturità 2026/Italiano/Giovanni Pascoli.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: Giovanni Pascoli  (Working Tree)"
             }
           }
         ]
@@ -215,9 +219,11 @@
   },
   "active": "a4a367f756b05e11",
   "lastOpenFiles": [
+    "Piano di Studio — Maturità 2026/Italiano/Giovanni Pascoli.md",
     "Piano di Studio — Maturità 2026/Piano di Studio — Maturità 2026.md",
-    "Piano di Studio — Maturità 2026/Inglese/Inglese.md",
+    "Piano di Studio — Maturità 2026/Italiano/Italo Svevo.md",
     "Piano di Studio — Maturità 2026/Sistemi/Sistemi.md",
+    "Piano di Studio — Maturità 2026/Inglese/Inglese.md",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti VPN — Tipologie, Tunneling, Protocolli.md",
     "Piano di Studio — Maturità 2026/Inglese/Internet's Protocols — Unit 10, Text 4.md",
     "Piano di Studio — Maturità 2026/Inglese/Network Standards and Protocols — Section 4, Unit 10, Text 3.md",
@@ -251,13 +257,11 @@
     "Piano di Studio — Maturità 2026/Italiano/Ciclo dei vinti.md",
     "Piano di Studio — Maturità 2026/Italiano/Giovanni Verga.md",
     "Piano di Studio — Maturità 2026/Italiano/Primo Levi.md",
-    "Piano di Studio — Maturità 2026/Sistemi/Appunti Firewall · ACL · Proxy · DMZ · Port Forw.md",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti VPN — Tipologie, Tunneling, Protocolli.md.tmp.17509.526300392cf1",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti VPN — Tipologie, Tunneling, Protocolli.md.tmp.17509.64f359f23463",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti VPN — Tipologie, Tunneling, Protocolli.md.tmp.17509.71313a1ed895",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti VPN — Tipologie, Tunneling, Protocolli.md.tmp.17509.73f9d1c378de",
     "Piano di Studio — Maturità 2026/Img/Appunti VPN — Tipologie, Tunneling, Protocolli",
-    "Piano di Studio — Maturità 2026/Informatica/Appunti Archivi Non Sequenziali — Relative, Hash, B-alberi.md",
     "Piano di Studio — Maturità 2026/Img/Appunti DBMS & DB Distribuiti",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti DNS · SMTP · POP3 · ICMP · FTP.md.tmp.2624.555918d88c2d",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti Classificazione delle Reti.md.tmp.2624.06405cec2db2"

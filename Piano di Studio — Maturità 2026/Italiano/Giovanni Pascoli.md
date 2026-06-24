@@ -1,10 +1,9 @@
 ## Vita
 
-|  |  |
-| --- | --- |
-| **Nascita** | 13 dicembre 1855, San Mauro di Romagna |
-| **Morte** | 6 aprile 1912 (cancro allo stomaco) |
-| **Famiglia** | Agiata, 4° figlio di 10 |
+| **Nascita**  | 13 dicembre 1855, San Mauro di Romagna |
+| ------------ | -------------------------------------- |
+| **Morte**    | 6 aprile 1912 (cancro allo stomaco)    |
+| **Famiglia** | Agiata, 4° figlio di 10                |
 
 ### La catena dei lutti
 
