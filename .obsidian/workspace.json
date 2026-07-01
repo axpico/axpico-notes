@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "650fdd034de04979",
+        "id": "32b1466bd4288df4",
         "type": "tabs",
         "children": [
           {
-            "id": "3df673d1b6d56742",
+            "id": "1fc8e808fd4164ee",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "Piano di Studio — Maturità 2026/Italiano/Giovanni Pascoli.md",
-                "bFile": "Piano di Studio — Maturità 2026/Italiano/Giovanni Pascoli.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: Giovanni Pascoli  (Working Tree)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -53,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "progettazione logica",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -217,24 +213,31 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "41c9241263f38e27",
   "lastOpenFiles": [
-    "Piano di Studio — Maturità 2026/Italiano/Giovanni Pascoli.md",
-    "Piano di Studio — Maturità 2026/Piano di Studio — Maturità 2026.md",
-    "Piano di Studio — Maturità 2026/Italiano/Italo Svevo.md",
-    "Piano di Studio — Maturità 2026/Sistemi/Sistemi.md",
-    "Piano di Studio — Maturità 2026/Inglese/Inglese.md",
-    "Piano di Studio — Maturità 2026/Sistemi/Appunti VPN — Tipologie, Tunneling, Protocolli.md",
     "Piano di Studio — Maturità 2026/Inglese/Internet's Protocols — Unit 10, Text 4.md",
     "Piano di Studio — Maturità 2026/Inglese/Network Standards and Protocols — Section 4, Unit 10, Text 3.md",
+    "Piano di Studio — Maturità 2026/Inglese/Network Topologies Explained — Section 4, Unit 10, Text 2.md",
+    "Piano di Studio — Maturità 2026/Inglese/Optical Fibre — The Way of the Future.md",
+    "Piano di Studio — Maturità 2026/Inglese/The Touchscreen Revolution — Unit 2, Text 3.md",
+    "Piano di Studio — Maturità 2026/Inglese/Inglese.md",
+    "Piano di Studio — Maturità 2026/Inglese/An Intro to the Database — Section 3, Unit 9, Text 4.md",
+    "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
+    "Piano di Studio — Maturità 2026/Informatica/Informatica.md",
+    "Piano di Studio — Maturità 2026/Informatica/Progettazione Concettuale.md",
+    "Piano di Studio — Maturità 2026/Informatica/Appunti DBMS & DB Distribuiti.md",
+    "Piano di Studio — Maturità 2026/Informatica/Progettazione Logica.md",
+    "Piano di Studio — Maturità 2026/Informatica/Vincoli, Viste e Ristrutturazione — Progettazione.md",
+    "Piano di Studio — Maturità 2026/Italiano/Giovanni Pascoli.md",
+    "Piano di Studio — Maturità 2026/Piano di Studio — Maturità 2026.md",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti VPN — Tipologie, Tunneling, Protocolli.md",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti Crittografia Simmetrica, Asimmetrica e R.md",
+    "Piano di Studio — Maturità 2026/Italiano/Italo Svevo.md",
+    "Piano di Studio — Maturità 2026/Sistemi/Sistemi.md",
     "Piano di Studio — Maturità 2026/Img/Inglese/internet_protocols_study.svg",
     "Piano di Studio — Maturità 2026/Img/Inglese/osi_model_study.svg",
-    "Piano di Studio — Maturità 2026/Inglese/An Intro to the Database — Section 3, Unit 9, Text 4.md",
     "Piano di Studio — Maturità 2026/Img/Inglese/database_intro_study.svg",
-    "Piano di Studio — Maturità 2026/Inglese/Optical Fibre — The Way of the Future.md",
     "Piano di Studio — Maturità 2026/Inglese/The Dark Side of the Internet — Unit 3, Text 1.md",
-    "Piano di Studio — Maturità 2026/Inglese/Network Topologies Explained — Section 4, Unit 10, Text 2.md",
-    "Piano di Studio — Maturità 2026/Inglese/The Touchscreen Revolution — Unit 2, Text 3.md",
     "Piano di Studio — Maturità 2026/Img/Inglese/optical_fibre_study.svg",
     "Piano di Studio — Maturità 2026/Img/Inglese/network_topologies_study.svg",
     "Piano di Studio — Maturità 2026/Inglese/Fake News — Text 3.md",
@@ -248,15 +251,8 @@
     "Piano di Studio — Maturità 2026/Inglese",
     "Piano di Studio — Maturità 2026/Italiano/Fine '800 — Positivismo, Naturalismo, Realismo.md",
     "Piano di Studio — Maturità 2026/Italiano/Franz Kafka.md",
-    "Piano di Studio — Maturità 2026/Informatica/Appunti DBMS & DB Distribuiti.md",
     "Piano di Studio — Maturità 2026/Informatica/Appunti SQL.md",
-    "Piano di Studio — Maturità 2026/Informatica/Informatica.md",
     "Piano di Studio — Maturità 2026/Italiano/Decadentismo e Simbolismo Francese.md",
-    "Piano di Studio — Maturità 2026/Italiano/Italiano.md",
-    "test template.md",
-    "Piano di Studio — Maturità 2026/Italiano/Ciclo dei vinti.md",
-    "Piano di Studio — Maturità 2026/Italiano/Giovanni Verga.md",
-    "Piano di Studio — Maturità 2026/Italiano/Primo Levi.md",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti VPN — Tipologie, Tunneling, Protocolli.md.tmp.17509.526300392cf1",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti VPN — Tipologie, Tunneling, Protocolli.md.tmp.17509.64f359f23463",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti VPN — Tipologie, Tunneling, Protocolli.md.tmp.17509.71313a1ed895",

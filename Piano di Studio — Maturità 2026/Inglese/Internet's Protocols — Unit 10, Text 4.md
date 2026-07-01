@@ -20,7 +20,7 @@ This job is handled by two protocols: **TCP** and **IP** — commonly referred t
 
 - Puts each packet into a separate **envelope** with addressing information
 - Tells the Internet (4) **where** to send the data
-- Routers examine the IP envelopes and determine the most **(5) efficient** path
+- Routers examine the IP envelo---pes and determine the most **(5) efficient** path
 
 ---
 
@@ -36,22 +36,6 @@ This job is handled by two protocols: **TCP** and **IP** — commonly referred t
 6. If non-corrupt packets received → TCP **reassembles** them into the original, unified form
 
 ---
-
-## Gap-Fill Answers (Exercise 9)
-
-|Gap|Answer|
-|---|---|
-|(1)|at|
-|(2)|than|
-|(3)|which / this|
-|(4)|where|
-|(5)|most|
-|(6)|out|
-|(7)|during|
-|(8)|There|
-
----
-
 ## IPv4 vs IPv6
 
 |Feature|IPv4|IPv6|
