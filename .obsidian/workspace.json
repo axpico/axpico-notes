@@ -206,13 +206,23 @@
               "icon": "lucide-file-signature",
               "title": "Footnotes"
             }
+          },
+          {
+            "id": "f64e19fb68a6830c",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
         ],
         "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 402
+    "width": 418
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,20 +240,26 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "audio-recorder:Start/stop recording": false,
       "markdown-importer:Open format converter": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false,
+      "smart-lookup:Smart Lookup: Open lookup view": false,
+      "realclaudian:Open Claudian": false
     }
   },
   "active": "a4a367f756b05e11",
   "lastOpenFiles": [
+    "Piano di Studio — Maturità 2026/Italiano/Eugenio Montale.md",
+    "Piano di Studio — Maturità 2026/Piano di Studio — Maturità 2026.md",
+    "POK/Imparare ad imparare/Untitled.md",
     "Piano di Studio — Maturità 2026/Inglese/An Intro to the Database — Section 3, Unit 9, Text 4.md",
     "Untitled.base",
     "Untitled 1.base",
-    "POK/Imparare ad imparare/Untitled.md",
     "Excalidraw/Drawing 2026-08-07 15.48.02.excalidraw.md",
     "Excalidraw/Drawing 2026-08-07 15.48.01.excalidraw.md",
     "Excalidraw/Drawing 2026-08-07 15.47.43.excalidraw.md",
     "Excalidraw",
-    "Piano di Studio — Maturità 2026/Piano di Studio — Maturità 2026.md",
     "POK/Imparare ad imparare/Week 1.md",
     "POK/Imparare ad imparare",
     "POK/Untitled",
