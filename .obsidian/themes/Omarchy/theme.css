@@ -2,10 +2,10 @@
 
 .theme-dark, .theme-light {
   /* Core colors */
-  --background-primary: #1e1e2e;
-  --background-primary-alt: #1e1e2e;
-  --background-secondary: #1e1e2e;
-  --background-secondary-alt: #1e1e2e;
+  --background-primary: #1a1b1e;
+  --background-primary-alt: #1a1b1e;
+  --background-secondary: #1a1b1e;
+  --background-secondary-alt: #1a1b1e;
   --text-normal: #cdd6f4;
 
   /* Selection colors */
