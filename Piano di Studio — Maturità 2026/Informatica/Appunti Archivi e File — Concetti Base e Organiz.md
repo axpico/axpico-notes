@@ -381,4 +381,4 @@ Coinvolgono il file come struttura fisica: **lettura** e **scrittura** di record
 
 ---
 
-> **Collegamento con altri argomenti**: Archivi non sequenziali (hash, b-alberi) — Informatica 3-11 giu | DBMS e SQL — già studiato | PHP e accesso ai dati — 3-5 giu
+> **Collegamento con altri argomenti**: Archivi non sequenziali (hash, b-alberi) — [[Informatica]] 3-11 giu | DBMS e SQL — già studiato | PHP e accesso ai dati — 3-5 giu

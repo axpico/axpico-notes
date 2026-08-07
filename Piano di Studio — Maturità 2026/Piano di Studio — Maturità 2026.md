@@ -1,13 +1,13 @@
 ## ITALIANO — 23 mag / 1 giu
 
-- 23 mag (sab) — Montale + Primo Levi
+- 23 mag (sab) — Montale + [[Primo Levi]]
 
     [Appunti: Eugenio Montale](Eugenio%20Montale.md) | [Appunti: Primo Levi](Primo%20Levi.md)
 
     - [x]  Montale: I limoni · Non chiederci la parola · Meriggiare pallido e assorto
     - [x]  Montale: Spesso il male di vivere · Prima del viaggio · Cigola la carrucola nel pozzo
     - [x]  Montale: Ti libero la fronte dai ghiaccioli · Non recidere forbice · Ho sceso dandoti il braccio
-    - [x]  Primo Levi — Se questo è un uomo
+    - [x]  [[Primo Levi]] — Se questo è un uomo
 - 24 mag (dom) — Ungaretti
 
     [Appunti: Giuseppe Ungaretti](Giuseppe%20Ungaretti.md)
@@ -55,10 +55,10 @@
 
     [Appunti: Decadentismo e Simbolismo Francese](Decadentismo%20e%20Simbolismo%20Francese.md)
 
-    - [ ]  Decadentismo e Simbolismo francese
+    - [ ]  [[Decadentismo e Simbolismo Francese]]
     - [ ]  Verlaine — Languore
     - [ ]  Oscar Wilde — Il ritratto di Dorian Gray
-- 31 mag (dom) — Verga II + Ciclo dei vinti
+- 31 mag (dom) — Verga II + [[Ciclo dei vinti]]
 
     [Appunti: Giovanni Verga](Giovanni%20Verga.md) | [Appunti: Ciclo dei vinti](Ciclo%20dei%20vinti.md)
 
@@ -151,13 +151,13 @@
 
 ## SISTEMI + INGLESE — 12 giu / 17 giu
 
-- 12 giu (ven) — Sistemi: Classificazione reti + Livello trasporto
+- 12 giu (ven) — [[Sistemi]]: Classificazione reti + Livello trasporto
 
     [Appunti: Classificazione delle Reti](Appunti%20Classificazione%20delle%20Reti.md)
 
     - [x]  Classificazione reti — strutturali, servizi, standard tecnologici
     - [ ]  Livelli del protocollo di trasporto (pp. 282–292)
-- 13 giu (sab) — Sistemi: Livello applicazione + Inglese 1–5
+- 13 giu (sab) — [[Sistemi]]: Livello applicazione + [[Inglese]] 1–5
 
     [Appunti: Architettura Client-Server, HTTP, URI/URL e Storia del Web](Appunti%20Architettura%20Client-Server,%20HTTP,%20URI%20U.md)
 
@@ -167,7 +167,7 @@
     - [ ]  The Dark Side of the Internet (38)
     - [ ]  Fake News (42)
     - [ ]  What Are Multi-core Processors (63)
-- 14 giu (dom) — Sistemi: DNS + Email + Inglese 6–10
+- 14 giu (dom) — [[Sistemi]]: DNS + Email + [[Inglese]] 6–10
 
     [Appunti: DNS · SMTP · POP3 · ICMP · FTP](Appunti%20DNS%20·%20SMTP%20·%20POP3%20·%20ICMP%20·%20FTP.md)
 
@@ -177,7 +177,7 @@
     - [ ]  What Is Google Android (109)
     - [ ]  Object Oriented Programming (118)
     - [ ]  Java & JavaScript (126)
-- 15 giu (lun) — Sistemi: Cybersecurity + Inglese 11–15
+- 15 giu (lun) — [[Sistemi]]: Cybersecurity + [[Inglese]] 11–15
 
     [Appunti: CIA · Attacchi e Minacce · Malware · Tecniche di Difesa](Appunti%20CIA%20·%20Attacchi%20e%20Minacce%20·%20Malware%20·%20Te.md)
 
@@ -187,14 +187,14 @@
     - [ ]  Network Standards and Protocols (155)
     - [ ]  Internet Protocols (157)
     - [ ]  Optical Fibre: The Way of the Future (166)
-- 16 giu (mar) — Sistemi: Crittografia
+- 16 giu (mar) — [[Sistemi]]: Crittografia
 
     [Appunti: Crittografia Simmetrica, Asimmetrica e RSA](Appunti%20Crittografia%20Simmetrica,%20Asimmetrica%20e%20R.md)
 
     - [x]  Crittografia simmetrica e asimmetrica · RSA
     - [ ]  Autenticazione · Password · Autenticazione multifattore
     - [ ]  Firma digitale · Certificati digitali · Server AAA (pp. 160–178)
-- 17 giu (mer) — Sistemi: Sicurezza perimetrale + VPN · RIPASSO FINALE
+- 17 giu (mer) — [[Sistemi]]: Sicurezza perimetrale + VPN · RIPASSO FINALE
 
     [Appunti: Firewall · ACL · Proxy · DMZ · Port Forwarding](Appunti%20Firewall%20·%20ACL%20·%20Proxy%20·%20DMZ%20·%20Port%20Forw.md) | [Appunti: IPSec · TLS/SSL · HTTPS](Appunti%20IPSec%20·%20TLS%20SSL%20·%20HTTPS.md) | [Appunti: VPN — Tipologie, Tunneling e Protocolli](Appunti%20VPN%20—%20Tipologie,%20Tunneling,%20Protocolli.md)
 

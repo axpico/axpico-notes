@@ -1,6 +1,6 @@
 ## Perché normalizzare?
 
-La **normalizzazione** è il processo che porta uno schema relazionale a rispettare progressivamente le **forme normali**, eliminando ridondanze e le **anomalie** che ne derivano. È l'ultimo passo della progettazione logica, dopo la traduzione ER → Relazionale.
+La **normalizzazione** è il processo che porta uno schema relazionale a rispettare progressivamente le **forme normali**, eliminando ridondanze e le **anomalie** che ne derivano. È l'ultimo passo della [[Progettazione Logica]], dopo la traduzione ER → Relazionale.
 
 > Decomposizione **senza perdita di informazione** (lossless join): scomponendo una tabella in due o più tabelle più piccole, deve essere sempre possibile ricostruire (via JOIN) esattamente i dati originali.
 

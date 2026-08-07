@@ -384,6 +384,6 @@ PROPEDEUTICO(
 
 ## Collegamento con altri argomenti
 
-- Schema ER (progettazione concettuale) — [Progettazione Concettuale — Schema ER (Parte 1)](Progettazione%20Concettuale.md)
+- Schema ER ([[Progettazione Concettuale]]) — [Progettazione Concettuale — Schema ER (Parte 1)](Progettazione%20Concettuale.md)
 - DBMS & DB Distribuiti — [Appunti: DBMS & DB Distribuiti](Appunti%20DBMS%20&%20DB%20Distribuiti.md)
-- SQL DDL (CREATE TABLE, vincoli FK, PK) — appunti SQL separati
+- SQL DDL (CREATE TABLE, vincoli FK, PK) — [[Appunti SQL]] separati

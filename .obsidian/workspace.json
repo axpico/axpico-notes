@@ -245,14 +245,18 @@
       "smart-connections:Smart Connections: Open connections view": false,
       "smart-connections:Toggle Footer Connections": false,
       "smart-lookup:Smart Lookup: Open lookup view": false,
-      "realclaudian:Open Claudian": false
+      "realclaudian:Open Claudian": false,
+      "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "849dee172d95308e",
   "lastOpenFiles": [
+    "Piano di Studio — Maturità 2026/Informatica/Progettazione Logica.md",
+    "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
+    "POK/Imparare ad imparare/Untitled.md",
+    "Piano di Studio — Maturità 2026/Informatica/Informatica.md",
     "Piano di Studio — Maturità 2026/Italiano/Eugenio Montale.md",
     "Piano di Studio — Maturità 2026/Piano di Studio — Maturità 2026.md",
-    "POK/Imparare ad imparare/Untitled.md",
     "Piano di Studio — Maturità 2026/Inglese/An Intro to the Database — Section 3, Unit 9, Text 4.md",
     "Untitled.base",
     "Untitled 1.base",
@@ -273,11 +277,8 @@
     "Piano di Studio — Maturità 2026/Inglese/Optical Fibre — The Way of the Future.md",
     "Piano di Studio — Maturità 2026/Inglese/The Touchscreen Revolution — Unit 2, Text 3.md",
     "Piano di Studio — Maturità 2026/Inglese/Inglese.md",
-    "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
-    "Piano di Studio — Maturità 2026/Informatica/Informatica.md",
     "Piano di Studio — Maturità 2026/Informatica/Progettazione Concettuale.md",
     "Piano di Studio — Maturità 2026/Informatica/Appunti DBMS & DB Distribuiti.md",
-    "Piano di Studio — Maturità 2026/Informatica/Progettazione Logica.md",
     "Piano di Studio — Maturità 2026/Informatica/Vincoli, Viste e Ristrutturazione — Progettazione.md",
     "Piano di Studio — Maturità 2026/Italiano/Giovanni Pascoli.md",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti VPN — Tipologie, Tunneling, Protocolli.md",
