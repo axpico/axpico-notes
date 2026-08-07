@@ -6,5 +6,8 @@
   "obsidian-kanban",
   "obsidian-git",
   "obsidian-doubleshift",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "editing-toolbar",
+  "omnisearch",
+  "smart-connections"
 ]

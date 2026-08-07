@@ -1,0 +1,13 @@
+
+"event_logs:source:initial_scan_started": {"key":"source:initial_scan_started","ct":1,"first_at":1786110999548,"last_at":1786110999548,"class_name":"EventLog","event_sources":{"init_items":1}},
+"event_logs:source:initial_scan_completed": {"key":"source:initial_scan_completed","ct":1,"first_at":1786110999552,"last_at":1786110999552,"class_name":"EventLog","event_sources":{"init_items":1}},
+"event_logs:settings:changed": {"key":"settings:changed","ct":12,"first_at":1786110999552,"last_at":1786111002585,"class_name":"EventLog"},
+"event_logs:collection:load_started": {"key":"collection:load_started","ct":5,"first_at":1786111002554,"last_at":1786111002583,"class_name":"EventLog"},
+"event_logs:collection:load_halted": {"key":"collection:load_halted","ct":4,"first_at":1786111002581,"last_at":1786111002583,"class_name":"EventLog"},
+"event_logs:model:changed": {"key":"model:changed","ct":1,"first_at":1786111002585,"last_at":1786111002585,"class_name":"EventLog"},
+"event_logs:collection:load_completed": {"key":"collection:load_completed","ct":1,"first_at":1786111002589,"last_at":1786111002589,"class_name":"EventLog"},
+"event_logs:sources:import_started": {"key":"sources:import_started","ct":1,"first_at":1786111002589,"last_at":1786111002589,"class_name":"EventLog","event_sources":{"process_source_import_queue":1}},
+"event_logs:sources:imported": {"key":"sources:imported","ct":45,"first_at":1786111002985,"last_at":1786111002985,"class_name":"EventLog"},
+"event_logs:sources:import_progress": {"key":"sources:import_progress","ct":1,"first_at":1786111002985,"last_at":1786111002985,"class_name":"EventLog","event_sources":{"process_source_import_queue":1}},
+"event_logs:embedding:started": {"key":"embedding:started","ct":1,"first_at":1786111006034,"last_at":1786111006034,"class_name":"EventLog","event_sources":{"process_embed_queue":1}},
+"event_logs:embedding:progress": {"key":"embedding:progress","ct":1,"first_at":1786111006645,"last_at":1786111006645,"class_name":"EventLog","event_sources":{"process_embed_queue":1}},
