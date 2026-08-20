@@ -1,0 +1,23 @@
+{
+  "id": "conv-1787220546390-2jw730w2p",
+  "providerId": "claude",
+  "title": "Write Coulomb's Law formula",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787220546393,
+  "lastActivityAt": 1787220658467,
+  "sessionId": "4ebc3f0d-ed00-47ed-8088-a761b8c8c139",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "4ebc3f0d-ed00-47ed-8088-a761b8c8c139"
+  },
+  "currentNote": "Formulario/Elettromagnetismo formule.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 390,
+    "cacheReadInputTokens": 29931,
+    "contextWindow": 200000,
+    "contextTokens": 30329,
+    "percentage": 15
+  }
+}

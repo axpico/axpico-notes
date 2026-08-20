@@ -1,0 +1,24 @@
+{
+  "id": "conv-1786112249392-ttcemrl19",
+  "providerId": "claude",
+  "title": "Awaiting task details",
+  "titleGenerationStatus": "success",
+  "createdAt": 1786112249395,
+  "lastActivityAt": 1786112254508,
+  "sessionId": "4dcad72f-569c-4cd4-8dd0-11d57ba33780",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "4dcad72f-569c-4cd4-8dd0-11d57ba33780"
+  },
+  "isPinned": false,
+  "isArchived": true,
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 10,
+    "cacheCreationInputTokens": 21350,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 21360,
+    "percentage": 11
+  }
+}

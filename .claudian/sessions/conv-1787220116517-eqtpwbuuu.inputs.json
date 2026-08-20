@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787220116517-eqtpwbuuu",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787220116696-ht23cs3",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787220116507-eqggyrw",
+      "timestamp": 1787220116507,
+      "rawDisplayText": "fix this ifle",
+      "canonicalText": "fix this ifle",
+      "context": {
+        "currentNote": {
+          "path": "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/Untitled.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "d87b210074c606d34240c82d348a45945be11c276fcd9c0c71f99e239505c68d",
+      "providerUserMessageId": "119b846e-5789-4f65-be7e-6b1b2ecb4933",
+      "providerAssistantMessageId": "a3d64423-add8-465e-8bdd-3c737c5758d3"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787220179042-b4k6z4k",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1787220179039-m8j37me",
+      "timestamp": 1787220179039,
+      "rawDisplayText": "aggiungi la formula per la legge di colump",
+      "canonicalText": "aggiungi la formula per la legge di colump",
+      "images": [],
+      "contentDigest": "43866debc435191fdab6c08836a0425efdc8971a37c5fe072de0880cc813ebd5",
+      "providerUserMessageId": "3ebdf991-c47b-43df-89fd-e0a58a646049",
+      "providerAssistantMessageId": "050654db-f2c0-4cca-b1bf-e67bfbb2a896"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787220230832-nyz9061",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1787220230829-wi1e1a5",
+      "timestamp": 1787220230829,
+      "rawDisplayText": "ricontrolla il file e dai titolo",
+      "canonicalText": "ricontrolla il file e dai titolo",
+      "images": [],
+      "contentDigest": "8cbf267cbe4ebd4681aa0d62d3c7c41e4ce93348a3865680fb0647fb36b2cd73",
+      "providerUserMessageId": "857d3a0c-dd60-44c7-b3f0-9668b2185eed",
+      "providerAssistantMessageId": "0e693068-b8af-4eab-9bf3-75ee2eda12d7"
+    }
+  ]
+}

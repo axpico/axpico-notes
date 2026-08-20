@@ -1,0 +1,22 @@
+{
+  "id": "conv-1787220116517-eqtpwbuuu",
+  "providerId": "claude",
+  "title": "Fix file",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787220116520,
+  "lastActivityAt": 1787220241107,
+  "sessionId": "df8a1865-0e33-4bda-845e-b9c0f4334bcc",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "df8a1865-0e33-4bda-845e-b9c0f4334bcc"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 252,
+    "cacheReadInputTokens": 29865,
+    "contextWindow": 200000,
+    "contextTokens": 30125,
+    "percentage": 15
+  }
+}

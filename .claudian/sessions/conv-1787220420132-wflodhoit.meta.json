@@ -1,0 +1,23 @@
+{
+  "id": "conv-1787220420132-wflodhoit",
+  "providerId": "claude",
+  "title": "Fix the formula",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787220420133,
+  "lastActivityAt": 1787220432357,
+  "sessionId": "96ae68bd-10b8-4379-bea5-b89d58600752",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "96ae68bd-10b8-4379-bea5-b89d58600752"
+  },
+  "currentNote": "Formulario/Elettromagnetismo formule.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 375,
+    "cacheReadInputTokens": 26388,
+    "contextWindow": 200000,
+    "contextTokens": 26771,
+    "percentage": 13
+  }
+}
