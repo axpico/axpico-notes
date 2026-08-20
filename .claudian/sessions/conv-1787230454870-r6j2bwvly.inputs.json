@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787230454870-r6j2bwvly",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787230454935-svf3a07",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787230454867-fsjx8bd",
+      "timestamp": 1787230454867,
+      "rawDisplayText": "finisci la formmul ache manca direzione e verso",
+      "canonicalText": "finisci la formmul ache manca direzione e verso",
+      "context": {
+        "currentNote": {
+          "path": "Formulario/Elettromagnetismo formule.md"
+        },
+        "editorSelection": {
+          "notePath": "Formulario/Elettromagnetismo formule.md",
+          "mode": "selection",
+          "selectedText": "E = \\frac{1}{4\\pi\\epsilon_0}\\frac{q}{r^2}",
+          "lineCount": 1,
+          "startLine": 15
+        }
+      },
+      "images": [],
+      "contentDigest": "817e87dee89007df083f6c79fb25fa0cb4f4a2cabb2468b06798995b985784a2",
+      "providerUserMessageId": "d47e1667-103b-4949-b388-0fec99f4d4c1",
+      "providerAssistantMessageId": "36a1d073-f1a9-4c17-b9ec-c679cf5e5a8b"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787230514398-3blw1pr",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1787230514395-3l3h3op",
+      "timestamp": 1787230514395,
+      "rawDisplayText": "sismtei il dove e la fomrula 'e lho cosi",
+      "canonicalText": "sismtei il dove e la fomrula 'e lho cosi",
+      "images": [],
+      "contentDigest": "30eaf3c7200e778e019965fe479fa2bf287d35eb322e54abf1c72633077f3546",
+      "providerUserMessageId": "e0231f83-bfd8-45f8-a2b6-bb6f2d68ceb8",
+      "providerAssistantMessageId": "3f365f2d-4541-4565-b8ba-f4c70690fe81"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787230555502-cc0xcox",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1787230555499-bfl1onk",
+      "timestamp": 1787230555499,
+      "rawDisplayText": "non si usa u al posto di r perche r e presente 2 vcolte",
+      "canonicalText": "non si usa u al posto di r perche r e presente 2 vcolte",
+      "images": [],
+      "contentDigest": "41c93156eea3e30abdfe8d9479229a40009e568941a024625aac612557364d9c",
+      "providerUserMessageId": "9e9bf239-cd85-4344-b8fc-c1a8eee16f7e",
+      "providerAssistantMessageId": "9d9a4325-9c0d-43fd-b733-7688fc269278"
+    }
+  ]
+}

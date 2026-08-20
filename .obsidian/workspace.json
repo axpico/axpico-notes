@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/2. Campo elettrico.md",
+                "file": "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/3. Linee di forza.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. Campo elettrico"
+              "title": "3. Linee di forza"
             }
           }
         ]
@@ -246,7 +246,14 @@
   },
   "active": "a4a367f756b05e11",
   "lastOpenFiles": [
+    "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/3. Linee di forza.md",
+    "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna",
+    "POK/Img",
+    "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Pasted image 20260820145948.png",
     "Formulario/Elettromagnetismo formule.md",
+    "Formulario/Elettromagnetismo formule.md.tmp.13699.f3d668b056a7",
+    "Formulario/Elettromagnetismo formule.md.tmp.13699.f109761242fa",
+    "Formulario/Elettromagnetismo formule.md.tmp.13699.fc52d070b777",
     "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/2. Campo elettrico.md",
     "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/1. Carica elettrica e forza di Coulomb.md",
     "Formulario/Elettromagnetismo formule.md.tmp.15841.97f4e4f2e9f1",
@@ -264,15 +271,10 @@
     "Piano di Studio — Maturità 2026/Italiano/Eugenio Montale.md",
     "Piano di Studio — Maturità 2026/Piano di Studio — Maturità 2026.md",
     "Piano di Studio — Maturità 2026/Inglese/An Intro to the Database — Section 3, Unit 9, Text 4.md",
-    "Untitled.base",
-    "Untitled 1.base",
     "Excalidraw/Drawing 2026-08-07 15.48.02.excalidraw.md",
     "Excalidraw/Drawing 2026-08-07 15.48.01.excalidraw.md",
     "Excalidraw/Drawing 2026-08-07 15.47.43.excalidraw.md",
-    "Excalidraw",
     "POK/Imparare ad imparare/Week 1.md",
-    "POK/Imparare ad imparare",
-    "POK",
     "Drawing 2026-07-02 00.04.17.excalidraw.md",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti IPSec · TLS SSL · HTTPS.md",
     "Excalidraw/Drawing 2026-07-02 00.03.28.excalidraw.md",
@@ -280,7 +282,6 @@
     "Piano di Studio — Maturità 2026/Inglese/Network Standards and Protocols — Section 4, Unit 10, Text 3.md",
     "Piano di Studio — Maturità 2026/Inglese/Network Topologies Explained — Section 4, Unit 10, Text 2.md",
     "Piano di Studio — Maturità 2026/Inglese/Optical Fibre — The Way of the Future.md",
-    "Piano di Studio — Maturità 2026/Inglese/The Touchscreen Revolution — Unit 2, Text 3.md",
     "Piano di Studio — Maturità 2026/Img/Inglese/internet_protocols_study.svg",
     "Piano di Studio — Maturità 2026/Img/Inglese/osi_model_study.svg",
     "Piano di Studio — Maturità 2026/Img/Inglese/database_intro_study.svg",
@@ -289,7 +290,6 @@
     "Piano di Studio — Maturità 2026/Img/Inglese/fake_news_study.svg",
     "Piano di Studio — Maturità 2026/Img/Inglese/dark_side_internet_study.svg",
     "Piano di Studio — Maturità 2026/Img/Inglese/touchscreen_revolution_study.svg",
-    "Piano di Studio — Maturità 2026/Img/Inglese/iot_unit1_study_graphic.svg",
-    "Pasted image 20260622144101.png"
+    "Piano di Studio — Maturità 2026/Img/Inglese/iot_unit1_study_graphic.svg"
   ]
 }

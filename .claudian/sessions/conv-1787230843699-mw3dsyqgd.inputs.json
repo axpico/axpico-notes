@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787230843699-mw3dsyqgd",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787230843759-aqlpjnv",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787230843696-r9r29tg",
+      "timestamp": 1787230843696,
+      "rawDisplayText": "sismtem ail file",
+      "canonicalText": "sismtem ail file",
+      "context": {
+        "currentNote": {
+          "path": "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/3. Linee di forza.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "220831fa43b4e08563e34be7484cf99aa5e4ba39cde252c17c0d1431a2e9bf0a",
+      "providerUserMessageId": "74ef68bb-e21a-4f48-9d6a-09db32cf89cb",
+      "providerAssistantMessageId": "e9016846-56e1-4533-af00-7abe8c078a14"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787230865842-ceh7y5j",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1787230865839-s0ekvj3",
+      "timestamp": 1787230865839,
+      "rawDisplayText": "formattazione",
+      "canonicalText": "formattazione",
+      "images": [],
+      "contentDigest": "407441b60f8dd70350e7f8b5cb3804e599ed8749afca694192b6e1c2d76f40bf",
+      "providerUserMessageId": "449c87ff-f81a-48d4-8c35-78a0195f5e79",
+      "providerAssistantMessageId": "6393448f-386e-49cc-ba51-fb170d2f0614"
+    }
+  ]
+}

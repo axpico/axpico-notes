@@ -1,0 +1,23 @@
+{
+  "id": "conv-1787230751216-pr929f6td",
+  "providerId": "claude",
+  "title": "Fix the file",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787230751217,
+  "lastActivityAt": 1787230770199,
+  "sessionId": "a818e2f4-e19e-449b-93a6-081754c5a961",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "a818e2f4-e19e-449b-93a6-081754c5a961"
+  },
+  "currentNote": "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/3. Linee di forza.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 822,
+    "cacheReadInputTokens": 26778,
+    "contextWindow": 200000,
+    "contextTokens": 27608,
+    "percentage": 14
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "conv-1787230454870-r6j2bwvly",
+  "providerId": "claude",
+  "title": "Complete formula with direction and vector",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787230454871,
+  "lastActivityAt": 1787230565178,
+  "sessionId": "f8709061-49fb-4458-82dd-33320b13b353",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "f8709061-49fb-4458-82dd-33320b13b353"
+  },
+  "currentNote": "Formulario/Elettromagnetismo formule.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 860,
+    "cacheReadInputTokens": 30148,
+    "contextWindow": 200000,
+    "contextTokens": 31016,
+    "percentage": 16
+  }
+}

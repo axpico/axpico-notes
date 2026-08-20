@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787230751216-pr929f6td",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787230751280-s1gf8bd",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787230751214-vxydyhs",
+      "timestamp": 1787230751214,
+      "rawDisplayText": "sismte il file",
+      "canonicalText": "sismte il file",
+      "context": {
+        "currentNote": {
+          "path": "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/3. Linee di forza.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "af9db9052763b821b4ca3d7f0710d3e826dbe2b438774c140998f54fd379ff22",
+      "providerUserMessageId": "7f107e4a-b840-4138-8dc8-590f234d6ed6",
+      "providerAssistantMessageId": "1273c57f-86c0-49f8-a0a5-3d03a410dc66"
+    }
+  ]
+}
