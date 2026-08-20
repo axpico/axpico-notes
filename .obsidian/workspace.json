@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "58310348936a6921",
+            "id": "8771bab35b52ebc2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/3. Linee di forza.md",
+                "file": "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/4. Principio di sovrapposizione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. Linee di forza"
+              "title": "4. Principio di sovrapposizione"
             }
           }
         ]
@@ -244,13 +244,19 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "8771bab35b52ebc2",
   "lastOpenFiles": [
     "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/3. Linee di forza.md",
+    "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Principio di sovrapposizione 2.png",
+    "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Principio di sovrapposizione 3.png",
+    "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Principio di sovrapposizione 1.png",
+    "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/4. Principio di sovrapposizione.md",
+    "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Linne di forza.png",
+    "Formulario/Elettromagnetismo formule.md",
+    "Pasted image 20260820150848.png",
+    "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Pasted image 20260820150217.png",
     "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna",
     "POK/Img",
-    "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Pasted image 20260820145948.png",
-    "Formulario/Elettromagnetismo formule.md",
     "Formulario/Elettromagnetismo formule.md.tmp.13699.f3d668b056a7",
     "Formulario/Elettromagnetismo formule.md.tmp.13699.f109761242fa",
     "Formulario/Elettromagnetismo formule.md.tmp.13699.fc52d070b777",
@@ -281,15 +287,9 @@
     "Piano di Studio — Maturità 2026/Inglese/Internet's Protocols — Unit 10, Text 4.md",
     "Piano di Studio — Maturità 2026/Inglese/Network Standards and Protocols — Section 4, Unit 10, Text 3.md",
     "Piano di Studio — Maturità 2026/Inglese/Network Topologies Explained — Section 4, Unit 10, Text 2.md",
-    "Piano di Studio — Maturità 2026/Inglese/Optical Fibre — The Way of the Future.md",
     "Piano di Studio — Maturità 2026/Img/Inglese/internet_protocols_study.svg",
     "Piano di Studio — Maturità 2026/Img/Inglese/osi_model_study.svg",
     "Piano di Studio — Maturità 2026/Img/Inglese/database_intro_study.svg",
-    "Piano di Studio — Maturità 2026/Img/Inglese/optical_fibre_study.svg",
-    "Piano di Studio — Maturità 2026/Img/Inglese/network_topologies_study.svg",
-    "Piano di Studio — Maturità 2026/Img/Inglese/fake_news_study.svg",
-    "Piano di Studio — Maturità 2026/Img/Inglese/dark_side_internet_study.svg",
-    "Piano di Studio — Maturità 2026/Img/Inglese/touchscreen_revolution_study.svg",
-    "Piano di Studio — Maturità 2026/Img/Inglese/iot_unit1_study_graphic.svg"
+    "Piano di Studio — Maturità 2026/Img/Inglese/optical_fibre_study.svg"
   ]
 }
