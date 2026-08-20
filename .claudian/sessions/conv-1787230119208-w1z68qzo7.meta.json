@@ -1,0 +1,23 @@
+{
+  "id": "conv-1787230119208-w1z68qzo7",
+  "providerId": "claude",
+  "title": "I need clarification before proceeding:\n\n1. **L...",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787230119209,
+  "lastActivityAt": 1787230165755,
+  "sessionId": "1ae0a5d4-85f6-4f39-bc31-0f379da3e79f",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "1ae0a5d4-85f6-4f39-bc31-0f379da3e79f"
+  },
+  "currentNote": "Formulario/Elettromagnetismo formule.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 2207,
+    "cacheReadInputTokens": 27261,
+    "contextWindow": 200000,
+    "contextTokens": 29476,
+    "percentage": 15
+  }
+}

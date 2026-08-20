@@ -1,0 +1,23 @@
+{
+  "id": "conv-1787229989387-nnmnmwzsc",
+  "providerId": "claude",
+  "title": "I need clarification—\"sistem ala pagina\" is unc...",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787229989390,
+  "lastActivityAt": 1787230027419,
+  "sessionId": "b0d08fe0-2d40-4909-aa14-6b0d82471daf",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "b0d08fe0-2d40-4909-aa14-6b0d82471daf"
+  },
+  "currentNote": "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/2. Campo elettrico.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 1146,
+    "cacheReadInputTokens": 27132,
+    "contextWindow": 200000,
+    "contextTokens": 28286,
+    "percentage": 14
+  }
+}

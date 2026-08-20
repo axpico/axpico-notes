@@ -1,0 +1,23 @@
+{
+  "id": "conv-1787230200654-e8zdhtcf3",
+  "providerId": "claude",
+  "title": "Decipher garbled input",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787230200655,
+  "lastActivityAt": 1787230231467,
+  "sessionId": "1b0cdc45-9c02-4a16-a281-a74c7305f70b",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "1b0cdc45-9c02-4a16-a281-a74c7305f70b"
+  },
+  "currentNote": "Formulario/Elettromagnetismo formule.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 575,
+    "cacheReadInputTokens": 28298,
+    "contextWindow": 200000,
+    "contextTokens": 28881,
+    "percentage": 14
+  }
+}

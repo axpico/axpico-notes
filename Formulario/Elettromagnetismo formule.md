@@ -9,3 +9,15 @@ Dove:
 - $\epsilon_0$ = permittività del vuoto = $8.854 \times 10^{-12}$ F/m
 - $4\pi\epsilon_0 \approx 1.112 \times 10^{-10}$ F/m
 - $k = \frac{1}{4\pi\epsilon_0} \approx 8.99 \times 10^9$ N·m²/C²
+## Campo Elettrico
+
+**Campo elettrico di una carica puntiforme:**
+$$E = \frac{1}{4\pi\epsilon_0}\frac{q}{r^2}$$
+
+Dove:
+- $E$ = campo elettrico (N/C o V/m)
+- $q$ = carica elettrica (Coulomb)
+- $r$ = distanza dalla carica (metro)
+- $\epsilon_0$ = permittività del vuoto = $8.854 \times 10^{-12}$ F/m
+- $4\pi\epsilon_0 \approx 1.112 \times 10^{-10}$ F/m
+- $k = \frac{1}{4\pi\epsilon_0} \approx 8.99 \times 10^9$ N·m²/C²

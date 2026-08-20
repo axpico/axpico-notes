@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787230200654-e8zdhtcf3",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787230200707-21g0w6x",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787230200652-qgcgvhj",
+      "timestamp": 1787230200652,
+      "rawDisplayText": "aggiungi dove cone ka kaegge du cikuyno",
+      "canonicalText": "aggiungi dove cone ka kaegge du cikuyno",
+      "context": {
+        "currentNote": {
+          "path": "Formulario/Elettromagnetismo formule.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "dd192d3ca01bfeb50cf9b19f17480f765dc06a5152311941023c787dc950f84d",
+      "providerUserMessageId": "b2652631-fd15-434d-811e-fdcf822baf8b",
+      "providerAssistantMessageId": "852010a1-2147-4991-8080-03b2a8f25fc2"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787230219825-6qpk64a",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1787230219809-flntksr",
+      "timestamp": 1787230219809,
+      "rawDisplayText": "qeusto ma per campo elettrico \nDove:\n- $q_1, q_2$ = cariche elettriche (Coulomb)\n- $r$ = distanza tra le cariche (metro)\n- $\\epsilon_0$ = permittività del vuoto = $8.854 \\times 10^{-12}$ F/m\n- $4\\pi\\epsilon_0 \\approx 1.112 \\times 10^{-10}$ F/m\n- $k = \\frac{1}{4\\pi\\epsilon_0} \\approx 8.99 \\times 10^9$ N·m²/C²",
+      "canonicalText": "qeusto ma per campo elettrico \nDove:\n- $q_1, q_2$ = cariche elettriche (Coulomb)\n- $r$ = distanza tra le cariche (metro)\n- $\\epsilon_0$ = permittività del vuoto = $8.854 \\times 10^{-12}$ F/m\n- $4\\pi\\epsilon_0 \\approx 1.112 \\times 10^{-10}$ F/m\n- $k = \\frac{1}{4\\pi\\epsilon_0} \\approx 8.99 \\times 10^9$ N·m²/C²",
+      "context": {
+        "editorSelection": {
+          "notePath": "Formulario/Elettromagnetismo formule.md",
+          "mode": "selection",
+          "selectedText": "Dove:\n- $q_1, q_2$ = cariche elettriche (Coulomb)\n- $r$ = distanza tra le cariche (metro)\n- $\\epsilon_0$ = permittività del vuoto = $8.854 \\times 10^{-12}$ F/m\n- $4\\pi\\epsilon_0 \\approx 1.112 \\times 10^{-10}$ F/m\n- $k = \\frac{1}{4\\pi\\epsilon_0} \\approx 8.99 \\times 10^9$ N·m²/C²",
+          "lineCount": 6,
+          "startLine": 6
+        }
+      },
+      "images": [],
+      "contentDigest": "bb63bbc1c052a3da86a3214cdb5ddab04ca70bfb81e0278d61a9514c7a838114",
+      "providerUserMessageId": "c3dca1a0-9161-44e1-ab04-389cbc5113c8",
+      "providerAssistantMessageId": "d492dab5-8ed0-4aee-8b5c-7ef8f07e8eeb"
+    }
+  ]
+}

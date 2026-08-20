@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787229989387-nnmnmwzsc",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787229989594-x8bkgow",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787229989377-35493l2",
+      "timestamp": 1787229989377,
+      "rawDisplayText": "sistem ala pagina",
+      "canonicalText": "sistem ala pagina",
+      "context": {
+        "currentNote": {
+          "path": "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/2. Campo elettrico.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "79cc8b7ccbb6eaa0043424d3bd0b72a124429da20ce9358c6b7faffb1783a7f7",
+      "providerUserMessageId": "8928dddd-ba8b-49c5-9f9f-bca0149c153e",
+      "providerAssistantMessageId": "d39fd980-e408-4b5a-8c67-cbeb14dea8ac"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787230011609-yx93q15",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1787230011606-7d7sblx",
+      "timestamp": 1787230011606,
+      "rawDisplayText": "organize",
+      "canonicalText": "organize",
+      "images": [],
+      "contentDigest": "9eb5555027abd9b02883e58555f1c9f4749c8b8660dac52e5a86832f7aa380d5",
+      "providerUserMessageId": "f35aa97b-9550-4980-9bda-0f0fcd34cebd",
+      "providerAssistantMessageId": "003f6e36-9d75-40e6-a37c-d17b3e7e1453"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787230119208-w1z68qzo7",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787230119258-bb9ihpv",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787230119206-nq6vttm",
+      "timestamp": 1787230119206,
+      "rawDisplayText": "sistem aquesa pagina",
+      "canonicalText": "sistem aquesa pagina",
+      "context": {
+        "currentNote": {
+          "path": "Formulario/Elettromagnetismo formule.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "e2eeb08ae84c4ea8c66189d44c2290972c8ed19cff9e9c0080e6faad447dbf42",
+      "providerUserMessageId": "560848ca-3640-45c6-8041-20b6095758ad",
+      "providerAssistantMessageId": "450fdedd-ebf1-422f-89ae-f928f4f04670"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787230141717-jof4j8k",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1787230141714-jolz61h",
+      "timestamp": 1787230141714,
+      "rawDisplayText": "complete it",
+      "canonicalText": "complete it",
+      "images": [],
+      "contentDigest": "d225014849313f07029986753dfdae9ad55b8067c1bcda578d25a0c1eb712fee",
+      "providerUserMessageId": "183d3ac7-d29c-40c9-a5d1-be5884b5e103",
+      "providerAssistantMessageId": "8913303d-4661-4091-b496-40c5804d7a5a"
+    }
+  ]
+}
