@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "33429322e5679943",
+        "id": "44bdc65d4b3d1838",
         "type": "tabs",
         "children": [
           {
-            "id": "8771bab35b52ebc2",
+            "id": "d27f9a8d07151ea9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/4. Principio di sovrapposizione.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "4. Principio di sovrapposizione"
+              "title": "New tab"
             }
           }
         ]
@@ -244,13 +240,17 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "8771bab35b52ebc2",
+  "active": "d27f9a8d07151ea9",
   "lastOpenFiles": [
+    "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Atomo di idrogeno 3.png",
+    "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/5. Atomo di idrogeno.md",
+    "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Atomo di idrogeno 2.png",
+    "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Atomo di idrogeno 1.png",
+    "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/4. Principio di sovrapposizione.md",
     "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/3. Linee di forza.md",
     "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Principio di sovrapposizione 2.png",
     "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Principio di sovrapposizione 3.png",
     "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Principio di sovrapposizione 1.png",
-    "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Elettromagnetismo/4. Principio di sovrapposizione.md",
     "POK/Img/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Linne di forza.png",
     "Formulario/Elettromagnetismo formule.md",
     "Pasted image 20260820150848.png",
@@ -286,10 +286,6 @@
     "Excalidraw/Drawing 2026-07-02 00.03.28.excalidraw.md",
     "Piano di Studio — Maturità 2026/Inglese/Internet's Protocols — Unit 10, Text 4.md",
     "Piano di Studio — Maturità 2026/Inglese/Network Standards and Protocols — Section 4, Unit 10, Text 3.md",
-    "Piano di Studio — Maturità 2026/Inglese/Network Topologies Explained — Section 4, Unit 10, Text 2.md",
-    "Piano di Studio — Maturità 2026/Img/Inglese/internet_protocols_study.svg",
-    "Piano di Studio — Maturità 2026/Img/Inglese/osi_model_study.svg",
-    "Piano di Studio — Maturità 2026/Img/Inglese/database_intro_study.svg",
-    "Piano di Studio — Maturità 2026/Img/Inglese/optical_fibre_study.svg"
+    "Piano di Studio — Maturità 2026/Img/Inglese/internet_protocols_study.svg"
   ]
 }
