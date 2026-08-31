@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788161342098-g6c5121rh",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788161342320-p5qm8ui",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788161342092-1r0hk1w",
+      "timestamp": 1788161342092,
+      "rawDisplayText": "sistema il file",
+      "canonicalText": "sistema il file",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/31-01-2026 Linguaggio matematico.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "cd7a3a5ce98ba92ccfbe939a86257499975ca33fd98fe0b07f263a0c901737ca",
+      "providerUserMessageId": "0885b53f-6144-4079-b54d-c3aa398ad1a7",
+      "providerAssistantMessageId": "c8db068c-17dc-41d1-b9a9-82199f2e0ffc"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788161594971-esylwg0",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788161594961-drffmhg",
+      "timestamp": 1788161594961,
+      "rawDisplayText": "corerttto? e sistema il file",
+      "canonicalText": "corerttto? e sistema il file",
+      "images": [],
+      "contentDigest": "a355a4f5c38c148b722657fa6eaf5ad6d02e2f21e3941bdab044df147510b582",
+      "providerUserMessageId": "67f908d5-02d6-4f16-b9bc-e2d049b53d00",
+      "providerAssistantMessageId": "edc04892-3ea3-4b6d-a361-030269222bf2"
+    }
+  ]
+}

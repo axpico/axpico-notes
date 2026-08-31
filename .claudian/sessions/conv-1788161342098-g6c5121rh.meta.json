@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788161342098-g6c5121rh",
+  "providerId": "claude",
+  "title": "Fix file",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788161342106,
+  "lastActivityAt": 1788161606490,
+  "sessionId": "f03e925b-68be-4c5d-bee5-c27d30d48b88",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "f03e925b-68be-4c5d-bee5-c27d30d48b88"
+  },
+  "currentNote": "RIpasso matematica/31-01-2026 Linguaggio matematico.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 563,
+    "cacheReadInputTokens": 27378,
+    "contextWindow": 200000,
+    "contextTokens": 27949,
+    "percentage": 14
+  }
+}

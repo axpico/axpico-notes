@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788161783258-ydfmq8jba",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788161783428-o6tr5zl",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788161783252-unqbvs7",
+      "timestamp": 1788161783252,
+      "rawDisplayText": "controlli se ho fatto gli esercizi giusti",
+      "canonicalText": "controlli se ho fatto gli esercizi giusti",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/31-01-2026 Linguaggio matematico.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "b070e7c49d95a702184eb573b800abaea81c0103ab398c3bc3ebe327a2e9e0d8",
+      "providerUserMessageId": "3b935fd7-27a8-4179-bc98-92763fb7326b",
+      "providerAssistantMessageId": "2e482e4e-50d7-4143-b744-9ee1c8727842"
+    }
+  ]
+}

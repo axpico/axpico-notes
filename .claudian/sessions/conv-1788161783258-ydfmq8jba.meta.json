@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788161783258-ydfmq8jba",
+  "providerId": "claude",
+  "title": "Verify exercise solutions",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788161783269,
+  "lastActivityAt": 1788161798186,
+  "sessionId": "971810aa-3199-4ddf-9272-5715825a5be1",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "971810aa-3199-4ddf-9272-5715825a5be1"
+  },
+  "currentNote": "RIpasso matematica/31-01-2026 Linguaggio matematico.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 624,
+    "cacheReadInputTokens": 21116,
+    "contextWindow": 200000,
+    "contextTokens": 21748,
+    "percentage": 11
+  }
+}

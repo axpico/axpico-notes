@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788161265828-s68grgtus",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788161266053-eliwouv",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788161265812-op8g9vm",
+      "timestamp": 1788161265812,
+      "rawDisplayText": "isstema il file",
+      "canonicalText": "isstema il file",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/31-01-2026 Linguaggio matematico.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "b1376afcd8b653ae1024935920502cf5e0b339679ab1e5c694dd51530183f7cc",
+      "providerUserMessageId": "3ad29b39-f13f-49cf-9480-1c2cf7e68e37",
+      "providerAssistantMessageId": "4ffba39f-9a73-456a-b28d-ba11d19c595c"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788161318560-s8u2fvw",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788161318551-mnjnifu",
+      "timestamp": 1788161318551,
+      "rawDisplayText": "rivmoce tags, date and title",
+      "canonicalText": "rivmoce tags, date and title",
+      "images": [],
+      "contentDigest": "24375c4652c278ac39e5125470de2075e1dc347b6f625a01e16b4284a0b324db",
+      "providerUserMessageId": "c55fb5fc-5aef-4400-aaad-b25177172704",
+      "providerAssistantMessageId": "44f6b238-be7c-4463-b9ff-2f804b9682b6"
+    }
+  ]
+}
