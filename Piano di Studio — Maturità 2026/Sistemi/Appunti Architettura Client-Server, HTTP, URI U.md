@@ -101,7 +101,7 @@ https://www.example.com:443/corso/sistemi?capitolo=3&pagina=12#http
 - Schema: `https`
 - Host: `www.example.com`
 - Porta: `443` (default per HTTPS, di solito omessa)
-- Percorso: `/corso/[[Sistemi]]`
+- Percorso: `/corso/[[[[Sistemi]]]]`
 - Query: `capitolo=3&pagina=12`
 - Fragment: `#http`
 

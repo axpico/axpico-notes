@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788169073828-19df1ki26",
+  "providerId": "claude",
+  "title": "Fix the page",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788169073839,
+  "lastActivityAt": 1788169111707,
+  "sessionId": "bc50c818-6e4a-4e22-a4e0-ddaaa7e50515",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "bc50c818-6e4a-4e22-a4e0-ddaaa7e50515"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 8081,
+    "cacheReadInputTokens": 30053,
+    "contextWindow": 1000000,
+    "contextTokens": 38136,
+    "percentage": 4
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788172536369-nlafn2wps",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788172536473-zckjcnn",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788172536341-sy5e4iv",
+      "timestamp": 1788172536341,
+      "rawDisplayText": "sistema calcolo combinatorio\nanagramma delle parole **MONTE** e **MENTE**\nMonte -> permotazione semplice \n$$Pn = n!$$\n$$P_5= 5! = 5*4*3*2*1 = 120$$\nMente -> permutazione con ripetizione \n$$Pn^\\* = \\frac {n!}{k_1!k_2!k_3!...}$$\n$$P_5^\\*=\\frac{5!}{2!}$$",
+      "canonicalText": "sistema calcolo combinatorio\nanagramma delle parole **MONTE** e **MENTE**\nMonte -> permotazione semplice \n$$Pn = n!$$\n$$P_5= 5! = 5*4*3*2*1 = 120$$\nMente -> permutazione con ripetizione \n$$Pn^\\* = \\frac {n!}{k_1!k_2!k_3!...}$$\n$$P_5^\\*=\\frac{5!}{2!}$$",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/Linguaggio matematico.md"
+        },
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "calcolo combinatorio\nanagramma delle parole **MONTE** e **MENTE**\nMonte -> permotazione semplice \n$$Pn = n!$$\n$$P_5= 5! = 5*4*3*2*1 = 120$$\nMente -> permutazione con ripetizione \n$$Pn^\\* = \\frac {n!}{k_1!k_2!k_3!...}$$\n$$P_5^\\*=\\frac{5!}{2!}$$\n",
+          "lineCount": 9,
+          "startLine": 98
+        }
+      },
+      "images": [],
+      "contentDigest": "d113a9dd8d37b31b7f1fd4d924d324e41b5f3d4d3f893aa57ea2ddd8ec7d8741",
+      "providerUserMessageId": "30810cdc-8207-41ca-9e8f-a5a4d0f56799",
+      "providerAssistantMessageId": "b1a9cd07-9d9f-4653-8e75-fe2d6aaac9f1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788172684869-20dec6f",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788172684849-s5lizgj",
+      "timestamp": 1788172684849,
+      "rawDisplayText": "anche qui \nAzzurra \n$$P_7^*=\\frac{7!}{2!2!2!}$$",
+      "canonicalText": "anche qui \nAzzurra \n$$P_7^*=\\frac{7!}{2!2!2!}$$",
+      "context": {
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "\nAzzurra \n$$P_7^*=\\frac{7!}{2!2!2!}$$",
+          "lineCount": 3,
+          "startLine": 104
+        }
+      },
+      "images": [],
+      "contentDigest": "dfb1cbc5f7596c27b39c653a469f0caa4da6ac5cd8a36ca52a92c7ac9800abdd",
+      "providerUserMessageId": "59f13cfa-5fc6-45c4-be5c-3848d2228bf4",
+      "providerAssistantMessageId": "0303f6b0-7f17-4aa1-813d-024fb2ff6779"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788172752340-5mxyooa",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788172752330-fhmtafm",
+      "timestamp": 1788172752330,
+      "rawDisplayText": "anche questo con alessandro e vittoria",
+      "canonicalText": "anche questo con alessandro e vittoria",
+      "context": {
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "Vittoria \n",
+          "lineCount": 2,
+          "startLine": 107
+        }
+      },
+      "images": [],
+      "contentDigest": "88470dcc56ea6a3cc8440db187691a780142c3a873e5f2a1fb6d392a8b9c232a",
+      "providerUserMessageId": "6e01caac-9273-45dc-aeb0-b159065e09ad",
+      "providerAssistantMessageId": "edbbbbdd-4111-4d67-ba08-998d931abf35"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788172798294-bnud6z6",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788172798283-ddqamac",
+      "timestamp": 1788172798283,
+      "rawDisplayText": "fai anceh valerio, pietro e marco",
+      "canonicalText": "fai anceh valerio, pietro e marco",
+      "images": [],
+      "contentDigest": "d322e2922dd6cae3f4e4fb6b741e166a4970e23152b625889a161e17c9a34768",
+      "providerUserMessageId": "b5163802-cff0-4a7f-b183-142c5871f77f",
+      "providerAssistantMessageId": "edfbc3bc-b6ee-426c-bf56-b8c9984b83a0"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788172925880-pjmafll",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1788172925871-gmgm8zd",
+      "timestamp": 1788172925871,
+      "rawDisplayText": "sitema anceh qui ### Calcolo combinatorio\nquanti numeri di 3 cifre diverse si possono scrivere usando A={1,2,3,4,5}\ndisposizione\n$$d$$\nquanti numeri pari di 3 cifre diverse si possono scrivere usando A={1,2,3,4,5}",
+      "canonicalText": "sitema anceh qui ### Calcolo combinatorio\nquanti numeri di 3 cifre diverse si possono scrivere usando A={1,2,3,4,5}\ndisposizione\n$$d$$\nquanti numeri pari di 3 cifre diverse si possono scrivere usando A={1,2,3,4,5}",
+      "context": {
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "### Calcolo combinatorio\nquanti numeri di 3 cifre diverse si possono scrivere usando A={1,2,3,4,5}\ndisposizione\n$$d$$\nquanti numeri pari di 3 cifre diverse si possono scrivere usando A={1,2,3,4,5}",
+          "lineCount": 5,
+          "startLine": 117
+        }
+      },
+      "images": [],
+      "contentDigest": "5db5251e1b60424c3d4f859860289cc274ef8592d26a5d5adfd4c544a82f958c",
+      "providerUserMessageId": "3083e0be-70f2-4c7e-b46c-08e84d196bbd",
+      "providerAssistantMessageId": "38347382-2c5c-4794-8e56-7df3d0d4c44a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788172981355-ue5dcl8",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1788172981344-uisrfgg",
+      "timestamp": 1788172981344,
+      "rawDisplayText": "aggiungi n -> oggetti e k-> posti",
+      "canonicalText": "aggiungi n -> oggetti e k-> posti",
+      "images": [],
+      "contentDigest": "a481f3bad1b738e9c0f0ce61f97ac3571518fec74dfde10acb0f8baa9366116d",
+      "providerUserMessageId": "b2aa5a53-4bf7-4407-8915-b244df5e267f",
+      "providerAssistantMessageId": "623c4d77-b807-40cb-a213-9e599c5777cd"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788173082232-qk6cuhx",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1788173082220-o0l66lc",
+      "timestamp": 1788173082220,
+      "rawDisplayText": "sistema gli header ti tutta la pagina",
+      "canonicalText": "sistema gli header ti tutta la pagina",
+      "images": [],
+      "contentDigest": "c3859adeca4dbb44622e11773e28bc8907d4e6488599c12911652f84178632e8",
+      "providerUserMessageId": "7ce406aa-dd78-498b-9879-427dc34989c8",
+      "providerAssistantMessageId": "001a3aad-edbf-4f30-9243-a4f7ed4e8ed1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788173292462-d4d1y8y",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1788173292447-nzqpd1v",
+      "timestamp": 1788173292447,
+      "rawDisplayText": "aggiungi un insime A di 1235",
+      "canonicalText": "aggiungi un insime A di 1235",
+      "images": [],
+      "contentDigest": "d50f92bc173ce4c3210acb2bb788e1f8424ef3530bcfde1ddc2842f85e32e6d5",
+      "providerUserMessageId": "95748c49-09df-4159-a48f-9b9d0de91a7e",
+      "providerAssistantMessageId": "f2a15842-250a-4dd8-a32b-a0751daa4061"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788173359888-5lc8f7v",
+      "userTurnOrdinal": 9,
+      "state": "accepted",
+      "localMessageId": "msg-1788173359876-v0rxl45",
+      "timestamp": 1788173359876,
+      "rawDisplayText": "sistema (a+b)^4=...\nqianti sono i a^3b e a^2b^2?",
+      "canonicalText": "sistema (a+b)^4=...\nqianti sono i a^3b e a^2b^2?",
+      "context": {
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "(a+b)^4=...\nqianti sono i a^3b e a^2b^2?",
+          "lineCount": 2,
+          "startLine": 134
+        }
+      },
+      "images": [],
+      "contentDigest": "14cf0edb8763a1c0003c36116cc97584f91936fe2c8c178f36c0fc8c86445cd1",
+      "providerUserMessageId": "d6eeb81f-85ae-4c7d-973e-e2d83b11a052",
+      "providerAssistantMessageId": "82968203-ca51-4ef1-8662-4d9504d39357"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788173410512-j0eb382",
+      "userTurnOrdinal": 10,
+      "state": "accepted",
+      "localMessageId": "msg-1788173410498-fpocyzn",
+      "timestamp": 1788173410498,
+      "rawDisplayText": "aggiungi come si calcola a+b alla n con il binomio di netwon",
+      "canonicalText": "aggiungi come si calcola a+b alla n con il binomio di netwon",
+      "images": [],
+      "contentDigest": "48dc8b47a2f4a25b2fdbb4261b5a950f64ae9fbaaaeee1d4a6313292f90e9d6c",
+      "providerUserMessageId": "107be23f-c712-40c2-9e33-276db05ead6f",
+      "providerAssistantMessageId": "f5368ff9-9e39-4fa7-b875-5c2696706a81"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788173526708-i5op03k",
+      "userTurnOrdinal": 11,
+      "state": "accepted",
+      "localMessageId": "msg-1788173526690-7kiz7od",
+      "timestamp": 1788173526690,
+      "rawDisplayText": "aggiungi n-> oggetti in k posti non ordin e",
+      "canonicalText": "aggiungi n-> oggetti in k posti non ordin e",
+      "images": [],
+      "contentDigest": "641accd91a2de0bb266d109ca85d8836fb195c0e1f0ccadd69c13a48ed1f9557",
+      "providerUserMessageId": "78abb741-946b-4834-80e6-114a2395f631",
+      "providerAssistantMessageId": "067674e5-84dd-4aed-86d9-4e1823a915a4"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788173864338-1gvd0pk",
+      "userTurnOrdinal": 12,
+      "state": "accepted",
+      "localMessageId": "msg-1788173864315-gmpre67",
+      "timestamp": 1788173864316,
+      "rawDisplayText": "fai anche Quanti sono i termini di grado 5 in (a+b)^5\n$$$$",
+      "canonicalText": "fai anche Quanti sono i termini di grado 5 in (a+b)^5\n$$$$",
+      "context": {
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "Quanti sono i termini di grado 5 in (a+b)^5\n$$$$",
+          "lineCount": 2,
+          "startLine": 144
+        }
+      },
+      "images": [],
+      "contentDigest": "c3fd86636f750fb7e1dd80531c508ced41cfac3ecd3c62e5a180c6e57ada9070",
+      "providerUserMessageId": "5a4c8bdc-6ee4-4999-bb19-cfaa7b381faa",
+      "providerAssistantMessageId": "9c5cb9bc-6943-43cd-95bd-724ff804b68e"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788173997312-eyfdx3g",
+      "userTurnOrdinal": 13,
+      "state": "accepted",
+      "localMessageId": "msg-1788173997297-t3aezc3",
+      "timestamp": 1788173997297,
+      "rawDisplayText": "formula che dice che sommatorio di k=0 di n (nk) = 2^n",
+      "canonicalText": "formula che dice che sommatorio di k=0 di n (nk) = 2^n",
+      "images": [],
+      "contentDigest": "c107ad74f694e6e0f36fdd83d4b7df032e02c9aad67f257099102fe5b7e75711",
+      "providerUserMessageId": "ae79b227-74a8-44ea-a305-8b173accc073",
+      "providerAssistantMessageId": "8a143b9c-1bf3-465d-b48e-30f4ec6add38"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788170316939-16k5sf52o",
+  "providerId": "claude",
+  "title": "Name a formula",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788170316951,
+  "lastActivityAt": 1788170800017,
+  "sessionId": "ebb733b1-965a-4543-bea8-2a52c6d38fc9",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "ebb733b1-965a-4543-bea8-2a52c6d38fc9"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 248,
+    "cacheReadInputTokens": 44076,
+    "contextWindow": 1000000,
+    "contextTokens": 44326,
+    "percentage": 4
+  }
+}

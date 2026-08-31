@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788170102583-9wqo03a35",
+  "providerId": "claude",
+  "title": "Verify formula for first n squares",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788170102585,
+  "lastActivityAt": 1788170121939,
+  "sessionId": "34d6ca0c-a935-4b6c-802c-e6d7eecd4ba1",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "34d6ca0c-a935-4b6c-802c-e6d7eecd4ba1"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 6119,
+    "cacheReadInputTokens": 30352,
+    "contextWindow": 1000000,
+    "contextTokens": 36473,
+    "percentage": 4
+  }
+}
