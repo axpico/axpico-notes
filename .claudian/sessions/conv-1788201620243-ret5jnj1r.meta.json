@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788201620243-ret5jnj1r",
+  "providerId": "claude",
+  "title": "did u check silks",
+  "titleGenerationStatus": "pending",
+  "createdAt": 1788201620244,
+  "lastActivityAt": 1788201625834,
+  "sessionId": "5506dfd2-6e8d-4785-9e77-09d9907f372f",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "5506dfd2-6e8d-4785-9e77-09d9907f372f"
+  },
+  "currentNote": "Ripasso fisica/Cinematica.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 5550,
+    "cacheReadInputTokens": 32748,
+    "contextWindow": 1000000,
+    "contextTokens": 38300,
+    "percentage": 4
+  }
+}

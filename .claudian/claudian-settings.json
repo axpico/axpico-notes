@@ -3,14 +3,14 @@
   "permissionMode": "yolo",
   "model": "sonnet",
   "thinkingBudget": "off",
-  "effortLevel": "medium",
+  "effortLevel": "high",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
   "titleGenerationLocale": "",
   "titleGenerationModel": "",
   "excludedTags": [],
   "mediaFolder": "",
-  "systemPrompt": "",
+  "systemPrompt": "Before answering, check claude_skills/index.md for a skill relevant to the user's request. If one matches, mention it and use it.",
   "persistentExternalContextPaths": [],
   "sharedEnvironmentVariables": "",
   "envSnippets": [],
@@ -30,8 +30,8 @@
       "cliPath": "",
       "cliPathsByHost": {},
       "loadUserSettings": true,
-      "enableChrome": false,
-      "enableBangBash": false,
+      "enableChrome": true,
+      "enableBangBash": true,
       "customModels": "",
       "lastModel": "haiku",
       "modelEnvironmentType": "",
@@ -99,7 +99,7 @@
     "claude": "sonnet"
   },
   "savedProviderEffort": {
-    "claude": "medium"
+    "claude": "high"
   },
   "savedProviderServiceTier": {},
   "savedProviderThinkingBudget": {},

@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788201636806-2wsr8pjqo",
+  "providerId": "claude",
+  "title": "Check available skills",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788201636809,
+  "lastActivityAt": 1788201690539,
+  "sessionId": "aefd4294-ef91-4841-b5a5-a79002e71941",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "aefd4294-ef91-4841-b5a5-a79002e71941"
+  },
+  "currentNote": "Ripasso fisica/Cinematica.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 813,
+    "cacheReadInputTokens": 39423,
+    "contextWindow": 1000000,
+    "contextTokens": 40238,
+    "percentage": 4
+  }
+}

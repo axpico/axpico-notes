@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788197641738-yhe8kwbdv",
+  "providerId": "claude",
+  "title": "Consolidate formulas to file",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788197641740,
+  "lastActivityAt": 1788197658684,
+  "sessionId": "2a98e71f-3c46-482c-8eba-5079e95c558b",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "2a98e71f-3c46-482c-8eba-5079e95c558b"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 821,
+    "cacheReadInputTokens": 41423,
+    "contextWindow": 1000000,
+    "contextTokens": 42246,
+    "percentage": 4
+  }
+}

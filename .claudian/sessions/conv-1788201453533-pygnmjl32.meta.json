@@ -1,0 +1,22 @@
+{
+  "id": "conv-1788201453533-pygnmjl32",
+  "providerId": "claude",
+  "title": "Create skills index",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788201453534,
+  "lastActivityAt": 1788201588755,
+  "sessionId": "fac8af76-0243-4c5c-b068-a47793a327d0",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "fac8af76-0243-4c5c-b068-a47793a327d0"
+  },
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 657,
+    "cacheReadInputTokens": 43392,
+    "contextWindow": 1000000,
+    "contextTokens": 44051,
+    "percentage": 4
+  }
+}

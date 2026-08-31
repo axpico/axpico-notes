@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788202305904-e6dtpsvok",
+  "providerId": "claude",
+  "title": "Inserire tutte le formule nel formulario",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788202305905,
+  "lastActivityAt": 1788202397600,
+  "sessionId": "49234b3f-0e38-4495-abc0-cc44dc1b55d6",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "49234b3f-0e38-4495-abc0-cc44dc1b55d6"
+  },
+  "currentNote": "Ripasso fisica/Cinematica.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 340,
+    "cacheReadInputTokens": 51917,
+    "contextWindow": 1000000,
+    "contextTokens": 52259,
+    "percentage": 5
+  }
+}

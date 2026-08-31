@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788201970986-cv65gg2na",
+  "providerId": "claude",
+  "title": "Update kinematics page with concepts and exercises",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788201970987,
+  "lastActivityAt": 1788202251184,
+  "sessionId": "db6a1e70-ce11-4ffe-82dd-79ce5134cad5",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "db6a1e70-ce11-4ffe-82dd-79ce5134cad5"
+  },
+  "currentNote": "Ripasso fisica/Cinematica.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 872,
+    "cacheReadInputTokens": 73975,
+    "contextWindow": 1000000,
+    "contextTokens": 74849,
+    "percentage": 7
+  }
+}

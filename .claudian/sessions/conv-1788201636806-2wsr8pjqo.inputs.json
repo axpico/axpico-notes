@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788201636806-2wsr8pjqo",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788201636867-wtmw9ha",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788201636803-dj4207g",
+      "timestamp": 1788201636803,
+      "rawDisplayText": "did u check skills",
+      "canonicalText": "did u check skills",
+      "context": {
+        "currentNote": {
+          "path": "Ripasso fisica/Untitled.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "3ab363904cc3c7e1be454d3fd4751d5fee5353d48ef48a0fedef9d68f6147fbf",
+      "providerUserMessageId": "c9ae6202-ec33-422f-9ce0-3c2249296f55",
+      "providerAssistantMessageId": "59aa6049-f194-4127-a05f-29512f2e9f33"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788201652798-96qrn9i",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788201652795-3tj29rj",
+      "timestamp": 1788201652795,
+      "rawDisplayText": "cehck system promt",
+      "canonicalText": "cehck system promt",
+      "images": [],
+      "contentDigest": "d77dc3e7b609ab6496e9cbc4244f0969e11e994cb2a31aa876017c700af68044",
+      "providerUserMessageId": "92d6779b-1434-4adf-8399-a71d2b3c3eb3",
+      "providerAssistantMessageId": "331ee78e-de99-4f11-bdee-cc11ad0d4888"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788201687663-yeyqd5i",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788201687659-e2obpmk",
+      "timestamp": 1788201687659,
+      "rawDisplayText": "is there writte to cehck inde in claude skills",
+      "canonicalText": "is there writte to cehck inde in claude skills",
+      "images": [],
+      "contentDigest": "c2f97a0344aa8ad481290bce9cd82029371d88dd71b0fd3220beb02752102718",
+      "providerUserMessageId": "a3520c7a-437e-4535-9cba-343822b78ba8",
+      "providerAssistantMessageId": "931b0944-028b-42f9-b622-a9899b403726"
+    }
+  ]
+}

@@ -71,7 +71,7 @@ $$9+15+21+27+33+39+45$$
 $$\sum_{i=1}^{7}(6i+3)$$
 #### Somma a segni alterni di frazioni pari
 $$\frac{1}{4}-\frac{1}{6}+\frac{1}{8}-\frac{1}{10}+\frac{1}{12}-\frac{1}{14}+\frac{1}{16}$$
-$$\sum_{i=2}^{8}(\frac{(-1)^i}{2i})$$
+$$\sum_{i=2}^{8}({\frac{(-1)^i}{2i}})$$
 #### Somma a segni alterni tra dispari e reciproci di pari
 $$-1+\frac{1}{2}-3+\frac{1}{4}-5+\frac{1}{6}-7+\frac{1}{8}-9$$
 $$\sum_{i=1}^{9}\left((-1)^i\, i^{(-1)^{i+1}}\right)$$
