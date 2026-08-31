@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788166256003-10t7hemmu",
+  "providerId": "claude",
+  "title": "Solve mathematical equations and sets",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788166256025,
+  "lastActivityAt": 1788166381503,
+  "sessionId": "d7f3ed5a-45d1-418c-9a32-0315881c80b7",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "d7f3ed5a-45d1-418c-9a32-0315881c80b7"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 436,
+    "cacheReadInputTokens": 36587,
+    "contextWindow": 1000000,
+    "contextTokens": 37025,
+    "percentage": 4
+  }
+}

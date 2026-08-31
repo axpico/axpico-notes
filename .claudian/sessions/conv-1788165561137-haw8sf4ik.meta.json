@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788165561137-haw8sf4ik",
+  "providerId": "claude",
+  "title": "Prove all squares are rectangles",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788165561145,
+  "lastActivityAt": 1788165574942,
+  "sessionId": "1c80e0ac-38bb-4c27-b245-dcfc31d794b7",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "1c80e0ac-38bb-4c27-b245-dcfc31d794b7"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 5712,
+    "cacheReadInputTokens": 29548,
+    "contextWindow": 1000000,
+    "contextTokens": 35262,
+    "percentage": 4
+  }
+}

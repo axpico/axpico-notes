@@ -174,7 +174,7 @@ Firma digitale:
 
 ## Come si usa in pratica: schema ibrido
 
-In tutti i sistemi reali (TLS, PGP, SSH) le due crittografie vengono combinate:
+In tutti i [[Sistemi]] reali (TLS, PGP, SSH) le due crittografie vengono combinate:
 
 1. Si usa l'asimmetrica per scambiare in modo sicuro una **chiave simmetrica di sessione** (key exchange)
 2. Si usa la simmetrica con quella chiave per cifrare tutti i dati

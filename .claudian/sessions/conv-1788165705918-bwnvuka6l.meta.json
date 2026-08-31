@@ -1,0 +1,22 @@
+{
+  "id": "conv-1788165705918-bwnvuka6l",
+  "providerId": "claude",
+  "title": "Explain squares as rectangle subset",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788165705932,
+  "lastActivityAt": 1788166036897,
+  "sessionId": "a2372e5b-0382-4ac5-95f2-c171476f22dd",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "a2372e5b-0382-4ac5-95f2-c171476f22dd"
+  },
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1438,
+    "cacheReadInputTokens": 37024,
+    "contextWindow": 1000000,
+    "contextTokens": 38464,
+    "percentage": 4
+  }
+}

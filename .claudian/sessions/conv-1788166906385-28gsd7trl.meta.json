@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788166906385-28gsd7trl",
+  "providerId": "claude",
+  "title": "Simplify alternating fraction series",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788166906394,
+  "lastActivityAt": 1788166936273,
+  "sessionId": "f4cc6493-13d5-4eb9-9a38-7abb1a47243e",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "f4cc6493-13d5-4eb9-9a38-7abb1a47243e"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 405,
+    "cacheReadInputTokens": 35361,
+    "contextWindow": 1000000,
+    "contextTokens": 35768,
+    "percentage": 4
+  }
+}

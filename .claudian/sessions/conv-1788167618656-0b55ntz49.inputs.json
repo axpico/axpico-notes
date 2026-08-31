@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788167618656-0b55ntz49",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788167618824-1k646hn",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788167618636-mb4pzvq",
+      "timestamp": 1788167618636,
+      "rawDisplayText": "corretto $$\\sum_{i=1}^{9}(1/\\frac{(-1)^i}{i})$$",
+      "canonicalText": "corretto $$\\sum_{i=1}^{9}(1/\\frac{(-1)^i}{i})$$",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/Linguaggio matematico.md"
+        },
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "$$\\sum_{i=1}^{9}(1/\\frac{(-1)^i}{i})$$",
+          "lineCount": 1,
+          "startLine": 76
+        }
+      },
+      "images": [],
+      "contentDigest": "8eedcf0c8ba361c28b55cf2349f987e6cbcff7e2faf02959c4dee846e3b8b81c",
+      "providerUserMessageId": "9a9cfe38-693d-4afd-a600-0ef1e4d4b34d",
+      "providerAssistantMessageId": "02f8edbc-a8dd-44d2-9b01-d57573b6acd4"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788167676448-rq1aj2w",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788167676439-013ovw5",
+      "timestamp": 1788167676439,
+      "rawDisplayText": "cosi \\sum_{i=1}^{9}(-1/\\frac{(-1)^i}{i})",
+      "canonicalText": "cosi \\sum_{i=1}^{9}(-1/\\frac{(-1)^i}{i})",
+      "context": {
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "\\sum_{i=1}^{9}(-1/\\frac{(-1)^i}{i})",
+          "lineCount": 1,
+          "startLine": 76
+        }
+      },
+      "images": [],
+      "contentDigest": "a2013e64ebf025143ddd12c21064731c270556840e8883cd79590c631b2a1733",
+      "providerUserMessageId": "65b382c6-5e28-42ad-91d2-f783eeae677a",
+      "providerAssistantMessageId": "474c45e6-6524-4a79-83ae-08bcc447e265"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788167753286-02g3r7t",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788167753275-72d6f6h",
+      "timestamp": 1788167753275,
+      "rawDisplayText": "come posso fare per arrivare a uno non sotto frazion e uno si alternato",
+      "canonicalText": "come posso fare per arrivare a uno non sotto frazion e uno si alternato",
+      "context": {
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "\\sum_{i=1}^{9}(1/\\frac{(-1)^i}{i})$",
+          "lineCount": 1,
+          "startLine": 76
+        }
+      },
+      "images": [],
+      "contentDigest": "005c1ebfffbaba1c28d4e23c02e6a032a39659b9eee699dd7f40982c15a4f917",
+      "providerUserMessageId": "e89d8fee-ed29-42e8-a7f4-106e26ecc882",
+      "providerAssistantMessageId": "070f5515-11fb-4cde-af8a-67160b6d8ecd"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788167811911-tlcib27",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788167811846-obdtoes",
+      "timestamp": 1788167811846,
+      "rawDisplayText": "cosi? Sequenza numeriche \n$$9+15+21+27+33+39+45$$\n$$\\sum_{i=1}^{7}(6i+3)$$\n$$\\frac{1}{4}-\\frac{1}{6}+\\frac{1}{8}-\\frac{1}{10}+\\frac{1}{12}-\\frac{1}{14}+\\frac{1}{16}$$\n$$\\sum_{i=2}^{8}(\\frac{(-1)^i}{2i})$$\n$$-1+\\frac{1}{2}-3+\\frac{1}{4}-5+\\frac{1}{6}-7+\\frac{1}{8}-9$$\n$$\\sum_{i=1}^{9}(\\frac{i}{(-1)^i})$$",
+      "canonicalText": "cosi? Sequenza numeriche \n$$9+15+21+27+33+39+45$$\n$$\\sum_{i=1}^{7}(6i+3)$$\n$$\\frac{1}{4}-\\frac{1}{6}+\\frac{1}{8}-\\frac{1}{10}+\\frac{1}{12}-\\frac{1}{14}+\\frac{1}{16}$$\n$$\\sum_{i=2}^{8}(\\frac{(-1)^i}{2i})$$\n$$-1+\\frac{1}{2}-3+\\frac{1}{4}-5+\\frac{1}{6}-7+\\frac{1}{8}-9$$\n$$\\sum_{i=1}^{9}(\\frac{i}{(-1)^i})$$",
+      "context": {
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "### Sequenza numeriche \n$$9+15+21+27+33+39+45$$\n$$\\sum_{i=1}^{7}(6i+3)$$\n$$\\frac{1}{4}-\\frac{1}{6}+\\frac{1}{8}-\\frac{1}{10}+\\frac{1}{12}-\\frac{1}{14}+\\frac{1}{16}$$\n$$\\sum_{i=2}^{8}(\\frac{(-1)^i}{2i})$$\n$$-1+\\frac{1}{2}-3+\\frac{1}{4}-5+\\frac{1}{6}-7+\\frac{1}{8}-9$$\n$$\\sum_{i=1}^{9}(\\frac{i}{(-1)^i})$$",
+          "lineCount": 7,
+          "startLine": 70
+        }
+      },
+      "images": [],
+      "contentDigest": "d6e0922b1d78f4ccbfc57813769085cc09365c93a43ca8a70d08159804b30c59",
+      "providerUserMessageId": "9792d7c6-2ce2-4a98-85c0-e579b1ba859a",
+      "providerAssistantMessageId": "ab28a0cc-36e6-4f62-a938-6db883be9aa7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788167838628-d3zc787",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1788167838613-lsnaclx",
+      "timestamp": 1788167838613,
+      "rawDisplayText": "cosi \\sum_{i=1}^{9}(\\frac{i}{(-1)^i})",
+      "canonicalText": "cosi \\sum_{i=1}^{9}(\\frac{i}{(-1)^i})",
+      "context": {
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "\\sum_{i=1}^{9}(\\frac{i}{(-1)^i})",
+          "lineCount": 1,
+          "startLine": 76
+        }
+      },
+      "images": [],
+      "contentDigest": "ee33c01a12e95ff2d328cfbacebd5df480e3b86f65e662aa2e3085d8c7ccf4e6",
+      "providerUserMessageId": "399eb4b5-1b12-4c52-a416-3fe95fd26679",
+      "providerAssistantMessageId": "ac6ad459-26d3-4ac7-b3f5-e3cc58dd78db"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788167861873-3ux3uxh",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1788167861862-wa8gad0",
+      "timestamp": 1788167861862,
+      "rawDisplayText": "scrivolo giusto",
+      "canonicalText": "scrivolo giusto",
+      "context": {
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "\\sum_{i=1}^{9}(\\frac{i}{(-1)^i})",
+          "lineCount": 1,
+          "startLine": 76
+        }
+      },
+      "images": [],
+      "contentDigest": "bdb8a492805f3f9847fc667019561ae45f66ad5cf9c61da2e15b3262f01de770",
+      "providerUserMessageId": "95f83f3c-8d7b-4f10-ad46-f4fc2345db0f",
+      "providerAssistantMessageId": "da99c50c-171a-46f4-8e7d-348f77b48632"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788162992714-cmygla87z",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788162992927-4tvjgsn",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788162992707-qxio2vw",
+      "timestamp": 1788162992707,
+      "rawDisplayText": "e gisuto b.1",
+      "canonicalText": "e gisuto b.1",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/31-01-2026 Linguaggio matematico.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "58a3c26f59141c71e792a0c015957257de92ad53ca1e8357625d533100942a01",
+      "providerUserMessageId": "efd5a3e0-362d-4210-8fac-022324bbbb4e",
+      "providerAssistantMessageId": "78171242-b8a9-471d-a6d5-61c22bce1f68"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788163011576-hzq34tw",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788163011567-z5zluhm",
+      "timestamp": 1788163011567,
+      "rawDisplayText": "sistema",
+      "canonicalText": "sistema",
+      "images": [],
+      "contentDigest": "e3fffc89a31daf586bbd32a3b4f837b7beff54af8b8c27d1576e78b17cc4180b",
+      "providerUserMessageId": "21e40270-e6e7-4db3-b0c6-c9a91cdfcc34",
+      "providerAssistantMessageId": "aa2e0571-9b4b-4992-91dd-95756237c130"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788163031089-2dqxdq0",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788163031077-6apozed",
+      "timestamp": 1788163031077,
+      "rawDisplayText": "is it right B.1",
+      "canonicalText": "is it right B.1",
+      "images": [],
+      "contentDigest": "429bdfb28101229a7b4920b18320b1952799a2a146f2f9753172c63d7d9a55f8",
+      "providerUserMessageId": "c9f493da-6dcb-406c-baba-2f94027f4cf7",
+      "providerAssistantMessageId": "ca3edb92-fd84-4043-9bd9-63cb6595d596"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788163118512-h383eyh",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788163118500-rpv8vqx",
+      "timestamp": 1788163118500,
+      "rawDisplayText": "metti N per naturali",
+      "canonicalText": "metti N per naturali",
+      "images": [],
+      "contentDigest": "082936a659cba806fbbcb6de912a101b5b2d3c8de87cfde8bac3b5d35c0ba76d",
+      "providerUserMessageId": "7f06d161-5089-4f41-a018-e91569c379a2",
+      "providerAssistantMessageId": "25ca0d86-dfe6-44a4-9dce-cdfee063b793"
+    }
+  ]
+}

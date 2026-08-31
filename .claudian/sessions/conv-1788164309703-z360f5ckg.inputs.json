@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788164309703-z360f5ckg",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788164310038-3uxp0ha",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788164309696-b4xq66r",
+      "timestamp": 1788164309696,
+      "rawDisplayText": "aggiungi i tag e altro sopra e data",
+      "canonicalText": "aggiungi i tag e altro sopra e data",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/Linguaggio matematico.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "dbdd07a70b67445a0092283e32978a855e8bcf34513d64020d596f33647276ea",
+      "providerUserMessageId": "db19a7af-1ee0-4a60-9c35-935e70022e02",
+      "providerAssistantMessageId": "6155d497-98e6-477a-b965-1f37ba4c21cb"
+    }
+  ]
+}

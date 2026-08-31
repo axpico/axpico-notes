@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788164710721-tvhz6y4tt",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788164710927-fh8cc40",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788164710709-n9a99pk",
+      "timestamp": 1788164710709,
+      "rawDisplayText": "fai 6. Non esiste un numero naturale sia pari che dispari$$$$",
+      "canonicalText": "fai 6. Non esiste un numero naturale sia pari che dispari$$$$",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/Linguaggio matematico.md"
+        },
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "6. Non esiste un numero naturale sia pari che dispari$$$$",
+          "lineCount": 1,
+          "startLine": 51
+        }
+      },
+      "images": [],
+      "contentDigest": "5127d93034c42bb932647e121c77dcd27dd1dfd4b9c626a6085f28ba9c5c0299",
+      "providerUserMessageId": "c0ea877c-f872-42fc-be19-b3e45425ac5a",
+      "providerAssistantMessageId": "f1ea93f0-dd97-4554-a178-a739f516c7fa"
+    }
+  ]
+}

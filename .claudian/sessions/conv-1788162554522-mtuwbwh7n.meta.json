@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788162554522-mtuwbwh7n",
+  "providerId": "claude",
+  "title": "Replace markdown fences with dollar signs",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788162554530,
+  "lastActivityAt": 1788162600968,
+  "sessionId": "5c669340-eafd-42c4-8a28-5b0b3989c112",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "5c669340-eafd-42c4-8a28-5b0b3989c112"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 274,
+    "cacheReadInputTokens": 28593,
+    "contextWindow": 200000,
+    "contextTokens": 28875,
+    "percentage": 14
+  }
+}

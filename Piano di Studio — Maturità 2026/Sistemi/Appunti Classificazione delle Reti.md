@@ -212,7 +212,7 @@ Gli standard si collocano ai diversi livelli OSI. Fondamentale tenerlo a mente:
 | Livello | Nome | Cosa fa | Standard tipici |
 | --- | --- | --- | --- |
 | 7 | Applicazione | Interfaccia diretta con le applicazioni dell'utente. Gestisce i protocolli di alto livello: richieste web, trasferimento file, posta elettronica, risoluzione nomi. | HTTP, FTP, SMTP, DNS |
-| 6 | Presentazione | Traduce i dati tra formati diversi: codifica (UTF-8, ASCII), compressione, cifratura/decifratura. Garantisce che i dati abbiano lo stesso significato su sistemi diversi. | TLS/SSL, JPEG, MPEG |
+| 6 | Presentazione | Traduce i dati tra formati diversi: codifica (UTF-8, ASCII), compressione, cifratura/decifratura. Garantisce che i dati abbiano lo stesso significato su [[Sistemi]] diversi. | TLS/SSL, JPEG, MPEG |
 | 5 | Sessione | Apre, gestisce e chiude le sessioni di comunicazione tra applicazioni. Gestisce la sincronizzazione e il ripristino in caso di interruzione. | NetBIOS, RPC |
 | 4 | Trasporto | Trasferimento end-to-end tra processi (identificati da porte). TCP offre consegna affidabile, controllo di flusso e controllo di congestione. UDP è veloce ma inaffidabile. Unità dati: **segmento** (TCP) / **datagramma** (UDP). | TCP, UDP |
 | 3 | Rete | Instradamento (routing) dei pacchetti tra reti diverse. Usa indirizzi logici (**indirizzi IP**) per identificare sorgente e destinazione. I router operano a questo livello. Unità dati: **pacchetto**. | IP (v4, v6), ICMP, OSPF, BGP |

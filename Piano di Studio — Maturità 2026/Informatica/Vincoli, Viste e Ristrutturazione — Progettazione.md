@@ -265,7 +265,7 @@ CREATE VIEW IscrizioniComplete AS
 
 ## Ristrutturazione dello schema concettuale
 
-Prima di tradurre lo schema ER in relazionale, si esegue una fase di **ristrutturazione** per semplificarlo e ottimizzarlo. È un passaggio intermedio tra progettazione concettuale e logica.
+Prima di tradurre lo schema ER in relazionale, si esegue una fase di **ristrutturazione** per semplificarlo e ottimizzarlo. È un passaggio intermedio tra [[Progettazione Concettuale]] e logica.
 
 ---
 

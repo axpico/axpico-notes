@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788165427622-xgstgcu9g",
+  "providerId": "claude",
+  "title": "Check exercise 7 answer U or V",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788165427634,
+  "lastActivityAt": 1788165447869,
+  "sessionId": "028ecf59-0ded-40f0-a4ad-437bb04b8409",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "028ecf59-0ded-40f0-a4ad-437bb04b8409"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1230,
+    "cacheReadInputTokens": 31445,
+    "contextWindow": 1000000,
+    "contextTokens": 32677,
+    "percentage": 3
+  }
+}

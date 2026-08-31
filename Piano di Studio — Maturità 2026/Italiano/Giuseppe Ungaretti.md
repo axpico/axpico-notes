@@ -10,7 +10,7 @@
 
 Ungaretti nasce in Egitto da famiglia italiana: fin dall’inizio fatica a riconoscersi.
 
-- **Metà italiano, metà egiziano**: non trova una casa definitiva
+- **Metà [[Italiano]], metà egiziano**: non trova una casa definitiva
 - Cerca un’adesione identitaria e geografica che non arriverà mai completamente
 - Questa condizione di **esilio permanente** diventa tema fondamentale della sua poetica
 

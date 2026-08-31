@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788164309703-z360f5ckg",
+  "providerId": "claude",
+  "title": "Add tags and date field",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788164309705,
+  "lastActivityAt": 1788164335174,
+  "sessionId": "18f362df-334a-4310-a7c9-dc4387cfa29e",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "18f362df-334a-4310-a7c9-dc4387cfa29e"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 446,
+    "cacheReadInputTokens": 35193,
+    "contextWindow": 1000000,
+    "contextTokens": 35641,
+    "percentage": 4
+  }
+}

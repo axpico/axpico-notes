@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788164710721-tvhz6y4tt",
+  "providerId": "claude",
+  "title": "Prove no number is both even and odd",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788164710735,
+  "lastActivityAt": 1788164731786,
+  "sessionId": "0aecb8bd-2984-41da-a74c-78f0758758cb",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "0aecb8bd-2984-41da-a74c-78f0758758cb"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 6362,
+    "cacheReadInputTokens": 29465,
+    "contextWindow": 1000000,
+    "contextTokens": 35829,
+    "percentage": 4
+  }
+}

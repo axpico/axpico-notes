@@ -100,11 +100,11 @@
     - [ ]  Validazione lato client e lato server
     - [ ]  AJAX
     - [ ]  Cookie e sessioni
-- 6 giu (sab) — Progettazione concettuale DB + Schema ER
+- 6 giu (sab) — [[Progettazione Concettuale]] DB + Schema ER
 
     [Appunti: Progettazione Concettuale](Progettazione%20Concettuale.md)
 
-    - [ ]  Progettazione concettuale di un DB
+    - [ ]  [[Progettazione Concettuale]] di un DB
     - [ ]  Schema ER — entità, attributi, associazioni
 - 7 giu (dom) — Dal concettuale al relazionale
 
@@ -112,7 +112,7 @@
 
     - [ ]  Regole aziendali e vincoli di integrità
     - [ ]  Dalla progettazione al modello relazionale (relazioni e viste)
-- 8 giu (lun) — Progettazione logica
+- 8 giu (lun) — [[Progettazione Logica]]
 
     [Appunti: Vincoli, Viste e Ristrutturazione](Vincoli,%20Viste%20e%20Ristrutturazione%20—%20Progettazione.md)
 

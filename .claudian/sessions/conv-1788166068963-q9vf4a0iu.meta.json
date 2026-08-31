@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788166068963-q9vf4a0iu",
+  "providerId": "claude",
+  "title": "Debug syntax issues",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788166068972,
+  "lastActivityAt": 1788166089616,
+  "sessionId": "39b45262-7274-48ad-bec8-5ccb5118f9d6",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "39b45262-7274-48ad-bec8-5ccb5118f9d6"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 6521,
+    "cacheReadInputTokens": 29927,
+    "contextWindow": 1000000,
+    "contextTokens": 36450,
+    "percentage": 4
+  }
+}

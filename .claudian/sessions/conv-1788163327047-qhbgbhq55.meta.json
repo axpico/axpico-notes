@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788163327047-qhbgbhq55",
+  "providerId": "claude",
+  "title": "Calculate sum of first 5 odd numbers",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788163327056,
+  "lastActivityAt": 1788163345689,
+  "sessionId": "61ccfea6-4df0-4476-80ce-b852ba54f204",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "61ccfea6-4df0-4476-80ce-b852ba54f204"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 6667,
+    "cacheReadInputTokens": 29483,
+    "contextWindow": 1000000,
+    "contextTokens": 36152,
+    "percentage": 4
+  }
+}

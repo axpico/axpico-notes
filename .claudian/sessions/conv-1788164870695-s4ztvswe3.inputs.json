@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788164870695-s4ztvswe3",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788164870926-p146bss",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788164870681-dab4uvo",
+      "timestamp": 1788164870681,
+      "rawDisplayText": "sistema \n6. Non esiste un numero naturale sia pari che dispari$$¬∃x ∈ \\mathbb{N} : (x%2=0) ∧ (x%2=0) $$",
+      "canonicalText": "sistema \n6. Non esiste un numero naturale sia pari che dispari$$¬∃x ∈ \\mathbb{N} : (x%2=0) ∧ (x%2=0) $$",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/Linguaggio matematico.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "b2b1dee0d7b539b4c331c44436286b0286d5081123ca63e1a354df38a9b9950b",
+      "providerUserMessageId": "08ff7cd7-16bb-49d5-9e94-fb4ae6bef959",
+      "providerAssistantMessageId": "86229469-4c15-46a5-a4b4-d84e3e70e460"
+    }
+  ]
+}

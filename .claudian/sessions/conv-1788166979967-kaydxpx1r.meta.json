@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788166979967-kaydxpx1r",
+  "providerId": "claude",
+  "title": "Format series in LaTeX fractions",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788166980008,
+  "lastActivityAt": 1788167011375,
+  "sessionId": "dee43929-aacc-4885-96f0-bbc12d925e55",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "dee43929-aacc-4885-96f0-bbc12d925e55"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 335,
+    "cacheReadInputTokens": 35253,
+    "contextWindow": 1000000,
+    "contextTokens": 35590,
+    "percentage": 4
+  }
+}

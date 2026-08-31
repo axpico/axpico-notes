@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788165610986-1u93675c4",
+  "providerId": "claude",
+  "title": "Verify all squares are rectangles",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788165610996,
+  "lastActivityAt": 1788165628759,
+  "sessionId": "dd8528ef-06d9-4633-9d1a-46fb721689be",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "dd8528ef-06d9-4633-9d1a-46fb721689be"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 6003,
+    "cacheReadInputTokens": 29489,
+    "contextWindow": 1000000,
+    "contextTokens": 35494,
+    "percentage": 4
+  }
+}

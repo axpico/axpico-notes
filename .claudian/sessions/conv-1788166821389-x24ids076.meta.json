@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788166821389-x24ids076",
+  "providerId": "claude",
+  "title": "Change increment value",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788166821392,
+  "lastActivityAt": 1788166847665,
+  "sessionId": "c0b1f224-5034-45db-9123-12d33a4d38a5",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "c0b1f224-5034-45db-9123-12d33a4d38a5"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 7090,
+    "cacheReadInputTokens": 29837,
+    "contextWindow": 1000000,
+    "contextTokens": 36929,
+    "percentage": 4
+  }
+}

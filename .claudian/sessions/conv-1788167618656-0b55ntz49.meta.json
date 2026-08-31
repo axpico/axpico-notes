@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788167618656-0b55ntz49",
+  "providerId": "claude",
+  "title": "Evaluate mathematical sum",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788167618669,
+  "lastActivityAt": 1788167869791,
+  "sessionId": "2fc69ee6-3c7e-41e3-8da2-b73357365e1f",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "2fc69ee6-3c7e-41e3-8da2-b73357365e1f"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 264,
+    "cacheReadInputTokens": 40402,
+    "contextWindow": 1000000,
+    "contextTokens": 40668,
+    "percentage": 4
+  }
+}

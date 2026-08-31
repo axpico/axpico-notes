@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788162992714-cmygla87z",
+  "providerId": "claude",
+  "title": "Clarify garbled input",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788162992725,
+  "lastActivityAt": 1788163126325,
+  "sessionId": "f044b587-3e66-458e-ae24-9a0160fb9ff9",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "f044b587-3e66-458e-ae24-9a0160fb9ff9"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 10,
+    "cacheCreationInputTokens": 770,
+    "cacheReadInputTokens": 27095,
+    "contextWindow": 200000,
+    "contextTokens": 27875,
+    "percentage": 14
+  }
+}

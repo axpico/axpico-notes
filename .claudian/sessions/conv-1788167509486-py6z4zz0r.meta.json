@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788167509486-py6z4zz0r",
+  "providerId": "claude",
+  "title": "Invert fraction formula",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788167509500,
+  "lastActivityAt": 1788167568602,
+  "sessionId": "f639e2b1-84a4-4299-bd32-93d57e0b277b",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "f639e2b1-84a4-4299-bd32-93d57e0b277b"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 425,
+    "cacheReadInputTokens": 36300,
+    "contextWindow": 1000000,
+    "contextTokens": 36727,
+    "percentage": 4
+  }
+}
