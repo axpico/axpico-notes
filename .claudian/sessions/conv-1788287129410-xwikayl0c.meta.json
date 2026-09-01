@@ -1,0 +1,14 @@
+{
+  "id": "conv-1788287129410-xwikayl0c",
+  "providerId": "claude",
+  "title": "ddsada",
+  "titleGenerationStatus": "pending",
+  "createdAt": 1788287129413,
+  "lastActivityAt": 1788287131980,
+  "sessionId": "e202b6e5-ffcd-4e5f-8fee-6411dd77cffb",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "e202b6e5-ffcd-4e5f-8fee-6411dd77cffb"
+  },
+  "currentNote": "Ripasso fisica/Dinamica.md"
+}
