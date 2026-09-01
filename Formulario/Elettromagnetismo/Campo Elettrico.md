@@ -11,7 +11,7 @@ tags:
 $$\vec{E} = \frac{1}{4\pi\epsilon_0}\frac{q}{r^2}\hat{u}$$
 
 Dove:
-- $\vec{E}$ = [[2. Campo elettrico]] (N/C o V/m) — **vettore**
+- $\vec{E}$ = campo elettrico (N/C o V/m) — **vettore**
 - $q$ = carica elettrica (Coulomb)
 - $r$ = distanza dalla carica (metro)
 - $\hat{u}$ = versore radiale (direzione e verso dalla carica)

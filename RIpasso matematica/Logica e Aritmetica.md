@@ -75,5 +75,48 @@ Un isoscele non è per forza rettangolo (es. equilatero, angoli tutti $60°$). U
 Necessaria: se T è isoscele, i due lati uguali hanno quoziente $=1$ (intero) ⇒ vale (e). Non sufficiente: controesempio $2,4,5$ (triangolo valido, $4/2=2$ intero) ma scaleno, non isoscele.
 
 
-## B)  Connettivi logici
+## B) Connettivi logici
+
+### 1. "Sono bello e ricco" — negazione di una congiunzione
+
+Lui afferma $P \land Q$ (bello **e** ricco). Lei nega: $\lnot(P \land Q)$.
+
+Per De Morgan: $\lnot(P \land Q) \equiv \lnot P \lor \lnot Q$ — cioè **brutto o povero, eventualmente entrambi** (l'"o" logico è inclusivo).
+
+> [!success] Risposta: (c)
+> (a) negherebbe una congiunzione con un'altra congiunzione ($\lnot P \land \lnot Q$): troppo forte, non è ciò che dice "non è vero che...".
+> (b) è l'"o esclusivo" (aut aut): esclude il caso "entrambi", che invece la negazione logica ammette.
+> (d) non c'entra: la frase nega solo il contenuto dell'affermazione, non parla di amore.
+
+---
+
+### 2. Negazione di affermazioni (quantificatori e connettivi)
+
+Regole usate: $\lnot\exists \equiv \forall\lnot$, $\lnot\forall \equiv \exists\lnot$, De Morgan ($\lnot(A\land B)\equiv \lnot A \lor \lnot B$, $\lnot(A\lor B)\equiv \lnot A \land \lnot B$).
+
+**(a)** "Esiste un punto che non appartiene alla retta $r$, né alla retta $s$."
+$\exists x:\ x\notin r \land x\notin s$ → negazione: $\forall x:\ x\in r \lor x\in s$
+> **Ogni punto appartiene alla retta $r$ o alla retta $s$ (o a entrambe).**
+
+**(b)** "Per ogni numero reale $x$ si ha $f(x)\ge 5$."
+$\forall x:\ f(x)\ge 5$ → negazione: $\exists x:\ f(x) < 5$
+> **Esiste un numero reale $x$ per cui $f(x) < 5$.**
+
+**(c)** "Esiste una circonferenza tangente alle rette $r$ ed $s$, ma non alla retta $q$."
+$\exists c:\ \tan(c,r) \land \tan(c,s) \land \lnot\tan(c,q)$ → negazione: $\forall c:\ \lnot\tan(c,r) \lor \lnot\tan(c,s) \lor \tan(c,q)$
+> **Ogni circonferenza tangente sia a $r$ sia a $s$ è tangente anche a $q$** (ossia: nessuna circonferenza è tangente a $r$ e $s$ senza esserlo anche a $q$).
+
+**(d)** "Il quadrilatero $Q$ e il pentagono $P$ hanno almeno due vertici in comune."
+$|V(Q)\cap V(P)| \ge 2$ → negazione: $|V(Q)\cap V(P)| \le 1$
+> **$Q$ e $P$ hanno al più un vertice in comune** (nessuno o esattamente uno).
+
+**(e)** "Il numero $p$ è primo, dispari e minore di 10."
+$\text{primo} \land \text{dispari} \land p<10$ → negazione (De Morgan): $\lnot\text{primo} \lor \text{pari} \lor p\ge 10$
+> **$p$ non è primo, oppure è pari, oppure è maggiore o uguale a 10** (basta che *una sola* delle tre condizioni cada).
+
+**(f)** "L'equazione $a(x)=0$ ha esattamente tre soluzioni reali."
+→ negazione: **l'equazione $a(x)=0$ ha un numero di soluzioni reali diverso da tre** (cioè 0, 1, 2, oppure 4 o più).
+
+> [!tip] Schema generale
+> Negare "esattamente $n$" non vuol dire "nessuna" o "infinite": vuol dire semplicemente "$\ne n$". È un errore comune trasformare la negazione in un'affermazione più forte di quanto serva — regola valida anche per (a)-(e): negare una congiunzione dà un'**disgiunzione** (De Morgan), non un'altra congiunzione.
 

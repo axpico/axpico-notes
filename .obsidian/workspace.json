@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Formulario/Elettromagnetismo/Campo Elettrico.md",
+                "file": "RIpasso matematica/Logica e Aritmetica.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Campo Elettrico"
+              "title": "Logica e Aritmetica"
             }
           }
         ]
@@ -237,9 +237,10 @@
   },
   "active": "37f08df93cdfe4d4",
   "lastOpenFiles": [
-    "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico/2. Campo elettrico.md",
-    "Formulario/Elettromagnetismo/Campo Elettrico.md",
     "Formulario/Elettromagnetismo/Legge di Coulomb.md",
+    "Formulario/Elettromagnetismo/Campo Elettrico.md",
+    "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico/2. Campo elettrico.md",
+    "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico/1. Carica elettrica e forza di Coulomb.md",
     "Formulario/Cinematica/Spostamento come area sotto v(t).md",
     "Formulario/Cinematica/Piano inclinato.md",
     "Formulario/Cinematica/Moto Rettilineo Uniformemente Accelerato (MRUA).md",
@@ -271,7 +272,6 @@
     "Piano di Studio — Maturità 2026/Informatica/Progettazione Logica.md.tmp.4464.a86b306457d4",
     "2026-01-31.md",
     "Piano di Studio — Maturità 2026/Informatica/Appunti Archivi e File — Concetti Base e Organiz.md",
-    "Piano di Studio — Maturità 2026/Sistemi/Appunti Architettura Client-Server, HTTP, URI U.md",
     "Senza nome.base",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",

@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788257543072-g6n2jso3a",
+  "providerId": "claude",
+  "title": "Analyze logical connectives and negation",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788257543098,
+  "lastActivityAt": 1788257586167,
+  "sessionId": "4bfe2cf3-7bd9-4a91-bb8c-d176ade27792",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "4bfe2cf3-7bd9-4a91-bb8c-d176ade27792"
+  },
+  "currentNote": "RIpasso matematica/Logica e Aritmetica.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 8086,
+    "cacheReadInputTokens": 33340,
+    "contextWindow": 1000000,
+    "contextTokens": 41428,
+    "percentage": 4
+  }
+}

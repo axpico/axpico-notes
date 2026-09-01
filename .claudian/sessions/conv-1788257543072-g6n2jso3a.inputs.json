@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788257543072-g6n2jso3a",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788257543408-y7wl6wu",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788257543048-c3747os",
+      "timestamp": 1788257543048,
+      "rawDisplayText": "aggiungi B Connettivi logici.\n1. Lui dice a lei: Sono bello e ricco. Lei risponde: Non `e vero. Cosa significa?\n(a) che lui `e brutto e povero.\n(b) che lui `e brutto o povero, ma non entrambi.\n(c) che lui `e brutto o povero, o entrambi.\n(d) che lei non lo ama.\n2. Negare le seguenti affermazioni:\n(a) Esiste un punto che non appartiene alla retta r, n`e alla retta s.\n(b) Per ogni numero reale x si ha f (x) ≥ 5.\n(c) Esiste una circonferenza tangente alle rette r ed s, ma non alla retta q.\n(d) Il quadrilatero Q e il pentagono P hanno almeno due vertici in comune.\n(e) Il numero p `e primo, dispari e minore di 10.\n(f) L’equazione a(x) = 0 ha esattamente tre soluzioni reali.",
+      "canonicalText": "aggiungi B Connettivi logici.\n1. Lui dice a lei: Sono bello e ricco. Lei risponde: Non `e vero. Cosa significa?\n(a) che lui `e brutto e povero.\n(b) che lui `e brutto o povero, ma non entrambi.\n(c) che lui `e brutto o povero, o entrambi.\n(d) che lei non lo ama.\n2. Negare le seguenti affermazioni:\n(a) Esiste un punto che non appartiene alla retta r, n`e alla retta s.\n(b) Per ogni numero reale x si ha f (x) ≥ 5.\n(c) Esiste una circonferenza tangente alle rette r ed s, ma non alla retta q.\n(d) Il quadrilatero Q e il pentagono P hanno almeno due vertici in comune.\n(e) Il numero p `e primo, dispari e minore di 10.\n(f) L’equazione a(x) = 0 ha esattamente tre soluzioni reali.",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/Logica e Aritmetica.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "3a0b0f1c34188c8e89e93b3e08bbc1ce598de8c8b1020657972b83cd256beb96",
+      "providerUserMessageId": "49228a3b-64bb-40d0-80c4-68d29ce3f60f",
+      "providerAssistantMessageId": "ef8f7703-2ca6-4e13-b2d2-5638a21c67ae"
+    }
+  ]
+}
