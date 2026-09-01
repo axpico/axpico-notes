@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788251615400-goc54etf6",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788251615625-j6ioci1",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788251615393-s2jkxon",
+      "timestamp": 1788251615393,
+      "rawDisplayText": "controll ase e giusta facendo i primi 30 numeri \\sum_{k=1}^{n}(-1)^{k+1}=\\begin{cases}0 & n\\text{ pari}\\\\1 & n\\text{ dispari}\\end{cases}",
+      "canonicalText": "controll ase e giusta facendo i primi 30 numeri \\sum_{k=1}^{n}(-1)^{k+1}=\\begin{cases}0 & n\\text{ pari}\\\\1 & n\\text{ dispari}\\end{cases}",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/Linguaggio matematico.md"
+        },
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "\\sum_{k=1}^{n}(-1)^{k+1}=\\begin{cases}0 & n\\text{ pari}\\\\1 & n\\text{ dispari}\\end{cases}",
+          "lineCount": 1,
+          "startLine": 96
+        }
+      },
+      "images": [],
+      "contentDigest": "7a356480e905eec1d2760acc9a460f4c6e6b97f50da43773f479370e39625018",
+      "providerUserMessageId": "6787c735-b295-4251-8ba2-ebb13b64e6a2",
+      "providerAssistantMessageId": "94f761ea-b711-43dd-84ae-60501178b281"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788251655859-dm1y4ie",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788251655851-lhjtms8",
+      "timestamp": 1788251655851,
+      "rawDisplayText": "allora non e 0 e -1 e 1 e -1",
+      "canonicalText": "allora non e 0 e -1 e 1 e -1",
+      "context": {
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "\\sum_{k=1}^{n}(-1)^{k+1}=\\begin{cases}0 & n\\text{ pari}\\\\1 & n\\text{ dispari}\\end{cases}",
+          "lineCount": 1,
+          "startLine": 96
+        }
+      },
+      "images": [],
+      "contentDigest": "f2237faceb0b333b4ccf1f89a870422ba586a7ec0149a6476b1cba8021d91622",
+      "providerUserMessageId": "6f499e38-2b33-4c99-840c-f11c9b71018e"
+    }
+  ]
+}
