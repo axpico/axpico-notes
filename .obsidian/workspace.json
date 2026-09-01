@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RIpasso matematica/Logica e Aritmetica.md",
+                "file": "RIpasso matematica/Linguaggio matematico.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Logica e Aritmetica"
+              "title": "Linguaggio matematico"
             }
           }
         ]
@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -238,6 +237,7 @@
   },
   "active": "37f08df93cdfe4d4",
   "lastOpenFiles": [
+    "RIpasso matematica/Logica e Aritmetica.md",
     "Formulario/Elettromagnetismo/Legge di Coulomb.md",
     "Formulario/Elettromagnetismo/Campo Elettrico.md",
     "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico/2. Campo elettrico.md",
@@ -267,7 +267,6 @@
     "Formulario/Moto Rettilineo Uniforme (MRU).md",
     "Formulario/Elettromagnetismo formule.md",
     "Formulario/Cinematica formule.md",
-    "RIpasso matematica/Logica e Aritmetica.md",
     "RIpasso matematica/Linguaggio matematico.md",
     "claude_skills/Skill Desmos for obsidian.md",
     "Piano di Studio — Maturità 2026/Informatica/Progettazione Logica.md.tmp.4464.a86b306457d4",
