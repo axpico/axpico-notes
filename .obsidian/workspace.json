@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -237,10 +238,10 @@
   },
   "active": "37f08df93cdfe4d4",
   "lastOpenFiles": [
+    "RIpasso matematica/Linguaggio matematico.md",
     "RIpasso matematica/Logica e Aritmetica.md",
     "claude_skills/Skill Desmos for obsidian.md",
     "Piano di Studio — Maturità 2026/Informatica/Progettazione Logica.md.tmp.4464.a86b306457d4",
-    "RIpasso matematica/Linguaggio matematico.md",
     "2026-01-31.md",
     "Piano di Studio — Maturità 2026/Informatica/Appunti Archivi e File — Concetti Base e Organiz.md",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti Architettura Client-Server, HTTP, URI U.md",
