@@ -144,5 +144,17 @@ $$n^5 - n = n(n^4-1) = n(n^2-1)(n^2+1) = (n-2)(n-1)n(n+1)(n+2) + 5n(n^2-1)$$
 
 --- 
 
-###  3.  raidce di 2 è irrazionale
-$$\root{5}$$
+### 3. Radice di 2 è irrazionale
+
+**Per assurdo:** supponiamo $\sqrt2$ razionale, cioè $\sqrt2=\dfrac{p}{q}$ con $p,q\in\mathbb{Z}$, $q\ne0$ e $\frac{p}{q}$ **ridotta ai minimi termini** ($\gcd(p,q)=1$).
+
+$$\sqrt{2}=\frac{p}{q} \;\Rightarrow\; 2=\frac{p^2}{q^2} \;\Rightarrow\; p^2=2q^2$$
+
+- $p^2$ è pari (è $2q^2$) $\Rightarrow$ $p$ è pari (il quadrato di un dispari è dispari) $\Rightarrow$ $p=2k$ per qualche $k\in\mathbb{Z}$.
+- Sostituendo: $(2k)^2=2q^2 \Rightarrow 4k^2=2q^2 \Rightarrow q^2=2k^2$.
+- Quindi anche $q^2$ è pari $\Rightarrow$ anche $q$ è pari.
+
+> [!success] Contraddizione
+> $p$ e $q$ risultano entrambi pari, cioè hanno il fattore comune 2 — assurdo, perché avevamo assunto $\frac{p}{q}$ già ridotta ai minimi termini ($\gcd(p,q)=1$).
+>
+> L'ipotesi iniziale è quindi falsa: **$\sqrt2$ non può essere scritto come frazione**, dunque è irrazionale. $\blacksquare$
