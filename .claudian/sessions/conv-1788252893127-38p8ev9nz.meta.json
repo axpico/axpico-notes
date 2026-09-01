@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788252893127-38p8ev9nz",
+  "providerId": "claude",
+  "title": "Prove Gauss's formula",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788252893134,
+  "lastActivityAt": 1788252919306,
+  "sessionId": "a04ea7eb-ae14-4a8b-9caa-450d13f70d58",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "a04ea7eb-ae14-4a8b-9caa-450d13f70d58"
+  },
+  "currentNote": "RIpasso matematica/Logica e Aritmetica.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 6589,
+    "cacheReadInputTokens": 30865,
+    "contextWindow": 1000000,
+    "contextTokens": 37456,
+    "percentage": 4
+  }
+}

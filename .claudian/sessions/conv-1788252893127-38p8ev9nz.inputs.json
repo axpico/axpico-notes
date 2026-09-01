@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788252893127-38p8ev9nz",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788252893322-z9e4g7s",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788252893120-rlaw809",
+      "timestamp": 1788252893120,
+      "rawDisplayText": "fai la dimostrazioone della formula di gause",
+      "canonicalText": "fai la dimostrazioone della formula di gause",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/Logica e Aritmetica.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "0e0f939c115fb416de0288abc757a9b1f3e83116ce34e2343b10d326100779d0",
+      "providerUserMessageId": "3b722bc5-3a66-4bf8-afbe-0cf5ca6e914f",
+      "providerAssistantMessageId": "6f4cc1b3-202f-40ba-b3c0-071db7627ffb"
+    }
+  ]
+}
