@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -209,7 +208,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -236,7 +235,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "1b0273eb824a9bf7",
   "lastOpenFiles": [
     "RIpasso matematica/Linguaggio matematico.md",
     "RIpasso matematica/Logica e Aritmetica.md",
