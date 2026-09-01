@@ -1,0 +1,14 @@
+{
+  "id": "conv-1788254889091-f3lztulhp",
+  "providerId": "claude",
+  "title": "Add properties and tags",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788254889103,
+  "lastActivityAt": 1788254889103,
+  "sessionId": "66e9c87a-ae75-4492-9ac9-3c5b8ff6605d",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "66e9c87a-ae75-4492-9ac9-3c5b8ff6605d"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md"
+}

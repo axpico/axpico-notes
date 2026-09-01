@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "5c6e135e9a8116bd",
+        "id": "456fe629223ea22e",
         "type": "tabs",
         "children": [
           {
-            "id": "1b0273eb824a9bf7",
+            "id": "37f08df93cdfe4d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Piano di Studio — Maturità 2026/Informatica/Appunti Archivi e File — Concetti Base e Organiz.md",
+                "file": "RIpasso matematica/Logica e Aritmetica.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Appunti Archivi e File — Concetti Base e Organiz"
-            }
-          },
-          {
-            "id": "9a7f3504d4bdce9b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Piano di Studio — Maturità 2026/Sistemi/Appunti Crittografia Simmetrica, Asimmetrica e R.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Appunti Crittografia Simmetrica, Asimmetrica e R"
+              "title": "Logica e Aritmetica"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -250,14 +235,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9a7f3504d4bdce9b",
+  "active": "37f08df93cdfe4d4",
   "lastOpenFiles": [
-    "Piano di Studio — Maturità 2026/Sistemi/Appunti CIA · Attacchi e Minacce · Malware · Te.md",
     "RIpasso matematica/Linguaggio matematico.md",
-    "Formulario/Linguaggio matematico.md",
-    "Piano di Studio — Maturità 2026/Sistemi/Appunti Crittografia Simmetrica, Asimmetrica e R.md",
-    "Piano di Studio — Maturità 2026/Informatica/Informatica indice.md",
+    "2026-01-31.md",
+    "RIpasso matematica/Logica e Aritmetica.md",
     "Piano di Studio — Maturità 2026/Informatica/Appunti Archivi e File — Concetti Base e Organiz.md",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti Architettura Client-Server, HTTP, URI U.md",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti Crittografia Simmetrica, Asimmetrica e R.md",
+    "Piano di Studio — Maturità 2026/Sistemi/Appunti CIA · Attacchi e Minacce · Malware · Te.md",
+    "Formulario/Linguaggio matematico.md",
+    "Piano di Studio — Maturità 2026/Informatica/Informatica indice.md",
     "Piano di Studio — Maturità 2026/Informatica/Appunti SQL.md",
     "Piano di Studio — Maturità 2026/Informatica/Vincoli, Viste e Ristrutturazione — Progettazione.md",
     "Piano di Studio — Maturità 2026/Italiano/Decadentismo e Simbolismo Francese.md",
@@ -269,7 +257,6 @@
     "Piano di Studio — Maturità 2026/Inglese/Inglese indice.md",
     "Piano di Studio — Maturità 2026/Italiano/Italiano indice.md",
     "claude_skills/Skill Desmos for obsidian.md",
-    "RIpasso matematica/Logica e Aritmetica.md",
     "Senza nome.base",
     "Skill.md",
     "claude_skills/Skill \"Desmos for obsidian\".md",
@@ -282,8 +269,6 @@
     "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico/5. Atomo di idrogeno.md",
     "RIpasso matematica",
     "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico/6. Confronto con forza gravitazionale.md",
-    "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico/3. Linee di forza.md",
-    "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico/4. Principio di sovrapposizione.md",
     "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico",
     "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",

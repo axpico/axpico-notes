@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788254889091-f3lztulhp",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788254889329-tbrnvk6",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788254889085-3umqlwx",
+      "timestamp": 1788254889085,
+      "rawDisplayText": "vai in giro e aggiungi prorprities e tags",
+      "canonicalText": "vai in giro e aggiungi prorprities e tags",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/Linguaggio matematico.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "005cec51974815c2850ea3e851730bcb30b1a265d7778186bd8f0dac0af1c763",
+      "providerUserMessageId": "47f2b436-2275-4a39-b0e7-dbb4ef8c1fa5"
+    }
+  ]
+}
