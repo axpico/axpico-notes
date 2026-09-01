@@ -115,7 +115,7 @@ $\text{primo} \land \text{dispari} \land p<10$ → negazione (De Morgan): $\lnot
 > **$p$ non è primo, oppure è pari, oppure è maggiore o uguale a 10** (basta che *una sola* delle tre condizioni cada).
 
 **(f)** "L'equazione $a(x)=0$ ha esattamente tre soluzioni reali."
-→ negazione: **l'equazione $a(x)=0$ ha un numero di soluzioni reali diverso da tre** (cioè 0, 1, 2, oppure 4 o più).
+→ negazione: **l'equazione $a(x)=0$ ha un numero di soluzioni reali diverso da tre** (cioè 0, 1, 2, pure 4 o più).
 
 > [!tip] Schema generale
 > Negare "esattamente $n$" non vuol dire "nessuna" o "infinite": vuol dire semplicemente "$\ne n$". È un errore comune trasformare la negazione in un'affermazione più forte di quanto serva — regola valida anche per (a)-(e): negare una congiunzione dà un'**disgiunzione** (De Morgan), non un'altra congiunzione.
