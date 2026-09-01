@@ -15,14 +15,5 @@
       ],
       "key": "-"
     }
-  ],
-  "latex-math:eval-latex-expression": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "-"
-    }
   ]
 }

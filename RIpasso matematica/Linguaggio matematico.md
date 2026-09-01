@@ -84,7 +84,7 @@ $$\sum_{k=1}^{10}(k^2)-\sum_{k=1}^{10}(k)$$
 #### Formula per i primi n quadrati
 $$\sum_{k=1}^{n} k^2 =\frac{n(n+1)(2n+1)}{6}$$
 $$\sum_{k=1}^{10}(k^2)=\frac{10(10+1)(2*10+1)}{6}=5*11*7=385$$
-$$1+1=$$
+
 #### Formula di Gauss (somma dei primi n numeri naturali)
 $$\sum_{i=1}^{n}k=\frac{n*(n+1)}{2}$$
 $$\sum_{k=1}^{10}k=\frac{10(11)}{2}=\frac{110}{2}=55$$
