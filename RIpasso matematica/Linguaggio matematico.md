@@ -110,9 +110,9 @@ $$P_5^*=\frac{5!}{2!}=\frac{120}{2}=60$$
 Azzurra -> permutazione con ripetizione (A, Z, R si ripetono 2 volte ciascuna)
 $$P_7^*=\frac{7!}{2!2!2!}=\frac{5040}{8}=630$$
 Alessandro -> permutazione con ripetizione (A, S si ripetono 2 volte ciascuna)
-$$P_{10}^*=\frac{10!}{2!2!}=\frac{3628800}{4}=907200$$
+$$P_{10}^*=\frac{10!}{2!2!}=\frac{3628800}{4}=907^{.}200$$
 Vittoria -> permutazione con ripetizione (I, T si ripetono 2 volte ciascuna)
-$$P_8^*=\frac{8!}{2!2!}=\frac{40320}{4}=10080$$
+$$P_8^*=\frac{8!}{2!2!}=\frac{40320}{4}=10^{.}080$$
 Valerio -> permutazione semplice (7 lettere tutte diverse)
 $$P_7= 7! = 5040$$
 Pietro -> permutazione semplice (6 lettere tutte diverse)

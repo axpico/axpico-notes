@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788251167990-gnbkw88jx",
+  "providerId": "claude",
+  "title": "Verify alternating sum formula",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788251167999,
+  "lastActivityAt": 1788251178101,
+  "sessionId": "b73e19cc-6813-4806-a9d2-18678e99de86",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "b73e19cc-6813-4806-a9d2-18678e99de86"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 7126,
+    "cacheReadInputTokens": 23714,
+    "contextWindow": 1000000,
+    "contextTokens": 30842,
+    "percentage": 3
+  }
+}
