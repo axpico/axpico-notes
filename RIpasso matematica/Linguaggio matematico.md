@@ -9,7 +9,7 @@ tags:
 ---
 # Linguaggio Matematico
 
-Uso di simboli e linguaggio per tradurre dalla matematica all'[[Italiano indice]] e viceversa.
+Uso di simboli e linguaggio per tradurre dalla matematica all'italiano e viceversa.
 
 ## Esercizi
 ### A) Quantificatori

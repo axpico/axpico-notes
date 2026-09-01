@@ -1,6 +1,6 @@
 # Panoramica
 
-La crittografia è la scienza di trasformare informazioni leggibili in forma illeggibile per chi non è autorizzato, e di riportarle alla forma originale per chi lo è. È il fondamento tecnico di quasi ogni meccanismo di sicurezza [[Informatica indice]]: HTTPS, VPN, firma digitale, autenticazione.
+La crittografia è la scienza di trasformare informazioni leggibili in forma illeggibile per chi non è autorizzato, e di riportarle alla forma originale per chi lo è. È il fondamento tecnico di quasi ogni meccanismo di sicurezza Informatica: HTTPS, VPN, firma digitale, autenticazione.
 
 Due paradigmi fondamentali: **crittografia simmetrica** (una chiave) e **crittografia asimmetrica** (coppia di chiavi). Capire quando e perché si usa ciascuno è essenziale.
 
@@ -54,12 +54,12 @@ Mittente e destinatario usano la **stessa chiave** sia per cifrare che per decif
 
 ## Vantaggi e svantaggi
 
-|  | Simmetrica |
-| --- | --- |
-| **Velocità** | Ordini di grandezza più veloce dell'asimmetrica (operazioni semplici su bit) |
-| **Efficienza** | Adatta a cifrare grandi quantità di dati |
+|                              | Simmetrica                                                                                           |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Velocità**                 | Ordini di grandezza più veloce dell'asimmetrica (operazioni semplici su bit)                         |
+| **Efficienza**               | Adatta a cifrare grandi quantità di dati                                                             |
 | **Key distribution problem** | Come si scambia la chiave in modo sicuro? Se il canale è insicuro, la chiave può essere intercettata |
-| **Scalabilità** | Con n utenti servono n·(n−1)/2 chiavi (ogni coppia ne ha una diversa) |
+| **Scalabilità**              | Con n utenti servono n·(n−1)/2 chiavi (ogni coppia ne ha una diversa)                                |
 
 ## Tipi di cifrari simmetrici
 
