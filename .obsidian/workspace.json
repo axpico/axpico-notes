@@ -208,7 +208,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -235,18 +235,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "56efc63866208b00",
+  "active": "41c9241263f38e27",
   "lastOpenFiles": [
-    "Formulario/Dinamica/Forza elastica (Legge di Hooke).md",
+    "Ripasso fisica/Cinematica.md",
+    "claude_skills/Skill Desmos for obsidian.md",
     "Formulario/Dinamica/Attrito dinamico.md",
+    "Formulario/Dinamica/Forza elastica (Legge di Hooke).md",
+    "Formulario/Dinamica/Secondo principio della dinamica.md",
+    "Formulario/Dinamica/Accelerazione minima per carico di rottura.md",
+    "Ripasso fisica/Dinamica.md",
+    "Formulario/Dinamica/Accelerazione macchina di Atwood.md",
+    "Formulario/Dinamica/Centro di massa.md",
+    "Formulario/Dinamica/Forza massima nel moto armonico.md",
+    "Formulario/Dinamica/Teorema dell'impulso.md",
     "Formulario/Dinamica/Attrito statico.md",
     "Formulario/Dinamica/Terzo principio della dinamica.md",
-    "Formulario/Dinamica/Secondo principio della dinamica.md",
     "Formulario/Dinamica/Primo principio della dinamica.md",
     "Formulario/Dinamica",
-    "claude_skills/Skill Desmos for obsidian.md",
-    "Ripasso fisica/Dinamica.md",
-    "Ripasso fisica/Cinematica.md",
     "RIpasso matematica/Logica e Aritmetica.md",
     "RIpasso matematica/Logica e Aritmetica.md.tmp.2108.b96acf7ac06d",
     "RIpasso matematica/Linguaggio matematico.md",
@@ -260,8 +265,6 @@
     "Formulario/Cinematica/Moto Rettilineo Uniforme (MRU).md",
     "Formulario/Cinematica/Moto del proiettile.md",
     "Formulario/Cinematica/Moto Circolare Uniforme (MCU).md",
-    "Formulario/Linguaggio matematico.md",
-    "Formulario/Moto Rettilineo Uniformemente Accelerato (MRUA).md",
     "Formulario/Cinematica/sedwgkgWf",
     "Formulario/Cinematica/sedfX6iaM",
     "Formulario/Cinematica/sedOpcvbq",
@@ -270,9 +273,6 @@
     "Formulario/Cinematica/sedr4p5lq",
     "Formulario/Elettromagnetismo",
     "Formulario/Cinematica",
-    "Formulario/Campo Elettrico.md",
-    "Formulario/Legge di Coulomb.md",
-    "Formulario/Piano inclinato.md",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",

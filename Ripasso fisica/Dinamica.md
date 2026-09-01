@@ -10,7 +10,6 @@ tags:
   - esercizi
 subject: Fisica
 type: appunti
-status: da-rivedere
 date: 2026-09-01
 ---
 
@@ -134,7 +133,7 @@ $$x_{cm} = \frac{\sum_i m_i x_i}{\sum_i m_i} \qquad y_{cm} = \frac{\sum_i m_i y_
 Se mi descrivi/allghi la figura (posizione di ogni mattoncino rispetto all'origine) calcolo subito il valore numerico.
 
 ### Esercizio 6 — Forza in funzione del tempo
-⚠️ Manca il grafico $F(t)$: senza i valori di forza e durata non posso integrare. Metodo generale — teorema dell'impulso:
+⚠️ Manca il grafico $F(t)$: senza i valori di forza e durata non posso integrare. Metodo generale — [[Teorema dell'impulso]]:
 $$\Delta \vec v = \frac{1}{m}\int_0^t \vec F\,dt' = \frac{\text{area sotto il grafico } F\text{-}t}{m}$$
 Con $m=1\,kg$ e $v_0=2\,m/s$: calcola l'area sotto la curva fino a ciascun istante ($t=3,4,5\,s$), dividi per $m$, sommala (con segno, secondo la direzione della forza) a $v_0$. Dammi i valori/la forma del grafico e lo risolvo numericamente.
 
@@ -146,9 +145,9 @@ Con $m=1\,kg$ e $v_0=2\,m/s$: calcola l'area sotto la curva fino a ciascun istan
 Con i valori numerici del grafico (ampiezza e periodo) applico la formula.
 
 ### Esercizio 8 — Piano inclinato con attrito e massa appesa
-Assumo la configurazione standard: $m_A$ su un piano inclinato scabro (angolo $\alpha$), collegata tramite fune e carrucola ideali a una massa $m_B$ appesa verticalmente. $m_A=0.5\,kg$, $\alpha=20°$, $\mu_s=0.3$.
+Assumo la configurazione standard: $m_A$ su un [[Piano inclinato]] scabro (angolo $\alpha$), collegata tramite fune e carrucola ideali a una massa $m_B$ appesa verticalmente. $m_A=0.5\,kg$, $\alpha=20°$, $\mu_s=0.3$.
 
-Il sistema resta **fermo** finché l'attrito statico riesce a compensare lo squilibrio tra $m_B g$ e la componente del peso di $A$ lungo il piano, $m_Ag\sin\alpha$. I due casi limite:
+Il sistema resta **fermo** finché l'[[Attrito statico]] riesce a compensare lo squilibrio tra $m_B g$ e la componente del peso di $A$ lungo il piano, $m_Ag\sin\alpha$. I due casi limite:
 
 - **$m_B$ troppo piccola** → $A$ tende a scivolare verso il basso, attrito verso l'alto del piano:
 $$m_A g\sin\alpha = m_{B,min}\,g + \mu_s m_A g\cos\alpha$$

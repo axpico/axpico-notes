@@ -36,7 +36,6 @@ Il blocco è diviso in due sezioni separate da `---`:
 ```desmos-graph
 left=0; right=100;
 top=10; bottom=-10;
----
 y=\sin(x)
 ```
 ````
@@ -110,3 +109,4 @@ Tutti i grafici hanno la classe `.desmos-graph`, utile per snippet CSS custom (e
 ## Fonte
 
 Documentazione ufficiale: https://github.com/Nigecat/obsidian-desmos (README)
+---
