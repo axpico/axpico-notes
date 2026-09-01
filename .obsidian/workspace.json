@@ -8,17 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "37f08df93cdfe4d4",
+            "id": "a3f9a564e46e2f30",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RIpasso matematica/Logica e Aritmetica.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Logica e Aritmetica"
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -209,7 +205,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -236,11 +232,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "56efc63866208b00",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
+    "RIpasso matematica/Logica e Aritmetica.md",
     "RIpasso matematica/Logica e Aritmetica.md.tmp.2108.b96acf7ac06d",
     "RIpasso matematica/Linguaggio matematico.md",
-    "RIpasso matematica/Logica e Aritmetica.md",
     "Formulario/Elettromagnetismo/Legge di Coulomb.md",
     "Formulario/Elettromagnetismo/Campo Elettrico.md",
     "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico/2. Campo elettrico.md",
@@ -273,7 +269,6 @@
     "claude_skills/Skill Desmos for obsidian.md",
     "Piano di Studio — Maturità 2026/Informatica/Progettazione Logica.md.tmp.4464.a86b306457d4",
     "2026-01-31.md",
-    "Senza nome.base",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",
