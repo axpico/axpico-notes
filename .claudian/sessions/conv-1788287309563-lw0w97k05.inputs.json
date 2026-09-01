@@ -18,7 +18,21 @@
       },
       "images": [],
       "contentDigest": "6fabe4b259f754ecb3124f2dcd235dada14e86df5befb6e3ff33eb7c3584c763",
-      "providerUserMessageId": "4e8f1a16-4d8d-4d36-9cfe-1d4d041dfb7d"
+      "providerUserMessageId": "4e8f1a16-4d8d-4d36-9cfe-1d4d041dfb7d",
+      "providerAssistantMessageId": "28f9e307-fbcf-43b0-b66a-8371ebcb8d81"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788287639708-34i46up",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788287639703-twzdbfo",
+      "timestamp": 1788287639703,
+      "rawDisplayText": "prendi tutte le formul e emettili dentro una cartella dentro formulario. una nota per formuila e aggiungi tag",
+      "canonicalText": "prendi tutte le formul e emettili dentro una cartella dentro formulario. una nota per formuila e aggiungi tag",
+      "images": [],
+      "contentDigest": "269b743897e89487c14ccc5f732b724188f7e31f3905fa860de58c7b7117f434",
+      "providerUserMessageId": "51be01f4-9b81-4a2a-b56d-8331cc84ebc3"
     }
   ]
 }
