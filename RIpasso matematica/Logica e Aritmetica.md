@@ -66,3 +66,4 @@ Necessaria: se T Ã¨ isoscele, i due lati uguali hanno quoziente $=1$ (intero) â‡
 
 
 ## B)  Connettivi logici
+
