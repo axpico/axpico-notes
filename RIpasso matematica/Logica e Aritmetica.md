@@ -1,4 +1,5 @@
-## 1. Quadrilateri — relazioni tra proprietà degli angoli
+## A) Condizioni necessarie e sufficienti
+### 1. Quadrilateri — relazioni tra proprietà degli angoli
 
 Dato un quadrilatero convesso $Q$ (angoli interni in $(0°,180°)$, somma $=360°$):
 
@@ -6,7 +7,7 @@ Dato un quadrilatero convesso $Q$ (angoli interni in $(0°,180°)$, somma $=360�
 - **(b)** $Q$ ha tre angoli acuti (almeno tre angoli $<90°$)
 - **(c)** $Q$ non ha angoli retti (nessun angolo $=90°$)
 
-### Analisi
+#### Analisi
 
 > [!success] (b) ⇒ (c)
 > Se tre angoli sono acuti, la loro somma è $<270°$ (ciascuno $<90°$), quindi il quarto angolo è $>90°$: non può essere retto. Anche i tre angoli acuti, per definizione, non sono retti ⇒ vale (c).
@@ -28,7 +29,7 @@ Dato un quadrilatero convesso $Q$ (angoli interni in $(0°,180°)$, somma $=360�
 > Nessun angolo retto non implica tre angoli acuti.
 > - Controesempio: $91°,91°,89°,89°$ — (c) vera, ma solo due angoli acuti.
 
-### Conclusione
+#### Conclusione
 
 $$\text{(b)} \Rightarrow \text{(c)} \Rightarrow \text{(a)}$$
 
@@ -36,11 +37,9 @@ Nessuna implicazione si inverte. (b) è l'ipotesi più forte, (a) la più debole
 
 ---
 
-## 2. Triangoli isosceli
+### 2. Triangoli isosceli
 
 Un triangolo è isoscele se ha (almeno) due lati uguali, equivalentemente (almeno) due angoli uguali. Quali delle seguenti condizioni sono **necessarie**, quali **sufficienti**?
-
-## A) Condizioni necessarie e sufficienti
 
 | # | Condizione | Necessaria | Sufficiente |
 |---|---|:---:|:---:|
@@ -64,3 +63,6 @@ Un isoscele non è per forza rettangolo (es. equilatero, angoli tutti $60°$). U
 
 **(e) Esistono due lati il cui quoziente è un intero — necessaria, non sufficiente.**
 Necessaria: se T è isoscele, i due lati uguali hanno quoziente $=1$ (intero) ⇒ vale (e). Non sufficiente: controesempio $2,4,5$ (triangolo valido, $4/2=2$ intero) ma scaleno, non isoscele.
+
+
+## B)  Connettivi logici

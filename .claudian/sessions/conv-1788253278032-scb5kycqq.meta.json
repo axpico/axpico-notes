@@ -4,7 +4,7 @@
   "title": "Analyze quadrilateral angle implications",
   "titleGenerationStatus": "success",
   "createdAt": 1788253278046,
-  "lastActivityAt": 1788253753619,
+  "lastActivityAt": 1788253832914,
   "sessionId": "b8e43cf2-1a8e-4f58-86dd-bd141e38f1d6",
   "selectedModel": "sonnet",
   "providerState": {
@@ -14,10 +14,10 @@
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,
-    "cacheCreationInputTokens": 875,
-    "cacheReadInputTokens": 56445,
+    "cacheCreationInputTokens": 2885,
+    "cacheReadInputTokens": 57498,
     "contextWindow": 1000000,
-    "contextTokens": 57322,
+    "contextTokens": 60385,
     "percentage": 6
   }
 }
