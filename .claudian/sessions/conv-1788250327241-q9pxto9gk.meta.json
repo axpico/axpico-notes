@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788250327241-q9pxto9gk",
+  "providerId": "claude",
+  "title": "Add mathematical summation formula",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788250327275,
+  "lastActivityAt": 1788250359601,
+  "sessionId": "93e3f551-5ad0-481d-808a-50e5788021e3",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "93e3f551-5ad0-481d-808a-50e5788021e3"
+  },
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 7675,
+    "cacheReadInputTokens": 35227,
+    "contextWindow": 1000000,
+    "contextTokens": 42904,
+    "percentage": 4
+  }
+}

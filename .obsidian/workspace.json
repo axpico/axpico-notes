@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RIpasso matematica/Logica e Aritmetica.md",
+                "file": "RIpasso matematica/Linguaggio matematico.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Logica e Aritmetica"
+              "title": "Linguaggio matematico"
             }
           }
         ]
@@ -238,8 +238,8 @@
   },
   "active": "1b0273eb824a9bf7",
   "lastOpenFiles": [
-    "RIpasso matematica/Linguaggio matematico.md",
     "RIpasso matematica/Logica e Aritmetica.md",
+    "RIpasso matematica/Linguaggio matematico.md",
     "Senza nome.base",
     "claude_skills/index.md",
     "claude_skills/Skill Desmos for obsidian.md",

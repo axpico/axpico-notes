@@ -95,6 +95,9 @@ $$\sum_{k=1}^{n}(-1)^k=\begin{cases}0 & n\text{ pari}\\-1 & n\text{ dispari}\end
 $$\sum_{k=1}^{n}(-1)^{k+1}=\begin{cases}0 & n\text{ pari}\\1 & n\text{ dispari}\end{cases}$$
 #### Somma simmetrica da -n a n
 $$\sum_{k=-n}^{n}k = \sum_{k=1}^{n}k - \sum_{k=1}^{n}k = 0$$
+#### Serie geometrica di ragione n
+$$\sum_{k=0}^{n}n^k=\frac{n^{n+1}-1}{n-1}\qquad(n\neq1)$$
+$$\sum_{k=0}^{3}3^k=1+3+9+27=40=\frac{3^4-1}{3-1}=\frac{80}{2}$$
 ### Calcolo combinatorio
 #### Permutazioni: anagrammi
 Monte -> permutazione semplice (5 lettere tutte diverse)
