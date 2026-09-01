@@ -134,8 +134,6 @@ $$n + (n+1) + (n+2) = 3n + 3 = 3(n+1)$$
 
 $$n^5 - n = n(n^4-1) = n(n^2-1)(n^2+1) = (n-2)(n-1)n(n+1)(n+2) + 5n(n^2-1)$$
 
-(si ottiene scrivendo $n^2+1 = (n^2-4)+5$ e distribuendo).
-
 > [!success] Divisibile per 5
 > - $(n-2)(n-1)n(n+1)(n+2)$ è un prodotto di 5 interi consecutivi: tra essi ce n'è sempre uno multiplo di 5.
 > - $5n(n^2-1)$ è multiplo di 5 per costruzione.

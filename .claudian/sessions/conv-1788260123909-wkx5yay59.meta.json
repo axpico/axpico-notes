@@ -4,11 +4,20 @@
   "title": "Prove n⁵ - n divisible by 5",
   "titleGenerationStatus": "success",
   "createdAt": 1788260123923,
-  "lastActivityAt": 1788260123923,
+  "lastActivityAt": 1788260202661,
   "sessionId": "fc737a2f-1cb7-4b2c-b0db-51e509fbee44",
   "selectedModel": "sonnet",
   "providerState": {
     "providerSessionId": "fc737a2f-1cb7-4b2c-b0db-51e509fbee44"
   },
-  "currentNote": "RIpasso matematica/Logica e Aritmetica.md"
+  "currentNote": "RIpasso matematica/Logica e Aritmetica.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1042,
+    "cacheReadInputTokens": 39708,
+    "contextWindow": 1000000,
+    "contextTokens": 40752,
+    "percentage": 4
+  }
 }
