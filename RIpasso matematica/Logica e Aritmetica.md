@@ -119,4 +119,8 @@ $\text{primo} \land \text{dispari} \land p<10$ → negazione (De Morgan): $\lnot
 
 > [!tip] Schema generale
 > Negare "esattamente $n$" non vuol dire "nessuna" o "infinite": vuol dire semplicemente "$\ne n$". È un errore comune trasformare la negazione in un'affermazione più forte di quanto serva — regola valida anche per (a)-(e): negare una congiunzione dà un'**disgiunzione** (De Morgan), non un'altra congiunzione.
+## C) 
 
+somma di 3 numeri consecutivi e divisibile per 3 
+$$n+n+1+n+2 = 3n + 3 => {quindi divisibile per 3}$$
+$$N_n=  n^5 - n$$ e divisibile per 5, nappartemnte a N

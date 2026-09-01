@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788259728375-refwrf9ni",
+  "providerId": "claude",
+  "title": "Analyze N_n divisibility by 5",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788259728392,
+  "lastActivityAt": 1788259764544,
+  "sessionId": "c2b437da-5aa2-48ce-8f90-6b16d7848e13",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "c2b437da-5aa2-48ce-8f90-6b16d7848e13"
+  },
+  "currentNote": "RIpasso matematica/Logica e Aritmetica.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 4037,
+    "cacheReadInputTokens": 30478,
+    "contextWindow": 1000000,
+    "contextTokens": 34517,
+    "percentage": 3
+  }
+}
