@@ -11,10 +11,14 @@
             "id": "1b0273eb824a9bf7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "RIpasso matematica/Logica e Aritmetica.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "Logica e Aritmetica"
             }
           }
         ]
@@ -76,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -231,18 +236,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "41c9241263f38e27",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
-    "Formulario/Cinematica formule.md",
-    "Ripasso fisica/Cinematica.md",
+    "RIpasso matematica/Linguaggio matematico.md",
+    "RIpasso matematica/Logica e Aritmetica.md",
+    "Senza nome.base",
     "claude_skills/index.md",
+    "claude_skills/Skill Desmos for obsidian.md",
+    "Skill.md",
+    "Ripasso fisica/Cinematica.md",
+    "Formulario/Cinematica formule.md",
     "claude_skills/Skill \"Desmos for obsidian\".md",
     "Untitled Kanban.md",
     "claude_skills",
     "Ripasso fisica",
     "Formulario/Linguaggio matematico.md",
     "Formulario/Elettromagnetismo formule.md",
-    "RIpasso matematica/Linguaggio matematico.md",
     "RIpasso matematica/Linguaggio matematico.md.tmp.15132.0e3c19d7ea67",
     "Piano di Studio — Maturità 2026/Italiano/Italo Svevo.md",
     "Piano di Studio — Maturità 2026/Inglese/Inglese.md",
@@ -267,17 +276,12 @@
     "POK/Img/Campo elettrico/Atomo di idrogeno 1.png",
     "POK/Img/Campo elettrico",
     "POK/Img",
-    "POK",
     "Piano di Studio — Maturità 2026/Inglese/Internet's Protocols — Unit 10, Text 4.md",
     "Piano di Studio — Maturità 2026/Inglese/Network Standards and Protocols — Section 4, Unit 10, Text 3.md",
     "Piano di Studio — Maturità 2026/Inglese/Network Topologies Explained — Section 4, Unit 10, Text 2.md",
     "Piano di Studio — Maturità 2026/Inglese/Optical Fibre — The Way of the Future.md",
     "Piano di Studio — Maturità 2026/Inglese/The Touchscreen Revolution — Unit 2, Text 3.md",
     "Piano di Studio — Maturità 2026/Inglese/An Intro to the Database — Section 3, Unit 9, Text 4.md",
-    "Piano di Studio — Maturità 2026/Informatica/Appunti Normalizzazione — 1NF, 2NF, 3NF, BCNF.md",
-    "Piano di Studio — Maturità 2026/Informatica/Informatica.md",
-    "Piano di Studio — Maturità 2026/Informatica/Progettazione Concettuale.md",
-    "Piano di Studio — Maturità 2026/Informatica/Appunti DBMS & DB Distribuiti.md",
     "Piano di Studio — Maturità 2026/Img/Inglese/internet_protocols_study.svg"
   ]
 }

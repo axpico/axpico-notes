@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788247052554-p9hfmk1ai",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788247052755-1h1989v",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788247052547-sfi2thc",
+      "timestamp": 1788247052547,
+      "rawDisplayText": "fix link",
+      "canonicalText": "fix link",
+      "context": {
+        "currentNote": {
+          "path": "claude_skills/index.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "938fe9c2db615fc72362732d8f19c22a364fea8a1eb1a68516101519c455b262",
+      "providerUserMessageId": "a7703923-31dc-4455-9296-0e736e920625",
+      "providerAssistantMessageId": "ffb63891-c4e1-4b26-8737-25fb9b138696"
+    }
+  ]
+}

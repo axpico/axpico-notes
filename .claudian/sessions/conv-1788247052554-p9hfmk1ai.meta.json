@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788247052554-p9hfmk1ai",
+  "providerId": "claude",
+  "title": "Fix link",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788247052568,
+  "lastActivityAt": 1788247067382,
+  "sessionId": "f96e50bd-e773-4898-ae66-282bb5604dbd",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "f96e50bd-e773-4898-ae66-282bb5604dbd"
+  },
+  "currentNote": "claude_skills/index.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1130,
+    "cacheReadInputTokens": 36473,
+    "contextWindow": 1000000,
+    "contextTokens": 37605,
+    "percentage": 4
+  }
+}
