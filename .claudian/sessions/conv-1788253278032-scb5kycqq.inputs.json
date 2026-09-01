@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788253278032-scb5kycqq",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788253278274-p5qce43",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788253278021-1qs52zx",
+      "timestamp": 1788253278021,
+      "rawDisplayText": "scrivi Dato un quadrilatero Q, determinare le implicazioni reciproche tra le seguenti affer-\nmazioni:\n(a) Q ha un angolo ottuso\n(b) Q ha tre angoli acuti\n(c) Q non ha angoli retti",
+      "canonicalText": "scrivi Dato un quadrilatero Q, determinare le implicazioni reciproche tra le seguenti affer-\nmazioni:\n(a) Q ha un angolo ottuso\n(b) Q ha tre angoli acuti\n(c) Q non ha angoli retti",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/Logica e Aritmetica.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "1137fd9d8187ed9603275f6da2fc3c4465c9b5f227e8092ce481784e71231afd",
+      "providerUserMessageId": "4771c94e-a08d-4c4a-b694-e0ca98f5df42",
+      "providerAssistantMessageId": "66b0f60e-deac-443f-90b4-a0f5868bd0b4"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788253278032-scb5kycqq",
+  "providerId": "claude",
+  "title": "Analyze quadrilateral angle implications",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788253278046,
+  "lastActivityAt": 1788253348926,
+  "sessionId": "b8e43cf2-1a8e-4f58-86dd-bd141e38f1d6",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "b8e43cf2-1a8e-4f58-86dd-bd141e38f1d6"
+  },
+  "currentNote": "RIpasso matematica/Logica e Aritmetica.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 7386,
+    "cacheReadInputTokens": 35420,
+    "contextWindow": 1000000,
+    "contextTokens": 42808,
+    "percentage": 4
+  }
+}
