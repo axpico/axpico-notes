@@ -48,7 +48,77 @@
       },
       "images": [],
       "contentDigest": "f2237faceb0b333b4ccf1f89a870422ba586a7ec0149a6476b1cba8021d91622",
-      "providerUserMessageId": "6f499e38-2b33-4c99-840c-f11c9b71018e"
+      "providerUserMessageId": "6f499e38-2b33-4c99-840c-f11c9b71018e",
+      "providerAssistantMessageId": "1c8955a3-b54e-443b-8af5-2a56981b6f08"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788251706442-xbrjtgm",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788251706432-hdrtj0z",
+      "timestamp": 1788251706432,
+      "rawDisplayText": "spiega di meglio dentro il file",
+      "canonicalText": "spiega di meglio dentro il file",
+      "context": {
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "\\sum_{k=1}^{n}(-1)^{k+1}=\\begin{cases}0 & n\\text{ pari}\\\\1 & n\\text{ dispari}\\end{cases}",
+          "lineCount": 1,
+          "startLine": 96
+        }
+      },
+      "images": [],
+      "contentDigest": "d07d820a8932e71997918d96c6649c59c00d5b15b74dafa4ed446f882cfe594b",
+      "providerUserMessageId": "d67a346b-6b19-48a7-9129-cfebff04db06",
+      "providerAssistantMessageId": "d3898377-5203-4ef2-9d34-87343ffeee81"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788251762506-qndo89f",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788251762494-bw2gku3",
+      "timestamp": 1788251762494,
+      "rawDisplayText": "allora e 1-\\sum_{k=1}^{n}(-1)^{k+1}=\\begin{cases}0 & n\\text{ pari}\\\\1 & n\\text{ dispari}\\end{cases}",
+      "canonicalText": "allora e 1-\\sum_{k=1}^{n}(-1)^{k+1}=\\begin{cases}0 & n\\text{ pari}\\\\1 & n\\text{ dispari}\\end{cases}",
+      "context": {
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "\\sum_{k=1}^{n}(-1)^{k+1}=\\begin{cases}0 & n\\text{ pari}\\\\1 & n\\text{ dispari}\\end{cases}",
+          "lineCount": 1,
+          "startLine": 109
+        }
+      },
+      "images": [],
+      "contentDigest": "d476dbb6d58430738dea241bc62cceb9d61ca4485bff060eae053e3e0520d0fc",
+      "providerUserMessageId": "805b54d8-3cd3-44b2-994d-24936f7ca66a",
+      "providerAssistantMessageId": "a0f26065-086c-4fa3-83d3-d93f130156d9"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788251798908-4f5dd3n",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1788251798896-fsjw1n8",
+      "timestamp": 1788251798896,
+      "rawDisplayText": "allora -1-",
+      "canonicalText": "allora -1-",
+      "context": {
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Linguaggio matematico.md",
+          "mode": "selection",
+          "selectedText": "\\sum_{k=1}^{n}(-1)^{k+1}=\\begin{cases}0 & n\\text{ pari}\\\\1 & n\\text{ dispari}\\end{cases}",
+          "lineCount": 1,
+          "startLine": 109
+        }
+      },
+      "images": [],
+      "contentDigest": "3d790a4a572c589534fd2515197d21ab4f8ef82eb50ce10b5b6200251d8e9642",
+      "providerUserMessageId": "1d14f00b-cdc3-4aff-81b3-edb1e029bd08",
+      "providerAssistantMessageId": "2aff60af-9d42-461f-92c9-e1a00fea6d0c"
     }
   ]
 }

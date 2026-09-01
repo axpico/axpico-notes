@@ -4,7 +4,7 @@
   "title": "Verify alternating sum formula",
   "titleGenerationStatus": "success",
   "createdAt": 1788251615409,
-  "lastActivityAt": 1788251655851,
+  "lastActivityAt": 1788251823935,
   "sessionId": "e4361e69-fb63-4b11-b967-e07a2903e68b",
   "selectedModel": "sonnet",
   "providerState": {
@@ -14,10 +14,10 @@
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,
-    "cacheCreationInputTokens": 6589,
-    "cacheReadInputTokens": 31396,
+    "cacheCreationInputTokens": 357,
+    "cacheReadInputTokens": 44748,
     "contextWindow": 1000000,
-    "contextTokens": 37987,
-    "percentage": 4
+    "contextTokens": 45107,
+    "percentage": 5
   }
 }
