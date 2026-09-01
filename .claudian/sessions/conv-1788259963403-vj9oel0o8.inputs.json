@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788259963403-vj9oel0o8",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788259963761-ap2fkye",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788259963371-f3dr91e",
+      "timestamp": 1788259963371,
+      "rawDisplayText": "sistem ## C) \n\nsomma di 3 numeri consecutivi e divisibile per 3 \n$$n+n+1+n+2 = 3n + 3 => {quindi divisibile per 3}$$\n$$N_n=  n^5 - n$$ e divisibile per 5, n appartemnte a N\n\n$$N_n=  n^5 - n => n(n^4 + 1) => divisibil per n $$",
+      "canonicalText": "sistem ## C) \n\nsomma di 3 numeri consecutivi e divisibile per 3 \n$$n+n+1+n+2 = 3n + 3 => {quindi divisibile per 3}$$\n$$N_n=  n^5 - n$$ e divisibile per 5, n appartemnte a N\n\n$$N_n=  n^5 - n => n(n^4 + 1) => divisibil per n $$",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/Logica e Aritmetica.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "9231f08a893d4c41e9c8cf1c6d18b21d62473cf19fb1d5a6a848c0570d0ac0d6",
+      "providerUserMessageId": "9b0b571a-31c5-42a0-9aae-bc1c5c06feef",
+      "providerAssistantMessageId": "1ba3d8ff-1bf3-4cb6-a82a-d5be2a633755"
+    }
+  ]
+}

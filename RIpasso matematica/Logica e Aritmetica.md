@@ -119,8 +119,28 @@ $\text{primo} \land \text{dispari} \land p<10$ → negazione (De Morgan): $\lnot
 
 > [!tip] Schema generale
 > Negare "esattamente $n$" non vuol dire "nessuna" o "infinite": vuol dire semplicemente "$\ne n$". È un errore comune trasformare la negazione in un'affermazione più forte di quanto serva — regola valida anche per (a)-(e): negare una congiunzione dà un'**disgiunzione** (De Morgan), non un'altra congiunzione.
-## C) 
+## C) Divisibilità
 
-somma di 3 numeri consecutivi e divisibile per 3 
-$$n+n+1+n+2 = 3n + 3 => {quindi divisibile per 3}$$
-$$N_n=  n^5 - n$$ e divisibile per 5, nappartemnte a N
+### 1. Somma di 3 numeri consecutivi divisibile per 3
+
+$$n + (n+1) + (n+2) = 3n + 3 = 3(n+1)$$
+
+> [!success] Divisibile per 3
+> La somma è $3(n+1)$, multiplo di 3 per ogni $n \in \mathbb{N}$: la divisibilità è immediata dalla fattorizzazione, non serve altro.
+
+---
+
+### 2. $N_n = n^5 - n$ divisibile per 5, $n \in \mathbb{N}$
+
+$$n^5 - n = n(n^4-1) = n(n^2-1)(n^2+1) = (n-2)(n-1)n(n+1)(n+2) + 5n(n^2-1)$$
+
+(si ottiene scrivendo $n^2+1 = (n^2-4)+5$ e distribuendo).
+
+> [!success] Divisibile per 5
+> - $(n-2)(n-1)n(n+1)(n+2)$ è un prodotto di 5 interi consecutivi: tra essi ce n'è sempre uno multiplo di 5.
+> - $5n(n^2-1)$ è multiplo di 5 per costruzione.
+>
+> Somma di due multipli di 5 → $N_n$ è multiplo di 5 per ogni $n \in \mathbb{N}$.
+>
+> *(Alternativa più rapida: per il piccolo teorema di Fermat, $n^5 \equiv n \pmod 5$ per ogni $n$, quindi $n^5-n\equiv 0$.)*
+

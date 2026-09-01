@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788259963403-vj9oel0o8",
+  "providerId": "claude",
+  "title": "Prove consecutive number divisibility",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788259963431,
+  "lastActivityAt": 1788260015792,
+  "sessionId": "43872854-7397-467e-8bf7-4d567dd9eddb",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "43872854-7397-467e-8bf7-4d567dd9eddb"
+  },
+  "currentNote": "RIpasso matematica/Logica e Aritmetica.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 2919,
+    "cacheReadInputTokens": 32737,
+    "contextWindow": 1000000,
+    "contextTokens": 35658,
+    "percentage": 4
+  }
+}

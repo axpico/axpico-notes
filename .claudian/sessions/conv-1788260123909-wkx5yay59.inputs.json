@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788260123909-wkx5yay59",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788260124231-x11om7l",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788260123895-uj7qed8",
+      "timestamp": 1788260123895,
+      "rawDisplayText": "fai ### 2. $N_n = n^5 - n$ divisibile per 5, $n \\in \\mathbb{N}$",
+      "canonicalText": "fai ### 2. $N_n = n^5 - n$ divisibile per 5, $n \\in \\mathbb{N}$",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/Logica e Aritmetica.md"
+        },
+        "editorSelection": {
+          "notePath": "RIpasso matematica/Logica e Aritmetica.md",
+          "mode": "selection",
+          "selectedText": "### 2. $N_n = n^5 - n$ divisibile per 5, $n \\in \\mathbb{N}$",
+          "lineCount": 1,
+          "startLine": 133
+        }
+      },
+      "images": [],
+      "contentDigest": "b6b3ecf3a99750f02f3a2c0308fe606e3b722f0122cae594d497f2c82bce638d",
+      "providerUserMessageId": "153f3b13-3a55-4bc6-b8b1-f4bc25973d0a"
+    }
+  ]
+}
