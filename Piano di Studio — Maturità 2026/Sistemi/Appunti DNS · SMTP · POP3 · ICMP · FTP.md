@@ -672,4 +672,4 @@ S: 221 Goodbye
 
 ---
 
-> **Collegamento con altri argomenti**: HTTP e architettura client-server — 13 giu | Cybersecurity (sniffing, spoofing, firewall) — 15 giu | VPN (tunneling del traffico) — [[Appunti VPN — Tipologie, Tunneling, Protocolli]] | Socket e programmazione di rete — [[Informatica]]
+> **Collegamento con altri argomenti**: HTTP e architettura client-server — 13 giu | Cybersecurity (sniffing, spoofing, firewall) — 15 giu | VPN (tunneling del traffico) — [[Appunti VPN — Tipologie, Tunneling, Protocolli]] | Socket e programmazione di rete — [[Informatica indice]]

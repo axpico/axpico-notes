@@ -75,7 +75,7 @@
         - [ ]  La Lupa
     - [ ]  Il lavoro delle fanciulle nelle miniere siciliane
 
-[Italiano](Italiano.md)
+[Italiano indice](Italiano%20indice.md)
 
 ---
 
@@ -145,19 +145,19 @@
     - [ ]  Tecniche di progettazione DB distribuiti
     - [ ]  Big data — le quattro V
 
-[Informatica](Informatica.md)
+[Informatica indice](Informatica%20indice.md)
 
 ---
 
 ## SISTEMI + INGLESE — 12 giu / 17 giu
 
-- 12 giu (ven) — [[Sistemi]]: Classificazione reti + Livello trasporto
+- 12 giu (ven) — [[Sistemi indice]]: Classificazione reti + Livello trasporto
 
     [Appunti: Classificazione delle Reti](Appunti%20Classificazione%20delle%20Reti.md)
 
     - [x]  Classificazione reti — strutturali, servizi, standard tecnologici
     - [ ]  Livelli del protocollo di trasporto (pp. 282–292)
-- 13 giu (sab) — [[Sistemi]]: Livello applicazione + [[Inglese]] 1–5
+- 13 giu (sab) — [[Sistemi indice]]: Livello applicazione + [[Inglese indice]] 1–5
 
     [Appunti: Architettura Client-Server, HTTP, URI/URL e Storia del Web](Appunti%20Architettura%20Client-Server,%20HTTP,%20URI%20U.md)
 
@@ -167,7 +167,7 @@
     - [ ]  The Dark Side of the Internet (38)
     - [ ]  Fake News (42)
     - [ ]  What Are Multi-core Processors (63)
-- 14 giu (dom) — [[Sistemi]]: DNS + Email + [[Inglese]] 6–10
+- 14 giu (dom) — [[Sistemi indice]]: DNS + Email + [[Inglese indice]] 6–10
 
     [Appunti: DNS · SMTP · POP3 · ICMP · FTP](Appunti%20DNS%20·%20SMTP%20·%20POP3%20·%20ICMP%20·%20FTP.md)
 
@@ -177,7 +177,7 @@
     - [ ]  What Is Google Android (109)
     - [ ]  Object Oriented Programming (118)
     - [ ]  Java & JavaScript (126)
-- 15 giu (lun) — [[Sistemi]]: Cybersecurity + [[Inglese]] 11–15
+- 15 giu (lun) — [[Sistemi indice]]: Cybersecurity + [[Inglese indice]] 11–15
 
     [Appunti: CIA · Attacchi e Minacce · Malware · Tecniche di Difesa](Appunti%20CIA%20·%20Attacchi%20e%20Minacce%20·%20Malware%20·%20Te.md)
 
@@ -187,14 +187,14 @@
     - [ ]  Network Standards and Protocols (155)
     - [ ]  Internet Protocols (157)
     - [ ]  Optical Fibre: The Way of the Future (166)
-- 16 giu (mar) — [[Sistemi]]: Crittografia
+- 16 giu (mar) — [[Sistemi indice]]: Crittografia
 
     [Appunti: Crittografia Simmetrica, Asimmetrica e RSA](Appunti%20Crittografia%20Simmetrica,%20Asimmetrica%20e%20R.md)
 
     - [x]  Crittografia simmetrica e asimmetrica · RSA
     - [ ]  Autenticazione · Password · Autenticazione multifattore
     - [ ]  Firma digitale · Certificati digitali · Server AAA (pp. 160–178)
-- 17 giu (mer) — [[Sistemi]]: Sicurezza perimetrale + VPN · RIPASSO FINALE
+- 17 giu (mer) — [[Sistemi indice]]: Sicurezza perimetrale + VPN · RIPASSO FINALE
 
     [Appunti: Firewall · ACL · Proxy · DMZ · Port Forwarding](Appunti%20Firewall%20·%20ACL%20·%20Proxy%20·%20DMZ%20·%20Port%20Forw.md) | [Appunti: IPSec · TLS/SSL · HTTPS](Appunti%20IPSec%20·%20TLS%20SSL%20·%20HTTPS.md) | [Appunti: VPN — Tipologie, Tunneling e Protocolli](Appunti%20VPN%20—%20Tipologie,%20Tunneling,%20Protocolli.md)
 
@@ -203,6 +203,6 @@
     - [ ]  IPsec · TLS/SSL · HTTPS (pp. 234–252)
     - [ ]  Ripasso generale trasversale
 
-[Sistemi](Sistemi.md) | [[Inglese]]
+[Sistemi indice](Sistemi%20indice.md) | [[Inglese indice]]
 
 

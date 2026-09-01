@@ -1,4 +1,4 @@
-[[Informatica]][[Informatica]][[Informatica]][[Informatica]][[Informatica]][[Informatica]]## Cosa sono le clausole
+## Cosa sono le clausole
 
 Le **clausole** sono le istruzioni che compongono una query SQL. Ogni clausola ha un ruolo specifico e insieme definiscono **quali dati recuperare**, **da dove** e **con quali condizioni**.
 

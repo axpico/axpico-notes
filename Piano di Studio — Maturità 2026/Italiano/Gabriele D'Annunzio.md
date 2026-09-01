@@ -23,7 +23,7 @@ D'Annunzio è prima di tutto un **personaggio pubblico**: costruisce deliberatam
 | **1915** | Rientra in Italia allo scoppio della guerra. Pronuncia discorsi interventisti infuocati |
 | **1918** | **Beffa di Buccari**: con tre motoscafi entra nel porto croato nemico e lascia messaggi beffardi per gli austriaci |
 | **1918** | **Volo su Vienna**: sorvola la capitale nemica lanciando volantini tricolori invece di bombe — gesto puramente simbolico e spettacolare |
-| **1919–1920** | **Impresa di Fiume**: guida una marcia di volontari e occupa la città di Fiume, rivendicata dall'Italia. Governa per 15 mesi come una sorta di dittatore-poeta. Cacciato dall'esercito [[Italiano]] (*Natale di sangue*) |
+| **1919–1920** | **Impresa di Fiume**: guida una marcia di volontari e occupa la città di Fiume, rivendicata dall'Italia. Governa per 15 mesi come una sorta di dittatore-poeta. Cacciato dall'esercito [[Italiano indice]] (*Natale di sangue*) |
 | **1921–1938** | Si ritira al **Vittoriale degli Italiani** (Gardone): trasforma la villa in un monumento a se stesso. Muore nel 1938 |
 
 ---

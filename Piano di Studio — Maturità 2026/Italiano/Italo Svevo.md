@@ -1,31 +1,32 @@
 ## Vita
 
-|  |  |
-| --- | --- |
-| **Nome reale** | Aron Hector (poi Ettore) Schmitz |
-| **Pseudonimo** | Italo Svevo = doppia appartenenza italiana e mitteleuropea (“sveva” = della Svevia/Germania) |
-| **Nascita** | 1861, Trieste (allora Impero austro-ungarico) |
-| **Morte** | 1928, incidente stradale |
-| **Famiglia** | Borghesia ebraica; padre tedesco, madre italiana |
-| **Lingua** | Bilingue tedesco/[[Italiano]]; lo stile [[Italiano]] di Svevo ha una sintassi “etedesca” che i critici italiani giudicavano difetto |
+|                |                                                                                                                             |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **Nome reale** | Aron Hector (poi Ettore) Schmitz                                                                                            |
+| **Pseudonimo** | Italo Svevo = doppia appartenenza italiana e mitteleuropea (“sveva” = della Svevia/Germania)                                |
+| **Nascita**    | 1861, Trieste (allora Impero austro-ungarico)                                                                               |
+| **Morte**      | 1928, incidente stradale                                                                                                    |
+| **Famiglia**   | Borghesia ebraica; padre tedesco, madre italiana                                                                            |
+| **Lingua**     | Bilingue tedesco/italiano; lo stile italiano di Svevo ha una sintassi “etedesca” che i critici italiani giudicavano difetto |
 
 ### Cronologia
 
-| Anno | Evento |
-| --- | --- |
-| **1880** | Fallisce l'azienda paterna → lavora in banca |
-| **1892** | Pubblica *Una vita* con lo pseudonimo Italo Svevo |
-| **1895** | Muore la madre |
-| **1896–97** | Matrimonio con **Livia Veneziani** (matrimonio civile + cattolico dopo conversione). Una figlia: Letizia |
-| **1898** | Pubblica *Senilità* → ignorato dalla critica. Delusione: abbandona quasi la letteratura; lavora nell’azienda del suocero |
-| **1907** | Corso d’[[Inglese]] alla scuola Berlitz di Trieste: l’insegnante è **James Joyce**, che lo incoraggia a scrivere |
-| **1910** | Attraverso il cognato Bruno Veneziani (in cura da Freud a Vienna) entra in contatto con la psicanalisi. Traduce *L’interpretazione dei sogni* |
-| **WWI** | Resta a Trieste con cittadinanza austriaca, cerca neutralità |
-| **Dopoguerra** | Diventa cittadino [[Italiano]], italianizza il nome |
-| **1919** | Inizia *La coscienza di Zeno* |
-| **1923** | Pubblica *La coscienza di Zeno* → ignorato in Italia |
-| **1925** | Joyce la segnala ai critici francesi; **Montale** ne riconosce la grandezza → fama tardiva |
-| **1928** | Muore in un incidente stradale |
+| Anno           | Evento                                                                                                                                        |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1880**       | Fallisce l'azienda paterna → lavora in banca                                                                                                  |
+| **1892**       | Pubblica *Una vita* con lo pseudonimo Italo Svevo                                                                                             |
+| **1895**       | Muore la madre                                                                                                                                |
+| **1896–97**    | Matrimonio con **Livia Veneziani** (matrimonio civile + cattolico dopo conversione). Una figlia: Letizia                                      |
+| **1898**       | Pubblica *Senilità* → ignorato dalla critica. Delusione: abbandona quasi la letteratura; lavora nell’azienda del suocero                      |
+| **1907**       | Corso d'inglese alla scuola Berlitz di Trieste: l’insegnante è **James Joyce**, che lo incoraggia a scrivere                                  |
+| **1910**       | Attraverso il cognato Bruno Veneziani (in cura da Freud a Vienna) entra in contatto con la psicanalisi. Traduce *L’interpretazione dei sogni* |
+| **WWI**        | Resta a Trieste con cittadinanza austriaca, cerca neutralità                                                                                  |
+| **Dopoguerra** | Diventa cittadino italiano, italianizza il nome                                                                                               |
+| **1919**       | Inizia *La coscienza di Zeno*                                                                                                                 |
+| **1923**       | Pubblica *La coscienza di Zeno* → ignorato in Italia                                                                                          |
+| **1925**       | Joyce la segnala ai critici francesi; **[[Eugenio Montale]]** ne riconosce la grandezza → fama tardiva                                        |
+| **1928**       | Muore in un incidente stradale                                                                                                                |
+|                |                                                                                                                                               |
 
 ---
 

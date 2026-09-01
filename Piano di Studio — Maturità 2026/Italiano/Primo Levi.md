@@ -90,4 +90,4 @@ Levi, ebreo moderato e agnostico, ha a cuore che gli stessi israeliani non venga
 
 ### La lingua come strumento di analisi
 
-Levi scrive in [[Italiano]] chiaro, preciso, quasi scientifico: lo stile del chimico applicato alla narrazione. La chiarezza della lingua è un atto etico: le cose devono essere dette in modo che non possano essere distorte.
+Levi scrive in [[Italiano indice]] chiaro, preciso, quasi scientifico: lo stile del chimico applicato alla narrazione. La chiarezza della lingua è un atto etico: le cose devono essere dette in modo che non possano essere distorte.

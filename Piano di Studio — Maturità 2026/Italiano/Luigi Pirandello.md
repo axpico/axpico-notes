@@ -207,7 +207,7 @@ Pirandello rompe la **quarta parete**: il teatro smette di nascondere di essere 
 
 **Enrico IV** (1922):
 
-- Protagonista: un nobile [[Italiano]] che, dopo una caduta da cavallo durante una festa in costume, crede di essere davvero **Enrico IV di Germania** (imperatore medievale)
+- Protagonista: un nobile [[Italiano indice]] che, dopo una caduta da cavallo durante una festa in costume, crede di essere davvero **Enrico IV di Germania** (imperatore medievale)
 - Famiglia e amici lo assecondano per anni; poi scopriamo che è **guarito** ma preferisce continuare a recitare il pazzo
 - La follia volontaria è più sopportabile della realtà
 - **Gioco di piani**: dentro la commedia c’è una trama tragica; dentro la follia c’è la lucidezza più acuta

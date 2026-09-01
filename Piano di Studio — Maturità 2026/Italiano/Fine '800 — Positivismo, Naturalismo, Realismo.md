@@ -7,7 +7,7 @@ Con la **fine del Romanticismo** questo clima si trasforma. Il Romanticismo avev
 - Tematiche legate alle domande più profonde dell'uomo
 - La realtà come fonte di interrogativi esistenziali, non come dato oggettivo
 - Slancio verso l'infinito, l'irrazionale, il sentimento
-- Dopo Leopardi (che ne rappresenta l'apice [[Italiano]]) il movimento si esaurisce
+- Dopo Leopardi (che ne rappresenta l'apice [[Italiano indice]]) il movimento si esaurisce
 
 Inizia una nuova tendenza: il **Positivismo**.
 
