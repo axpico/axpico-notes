@@ -119,7 +119,7 @@ $\text{primo} \land \text{dispari} \land p<10$ → negazione (De Morgan): $\lnot
 
 > [!tip] Schema generale
 > Negare "esattamente $n$" non vuol dire "nessuna" o "infinite": vuol dire semplicemente "$\ne n$". È un errore comune trasformare la negazione in un'affermazione più forte di quanto serva — regola valida anche per (a)-(e): negare una congiunzione dà un'**disgiunzione** (De Morgan), non un'altra congiunzione.
-## C) Divisibilità
+## C) Dimostrazioni 
 
 ### 1. Somma di 3 numeri consecutivi divisibile per 3
 
@@ -142,3 +142,7 @@ $$n^5 - n = n(n^4-1) = n(n^2-1)(n^2+1) = (n-2)(n-1)n(n+1)(n+2) + 5n(n^2-1)$$
 >
 > *(Alternativa più rapida: per il piccolo teorema di Fermat, $n^5 \equiv n \pmod 5$ per ogni $n$, quindi $n^5-n\equiv 0$.)*
 
+--- 
+
+###  3.  raidce di 2 è irrazionale
+$$\root{5}$$
