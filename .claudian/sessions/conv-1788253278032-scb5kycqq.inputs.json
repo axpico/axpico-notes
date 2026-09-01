@@ -20,6 +20,48 @@
       "contentDigest": "1137fd9d8187ed9603275f6da2fc3c4465c9b5f227e8092ce481784e71231afd",
       "providerUserMessageId": "4771c94e-a08d-4c4a-b694-e0ca98f5df42",
       "providerAssistantMessageId": "66b0f60e-deac-443f-90b4-a0f5868bd0b4"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788253580147-9gmt9gc",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788253580134-hddk7cv",
+      "timestamp": 1788253580134,
+      "rawDisplayText": "anceh qui Sia T un triangolo. Quali delle seguenti condizioni sono necessarie perch´e T sia\nisoscele? E quali sono sufficienti?\n(a) che T sia equilatero.\n(b) che T abbia due angoli uguali.\n(c) che T sia rettangolo.\n(d) che T abbia due angoli uguali e di ampiezza minore di 60o.\n(e) che esistano due lati del triangolo per i quali il quoziente delle lunghezze `e un\nnumero intero.",
+      "canonicalText": "anceh qui Sia T un triangolo. Quali delle seguenti condizioni sono necessarie perch´e T sia\nisoscele? E quali sono sufficienti?\n(a) che T sia equilatero.\n(b) che T abbia due angoli uguali.\n(c) che T sia rettangolo.\n(d) che T abbia due angoli uguali e di ampiezza minore di 60o.\n(e) che esistano due lati del triangolo per i quali il quoziente delle lunghezze `e un\nnumero intero.",
+      "images": [],
+      "contentDigest": "a00df6d3fa12cced18d02bfdb996d1803eb2ee0396524a67da31e1791b520934",
+      "providerUserMessageId": "5c07970f-0e75-47d8-a1e2-f6cb3203670d",
+      "providerAssistantMessageId": "967ca924-20bb-4d9c-922b-bd9eb84315d0"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788253668346-7pk26a7",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788253668335-uyiphbh",
+      "timestamp": 1788253668335,
+      "rawDisplayText": "fomatta bene la pagina \n\nA) Condizioni necessarie e sufficienti",
+      "canonicalText": "fomatta bene la pagina \n\nA) Condizioni necessarie e sufficienti",
+      "images": [],
+      "contentDigest": "045479c9cd607b3781eae7dd51c5c16899b0cfd429af5501ba736a5a51f7b713",
+      "providerUserMessageId": "97e5c1c8-b41b-48a9-a2fa-6a7430d731f9",
+      "providerAssistantMessageId": "4829b6b2-a0ec-40b4-b8ab-e6b0e3536af7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788253738976-f82odhc",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788253738963-v6oxs1b",
+      "timestamp": 1788253738963,
+      "rawDisplayText": "metti A) Condizioni necessarie e sufficienti",
+      "canonicalText": "metti A) Condizioni necessarie e sufficienti",
+      "images": [],
+      "contentDigest": "469275dffd7a0cd4dcb5ccc3037128e0ec1e78b9ed78a921d97a510080e66df7",
+      "providerUserMessageId": "c51b1d34-12c3-4c65-9564-890124931f95",
+      "providerAssistantMessageId": "39fd5d78-9fff-4760-849c-fa86ef93e876"
     }
   ]
 }
