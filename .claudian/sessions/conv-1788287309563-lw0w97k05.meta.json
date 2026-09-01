@@ -1,0 +1,14 @@
+{
+  "id": "conv-1788287309563-lw0w97k05",
+  "providerId": "claude",
+  "title": "Dinamica: leggi Newton e esercizi svolti",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788287309567,
+  "lastActivityAt": 1788287309567,
+  "sessionId": "c29fecfc-83ea-429f-9b8d-de7530b56160",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "c29fecfc-83ea-429f-9b8d-de7530b56160"
+  },
+  "currentNote": "Ripasso fisica/Dinamica.md"
+}
