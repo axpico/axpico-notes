@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788257192383-07120ezqn",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788257192683-bl30iwj",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788257192375-6ty7iy1",
+      "timestamp": 1788257192375,
+      "rawDisplayText": "nel formulari fai una pagina per ogni formula con titolo il nome della fromula",
+      "canonicalText": "nel formulari fai una pagina per ogni formula con titolo il nome della fromula",
+      "images": [],
+      "contentDigest": "66a96e948a032081e56ca45f19c45160537f5e3db17336a57635f20aec85f88a",
+      "providerUserMessageId": "17fa7bed-68f6-4c4c-85e7-2c0379281a48",
+      "providerAssistantMessageId": "c550cdde-89ce-4d5f-8ecb-e7389815548f"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788257268816-joxbarj",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788257268806-7q25313",
+      "timestamp": 1788257268806,
+      "rawDisplayText": "rimuov i quelle vecchie e sismta i tag e dividi un sottocartelle",
+      "canonicalText": "rimuov i quelle vecchie e sismta i tag e dividi un sottocartelle",
+      "images": [],
+      "contentDigest": "524f4d94c8190abde0f303ff9b826ae2c0e2aa1f4d71fac59a942f2e3efec3e8",
+      "providerUserMessageId": "f4fc295c-714a-4361-9ca4-55e3099b7233",
+      "providerAssistantMessageId": "836aad40-4249-49be-affb-48ade4f210bd"
+    }
+  ]
+}

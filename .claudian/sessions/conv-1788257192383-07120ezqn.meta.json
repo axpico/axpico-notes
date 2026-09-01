@@ -1,0 +1,22 @@
+{
+  "id": "conv-1788257192383-07120ezqn",
+  "providerId": "claude",
+  "title": "Create per-formula detail pages",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788257192401,
+  "lastActivityAt": 1788257315550,
+  "sessionId": "7affdac4-c448-4338-b683-cbfae90c735b",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "7affdac4-c448-4338-b683-cbfae90c735b"
+  },
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 550,
+    "cacheReadInputTokens": 49745,
+    "contextWindow": 1000000,
+    "contextTokens": 50297,
+    "percentage": 5
+  }
+}

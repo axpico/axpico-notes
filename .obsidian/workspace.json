@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RIpasso matematica/Logica e Aritmetica.md",
+                "file": "Formulario/Elettromagnetismo/Campo Elettrico.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Logica e Aritmetica"
+              "title": "Campo Elettrico"
             }
           }
         ]
@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#formulario",
+                "query": "tag:#fisica",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -238,40 +237,42 @@
   },
   "active": "37f08df93cdfe4d4",
   "lastOpenFiles": [
-    "RIpasso matematica/Linguaggio matematico.md",
+    "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico/2. Campo elettrico.md",
+    "Formulario/Elettromagnetismo/Campo Elettrico.md",
+    "Formulario/Elettromagnetismo/Legge di Coulomb.md",
+    "Formulario/Cinematica/Spostamento come area sotto v(t).md",
+    "Formulario/Cinematica/Piano inclinato.md",
+    "Formulario/Cinematica/Moto Rettilineo Uniformemente Accelerato (MRUA).md",
+    "Formulario/Cinematica/Moto Rettilineo Uniforme (MRU).md",
+    "Formulario/Cinematica/Moto del proiettile.md",
+    "Formulario/Cinematica/Moto Circolare Uniforme (MCU).md",
+    "Formulario/Linguaggio matematico.md",
+    "Formulario/Moto Rettilineo Uniformemente Accelerato (MRUA).md",
+    "Formulario/Cinematica/sedwgkgWf",
+    "Formulario/Cinematica/sedfX6iaM",
+    "Formulario/Cinematica/sedOpcvbq",
+    "Formulario/Cinematica/sedsgBIo7",
+    "Formulario/Cinematica/sed9bT7Pv",
+    "Formulario/Cinematica/sedr4p5lq",
+    "Formulario/Elettromagnetismo",
+    "Formulario/Cinematica",
+    "Formulario/Campo Elettrico.md",
+    "Formulario/Legge di Coulomb.md",
+    "Formulario/Piano inclinato.md",
+    "Formulario/Moto Circolare Uniforme (MCU).md",
+    "Formulario/Moto del proiettile.md",
+    "Formulario/Spostamento come area sotto v(t).md",
+    "Formulario/Moto Rettilineo Uniforme (MRU).md",
+    "Formulario/Elettromagnetismo formule.md",
+    "Formulario/Cinematica formule.md",
     "RIpasso matematica/Logica e Aritmetica.md",
+    "RIpasso matematica/Linguaggio matematico.md",
     "claude_skills/Skill Desmos for obsidian.md",
     "Piano di Studio — Maturità 2026/Informatica/Progettazione Logica.md.tmp.4464.a86b306457d4",
     "2026-01-31.md",
     "Piano di Studio — Maturità 2026/Informatica/Appunti Archivi e File — Concetti Base e Organiz.md",
     "Piano di Studio — Maturità 2026/Sistemi/Appunti Architettura Client-Server, HTTP, URI U.md",
-    "Piano di Studio — Maturità 2026/Sistemi/Appunti Crittografia Simmetrica, Asimmetrica e R.md",
-    "Piano di Studio — Maturità 2026/Sistemi/Appunti CIA · Attacchi e Minacce · Malware · Te.md",
-    "Formulario/Linguaggio matematico.md",
-    "Piano di Studio — Maturità 2026/Informatica/Informatica indice.md",
-    "Piano di Studio — Maturità 2026/Informatica/Appunti SQL.md",
-    "Piano di Studio — Maturità 2026/Informatica/Vincoli, Viste e Ristrutturazione — Progettazione.md",
-    "Piano di Studio — Maturità 2026/Italiano/Decadentismo e Simbolismo Francese.md",
-    "Piano di Studio — Maturità 2026/Sistemi/Sistemi indice.md",
-    "Piano di Studio — Maturità 2026/Italiano/Italo Svevo.md",
-    "Ripasso fisica/Cinematica.md",
-    "Formulario/Cinematica formule.md",
-    "claude_skills/claude_skills index.md",
-    "Piano di Studio — Maturità 2026/Inglese/Inglese indice.md",
-    "Piano di Studio — Maturità 2026/Italiano/Italiano indice.md",
     "Senza nome.base",
-    "Skill.md",
-    "claude_skills/Skill \"Desmos for obsidian\".md",
-    "Untitled Kanban.md",
-    "claude_skills",
-    "Ripasso fisica",
-    "Formulario/Elettromagnetismo formule.md",
-    "RIpasso matematica/Linguaggio matematico.md.tmp.15132.0e3c19d7ea67",
-    "RIpasso matematica/Linguaggio matematico.md.tmp.15116.0018460d8421",
-    "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico/5. Atomo di idrogeno.md",
-    "RIpasso matematica",
-    "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico",
-    "POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",
@@ -281,7 +282,6 @@
     "POK/Img/Campo elettrico/Confronto con forza gravitazionale 1.png",
     "POK/Img/Campo elettrico/Atomo di idrogeno 3.png",
     "POK/Img/Campo elettrico/Atomo di idrogeno 1.png",
-    "POK/Img/Campo elettrico",
     "Piano di Studio — Maturità 2026/Img/Inglese/internet_protocols_study.svg"
   ]
 }

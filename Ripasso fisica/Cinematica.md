@@ -3,7 +3,7 @@ tags: [fisica, cinematica, ripasso]
 ---
 # Cinematica
 
-> Formule riassunte in [[Formulario/Cinematica formule.md]]
+> Formule riassunte in [[Formulario/Cinematica/Moto Rettilineo Uniforme (MRU).md|Formulario Cinematica]] ([[Formulario/Cinematica/Moto Rettilineo Uniforme (MRU)|MRU]], [[Formulario/Cinematica/Moto Rettilineo Uniformemente Accelerato (MRUA)|MRUA]], [[Formulario/Cinematica/Spostamento come area sotto v(t)|area sotto v(t)]], [[Formulario/Cinematica/Moto del proiettile|proiettile]], [[Formulario/Cinematica/Moto Circolare Uniforme (MCU)|MCU]], [[Formulario/Cinematica/Piano inclinato|piano inclinato]])
 
 ## Moto Rettilineo Uniforme (MRU)
 
