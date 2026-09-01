@@ -4,7 +4,7 @@
   "title": "Add properties and tags",
   "titleGenerationStatus": "success",
   "createdAt": 1788255128251,
-  "lastActivityAt": 1788255161034,
+  "lastActivityAt": 1788255412559,
   "sessionId": "71141559-ff2c-4175-bd0c-b6c18a8dff04",
   "selectedModel": "sonnet",
   "providerState": {
@@ -14,10 +14,10 @@
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,
-    "cacheCreationInputTokens": 338,
-    "cacheReadInputTokens": 39916,
+    "cacheCreationInputTokens": 212,
+    "cacheReadInputTokens": 88521,
     "contextWindow": 1000000,
-    "contextTokens": 40256,
-    "percentage": 4
+    "contextTokens": 88735,
+    "percentage": 9
   }
 }
