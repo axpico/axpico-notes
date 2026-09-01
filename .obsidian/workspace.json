@@ -213,7 +213,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 402
+    "width": 282.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -236,7 +236,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "37f08df93cdfe4d4",
   "lastOpenFiles": [
     "Formulario/Elettromagnetismo/Legge di Coulomb.md",
     "Formulario/Elettromagnetismo/Campo Elettrico.md",
