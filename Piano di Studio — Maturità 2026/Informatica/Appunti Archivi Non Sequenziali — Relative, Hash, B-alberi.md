@@ -1,3 +1,12 @@
+---
+subject: informatica
+tags:
+  - informatica
+  - archivi
+  - hash
+  - b-alberi
+  - maturita-2026
+---
 # Panoramica
 
 L'**organizzazione non sequenziale** consente di accedere a un record **senza dover attraversare tutti quelli precedenti**, ricavando direttamente l'indirizzo tramite la chiave del record stesso.

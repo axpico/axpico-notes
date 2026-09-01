@@ -1,3 +1,11 @@
+---
+subject: inglese
+tags:
+  - inglese
+  - network
+  - topologie-di-rete
+  - maturita-2026
+---
 ![[network_topologies_study.svg|693]]
 ## Key concept
 

@@ -1,3 +1,10 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - kafka
+  - maturita-2026
+---
 ## Vita
 
 |  |  |

@@ -1,3 +1,10 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - pirandello
+  - maturita-2026
+---
 ## Vita
 
 |  |  |

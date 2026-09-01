@@ -1,3 +1,10 @@
+---
+subject: inglese
+tags:
+  - inglese
+  - touchscreen
+  - maturita-2026
+---
 ![[touchscreen_revolution_study.svg|697]]
 ## Context
 

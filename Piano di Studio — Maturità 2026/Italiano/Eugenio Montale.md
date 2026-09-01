@@ -1,3 +1,11 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - montale
+  - poesia
+  - maturita-2026
+---
 ## Profilo generale
 
 Montale è difficile da inquadrare in una corrente letteraria: è al tempo stesso critico letterario, scrittore, giornalista e responsabile di circoli culturali. È un autore che **crea una spaccatura** rispetto alla tradizione.

@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788255128248-te1oy4ew3",
+  "providerId": "claude",
+  "title": "Add properties and tags",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788255128251,
+  "lastActivityAt": 1788255161034,
+  "sessionId": "71141559-ff2c-4175-bd0c-b6c18a8dff04",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "71141559-ff2c-4175-bd0c-b6c18a8dff04"
+  },
+  "currentNote": "RIpasso matematica/Logica e Aritmetica.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 338,
+    "cacheReadInputTokens": 39916,
+    "contextWindow": 1000000,
+    "contextTokens": 40256,
+    "percentage": 4
+  }
+}

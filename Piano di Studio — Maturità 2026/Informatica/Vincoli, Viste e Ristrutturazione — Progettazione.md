@@ -1,3 +1,11 @@
+---
+subject: informatica
+tags:
+  - informatica
+  - vincoli-integrita
+  - viste
+  - maturita-2026
+---
 ## Regole aziendali e vincoli di integrità
 
 I **vincoli di integrità** sono condizioni che i dati devono rispettare in ogni istante. Si dividono in due categorie:

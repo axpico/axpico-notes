@@ -1,3 +1,10 @@
+---
+subject: sistemi
+tags:
+  - sistemi
+  - indice
+  - maturita-2026
+---
 Appunti di sistemi e reti — Maturità 2026.
 
 > Ogni pagina copre un argomento del programma. Naviga in sequenza o salta dove serve.

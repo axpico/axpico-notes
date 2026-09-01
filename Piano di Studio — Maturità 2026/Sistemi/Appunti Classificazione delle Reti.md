@@ -1,3 +1,10 @@
+---
+subject: sistemi
+tags:
+  - sistemi
+  - reti
+  - maturita-2026
+---
 # Panoramica
 
 Classificare una rete significa descriverla secondo **tre assi distinti**:

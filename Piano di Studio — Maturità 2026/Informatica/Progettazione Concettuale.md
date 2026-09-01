@@ -1,3 +1,11 @@
+---
+subject: informatica
+tags:
+  - informatica
+  - progettazione-database
+  - schema-er
+  - maturita-2026
+---
 ## Cos'è la progettazione concettuale?
 
 La **progettazione di un database** si articola in tre fasi:

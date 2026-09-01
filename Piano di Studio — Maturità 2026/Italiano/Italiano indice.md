@@ -1,3 +1,10 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - indice
+  - maturita-2026
+---
 ## Moduli
 
 [Fine '800 — Positivismo, Naturalismo, Realismo](Fine%20'800%20—%20Positivismo,%20Naturalismo,%20Realismo.md)

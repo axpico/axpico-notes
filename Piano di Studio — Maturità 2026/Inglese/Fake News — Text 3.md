@@ -1,3 +1,10 @@
+---
+subject: inglese
+tags:
+  - inglese
+  - fake-news
+  - maturita-2026
+---
 ![[fake_news_study.svg|697]]
 
 ## Misinformation: a major issue worldwide

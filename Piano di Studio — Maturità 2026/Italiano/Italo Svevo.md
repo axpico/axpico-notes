@@ -1,3 +1,10 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - svevo
+  - maturita-2026
+---
 ## Vita
 
 |                |                                                                                                                             |

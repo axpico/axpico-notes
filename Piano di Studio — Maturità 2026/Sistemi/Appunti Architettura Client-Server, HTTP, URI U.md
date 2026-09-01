@@ -1,3 +1,12 @@
+---
+subject: sistemi
+tags:
+  - sistemi
+  - client-server
+  - http
+  - uri
+  - maturita-2026
+---
 # Panoramica
 
 Questa pagina copre il livello applicazione del modello OSI: come è strutturata la comunicazione web, come funziona HTTP, cosa sono URI e URL, e come si è evoluto il Web dalla sua nascita.

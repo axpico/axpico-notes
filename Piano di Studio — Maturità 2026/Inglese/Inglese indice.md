@@ -1,3 +1,10 @@
+---
+subject: inglese
+tags:
+  - inglese
+  - indice
+  - maturita-2026
+---
 Appunti di inglese — Maturità 2026.
 --- 
 [[An Intro to the Database — Section 3, Unit 9, Text 4]]

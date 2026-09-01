@@ -10,5 +10,14 @@
   "providerState": {
     "providerSessionId": "66e9c87a-ae75-4492-9ac9-3c5b8ff6605d"
   },
-  "currentNote": "RIpasso matematica/Linguaggio matematico.md"
+  "currentNote": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 321,
+    "cacheReadInputTokens": 44229,
+    "contextWindow": 1000000,
+    "contextTokens": 44552,
+    "percentage": 4
+  }
 }

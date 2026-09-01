@@ -1,3 +1,13 @@
+---
+date: 2026-09-01
+subject: matematica
+topic: logica e aritmetica
+tags:
+  - matematica
+  - logica
+  - condizioni-necessarie-sufficienti
+  - connettivi-logici
+---
 ## A) Condizioni necessarie e sufficienti
 ### 1. Quadrilateri — relazioni tra proprietà degli angoli
 

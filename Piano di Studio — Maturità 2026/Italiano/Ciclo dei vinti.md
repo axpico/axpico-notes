@@ -1,3 +1,12 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - verismo
+  - verga
+  - ciclo-dei-vinti
+  - maturita-2026
+---
 ## Cos'è
 
 Insieme di romanzi su **persone vinte dalla propria storia**: protagonisti che cercano di innalzare il proprio status sociale ma vengono travolti dalla fiumana del progresso.

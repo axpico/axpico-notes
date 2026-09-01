@@ -1,3 +1,12 @@
+---
+subject: sistemi
+tags:
+  - sistemi
+  - dns
+  - smtp
+  - protocolli
+  - maturita-2026
+---
 # Panoramica
 
 Questa pagina copre i principali protocolli applicativi (livello 7 OSI) che rendono funzionante Internet nella pratica quotidiana: risoluzione dei nomi (DNS), posta elettronica (SMTP, POP3), diagnostica di rete (ICMP) e trasferimento file (FTP).

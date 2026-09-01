@@ -1,3 +1,10 @@
+---
+subject: inglese
+tags:
+  - inglese
+  - iot
+  - maturita-2026
+---
 ![[iot_unit1_study_graphic.svg|697]]
 ## Definition
 

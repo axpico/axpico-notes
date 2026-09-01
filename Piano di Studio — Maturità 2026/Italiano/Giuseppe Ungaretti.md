@@ -1,3 +1,11 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - ungaretti
+  - poesia
+  - maturita-2026
+---
 ## Vita
 
 |  |  |

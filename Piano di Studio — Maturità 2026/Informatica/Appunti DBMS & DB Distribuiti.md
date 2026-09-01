@@ -1,3 +1,11 @@
+---
+subject: informatica
+tags:
+  - informatica
+  - dbms
+  - database-distribuiti
+  - maturita-2026
+---
 ## 1. Funzionalità del DBMS
 
 Il **DBMS** (Database Management System) è il software che gestisce l'accesso, la memorizzazione e la manipolazione dei dati in modo efficiente, sicuro e coerente.

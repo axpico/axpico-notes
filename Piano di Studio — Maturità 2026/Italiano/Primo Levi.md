@@ -1,3 +1,10 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - primo-levi
+  - maturita-2026
+---
 ## Profilo
 
 |  |  |

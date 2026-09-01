@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788255128248-te1oy4ew3",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788255128518-xaee158",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788255128243-fxzheay",
+      "timestamp": 1788255128243,
+      "rawDisplayText": "vai in giro e aggiungi prorprities e tags",
+      "canonicalText": "vai in giro e aggiungi prorprities e tags",
+      "context": {
+        "currentNote": {
+          "path": "RIpasso matematica/Logica e Aritmetica.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "005cec51974815c2850ea3e851730bcb30b1a265d7778186bd8f0dac0af1c763",
+      "providerUserMessageId": "ed591cfd-e441-4ec4-914f-013d75c0bedf",
+      "providerAssistantMessageId": "77533db2-34d1-46cf-a3be-747d35b8cd48"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788255161043-qtco8ch",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788255161034-k8f4212",
+      "timestamp": 1788255161034,
+      "rawDisplayText": "guarda anceh altre pagine",
+      "canonicalText": "guarda anceh altre pagine",
+      "images": [],
+      "contentDigest": "f2a35187772b30f81ad93dd288102c14eb1f34c2122876acc75e8c971746a4ef",
+      "providerUserMessageId": "2e7beabf-a229-42e0-b314-3d58cdd93dc7"
+    }
+  ]
+}

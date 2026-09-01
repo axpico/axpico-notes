@@ -1,3 +1,11 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - pascoli
+  - poesia
+  - maturita-2026
+---
 ## Vita
 
 | **Nascita**  | 13 dicembre 1855, San Mauro di Romagna |

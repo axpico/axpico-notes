@@ -1,3 +1,11 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - freud
+  - psicanalisi
+  - maturita-2026
+---
 ## Che cos'è la psicanalisi
 
 - **Etimologia**: *psyché* (anima/mente) + *analisi* = metodo di indagine della mente

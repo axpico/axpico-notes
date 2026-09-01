@@ -1,3 +1,11 @@
+---
+subject: informatica
+tags:
+  - informatica
+  - progettazione-database
+  - schema-relazionale
+  - maturita-2026
+---
 ## Obiettivo della fase logica
 
 Prendere lo **schema ER** prodotto nella fase concettuale e tradurlo in **tabelle relazionali** (schema relazionale), pronto per essere implementato in un DBMS relazionale (es. MySQL, PostgreSQL).

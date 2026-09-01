@@ -1,3 +1,11 @@
+---
+subject: sistemi
+tags:
+  - sistemi
+  - firewall
+  - sicurezza
+  - maturita-2026
+---
 # Panoramica
 
 Questa pagina copre la **sicurezza perimetrale**: i meccanismi che proteggono il confine tra la rete interna (trusted) e il mondo esterno (untrusted). Firewall, ACL, proxy, DMZ e port forwarding sono i mattoni fondamentali di qualsiasi architettura di rete sicura.

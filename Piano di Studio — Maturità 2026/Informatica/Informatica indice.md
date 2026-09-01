@@ -1,3 +1,10 @@
+---
+subject: informatica
+tags:
+  - informatica
+  - indice
+  - maturita-2026
+---
 Appunti di informatica — Maturità 2026.
 
 > Ogni pagina copre un argomento del programma. Naviga in sequenza o salta dove serve.

@@ -1,3 +1,10 @@
+---
+subject: inglese
+tags:
+  - inglese
+  - fibra-ottica
+  - maturita-2026
+---
 ![[optical_fibre_study.svg|626]]
 ## Current State
 

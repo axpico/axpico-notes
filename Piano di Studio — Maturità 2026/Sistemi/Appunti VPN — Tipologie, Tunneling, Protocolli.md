@@ -1,3 +1,10 @@
+---
+subject: sistemi
+tags:
+  - sistemi
+  - vpn
+  - maturita-2026
+---
 # Panoramica
 
 Una **VPN** (Virtual Private Network) è una **rete privata virtuale** costruita sopra un'infrastruttura pubblica e non fidata (tipicamente Internet). Permette a host o reti geograficamente distanti di comunicare **come se fossero sulla stessa LAN privata**, garantendo riservatezza, integrità e autenticazione del traffico.

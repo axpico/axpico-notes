@@ -1,3 +1,11 @@
+---
+subject: informatica
+tags:
+  - informatica
+  - normalizzazione
+  - database
+  - maturita-2026
+---
 ## Perché normalizzare?
 
 La **normalizzazione** è il processo che porta uno schema relazionale a rispettare progressivamente le **forme normali**, eliminando ridondanze e le **anomalie** che ne derivano. È l'ultimo passo della [[Progettazione Logica]], dopo la traduzione ER → Relazionale.

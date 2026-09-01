@@ -1,3 +1,10 @@
+---
+subject: fisica
+tags:
+  - fisica
+  - elettromagnetismo
+  - formulario
+---
 ## Legge di Coulomb
 
 **Forza elettrostatica tra due cariche:**

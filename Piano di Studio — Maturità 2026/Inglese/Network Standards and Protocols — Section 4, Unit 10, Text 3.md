@@ -1,3 +1,11 @@
+---
+subject: inglese
+tags:
+  - inglese
+  - network
+  - protocolli
+  - maturita-2026
+---
 ![[osi_model_study.svg|677]]
 ## Key Definitions
 

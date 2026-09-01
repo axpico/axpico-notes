@@ -1,3 +1,10 @@
+---
+subject: sistemi
+tags:
+  - sistemi
+  - crittografia
+  - maturita-2026
+---
 # Panoramica
 
 La crittografia è la scienza di trasformare informazioni leggibili in forma illeggibile per chi non è autorizzato, e di riportarle alla forma originale per chi lo è. È il fondamento tecnico di quasi ogni meccanismo di sicurezza Informatica: HTTPS, VPN, firma digitale, autenticazione.

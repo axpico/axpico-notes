@@ -1,3 +1,10 @@
+---
+subject: inglese
+tags:
+  - inglese
+  - database
+  - maturita-2026
+---
 ![[database_intro_study.svg|697]]
 
 ## What is a Database?

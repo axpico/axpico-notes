@@ -1,3 +1,11 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - dannunzio
+  - decadentismo
+  - maturita-2026
+---
 ## Vita e personaggio
 
 |  |  |

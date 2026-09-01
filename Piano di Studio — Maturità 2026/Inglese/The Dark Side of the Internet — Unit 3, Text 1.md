@@ -1,3 +1,11 @@
+---
+subject: inglese
+tags:
+  - inglese
+  - internet
+  - sicurezza
+  - maturita-2026
+---
 ![[dark_side_internet_study.svg|690]]
 ## Context
 

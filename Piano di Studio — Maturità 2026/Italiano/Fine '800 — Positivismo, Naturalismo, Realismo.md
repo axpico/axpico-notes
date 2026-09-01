@@ -1,3 +1,12 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - positivismo
+  - naturalismo
+  - realismo
+  - maturita-2026
+---
 ## Contesto storico
 
 Durante l'**'800** la società europea è caratterizzata da grandi certezze politiche e sociali: l'industrializzazione avanza, la borghesia consolida il suo potere, la scienza sembra in grado di spiegare tutto.

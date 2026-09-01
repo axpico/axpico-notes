@@ -1,3 +1,10 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - dostoevskij
+  - maturita-2026
+---
 ## Ruolo nella letteratura
 
 Dostoevskij è considerato un **precursore della psicanalisi letteraria**: apre alla narrativa l’“abisso della coscienza umana” prima che Freud ne fornisca gli strumenti teorici.

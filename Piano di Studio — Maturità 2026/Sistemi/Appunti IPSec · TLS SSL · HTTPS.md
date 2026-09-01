@@ -1,3 +1,12 @@
+---
+subject: sistemi
+tags:
+  - sistemi
+  - ipsec
+  - tls
+  - https
+  - maturita-2026
+---
 # Panoramica
 
 Questa pagina copre i tre protocolli che rendono sicure le comunicazioni su reti non fidate: **IPSec** (sicurezza a livello IP), **TLS/SSL** (sicurezza a livello trasporto) e **HTTPS** (HTTP su TLS). Sono la base tecnica di VPN, navigazione sicura, e-commerce, e-banking.

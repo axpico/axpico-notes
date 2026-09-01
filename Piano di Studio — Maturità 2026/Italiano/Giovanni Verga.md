@@ -1,3 +1,11 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - verga
+  - verismo
+  - maturita-2026
+---
 ## Vita
 
 | **Nascita**  | 1840, Catania (Sicilia)                                  |

@@ -1,3 +1,11 @@
+---
+subject: inglese
+tags:
+  - inglese
+  - internet
+  - protocolli
+  - maturita-2026
+---
 ![[internet_protocols_study.svg|633]]
 ## The Internet = Packet-Switched Network
 

@@ -1,3 +1,11 @@
+---
+subject: italiano
+tags:
+  - italiano
+  - decadentismo
+  - simbolismo
+  - maturita-2026
+---
 ## Superamento del Positivismo
 
 Vers la fine dell'800 alcuni autori avvertono i **limiti del Positivismo**: la scienza non riesce a spiegare tutto, soprattutto le dimensioni più profonde dell'esperienza umana.
