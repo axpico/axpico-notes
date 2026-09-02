@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788332893233-com0brdaw",
+  "providerId": "claude",
+  "title": "Create inclined plane trigonometry diagram",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788332893267,
+  "lastActivityAt": 1788332989121,
+  "sessionId": "8b8e0397-688e-47cc-a20a-e35a2e31ec88",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "8b8e0397-688e-47cc-a20a-e35a2e31ec88"
+  },
+  "currentNote": "Ripasso fisica/Dinamica.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1047,
+    "cacheReadInputTokens": 49718,
+    "contextWindow": 1000000,
+    "contextTokens": 50767,
+    "percentage": 5
+  }
+}

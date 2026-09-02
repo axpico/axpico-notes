@@ -39,6 +39,21 @@ Su un piano inclinato di angolo $\theta$ rispetto all'orizzontale, il peso $m\ve
 
 Regola pratica: **seno → componente lungo il piano**, **coseno → componente lungo la normale**, sempre riferiti all'angolo di inclinazione $\theta$ misurato dall'orizzontale. Se una forza è applicata in una direzione diversa (es. orizzontale, come nell'Esercizio 3), va scomposta anch'essa con lo stesso ragionamento rispetto agli stessi assi.
 
+```desmos-graph
+left=0; right=90;
+top=1.1; bottom=-0.15;
+width=500; height=350;
+degreeMode=degrees;
+---
+y=\sin(x)
+y=\cos(x)
+(0,0)|label:sin to 0
+(0,1)|open|label:cos to 1
+(90,1)|label:sin to 1
+(90,0)|open|label:cos to 0
+```
+*(curva blu = $\sin\theta$ → componente parallela, che fa scivolare; curva verde = $\cos\theta$ → componente normale. Si scambiano di ruolo agli estremi: a $\theta=0°$ tutto è coseno/normale, a $\theta=90°$ tutto è seno/parallelo — coerente col trucco dei casi limite sopra)*
+
 ## 3. Forza d'attrito radente
 
 - **Attrito statico**: si oppone al tentativo di mettere in moto un corpo fermo, si "adatta" fino a un massimo:
