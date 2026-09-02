@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - dinamica
+  - [[Dinamica]]
   - centro-di-massa
   - formulario
 ---

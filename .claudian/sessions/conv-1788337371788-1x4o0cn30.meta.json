@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788337371788-1x4o0cn30",
+  "providerId": "claude",
+  "title": "Create formula pages in folder",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788337371815,
+  "lastActivityAt": 1788337448072,
+  "sessionId": "bf186564-63d7-46f1-9be8-b77fb9476186",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "bf186564-63d7-46f1-9be8-b77fb9476186"
+  },
+  "currentNote": "Ripasso fisica/Energia e gravitazione.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 461,
+    "cacheReadInputTokens": 49240,
+    "contextWindow": 1000000,
+    "contextTokens": 49703,
+    "percentage": 5
+  }
+}

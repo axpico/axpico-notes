@@ -98,7 +98,7 @@ A differenza dell'energia cinetica, la quantità di moto totale si conserva **se
 
 **Dati**: $m=10\text{ g}=0.01\text{ kg}$, $v=100\text{ m/s}$, $M=9.990\text{ kg}$ ferma, $\mu=0.4$ (attrito), la pallottola resta conficcata (urto completamente anelastico).
 
-Conservazione della quantità di moto durante l'urto ($m+M = 10.000$ kg):
+Conservazione della [[Quantità di moto]] durante l'urto ($m+M = 10.000$ kg):
 
 $$v' = \frac{mv}{m+M} = \frac{0.01\cdot100}{10} = 0.1\ \text{m/s}$$
 
@@ -110,7 +110,7 @@ $$d = \frac{v'^2}{2a} = \frac{0.1^2}{2\cdot3.92} \approx 1.3\times10^{-3}\ \text
 
 **Dati**: $h=8$ m, tratto orizzontale $L=10$ m, molla ideale (respingente) orizzontale.
 
-**a)** Se tutto il tratto orizzontale è ghiacciato (senza attrito), non c'è alcuna dissipazione: la molla è una forza conservativa, quindi restituisce integralmente l'energia cinetica ricevuta, qualunque sia $k$. La slitta torna sempre in cima al pendio con la stessa energia di partenza.
+**a)** Se tutto il tratto orizzontale è ghiacciato (senza attrito), non c'è alcuna dissipazione: la molla è una forza conservativa, quindi restituisce integralmente l'[[Energia cinetica]] ricevuta, qualunque sia $k$. La slitta torna sempre in cima al pendio con la stessa energia di partenza.
 
 → **Qualsiasi valore di $k>0$ va bene** (l'attrito nullo, non la costante elastica, è ciò che garantisce il ritorno in quota).
 
@@ -126,19 +126,19 @@ $$\mu = \frac{h - h/2}{2L} = \frac{h}{4L} = \frac{8}{40} = 0.2$$
 
 **Dati**: $m=10$ kg, $\Delta h = 2950-2239=711$ m.
 
-**a)** Funivia, $t=4\text{ min}=240$ s, attriti trascurati. La cassa parte e arriva ferma (ΔEk=0), quindi il lavoro del pavimento sulla cassa compensa esattamente quello della gravità:
+**a)** Funivia, $t=4\text{ min}=240$ s, attriti trascurati. La cassa parte e arriva ferma (ΔEk=0), quindi il [[Lavoro]] del pavimento sulla cassa compensa esattamente quello della gravità:
 
 $$W = mg\Delta h = 10\cdot9.8\cdot711 \approx 6.97\times10^4\ \text{J}$$
 
 $$P = \frac{W}{t} = \frac{69678}{240} \approx 290\ \text{W}$$
 
-Questa **non** coincide con la potenza erogata dal motore dell'impianto: il motore deve sollevare/muovere anche la cabina, i cavi, gli altri passeggeri, ecc. — la cassa da sola è solo una piccola frazione del carico totale.
+Questa **non** coincide con la [[Potenza]] erogata dal motore dell'impianto: il motore deve sollevare/muovere anche la cabina, i cavi, gli altri passeggeri, ecc. — la cassa da sola è solo una piccola frazione del carico totale.
 
 **b)** Mulo, $P\approx100$ W:
 
 $$t = \frac{W}{P} = \frac{69678}{100} \approx 697\ \text{s} \approx 11.6\ \text{min}$$
 
-(valore puramente energetico: nella realtà un mulo impiega molto di più, perché parte della sua potenza serve a muovere sé stesso e a vincere attriti lungo il sentiero — qui si trascura tutto tranne il dislivello).
+(valore puramente energetico: nella realtà un mulo impiega molto di più, perché parte della sua [[Potenza]] serve a muovere sé stesso e a vincere attriti lungo il sentiero — qui si trascura tutto tranne il dislivello).
 
 ## 4. Giro della morte (loop)
 
@@ -154,7 +154,7 @@ $$\boxed{h_{min} = \frac{5}{2}R}$$
 
 ## 5. Urto tra tre automobili
 
-Metodo: la quantità di moto totale si conserva (sistema isolato durante l'urto):
+Metodo: la [[Quantità di moto]] totale si conserva (sistema isolato durante l'urto):
 
 $$\vec q_{tot} = m_A\vec v_A + m_B\vec v_B + m_C\vec v_C$$
 

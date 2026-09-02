@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - dinamica
+  - [[Dinamica]]
   - leggi-di-newton
   - formulario
 ---
