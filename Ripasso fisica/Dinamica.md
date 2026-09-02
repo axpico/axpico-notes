@@ -12,13 +12,8 @@ subject: Fisica
 type: appunti
 date: 2026-09-01
 ---
-
 # Dinamica — Ripasso
-
-> Vedi anche [[claude_skills/Skill Desmos for obsidian.md|Skill Desmos]] per come inserire i grafici in questa nota (plugin community "Desmos" di Nigecat richiesto).
-
 ## 1. I tre principi della dinamica (leggi di Newton)
-
 ### Primo principio — principio d'inerzia
 $$\sum \vec F = 0 \;\Rightarrow\; \vec a = 0$$
 Se la risultante delle forze esterne su un corpo è nulla, il corpo mantiene il suo stato di quiete o di moto rettilineo uniforme. Vale solo nei sistemi di riferimento **inerziali**. "Nessuna accelerazione" non vuol dire "nessuna forza": vuol dire che le forze si bilanciano.
