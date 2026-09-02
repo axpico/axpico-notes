@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788336002679-ehcp4g0kk",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788336002841-mfnu6lz",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788336002666-vc35h5q",
+      "timestamp": 1788336002666,
+      "rawDisplayText": "guarda claude skisll folder. inotlre in questa pagina spiega il lvoro con integrale di F dx, se F costante allora W = f *x. prodotto scalare. alfa se tra 0 e pi/2 e pi/2 e pi/2 e pi. la potenza con P=w/t. energia cinetica E_k= 1/2*m*v^2. Energia potenzial egravitazionale U_g = m*g*h, energia potenziale elastica E_e = 1/2kx^2 x=> allungamnteo. Conservazione dell'energia: energia meccanica E_m = E_k + U .... delta E_m = W_mc. forze non coservatrici=> forze dissipative. Urti elastici e anaelastici",
+      "canonicalText": "guarda claude skisll folder. inotlre in questa pagina spiega il lvoro con integrale di F dx, se F costante allora W = f *x. prodotto scalare. alfa se tra 0 e pi/2 e pi/2 e pi/2 e pi. la potenza con P=w/t. energia cinetica E_k= 1/2*m*v^2. Energia potenzial egravitazionale U_g = m*g*h, energia potenziale elastica E_e = 1/2kx^2 x=> allungamnteo. Conservazione dell'energia: energia meccanica E_m = E_k + U .... delta E_m = W_mc. forze non coservatrici=> forze dissipative. Urti elastici e anaelastici",
+      "context": {
+        "currentNote": {
+          "path": "Ripasso fisica/Energia e gravitazione.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "1f160b1de492ba8ec39fd320bbb04add67966d49dd59aea65a63ef2cca26149b",
+      "providerUserMessageId": "f726ba55-e2a5-4935-be7e-2801d283c1af"
+    }
+  ]
+}

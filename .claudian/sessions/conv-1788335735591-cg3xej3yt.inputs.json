@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788335735591-cg3xej3yt",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788335735755-lxsgpyo",
+      "userTurnOrdinal": 1,
+      "state": "staged",
+      "localMessageId": "msg-1788335735583-6sauzsr",
+      "timestamp": 1788335735583,
+      "rawDisplayText": "hi",
+      "canonicalText": "hi",
+      "context": {
+        "currentNote": {
+          "path": "Ripasso fisica/Energia e gravitazione.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "88de65a2615a366404fdfd86bc354f32929270ce50be0af4a2bb771e29bf83ef"
+    }
+  ]
+}

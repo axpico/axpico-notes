@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788336002679-ehcp4g0kk",
+  "providerId": "claude",
+  "title": "guarda claude skisll folder",
+  "titleGenerationStatus": "pending",
+  "createdAt": 1788336002689,
+  "lastActivityAt": 1788336012489,
+  "sessionId": "abf73ba9-db19-4328-aa2c-d6975dc82b41",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "abf73ba9-db19-4328-aa2c-d6975dc82b41"
+  },
+  "currentNote": "Ripasso fisica/Energia e gravitazione.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 253,
+    "cacheReadInputTokens": 30904,
+    "contextWindow": 1000000,
+    "contextTokens": 31159,
+    "percentage": 3
+  }
+}
