@@ -4,11 +4,20 @@
   "title": "Study work, energy, and collision mechanics",
   "titleGenerationStatus": "success",
   "createdAt": 1788336049394,
-  "lastActivityAt": 1788336049394,
+  "lastActivityAt": 1788336607922,
   "sessionId": "f28b235a-695a-4629-8441-e38d1424a3e7",
   "selectedModel": "sonnet",
   "providerState": {
     "providerSessionId": "f28b235a-695a-4629-8441-e38d1424a3e7"
   },
-  "currentNote": "Ripasso fisica/Energia e gravitazione.md"
+  "currentNote": "Ripasso fisica/Energia e gravitazione.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 437,
+    "cacheReadInputTokens": 64674,
+    "contextWindow": 1000000,
+    "contextTokens": 65113,
+    "percentage": 7
+  }
 }

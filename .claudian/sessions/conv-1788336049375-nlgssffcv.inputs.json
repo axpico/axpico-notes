@@ -18,7 +18,45 @@
       },
       "images": [],
       "contentDigest": "e5aac3b7bf1f89cfd91af3360e17facd04a7486f54a77409757f1a207f2556e0",
-      "providerUserMessageId": "aef7820f-3dd1-4591-a354-72e229a952b7"
+      "providerUserMessageId": "aef7820f-3dd1-4591-a354-72e229a952b7",
+      "providerAssistantMessageId": "9ba3580a-342a-4e2a-ab34-fcfe4eb2f321"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788336450937-px104di",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788336450924-71s1sb9",
+      "timestamp": 1788336450924,
+      "rawDisplayText": "rigruarda che hai fatto errori in formattazione",
+      "canonicalText": "rigruarda che hai fatto errori in formattazione",
+      "images": [],
+      "contentDigest": "6c4c2625d44da8e610ea02bf45cb82e83fec07bdda6f1221bd670dc8133b681b",
+      "providerUserMessageId": "23ede952-1c17-40e3-b026-3bddd4770dd0",
+      "providerAssistantMessageId": "97a0b166-c3eb-4d3a-a4a1-b2e23960b2f7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788336570316-vdx4ojs",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788336570303-g73q6re",
+      "timestamp": 1788336570303,
+      "rawDisplayText": "aggiungi piccole spiegazioni",
+      "canonicalText": "aggiungi piccole spiegazioni",
+      "context": {
+        "editorSelection": {
+          "notePath": "Ripasso fisica/Energia e gravitazione.md",
+          "mode": "selection",
+          "selectedText": "W = \\vec F \\cdot \\Delta \\vec x = F\\,\\Delta x \\cos\\alpha",
+          "lineCount": 1,
+          "startLine": 12
+        }
+      },
+      "images": [],
+      "contentDigest": "e614de5c66c6a6ee1f7e991338643a5005794d8a5a52c0da3e7a4dacb2c54a63",
+      "providerUserMessageId": "fe68d3ef-c021-4020-8ce0-9cf407aa6285",
+      "providerAssistantMessageId": "5b458684-d02c-4587-a3bf-1b40666f568e"
     }
   ]
 }
