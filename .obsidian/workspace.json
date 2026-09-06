@@ -4,17 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "ddab401e5d7e7f71",
+        "id": "aecc4c9478d6c017",
         "type": "tabs",
         "children": [
           {
-            "id": "f174e0790cc705f5",
+            "id": "11e1038bcc48db42",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-09-07 01.04.12.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-09-07 01.04.12.excalidraw"
             }
           }
         ]
@@ -76,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -208,7 +211,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5
+    "width": 398.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,8 +235,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "11e1038bcc48db42",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-09-07 01.04.12.excalidraw.md",
+    "Excalidraw",
+    "2026-09-07.md",
     "Formulario/Energia e gravitazione/Quantità di moto.md",
     "Ripasso fisica/Energia e gravitazione.md",
     "Ripasso fisica/Dinamica.md",
@@ -259,8 +266,6 @@
     "Formulario/Dinamica/Forza massima nel moto armonico.md",
     "Formulario/Dinamica/Teorema dell'impulso.md",
     "Formulario/Dinamica/Attrito statico.md",
-    "Formulario/Dinamica/Terzo principio della dinamica.md",
-    "Formulario/Dinamica/Primo principio della dinamica.md",
     "Formulario/Dinamica",
     "RIpasso matematica/Logica e Aritmetica.md.tmp.2108.b96acf7ac06d",
     "Formulario/Cinematica/sedwgkgWf",
@@ -268,7 +273,6 @@
     "Formulario/Cinematica/sedOpcvbq",
     "Formulario/Cinematica/sedsgBIo7",
     "Formulario/Cinematica/sed9bT7Pv",
-    "Formulario/Cinematica/sedr4p5lq",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",
