@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -172,8 +171,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           },
           {
@@ -235,7 +234,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "11e1038bcc48db42",
+  "active": "c612c617353893e2",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-09-07 01.04.12.excalidraw.md",
     "Excalidraw",

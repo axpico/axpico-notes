@@ -10,7 +10,7 @@
   "providerState": {
     "providerSessionId": "f96e50bd-e773-4898-ae66-282bb5604dbd"
   },
-  "currentNote": "claude_skills/claude_skills index.md",
+  "linkedContentPath": "claude_skills/claude_skills index.md",
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,

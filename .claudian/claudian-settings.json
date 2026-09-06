@@ -33,6 +33,7 @@
       "enableChrome": true,
       "enableBangBash": true,
       "customModels": "",
+      "defaultModel": "opus",
       "lastModel": "haiku",
       "modelEnvironmentType": "",
       "titleModelEnvironmentType": "",
@@ -95,6 +96,10 @@
     }
   },
   "settingsProvider": "claude",
+  "lastSelectedChatModel": {
+    "providerId": "claude",
+    "model": "sonnet"
+  },
   "savedProviderModel": {
     "claude": "sonnet"
   },
@@ -115,8 +120,12 @@
   "chatViewPlacement": "right-sidebar",
   "enableDualPane": true,
   "dualPaneSide": "right",
+  "restoreTabsOnStartup": true,
+  "collabEnabled": false,
+  "collabProjectsFolder": "workspace",
+  "collabGitPath": "",
   "sessionManagerOrganization": "list",
   "sessionManagerSort": "last-updated",
-  "pinnedLinkedNotePaths": [],
+  "pinnedLinkedContentPaths": [],
   "hiddenProviderCommands": {}
 }
