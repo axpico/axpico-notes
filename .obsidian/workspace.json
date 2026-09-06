@@ -8,15 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "11e1038bcc48db42",
+            "id": "67b513659b9c79a8",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Drawing 2026-09-07 01.04.12.excalidraw.md"
+                "file": "Excalidraw/Drawing 2026-09-07 01.17.18_0.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-07 01.04.12.excalidraw"
+              "title": "Drawing 2026-09-07 01.17.18_0.excalidraw"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 282.5,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -234,10 +235,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c612c617353893e2",
+  "active": "67b513659b9c79a8",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-09-07 01.04.12.excalidraw.md",
+    "Excalidraw/Drawing 2026-09-07 01.17.18.excalidraw.md",
+    "Excalidraw/Drawing 2026-09-07 01.17.18_0.excalidraw.md",
     "Excalidraw",
+    "Excalidraw/Drawing 2026-09-07 01.04.12.excalidraw.md",
     "2026-09-07.md",
     "Formulario/Energia e gravitazione/Quantità di moto.md",
     "Ripasso fisica/Energia e gravitazione.md",
@@ -263,8 +266,6 @@
     "Formulario/Dinamica/Accelerazione macchina di Atwood.md",
     "Formulario/Dinamica/Centro di massa.md",
     "Formulario/Dinamica/Forza massima nel moto armonico.md",
-    "Formulario/Dinamica/Teorema dell'impulso.md",
-    "Formulario/Dinamica/Attrito statico.md",
     "Formulario/Dinamica",
     "RIpasso matematica/Logica e Aritmetica.md.tmp.2108.b96acf7ac06d",
     "Formulario/Cinematica/sedwgkgWf",
