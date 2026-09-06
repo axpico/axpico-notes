@@ -11,12 +11,10 @@
             "id": "67b513659b9c79a8",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-09-07 01.17.18_0.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-07 01.17.18_0.excalidraw"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -78,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -235,7 +232,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "67b513659b9c79a8",
+  "active": "41c9241263f38e27",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-09-07 01.17.18.excalidraw.md",
     "Excalidraw/Drawing 2026-09-07 01.17.18_0.excalidraw.md",
