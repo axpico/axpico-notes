@@ -1,0 +1,24 @@
+{
+  "id": "conv-1788778020518-jlan38yzl",
+  "providerId": "claude",
+  "title": "Termodinamica e esercizi",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788778020523,
+  "lastActivityAt": 1788778100425,
+  "sessionId": "4f5dd3ef-4c3b-4ca2-a2cd-8a60bc12d14c",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "4f5dd3ef-4c3b-4ca2-a2cd-8a60bc12d14c"
+  },
+  "linkedContentPath": "Ripasso fisica/Termodinamica.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1067,
+    "cacheReadInputTokens": 38042,
+    "contextWindow": 967000,
+    "contextTokens": 39111,
+    "percentage": 4,
+    "contextWindowIsAuthoritative": true
+  }
+}
