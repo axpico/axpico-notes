@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "aecc4c9478d6c017",
+        "id": "38b0831a98ee7e84",
         "type": "tabs",
         "children": [
           {
-            "id": "67b513659b9c79a8",
+            "id": "5988339527a085ec",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {},
               "icon": "lucide-git-fork",
               "title": "Graph view"
+            }
+          },
+          {
+            "id": "713a0a3d69dfcbc4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "RIpasso matematica/Algebra - Polinomi ed Equazioni.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Algebra - Polinomi ed Equazioni"
             }
           }
         ]
@@ -204,8 +218,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1788778835173-k0s8vuw",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
+                      "conversationId": "conv-1788778883001-mvr0hyg95"
                     }
                   ],
                   "activeTabId": "tab-1788778835173-k0s8vuw"
@@ -243,8 +256,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "56efc63866208b00",
+  "active": "5988339527a085ec",
   "lastOpenFiles": [
+    "RIpasso matematica/Trigonometria - Riduzione angoli e identità.md",
+    "RIpasso matematica/Trigonometria - Riduzione angoli e identità.md.tmp.18971.7a3ef5170865",
+    "RIpasso matematica/Geometria - Luoghi geometrici e circonferenze.md",
+    "Excalidraw/Drawing 2026-09-07 13.02.14.excalidraw.md",
+    "RIpasso matematica/Geometria - Luoghi geometrici e circonferenze.md.tmp.18971.4806a06e568a",
+    "RIpasso matematica/Algebra - Polinomi ed Equazioni.md",
+    "RIpasso matematica/Algebra - Polinomi ed Equazioni.md.tmp.18971.860ca7021c06",
+    "Excalidraw",
     "Formulario/Linguaggio matematico/Somma dei coefficienti binomiali.md",
     "Formulario/Linguaggio matematico.md",
     "Formulario/Linguaggio matematico.md.tmp.18247.ab60a62fa77d",
@@ -258,13 +279,9 @@
     "Formulario/Linguaggio matematico/Permutazioni semplici.md",
     "Formulario/Linguaggio matematico/Permutazioni semplici.md.tmp.18247.d172a332a92d",
     "Formulario/Linguaggio matematico/Somma simmetrica da -n a n.md",
-    "Formulario/Linguaggio matematico/Somma simmetrica da -n a n.md.tmp.18247.9659daee4e62",
     "Formulario/Linguaggio matematico/Somma alternata (-1)^(k+1).md",
-    "Formulario/Linguaggio matematico/Somma alternata (-1)^(k+1).md.tmp.18247.4f3a497a2b0c",
     "Formulario/Linguaggio matematico/Somma alternata (-1)^k.md",
-    "Formulario/Linguaggio matematico/Somma alternata (-1)^k.md.tmp.18247.8b2f89674a59",
     "Formulario/Linguaggio matematico/Formula di Gauss.md",
-    "Formulario/Linguaggio matematico/Formula di Gauss.md.tmp.18247.8916bc074eac",
     "Formulario/Linguaggio matematico/Somma dei quadrati.md",
     "Formulario/Linguaggio matematico/Quantificatore esistenziale-universale.md",
     "Formulario/Linguaggio matematico/Quantificatore universale-esistenziale.md",
@@ -277,10 +294,6 @@
     "Formulario/Meccanica dei fluidi/Pressione.md",
     "Formulario/Termodinamica/Cicli termodinamici e rendimento.md",
     "Formulario/Termodinamica/Secondo principio ed entropia.md",
-    "Formulario/Termodinamica/Primo principio della termodinamica.md",
-    "Formulario/Termodinamica/Gas ideali.md",
-    "Formulario/Termodinamica/Cambiamenti di stato.md",
-    "Formulario/Termodinamica/Calore e capacità termica.md",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",

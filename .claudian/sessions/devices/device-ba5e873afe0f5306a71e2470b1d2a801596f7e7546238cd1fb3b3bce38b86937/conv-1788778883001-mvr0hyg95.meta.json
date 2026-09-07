@@ -1,0 +1,23 @@
+{
+  "id": "conv-1788778883001-mvr0hyg95",
+  "providerId": "claude",
+  "title": "Create Algebra review guide",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788778883002,
+  "lastActivityAt": 1788779126301,
+  "sessionId": "57a00e16-363f-4af6-aa8e-dfb855549229",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "57a00e16-363f-4af6-aa8e-dfb855549229"
+  },
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 5528,
+    "cacheReadInputTokens": 46807,
+    "contextWindow": 967000,
+    "contextTokens": 52337,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}
