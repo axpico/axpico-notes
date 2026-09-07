@@ -41,7 +41,50 @@
       "canonicalText": "un altro con queste Corsi di ripasso di Matematica – laboratorio FDS\nLEZIONE 5: TRIGONOMETRIA\nWarm-up!\nA Altezze vertiginose.\nMarco e Alice sono seduti su una spiaggia e contemplano le montagne in lontananza. Una\ndi esse colpisce la loro attenzione, perch´e sembra piuttosto alta.\nAlice sostiene che si tratta di una montagna di 3000 m di altezza, all’incirca.\nMarco non `e convinto e i due ragazzi decidono di applicare le loro conoscenze di trigonome-\ntria:\n• su Google maps, Marco verifica che i due ragazzi si trovano a 5,2 km di distanza dalla\nmontagna\n• Alice prova a misurare l’angolo da terra alla punta, misurato dal punto in cui essi si\ntrovano, ed osserva che `e circa 30o.\nQuanto `e alta la montagna?\nB Pratica.\nScrivere le seguenti espressioni come cos α e sin α:\n1. cos(π − α) + sin π\n2 + α\u0001 − 2 sin π\n3 + α\u0001\n2. sin α + cos α − π\n2\n\u0001 + sin(π + α) + 3 cos π\n4 − α\u0001\nVerificare le seguenti identit`a:\n1. sin3 x+cos3 x\n1−sin x cos x = sin x + cos x\n2. sin(2α) cos α + 2 sin3 α = 2 sin α\n3. 1\n2−sin2 x = 1+tan2 x\n2+tan2 x\nEquazioni e disequazioni trigonometriche:\n1. sin x = 1\n2\n2. cos x = −√2\n2\n3. sin x ≤ 1\n4. cos 2x ≥ 1\nC Reminder. Ricorda che sul forum del MOOC MAT101, nella sezione discussione,\npuoi confrontarti con i tuoi colleghi ed il tutor del Polimi riguardo questi esercizi di riscal-\ndamento!",
       "images": [],
       "contentDigest": "a11bf738d26659342bfda7da729eacd27ed5b3b992de9b586de4b9be6b5e1a16",
-      "providerUserMessageId": "8cd85d2f-7971-4a80-b2c5-66d826b87a32"
+      "providerUserMessageId": "8cd85d2f-7971-4a80-b2c5-66d826b87a32",
+      "providerAssistantMessageId": "69dfe224-04f4-454d-8c8f-ea6c1c68fbaf"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788779190376-yfszlr5",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788779190370-gukegju",
+      "timestamp": 1788779190370,
+      "rawDisplayText": "guarada claude_skil e guarda se ee utile",
+      "canonicalText": "guarada claude_skil e guarda se ee utile",
+      "images": [],
+      "contentDigest": "165714b4f90169449d9c9fde13d7a793fd6dcc07000cb8304692fc5a2f29a62d",
+      "providerUserMessageId": "90aa5c39-e89c-4906-bede-1131031f93c7",
+      "providerAssistantMessageId": "55964a19-5d8b-4175-86ef-55f066b07cfd"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788779244576-i0nus20",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1788779244565-keqffc8",
+      "timestamp": 1788779244565,
+      "rawDisplayText": "crea un altro file per questo Corsi di ripasso di Matematica – laboratorio FDS\nLEZIONE 6: FUNZIONI (1)\nWarm-up!\nA Funzioni. Quali delle seguenti equazioni rappresentano delle funzioni? Indicare\nquali sono invertibili e scrivere la funzione inversa.\nfunzione? invertibile? inversa note\nx2 + y2 + 4x − 2y − 4 = 0\nx2\n4 − y2\n3 = −1\ny2 − x + 1 = 0\nx2 − y − 4 = 0\nx2 − y2 = 1\nxy = 2\nlog x − 3y + 1 = 0\ny = x2\ny3 + x − 2 = 0\ny = sin x\ny = sin x · ecos x\ny = x log x − arctan x\nB Potenze.\nSiano a, b ∈ R. ab `e una potenza per ogni valore di a e b? Perch´e?\nFai un esempio, se possibile, per ognuno dei casi nella tabella.\na > 0 a = 0 a < 0\nb > 0\nb = 0\nb < 0\nC Moduli.\n1. Rappresenta sull’asse reale la soluzione delle seguenti disequazioni con modulo. Cerca\ndi usare un approccio grafico:\n• |x| < 3\n• |x + 2| < 5\n• |2x − 4| > 3\n• |3 − x| < −1\n2. Riscrivi usando la notazione modulo i seguenti insiemi numerici:\n• −3 < x < 1\n• ∅\n• −∞ < x < −5 ∨ 1 < x < +∞\n• R\nD Reminder. Ricorda che sul forum del MOOC MAT101, nella sezione discussione,\npuoi confrontarti con i tuoi colleghi ed il tutor del Polimi riguardo questi esercizi di riscal-\ndamento!",
+      "canonicalText": "crea un altro file per questo Corsi di ripasso di Matematica – laboratorio FDS\nLEZIONE 6: FUNZIONI (1)\nWarm-up!\nA Funzioni. Quali delle seguenti equazioni rappresentano delle funzioni? Indicare\nquali sono invertibili e scrivere la funzione inversa.\nfunzione? invertibile? inversa note\nx2 + y2 + 4x − 2y − 4 = 0\nx2\n4 − y2\n3 = −1\ny2 − x + 1 = 0\nx2 − y − 4 = 0\nx2 − y2 = 1\nxy = 2\nlog x − 3y + 1 = 0\ny = x2\ny3 + x − 2 = 0\ny = sin x\ny = sin x · ecos x\ny = x log x − arctan x\nB Potenze.\nSiano a, b ∈ R. ab `e una potenza per ogni valore di a e b? Perch´e?\nFai un esempio, se possibile, per ognuno dei casi nella tabella.\na > 0 a = 0 a < 0\nb > 0\nb = 0\nb < 0\nC Moduli.\n1. Rappresenta sull’asse reale la soluzione delle seguenti disequazioni con modulo. Cerca\ndi usare un approccio grafico:\n• |x| < 3\n• |x + 2| < 5\n• |2x − 4| > 3\n• |3 − x| < −1\n2. Riscrivi usando la notazione modulo i seguenti insiemi numerici:\n• −3 < x < 1\n• ∅\n• −∞ < x < −5 ∨ 1 < x < +∞\n• R\nD Reminder. Ricorda che sul forum del MOOC MAT101, nella sezione discussione,\npuoi confrontarti con i tuoi colleghi ed il tutor del Polimi riguardo questi esercizi di riscal-\ndamento!",
+      "images": [],
+      "contentDigest": "8c1807c1db5cb96eca010ce69912665077fa1ee974b08c32fcfbf247d9cd5091",
+      "providerUserMessageId": "d42e9b90-50f8-41bb-95dd-c1986aa2f9f5",
+      "providerAssistantMessageId": "4c43ac1a-e097-4e1d-92a9-89224aee71dc"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788779342924-xpnvs1n",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1788779342918-2g2xhpf",
+      "timestamp": 1788779342918,
+      "rawDisplayText": "hai sblagito demos Desmos Graph Error: Sorry, I don't understand the ';' symbol.",
+      "canonicalText": "hai sblagito demos Desmos Graph Error: Sorry, I don't understand the ';' symbol.",
+      "images": [],
+      "contentDigest": "b849e7b8873848898e26671d2224be7ac182b02ae4c92cabc5fdb53a05e71f31",
+      "providerUserMessageId": "2e7059a8-308f-40f6-9cd7-b0f6db94490d",
+      "providerAssistantMessageId": "6e09a2fa-8af5-460e-be2d-ed2ce32e9712"
     }
   ]
 }

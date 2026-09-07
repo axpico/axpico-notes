@@ -66,6 +66,13 @@ $$
 y = x \quad \text{e} \quad y = -x
 $$
 
+```desmos-graph
+left=-5; right=5; top=5; bottom=-5;
+---
+y=x
+y=-x
+```
+
 ### 3. Luogo dei punti a distanza 2 da $P=(2,3)$
 
 È per definizione una circonferenza di centro $P$ e raggio 2:
@@ -96,6 +103,16 @@ $$
 (x-2)^2 + y^2 = 4
 $$
 Verifica con $B=(3,\sqrt3)$: $(3-2)^2+(\sqrt3)^2 = 1+3=4$ ✓.
+
+```desmos-graph
+left=-2; right=6; top=4; bottom=-4;
+---
+(x-2)^2+y^2=4
+(0,0)|label:A
+(3,\sqrt{3})|label:B
+(4,0)|label:C
+(2,0)|label:M
+```
 
 #### Rette $y=a$ (orizzontali)
 
