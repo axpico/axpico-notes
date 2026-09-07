@@ -4,11 +4,21 @@
   "title": "Organizza formule Termodinamica e Fluidi",
   "titleGenerationStatus": "success",
   "createdAt": 1788778524120,
-  "lastActivityAt": 1788778524120,
+  "lastActivityAt": 1788778619502,
   "sessionId": "234b0aea-7db9-4267-b91b-c98792395232",
   "selectedModel": "sonnet",
   "providerState": {
     "providerSessionId": "234b0aea-7db9-4267-b91b-c98792395232"
   },
-  "linkedContentPath": "Ripasso fisica/Meccanica dei fluidi.md"
+  "linkedContentPath": "Ripasso fisica/Meccanica dei fluidi.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 457,
+    "cacheReadInputTokens": 61316,
+    "contextWindow": 967000,
+    "contextTokens": 61775,
+    "percentage": 6,
+    "contextWindowIsAuthoritative": true
+  }
 }

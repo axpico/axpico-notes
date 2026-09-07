@@ -60,7 +60,7 @@ lungo una linea di flusso di un fluido ideale (non viscoso, incomprimibile). Leg
 
 **Dati**: raggio pistone A $r_A=4$ cm, forza applicata $F_A=490$ N, massa da sollevare $m=6000$ kg.
 
-Legge di Pascal: $F_A/A_A = F_B/A_B$, con $A=\pi r^2$.
+[[Legge di Pascal]]: $F_A/A_A = F_B/A_B$, con $A=\pi r^2$.
 
 $$A_A = \pi(0.04)^2 = 5.027\times10^{-3}\ \text{m}^2$$
 $$F_B = mg = 6000\cdot9.8 = 58800\ \text{N}$$

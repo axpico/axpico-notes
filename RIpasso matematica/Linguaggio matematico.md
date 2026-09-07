@@ -149,7 +149,7 @@ Quanti sono i termini di grado 5 in (a+b)^5?
 Ogni termine $a^{5-k}b^k$ ha grado $(5-k)+k=5$ per qualsiasi k, quindi tutti i termini dello sviluppo sono di grado 5: sono $n+1=6$ (k da 0 a 5)
 $$(a+b)^5=\sum_{k=0}^{5}\binom{5}{k}a^{5-k}b^k = a^5+5a^4b+10a^3b^2+10a^2b^3+5ab^4+b^5$$
 
-Ponendo a=b=1 nel binomio di Newton, la somma di tutti i coefficienti binomiali di riga n vale $2^n$
+Ponendo a=b=1 nel [[Binomio di Newton]], la somma di tutti i coefficienti binomiali di riga n vale $2^n$
 $$\sum_{k=0}^{n}\binom{n}{k} = (1+1)^n = 2^n$$
 ## Risorse
 - [FDS PoliMi](https://linktr.ee/fdspolimi)

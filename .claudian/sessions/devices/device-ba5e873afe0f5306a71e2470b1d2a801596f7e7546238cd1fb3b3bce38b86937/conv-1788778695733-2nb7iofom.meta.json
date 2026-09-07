@@ -1,0 +1,24 @@
+{
+  "id": "conv-1788778695733-2nb7iofom",
+  "providerId": "claude",
+  "title": "Split file into per-formula structure",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788778695737,
+  "lastActivityAt": 1788778762128,
+  "sessionId": "015ab398-b0e5-4175-9065-47a7a46a2d03",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "015ab398-b0e5-4175-9065-47a7a46a2d03"
+  },
+  "linkedContentPath": "Formulario/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 731,
+    "cacheReadInputTokens": 42791,
+    "contextWindow": 967000,
+    "contextTokens": 43524,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}
