@@ -4,7 +4,7 @@
   "title": "Termodinamica e esercizi",
   "titleGenerationStatus": "success",
   "createdAt": 1788778020523,
-  "lastActivityAt": 1788778100425,
+  "lastActivityAt": 1788778282905,
   "sessionId": "4f5dd3ef-4c3b-4ca2-a2cd-8a60bc12d14c",
   "selectedModel": "sonnet",
   "providerState": {
@@ -14,11 +14,11 @@
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,
-    "cacheCreationInputTokens": 1067,
-    "cacheReadInputTokens": 38042,
+    "cacheCreationInputTokens": 5524,
+    "cacheReadInputTokens": 68204,
     "contextWindow": 967000,
-    "contextTokens": 39111,
-    "percentage": 4,
+    "contextTokens": 73730,
+    "percentage": 8,
     "contextWindowIsAuthoritative": true
   }
 }

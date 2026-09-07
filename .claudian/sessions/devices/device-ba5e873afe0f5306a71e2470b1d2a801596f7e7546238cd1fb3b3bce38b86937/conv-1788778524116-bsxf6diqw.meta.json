@@ -1,0 +1,14 @@
+{
+  "id": "conv-1788778524116-bsxf6diqw",
+  "providerId": "claude",
+  "title": "Organizza formule Termodinamica e Fluidi",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788778524120,
+  "lastActivityAt": 1788778524120,
+  "sessionId": "234b0aea-7db9-4267-b91b-c98792395232",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "234b0aea-7db9-4267-b91b-c98792395232"
+  },
+  "linkedContentPath": "Ripasso fisica/Meccanica dei fluidi.md"
+}

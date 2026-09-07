@@ -209,9 +209,13 @@
                     {
                       "tabId": "tab-1788337597801-8y48kp7",
                       "conversationId": "conv-1788778020518-jlan38yzl"
+                    },
+                    {
+                      "tabId": "tab-1788778490641-cojjglz",
+                      "conversationId": "conv-1788778524116-bsxf6diqw"
                     }
                   ],
-                  "activeTabId": "tab-1788337597801-8y48kp7"
+                  "activeTabId": "tab-1788778490641-cojjglz"
                 }
               },
               "icon": "bot",
@@ -246,13 +250,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "67b513659b9c79a8",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
+    "Formulario/Termodinamica/Calore e capacità termica.md",
+    "Formulario/Termodinamica/Calore e capacità termica.md.tmp.17492.a59952129b68",
+    "Formulario/Termodinamica/Dilatazione termica.md",
+    "Formulario/Termodinamica/Dilatazione termica.md.tmp.17492.c4d74302bea6",
+    "Formulario/Meccanica dei fluidi",
+    "Formulario/Termodinamica",
+    "Ripasso fisica/Termodinamica.md",
+    "Ripasso fisica/Meccanica dei fluidi.md",
+    "Ripasso fisica/Termodinamica.md.tmp.15028.c9293e2b96f5",
     "Ripasso fisica/Energia e gravitazione.md",
     "Ripasso fisica/Cinematica.md",
     "Ripasso fisica/Dinamica.md",
-    "Ripasso fisica/Meccanica dei fluidi.md",
-    "Ripasso fisica/Termodinamica.md",
     "RIpasso matematica/Linguaggio matematico.md",
     "Ripasso fisica/Meccanica dei fluidi.md.tmp.15028.97c93dd4597d",
     "RIpasso matematica/Logica e Aritmetica.md",
@@ -276,14 +287,7 @@
     "Ripasso fisica/Energia e gravitazione.md.tmp.13752.9c89cb48ea8f",
     "claude_skills/Skill Desmos for obsidian.md",
     "Formulario/Dinamica/Attrito dinamico.md",
-    "Formulario/Dinamica/Forza elastica (Legge di Hooke).md",
-    "Formulario/Dinamica/Secondo principio della dinamica.md",
     "Formulario/Dinamica",
-    "RIpasso matematica/Logica e Aritmetica.md.tmp.2108.b96acf7ac06d",
-    "Formulario/Cinematica/sedwgkgWf",
-    "Formulario/Cinematica/sedfX6iaM",
-    "Formulario/Cinematica/sedOpcvbq",
-    "Formulario/Cinematica/sedsgBIo7",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",
