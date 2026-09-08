@@ -4,45 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "38b0831a98ee7e84",
+        "id": "aab73cffbece3d00",
         "type": "tabs",
         "children": [
           {
-            "id": "5988339527a085ec",
+            "id": "dcd27cc940d1ff62",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "dd0d97287bb2fc45",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "713a0a3d69dfcbc4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RIpasso matematica/Algebra - Polinomi ed Equazioni.md",
-                "mode": "source",
-                "source": false
-              },
               "icon": "lucide-file",
-              "title": "Algebra - Polinomi ed Equazioni"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 282.5,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -244,7 +220,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5
+    "width": 398.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -267,8 +244,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dd0d97287bb2fc45",
+  "active": "dcd27cc940d1ff62",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-09-07 14.00.33.excalidraw.md",
+    "Excalidraw",
     "RIpasso matematica/Geometria - Luoghi geometrici e circonferenze.md",
     "RIpasso matematica/Geometria - Luoghi geometrici e circonferenze.md.tmp.18971.2e73a7124713",
     "RIpasso matematica/Geometria - Luoghi geometrici e circonferenze.md.tmp.18971.00a079bf2f6a",
@@ -284,7 +263,6 @@
     "Excalidraw/Drawing 2026-09-07 13.02.14.excalidraw.md",
     "RIpasso matematica/Geometria - Luoghi geometrici e circonferenze.md.tmp.18971.4806a06e568a",
     "RIpasso matematica/Algebra - Polinomi ed Equazioni.md.tmp.18971.860ca7021c06",
-    "Excalidraw",
     "Formulario/Linguaggio matematico/Somma dei coefficienti binomiali.md",
     "Formulario/Linguaggio matematico.md",
     "Formulario/Linguaggio matematico.md.tmp.18247.ab60a62fa77d",
