@@ -11,10 +11,14 @@
             "id": "dcd27cc940d1ff62",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "RIpasso matematica/Linguaggio matematico.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Linguaggio matematico"
             }
           }
         ]
@@ -76,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -246,6 +249,10 @@
   },
   "active": "dcd27cc940d1ff62",
   "lastOpenFiles": [
+    "RIpasso matematica/Logica e Aritmetica.md",
+    "RIpasso matematica/Trigonometria - Riduzione angoli e identità.md",
+    "RIpasso matematica/Algebra - Polinomi ed Equazioni.md",
+    "RIpasso matematica/Linguaggio matematico.md",
     "Excalidraw/Drawing 2026-09-07 14.00.33.excalidraw.md",
     "Excalidraw",
     "RIpasso matematica/Geometria - Luoghi geometrici e circonferenze.md",
@@ -253,10 +260,6 @@
     "RIpasso matematica/Geometria - Luoghi geometrici e circonferenze.md.tmp.18971.00a079bf2f6a",
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md",
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md.tmp.18971.46138a0a1e44",
-    "RIpasso matematica/Linguaggio matematico.md",
-    "RIpasso matematica/Algebra - Polinomi ed Equazioni.md",
-    "RIpasso matematica/Logica e Aritmetica.md",
-    "RIpasso matematica/Trigonometria - Riduzione angoli e identità.md",
     "RIpasso matematica/Geometria - Luoghi geometrici e circonferenze.md.tmp.18971.34ee3cefc27d",
     "RIpasso matematica/Geometria - Luoghi geometrici e circonferenze.md.tmp.18971.1ad6bf2e541f",
     "RIpasso matematica/Trigonometria - Riduzione angoli e identità.md.tmp.18971.7a3ef5170865",
