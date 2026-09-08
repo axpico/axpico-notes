@@ -7,7 +7,7 @@ tags:
 ---
 # Legge di Coulomb
 
-**Forza elettrostatica tra due cariche:**
+**Forza [[Elettrostatica]] tra due cariche:**
 $$F_{12} = \frac{1}{4\pi\epsilon_0} \frac{|q_1 \cdot q_2|}{r^2}$$
 
 Dove:

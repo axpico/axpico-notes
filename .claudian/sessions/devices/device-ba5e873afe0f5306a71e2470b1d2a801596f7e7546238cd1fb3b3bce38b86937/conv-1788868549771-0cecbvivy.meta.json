@@ -4,7 +4,7 @@
   "title": "Create physics VI meeting exercises",
   "titleGenerationStatus": "success",
   "createdAt": 1788868549797,
-  "lastActivityAt": 1788868735277,
+  "lastActivityAt": 1788868978443,
   "sessionId": "b74bc5c7-9c25-44c3-9afc-3bbc6269b0e0",
   "selectedModel": "sonnet",
   "providerState": {
@@ -13,10 +13,10 @@
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,
-    "cacheCreationInputTokens": 906,
-    "cacheReadInputTokens": 75084,
+    "cacheCreationInputTokens": 527,
+    "cacheReadInputTokens": 84157,
     "contextWindow": 1000000,
-    "contextTokens": 75992,
+    "contextTokens": 84686,
     "percentage": 8,
     "contextWindowIsAuthoritative": true
   }

@@ -29,6 +29,20 @@
       "contentDigest": "0440771eb678a6ff6fd17130a9a7b33a3f38f7141d1fe2be1d89f799606b8294",
       "providerUserMessageId": "3fa9f035-d43d-4c74-a84e-43022c3c4c8a",
       "providerAssistantMessageId": "6646b16f-e6c8-411e-8b18-633e66288740"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788868915683-cmgu4hb",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788868915665-k75ic5f",
+      "timestamp": 1788868915665,
+      "rawDisplayText": "estai tutte le formule. crea una cartella dentro formualrio e crea un fil eper ogni formula",
+      "canonicalText": "estai tutte le formule. crea una cartella dentro formualrio e crea un fil eper ogni formula",
+      "images": [],
+      "contentDigest": "c77b31c0feaeb77d4b553962dea5ec3ce6b8271ea725af991d4725e6b7ac3dc0",
+      "providerUserMessageId": "ddc97f6d-c58f-43c8-99da-9c00f470b353",
+      "providerAssistantMessageId": "bb9282b1-41f2-45c1-bc6d-6246c619cde6"
     }
   ]
 }
