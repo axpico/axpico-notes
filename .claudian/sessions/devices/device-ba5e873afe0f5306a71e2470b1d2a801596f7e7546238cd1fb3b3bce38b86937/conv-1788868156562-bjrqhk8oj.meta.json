@@ -1,0 +1,24 @@
+{
+  "id": "conv-1788868156562-bjrqhk8oj",
+  "providerId": "claude",
+  "title": "Lezione 7 su funzioni e decadimento",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788868156567,
+  "lastActivityAt": 1788868229137,
+  "sessionId": "705b37bc-94a4-4e1f-87c0-82a6307589f5",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "705b37bc-94a4-4e1f-87c0-82a6307589f5"
+  },
+  "linkedContentPath": "RIpasso matematica/Linguaggio matematico.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 6294,
+    "cacheReadInputTokens": 47991,
+    "contextWindow": 1000000,
+    "contextTokens": 54287,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}

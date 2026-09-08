@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Linguaggio matematico"
             }
+          },
+          {
+            "id": "f01b03565055d0aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "RIpasso matematica/Funzioni 2 - Esponenziali e logaritmi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Funzioni 2 - Esponenziali e logaritmi"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -209,9 +224,18 @@
                     {
                       "tabId": "tab-1788778835173-k0s8vuw",
                       "conversationId": "conv-1788778883001-mvr0hyg95"
+                    },
+                    {
+                      "tabId": "tab-1788868138996-bl816su",
+                      "conversationId": "conv-1788868156562-bjrqhk8oj"
+                    },
+                    {
+                      "tabId": "tab-1788868371095-hvesxl9",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1788778835173-k0s8vuw"
+                  "activeTabId": "tab-1788868371095-hvesxl9"
                 }
               },
               "icon": "bot",
@@ -219,12 +243,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 398.5,
-    "collapsed": true
+    "width": 398.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -247,12 +270,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dcd27cc940d1ff62",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-09-08 13.49.20.excalidraw.md",
+    "RIpasso matematica/Funzioni 2 - Esponenziali e logaritmi.md",
+    "RIpasso matematica/Funzioni 2 - Esponenziali e logaritmi.md.tmp.4044.082feebbc30e",
+    "RIpasso matematica/Linguaggio matematico.md",
     "RIpasso matematica/Logica e Aritmetica.md",
     "RIpasso matematica/Trigonometria - Riduzione angoli e identità.md",
     "RIpasso matematica/Algebra - Polinomi ed Equazioni.md",
-    "RIpasso matematica/Linguaggio matematico.md",
     "Excalidraw/Drawing 2026-09-07 14.00.33.excalidraw.md",
     "Excalidraw",
     "RIpasso matematica/Geometria - Luoghi geometrici e circonferenze.md",
@@ -268,7 +294,6 @@
     "RIpasso matematica/Algebra - Polinomi ed Equazioni.md.tmp.18971.860ca7021c06",
     "Formulario/Linguaggio matematico/Somma dei coefficienti binomiali.md",
     "Formulario/Linguaggio matematico.md",
-    "Formulario/Linguaggio matematico.md.tmp.18247.ab60a62fa77d",
     "Formulario/Linguaggio matematico/Binomio di Newton.md",
     "Formulario/Linguaggio matematico/Disposizioni semplici.md",
     "Formulario/Linguaggio matematico/Permutazioni con ripetizione.md",
@@ -283,8 +308,6 @@
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
     "Ripasso fisica/Meccanica dei fluidi.md",
     "Formulario/Meccanica dei fluidi/Equazione di continuità.md",
-    "Formulario/Meccanica dei fluidi/Principio di Archimede.md",
-    "Formulario/Meccanica dei fluidi/Legge di Stevino.md",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",

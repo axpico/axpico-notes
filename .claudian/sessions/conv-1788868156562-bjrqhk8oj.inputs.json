@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788868156562-bjrqhk8oj",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788868156702-ialupvw",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788868156554-1xbaeem",
+      "timestamp": 1788868156554,
+      "rawDisplayText": "crea un nuovo file dentro ripasso matematica per spiegare questo e fai i seguenti esercizi \nCorsi di ripasso di Matematica – laboratorio FDS\nLEZIONE 7: FUNZIONI (2)\nWarm-up!\nA Decadimento radioattivo.\nSappiamo che il Carbonio-14 ha un tempo di dimezzamento pari a circa 5.730 anni, mentre\ngli altri isotopi del carbonio sono stabili. Sappiamo inoltre che la percentuale di Carbonio-\n14 sul carbonio totale in atmosfera e negli organismi viventi `e circa 10−12.\nSupponiamo di trovare un fossile1 in cui la percentuale di Carbonio-14 sul carbonio totale\n`e circa 1.2 · 10−13. Qual `e l’et`a del fossile?\nB Pratica. Risolvere le equazioni e disequazioni\n1. 28x = 4 1\nx\n2. 44−x4x+7 = 4x2−4x−10\n3. 32x − 3x − 6 = 0\n4. 16x ≥ √2\n5. 2x−2 < 3x−2\n6. log(x2 − 3x + 1) = 0\n7. log3(x − 1) + log3(x + 1) < 3\n8. log(3x − 1) > log(7 − x)\nC Quiz. Rispondi a queste domande fornendo anche la giustificazione\n1. L’espressione 72+log7 x `e uguale, per ogni x > 0 a\n(a) 49x (b) 72 + x (c) 49 + log7 x (d) 49 log7 x (e) 7x\n2. Se f (x) = 5x, allora f (x + 1) − f (x) `e uguale a\n(a) 5x (b) 5 · 5x (c) 5 (d) 4 · 5x (e) 1\nD Reminder. Ricorda che sul forum del MOOC MAT101, nella sezione discussio-\nne, puoi confrontarti con i tuoi colleghi ed il tutor del Polimi riguardo questi esercizi di\nriscaldamento!\n1Questo `e il metodo di datazione del Carbonio-14; l’ipotesi `e che, dopo la morte, un organismo non\nscambia carbonio con l’atmosfera, per cui quello 14 decade, mentre il resto rimane stabile.",
+      "canonicalText": "crea un nuovo file dentro ripasso matematica per spiegare questo e fai i seguenti esercizi \nCorsi di ripasso di Matematica – laboratorio FDS\nLEZIONE 7: FUNZIONI (2)\nWarm-up!\nA Decadimento radioattivo.\nSappiamo che il Carbonio-14 ha un tempo di dimezzamento pari a circa 5.730 anni, mentre\ngli altri isotopi del carbonio sono stabili. Sappiamo inoltre che la percentuale di Carbonio-\n14 sul carbonio totale in atmosfera e negli organismi viventi `e circa 10−12.\nSupponiamo di trovare un fossile1 in cui la percentuale di Carbonio-14 sul carbonio totale\n`e circa 1.2 · 10−13. Qual `e l’et`a del fossile?\nB Pratica. Risolvere le equazioni e disequazioni\n1. 28x = 4 1\nx\n2. 44−x4x+7 = 4x2−4x−10\n3. 32x − 3x − 6 = 0\n4. 16x ≥ √2\n5. 2x−2 < 3x−2\n6. log(x2 − 3x + 1) = 0\n7. log3(x − 1) + log3(x + 1) < 3\n8. log(3x − 1) > log(7 − x)\nC Quiz. Rispondi a queste domande fornendo anche la giustificazione\n1. L’espressione 72+log7 x `e uguale, per ogni x > 0 a\n(a) 49x (b) 72 + x (c) 49 + log7 x (d) 49 log7 x (e) 7x\n2. Se f (x) = 5x, allora f (x + 1) − f (x) `e uguale a\n(a) 5x (b) 5 · 5x (c) 5 (d) 4 · 5x (e) 1\nD Reminder. Ricorda che sul forum del MOOC MAT101, nella sezione discussio-\nne, puoi confrontarti con i tuoi colleghi ed il tutor del Polimi riguardo questi esercizi di\nriscaldamento!\n1Questo `e il metodo di datazione del Carbonio-14; l’ipotesi `e che, dopo la morte, un organismo non\nscambia carbonio con l’atmosfera, per cui quello 14 decade, mentre il resto rimane stabile.",
+      "context": {
+        "linkedContent": {
+          "path": "RIpasso matematica/Linguaggio matematico.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "625d9653ee24b4b7e9f17f7bdc63cd7151c8c2c3af0e6d88cc111c9d2fc4aaf7",
+      "providerUserMessageId": "04847dd8-37c0-4dce-9582-dbf01a527589",
+      "providerAssistantMessageId": "9ef09648-51bb-4458-a475-18b37b939f7b"
+    }
+  ]
+}
