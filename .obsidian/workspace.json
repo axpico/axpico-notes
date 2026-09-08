@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "17f50d8bdcd7c8b6",
+        "id": "e3638c7104675ee9",
         "type": "tabs",
         "children": [
           {
-            "id": "1beb50777b82bb18",
+            "id": "6dff3b201b848a03",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -203,11 +203,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1788868371095-hvesxl9",
-                      "conversationId": "conv-1788868549771-0cecbvivy"
+                      "tabId": "tab-1788869058997-9g2agu4",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1788868371095-hvesxl9"
+                  "activeTabId": "tab-1788869058997-9g2agu4"
                 }
               },
               "icon": "bot",
@@ -215,7 +216,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -242,9 +243,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1beb50777b82bb18",
+  "active": "41c9241263f38e27",
   "lastOpenFiles": [
+    "Formulario/Elettromagnetismo/Campo Elettrico.md",
     "Ripasso fisica/Elettrostatica.md",
+    "Formulario/Elettromagnetismo/Legge di Coulomb.md",
     "Formulario/Elettromagnetismo/Campo Elettrico di un Filo Infinito.md",
     "Formulario/Elettromagnetismo/Campo Elettrico di un Filo Infinito.md.tmp.6689.a6980a44d875",
     "Formulario/Elettromagnetismo/Teorema di Gauss.md",
@@ -278,8 +281,6 @@
     "Formulario/Linguaggio matematico/Permutazioni con ripetizione.md",
     "Formulario/Linguaggio matematico/Permutazioni semplici.md",
     "Formulario/Linguaggio matematico/Somma simmetrica da -n a n.md",
-    "Formulario/Linguaggio matematico/Somma alternata (-1)^(k+1).md",
-    "Formulario/Linguaggio matematico/Somma alternata (-1)^k.md",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",
