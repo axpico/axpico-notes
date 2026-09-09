@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md",
+                "file": "RIpasso matematica/Funzioni 3 - Poligoni e trasformazioni.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Funzioni 1 - Funzioni, potenze e moduli"
+              "title": "Funzioni 3 - Poligoni e trasformazioni"
             }
           },
           {
@@ -33,8 +33,7 @@
               "title": "Drawing 2026-09-08 14.32.01.excalidraw"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -265,7 +263,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a531e36f3b010c75",
+  "active": "1a4f3c546ce7f3c8",
   "lastOpenFiles": [
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md",
     "Excalidraw/Drawing 2026-09-08 14.32.01.excalidraw.md",
