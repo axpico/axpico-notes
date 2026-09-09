@@ -8,16 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3fea5c0c375fc20a",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista grafo"
-            }
-          },
-          {
             "id": "cf541cc00b82e55f",
             "type": "leaf",
             "state": {
@@ -28,9 +18,22 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-09-09 13.50.54.excalidraw"
             }
+          },
+          {
+            "id": "edae5a097fdd2d5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ripasso fisica/Elettrostatica.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Elettrostatica"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -233,7 +236,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5
+    "width": 398.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -258,6 +262,7 @@
   },
   "active": "cf541cc00b82e55f",
   "lastOpenFiles": [
+    "Ripasso fisica/Elettrostatica.md",
     "Ripasso fisica/Elettromagnetismo.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Formulario/Elettromagnetismo/Condensatori in parallelo.md",
@@ -284,7 +289,6 @@
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md.tmp.11172.2b642f0d4c9d",
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md.tmp.11172.6e4bd53f8f08",
     "RIpasso matematica/Funzioni 2 - Esponenziali e logaritmi.md",
-    "Ripasso fisica/Elettrostatica.md",
     "Excalidraw/Drawing 2026-09-08 14.06.33.excalidraw.md",
     "Formulario/Elettromagnetismo/Campo Elettrico.md",
     "Formulario/Elettromagnetismo/Legge di Coulomb.md",
