@@ -1,0 +1,24 @@
+{
+  "id": "conv-1788938874044-1f8b5l71f",
+  "providerId": "claude",
+  "title": "Create Math Lesson 8 Functions file",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788938874055,
+  "lastActivityAt": 1788938919996,
+  "sessionId": "8dff73c2-a696-4fcb-a35a-f6d64bcd965c",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "8dff73c2-a696-4fcb-a35a-f6d64bcd965c"
+  },
+  "linkedContentPath": "RIpasso matematica/Funzioni 2 - Esponenziali e logaritmi.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 2999,
+    "cacheReadInputTokens": 41203,
+    "contextWindow": 967000,
+    "contextTokens": 44204,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}

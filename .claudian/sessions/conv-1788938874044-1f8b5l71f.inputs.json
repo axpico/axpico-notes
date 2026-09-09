@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788938874044-1f8b5l71f",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788938875156-mqsplk4",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788938874023-1x9m5jk",
+      "timestamp": 1788938874023,
+      "rawDisplayText": "crea un nuovo file per spigare Corsi di ripasso di Matematica – laboratorio FDS\nLEZIONE 8: FUNZIONI (3)\nWarm-up!\nA Poligoni regolari.\nCalcola l’area A(n) del poligono regolare di n lati di lunghezza l.\nB Trasformazioni di Funzioni.\nData la funzione\ndisegna le funzioni:\nf (3x) f (1\n2 x)\n5f (x) f (x − 1)\nf (x) + 2 f (x + 2) − 1\nC Reminder. Ricorda che sul forum del MOOC MAT101, nella sezione discussione,\npuoi confrontarti con i tuoi colleghi ed il tutor del Polimi riguardo questi esercizi di Warm-\nup!",
+      "canonicalText": "crea un nuovo file per spigare Corsi di ripasso di Matematica – laboratorio FDS\nLEZIONE 8: FUNZIONI (3)\nWarm-up!\nA Poligoni regolari.\nCalcola l’area A(n) del poligono regolare di n lati di lunghezza l.\nB Trasformazioni di Funzioni.\nData la funzione\ndisegna le funzioni:\nf (3x) f (1\n2 x)\n5f (x) f (x − 1)\nf (x) + 2 f (x + 2) − 1\nC Reminder. Ricorda che sul forum del MOOC MAT101, nella sezione discussione,\npuoi confrontarti con i tuoi colleghi ed il tutor del Polimi riguardo questi esercizi di Warm-\nup!",
+      "context": {
+        "linkedContent": {
+          "path": "RIpasso matematica/Funzioni 2 - Esponenziali e logaritmi.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "bf1098b715c05704034d072a92ac3e0b311e5626ba69de45e578ee71f8a05285",
+      "providerUserMessageId": "536750ed-5fc5-4074-9998-6a35ee6f875d",
+      "providerAssistantMessageId": "b584edd0-2fda-4b92-aeca-85a99cd9a2cf"
+    }
+  ]
+}
