@@ -4,33 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2686c2d7f64542d3",
+        "id": "2e5db820ee39b085",
         "type": "tabs",
         "children": [
           {
-            "id": "1a4f3c546ce7f3c8",
+            "id": "3fea5c0c375fc20a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RIpasso matematica/Funzioni 3 - Poligoni e trasformazioni.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Funzioni 3 - Poligoni e trasformazioni"
-            }
-          },
-          {
-            "id": "a531e36f3b010c75",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-09-08 14.32.01.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-08 14.32.01.excalidraw"
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -235,12 +219,11 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 398.5,
-    "collapsed": true
+    "width": 398.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -263,7 +246,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1a4f3c546ce7f3c8",
+  "active": "41c9241263f38e27",
   "lastOpenFiles": [
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md",
     "Excalidraw/Drawing 2026-09-08 14.32.01.excalidraw.md",
