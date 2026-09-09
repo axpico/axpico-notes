@@ -11,6 +11,20 @@
             "id": "1a4f3c546ce7f3c8",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Funzioni 1 - Funzioni, potenze e moduli"
+            }
+          },
+          {
+            "id": "a531e36f3b010c75",
+            "type": "leaf",
+            "state": {
               "type": "excalidraw",
               "state": {
                 "file": "Excalidraw/Drawing 2026-09-08 14.32.01.excalidraw.md"
@@ -19,7 +33,8 @@
               "title": "Drawing 2026-09-08 14.32.01.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -250,16 +265,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1a4f3c546ce7f3c8",
+  "active": "a531e36f3b010c75",
   "lastOpenFiles": [
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md",
+    "Excalidraw/Drawing 2026-09-08 14.32.01.excalidraw.md",
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md.tmp.11172.2b642f0d4c9d",
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md.tmp.11172.6e4bd53f8f08",
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md.tmp.11172.8499ae7d13c2",
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md.tmp.11172.6d28334fab32",
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md.tmp.11172.b1e922978c2a",
     "RIpasso matematica/Funzioni 3 - Poligoni e trasformazioni.md",
-    "Excalidraw/Drawing 2026-09-08 14.32.01.excalidraw.md",
     "RIpasso matematica/Funzioni 2 - Esponenziali e logaritmi.md",
     "Ripasso fisica/Elettrostatica.md",
     "Excalidraw",
