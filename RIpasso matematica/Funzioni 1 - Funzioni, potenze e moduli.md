@@ -56,7 +56,7 @@ Idea grafica: disegnare $y=|f(x)|$ e la retta orizzontale del termine noto, poi 
 ```desmos-graph
 left=-6; right=6; top=6; bottom=-1;
 ---
-y=\left|x\right|
+y=\operatorname{abs}\left(x\right)
 y=3
 ```
 Soluzione: dove il grafico del modulo è sotto la retta orizzontale.
@@ -68,7 +68,7 @@ $$
 ```desmos-graph
 left=-10; right=8; top=8; bottom=-1;
 ---
-y=\left|x+2\right|
+y=\operatorname{abs}\left(x+2\right)
 y=5
 ```
 $$
@@ -79,7 +79,7 @@ $$
 ```desmos-graph
 left=-3; right=8; top=8; bottom=-1;
 ---
-y=\left|2x-4\right|
+y=\operatorname{abs}\left(2x-4\right)
 y=3
 ```
 Qui si cerca dove il grafico del modulo è **sopra** la retta orizzontale:
@@ -91,7 +91,7 @@ $$
 ```desmos-graph
 left=-4; right=10; top=6; bottom=-3;
 ---
-y=\left|3-x\right|
+y=\operatorname{abs}\left(3-x\right)
 y=-1
 ```
 Un modulo sta sempre a $y\ge0$, non scende mai sotto la retta $y=-1$:

@@ -1,0 +1,24 @@
+{
+  "id": "conv-1788941912146-ajf93bstx",
+  "providerId": "claude",
+  "title": "Fix Desmos piecewise expression error",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788941912154,
+  "lastActivityAt": 1788942073800,
+  "sessionId": "cfddd973-f2df-4b52-ba95-0bbc6303065b",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "cfddd973-f2df-4b52-ba95-0bbc6303065b"
+  },
+  "linkedContentPath": "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 293,
+    "cacheReadInputTokens": 52702,
+    "contextWindow": 967000,
+    "contextTokens": 52997,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}
