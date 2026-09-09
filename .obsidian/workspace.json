@@ -11,12 +11,14 @@
             "id": "3fea5c0c375fc20a",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md"
+                "file": "Ripasso fisica/Elettromagnetismo.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-09 13.50.54.excalidraw"
+              "icon": "lucide-file",
+              "title": "Elettromagnetismo"
             }
           }
         ]
@@ -53,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#fisica",
+                "query": "tag:#formulario",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -206,15 +207,11 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1788869058997-9g2agu4",
-                      "conversationId": "conv-1788938874044-1f8b5l71f"
-                    },
-                    {
-                      "tabId": "tab-1788941906444-daqgnh9",
-                      "conversationId": "conv-1788941912146-ajf93bstx"
+                      "tabId": "tab-1788956336781-hefgepv",
+                      "conversationId": "conv-1788956357681-zkax232iz"
                     }
                   ],
-                  "activeTabId": "tab-1788941906444-daqgnh9"
+                  "activeTabId": "tab-1788956336781-hefgepv"
                 }
               },
               "icon": "bot",
@@ -222,12 +219,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 398.5,
-    "collapsed": true
+    "width": 398.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -250,8 +246,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3fea5c0c375fc20a",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
+    "Senza nome.base",
+    "Ripasso fisica/Elettromagnetismo.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Excalidraw",
     "RIpasso matematica/Funzioni 3 - Poligoni e trasformazioni.md",
@@ -275,7 +273,6 @@
     "Formulario/Elettromagnetismo/Lavoro Elettrico su una Carica.md.tmp.6689.e9722081de8b",
     "Formulario/Elettromagnetismo/Condensatore Piano.md",
     "Formulario/Elettromagnetismo/Energia Potenziale Elettrica.md",
-    "Formulario/Elettromagnetismo/Energia Potenziale Elettrica.md.tmp.6689.498965f35003",
     "Formulario/Elettromagnetismo/Potenziale Elettrico.md",
     "Excalidraw/Drawing 2026-09-08 13.49.20.excalidraw.md",
     "RIpasso matematica/Linguaggio matematico.md",
@@ -286,8 +283,6 @@
     "RIpasso matematica/Geometria - Luoghi geometrici e circonferenze.md",
     "Excalidraw/Drawing 2026-09-07 13.02.14.excalidraw.md",
     "Formulario/Linguaggio matematico/Somma dei coefficienti binomiali.md",
-    "Formulario/Linguaggio matematico.md",
-    "Formulario/Linguaggio matematico/Binomio di Newton.md",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",

@@ -1,0 +1,14 @@
+{
+  "id": "conv-1788956357681-zkax232iz",
+  "providerId": "claude",
+  "title": "spiega tutte le formule ed il necessario per svolg...",
+  "titleGenerationStatus": "pending",
+  "createdAt": 1788956357699,
+  "lastActivityAt": 1788956357699,
+  "sessionId": "16ace380-6a1e-4747-bfbf-73b84b764080",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "16ace380-6a1e-4747-bfbf-73b84b764080"
+  },
+  "linkedContentPath": "Ripasso fisica/Elettromagnetismo.md"
+}
