@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[Dinamica]]
+  - [[[[Dinamica]]]]
   - forza-elastica
   - formulario
 ---

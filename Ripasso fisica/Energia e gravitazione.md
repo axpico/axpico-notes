@@ -1,5 +1,5 @@
 ---
-tags: [fisica, ripasso, energia, lavoro, urti, quantità-di-moto]
+tags: [fisica, ripasso, energia, [[Lavoro]], urti, quantità-di-moto]
 ---
 # Energia e gravitazione
 
@@ -9,11 +9,11 @@ $$W = \int F\, dx$$
 
 Forma generale, valida anche se $F$ varia lungo il percorso (es. una molla): si somma il contributo $F\,dx$ tratto per tratto.
 
-Se $\vec F$ è **costante**, il lavoro è il prodotto scalare tra forza e spostamento:
+Se $\vec F$ è **costante**, il [[Lavoro]] è il prodotto scalare tra forza e spostamento:
 
 $$W = \vec F \cdot \Delta \vec x = F\,\Delta x \cos\alpha$$
 
-dove $F$ e $\Delta x$ sono i moduli di forza e spostamento, e $\alpha$ è l'angolo tra $\vec F$ e lo spostamento (il prodotto scalare "pesa" solo la componente della forza lungo lo spostamento — la parte perpendicolare non compie lavoro):
+dove $F$ e $\Delta x$ sono i moduli di forza e spostamento, e $\alpha$ è l'angolo tra $\vec F$ e lo spostamento (il prodotto scalare "pesa" solo la componente della forza lungo lo spostamento — la parte perpendicolare non compie [[Lavoro]]):
 
 | Angolo $\alpha$ | Segno di $W$ | Significato |
 | --- | --- | --- |

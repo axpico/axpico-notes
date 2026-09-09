@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[Cinematica]]
+  - [[[[Cinematica]]]]
   - formulario
 ---
 # Piano inclinato

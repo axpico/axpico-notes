@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - elettromagnetismo
+  - [[Elettromagnetismo]]
   - formulario
 ---
 # Teorema di Gauss

@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - termodinamica
+  - [[Termodinamica]]
   - entropia
   - formulario
 ---

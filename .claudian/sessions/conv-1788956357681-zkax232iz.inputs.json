@@ -18,7 +18,36 @@
       },
       "images": [],
       "contentDigest": "54833f5b0a5f9f173e1294ae87c7a902686c9d516359f612a3cba8b999786bd5",
-      "providerUserMessageId": "16f2332f-35b7-4c22-9fa6-f17a927a47d5"
+      "providerUserMessageId": "16f2332f-35b7-4c22-9fa6-f17a927a47d5",
+      "providerAssistantMessageId": "b6a912e2-203e-42bc-a459-a37fa805dfd5"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788956428850-rnwmory",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788956428841-fs93yj1",
+      "timestamp": 1788956428841,
+      "rawDisplayText": "scrivi nel file",
+      "canonicalText": "scrivi nel file",
+      "images": [],
+      "contentDigest": "1bc2622540c5bf0dad079df3de550f5625e41d247e580f96bebba875b7a875ec",
+      "providerUserMessageId": "5119ab0b-2a1d-4d06-b523-bd99ea106945",
+      "providerAssistantMessageId": "c69fe048-665b-4cfc-a6ff-eeda848265e8"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788956486670-rn5dkxx",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788956486655-cjcpzq1",
+      "timestamp": 1788956486655,
+      "rawDisplayText": "ora fai una cartella con una nota per formula nel formulario per elettromagnetismo",
+      "canonicalText": "ora fai una cartella con una nota per formula nel formulario per elettromagnetismo",
+      "images": [],
+      "contentDigest": "7672937f630c264fd671c8de545670768ef79175504e266a70feef84d5723cb5",
+      "providerUserMessageId": "29588813-b6b8-4ad3-9a23-17026eab40d4",
+      "providerAssistantMessageId": "53e42a2d-02c1-4f23-b153-87bd94e670ea"
     }
   ]
 }

@@ -11,17 +11,26 @@
             "id": "3fea5c0c375fc20a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista grafo"
+            }
+          },
+          {
+            "id": "cf541cc00b82e55f",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
               "state": {
-                "file": "Ripasso fisica/Elettromagnetismo.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Elettromagnetismo"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-09-09 13.50.54.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -80,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 282.5,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -223,7 +233,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5
+    "width": 398.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -246,43 +257,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "56efc63866208b00",
+  "active": "cf541cc00b82e55f",
   "lastOpenFiles": [
-    "Senza nome.base",
     "Ripasso fisica/Elettromagnetismo.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
+    "Formulario/Elettromagnetismo/Condensatori in parallelo.md",
+    "Formulario/Elettromagnetismo/Condensatori in parallelo.md.tmp.12532.a502fd634a54",
+    "Formulario/Elettromagnetismo/Condensatori in serie.md",
+    "Formulario/Elettromagnetismo/Condensatori in serie.md.tmp.12532.8e7f72f5f21e",
+    "Formulario/Elettromagnetismo/Potenza elettrica.md",
+    "Formulario/Elettromagnetismo/Legge di Kirchhoff dei nodi.md",
+    "Formulario/Elettromagnetismo/Generatore reale e resistenza interna.md",
+    "Formulario/Elettromagnetismo/Resistori in parallelo.md",
+    "Formulario/Elettromagnetismo/Resistori in serie.md",
+    "Formulario/Elettromagnetismo/Resistori in serie.md.tmp.12532.6d57be5c959d",
+    "Formulario/Elettromagnetismo/Densità di corrente.md",
+    "Formulario/Elettromagnetismo/Densità di corrente.md.tmp.12532.ffb76c9cd46f",
+    "Formulario/Elettromagnetismo/Resistenza di un conduttore.md",
+    "Formulario/Elettromagnetismo/Legge di Ohm.md",
+    "Formulario/Elettromagnetismo/Legge di Ohm.md.tmp.12532.d7aa69318ac4",
+    "Ripasso fisica/Elettromagnetismo.md.tmp.12532.d9830d69ec0a",
+    "Senza nome.base",
     "Excalidraw",
     "RIpasso matematica/Funzioni 3 - Poligoni e trasformazioni.md",
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md",
     "Excalidraw/Drawing 2026-09-08 14.32.01.excalidraw.md",
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md.tmp.11172.2b642f0d4c9d",
     "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md.tmp.11172.6e4bd53f8f08",
-    "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md.tmp.11172.8499ae7d13c2",
-    "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md.tmp.11172.6d28334fab32",
-    "RIpasso matematica/Funzioni 1 - Funzioni, potenze e moduli.md.tmp.11172.b1e922978c2a",
     "RIpasso matematica/Funzioni 2 - Esponenziali e logaritmi.md",
     "Ripasso fisica/Elettrostatica.md",
     "Excalidraw/Drawing 2026-09-08 14.06.33.excalidraw.md",
     "Formulario/Elettromagnetismo/Campo Elettrico.md",
     "Formulario/Elettromagnetismo/Legge di Coulomb.md",
     "Formulario/Elettromagnetismo/Campo Elettrico di un Filo Infinito.md",
-    "Formulario/Elettromagnetismo/Campo Elettrico di un Filo Infinito.md.tmp.6689.a6980a44d875",
     "Formulario/Elettromagnetismo/Teorema di Gauss.md",
-    "Formulario/Elettromagnetismo/Teorema di Gauss.md.tmp.6689.3df3fdc6bd5e",
     "Formulario/Elettromagnetismo/Lavoro Elettrico su una Carica.md",
-    "Formulario/Elettromagnetismo/Lavoro Elettrico su una Carica.md.tmp.6689.e9722081de8b",
     "Formulario/Elettromagnetismo/Condensatore Piano.md",
     "Formulario/Elettromagnetismo/Energia Potenziale Elettrica.md",
     "Formulario/Elettromagnetismo/Potenziale Elettrico.md",
-    "Excalidraw/Drawing 2026-09-08 13.49.20.excalidraw.md",
-    "RIpasso matematica/Linguaggio matematico.md",
-    "RIpasso matematica/Logica e Aritmetica.md",
-    "RIpasso matematica/Trigonometria - Riduzione angoli e identità.md",
-    "RIpasso matematica/Algebra - Polinomi ed Equazioni.md",
-    "Excalidraw/Drawing 2026-09-07 14.00.33.excalidraw.md",
-    "RIpasso matematica/Geometria - Luoghi geometrici e circonferenze.md",
-    "Excalidraw/Drawing 2026-09-07 13.02.14.excalidraw.md",
-    "Formulario/Linguaggio matematico/Somma dei coefficienti binomiali.md",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",

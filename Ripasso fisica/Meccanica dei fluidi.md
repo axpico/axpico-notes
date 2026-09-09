@@ -11,7 +11,7 @@ Unità SI: Pa (pascal) = N/m². Utile anche l'atmosfera: 1 atm ≈ 1.013×10⁵ 
 
 ## Legge di Pascal
 
-In un fluido in equilibrio racchiuso in un recipiente, una variazione di pressione applicata in un punto si trasmette **inalterata** in ogni altro punto del fluido. Conseguenza pratica: nel torchio idraulico, due pistoni comunicanti soddisfano
+In un fluido in equilibrio racchiuso in un recipiente, una variazione di [[Pressione]] applicata in un punto si trasmette **inalterata** in ogni altro punto del fluido. Conseguenza pratica: nel torchio idraulico, due pistoni comunicanti soddisfano
 
 $$\frac{F_A}{A_A} = \frac{F_B}{A_B}$$
 
@@ -21,7 +21,7 @@ Con superfici diverse si amplifica una forza modesta in una forza molto più gra
 
 $$\Delta p = \rho\, g\, \Delta h$$
 
-In un fluido in quiete la pressione cresce linearmente con la profondità. È la base dei manometri a colonna di liquido: confrontando i livelli nei due rami di un tubo a U si risale alla pressione incognita.
+In un fluido in quiete la [[Pressione]] cresce linearmente con la profondità. È la base dei manometri a colonna di liquido: confrontando i livelli nei due rami di un tubo a U si risale alla [[Pressione]] incognita.
 
 - Se il livello è più alto nel ramo **aperto** all'atmosfera: $p_{gas} = p_{atm} + \rho g \Delta h$
 - Se il livello è più alto nel ramo **collegato al gas**: $p_{gas} = p_{atm} - \rho g \Delta h$

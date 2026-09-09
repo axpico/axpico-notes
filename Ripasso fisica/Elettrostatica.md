@@ -5,11 +5,11 @@ tags: [fisica, ripasso, esercizi, elettrostatica, campo-elettrico, condensatori,
 
 ## Formule necessarie
 
-**Legge di Coulomb / campo di carica puntiforme**
+**[[Legge di Coulomb]] / campo di carica puntiforme**
 $$F = k\frac{q_1 q_2}{r^2} \qquad E = k\frac{q}{r^2} \qquad k = \frac{1}{4\pi\varepsilon_0} \approx 8.99\times10^9\ \text{N·m}^2/\text{C}^2$$
 Il campo di più cariche si somma vettorialmente (sovrapposizione); su un asse comune conviene lavorare con i moduli e il verso.
 
-**Potenziale elettrico**
+**[[Potenziale Elettrico]]**
 $$V = k\frac{q}{r} \qquad \Delta V = -\int \vec E \cdot d\vec l \qquad E_x = -\frac{dV}{dx}$$
 Il campo è l'opposto della pendenza del grafico $V(x)$: dove $V$ è costante, $E=0$; dove $V$ è lineare, $E$ è costante e uniforme nel tratto.
 
@@ -21,10 +21,10 @@ $$U = k\sum_{i<j}\frac{q_i q_j}{r_{ij}}$$
 $$C = \varepsilon_0\frac{A}{d} \qquad Q = CV$$
 Con carica $Q$ fissa (batteria scollegata): $V=Q/C$ cambia se cambia $C$, ma $Q$ resta costante.
 
-**Energia cinetica <-> lavoro elettrico**
+**Energia cinetica <-> [[Lavoro]] elettrico**
 $$\Delta K = q\Delta V \qquad (\text{per l'elettrone } q=-e,\ 1\ eV = e\cdot 1\ V)$$
 
-**Teorema di Gauss**
+**[[Teorema di Gauss]]**
 $$\oint \vec E \cdot d\vec A = \frac{Q_{int}}{\varepsilon_0}$$
 Si sceglie una superficie gaussiana con la stessa simmetria della distribuzione di carica (qui: cilindro coassiale al filo).
 

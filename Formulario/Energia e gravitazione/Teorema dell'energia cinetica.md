@@ -3,7 +3,7 @@ subject: fisica
 tags:
   - fisica
   - energia
-  - lavoro
+  - [[Lavoro]]
   - formulario
 ---
 # Teorema dell'energia cinetica

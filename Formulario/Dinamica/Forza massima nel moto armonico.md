@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[Dinamica]]
+  - [[[[Dinamica]]]]
   - moto-armonico
   - forza-elastica
   - formulario

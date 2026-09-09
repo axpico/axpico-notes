@@ -39,11 +39,11 @@ $$U = \frac32 nRT \qquad \Delta U = \frac32 nR\,\Delta T = \frac32\,\Delta(pV)$$
 
 $$\Delta U = Q - W \qquad W = \int p\,dV$$
 
-$W$ = lavoro fatto **dal** gas (positivo se il gas si espande). Nel piano $p$-$V$, $W$ è l'area sottesa dalla curva della trasformazione.
+$W$ = [[Lavoro]] fatto **dal** gas (positivo se il gas si espande). Nel piano $p$-$V$, $W$ è l'area sottesa dalla curva della trasformazione.
 
 ### Trasformazioni notevoli (gas ideale)
 
-| Trasformazione | Vincolo | Lavoro $W$ | Calore $Q$ |
+| Trasformazione | Vincolo | [[Lavoro]] $W$ | Calore $Q$ |
 | --- | --- | --- | --- |
 | Isocora | $V=\text{cost}$ | $0$ | $\Delta U = nC_V\Delta T$ |
 | Isobara | $p=\text{cost}$ | $p\,\Delta V$ | $nC_p\Delta T$ |
@@ -62,7 +62,7 @@ $$\Delta S = \frac{Q}{T}$$
 
 ## Cicli termodinamici e rendimento
 
-In un ciclo, $\Delta U_{ciclo}=0$, quindi $Q_{netto}=W_{netto}$. Il rendimento è il rapporto tra il lavoro utile ottenuto e il calore fornito al sistema (solo la parte assorbita):
+In un ciclo, $\Delta U_{ciclo}=0$, quindi $Q_{netto}=W_{netto}$. Il rendimento è il rapporto tra il [[Lavoro]] utile ottenuto e il calore fornito al sistema (solo la parte assorbita):
 
 $$\eta = \frac{W_{netto}}{Q_{assorbito}} = 1 - \frac{|Q_{ceduto}|}{Q_{assorbito}}$$
 
@@ -168,7 +168,7 @@ $$\boxed{\Delta T = \frac{83}{16.628} \approx 5.0\ \text{K}}$$
 
 **Dati**: gas monoatomico, retta da $(V_1,p_1)$ a $(V_2,p_2)=(10\ \text{cm}^3, 4\times10^5\ \text{Pa})$, con $V_1=\tfrac23V_2=6.667\ \text{cm}^3$, $p_1=2p_2=8\times10^5$ Pa.
 
-Lavoro = area del trapezio sotto la retta:
+[[Lavoro]] = area del trapezio sotto la retta:
 
 $$W = \frac{p_1+p_2}{2}(V_2-V_1) = \frac{1.2\times10^6}{2}\cdot3.333\times10^{-6} = \boxed{2.0\ \text{J}}$$
 

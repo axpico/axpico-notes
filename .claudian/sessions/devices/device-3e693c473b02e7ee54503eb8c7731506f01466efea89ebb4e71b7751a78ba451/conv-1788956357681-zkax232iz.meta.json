@@ -1,14 +1,24 @@
 {
   "id": "conv-1788956357681-zkax232iz",
   "providerId": "claude",
-  "title": "spiega tutte le formule ed il necessario per svolg...",
-  "titleGenerationStatus": "pending",
+  "title": "Resistor circuits and power problems",
+  "titleGenerationStatus": "success",
   "createdAt": 1788956357699,
-  "lastActivityAt": 1788956357699,
+  "lastActivityAt": 1788956547831,
   "sessionId": "16ace380-6a1e-4747-bfbf-73b84b764080",
   "selectedModel": "sonnet",
   "providerState": {
     "providerSessionId": "16ace380-6a1e-4747-bfbf-73b84b764080"
   },
-  "linkedContentPath": "Ripasso fisica/Elettromagnetismo.md"
+  "linkedContentPath": "Ripasso fisica/Elettromagnetismo.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 338,
+    "cacheReadInputTokens": 53048,
+    "contextWindow": 967000,
+    "contextTokens": 53388,
+    "percentage": 6,
+    "contextWindowIsAuthoritative": true
+  }
 }

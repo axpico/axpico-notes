@@ -28,7 +28,7 @@ Se il corpo 1 esercita una forza sul corpo 2, il corpo 2 esercita sul corpo 1 un
 
 ## 2. Piano inclinato: quando seno e quando coseno
 
-Su un piano inclinato di angolo $\theta$ rispetto all'orizzontale, il peso $m\vec g$ (sempre verticale) si scompone in due componenti rispetto agli assi del piano:
+Su un [[Piano inclinato]] di angolo $\theta$ rispetto all'orizzontale, il peso $m\vec g$ (sempre verticale) si scompone in due componenti rispetto agli assi del piano:
 
 - **parallela al piano** (quella che fa scivolare): $F_\parallel = mg\sin\theta$
 - **perpendicolare al piano** (quella bilanciata dalla normale): $F_\perp = mg\cos\theta \Rightarrow N = mg\cos\theta$ (se non ci sono altre forze con componente verticale/normale)
@@ -56,15 +56,15 @@ y=\cos(x)
 
 ## 3. Forza d'attrito radente
 
-- **Attrito statico**: si oppone al tentativo di mettere in moto un corpo fermo, si "adatta" fino a un massimo:
+- **[[Attrito statico]]**: si oppone al tentativo di mettere in moto un corpo fermo, si "adatta" fino a un massimo:
 $$F_{s} \le \mu_s N$$
 Il corpo inizia a muoversi solo quando la forza motrice supera $F_{s,max}=\mu_s N$.
 
-- **Attrito dinamico (cinetico)**: agisce quando il corpo è già in moto relativo rispetto alla superficie, ha modulo (circa) costante e verso opposto al moto:
+- **[[Attrito dinamico]] (cinetico)**: agisce quando il corpo è già in moto relativo rispetto alla superficie, ha modulo (circa) costante e verso opposto al moto:
 $$F_d = \mu_d N$$
 di solito $\mu_d \le \mu_s$.
 
-- **Relazione con la normale**: l'attrito è sempre proporzionale a $N$, la forza che le due superfici si scambiano perpendicolarmente — **non** al peso in generale. Su piano orizzontale $N=mg$; su piano inclinato $N=mg\cos\theta$; se c'è una forza esterna con componente perpendicolare al piano, va inclusa nel bilancio di $N$ (vedi Esercizio 3c).
+- **Relazione con la normale**: l'attrito è sempre proporzionale a $N$, la forza che le due superfici si scambiano perpendicolarmente — **non** al peso in generale. Su piano orizzontale $N=mg$; su [[Piano inclinato]] $N=mg\cos\theta$; se c'è una forza esterna con componente perpendicolare al piano, va inclusa nel bilancio di $N$ (vedi Esercizio 3c).
 
 ## 4. Forza elastica (legge di Hooke)
 

@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - cinematica
+  - [[Cinematica]]
   - formulario
 ---
 # Moto Circolare Uniforme (MCU)
