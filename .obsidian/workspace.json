@@ -11,6 +11,18 @@
             "id": "edae5a097fdd2d5b",
             "type": "leaf",
             "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-09-09 13.50.54.excalidraw"
+            }
+          },
+          {
+            "id": "fd992ce840379002",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "Ripasso fisica/Elettromagnetismo.md",
@@ -250,12 +262,15 @@
   },
   "active": "edae5a097fdd2d5b",
   "lastOpenFiles": [
+    "Ripasso fisica/Elettromagnetismo.md",
+    "Ripasso fisica/Elettrostatica.md",
+    "Ripasso fisica/Termodinamica.md",
+    "Ripasso fisica/Meccanica dei fluidi.md",
+    "Ripasso fisica/Energia e gravitazione.md",
+    "Ripasso fisica/Dinamica.md",
+    "Pasted Image 20260909152139_057.png",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Pasted Image 20260909152157_367.png",
-    "Pasted Image 20260909152139_057.png",
-    "Ripasso fisica/Elettromagnetismo.md",
-    "Ripasso fisica/Dinamica.md",
-    "Ripasso fisica/Elettrostatica.md",
     "Formulario/Elettromagnetismo/Condensatori in parallelo.md",
     "Formulario/Elettromagnetismo/Condensatori in parallelo.md.tmp.12532.a502fd634a54",
     "Formulario/Elettromagnetismo/Condensatori in serie.md",
@@ -285,8 +300,6 @@
     "Formulario/Elettromagnetismo/Legge di Coulomb.md",
     "Formulario/Elettromagnetismo/Campo Elettrico di un Filo Infinito.md",
     "Formulario/Elettromagnetismo/Teorema di Gauss.md",
-    "Formulario/Elettromagnetismo/Lavoro Elettrico su una Carica.md",
-    "Formulario/Elettromagnetismo/Condensatore Piano.md",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",
