@@ -33,7 +33,8 @@
               "title": "Elettromagnetismo"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -260,8 +261,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "edae5a097fdd2d5b",
+  "active": "fd992ce840379002",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Ripasso fisica/Elettromagnetismo.md",
     "Ripasso fisica/Elettrostatica.md",
     "Ripasso fisica/Termodinamica.md",
@@ -269,7 +271,6 @@
     "Ripasso fisica/Energia e gravitazione.md",
     "Ripasso fisica/Dinamica.md",
     "Pasted Image 20260909152139_057.png",
-    "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Pasted Image 20260909152157_367.png",
     "Formulario/Elettromagnetismo/Condensatori in parallelo.md",
     "Formulario/Elettromagnetismo/Condensatori in parallelo.md.tmp.12532.a502fd634a54",
