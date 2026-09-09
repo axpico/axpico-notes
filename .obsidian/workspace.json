@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ripasso fisica/Elettrostatica.md",
+                "file": "Ripasso fisica/Elettromagnetismo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Elettrostatica"
+              "title": "Elettromagnetismo"
             }
           }
         ]
@@ -262,8 +262,9 @@
   },
   "active": "cf541cc00b82e55f",
   "lastOpenFiles": [
-    "Ripasso fisica/Elettrostatica.md",
     "Ripasso fisica/Elettromagnetismo.md",
+    "Ripasso fisica/Dinamica.md",
+    "Ripasso fisica/Elettrostatica.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Formulario/Elettromagnetismo/Condensatori in parallelo.md",
     "Formulario/Elettromagnetismo/Condensatori in parallelo.md.tmp.12532.a502fd634a54",
@@ -297,7 +298,6 @@
     "Formulario/Elettromagnetismo/Lavoro Elettrico su una Carica.md",
     "Formulario/Elettromagnetismo/Condensatore Piano.md",
     "Formulario/Elettromagnetismo/Energia Potenziale Elettrica.md",
-    "Formulario/Elettromagnetismo/Potenziale Elettrico.md",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",
