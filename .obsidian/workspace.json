@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cf541cc00b82e55f",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-09 13.50.54.excalidraw"
-            }
-          },
-          {
             "id": "edae5a097fdd2d5b",
             "type": "leaf",
             "state": {
@@ -260,14 +248,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cf541cc00b82e55f",
+  "active": "edae5a097fdd2d5b",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Pasted Image 20260909152157_367.png",
     "Pasted Image 20260909152139_057.png",
     "Ripasso fisica/Elettromagnetismo.md",
     "Ripasso fisica/Dinamica.md",
     "Ripasso fisica/Elettrostatica.md",
-    "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Formulario/Elettromagnetismo/Condensatori in parallelo.md",
     "Formulario/Elettromagnetismo/Condensatori in parallelo.md.tmp.12532.a502fd634a54",
     "Formulario/Elettromagnetismo/Condensatori in serie.md",
@@ -306,7 +294,6 @@
     "POK/Img/Campo elettrico/Confronto con forza gravitazionale 2.png",
     "POK/Img/Campo elettrico/Atomo di idrogeno 2.png",
     "POK/Img/Campo elettrico/Confronto con forza gravitazionale 1.png",
-    "POK/Img/Campo elettrico/Atomo di idrogeno 3.png",
-    "POK/Img/Campo elettrico/Atomo di idrogeno 1.png"
+    "POK/Img/Campo elettrico/Atomo di idrogeno 3.png"
   ]
 }
