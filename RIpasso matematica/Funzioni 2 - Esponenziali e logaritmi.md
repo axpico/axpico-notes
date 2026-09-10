@@ -44,6 +44,47 @@ $$
 
 Il fossile ha circa **17.500 anni**.
 
+## Proprietà di esponenziali e logaritmi
+
+### Potenze / esponenziali (base $a>0$)
+$$
+a^0=1 \qquad a^1=a \qquad a^{-n}=\frac1{a^n}
+$$
+$$
+a^m\cdot a^n=a^{m+n} \qquad \frac{a^m}{a^n}=a^{m-n} \qquad (a^m)^n=a^{mn} \qquad (ab)^n=a^n b^n
+$$
+$$
+a^{m/n}=\sqrt[n]{a^m}
+$$
+- Se $a>1$: $a^x$ è crescente ($x_1<x_2 \Rightarrow a^{x_1}<a^{x_2}$).
+- Se $0<a<1$: $a^x$ è decrescente.
+- A parità di esponente positivo, base maggiore ⇒ valore maggiore ($x>0$); per esponente negativo si inverte (usato nell'es. B5).
+
+### Logaritmi (definizione)
+$$
+\log_a b = c \iff a^c=b \qquad (a>0,\ a\ne1,\ b>0)
+$$
+Il logaritmo è la funzione inversa dell'esponenziale, quindi:
+$$
+a^{\log_a x}=x \qquad \log_a(a^x)=x
+$$
+
+### Proprietà dei logaritmi (stessa base $a$)
+$$
+\log_a(xy)=\log_a x+\log_a y \qquad \log_a\!\frac{x}{y}=\log_a x-\log_a y \qquad \log_a(x^k)=k\log_a x
+$$
+$$
+\log_a 1=0 \qquad \log_a a=1
+$$
+Cambio di base:
+$$
+\log_a x=\frac{\log_b x}{\log_b a} \qquad \text{es.}\quad \log_{1/2}x=\frac{\ln x}{\ln(1/2)}
+$$
+(usato nell'es. A per calcolare $\log_{1/2}(0.12)$ con $\ln$).
+- Se $a>1$: $\log_a x$ è crescente ⇒ nelle disequazioni si può confrontare direttamente gli argomenti (es. B8).
+- Se $0<a<1$: $\log_a x$ è decrescente ⇒ confrontando gli argomenti il verso si inverte.
+- Dominio: $\log_a x$ definito solo per $x>0$ (da qui le condizioni di dominio negli es. B6, B7, B8).
+
 ## B) Equazioni e disequazioni
 
 ### 1. $2^{8x} = 4^{\frac1x}$

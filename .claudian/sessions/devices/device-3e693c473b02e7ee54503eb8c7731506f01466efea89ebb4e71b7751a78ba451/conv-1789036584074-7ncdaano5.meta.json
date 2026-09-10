@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789036584074-7ncdaano5",
+  "providerId": "claude",
+  "title": "Logarithmic and exponential properties",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789036584083,
+  "lastActivityAt": 1789036604145,
+  "sessionId": "8e73dc73-795b-4ae3-83c9-aa614909c980",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "8e73dc73-795b-4ae3-83c9-aa614909c980"
+  },
+  "linkedContentPath": "RIpasso matematica/Funzioni 2 - Esponenziali e logaritmi.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 6463,
+    "cacheReadInputTokens": 33126,
+    "contextWindow": 967000,
+    "contextTokens": 39591,
+    "percentage": 4,
+    "contextWindowIsAuthoritative": true
+  }
+}

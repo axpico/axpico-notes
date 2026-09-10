@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Piano di Studio — Maturità 2026/Informatica/Appunti DBMS & DB Distribuiti.md",
+                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Appunti DBMS & DB Distribuiti"
+              "title": "Riferimenti"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Piano di Studio — Maturità 2026/Informatica/Appunti DBMS & DB Distribuiti.md",
+                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Appunti DBMS & DB Distribuiti"
+              "title": "Collegamenti in uscita"
             }
           },
           {
@@ -148,7 +148,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Etichette"
             }
           },
           {
@@ -222,9 +222,13 @@
                     {
                       "tabId": "tab-1788956336781-hefgepv",
                       "conversationId": "conv-1788956357681-zkax232iz"
+                    },
+                    {
+                      "tabId": "tab-1789036570372-zsmg2kq",
+                      "conversationId": "conv-1789036584074-7ncdaano5"
                     }
                   ],
-                  "activeTabId": "tab-1788956336781-hefgepv"
+                  "activeTabId": "tab-1789036570372-zsmg2kq"
                 }
               },
               "icon": "bot",
@@ -236,8 +240,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5,
-    "collapsed": true
+    "width": 398.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -262,8 +265,8 @@
   },
   "active": "edae5a097fdd2d5b",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "RIpasso matematica/Funzioni 2 - Esponenziali e logaritmi.md",
+    "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Pasted Image 20260909152139_057.png",
     "Ripasso fisica/Elettromagnetismo.md",
     "Ripasso fisica/Elettrostatica.md",
