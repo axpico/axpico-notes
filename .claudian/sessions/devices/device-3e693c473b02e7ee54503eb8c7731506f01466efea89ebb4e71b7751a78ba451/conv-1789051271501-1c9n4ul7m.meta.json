@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789051271501-1c9n4ul7m",
+  "providerId": "claude",
+  "title": "Add solenoid magnetic field formula",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789051271511,
+  "lastActivityAt": 1789051294090,
+  "sessionId": "eb889399-1029-4437-af2d-9ed7e699fe36",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "eb889399-1029-4437-af2d-9ed7e699fe36"
+  },
+  "linkedContentPath": "Ripasso uni/fisica/Elettromagnetismo.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 6512,
+    "cacheReadInputTokens": 36737,
+    "contextWindow": 967000,
+    "contextTokens": 43251,
+    "percentage": 4,
+    "contextWindowIsAuthoritative": true
+  }
+}

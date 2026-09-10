@@ -46,6 +46,12 @@ $$B\cdot 2\pi r = \mu_0 I \ \Rightarrow\ B = \frac{\mu_0 I}{2\pi r}$$
 
 — stesso risultato di Biot-Savart, ma molto più rapido quando c'è simmetria (solenoide, toroide, filo rettilineo).
 
+**Caso solenoide** (N spire avvolte su lunghezza $L$, percorse da corrente $i$): applicando Ampère a un percorso rettangolare che attraversa l'avvolgimento, il campo **interno** (uniforme, assiale) è:
+
+$$B=\mu_0 n i = \frac{\mu_0 N i}{L}$$
+
+dove $n=N/L$ è il numero di spire per unità di lunghezza. Fuori dal solenoide $B\approx0$ (approssimazione valida per solenoide lungo rispetto al raggio).
+
 ## 4. Forza di Lorentz
 
 Forza su una carica $q$ che si muove con velocità $\vec v$ in presenza di campo elettrico e magnetico:

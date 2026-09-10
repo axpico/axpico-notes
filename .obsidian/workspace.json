@@ -8,15 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ead037241503bf39",
+            "id": "8ae0885764439660",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-09 13.50.54.excalidraw"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -95,7 +93,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -206,12 +203,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789050629686-qn02xgv",
+                      "tabId": "tab-1789051319372-cvvkjtm",
                       "conversationId": null,
                       "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1789050629686-qn02xgv"
+                  "activeTabId": "tab-1789051319372-cvvkjtm"
                 }
               },
               "icon": "bot",
@@ -223,20 +220,17 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md"
-              },
+              "state": {},
               "icon": "lucide-info",
               "title": "Proprietà file"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 398.5,
-    "collapsed": true
+    "width": 398.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -259,11 +253,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ead037241503bf39",
+  "active": "8ae0885764439660",
   "lastOpenFiles": [
+    "Ripasso uni/fisica/Elettromagnetismo.md",
+    "Ripasso uni/fisica/Elettromagnetismo.md.tmp.13656.c34c21c7633b",
+    "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Ripasso uni/matematica/Algebra - Polinomi ed Equazioni.md",
     "Ripasso uni",
-    "Ripasso uni/fisica/Elettromagnetismo.md",
     "Formulario/Elettromagnetismo/Energia Potenziale Magnetica.md",
     "Formulario/Elettromagnetismo/Momento Torcente su una Spira.md",
     "Formulario/Elettromagnetismo/Momento di Dipolo Magnetico.md",
@@ -282,8 +278,6 @@
     "Ripasso fisica/Elettromagnetismo.md.tmp.6972.05f5d4a425b2",
     "Ripasso fisica/Elettromagnetismo.md.tmp.6972.fde4112a0cd9",
     "Ripasso fisica/Elettromagnetismo.md.tmp.6972.49daf7ebd7c6",
-    "Ripasso fisica/Elettromagnetismo.md.tmp.6972.1d17abae737d",
-    "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Ripasso uni/fisica/Elettronica.md",
     "Ripasso uni/matematica/Funzioni 2 - Esponenziali e logaritmi.md",
     "Pasted Image 20260909152139_057.png",
@@ -298,7 +292,6 @@
     "Formulario/Elettromagnetismo/Potenza elettrica.md",
     "Formulario/Elettromagnetismo/Legge di Kirchhoff dei nodi.md",
     "Formulario/Elettromagnetismo/Generatore reale e resistenza interna.md",
-    "Formulario/Elettromagnetismo/Resistori in parallelo.md",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",
