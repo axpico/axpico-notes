@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[Termodinamica]]
+  - [[[[Termodinamica]]]]
   - gas-ideali
   - formulario
 ---
@@ -23,4 +23,4 @@ Dove:
 - $T$ = temperatura assoluta (K)
 - $R$ = costante dei gas
 
-Vedi anche [[Formulario/Termodinamica/Primo principio della termodinamica.md|Primo principio della termodinamica]] e [[Ripasso fisica/Termodinamica.md|Termodinamica]].
+Vedi anche [[Formulario/Termodinamica/Primo principio della termodinamica.md|Primo principio della termodinamica]] e [[Termodinamica|Termodinamica]].

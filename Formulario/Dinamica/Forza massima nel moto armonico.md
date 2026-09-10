@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[[[Dinamica]]]]
+  - [[[[[[Dinamica]]]]]]
   - moto-armonico
   - forza-elastica
   - formulario
@@ -18,4 +18,4 @@ Dove:
 
 La forza è massima agli estremi dell'oscillazione (massimo spostamento dalla posizione di equilibrio) ed è nulla quando il grafico attraversa la posizione di equilibrio.
 
-Vedi anche [[Ripasso fisica/Dinamica.md|Dinamica]] e [[Formulario/Dinamica/Forza elastica (Legge di Hooke).md|Forza elastica]].
+Vedi anche [[Dinamica|Dinamica]] e [[Formulario/Dinamica/Forza elastica (Legge di Hooke).md|Forza elastica]].

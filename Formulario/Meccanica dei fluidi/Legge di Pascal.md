@@ -14,4 +14,4 @@ $$\frac{F_A}{A_A} = \frac{F_B}{A_B}$$
 
 Con superfici diverse si amplifica una forza modesta in una forza molto più grande (a scapito dello spostamento, per conservazione dell'energia).
 
-Vedi anche [[Formulario/Meccanica dei fluidi/Pressione.md|Pressione]] e [[Ripasso fisica/Meccanica dei fluidi.md|Meccanica dei fluidi]].
+Vedi anche [[Formulario/Meccanica dei fluidi/Pressione.md|Pressione]] e [[Meccanica dei fluidi|Meccanica dei fluidi]].

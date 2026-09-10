@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[Termodinamica]]
+  - [[[[Termodinamica]]]]
   - calorimetria
   - formulario
 ---
@@ -16,4 +16,4 @@ $c$ = calore specifico (J/kg·K o cal/g·K, caratteristico della sostanza), $C=m
 
 $$\sum_i Q_i = 0$$
 
-Vedi anche [[Formulario/Termodinamica/Cambiamenti di stato.md|Cambiamenti di stato]] e [[Ripasso fisica/Termodinamica.md|Termodinamica]].
+Vedi anche [[Formulario/Termodinamica/Cambiamenti di stato.md|Cambiamenti di stato]] e [[Termodinamica|Termodinamica]].

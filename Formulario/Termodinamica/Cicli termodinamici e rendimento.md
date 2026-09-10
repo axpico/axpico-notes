@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[Termodinamica]]
+  - [[[[Termodinamica]]]]
   - cicli-termodinamici
   - formulario
 ---
@@ -12,4 +12,4 @@ In un ciclo, $\Delta U_{ciclo}=0$, quindi $Q_{netto}=W_{netto}$. Il rendimento Ã
 
 $$\eta = \frac{W_{netto}}{Q_{assorbito}} = 1 - \frac{|Q_{ceduto}|}{Q_{assorbito}}$$
 
-Vedi anche [[Formulario/Termodinamica/Primo principio della termodinamica.md|Primo principio della termodinamica]] e [[Ripasso fisica/Termodinamica.md|Termodinamica]].
+Vedi anche [[Formulario/Termodinamica/Primo principio della termodinamica.md|Primo principio della termodinamica]] e [[Termodinamica|Termodinamica]].

@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[[[Dinamica]]]]
+  - [[[[[[Dinamica]]]]]]
   - leggi-di-newton
   - formulario
 ---
@@ -15,4 +15,4 @@ Dove:
 - $m$ = massa inerziale del corpo (kg)
 - $\vec a$ = accelerazione, con stessa direzione e verso della risultante
 
-Vedi anche [[Ripasso fisica/Dinamica.md|Dinamica]].
+Vedi anche [[Dinamica|Dinamica]].

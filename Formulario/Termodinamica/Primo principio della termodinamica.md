@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[Termodinamica]]
+  - [[[[Termodinamica]]]]
   - gas-ideali
   - formulario
 ---
@@ -23,4 +23,4 @@ $W$ = [[Lavoro]] fatto **dal** gas (positivo se il gas si espande). Nel piano $p
 
 **Calori molari** (gas monoatomico): $C_V = \tfrac32 R$, $C_p = C_V+R = \tfrac52 R$ (relazione di Mayer: $C_p-C_V=R$).
 
-Vedi anche [[Formulario/Termodinamica/Gas ideali.md|Gas ideali]] e [[Ripasso fisica/Termodinamica.md|Termodinamica]].
+Vedi anche [[Formulario/Termodinamica/Gas ideali.md|Gas ideali]] e [[Termodinamica|Termodinamica]].

@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[[[Dinamica]]]]
+  - [[[[[[Dinamica]]]]]]
   - centro-di-massa
   - formulario
 ---
@@ -14,4 +14,4 @@ Dove:
 - $m_i$ = massa dell'i-esimo corpo/elemento del sistema
 - $(x_i, y_i)$ = coordinate del centro di massa dell'i-esimo elemento rispetto all'origine scelta
 
-Vedi anche [[Ripasso fisica/Dinamica.md|Dinamica]].
+Vedi anche [[Dinamica|Dinamica]].

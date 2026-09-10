@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "edae5a097fdd2d5b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ripasso fisica/Elettromagnetismo.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Elettromagnetismo"
-            }
-          },
-          {
             "id": "ead037241503bf39",
             "type": "leaf",
             "state": {
@@ -109,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ripasso fisica/Elettromagnetismo.md",
+                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -220,11 +206,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789050213343-s5b3zcv",
-                      "conversationId": "conv-1789050217846-1dukzowqs"
+                      "tabId": "tab-1789050629686-qn02xgv",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1789050213343-s5b3zcv"
+                  "activeTabId": "tab-1789050629686-qn02xgv"
                 }
               },
               "icon": "bot",
@@ -237,7 +224,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Ripasso fisica/Elettromagnetismo.md"
+                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md"
               },
               "icon": "lucide-info",
               "title": "Proprietà file"
@@ -248,7 +235,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5
+    "width": 398.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -271,8 +259,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "edae5a097fdd2d5b",
+  "active": "ead037241503bf39",
   "lastOpenFiles": [
+    "Ripasso uni/matematica/Algebra - Polinomi ed Equazioni.md",
+    "Ripasso uni",
+    "Ripasso uni/fisica/Elettromagnetismo.md",
+    "Formulario/Elettromagnetismo/Energia Potenziale Magnetica.md",
+    "Formulario/Elettromagnetismo/Momento Torcente su una Spira.md",
     "Formulario/Elettromagnetismo/Momento di Dipolo Magnetico.md",
     "Formulario/Elettromagnetismo/Forza di Laplace.md",
     "Formulario/Elettromagnetismo/Forza di Laplace.md.tmp.6972.da0237d88777",
@@ -291,33 +284,28 @@
     "Ripasso fisica/Elettromagnetismo.md.tmp.6972.49daf7ebd7c6",
     "Ripasso fisica/Elettromagnetismo.md.tmp.6972.1d17abae737d",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
-    "Ripasso fisica/Elettromagnetismo.md",
-    "Ripasso fisica/Elettronica.md",
-    "RIpasso matematica/Funzioni 2 - Esponenziali e logaritmi.md",
+    "Ripasso uni/fisica/Elettronica.md",
+    "Ripasso uni/matematica/Funzioni 2 - Esponenziali e logaritmi.md",
     "Pasted Image 20260909152139_057.png",
-    "Ripasso fisica/Elettrostatica.md",
-    "Ripasso fisica/Termodinamica.md",
-    "Ripasso fisica/Meccanica dei fluidi.md",
-    "Ripasso fisica/Energia e gravitazione.md",
-    "Ripasso fisica/Dinamica.md",
+    "Ripasso uni/fisica/Elettrostatica.md",
+    "Ripasso uni/fisica/Termodinamica.md",
+    "Ripasso uni/fisica/Meccanica dei fluidi.md",
+    "Ripasso uni/fisica/Energia e gravitazione.md",
+    "Ripasso uni/fisica/Dinamica.md",
     "Pasted Image 20260909152157_367.png",
     "Formulario/Elettromagnetismo/Condensatori in parallelo.md",
-    "Formulario/Elettromagnetismo/Condensatori in parallelo.md.tmp.12532.a502fd634a54",
     "Formulario/Elettromagnetismo/Condensatori in serie.md",
     "Formulario/Elettromagnetismo/Potenza elettrica.md",
     "Formulario/Elettromagnetismo/Legge di Kirchhoff dei nodi.md",
     "Formulario/Elettromagnetismo/Generatore reale e resistenza interna.md",
     "Formulario/Elettromagnetismo/Resistori in parallelo.md",
-    "Formulario/Elettromagnetismo/Resistori in serie.md",
-    "Formulario/Elettromagnetismo/Densità di corrente.md",
-    "Formulario/Elettromagnetismo/Resistenza di un conduttore.md",
-    "POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
-    "POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
-    "POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",
-    "POK/Img/Campo elettrico/Linne di forza.png",
-    "POK/Img/Campo elettrico/Confronto con forza gravitazionale 2.png",
-    "POK/Img/Campo elettrico/Atomo di idrogeno 2.png",
-    "POK/Img/Campo elettrico/Confronto con forza gravitazionale 1.png",
-    "POK/Img/Campo elettrico/Atomo di idrogeno 3.png"
+    "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
+    "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
+    "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",
+    "Ripasso uni/POK/Img/Campo elettrico/Linne di forza.png",
+    "Ripasso uni/POK/Img/Campo elettrico/Confronto con forza gravitazionale 2.png",
+    "Ripasso uni/POK/Img/Campo elettrico/Atomo di idrogeno 2.png",
+    "Ripasso uni/POK/Img/Campo elettrico/Confronto con forza gravitazionale 1.png",
+    "Ripasso uni/POK/Img/Campo elettrico/Atomo di idrogeno 3.png"
   ]
 }

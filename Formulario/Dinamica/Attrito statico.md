@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[[[Dinamica]]]]
+  - [[[[[[Dinamica]]]]]]
   - attrito
   - formulario
 ---
@@ -16,4 +16,4 @@ Dove:
 - $\mu_s$ = coefficiente di attrito statico (adimensionale)
 - $N$ = reazione normale tra le superfici a contatto (N)
 
-Vedi anche [[Ripasso fisica/Dinamica.md|Dinamica]] e [[Formulario/Dinamica/Attrito dinamico.md|Attrito dinamico]].
+Vedi anche [[Dinamica|Dinamica]] e [[Formulario/Dinamica/Attrito dinamico.md|Attrito dinamico]].

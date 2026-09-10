@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[[[Dinamica]]]]
+  - [[[[[[Dinamica]]]]]]
   - funi
   - formulario
 ---
@@ -19,4 +19,4 @@ Dove:
 
 Ricavata da $T = m(g-a)$ imponendo $T \le F_C$.
 
-Vedi anche [[Ripasso fisica/Dinamica.md|Dinamica]].
+Vedi anche [[Dinamica|Dinamica]].

@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[[[Dinamica]]]]
+  - [[[[[[Dinamica]]]]]]
   - atwood
   - formulario
 ---
@@ -16,4 +16,4 @@ Dove:
 - $m_1, m_2$ = masse appese ai due capi del filo (kg)
 - $g$ = accelerazione di gravità (m/s²)
 
-Vedi anche [[Ripasso fisica/Dinamica.md|Dinamica]].
+Vedi anche [[Dinamica|Dinamica]].

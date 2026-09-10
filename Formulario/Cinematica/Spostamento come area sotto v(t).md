@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[Cinematica]]
+  - [[[[Cinematica]]]]
   - formulario
 ---
 # Spostamento come area sotto v(t)

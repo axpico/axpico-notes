@@ -20,4 +20,4 @@ Un corpo immerso (parzialmente o totalmente) riceve una spinta verso l'alto pari
 
 Per un corpo che galleggia, l'equilibrio impone $\rho_{fluido}\,g\,V_{sommerso} = m\,g$, cioè $V_{sommerso} = m/\rho_{fluido}$ — indipendente dalla densità del corpo.
 
-Vedi anche [[Ripasso fisica/Meccanica dei fluidi.md|Meccanica dei fluidi]].
+Vedi anche [[Meccanica dei fluidi|Meccanica dei fluidi]].

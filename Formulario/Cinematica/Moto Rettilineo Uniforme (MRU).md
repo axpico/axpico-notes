@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[Cinematica]]
+  - [[[[Cinematica]]]]
   - formulario
 ---
 # Moto Rettilineo Uniforme (MRU)

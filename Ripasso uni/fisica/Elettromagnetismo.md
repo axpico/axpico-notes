@@ -123,7 +123,7 @@ y=\sin(x)|label:\tau=mB\sin(\theta)
 
 ## 1. Periodo indipendente dalla velocità
 
-Per una carica $q$ che si muove con $\vec v \perp \vec B$, la forza di Lorentz $qvB$ è centripeta:
+Per una carica $q$ che si muove con $\vec v \perp \vec B$, la [[Forza di Lorentz]] $qvB$ è centripeta:
 
 $$qvB=\frac{mv^2}{r}\ \Rightarrow\ r=\frac{mv}{qB}$$
 

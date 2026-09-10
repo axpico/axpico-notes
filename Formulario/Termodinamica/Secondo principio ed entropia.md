@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[Termodinamica]]
+  - [[[[Termodinamica]]]]
   - entropia
   - formulario
 ---
@@ -14,4 +14,4 @@ Per una trasformazione reversibile a temperatura costante (es. un cambiamento di
 
 $$\Delta S = \frac{Q}{T}$$
 
-Vedi anche [[Formulario/Termodinamica/Cambiamenti di stato.md|Cambiamenti di stato]] e [[Ripasso fisica/Termodinamica.md|Termodinamica]].
+Vedi anche [[Formulario/Termodinamica/Cambiamenti di stato.md|Cambiamenti di stato]] e [[Termodinamica|Termodinamica]].

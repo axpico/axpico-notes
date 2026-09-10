@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[[[Dinamica]]]]
+  - [[[[[[Dinamica]]]]]]
   - impulso
   - formulario
 ---
@@ -16,4 +16,4 @@ Dove:
 - $m$ = massa del corpo (kg)
 - $\vec F(t')$ = forza applicata in funzione del tempo (N)
 
-Vedi anche [[Ripasso fisica/Dinamica.md|Dinamica]].
+Vedi anche [[Dinamica|Dinamica]].

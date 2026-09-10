@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[Termodinamica]]
+  - [[[[Termodinamica]]]]
   - dilatazione-termica
   - formulario
 ---
@@ -18,4 +18,4 @@ Dove:
 - $\gamma$ = coefficiente di dilatazione volumica (K⁻¹)
 - $\Delta T$ = variazione di temperatura
 
-Vedi anche [[Ripasso fisica/Termodinamica.md|Termodinamica]].
+Vedi anche [[Termodinamica|Termodinamica]].

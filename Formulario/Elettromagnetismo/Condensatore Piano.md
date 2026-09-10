@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[Elettromagnetismo]]
+  - [[[[Elettromagnetismo]]]]
   - formulario
 ---
 # Condensatore Piano

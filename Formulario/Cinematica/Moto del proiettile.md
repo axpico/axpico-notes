@@ -2,7 +2,7 @@
 subject: fisica
 tags:
   - fisica
-  - [[Cinematica]]
+  - [[[[Cinematica]]]]
   - formulario
 ---
 # Moto del proiettile

@@ -16,4 +16,4 @@ Dove:
 - $m$ = massa (kg)
 - $\vec v$ = velocità (m/s)
 
-Vedi anche [[Ripasso fisica/Energia e gravitazione.md|Energia e gravitazione]] (sezione Urti).
+Vedi anche [[Energia e gravitazione|Energia e gravitazione]] (sezione Urti).

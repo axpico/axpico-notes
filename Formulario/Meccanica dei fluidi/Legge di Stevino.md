@@ -15,4 +15,4 @@ In un fluido in quiete la [[Pressione]] cresce linearmente con la profondità. �
 - Se il livello è più alto nel ramo **aperto** all'atmosfera: $p_{gas} = p_{atm} + \rho g \Delta h$
 - Se il livello è più alto nel ramo **collegato al gas**: $p_{gas} = p_{atm} - \rho g \Delta h$
 
-Vedi anche [[Formulario/Meccanica dei fluidi/Pressione.md|Pressione]] e [[Ripasso fisica/Meccanica dei fluidi.md|Meccanica dei fluidi]].
+Vedi anche [[Formulario/Meccanica dei fluidi/Pressione.md|Pressione]] e [[Meccanica dei fluidi|Meccanica dei fluidi]].

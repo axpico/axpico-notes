@@ -26,4 +26,4 @@ Dove:
 | $\alpha = \pi/2$ | $W=0$ | forza perpendicolare, nessun lavoro |
 | $\pi/2 < \alpha \le \pi$ | $W<0$ | lavoro resistente |
 
-Vedi anche [[Ripasso fisica/Energia e gravitazione.md|Energia e gravitazione]] e [[Formulario/Energia e gravitazione/Teorema dell'energia cinetica.md|Teorema dell'energia cinetica]].
+Vedi anche [[Energia e gravitazione|Energia e gravitazione]] e [[Formulario/Energia e gravitazione/Teorema dell'energia cinetica.md|Teorema dell'energia cinetica]].
