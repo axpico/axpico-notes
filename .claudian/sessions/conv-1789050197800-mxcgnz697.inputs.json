@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789050197800-mxcgnz697",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789050198184-8mthxov",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789050197780-at3r2ar",
+      "timestamp": 1789050197780,
+      "rawDisplayText": "spiega il campo magnetico, leggi di biot savart, (se il filo e rettilinio se no)  teorema di ampere, la corrente concatenaa danto definizione, forza di Lorentz, moto di una carica, forza di Laplace, spira in un campo magnetico. leggi claude_skill content and make grapichs",
+      "canonicalText": "spiega il campo magnetico, leggi di biot savart, (se il filo e rettilinio se no)  teorema di ampere, la corrente concatenaa danto definizione, forza di Lorentz, moto di una carica, forza di Laplace, spira in un campo magnetico. leggi claude_skill content and make grapichs",
+      "context": {
+        "linkedContent": {
+          "path": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "096279f14d42b6344cb498c2f24b8d1edfd9a2dd15f74ae0295ce027477d0754",
+      "providerUserMessageId": "aa555b8b-1ce9-4ded-b1c4-03e0c250778d"
+    }
+  ]
+}

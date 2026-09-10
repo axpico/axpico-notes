@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789050197800-mxcgnz697",
+  "providerId": "claude",
+  "title": "Electromagnetic physics guide",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789050197838,
+  "lastActivityAt": 1789050215471,
+  "sessionId": "3e70371e-1777-4717-b535-a65b4a81eaa2",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "3e70371e-1777-4717-b535-a65b4a81eaa2"
+  },
+  "linkedContentPath": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 7366,
+    "cacheReadInputTokens": 30618,
+    "contextWindow": 967000,
+    "contextTokens": 37986,
+    "percentage": 4,
+    "contextWindowIsAuthoritative": true
+  }
+}

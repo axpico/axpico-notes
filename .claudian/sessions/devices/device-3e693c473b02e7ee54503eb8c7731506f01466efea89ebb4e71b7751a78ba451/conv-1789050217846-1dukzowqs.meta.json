@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789050217846-1dukzowqs",
+  "providerId": "claude",
+  "title": "Electromagnetic forces explained",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789050217856,
+  "lastActivityAt": 1789050434844,
+  "sessionId": "7dc6840a-2157-442c-be35-584e1b829a30",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "7dc6840a-2157-442c-be35-584e1b829a30"
+  },
+  "linkedContentPath": "Ripasso fisica/Elettromagnetismo.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 690,
+    "cacheReadInputTokens": 57128,
+    "contextWindow": 967000,
+    "contextTokens": 57820,
+    "percentage": 6,
+    "contextWindowIsAuthoritative": true
+  }
+}
