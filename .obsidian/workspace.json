@@ -18,20 +18,6 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-09-09 13.50.54.excalidraw"
             }
-          },
-          {
-            "id": "05b46673e5f81e33",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RIpasso matematica/Funzioni 2 - Esponenziali e logaritmi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Funzioni 2 - Esponenziali e logaritmi"
-            }
           }
         ]
       }
@@ -234,9 +220,21 @@
               "icon": "bot",
               "title": "Claudian"
             }
+          },
+          {
+            "id": "52c78f5dbf3a6e90",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md"
+              },
+              "icon": "lucide-info",
+              "title": "Proprietà file"
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
