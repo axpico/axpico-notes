@@ -11,10 +11,10 @@
             "id": "8ae0885764439660",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -42,7 +42,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora file"
+              "title": "Files"
             }
           },
           {
@@ -76,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -234,15 +233,15 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Apri selettore rapido": false,
-      "graph:Apri vista grafo": false,
-      "canvas:Crea nuova lavagna": false,
-      "daily-notes:Apri nota giornaliera": false,
-      "templates:Inserisci modello": false,
-      "command-palette:Apri riquadro comandi": false,
-      "markdown-importer:Apri importazione Markdown": false,
-      "audio-recorder:Avvia/ferma registrazione": false,
-      "bases:Crea nuova Base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "audio-recorder:Start/stop recording": false,
+      "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "omnisearch:Omnisearch": false,
       "realclaudian:Open Claudian": false,
@@ -255,6 +254,13 @@
   },
   "active": "8ae0885764439660",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Informazioni geometria e algebra lineare.md",
+    "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
+    "Politecnico/Analisi 1/Informazioni analisi 1.md",
+    "Politecnico/Geometria e Algebra Lineare",
+    "Politecnico/Fondamenti di Informatica",
+    "Politecnico/Analisi 1",
+    "Politecnico",
     "Ripasso uni/fisica/Elettromagnetismo.md",
     "Ripasso uni/fisica/Elettromagnetismo.md.tmp.13656.c34c21c7633b",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
@@ -274,10 +280,6 @@
     "Formulario/Elettromagnetismo/Campo Magnetico di un Filo Rettilineo.md.tmp.6972.7bfb6670c293",
     "Formulario/Elettromagnetismo/Legge di Biot-Savart.md",
     "Formulario/Elettromagnetismo/Legge di Biot-Savart.md.tmp.6972.365b8325422f",
-    "Ripasso fisica/Elettromagnetismo.md.tmp.6972.174af4116778",
-    "Ripasso fisica/Elettromagnetismo.md.tmp.6972.05f5d4a425b2",
-    "Ripasso fisica/Elettromagnetismo.md.tmp.6972.fde4112a0cd9",
-    "Ripasso fisica/Elettromagnetismo.md.tmp.6972.49daf7ebd7c6",
     "Ripasso uni/fisica/Elettronica.md",
     "Ripasso uni/matematica/Funzioni 2 - Esponenziali e logaritmi.md",
     "Pasted Image 20260909152139_057.png",
@@ -290,8 +292,6 @@
     "Formulario/Elettromagnetismo/Condensatori in parallelo.md",
     "Formulario/Elettromagnetismo/Condensatori in serie.md",
     "Formulario/Elettromagnetismo/Potenza elettrica.md",
-    "Formulario/Elettromagnetismo/Legge di Kirchhoff dei nodi.md",
-    "Formulario/Elettromagnetismo/Generatore reale e resistenza interna.md",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",
