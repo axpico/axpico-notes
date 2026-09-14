@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Politecnico/Analisi 1/Insieme numerici.md",
+                "file": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Insieme numerici"
+              "title": "Insieme numerici, logia e dimostrazioni"
             }
           }
         ],
@@ -220,15 +220,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789383719684-oook8ee",
-                      "conversationId": "conv-1789393042208-seen3czfy"
-                    },
-                    {
-                      "tabId": "tab-1789393473516-01dw7y7",
-                      "conversationId": "conv-1789393479977-iw318n0dg"
+                      "tabId": "tab-1789393702221-37e5i0u",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1789393473516-01dw7y7"
+                  "activeTabId": "tab-1789393702221-37e5i0u"
                 }
               },
               "icon": "bot",
@@ -241,7 +238,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Politecnico/Analisi 1/Insieme numerici.md"
+                "file": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md"
               },
               "icon": "lucide-info",
               "title": "File properties"
@@ -275,11 +272,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "56efc63866208b00",
+  "active": "130ae089f01f074d",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Insieme numerici.md.tmp.6783.f73712c2778a",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
-    "Politecnico/Analisi 1/Insieme numerici.md",
+    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
+    "Politecnico/Analisi 1/Insieme numerici.md.tmp.6783.f73712c2778a",
     "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.6903094fcd5e",
     "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.9d56e62b30ff",
     "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.64597b4654f4",
@@ -293,7 +290,6 @@
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.12916.fe90b5d116b1",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.9120.454c58d22474",
-    "Politecnico/Fondamenti di Informatica/Diagrammi di flusso",
     "claude_skills/claude_skills index.md",
     "claude_skills/Skill Advanced Canvas for obsidian.md",
     "claude_skills/Senza nome.md",

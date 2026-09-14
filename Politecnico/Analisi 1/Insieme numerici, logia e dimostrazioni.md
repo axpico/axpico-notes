@@ -35,3 +35,10 @@ $\mathbb{R}$ raccoglie tutti e tre i tipi di sviluppo decimale, quindi $\mathbb{
 ## Numeri irrazionali
 $$\mathbb{R} \setminus \mathbb{Q} = \text{numeri irrazionali}$$
 Sono i reali che **non** si possono scrivere come rapporto di due interi, cioè quelli con sviluppo decimale infinito non periodico (es. $\sqrt{2}$, $\pi$, $e$). L'operazione $\setminus$ è la **differenza insiemistica**: $A \setminus B = \{x \in A : x \notin B\}$, cioè gli elementi di $A$ che non appartengono a $B$.
+
+## Richiami alla logica 
+Affermazioni vere o false connesse con connettivi logici P e Q proposizioni o affermazioni
+connettivi logici
+
+### Implicazioni
+$$P =>$$
