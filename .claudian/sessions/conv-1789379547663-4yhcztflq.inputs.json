@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789379547663-4yhcztflq",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789379548185-plz56yw",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789379547626-i859awt",
+      "timestamp": 1789379547626,
+      "rawDisplayText": "ssistema il file",
+      "canonicalText": "ssistema il file",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Fondamenti di Informatica/Algorimto.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "51fc3950cec2afa3cb0b8ba590f975d9389624eecb020ccaee0a2d6716367510",
+      "providerUserMessageId": "b7d01f96-af0a-4ec7-848b-e100bec1ea87",
+      "providerAssistantMessageId": "35494c5b-07f9-4ef1-9696-7156a661fa0a"
+    }
+  ]
+}

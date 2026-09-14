@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789379703497-loubdpm7c",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789379703654-zfqp684",
+      "userTurnOrdinal": 1,
+      "state": "staged",
+      "localMessageId": "msg-1789379703490-johw4rb",
+      "timestamp": 1789379703490,
+      "rawDisplayText": "fix and add snippet of code of ansi c89",
+      "canonicalText": "fix and add snippet of code of ansi c89",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Fondamenti di Informatica/Algorimto.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "59afbd6451d65f517c19321bf595b6bcd1f53ec043215d841eaf63e1943f3060"
+    }
+  ]
+}
