@@ -233,12 +233,11 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 398.5,
-    "collapsed": true
+    "width": 398.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -261,7 +260,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "0d6b020783c59d97",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.17244.8fdcf2181aa5",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.11520.8aa53847042e",
