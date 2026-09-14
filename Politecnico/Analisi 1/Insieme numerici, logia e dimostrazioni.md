@@ -41,4 +41,10 @@ Affermazioni vere o false connesse con connettivi logici P e Q proposizioni o af
 connettivi logici
 
 ### Implicazioni
-$$P =>$$
+$$P => Q$$
+se $P: x > 5$ e $Q: x > 3$ allora $P => Q$ e $P \not{=>} Q$
+
+### Equivalenza
+$$P <=> Q$$
+### Conttraposizione
+$$$$
