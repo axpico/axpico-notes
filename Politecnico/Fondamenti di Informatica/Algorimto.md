@@ -1,18 +1,43 @@
 # Algoritmo
-
 Un algoritmo si basa su due nozioni:
 - **problema**
 - **esecutore**
-
 ## Problema
-
 Un problema è composto da una terna **(I, O, R)**:
 - **I** — ingresso (input): deve soddisfare alcune condizioni di validità
 - **O** — uscita (output): deve soddisfare alcune condizioni di validità
 - **R** — relazione: deve essere soddisfatta per qualunque insieme di dati valido, tra dati in ingresso e risultati in uscita
+### Esempio: Massimo tra due numeri naturali 
+- **I** — due numeri naturali
+- **O** — un numero naturale
+- **R** — il risultato è uno dei due dati in ingresso: il risultato non è maggiore dell'altro dato (cioè è il minimo dei due)
+#### Implementazione in ANSI C89
+```c
+#include <stdio.h>
 
-Esempio
-I -> dati 2 numeri naturali
-o -> risultato un numeoro naturale
-R -> il risulatto e uno dei due dati: il risulato non e maggliore del altro dato 
+/* R: restituisce il minore tra a e b (uno dei due dati, non maggiore dell'altro) */
+unsigned int minimo(unsigned int a, unsigned int b)
+{
+    if (a < b) {
+        return a;
+    }
+    return b;
+}
 
+int main(void)
+{
+    unsigned int a, b;
+
+    printf("Inserisci due numeri naturali: ");
+    if (scanf("%u %u", &a, &b) != 2) {
+        return 1;
+    }
+
+    printf("Il minimo e' %u\n", minimo(a, b));
+
+    return 0;
+}
+```
+> Note ANSI C89: dichiarazioni delle variabili all'inizio del blocco, commenti solo `/* ... */`, `main` con prototipo esplicito `(void)`.
+## Esecutore 
+Un sistema capace di eseguire in modo deterministico ciascun 

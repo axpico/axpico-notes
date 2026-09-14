@@ -1,11 +1,24 @@
 {
   "id": "conv-1789379703497-loubdpm7c",
   "providerId": "claude",
-  "title": "fix and add snippet of code of ansi c89",
-  "titleGenerationStatus": "pending",
+  "title": "Fix and add ANSI C89 code snippet",
+  "titleGenerationStatus": "success",
   "createdAt": 1789379703507,
-  "lastActivityAt": 1789379703507,
-  "sessionId": null,
+  "lastActivityAt": 1789379729886,
+  "sessionId": "d3a2b8e9-a826-4fda-b26d-1c28b6ecda63",
   "selectedModel": "sonnet",
-  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Algorimto.md"
+  "providerState": {
+    "providerSessionId": "d3a2b8e9-a826-4fda-b26d-1c28b6ecda63"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Algorimto.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 6683,
+    "cacheReadInputTokens": 30606,
+    "contextWindow": 967000,
+    "contextTokens": 37291,
+    "percentage": 4,
+    "contextWindowIsAuthoritative": true
+  }
 }

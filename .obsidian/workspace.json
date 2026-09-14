@@ -207,11 +207,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789379588766-v0idabh",
-                      "conversationId": "conv-1789379703497-loubdpm7c"
+                      "tabId": "tab-1789379734335-re4jdwg",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1789379588766-v0idabh"
+                  "activeTabId": "tab-1789379734335-re4jdwg"
                 }
               },
               "icon": "bot",
@@ -233,7 +234,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5
+    "width": 398.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -256,11 +258,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "56efc63866208b00",
+  "active": "21fa60bb2b4b16c9",
   "lastOpenFiles": [
+    "Ripasso uni/matematica/Logica e Aritmetica.md",
+    "Ripasso uni/matematica/Trigonometria - Riduzione angoli e identità.md",
+    "Politecnico/Fondamenti di Informatica/Algorimto.md",
+    "Politecnico/Fondamenti di Informatica/Algorimto.md.tmp.12020.70b8cac91f9f",
     "Politecnico/Fondamenti di Informatica/Algorimto.md.tmp.9360.f9be2edfa0a1",
     "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
-    "Politecnico/Fondamenti di Informatica/Algorimto.md",
     "Politecnico/Analisi 1/Informazioni analisi 1.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Informazioni geometria e algebra lineare.md",
@@ -283,9 +288,7 @@
     "Formulario/Elettromagnetismo/Teorema di Ampère.md",
     "Formulario/Elettromagnetismo/Teorema di Ampère.md.tmp.6972.9818cdcb6d56",
     "Formulario/Elettromagnetismo/Campo Magnetico di un Filo Rettilineo.md",
-    "Formulario/Elettromagnetismo/Campo Magnetico di un Filo Rettilineo.md.tmp.6972.7bfb6670c293",
     "Formulario/Elettromagnetismo/Legge di Biot-Savart.md",
-    "Formulario/Elettromagnetismo/Legge di Biot-Savart.md.tmp.6972.365b8325422f",
     "Ripasso uni/fisica/Elettronica.md",
     "Ripasso uni/matematica/Funzioni 2 - Esponenziali e logaritmi.md",
     "Pasted Image 20260909152139_057.png",
@@ -295,7 +298,6 @@
     "Ripasso uni/fisica/Energia e gravitazione.md",
     "Ripasso uni/fisica/Dinamica.md",
     "Pasted Image 20260909152157_367.png",
-    "Formulario/Elettromagnetismo/Condensatori in parallelo.md",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",

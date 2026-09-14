@@ -6,7 +6,7 @@
       "schemaVersion": 1,
       "id": "msg-1789379703654-zfqp684",
       "userTurnOrdinal": 1,
-      "state": "staged",
+      "state": "accepted",
       "localMessageId": "msg-1789379703490-johw4rb",
       "timestamp": 1789379703490,
       "rawDisplayText": "fix and add snippet of code of ansi c89",
@@ -17,7 +17,9 @@
         }
       },
       "images": [],
-      "contentDigest": "59afbd6451d65f517c19321bf595b6bcd1f53ec043215d841eaf63e1943f3060"
+      "contentDigest": "59afbd6451d65f517c19321bf595b6bcd1f53ec043215d841eaf63e1943f3060",
+      "providerUserMessageId": "32ac8598-d381-420c-b6e0-6ab8d1508856",
+      "providerAssistantMessageId": "4f050bb6-d762-4fc5-b977-6fcd04c36530"
     }
   ]
 }
