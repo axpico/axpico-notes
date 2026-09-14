@@ -1,0 +1,14 @@
+{
+  "id": "conv-1789381470569-943nuqb65",
+  "providerId": "claude",
+  "title": "Create Logo skill for Obsidian Canvas",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789381470611,
+  "lastActivityAt": 1789381470611,
+  "sessionId": "e006dc89-443c-437f-a69c-b5b21d7146ff",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "e006dc89-443c-437f-a69c-b5b21d7146ff"
+  },
+  "linkedContentPath": "claude_skills/Senza nome.md"
+}

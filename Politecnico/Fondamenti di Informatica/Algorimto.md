@@ -72,5 +72,9 @@ $\quad r = d_2 \text{ se } d_1 < d_2$
 	1. se il primo è maggiore del secondo restituisco il primo
 	2. se il secondo è maggiore del primo restituisco il secondo
 3. TERMINA
+## Combinazione
+I passi elemntali possono essere combinati in diversi modi.
+2 modi segunza o selezione 
 
 
+Diagrammi di flussso 
