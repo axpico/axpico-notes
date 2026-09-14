@@ -131,3 +131,7 @@ In ANSI C89:
 A = A + B;
 ```
 
+## Scambio tra due contenitori 
+### Problema
+I: due vontenitori M e N, ciascuno con un valore memorizzato
+O> gli stessi due contenitori M

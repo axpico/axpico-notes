@@ -234,7 +234,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5
+    "width": 398.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -259,15 +260,15 @@
   },
   "active": "0d6b020783c59d97",
   "lastOpenFiles": [
-    "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.12916.2c687b39eb5a",
+    "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md",
+    "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.12916.2c687b39eb5a",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.12916.fe90b5d116b1",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.9120.454c58d22474",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso",
     "Politecnico/Fondamenti di Informatica/Diagramma di flusso - minimo.canvas.tmp.4068.3b17cef23db3",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.4068.6cc805bd3c8f",
-    "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
     "claude_skills/claude_skills index.md",
     "claude_skills/Skill Advanced Canvas for obsidian.md",
     "claude_skills/Senza nome.md",
@@ -278,7 +279,6 @@
     "Ripasso uni/matematica/Logica e Aritmetica.md",
     "Ripasso uni/matematica/Trigonometria - Riduzione angoli e identità.md",
     "Politecnico/Fondamenti di Informatica/Algorimto.md.tmp.12020.70b8cac91f9f",
-    "Politecnico/Fondamenti di Informatica/Algorimto.md.tmp.9360.f9be2edfa0a1",
     "Politecnico/Analisi 1/Informazioni analisi 1.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Informazioni geometria e algebra lineare.md",
