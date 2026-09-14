@@ -1,4 +1,4 @@
-# Algoritmo
+## Algoritmo
 Un algoritmo si basa su due nozioni:
 - **problema**
 - **esecutore**
@@ -40,4 +40,15 @@ int main(void)
 ```
 > Note ANSI C89: dichiarazioni delle variabili all'inizio del blocco, commenti solo `/* ... */`, `main` con prototipo esplicito `(void)`.
 ## Esecutore 
-Un sistema capace di eseguire in modo deterministico ciascun 
+Un sistema capace di eseguire in modo deterministico ciascun passo elementare appartenente a un insieme (esiguo) di passi elementari
+### Esempio
+insimei di passi elementari eseguibili:
+- acquisizione dei dati ("Lettura")
+- produzione dei risultati ("scrittura")
+- addizione di due numeri 
+- sottrazione fra due numeri
+- confronto fra due numeri (calcolo dell'esisto "vero" o "falso" di un confronto)
+## Algoritmo
+dati un problema P e un esecutore E, e una combinazione finita di passi elemntari, ciascuno eseguibile dall'esecutore E, in grado di risolvere il problema P (cioe per qualunque insime valido di dati in ingresso, produce in unscita risultati validi che soddisfano la relazione specifica con dati n ingresso)
+
+### Esempio
