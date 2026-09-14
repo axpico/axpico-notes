@@ -56,3 +56,17 @@ dati un problema P e un esecutore E, e una combinazione finita di passi elemntar
 2. sottrai dal valore 0 il valore del numero aquisito
 3. produci in unscita il risultato della sottrazione
 4. TERMINA
+
+### Esempio: massimo tra due numeri naturali
+I: due numeri interi d_1 e d_2
+O: un numero naturale
+R: $ r \\E  {d_1, d_2}$
+	$ $
+1. aquisitsci 2 numeri natruali
+2. contfronto i valori 
+3. confronto i  2 numeri naturali
+	1. se il primo e maggiore del secondo torno il primo
+	2. se il secondo e maggiore dle primo torno il secodno 
+4. TERMINA
+
+## 
