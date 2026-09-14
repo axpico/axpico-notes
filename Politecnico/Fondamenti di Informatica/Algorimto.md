@@ -51,4 +51,8 @@ insimei di passi elementari eseguibili:
 ## Algoritmo
 dati un problema P e un esecutore E, e una combinazione finita di passi elemntari, ciascuno eseguibile dall'esecutore E, in grado di risolvere il problema P (cioe per qualunque insime valido di dati in ingresso, produce in unscita risultati validi che soddisfano la relazione specifica con dati n ingresso)
 
-### Esempio
+### Esempio: l'oppsoto di un intero
+1. acuisici un intero
+2. sottrai dal valore 0 il valore del numero aquisito
+3. produci in unscita il risultato della sottrazione
+4. TERMINA
