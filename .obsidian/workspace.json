@@ -13,28 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Politecnico/Analisi 1/Informazioni analisi 1.md",
+                "file": "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Informazioni analisi 1"
-            }
-          },
-          {
-            "id": "382771707973f511",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-09 13.50.54.excalidraw"
+              "title": "Infrormazioni fondameneti di informatica"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -271,9 +258,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "382771707973f511",
+  "active": "21fa60bb2b4b16c9",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/Informazioni analisi 1.md",
+    "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Informazioni geometria e algebra lineare.md",
     "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
     "Politecnico/Geometria e Algebra Lineare",
@@ -282,7 +270,6 @@
     "Politecnico",
     "Ripasso uni/fisica/Elettromagnetismo.md",
     "Ripasso uni/fisica/Elettromagnetismo.md.tmp.13656.c34c21c7633b",
-    "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Ripasso uni/matematica/Algebra - Polinomi ed Equazioni.md",
     "Ripasso uni",
     "Formulario/Elettromagnetismo/Energia Potenziale Magnetica.md",
