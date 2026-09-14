@@ -10,7 +10,7 @@
   "titleGenerationModel": "",
   "excludedTags": [],
   "mediaFolder": "",
-  "systemPrompt": "Before answering, check claude_skills/claude_skills index.md for a skill relevant to the user's request. If one matches, mention it and use it.",
+  "systemPrompt": "Before answering, check claude_skills/claude_skills index.md for a skill relevant to the user's request. If one matches, mention it and use it.\nAlso exaplin all at a university level",
   "persistentExternalContextPaths": [],
   "sharedEnvironmentVariables": "",
   "envSnippets": [],
