@@ -207,12 +207,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789379734335-re4jdwg",
+                      "tabId": "tab-1789381045765-bp0hp8a",
                       "conversationId": null,
                       "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1789379734335-re4jdwg"
+                  "activeTabId": "tab-1789381045765-bp0hp8a"
                 }
               },
               "icon": "bot",
@@ -250,19 +250,21 @@
       "bases:Crea nuova Base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "omnisearch:Omnisearch": false,
-      "realclaudian:Open Claudian": false,
-      "obisidian-note-linker:Note Linker": false,
       "templater-obsidian:Templater": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-kanban:Create new board": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obisidian-note-linker:Note Linker": false,
+      "realclaudian:Open Claudian": false
     }
   },
   "active": "21fa60bb2b4b16c9",
   "lastOpenFiles": [
+    "Formulario/Elettromagnetismo/Condensatori in serie.md",
+    "Politecnico/Fondamenti di Informatica/Algorimto.md",
+    "Politecnico/Fondamenti di Informatica/Algorimto.md.tmp.17328.851fefa603d1",
     "Ripasso uni/matematica/Logica e Aritmetica.md",
     "Ripasso uni/matematica/Trigonometria - Riduzione angoli e identità.md",
-    "Politecnico/Fondamenti di Informatica/Algorimto.md",
     "Politecnico/Fondamenti di Informatica/Algorimto.md.tmp.12020.70b8cac91f9f",
     "Politecnico/Fondamenti di Informatica/Algorimto.md.tmp.9360.f9be2edfa0a1",
     "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
@@ -286,7 +288,6 @@
     "Formulario/Elettromagnetismo/Raggio di Ciclotrone.md",
     "Formulario/Elettromagnetismo/Forza di Lorentz.md",
     "Formulario/Elettromagnetismo/Teorema di Ampère.md",
-    "Formulario/Elettromagnetismo/Teorema di Ampère.md.tmp.6972.9818cdcb6d56",
     "Formulario/Elettromagnetismo/Campo Magnetico di un Filo Rettilineo.md",
     "Formulario/Elettromagnetismo/Legge di Biot-Savart.md",
     "Ripasso uni/fisica/Elettronica.md",
@@ -296,7 +297,6 @@
     "Ripasso uni/fisica/Termodinamica.md",
     "Ripasso uni/fisica/Meccanica dei fluidi.md",
     "Ripasso uni/fisica/Energia e gravitazione.md",
-    "Ripasso uni/fisica/Dinamica.md",
     "Pasted Image 20260909152157_367.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 2.png",
