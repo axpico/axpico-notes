@@ -73,8 +73,37 @@ $\quad r = d_2 \text{ se } d_1 < d_2$
 	2. se il secondo è maggiore del primo restituisco il secondo
 3. TERMINA
 ## Combinazione
-I passi elemntali possono essere combinati in diversi modi.
-2 modi segunza o selezione 
+I passi elementari possono essere combinati in diversi modi: in **sequenza** (lineare) o tramite **selezione** (if/else) — e, come si vedrà, tramite **iterazione**.
 
+## Diagrammi di flusso
+Un diagramma di flusso (*flowchart*) è una rappresentazione grafica di un algoritmo: i passi elementari e i punti di decisione sono raffigurati con simboli standardizzati, collegati da frecce (edge) che ne indicano il flusso di controllo.
 
-Diagrammi di flussso 
+### Simboli fondamentali
+| Simbolo | Forma | Significato |
+| --- | --- | --- |
+| **Terminatore** | pillola/ellisse | punto di INIZIO o FINE dell'algoritmo |
+| **Elaborazione (processo)** | rettangolo | un'operazione elementare (es. assegnazione, calcolo) |
+| **Decisione** | rombo | test logico con due uscite (vero/falso) |
+| **Input/Output** | parallelogramma | acquisizione (lettura) o produzione (scrittura) di dati |
+| **Freccia (edge)** | linea orientata | indica il flusso di controllo tra un passo e il successivo |
+
+### Regole di costruzione
+- Ogni diagramma ha un solo punto di INIZIO e almeno un punto di FINE.
+- Ogni cammino che parte dall'INIZIO deve condurre, in un numero finito di passi, a un FINE (l'algoritmo deve terminare).
+- Ogni simbolo di decisione ha esattamente due uscite (vero e falso).
+
+### Le tre strutture di controllo fondamentali (teorema di Böhm-Jacopini)
+Il teorema di Böhm-Jacopini (1966) dimostra che qualunque algoritmo calcolabile tramite diagramma di flusso può essere riscritto usando solo tre costrutti di controllo, opportunamente annidati e composti in sequenza — è la base teorica della **programmazione strutturata**:
+
+1. **Sequenza** — due o più passi eseguiti uno dopo l'altro, nell'ordine in cui compaiono.
+2. **Selezione** (if-then-else) — in base all'esito di una decisione, il flusso prosegue lungo uno tra due cammini alternativi, che poi si ricongiungono.
+3. **Iterazione** (while/repeat) — un blocco di passi viene ripetuto finché una condizione resta soddisfatta (o finché non lo è più).
+
+### Esempio: diagramma di flusso per il minimo tra due numeri naturali
+Traduzione in diagramma di flusso dell'algoritmo visto sopra (§ Esempio: minimo tra due numeri naturali): una sequenza (INIZIO → lettura → scrittura → FINE) con una selezione al suo interno per stabilire quale dei due valori sia il minimo.
+
+![[Diagramma di flusso - minimo.canvas]]
+
+## Memorizzazione
+memorizzazione di un valore "in un contenitore": salvataggio e conservazione interna di in valore durante l'esecuzione di altri passi
+

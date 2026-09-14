@@ -18,7 +18,22 @@
       },
       "images": [],
       "contentDigest": "d3065d8348ec5d9f24c99cd1605c0f0bbfa686af15d4364736a97560ca446a6f",
-      "providerUserMessageId": "4f7e3f5c-aa80-446c-ae36-8832d55fb7f6"
+      "providerUserMessageId": "4f7e3f5c-aa80-446c-ae36-8832d55fb7f6",
+      "providerAssistantMessageId": "7bd22d9b-6870-41c6-99f2-dc5fee5ce663"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789381607213-97z650y",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789381607193-vdq8cxp",
+      "timestamp": 1789381607193,
+      "rawDisplayText": "utilizzando la skill creata aggiungi ad Algoritmo tutto il perzzo sui diagrammi di flusso",
+      "canonicalText": "utilizzando la skill creata aggiungi ad Algoritmo tutto il perzzo sui diagrammi di flusso",
+      "images": [],
+      "contentDigest": "057df426cf9b54f56f37de826279d8e759224bdb02a9aadd85c1a73eff3a3d1b",
+      "providerUserMessageId": "2ede756e-f960-42ec-b985-df88e8ae92b3",
+      "providerAssistantMessageId": "49d7f664-e1e8-44ad-b7d7-cfc180498ce0"
     }
   ]
 }
