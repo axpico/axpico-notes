@@ -63,3 +63,15 @@ La **contronominale** di $P \Rightarrow Q$ è $\overline{Q} \Rightarrow \overlin
 Esempio (stesso $P,Q$ di sopra): $\overline{P}: x \le 5$ e $\overline{Q}: x \le 3$. La contronominale $\overline{Q} \Rightarrow \overline{P}$ afferma "se $x \le 3$ allora $x \le 5$", vera — coerentemente con il fatto che $P \Rightarrow Q$ era vera.
 
 ## Dimostrazioni
+Ipotesi -> antecedente
+tesi -> consegunte
+utilizzo di implicazione logiche per arrivare a testi 
+$$\text{Ipotesi} => \text{Tesi}$$
+la dimostrazione prova questa implicazione 
+3 tipi di dimostrazione 
+### Diretta
+### Indiretta
+#### Assurdo
+#### Contrapposizione
+### Induzione N 
+solo numerrare oggetti 
