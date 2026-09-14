@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789394400554-3cw33zpiz",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789394400615-6o0vef5",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789394400536-s3j12d0",
+      "timestamp": 1789394400536,
+      "rawDisplayText": "sistema e spiga ## Richiami alla logica \nAffermazioni vere o false connesse con connettivi logici P e Q proposizioni o affermazioni\nconnettivi logici\n\n### Implicazioni\n$$P => Q$$\nse $P: x > 5$ e $Q: x > 3$ allora $P => Q$ e $P \\not{=>} Q$\n\n### Equivalenza\n$$P <=> Q$$\n### Conttraposizione\n$$\\overline{Q} => \\overline{P}$$\nopposto di Q implica opposto di P \nquindi $\\overline{P} <= 5$ e $\\overline{Q} <= 1$\n\n\nAntecedente P e conseguente Q\n$$P => Q$$",
+      "canonicalText": "sistema e spiga ## Richiami alla logica \nAffermazioni vere o false connesse con connettivi logici P e Q proposizioni o affermazioni\nconnettivi logici\n\n### Implicazioni\n$$P => Q$$\nse $P: x > 5$ e $Q: x > 3$ allora $P => Q$ e $P \\not{=>} Q$\n\n### Equivalenza\n$$P <=> Q$$\n### Conttraposizione\n$$\\overline{Q} => \\overline{P}$$\nopposto di Q implica opposto di P \nquindi $\\overline{P} <= 5$ e $\\overline{Q} <= 1$\n\n\nAntecedente P e conseguente Q\n$$P => Q$$",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md"
+        },
+        "editorSelection": {
+          "notePath": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
+          "mode": "selection",
+          "selectedText": "## Richiami alla logica \nAffermazioni vere o false connesse con connettivi logici P e Q proposizioni o affermazioni\nconnettivi logici\n\n### Implicazioni\n$$P => Q$$\nse $P: x > 5$ e $Q: x > 3$ allora $P => Q$ e $P \\not{=>} Q$\n\n### Equivalenza\n$$P <=> Q$$\n### Conttraposizione\n$$\\overline{Q} => \\overline{P}$$\nopposto di Q implica opposto di P \nquindi $\\overline{P} <= 5$ e $\\overline{Q} <= 1$\n\n\nAntecedente P e conseguente Q\n$$P => Q$$\n",
+          "lineCount": 19,
+          "startLine": 39
+        }
+      },
+      "images": [],
+      "contentDigest": "31f72054f912fb4043b8a6b0158d4208bbd2bd725ed98e46aba9c339e7789fae",
+      "providerUserMessageId": "0224874f-34e5-4e75-8afb-2e3a2d89c2ed",
+      "providerAssistantMessageId": "e7cc1cb5-ae47-4527-a442-d3a0fec8ad9a"
+    }
+  ]
+}

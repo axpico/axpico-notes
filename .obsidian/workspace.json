@@ -221,8 +221,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1789393702221-37e5i0u",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
+                      "conversationId": "conv-1789394400554-3cw33zpiz"
                     }
                   ],
                   "activeTabId": "tab-1789393702221-37e5i0u"
@@ -276,6 +275,7 @@
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
+    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.15461.a4f75701fc1c",
     "Politecnico/Analisi 1/Insieme numerici.md.tmp.6783.f73712c2778a",
     "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.6903094fcd5e",
     "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.9d56e62b30ff",
@@ -289,7 +289,6 @@
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.12916.2c687b39eb5a",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.12916.fe90b5d116b1",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
-    "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.9120.454c58d22474",
     "claude_skills/claude_skills index.md",
     "claude_skills/Skill Advanced Canvas for obsidian.md",
     "claude_skills/Senza nome.md",

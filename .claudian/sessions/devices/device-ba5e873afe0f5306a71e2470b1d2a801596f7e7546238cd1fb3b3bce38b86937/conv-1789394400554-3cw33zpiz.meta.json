@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789394400554-3cw33zpiz",
+  "providerId": "claude",
+  "title": "Logical implications and contraposition",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789394400558,
+  "lastActivityAt": 1789394436630,
+  "sessionId": "01634a8b-9fdc-48ce-8dc1-95d67c219988",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "01634a8b-9fdc-48ce-8dc1-95d67c219988"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 2949,
+    "cacheReadInputTokens": 42651,
+    "contextWindow": 1000000,
+    "contextTokens": 45602,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}
