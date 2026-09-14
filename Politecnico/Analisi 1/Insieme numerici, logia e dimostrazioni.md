@@ -68,20 +68,24 @@ tesi -> consegunte
 utilizzo di implicazione logiche per arrivare a testi 
 $$\text{Ipotesi} => \text{Tesi}$$
 la dimostrazione prova questa implicazione 
+
+> Lemmi = ausili del teoremi
+> Proposizioni = teorema di medio importaanza
+> Corollari = conseguenza teorema
+
 3 tipi di dimostrazione 
 ### Diretta
 #### Esempio {\*\*}
 $$n \in \mathbb{Z} \text{ si dice pari se } \exists \text{ h } \in \mathbb{Z}: n =2h$$
 $$n \in \mathbb{Z} \text{ si dice dispari se } \exists \text{ h } \in \mathbb{Z}: n =2h+1$$
 $0$ pari per questa definizione 
-se $n = 6$ allora $6=2h$ quindi risolvendo $$ 
+se $n = 6$ allora $6=2h$ quindi risolvendo $h = \frac{6}{2} = 3$ quindi $6$ è pari
+se $n = 9$ allora $9=2h+1$ quindi risolvendo $h = \frac{9-1}{2} = 4$ quindi $9$ è dispari
 ### Indiretta
 #### Assurdo
 ##### Esempio
 #### Contrapposizione
 ### Induzione N 
 solo numerrare oggetti 
-
-> Lemmi = ausili del teoremi
-> Proposizioni = teorema di medio importaanza
-> Corollari = conseguenza teorema
+### Proposizione 
+$$\text{se n e pari} => n^2 e pari $$

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789395931242-sgjkdedv5",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789395931309-45eol9n",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789395931223-06ghmla",
+      "timestamp": 1789395931223,
+      "rawDisplayText": "sistmei #### Esempio {\\*\\*}\n$$n \\in \\mathbb{Z} \\text{ si dice pari se } \\exists \\text{ h } \\in \\mathbb{Z}: n =2h$$\n$$n \\in \\mathbb{Z} \\text{ si dice dispari se } \\exists \\text{ h } \\in \\mathbb{Z}: n =2h+1$$\n$0$ pari per questa definizione \nse $n = 6$ allora $6=2h$ quindi risolvendo $h = \\frac{6}{2} = 3$ quidni $6$ $pari  \n\nse $n = 9$ allora $9=2h+1$ quindi risolvendo $h = \\frac{9}{2}-1 = 3$ quidni $6$$ dispari",
+      "canonicalText": "sistmei #### Esempio {\\*\\*}\n$$n \\in \\mathbb{Z} \\text{ si dice pari se } \\exists \\text{ h } \\in \\mathbb{Z}: n =2h$$\n$$n \\in \\mathbb{Z} \\text{ si dice dispari se } \\exists \\text{ h } \\in \\mathbb{Z}: n =2h+1$$\n$0$ pari per questa definizione \nse $n = 6$ allora $6=2h$ quindi risolvendo $h = \\frac{6}{2} = 3$ quidni $6$ $pari  \n\nse $n = 9$ allora $9=2h+1$ quindi risolvendo $h = \\frac{9}{2}-1 = 3$ quidni $6$$ dispari",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "198f323f5d722234d9cf15c2c48ab2bfe845364e4aa24c31d5295434cea0b8c5",
+      "providerUserMessageId": "a236a866-780c-435c-9303-94206003ed59",
+      "providerAssistantMessageId": "ab7f796a-8981-4c53-9a53-01d9d040b5b3"
+    }
+  ]
+}
