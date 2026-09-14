@@ -222,9 +222,13 @@
                     {
                       "tabId": "tab-1789383719684-oook8ee",
                       "conversationId": "conv-1789393042208-seen3czfy"
+                    },
+                    {
+                      "tabId": "tab-1789393473516-01dw7y7",
+                      "conversationId": "conv-1789393479977-iw318n0dg"
                     }
                   ],
-                  "activeTabId": "tab-1789383719684-oook8ee"
+                  "activeTabId": "tab-1789393473516-01dw7y7"
                 }
               },
               "icon": "bot",
@@ -271,8 +275,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "130ae089f01f074d",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/Insieme numerici.md.tmp.6783.f73712c2778a",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Politecnico/Analisi 1/Insieme numerici.md",
     "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.6903094fcd5e",

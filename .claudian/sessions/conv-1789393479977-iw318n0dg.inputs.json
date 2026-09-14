@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789393479977-iw318n0dg",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789393480046-vhll2k3",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789393479949-xo7s4h7",
+      "timestamp": 1789393479949,
+      "rawDisplayText": "sistema questa cosa con spiegazioni ## Numeri naturali \n$$\\mathbb{N} := \\{0,1,2,3,4,5,\\dots\\} $$\n## Numeri interi relativi \n$$\\mathbb{Z} := \\{\\dots,-2,-1,0,1,2,\\dots\\}$$\n## Numeri razionali\n$$\\mathbb{Q} := \\left\\{\\frac{m}{n} : m,n \\in \\mathbb{Z},\\ n \\neq 0\\right\\}$$\n\n\n$$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q}$$\n\n## Rappresentazione decimale \n3 tipi di allineamento decimale\n### Finito\n$$\\frac{1}{2}=0.5$$\n### Infinito periodico\n$$\\frac{1}{3}=0.\\overline{3}$$\n### infinito \n\n## Numeri reali\n$$\\mathbb{R}:= \\{ \\text{allineamnenti decimanli: finiti, infiniti periodici ed infiniti} \\}$$\n\n## Numeri irrazionali \n$$\\mathbb{R}/\\mathbb(Q)= \\text{numeri irrazionali}$$\nsottrazione insiemistica",
+      "canonicalText": "sistema questa cosa con spiegazioni ## Numeri naturali \n$$\\mathbb{N} := \\{0,1,2,3,4,5,\\dots\\} $$\n## Numeri interi relativi \n$$\\mathbb{Z} := \\{\\dots,-2,-1,0,1,2,\\dots\\}$$\n## Numeri razionali\n$$\\mathbb{Q} := \\left\\{\\frac{m}{n} : m,n \\in \\mathbb{Z},\\ n \\neq 0\\right\\}$$\n\n\n$$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q}$$\n\n## Rappresentazione decimale \n3 tipi di allineamento decimale\n### Finito\n$$\\frac{1}{2}=0.5$$\n### Infinito periodico\n$$\\frac{1}{3}=0.\\overline{3}$$\n### infinito \n\n## Numeri reali\n$$\\mathbb{R}:= \\{ \\text{allineamnenti decimanli: finiti, infiniti periodici ed infiniti} \\}$$\n\n## Numeri irrazionali \n$$\\mathbb{R}/\\mathbb(Q)= \\text{numeri irrazionali}$$\nsottrazione insiemistica",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Analisi 1/Insieme numerici.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "52c15cac9b181ba4b4abe92cbae47b6f80329a34fe4f04b5ecd8ce37c84ea4af",
+      "providerUserMessageId": "4d2e2f56-5f13-402b-be40-3ff7b090d5af",
+      "providerAssistantMessageId": "e6c2fb83-cea2-4544-803e-243db5bcce75"
+    }
+  ]
+}

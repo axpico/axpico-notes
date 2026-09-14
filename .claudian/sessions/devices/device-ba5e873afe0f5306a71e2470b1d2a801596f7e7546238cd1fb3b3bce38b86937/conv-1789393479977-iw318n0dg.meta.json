@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789393479977-iw318n0dg",
+  "providerId": "claude",
+  "title": "Organize number systems with explanations",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789393479985,
+  "lastActivityAt": 1789393503213,
+  "sessionId": "3bcacdb4-7196-4d33-bb9d-942167fb3a3a",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "3bcacdb4-7196-4d33-bb9d-942167fb3a3a"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Insieme numerici.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1765,
+    "cacheReadInputTokens": 41553,
+    "contextWindow": 1000000,
+    "contextTokens": 43320,
+    "percentage": 4,
+    "contextWindowIsAuthoritative": true
+  }
+}
