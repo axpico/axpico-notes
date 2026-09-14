@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789383689194-g2jfyw286",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789383689463-f9nrfz4",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789383689181-km0zdjg",
+      "timestamp": 1789383689181,
+      "rawDisplayText": "e corretto_ \n## Altri modi per combinare passi elemntari\n- seguenza\n- selezione\n- iterazione (o ciclo)\n### iterazione o ciclo\n un ciclo e caratterizzato da un acodnzione e da una seguenza (in relata una combinazione) di passi elemntali. quando la computazione del cuclo la valuta\n - se rislta falsa il ciclo non viene eseguito e si passa oltre\n - se vera si eseguono i passi del ciclo e poi torna  i passi del ciclo vengono eseguiti ogniqualvota la condi\\ione risulta vera",
+      "canonicalText": "e corretto_ \n## Altri modi per combinare passi elemntari\n- seguenza\n- selezione\n- iterazione (o ciclo)\n### iterazione o ciclo\n un ciclo e caratterizzato da un acodnzione e da una seguenza (in relata una combinazione) di passi elemntali. quando la computazione del cuclo la valuta\n - se rislta falsa il ciclo non viene eseguito e si passa oltre\n - se vera si eseguono i passi del ciclo e poi torna  i passi del ciclo vengono eseguiti ogniqualvota la condi\\ione risulta vera",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Fondamenti di Informatica/Algoritmo.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "19056104cf58863343d7ddf743114cdd60a69993752ef03e87e5bf83d04d2011",
+      "providerUserMessageId": "6b8a9c72-655b-4dd8-9ce4-98157677e00e",
+      "providerAssistantMessageId": "943dfd83-9dbf-493e-90fc-8c3af0655ec5"
+    }
+  ]
+}

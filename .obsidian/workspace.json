@@ -207,15 +207,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789382368466-szn5ur2",
-                      "conversationId": "conv-1789382805861-7hn1tc5zv"
-                    },
-                    {
-                      "tabId": "tab-1789383186562-6hesjea",
-                      "conversationId": "conv-1789383193725-x2eshgc71"
+                      "tabId": "tab-1789383719684-oook8ee",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1789383186562-6hesjea"
+                  "activeTabId": "tab-1789383719684-oook8ee"
                 }
               },
               "icon": "bot",
@@ -263,10 +260,10 @@
   },
   "active": "0d6b020783c59d97",
   "lastOpenFiles": [
+    "Politecnico/Fondamenti di Informatica/Algoritmo.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.17244.8fdcf2181aa5",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.11520.8aa53847042e",
     "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
-    "Politecnico/Fondamenti di Informatica/Algoritmo.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.12916.2c687b39eb5a",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.12916.fe90b5d116b1",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
@@ -280,7 +277,6 @@
     "claude_skills/claude_skills index.md.tmp.4068.d8aa2e898e78",
     "claude_skills/Skill Advanced Canvas for obsidian.md.tmp.4068.e566729378de",
     "Formulario/Elettromagnetismo/Condensatori in serie.md",
-    "Politecnico/Fondamenti di Informatica/Algorimto.md.tmp.17328.851fefa603d1",
     "Ripasso uni/matematica/Logica e Aritmetica.md",
     "Ripasso uni/matematica/Trigonometria - Riduzione angoli e identità.md",
     "Politecnico/Analisi 1/Informazioni analisi 1.md",

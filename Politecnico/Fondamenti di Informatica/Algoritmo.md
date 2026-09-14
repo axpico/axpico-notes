@@ -287,4 +287,4 @@ int main(void)
     return 0;
 }
 ```
-> Nota: nella pratica C il compilatore traduce `m / n` e `m % n` in un'unica istruzione macchina di divisione, ben più efficiente di questo ciclo; l'algoritmo per sottrazioni successive è didattico, serve a mostrare come costruire la divisione intera a partire dai soli passi elementari (confronto, sottrazione, memorizzazione) e a giustificare la necessità del costrutto di iterazione. 
+> Nota: nella pratica C il compilatore traduce `m / n` e `m % n` in un'unica istruzione macchina di divisione, ben più efficiente di questo ciclo; 
