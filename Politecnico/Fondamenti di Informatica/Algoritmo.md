@@ -220,3 +220,71 @@ while (condizione) {
 
 > Nota terminologica: questa è la forma **pre-condizionale** (`while`), in cui la condizione è valutata *prima* del corpo, quindi il corpo può essere eseguito **zero** volte. Esiste anche la forma **post-condizionale** (`do ... while` in C), in cui la condizione è valutata *dopo* il corpo: il corpo viene eseguito **almeno una volta**. Il teorema di Böhm-Jacopini richiede solo l'esistenza di una struttura iterativa; entrambe le varianti sono espressioni equivalenti dello stesso concetto di ciclo.
 
+### Esempio: quoziente e resto della divisione intera
+Esempio canonico di algoritmo che richiede l'**iterazione**: a differenza degli esempi precedenti (minimo, massimo, scambio), risolvibili con sole sequenza e selezione, qui il numero di passi da compiere dipende dal valore dei dati in ingresso e non è quindi fissabile a priori — da cui la necessità di un ciclo.
+
+#### Problema
+- **I** — due numeri naturali M e N, con $N \neq 0$ (la divisione per 0 non è definita: è una condizione di validità dell'ingresso)
+- **O** — due numeri naturali Q e R
+- **R** — Q è il quoziente della divisione intera di M per N, R è il resto di tale divisione; formalmente:
+$$M = Q \cdot N + R, \quad 0 \le R < N$$
+
+#### Idea algoritmica: divisione per sottrazioni successive
+Sfruttando solo i passi elementari già visti (confronto, sottrazione, memorizzazione — senza bisogno dell'operatore di divisione), si calcola il quoziente contando quante volte N "entra" in M:
+1. Q <-- 0
+2. R <-- M
+3. finché (R ≥ N) ripeti:
+	1. R <-- R − N
+	2. Q <-- Q + 1
+4. produci in uscita Q e R
+5. TERMINA
+
+Verifica informale di correttezza: ad ogni iterazione l'invariante $M = Q \cdot N + R$ è mantenuto (si toglie N da R e si aggiunge 1 a Q, quindi il prodotto $Q \cdot N$ aumenta di N esattamente quanto R diminuisce); il ciclo termina perché R è un naturale che diminuisce di N > 0 ad ogni passo, quindi in un numero finito di passi si ha $R < N$.
+
+#### Diagramma di flusso
+```mermaid
+flowchart TD
+    Start([INIZIO]) --> Read[/leggi M, N/]
+    Read --> InitQ[Q <-- 0]
+    InitQ --> InitR[R <-- M]
+    InitR --> Cond{R >= N ?}
+    Cond -- vero --> SubN[R <-- R - N]
+    SubN --> IncQ[Q <-- Q + 1]
+    IncQ --> Cond
+    Cond -- falso --> Write[/scrivi Q, R/]
+    Write --> End([FINE])
+```
+
+#### Implementazione in ANSI C89
+```c
+#include <stdio.h>
+
+/* R: q e' il quoziente e r il resto della divisione intera di m per n (n != 0) */
+void divisione_intera(unsigned int m, unsigned int n, unsigned int *q, unsigned int *r)
+{
+    *q = 0;
+    *r = m;
+
+    while (*r >= n) {
+        *r = *r - n;
+        *q = *q + 1;
+    }
+}
+
+int main(void)
+{
+    unsigned int m, n, q, r;
+
+    printf("Inserisci due numeri naturali (dividendo divisore, divisore != 0): ");
+    if (scanf("%u %u", &m, &n) != 2 || n == 0) {
+        return 1;
+    }
+
+    divisione_intera(m, n, &q, &r);
+
+    printf("Q = %u, R = %u\n", q, r);
+
+    return 0;
+}
+```
+> Nota: nella pratica C il compilatore traduce `m / n` e `m % n` in un'unica istruzione macchina di divisione, ben più efficiente di questo ciclo; l'algoritmo per sottrazioni successive è didattico, serve a mostrare come costruire la divisione intera a partire dai soli passi elementari (confronto, sottrazione, memorizzazione) e a giustificare la necessità del costrutto di iterazione. 

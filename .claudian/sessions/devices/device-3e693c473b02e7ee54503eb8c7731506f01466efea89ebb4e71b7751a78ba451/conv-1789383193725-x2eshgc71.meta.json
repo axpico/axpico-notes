@@ -4,7 +4,7 @@
   "title": "Add loop iteration flowchart",
   "titleGenerationStatus": "success",
   "createdAt": 1789383193739,
-  "lastActivityAt": 1789383235448,
+  "lastActivityAt": 1789383521401,
   "sessionId": "6e0d1d6c-185d-4552-95ca-d7534af401f4",
   "selectedModel": "sonnet",
   "providerState": {
@@ -14,11 +14,11 @@
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,
-    "cacheCreationInputTokens": 1596,
-    "cacheReadInputTokens": 40780,
+    "cacheCreationInputTokens": 331,
+    "cacheReadInputTokens": 51339,
     "contextWindow": 967000,
-    "contextTokens": 42378,
-    "percentage": 4,
+    "contextTokens": 51672,
+    "percentage": 5,
     "contextWindowIsAuthoritative": true
   }
 }

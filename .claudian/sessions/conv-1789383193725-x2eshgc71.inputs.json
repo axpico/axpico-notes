@@ -20,6 +20,20 @@
       "contentDigest": "1c8b1d241dd7f0e0c0d35fbf61ba4fdee49adea9e599a959decfe8d16b081598",
       "providerUserMessageId": "175e3b78-29b7-48c6-ab7f-89cc5a1313f5",
       "providerAssistantMessageId": "af58ec13-25f4-47e3-895e-3f86e7119b9f"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789383472208-tg51f3y",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789383472193-c6gojke",
+      "timestamp": 1789383472193,
+      "rawDisplayText": "aggiungi un pezzo sul progema \ni dati i ngresso due numeri naturali M e N diversi da 0\n0 risultati in uscit adue numeri naturali Q e R\nRrelazione q e il quzione della divisione intera tra m e n, r e il resto di tale divisione intera",
+      "canonicalText": "aggiungi un pezzo sul progema \ni dati i ngresso due numeri naturali M e N diversi da 0\n0 risultati in uscit adue numeri naturali Q e R\nRrelazione q e il quzione della divisione intera tra m e n, r e il resto di tale divisione intera",
+      "images": [],
+      "contentDigest": "594a5c59acc5be31a3296d285ba7697d1bd139a2d6bf8f697a2aec7b359b8b26",
+      "providerUserMessageId": "d01234e8-8a65-4171-bb9e-30e26c28a8b0",
+      "providerAssistantMessageId": "38a58b45-b07a-48f0-b578-7542bf3a1917"
     }
   ]
 }
