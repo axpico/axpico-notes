@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789396857195-3ribpwpmx",
+  "providerId": "claude",
+  "title": "Organize mathematical proofs notes",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789396857208,
+  "lastActivityAt": 1789396923173,
+  "sessionId": "cdd29709-e7ee-4cd7-b871-eea71ba2a95a",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "cdd29709-e7ee-4cd7-b871-eea71ba2a95a"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 6460,
+    "cacheReadInputTokens": 47892,
+    "contextWindow": 1000000,
+    "contextTokens": 54354,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}

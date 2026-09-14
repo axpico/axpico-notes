@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789396721862-25g9aey88",
+  "providerId": "claude",
+  "title": "Add content in the right place",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789396721866,
+  "lastActivityAt": 1789396763923,
+  "sessionId": "a9f74a1a-fe1a-46a7-a47f-f1f60354446f",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "a9f74a1a-fe1a-46a7-a47f-f1f60354446f"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1086,
+    "cacheReadInputTokens": 47274,
+    "contextWindow": 1000000,
+    "contextTokens": 48362,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}

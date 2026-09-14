@@ -37,6 +37,18 @@ $\mathbb{R}$ raccoglie tutti e tre i tipi di sviluppo decimale, quindi $\mathbb{
 $$\mathbb{R} \setminus \mathbb{Q} = \text{numeri irrazionali}$$
 Sono i reali che **non** si possono scrivere come rapporto di due interi, cioè quelli con sviluppo decimale infinito non periodico (es. $\sqrt{2}$, $\pi$, $e$). L'operazione $\setminus$ è la **differenza insiemistica**: $A \setminus B = \{x \in A : x \notin B\}$, cioè gli elementi di $A$ che non appartengono a $B$.
 
+## Radici
+L'estrazione di radice è l'operazione inversa dell'elevamento a potenza.
+
+**Definizione.** Dato $a \ge 0$, si dice che $b \ge 0$ è la radice quadrata di $a$, e si scrive $b = \sqrt{a}$, se $b^2 = a$.
+
+Esempio: $a = 25 \Rightarrow b = 5$, poiché $5^2 = 25$, quindi $\sqrt{25} = 5$.
+
+**Teorema.** $\sqrt{2} \notin \mathbb{Q}$, cioè $\sqrt{2} \in \mathbb{R} \setminus \mathbb{Q}$: $\sqrt{2}$ è irrazionale.
+
+## Rappresentazione geometrica di $\mathbb{R}$
+$\mathbb{R}$ si rappresenta geometricamente come una **retta orientata** (retta reale): fissati un'origine ($0$) e un'unità di misura, ogni numero reale corrisponde a uno e un solo punto della retta, e viceversa (corrispondenza biunivoca punti-numeri). I razionali sono densi sulla retta ma non la riempiono: gli irrazionali, come $\sqrt{2}$, occupano i "punti mancanti". Geometricamente $\sqrt{2}$ si costruisce come ipotenusa di un triangolo rettangolo isoscele di cateti unitari ($1^2+1^2=2$ per il teorema di Pitagora) e si riporta sulla retta reale con un compasso, cadendo tra $1$ e $2$.
+
 ## Richiami di logica
 Una **proposizione** (o affermazione) è un enunciato a cui si può assegnare univocamente un valore di verità: vero (V) o falso (F). Indicando con $P$ e $Q$ due proposizioni, i **connettivi logici** permettono di combinarle in proposizioni composte.
 
@@ -63,26 +75,29 @@ La **contronominale** di $P \Rightarrow Q$ è $\overline{Q} \Rightarrow \overlin
 Esempio (stesso $P,Q$ di sopra): $\overline{P}: x \le 5$ e $\overline{Q}: x \le 3$. La contronominale $\overline{Q} \Rightarrow \overline{P}$ afferma "se $x \le 3$ allora $x \le 5$", vera — coerentemente con il fatto che $P \Rightarrow Q$ era vera.
 
 ## Dimostrazioni
-Ipotesi -> antecedente
-tesi -> consegunte
-utilizzo di implicazione logiche per arrivare a testi 
-$$\text{Ipotesi} => \text{Tesi}$$
-la dimostrazione prova questa implicazione 
+Un **teorema** è un enunciato del tipo Ipotesi $\Rightarrow$ Tesi, dove l'**ipotesi** è l'antecedente (ciò che si assume vero) e la **tesi** è il conseguente (ciò che si vuole provare):
+$$\text{Ipotesi} \Rightarrow \text{Tesi}$$
+**Dimostrare** il teorema significa provare che questa implicazione è vera, tipicamente concatenando una catena di implicazioni logiche vere già note (definizioni, assiomi, teoremi precedenti):
+$$\text{Ipotesi} \Rightarrow \dots \Rightarrow \text{Tesi}$$
 
-> Lemmi = ausili del teoremi
-> Proposizioni = teorema di medio importaanza
-> Corollari = conseguenza teorema
+> [!info] Terminologia
+> - **Lemma** = risultato ausiliario, usato come "mattone" nella dimostrazione di un teorema più importante.
+> - **Proposizione** = teorema di importanza secondaria (minore rispetto a un teorema "principale").
+> - **Corollario** = conseguenza immediata di un teorema, che segue con poco lavoro aggiuntivo.
 
-3 tipi di dimostrazione 
-### Diretta
-#### Esempio {\*\*}
-$$n \in \mathbb{Z} \text{ si dice pari se } \exists \text{ h } \in \mathbb{Z}: n =2h$$
-$$n \in \mathbb{Z} \text{ si dice dispari se } \exists \text{ h } \in \mathbb{Z}: n =2h+1$$
-$0$ pari per questa definizione 
-se $n = 6$ allora $6=2h$ quindi risolvendo $h = \frac{6}{2} = 3$ quindi $6$ è pari
-se $n = 9$ allora $9=2h+1$ quindi risolvendo $h = \frac{9-1}{2} = 4$ quindi $9$ è dispari
+Esistono tre schemi dimostrativi principali: la dimostrazione **diretta**, quella **indiretta** (per assurdo o per contrapposizione) e la dimostrazione **per induzione**.
 
-#### Esempio
+### Dimostrazione diretta
+Si parte dall'ipotesi, la si sostituisce/manipola algebricamente, e si arriva alla tesi senza mai negare le proposizioni in gioco: Ipotesi $\Rightarrow \dots \Rightarrow$ Tesi, senza passare per il "falso".
+
+#### Esempio: definizione di pari e dispari
+$$n \in \mathbb{Z} \text{ si dice \textbf{pari} se } \exists\, h \in \mathbb{Z}: n =2h$$
+$$n \in \mathbb{Z} \text{ si dice \textbf{dispari} se } \exists\, h \in \mathbb{Z}: n =2h+1$$
+$0$ è pari per questa definizione ($h=0$).
+- se $n = 6$: $6=2h \Rightarrow h = \frac{6}{2} = 3 \in \mathbb{Z}$, quindi $6$ è pari.
+- se $n = 9$: $9=2h+1 \Rightarrow h = \frac{9-1}{2} = 4 \in \mathbb{Z}$, quindi $9$ è dispari.
+
+#### Proposizione: parità di $n^2$
 **(i)** $n$ pari $\Rightarrow n^2$ pari.
 
 Per ipotesi $n$ è pari, quindi per definizione $\exists h \in \mathbb{Z} : n = 2h$. Sostituendo nella tesi:
@@ -95,23 +110,52 @@ Per ipotesi $n$ è dispari, quindi per definizione $\exists h \in \mathbb{Z} : n
 $$n^2 = (2h+1)^2 = 4h^2+4h+1 = 2\underbrace{(2h^2+2h)}_{=:k \in \mathbb{Z}}+1 = 2k+1$$
 Si è quindi trovato $k \in \mathbb{Z}$ tale che $n^2 = 2k+1$: per definizione, $n^2$ è dispari.
 
-In entrambi i casi si è partiti dall'ipotesi (definizione di pari/dispari), si è sostituita nell'espressione della tesi ($n^2$) e si è manipolata algebricamente fino a raccogliere un fattore $2$: questo è lo schema tipico della **dimostrazione diretta**, in cui si concatenano implicazioni logiche vere (Ipotesi $\Rightarrow \dots \Rightarrow$ Tesi) senza mai negare le proposizioni in gioco, a differenza delle dimostrazioni indirette (per assurdo o per contrapposizione). 
-### Indiretta
-#### Assurdo
-#### Contrapposizione
-### Proposizione 
-se n e pari $=>$ $n^2$ e pari
-se n e dispari $=>$ $n^2$ e dispari
-### Induzione N 
-solo numerrare oggetti 
+In entrambi i casi si è partiti dall'ipotesi (definizione di pari/dispari), la si è sostituita nell'espressione della tesi ($n^2$) e la si è manipolata algebricamente fino a raccogliere un fattore $2$: questo è lo schema tipico della dimostrazione diretta. Questa proposizione ($n$ pari $\Leftrightarrow n^2$ pari) verrà riutilizzata più sotto come "lemma" nella dimostrazione per assurdo dell'irrazionalità di $\sqrt2$.
 
-### Dimostrazione conttraddizionale
-P: e dispari 
-Q: n^2 e dispari
-$P => Q$
-$\overline{P}$ : n e pari
-$\overline{Q}:  n^2$  e pari
-$\overline{Q} \Rightarrow \overline{P}$ per controposizione
+### Dimostrazione indiretta
+Anziché dimostrare direttamente Ipotesi $\Rightarrow$ Tesi, si dimostra una proposizione logicamente equivalente, più semplice da trattare.
+
+#### Per assurdo
+Si suppone vera l'ipotesi e **falsa la tesi** (se ne assume la negazione), e si deduce logicamente una contraddizione (un assurdo). Poiché l'ipotesi è vera per assunzione, la contraddizione può derivare solo dall'aver negato la tesi: la tesi deve quindi essere vera.
+
+##### Esempio: $\sqrt{2}$ è irrazionale
+**Teorema.** $\sqrt{2} \in \mathbb{R} \setminus \mathbb{Q}$ (cioè $\sqrt{2} \notin \mathbb{Q}$).
+
+**Dimostrazione (per assurdo).** Neghiamo la tesi e affermiamo che $\sqrt{2} \in \mathbb{Q}$: allora $\exists\, m,n \in \mathbb{Z}$ tali che $\sqrt{2} = \frac{m}{n}$, con $m,n$ **primi tra loro** (frazione ridotta ai minimi termini — sempre possibile per la generalità della rappresentazione frazionaria).
+
+Elevando al quadrato:
+$$2 = \frac{m^2}{n^2} \quad \Rightarrow \quad m^2 = 2n^2$$
+
+Quindi $m^2$ è pari; per la proposizione precedente ($n$ pari $\Leftrightarrow$ $n^2$ pari), anche $m$ è pari: $\exists\, k \in \mathbb{Z} : m = 2k$.
+
+Sostituendo:
+$$2n^2 = m^2 = (2k)^2 = 4k^2 \quad \Rightarrow \quad n^2 = 2k^2$$
+
+quindi anche $n^2$ è pari, e dunque $n$ è pari.
+
+Ma allora $m$ e $n$ sono entrambi pari, cioè ammettono $2$ come divisore comune: **assurdo**, poiché per ipotesi $m$ e $n$ erano primi tra loro (nessun divisore comune eccetto $1$). L'assurdo nasce dall'aver negato la tesi, quindi la tesi è vera: $\sqrt{2} \notin \mathbb{Q}$. $\blacksquare$
+
+#### Per contrapposizione
+Si dimostra la **contronominale** $\overline{Q} \Rightarrow \overline{P}$ al posto di $P \Rightarrow Q$: essendo le due logicamente equivalenti (vedi sopra), provare l'una prova anche l'altra. A differenza della dimostrazione per assurdo, qui non si cerca una contraddizione: si costruisce una normale dimostrazione diretta, ma sull'implicazione negata e invertita.
+
+##### Esempio: $n$ dispari $\Rightarrow n^2$ dispari, per contrapposizione
+Poniamo:
+- $P$: "$n$ è dispari"
+- $Q$: "$n^2$ è dispari"
+
+vogliamo $P \Rightarrow Q$. Le negazioni sono:
+- $\overline{P}$: "$n$ è pari"
+- $\overline{Q}$: "$n^2$ è pari"
+
+Per contrapposizione basta dimostrare $\overline{Q} \Rightarrow \overline{P}$, cioè "$n^2$ pari $\Rightarrow n$ pari" — equivalente alla proposizione già dimostrata sopra per via diretta. Dato che $\overline{Q} \Rightarrow \overline{P}$ è vera, per la regola della contronominale anche $P \Rightarrow Q$ è vera: $n$ dispari $\Rightarrow n^2$ dispari. $\blacksquare$
+
+### Dimostrazione per induzione
+Si usa quando la tesi va provata per **tutti** i numeri naturali $n$ (o per tutti gli $n \ge n_0$), cioè per un'affermazione $P(n)$ che dipende da $n \in \mathbb{N}$. Si basa sul **principio di induzione**, che riduce una verifica su infiniti casi a due soli passi:
+
+1. **Passo base**: si verifica che $P(n_0)$ è vera (tipicamente $n_0 = 0$ o $n_0=1$).
+2. **Passo induttivo**: si assume vera $P(n)$ per un generico $n \ge n_0$ (**ipotesi induttiva**) e si dimostra che allora è vera anche $P(n+1)$.
+
+Se entrambi i passi valgono, il principio di induzione garantisce che $P(n)$ è vera per ogni $n \ge n_0$: il passo base "accende" il primo caso, e il passo induttivo lo propaga da un naturale al successivo, come tessere di un domino che cadono in sequenza.
 
 
 

@@ -4,33 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c26b1adfb2a7aa9d",
+        "id": "3dff30f7cdeaa931",
         "type": "tabs",
         "children": [
           {
-            "id": "0d6b020783c59d97",
+            "id": "7bf9ee132c903405",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-09 13.50.54.excalidraw"
-            }
-          },
-          {
-            "id": "130ae089f01f074d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Insieme numerici, logia e dimostrazioni"
+              "title": "New tab"
             }
           }
         ]
@@ -219,23 +203,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789393702221-37e5i0u",
-                      "conversationId": "conv-1789394400554-3cw33zpiz"
-                    },
-                    {
-                      "tabId": "tab-1789395188734-a5ohima",
-                      "conversationId": "conv-1789395190537-nlysf9f93"
-                    },
-                    {
-                      "tabId": "tab-1789395929497-x822zgv",
-                      "conversationId": "conv-1789395931242-sgjkdedv5"
-                    },
-                    {
-                      "tabId": "tab-1789396217104-ndd95jb",
-                      "conversationId": "conv-1789396221770-0a0c5lnn9"
+                      "tabId": "tab-1789396951571-lhifb6n",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1789396217104-ndd95jb"
+                  "activeTabId": "tab-1789396951571-lhifb6n"
                 }
               },
               "icon": "bot",
@@ -247,15 +220,13 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md"
-              },
+              "state": {},
               "icon": "lucide-info",
               "title": "File properties"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -282,10 +253,13 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "0d6b020783c59d97",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
+    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.30191.be23e59ca09a",
+    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.29066.a937e44969a8",
+    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.29066.15c6c2bec6bc",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.25625.ee695f08936a",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.23852.45a0a487948d",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.18976.8ed3dfec5d61",
@@ -293,10 +267,7 @@
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.15461.a4f75701fc1c",
     "Politecnico/Analisi 1/Insieme numerici.md.tmp.6783.f73712c2778a",
     "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.6903094fcd5e",
-    "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.9d56e62b30ff",
-    "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.64597b4654f4",
     "Politecnico/Analisi 1/Informazioni analisi 1.md",
-    "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.67e477aaafa4",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md",
     "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
