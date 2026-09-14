@@ -20,7 +20,7 @@
             }
           },
           {
-            "id": "d97577b1753b4d8a",
+            "id": "130ae089f01f074d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -221,8 +221,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1789383719684-oook8ee",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
+                      "conversationId": "conv-1789393042208-seen3czfy"
                     }
                   ],
                   "activeTabId": "tab-1789383719684-oook8ee"
@@ -237,9 +236,11 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {},
+              "state": {
+                "file": "Politecnico/Analisi 1/Insieme numerici.md"
+              },
               "icon": "lucide-info",
-              "title": "Proprietà file"
+              "title": "File properties"
             }
           }
         ],
@@ -270,10 +271,15 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "d97577b1753b4d8a",
+  "active": "130ae089f01f074d",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Politecnico/Analisi 1/Insieme numerici.md",
+    "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.6903094fcd5e",
+    "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.9d56e62b30ff",
+    "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.64597b4654f4",
+    "Politecnico/Analisi 1/Informazioni analisi 1.md",
+    "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.67e477aaafa4",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.17244.8fdcf2181aa5",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.11520.8aa53847042e",
@@ -283,17 +289,12 @@
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.9120.454c58d22474",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso",
-    "Politecnico/Fondamenti di Informatica/Diagramma di flusso - minimo.canvas.tmp.4068.3b17cef23db3",
-    "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.4068.6cc805bd3c8f",
     "claude_skills/claude_skills index.md",
     "claude_skills/Skill Advanced Canvas for obsidian.md",
     "claude_skills/Senza nome.md",
-    "claude_skills/claude_skills index.md.tmp.4068.d8aa2e898e78",
-    "claude_skills/Skill Advanced Canvas for obsidian.md.tmp.4068.e566729378de",
     "Formulario/Elettromagnetismo/Condensatori in serie.md",
     "Ripasso uni/matematica/Logica e Aritmetica.md",
     "Ripasso uni/matematica/Trigonometria - Riduzione angoli e identità.md",
-    "Politecnico/Analisi 1/Informazioni analisi 1.md",
     "Politecnico/Geometria e Algebra Lineare/Informazioni geometria e algebra lineare.md",
     "Ripasso uni/fisica/Elettromagnetismo.md",
     "Ripasso uni/matematica/Algebra - Polinomi ed Equazioni.md",
@@ -308,7 +309,6 @@
     "Formulario/Elettromagnetismo/Campo Magnetico di un Filo Rettilineo.md",
     "Formulario/Elettromagnetismo/Legge di Biot-Savart.md",
     "Ripasso uni/fisica/Elettronica.md",
-    "Ripasso uni/matematica/Funzioni 2 - Esponenziali e logaritmi.md",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",

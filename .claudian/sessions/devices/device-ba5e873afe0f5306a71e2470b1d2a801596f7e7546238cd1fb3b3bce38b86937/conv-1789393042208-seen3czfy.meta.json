@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789393042208-seen3czfy",
+  "providerId": "claude",
+  "title": "Fix unspecified code",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789393042212,
+  "lastActivityAt": 1789393294694,
+  "sessionId": "f440ff2e-0a33-46db-87df-1a2fde35bd8c",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "f440ff2e-0a33-46db-87df-1a2fde35bd8c"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Insieme numerici.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 341,
+    "cacheReadInputTokens": 46370,
+    "contextWindow": 1000000,
+    "contextTokens": 46713,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}
