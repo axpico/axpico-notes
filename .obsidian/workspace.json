@@ -230,9 +230,13 @@
                     {
                       "tabId": "tab-1789395929497-x822zgv",
                       "conversationId": "conv-1789395931242-sgjkdedv5"
+                    },
+                    {
+                      "tabId": "tab-1789396217104-ndd95jb",
+                      "conversationId": "conv-1789396221770-0a0c5lnn9"
                     }
                   ],
-                  "activeTabId": "tab-1789395929497-x822zgv"
+                  "activeTabId": "tab-1789396217104-ndd95jb"
                 }
               },
               "icon": "bot",
@@ -283,6 +287,7 @@
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
+    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.25625.ee695f08936a",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.23852.45a0a487948d",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.18976.8ed3dfec5d61",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.18976.678552ed4fd3",
@@ -294,7 +299,6 @@
     "Politecnico/Analisi 1/Informazioni analisi 1.md",
     "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.67e477aaafa4",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md",
-    "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.17244.8fdcf2181aa5",
     "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "claude_skills/claude_skills index.md",

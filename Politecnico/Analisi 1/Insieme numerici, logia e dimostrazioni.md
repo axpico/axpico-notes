@@ -81,11 +81,28 @@ $$n \in \mathbb{Z} \text{ si dice dispari se } \exists \text{ h } \in \mathbb{Z}
 $0$ pari per questa definizione 
 se $n = 6$ allora $6=2h$ quindi risolvendo $h = \frac{6}{2} = 3$ quindi $6$ è pari
 se $n = 9$ allora $9=2h+1$ quindi risolvendo $h = \frac{9-1}{2} = 4$ quindi $9$ è dispari
+
+#### Esempio
+**(i)** $n$ pari $\Rightarrow n^2$ pari.
+
+Per ipotesi $n$ è pari, quindi per definizione $\exists h \in \mathbb{Z} : n = 2h$. Sostituendo nella tesi:
+$$n^2 = (2h)^2 = 4h^2 = 2\underbrace{(2h^2)}_{=:k \in \mathbb{Z}}$$
+Si è quindi trovato $k \in \mathbb{Z}$ tale che $n^2 = 2k$: per definizione, $n^2$ è pari.
+
+**(ii)** $n$ dispari $\Rightarrow n^2$ dispari.
+
+Per ipotesi $n$ è dispari, quindi per definizione $\exists h \in \mathbb{Z} : n = 2h+1$. Sostituendo nella tesi:
+$$n^2 = (2h+1)^2 = 4h^2+4h+1 = 2\underbrace{(2h^2+2h)}_{=:k \in \mathbb{Z}}+1 = 2k+1$$
+Si è quindi trovato $k \in \mathbb{Z}$ tale che $n^2 = 2k+1$: per definizione, $n^2$ è dispari.
+
+In entrambi i casi si è partiti dall'ipotesi (definizione di pari/dispari), si è sostituita nell'espressione della tesi ($n^2$) e si è manipolata algebricamente fino a raccogliere un fattore $2$: questo è lo schema tipico della **dimostrazione diretta**, in cui si concatenano implicazioni logiche vere (Ipotesi $\Rightarrow \dots \Rightarrow$ Tesi) senza mai negare le proposizioni in gioco, a differenza delle dimostrazioni indirette (per assurdo o per contrapposizione). 
 ### Indiretta
 #### Assurdo
-##### Esempio
 #### Contrapposizione
+### Proposizione 
+se n e pari $=>$ $n^2$ e pari
+se n e dispari $=>$ $n^2$ e dispari
 ### Induzione N 
 solo numerrare oggetti 
-### Proposizione 
-$$\text{se n e pari} => n^2 e pari $$
+
+## 
