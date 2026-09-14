@@ -74,7 +74,7 @@ la dimostrazione prova questa implicazione
 $$n \in \mathbb{Z} \text{ si dice pari se } \exists \text{ h } \in \mathbb{Z}: n =2h$$
 $$n \in \mathbb{Z} \text{ si dice dispari se } \exists \text{ h } \in \mathbb{Z}: n =2h+1$$
 $0$ pari per questa definizione 
-n = 6 
+se $n = 6$ allora $6=2h$ quindi risolvendo $$ 
 ### Indiretta
 #### Assurdo
 ##### Esempio
