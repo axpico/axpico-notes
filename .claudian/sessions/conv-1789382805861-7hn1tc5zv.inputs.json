@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789382805861-7hn1tc5zv",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789382806054-aj5ska1",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789382805854-fzcw6k9",
+      "timestamp": 1789382805854,
+      "rawDisplayText": "sistema e aggiungi esecutore, codice, e snippete di codice con xor e 2 variabili",
+      "canonicalText": "sistema e aggiungi esecutore, codice, e snippete di codice con xor e 2 variabili",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Fondamenti di Informatica/Algoritmo.md"
+        },
+        "editorSelection": {
+          "notePath": "Politecnico/Fondamenti di Informatica/Algoritmo.md",
+          "mode": "selection",
+          "selectedText": "## Scambio tra due contenitori \n### Problema\nI: due vontenitori M e N, ciascuno con un valore memorizzato\nO: gli stessi due contenitori Me N, ciascuno con un valore memorizzato\nR: i valori dei dua dati e dei due risultati sono gli stessi, ma tali valori sono memorizzzati ciascuno nel contenitore in cui era inizzalmente memorizzati l'altro \n\n",
+          "lineCount": 7,
+          "startLine": 134
+        }
+      },
+      "images": [],
+      "contentDigest": "14cec8fdb75ddba99de22d1dc84f6f5870df5160f148a3ed7c63ede28cab944d",
+      "providerUserMessageId": "df190ac9-0a1e-418b-ae52-c455cb58d28d",
+      "providerAssistantMessageId": "42c30d81-6940-4102-8768-47f0e7fdc0e0"
+    }
+  ]
+}

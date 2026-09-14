@@ -208,8 +208,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1789382368466-szn5ur2",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
+                      "conversationId": "conv-1789382805861-7hn1tc5zv"
                     }
                   ],
                   "activeTabId": "tab-1789382368466-szn5ur2"
@@ -230,7 +229,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -260,6 +259,7 @@
   },
   "active": "0d6b020783c59d97",
   "lastOpenFiles": [
+    "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.11520.8aa53847042e",
     "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.12916.2c687b39eb5a",

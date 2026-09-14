@@ -131,7 +131,55 @@ In ANSI C89:
 A = A + B;
 ```
 
-## Scambio tra due contenitori 
+## Scambio tra due contenitori
 ### Problema
-I: due vontenitori M e N, ciascuno con un valore memorizzato
-O> gli stessi due contenitori M
+I: due contenitori M e N, ciascuno con un valore memorizzato
+O: gli stessi due contenitori M e N, ciascuno con un valore memorizzato
+R: i valori dei due dati e dei due risultati sono gli stessi, ma tali valori sono memorizzati ciascuno nel contenitore in cui era inizialmente memorizzato l'altro (scambio)
+
+### Esecutore
+Insieme di passi elementari richiesto: lettura/scrittura di un contenitore e operazione **XOR bit a bit** (`^`) tra i valori di due contenitori (oltre alle operazioni elementari già viste).
+
+### Codice
+Scambio "classico" con contenitore ausiliario T:
+1. T <-- M
+2. M <-- N
+3. N <-- T
+4. TERMINA
+
+Scambio **senza variabile ausiliaria**, sfruttando le proprietà dello XOR ($a \oplus a = 0$, $a \oplus 0 = a$, associativa e commutativa) — usa solo i due contenitori M e N:
+1. M <-- M XOR N
+2. N <-- M XOR N
+3. M <-- M XOR N
+4. TERMINA
+
+#### Implementazione in ANSI C89
+```c
+#include <stdio.h>
+
+/* R: scambia i valori di *m e *n usando solo le due variabili (XOR swap) */
+void scambia(unsigned int *m, unsigned int *n)
+{
+    *m = *m ^ *n;
+    *n = *m ^ *n;
+    *m = *m ^ *n;
+}
+
+int main(void)
+{
+    unsigned int m, n;
+
+    printf("Inserisci due numeri naturali: ");
+    if (scanf("%u %u", &m, &n) != 2) {
+        return 1;
+    }
+
+    scambia(&m, &n);
+
+    printf("m = %u, n = %u\n", m, n);
+
+    return 0;
+}
+```
+> Attenzione: lo XOR swap fallisce se M e N sono lo **stesso** contenitore (`scambia(&x, &x)` azzera il valore) — in pratica si preferisce comunque la variabile ausiliaria per chiarezza e sicurezza; lo XOR swap è soprattutto un esercizio sulle proprietà dell'operatore.
+

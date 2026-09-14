@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789382805861-7hn1tc5zv",
+  "providerId": "claude",
+  "title": "XOR code snippets with two variables",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789382805872,
+  "lastActivityAt": 1789382840542,
+  "sessionId": "7cb31eb2-5e94-4471-894f-6305c4418b73",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "7cb31eb2-5e94-4471-894f-6305c4418b73"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Algoritmo.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1267,
+    "cacheReadInputTokens": 40414,
+    "contextWindow": 967000,
+    "contextTokens": 41683,
+    "percentage": 4,
+    "contextWindowIsAuthoritative": true
+  }
+}
