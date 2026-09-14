@@ -82,13 +82,13 @@ I passi elementari possono essere combinati in diversi modi: in **sequenza** (li
 Un diagramma di flusso (*flowchart*) è una rappresentazione grafica di un algoritmo: i passi elementari e i punti di decisione sono raffigurati con simboli standardizzati, collegati da frecce (edge) che ne indicano il flusso di controllo.
 
 ### Simboli fondamentali
-| Simbolo | Forma | Significato |
-| --- | --- | --- |
-| **Terminatore** | pillola/ellisse | punto di INIZIO o FINE dell'algoritmo |
-| **Elaborazione (processo)** | rettangolo | un'operazione elementare (es. assegnazione, calcolo) |
-| **Decisione** | rombo | test logico con due uscite (vero/falso) |
-| **Input/Output** | parallelogramma | acquisizione (lettura) o produzione (scrittura) di dati |
-| **Freccia (edge)** | linea orientata | indica il flusso di controllo tra un passo e il successivo |
+| Simbolo                     | Forma           | Significato                                                |
+| --------------------------- | --------------- | ---------------------------------------------------------- |
+| **Terminatore**             | pillola/ellisse | punto di INIZIO o FINE dell'algoritmo                      |
+| **Elaborazione (processo)** | rettangolo      | un'operazione elementare (es. assegnazione, calcolo)       |
+| **Decisione**               | rombo           | test logico con due uscite (vero/falso)                    |
+| **Input/Output**            | parallelogramma | acquisizione (lettura) o produzione (scrittura) di dati    |
+| **Freccia (edge)**          | linea orientata | indica il flusso di controllo tra un passo e il successivo |
 
 ### Regole di costruzione
 - Ogni diagramma ha un solo punto di INIZIO e almeno un punto di FINE.
@@ -288,3 +288,11 @@ int main(void)
 }
 ```
 > Nota: nella pratica C il compilatore traduce `m / n` e `m % n` in un'unica istruzione macchina di divisione, ben più efficiente di questo ciclo; 
+
+
+
+trovare algoritmo intero in base B
+
+esecuture addizione sottrazione divisione  e moltiplicazione 
+-!=/ 
+sotto 1 != 0 
