@@ -105,4 +105,13 @@ se n e dispari $=>$ $n^2$ e dispari
 ### Induzione N 
 solo numerrare oggetti 
 
-## 
+### Dimostrazione conttraddizionale
+P: e dispari 
+Q: n^2 e dispari
+$P => Q$
+$\overline{P}$ : n e pari
+$\overline{Q}:  n^2$  e pari
+$\overline{Q} \Rightarrow \overline{P}$ per controposizione
+
+
+
