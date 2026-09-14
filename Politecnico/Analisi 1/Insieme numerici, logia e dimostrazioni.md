@@ -70,8 +70,16 @@ $$\text{Ipotesi} => \text{Tesi}$$
 la dimostrazione prova questa implicazione 
 3 tipi di dimostrazione 
 ### Diretta
+#### Esempio {\*\*}
+$$n \in \mathbb{Z} \text{ si dice pari se } E \text{ h } \in \$$
+
 ### Indiretta
 #### Assurdo
+##### Esempio
 #### Contrapposizione
 ### Induzione N 
 solo numerrare oggetti 
+
+> Lemmi = ausili del teoremi
+> Proposizioni = teorema di medio importaanza
+> Corollari = conseguenza teorema
