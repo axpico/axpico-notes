@@ -11,17 +11,30 @@
             "id": "0d6b020783c59d97",
             "type": "leaf",
             "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-09-09 13.50.54.excalidraw"
+            }
+          },
+          {
+            "id": "d97577b1753b4d8a",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Politecnico/Fondamenti di Informatica/Algoritmo.md",
+                "file": "Politecnico/Analisi 1/Insieme numerici.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Algoritmo"
+              "title": "Insieme numerici"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -46,7 +59,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora file"
+              "title": "Files"
             }
           },
           {
@@ -234,19 +247,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5
+    "width": 398.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Apri selettore rapido": false,
-      "graph:Apri vista grafo": false,
-      "canvas:Crea nuova lavagna": false,
-      "daily-notes:Apri nota giornaliera": false,
-      "templates:Inserisci modello": false,
-      "command-palette:Apri riquadro comandi": false,
-      "markdown-importer:Apri importazione Markdown": false,
-      "audio-recorder:Avvia/ferma registrazione": false,
-      "bases:Crea nuova Base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "audio-recorder:Start/stop recording": false,
+      "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "omnisearch:Omnisearch": false,
       "templater-obsidian:Templater": false,
@@ -257,8 +271,10 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "d97577b1753b4d8a",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
+    "Politecnico/Analisi 1/Insieme numerici.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.17244.8fdcf2181aa5",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.11520.8aa53847042e",
@@ -279,7 +295,6 @@
     "Ripasso uni/matematica/Logica e Aritmetica.md",
     "Ripasso uni/matematica/Trigonometria - Riduzione angoli e identità.md",
     "Politecnico/Analisi 1/Informazioni analisi 1.md",
-    "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Informazioni geometria e algebra lineare.md",
     "Ripasso uni/fisica/Elettromagnetismo.md",
     "Ripasso uni/matematica/Algebra - Polinomi ed Equazioni.md",
