@@ -71,8 +71,10 @@ la dimostrazione prova questa implicazione
 3 tipi di dimostrazione 
 ### Diretta
 #### Esempio {\*\*}
-$$n \in \mathbb{Z} \text{ si dice pari se } E \text{ h } \in \$$
-
+$$n \in \mathbb{Z} \text{ si dice pari se } \exists \text{ h } \in \mathbb{Z}: n =2h$$
+$$n \in \mathbb{Z} \text{ si dice dispari se } \exists \text{ h } \in \mathbb{Z}: n =2h+1$$
+$0$ pari per questa definizione 
+n = 6 
 ### Indiretta
 #### Assurdo
 ##### Esempio

@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789395190537-nlysf9f93",
+  "providerId": "claude",
+  "title": "Mathematical definition of even integers",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789395190542,
+  "lastActivityAt": 1789395267076,
+  "sessionId": "0cdaa9bc-5a3d-4b3b-b971-871f5cd3e39a",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "0cdaa9bc-5a3d-4b3b-b971-871f5cd3e39a"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 548,
+    "cacheReadInputTokens": 48254,
+    "contextWindow": 1000000,
+    "contextTokens": 48804,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}
