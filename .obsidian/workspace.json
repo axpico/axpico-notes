@@ -209,9 +209,13 @@
                     {
                       "tabId": "tab-1789382368466-szn5ur2",
                       "conversationId": "conv-1789382805861-7hn1tc5zv"
+                    },
+                    {
+                      "tabId": "tab-1789383186562-6hesjea",
+                      "conversationId": "conv-1789383193725-x2eshgc71"
                     }
                   ],
-                  "activeTabId": "tab-1789382368466-szn5ur2"
+                  "activeTabId": "tab-1789383186562-6hesjea"
                 }
               },
               "icon": "bot",
@@ -259,6 +263,7 @@
   },
   "active": "0d6b020783c59d97",
   "lastOpenFiles": [
+    "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.17244.8fdcf2181aa5",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.11520.8aa53847042e",
     "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md",
@@ -278,7 +283,6 @@
     "Politecnico/Fondamenti di Informatica/Algorimto.md.tmp.17328.851fefa603d1",
     "Ripasso uni/matematica/Logica e Aritmetica.md",
     "Ripasso uni/matematica/Trigonometria - Riduzione angoli e identità.md",
-    "Politecnico/Fondamenti di Informatica/Algorimto.md.tmp.12020.70b8cac91f9f",
     "Politecnico/Analisi 1/Informazioni analisi 1.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Informazioni geometria e algebra lineare.md",

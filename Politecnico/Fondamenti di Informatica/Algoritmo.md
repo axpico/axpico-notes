@@ -183,3 +183,40 @@ int main(void)
 ```
 > Attenzione: lo XOR swap fallisce se M e N sono lo **stesso** contenitore (`scambia(&x, &x)` azzera il valore) — in pratica si preferisce comunque la variabile ausiliaria per chiarezza e sicurezza; lo XOR swap è soprattutto un esercizio sulle proprietà dell'operatore.
 
+## Altri modi per combinare passi elementari
+Coerentemente col teorema di Böhm-Jacopini (§ sopra), i passi elementari di un algoritmo si combinano solo in tre modi:
+- **sequenza**
+- **selezione**
+- **iterazione** (o ciclo)
+
+### Iterazione (o ciclo)
+Un ciclo è caratterizzato da:
+- una **condizione** (espressione booleana, esito vero/falso), e
+- una **sequenza** (più in generale, una combinazione) di passi elementari, detta **corpo del ciclo**.
+
+Semantica operativa: ad ogni "giro" la condizione viene **valutata prima** di eseguire il corpo (ciclo *pre-condizionale*, tipico del `while`):
+- se la condizione risulta **falsa**, il ciclo non viene eseguito (o non viene più eseguito) e il controllo passa al passo successivo al ciclo;
+- se la condizione risulta **vera**, si esegue il corpo del ciclo, poi si ritorna a valutare nuovamente la condizione.
+
+In altre parole: il corpo del ciclo viene eseguito ripetutamente, tante volte quante la condizione risulta vera — zero o più volte in totale.
+
+Perché è una forma di combinazione a sé (non riducibile a sequenza+selezione): a differenza della selezione, dopo l'esecuzione del blocco il flusso **torna indietro** (arco all'indietro, *back-edge*) invece di proseguire in avanti; questo è ciò che permette di ripetere un numero di volte non noto a priori (dipendente dai dati in ingresso), condizione necessaria per poter esprimere computazioni come somme, ricerche o elaborazioni su sequenze di lunghezza arbitraria.
+
+#### Diagramma di flusso del ciclo (pre-condizionale, tipo `while`)
+```mermaid
+flowchart TD
+    Start([INIZIO]) --> Cond{condizione?}
+    Cond -- vero --> Body[corpo del ciclo]
+    Body --> Cond
+    Cond -- falso --> End([FINE / passo successivo])
+```
+
+#### Corrispondenza in ANSI C89
+```c
+while (condizione) {
+    /* corpo del ciclo */
+}
+```
+
+> Nota terminologica: questa è la forma **pre-condizionale** (`while`), in cui la condizione è valutata *prima* del corpo, quindi il corpo può essere eseguito **zero** volte. Esiste anche la forma **post-condizionale** (`do ... while` in C), in cui la condizione è valutata *dopo* il corpo: il corpo viene eseguito **almeno una volta**. Il teorema di Böhm-Jacopini richiede solo l'esistenza di una struttura iterativa; entrambe le varianti sono espressioni equivalenti dello stesso concetto di ciclo.
+
