@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789382187136-xbnjdcbcw",
+  "providerId": "claude",
+  "title": "Add tags",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789382187147,
+  "lastActivityAt": 1789382346449,
+  "sessionId": "f1aa3d64-b187-4fd5-b1cf-b013395d87df",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "f1aa3d64-b187-4fd5-b1cf-b013395d87df"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Algoritmo.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 352,
+    "cacheReadInputTokens": 43257,
+    "contextWindow": 967000,
+    "contextTokens": 43611,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}

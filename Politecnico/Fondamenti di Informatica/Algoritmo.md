@@ -1,3 +1,6 @@
+---
+tags: [fondamenti-informatica, algoritmo, flowchart, ansi-c89, boehm-jacopini]
+---
 ## Algoritmo
 Un algoritmo si basa su due nozioni:
 - **problema**
@@ -117,4 +120,14 @@ Poi in ANSI C89:
 ```c
 A = ... ;
 ```
-### Esempio
+
+```txt
+A <-- A + B
+```
+Il contenitore A viene aggiornato con la somma del suo valore corrente e di B (letto prima di essere sovrascritto).
+
+In ANSI C89:
+```c
+A = A + B;
+```
+
