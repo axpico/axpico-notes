@@ -105,5 +105,16 @@ Traduzione in diagramma di flusso dell'algoritmo visto sopra (§ Esempio: minimo
 ![[Diagramma di flusso - minimo.canvas]]
 
 ## Memorizzazione
-memorizzazione di un valore "in un contenitore": salvataggio e conservazione interna di in valore durante l'esecuzione di altri passi
+Memorizzazione di un valore "in un contenitore": salvataggio e conservazione interna di un valore durante l'esecuzione di altri passi.
 
+Sintatticamente indicati (da noi) con
+```txt
+A <-- ...
+```
+Qui A identifica il contenitore in cui verrà memorizzato il valore di ciò che sta dopo il simbolo `<--`.
+
+Poi in ANSI C89:
+```c
+A = ... ;
+```
+### Esempio

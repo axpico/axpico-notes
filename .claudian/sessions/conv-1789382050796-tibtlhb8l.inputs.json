@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789382050796-tibtlhb8l",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789382050937-xnet1em",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789382050790-fbejktn",
+      "timestamp": 1789382050790,
+      "rawDisplayText": "sistema il file",
+      "canonicalText": "sistema il file",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Fondamenti di Informatica/Algoritmo.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "cd7a3a5ce98ba92ccfbe939a86257499975ca33fd98fe0b07f263a0c901737ca",
+      "providerUserMessageId": "f99ae546-207d-4d14-b867-9ec0e81b78c6",
+      "providerAssistantMessageId": "a99bce06-51ed-4e60-acef-87e2503c5284"
+    }
+  ]
+}

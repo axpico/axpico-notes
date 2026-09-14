@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789382050796-tibtlhb8l",
+  "providerId": "claude",
+  "title": "Fix the file",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789382050806,
+  "lastActivityAt": 1789382081094,
+  "sessionId": "29ad8adb-3970-46aa-a9a2-bd0b7c0b0dd8",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "29ad8adb-3970-46aa-a9a2-bd0b7c0b0dd8"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Algoritmo.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 2306,
+    "cacheReadInputTokens": 38405,
+    "contextWindow": 967000,
+    "contextTokens": 40713,
+    "percentage": 4,
+    "contextWindowIsAuthoritative": true
+  }
+}
