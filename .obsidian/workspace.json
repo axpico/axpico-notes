@@ -208,8 +208,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1789396951571-lhifb6n",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
+                      "conversationId": "conv-1789487695321-xc2ld70da"
                     }
                   ],
                   "activeTabId": "tab-1789396951571-lhifb6n"
@@ -230,12 +229,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 398.5,
-    "collapsed": true
+    "width": 398.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -258,7 +256,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "7bf9ee132c903405",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
