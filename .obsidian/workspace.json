@@ -11,10 +11,14 @@
             "id": "7bf9ee132c903405",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Insieme numerici, logia e dimostrazioni"
             }
           }
         ]
@@ -230,7 +234,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5
+    "width": 398.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -253,7 +258,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "7bf9ee132c903405",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
