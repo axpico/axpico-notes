@@ -27,6 +27,20 @@
       "contentDigest": "c2b6aa7265a90586267a9157f10f87f558b33780e395a33ac24c1c9de7c4e66d",
       "providerUserMessageId": "c1641638-1c7e-4d4c-b868-325959bf0517",
       "providerAssistantMessageId": "44cc1620-3f05-4946-9214-6a8c61f4034e"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789487958942-jpwoekh",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789487958937-nj1m3fd",
+      "timestamp": 1789487958937,
+      "rawDisplayText": "perche si deduche che m2 e pari",
+      "canonicalText": "perche si deduche che m2 e pari",
+      "images": [],
+      "contentDigest": "bcd9f1a027acfe58f774d0d6689600673fc939b9ad4d895e2a85f19cb651cbcf",
+      "providerUserMessageId": "725a9694-a509-4035-8721-2d9c99202d11",
+      "providerAssistantMessageId": "7737c6e5-5b5b-4a19-a4c6-0e38e03fad4e"
     }
   ]
 }

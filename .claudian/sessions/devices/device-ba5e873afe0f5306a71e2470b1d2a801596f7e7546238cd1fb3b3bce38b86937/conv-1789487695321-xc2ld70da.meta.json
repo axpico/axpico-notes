@@ -4,7 +4,7 @@
   "title": "When n is even",
   "titleGenerationStatus": "success",
   "createdAt": 1789487695323,
-  "lastActivityAt": 1789487707048,
+  "lastActivityAt": 1789487964206,
   "sessionId": "f90e6e32-5c12-4d9e-a4e4-ad0a23386f7d",
   "selectedModel": "sonnet",
   "providerState": {
@@ -14,10 +14,10 @@
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,
-    "cacheCreationInputTokens": 35465,
-    "cacheReadInputTokens": 0,
+    "cacheCreationInputTokens": 6247,
+    "cacheReadInputTokens": 35465,
     "contextWindow": 1000000,
-    "contextTokens": 35467,
+    "contextTokens": 41714,
     "percentage": 4,
     "contextWindowIsAuthoritative": true
   }
