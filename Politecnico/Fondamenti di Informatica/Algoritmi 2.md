@@ -213,3 +213,96 @@ int main(void)
 }
 ```
 
+## 3
+Ricerca di un numero in una sequenza ordinata in senso crescente, tramite **ricerca binaria**.
+
+### Problema
+- **I**: un array A di N interi già ordinato in senso crescente, un valore X da cercare
+- **O**: un indice (o un esito "non trovato")
+- **R**: la posizione di X in A se presente, altrimenti un valore convenzionale (es. -1)
+
+### Esecutore
+Insieme di passi elementari richiesto: lettura di un valore, confronto fra due numeri, calcolo del punto medio, incremento/decremento di un indice, scrittura del risultato.
+
+### Idea algoritmica
+Sfruttando il fatto che l'array è ordinato, si mantiene un intervallo [INIZIO, FINE] che inizialmente è l'intero array. Si confronta X con l'elemento centrale M = (INIZIO+FINE)/2: se sono uguali si è trovato; se X è minore si scarta la metà destra (FINE <-- M-1); se X è maggiore si scarta la metà sinistra (INIZIO <-- M+1). Si ripete finché non si trova X o finché INIZIO > FINE (intervallo vuoto, X assente). Dimezzando l'intervallo ad ogni passo, il costo è O(log N) contro l'O(N) della ricerca sequenziale.
+
+1. leggi A[0..N-1], X
+2. INIZIO <-- 0, FINE <-- N-1, TROVATO <-- -1
+3. finché (INIZIO ≤ FINE e TROVATO = -1) ripeti:
+	1. M <-- (INIZIO + FINE) / 2
+	2. se (A[M] = X) allora TROVATO <-- M
+	3. altrimenti se (A[M] < X) allora INIZIO <-- M + 1
+	4. altrimenti FINE <-- M - 1
+4. produci in uscita TROVATO
+5. TERMINA
+
+Verifica informale di correttezza: l'invariante di ciclo è "se X è presente in A, si trova in A[INIZIO..FINE]" (mantenuto perché ad ogni iterazione si scarta solo la metà dell'intervallo in cui X, per l'ordinamento di A, non può trovarsi). Ad ogni iterazione l'intervallo si dimezza (strettamente decrescente), quindi il ciclo termina in un numero finito di passi con X trovato oppure con INIZIO > FINE (X assente, per l'invariante).
+
+#### Diagramma di flusso
+```mermaid
+flowchart TD
+    Start([INIZIO]) --> Read[/leggi A, X/]
+    Read --> InitBin[INIZIO <-- 0, FINE <-- N-1, TROVATO <-- -1]
+    InitBin --> CondBin{INIZIO <= FINE e TROVATO = -1 ?}
+    CondBin -- vero --> Mid[M <-- _INIZIO+FINE_ / 2]
+    Mid --> CmpEq{A_M_ = X ?}
+    CmpEq -- vero --> SetFound[TROVATO <-- M]
+    SetFound --> CondBin
+    CmpEq -- falso --> CmpLt{A_M_ < X ?}
+    CmpLt -- vero --> MoveRight[INIZIO <-- M + 1]
+    CmpLt -- falso --> MoveLeft[FINE <-- M - 1]
+    MoveRight --> CondBin
+    MoveLeft --> CondBin
+    CondBin -- falso --> Write[/scrivi TROVATO/]
+    Write --> End([FINE])
+```
+
+#### Implementazione in ANSI C89
+```c
+#include <stdio.h>
+
+#define N 10
+
+int main(void)
+{
+    int a[N];
+    int x, i;
+    int inizio, fine, m, trovato;
+
+    printf("Inserisci %d interi in ordine crescente: ", N);
+    for (i = 0; i < N; i++) {
+        if (scanf("%d", &a[i]) != 1) {
+            return 1;
+        }
+    }
+
+    printf("Valore da cercare: ");
+    if (scanf("%d", &x) != 1) {
+        return 1;
+    }
+
+    inizio = 0;
+    fine = N - 1;
+    trovato = -1;
+
+    while (inizio <= fine && trovato == -1) {
+        m = (inizio + fine) / 2;
+        if (a[m] == x) {
+            trovato = m;
+        } else if (a[m] < x) {
+            inizio = m + 1;
+        } else {
+            fine = m - 1;
+        }
+    }
+
+    if (trovato != -1) {
+        printf("Trovato in posizione %d\n", trovato);
+    } else {
+        printf("Non trovato\n");
+    }
+
+    return 0;
+}
+```

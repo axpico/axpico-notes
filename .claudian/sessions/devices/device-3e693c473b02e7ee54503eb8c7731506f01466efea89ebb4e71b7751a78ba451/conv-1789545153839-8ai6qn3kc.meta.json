@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789545153839-8ai6qn3kc",
+  "providerId": "claude",
+  "title": "Bubble sort implementation",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789545153849,
+  "lastActivityAt": 1789545256191,
+  "sessionId": "6f9a0079-6d94-45d8-a399-66dfa5e58b2c",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "6f9a0079-6d94-45d8-a399-66dfa5e58b2c"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 4963,
+    "cacheReadInputTokens": 44929,
+    "contextWindow": 967000,
+    "contextTokens": 49894,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789545153839-8ai6qn3kc",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789545154001-v3hsld0",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789545153832-ntbwdt0",
+      "timestamp": 1789545153832,
+      "rawDisplayText": "fai il 3 con bubble sort",
+      "canonicalText": "fai il 3 con bubble sort",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Fondamenti di Informatica/Algoritmi 2.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "0c4d996009aab25d6cf4eab5ec2908b9e37cdec6cf076cf898133548e0658399",
+      "providerUserMessageId": "23f50a16-77a2-4f8c-8c0d-5ac4ac728cb6",
+      "providerAssistantMessageId": "fad7fb55-95b7-4503-b965-c37034391167"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789545222034-6sgi6p9",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789545222022-9cphbrl",
+      "timestamp": 1789545222022,
+      "rawDisplayText": "ninte bubble sort",
+      "canonicalText": "ninte bubble sort",
+      "images": [],
+      "contentDigest": "68ece700a1b6e0da8d6253d5bf822ae8286d8180655d5ff41a79429ca8dfbe9d",
+      "providerUserMessageId": "ca697c24-4fd7-4cdd-81d2-3ec58dea9d8d",
+      "providerAssistantMessageId": "ce2d6f6c-9ab4-4cd6-8875-3bb660c6b1df"
+    }
+  ]
+}
