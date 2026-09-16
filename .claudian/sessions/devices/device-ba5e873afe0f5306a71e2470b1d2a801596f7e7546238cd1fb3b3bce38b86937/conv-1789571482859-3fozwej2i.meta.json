@@ -1,0 +1,14 @@
+{
+  "id": "conv-1789571482859-3fozwej2i",
+  "providerId": "claude",
+  "title": "Image analysis and page documentation",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789571482864,
+  "lastActivityAt": 1789571482864,
+  "sessionId": "c942cd2d-c138-4958-8286-a91dbdec3792",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "c942cd2d-c138-4958-8286-a91dbdec3792"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Untitled.md"
+}

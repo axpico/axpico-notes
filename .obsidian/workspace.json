@@ -20,6 +20,18 @@
               "icon": "lucide-file",
               "title": "Untitled"
             }
+          },
+          {
+            "id": "2d4448ed71954bd5",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-09-16 10.06.40.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-09-16 10.06.40.excalidraw"
+            }
           }
         ]
       }
@@ -207,11 +219,11 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789545290172-a53zcm9",
-                      "conversationId": "conv-1789570382106-a7yrjuouv"
+                      "tabId": "tab-1789571317229-43oxnix",
+                      "conversationId": "conv-1789571482859-3fozwej2i"
                     }
                   ],
-                  "activeTabId": "tab-1789545290172-a53zcm9"
+                  "activeTabId": "tab-1789571317229-43oxnix"
                 }
               },
               "icon": "bot",
@@ -258,7 +270,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "f7cf24f8f549e198",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-09-16 10.06.40.excalidraw.md",
     "Politecnico/Analisi 1/Untitled.md",
