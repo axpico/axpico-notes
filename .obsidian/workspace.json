@@ -207,11 +207,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789541208892-kkqsv96",
-                      "conversationId": "conv-1789541221396-i1ds7xhcp"
+                      "tabId": "tab-1789541418842-cm1kxai",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1789541208892-kkqsv96"
+                  "activeTabId": "tab-1789541418842-cm1kxai"
                 }
               },
               "icon": "bot",

@@ -2,6 +2,7 @@
 ## 1
 
 Leggi in sequenza valori interi positivi, in quantità non specificata, sino al primo valore negativo (che indica fine lettura), e stampa il massimo valore tra quelli positivi letti. Se non viene letto alcun valore positivo, stampa 0.
+Lo 0 o il valore negativo e chiamato **tappo**.
 
 ### Problema
 
@@ -70,4 +71,4 @@ int main(void)
     return 0;
 }
 ```
-> Nota: si usa `int` (non `unsigned int`) perché il dato letto può essere negativo (la sentinella di fine lettura); il risultato prodotto, `max`, è invece sempre un numero naturale (≥ 0) come richiesto dalla specifica O.
+
