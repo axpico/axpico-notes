@@ -8,17 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7bf9ee132c903405",
+            "id": "f7cf24f8f549e198",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2026-09-16 10.06.40.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Algoritmi 2"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-09-16 10.06.40.excalidraw"
             }
           }
         ]
@@ -258,10 +256,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "7bf9ee132c903405",
+  "active": "f7cf24f8f549e198",
   "lastOpenFiles": [
-    "Politecnico/Fondamenti di Informatica/Algoritmo.md",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
+    "Excalidraw/Drawing 2026-09-16 10.06.40.excalidraw.md",
+    "Politecnico/Fondamenti di Informatica/Algoritmo.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.7008.37f8f1ede73c",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.12976.bddff29af067",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.7524.426315318a00",
