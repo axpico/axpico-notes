@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789543824237-ghcq0h5oo",
+  "providerId": "claude",
+  "title": "Integer arithmetic and base conversion in C",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789543824253,
+  "lastActivityAt": 1789543937199,
+  "sessionId": "41bf63f6-4407-4edc-a498-a618e286ff4f",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "41bf63f6-4407-4edc-a498-a618e286ff4f"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Algoritmo.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 7358,
+    "cacheReadInputTokens": 43498,
+    "contextWindow": 967000,
+    "contextTokens": 50858,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}

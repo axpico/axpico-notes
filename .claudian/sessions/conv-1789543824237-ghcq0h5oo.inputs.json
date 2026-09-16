@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789543824237-ghcq0h5oo",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789543824406-8qkp6lv",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789543824221-zoa9t0h",
+      "timestamp": 1789543824221,
+      "rawDisplayText": "void divisione_intera(unsigned int m, unsigned int n, unsigned int *q, unsigned int *r)\n{\n    *q = 1;\n    *r = m;\n\n    while (*r >= n) {\n        *r = *r / n;\n        *q = *q + 1;\n    }\n}\n\n\naggiungi questo \n\n\ntrovare algoritmo per trovare intero in base B\n\nesecuture addizione sottrazione divisione  e moltiplicazione",
+      "canonicalText": "void divisione_intera(unsigned int m, unsigned int n, unsigned int *q, unsigned int *r)\n{\n    *q = 1;\n    *r = m;\n\n    while (*r >= n) {\n        *r = *r / n;\n        *q = *q + 1;\n    }\n}\n\n\naggiungi questo \n\n\ntrovare algoritmo per trovare intero in base B\n\nesecuture addizione sottrazione divisione  e moltiplicazione",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Fondamenti di Informatica/Algoritmo.md"
+        },
+        "editorSelection": {
+          "notePath": "Politecnico/Fondamenti di Informatica/Algoritmo.md",
+          "mode": "selection",
+          "selectedText": "\ntrovare algoritmo per trovare intero in base B\n\nesecuture addizione sottrazione divisione  e moltiplicazione \n-!=/ \nsotto 1 != 0 \n",
+          "lineCount": 7,
+          "startLine": 297
+        }
+      },
+      "images": [],
+      "contentDigest": "ba5b93048f9caa491d6a7128f84c1f07272cd0d094c0b840f28e6e77d33f658c",
+      "providerUserMessageId": "9e45459e-da80-449f-9573-4860a9d04bda",
+      "providerAssistantMessageId": "ab8aa8c7-b4e0-420c-97e2-5ecfdb7b47f9"
+    }
+  ]
+}

@@ -293,106 +293,178 @@ int main(void)
 ```
 > Nota: nella pratica C il compilatore traduce `m / n` e `m % n` in un'unica istruzione macchina di divisione, ben più efficiente di questo ciclo; 
 
+### Esempio: conversione di un naturale in base B
 
-## Aritmetica intera in base B
-Generalizzazione delle operazioni aritmetiche (addizione, sottrazione, moltiplicazione, divisione) a un intero rappresentato in una base $B \geq 2$ qualunque (non solo B = 10), tramite un esecutore che dispone unicamente di passi elementari su singole **cifre** (confronto, addizione/sottrazione di cifre, memorizzazione) — esattamente come si esegue "a mano" un'operazione in colonna.
-
-### Rappresentazione posizionale
-Un numero naturale N in base B è rappresentato come sequenza di cifre $d_{k-1} d_{k-2} \dots d_1 d_0$, con $0 \le d_i < B$, tale che:
-$$N = \sum_{i=0}^{k-1} d_i \cdot B^i$$
-Per l'esecutore, N è quindi un **vettore di cifre** (array), indicizzato dalla cifra meno significativa ($d_0$) alla più significativa; l'operazione aritmetica elementare disponibile è quella su una singola cifra, con eventuale **riporto** (addizione/moltiplicazione) o **prestito** (sottrazione) da propagare alla cifra successiva — esattamente come l'algoritmo di divisione per sottrazioni successive (§ sopra) propaga il confronto ad ogni iterazione.
-
-### Addizione (A + B, colonna con riporto)
 #### Problema
-- **I** — due vettori di cifre A e B in base B (stessa base), di lunghezza $n$ e $m$
-- **O** — un vettore di cifre S (somma), di lunghezza al più $\max(n,m)+1$
-- **R** — S rappresenta, secondo la formula posizionale sopra, la somma dei valori rappresentati da A e B
+- **I** — un numero naturale M e una base B, con $B \ge 2$
+- **O** — la sequenza di cifre $(d_{k-1} \dots d_1 d_0)$, con $0 \le d_i < B$
+- **R** — il vettore prodotto è la rappresentazione posizionale di M in base B, cioè:
+$$M = \sum_{i=0}^{k-1} d_i \cdot B^i$$
 
-#### Idea algoritmica
-Si procede cifra per cifra da destra (meno significativa) verso sinistra, mantenendo un **riporto** (carry) che vale inizialmente 0:
-1. i <-- 0, riporto <-- 0
-2. finché (i < lunghezza massima oppure riporto ≠ 0) ripeti:
-	1. t <-- A[i] + B[i] + riporto  *(cifre mancanti trattate come 0)*
-	2. S[i] <-- t mod Base
-	3. riporto <-- t div Base   *(vale 0 oppure 1)*
-	4. i <-- i + 1
-3. produci in uscita S
-4. TERMINA
+#### Idea algoritmica: divisioni successive per B
+Le cifre si estraggono dalla meno significativa alla più significativa dividendo ripetutamente per B: il **resto** di ogni divisione è la cifra corrente, il **quoziente** diventa il nuovo dividendo. È lo stesso schema della divisione intera vista sopra, applicato più volte.
+1. i <-- 0
+2. finché (M > 0) ripeti:
+	1. d[i] <-- M mod B
+	2. M <-- M div B
+	3. i <-- i + 1
+3. se i = 0 (M era già 0): d[0] <-- 0, i <-- 1
+4. produci in uscita d[i−1], ..., d[1], d[0] (ordine inverso rispetto a quello di calcolo)
+5. TERMINA
 
-Correttezza: ad ogni passo $t < 2 \cdot Base$ (due cifre + riporto al più 1), quindi $t \; div \; Base \in \{0,1\}$ — un solo bit/cifra di riporto basta, come nell'addizione in colonna appresa a scuola.
+Verifica informale: ad ogni passo M viene sostituito da $M \operatorname{div} B$, quantità che diminuisce strettamente finché $M>0$ (poiché $B \ge 2$), quindi il ciclo termina in un numero finito di passi con $M=0$; la cifra estratta ad ogni passo è per costruzione $0 \le d_i < B$.
 
-#### Implementazione in ANSI C89 (base B generica, cifre in array `unsigned int`)
+#### Implementazione in ANSI C89
 ```c
 #include <stdio.h>
 
-/* R: somma le cifre di a (na cifre) e b (nb cifre) in base "base",
-   scrive il risultato in s (deve avere spazio per max(na,nb)+1 cifre),
-   restituisce il numero di cifre effettive del risultato.
-   Cifre indicizzate dalla meno significativa (indice 0). */
-int somma_base_b(const unsigned int *a, int na,
-                  const unsigned int *b, int nb,
-                  unsigned int base, unsigned int *s)
+/* R: riempie digits[] con le cifre di m in base b, dalla piu' significativa
+   a scendere; restituisce il numero di cifre. Richiede 2 <= b <= 10
+   (una cifra decimale per carattere) e max_cifre sufficienti a contenerle */
+int converti_in_base(unsigned int m, unsigned int b, unsigned int digits[], int max_cifre)
 {
-    int i, n;
-    unsigned int riporto, t, da, db;
+    unsigned int tmp[32]; /* in base 2 un unsigned int a 32 bit usa al piu' 32 cifre */
+    int i = 0;
+    int k;
 
-    n = (na > nb) ? na : nb;
-    riporto = 0;
+    do {
+        unsigned int q, r;
+        divisione_intera(m, b, &q, &r); /* riusa la funzione definita sopra */
+        tmp[i] = r;
+        m = q;
+        i++;
+    } while (m > 0 && i < max_cifre);
 
-    for (i = 0; i < n || riporto != 0; i++) {
-        da = (i < na) ? a[i] : 0;
-        db = (i < nb) ? b[i] : 0;
-        t = da + db + riporto;
-        s[i] = t % base;
-        riporto = t / base;
+    for (k = 0; k < i; k++) {
+        digits[k] = tmp[i - 1 - k]; /* inverte: da piu' a meno significativa */
     }
 
-    return i; /* numero di cifre scritte in s */
+    return i;
+}
+
+int main(void)
+{
+    unsigned int m, b, digits[32];
+    int n, k;
+
+    printf("Inserisci un numero naturale e la base (2-10): ");
+    if (scanf("%u %u", &m, &b) != 2 || b < 2 || b > 10) {
+        return 1;
+    }
+
+    n = converti_in_base(m, b, digits, 32);
+    for (k = 0; k < n; k++) {
+        printf("%u", digits[k]);
+    }
+    printf("\n");
+
+    return 0;
 }
 ```
 
-### Sottrazione (A − B, colonna con prestito, $A \geq B$)
+### Esempio: aritmetica in base B su vettori di cifre
+
 #### Problema
-- **I** — due vettori di cifre A e B in base B, con $A \geq B$ (altrimenti il risultato non è un naturale)
-- **O** — un vettore di cifre D (differenza)
-- **R** — D rappresenta il valore $A - B$
+- **I** — due numeri rappresentati come vettori di cifre in una stessa base B (indice 0 = cifra meno significativa) e un'operazione tra $\{+,-,\times,\div\}$
+- **O** — il vettore di cifre in base B che rappresenta il risultato
+- **R** — il valore rappresentato dal risultato è, rispettivamente, la somma, la differenza (per cui si richiede $A \ge B_{op}$), il prodotto o il quoziente dei valori rappresentati da A e $B_{op}$ (per la divisione si richiede $B_{op} \neq 0$)
 
-#### Idea algoritmica
-Simmetrica all'addizione, ma con un **prestito** (borrow, $\in \{0,1\}$) invece del riporto: se la cifra di A (al netto del prestito) è minore di quella di B, si "prende in prestito" una unità dalla base successiva:
-1. i <-- 0, prestito <-- 0
-2. finché (i < lunghezza di A) ripeti:
-	1. t <-- A[i] − prestito − B[i]  *(cifre mancanti di B trattate come 0)*
-	2. se (t < 0) allora: D[i] <-- t + Base, prestito <-- 1
-	3. altrimenti: D[i] <-- t, prestito <-- 0
-	4. i <-- i + 1
-3. produci in uscita D (eliminando eventuali zeri non significativi in testa)
-4. TERMINA
+#### Idea algoritmica: gli algoritmi "in colonna" della scuola primaria
+Le quattro operazioni si eseguono cifra per cifra, propagando un **riporto** (addizione, moltiplicazione) o un **prestito** (sottrazione); la divisione si riconduce a sottrazioni successive cifra per cifra, come nella divisione intera. Di seguito il caso di moltiplicazione/divisione per una singola cifra k (0 ≤ k < B): è il passo elementare su cui si basano moltiplicazione e divisione "lunghe" tra due vettori di più cifre.
 
-Poiché $A \geq B$ per ipotesi, il prestito finale è sempre 0.
+- **Addizione**: per i crescenti, `s <-- a[i] + b[i] + riporto`; cifra `s mod B`, nuovo riporto `s div B`.
+- **Sottrazione**: per i crescenti, `d <-- a[i] - b[i] - prestito`; se `d < 0` allora `d <-- d + B` e prestito = 1, altrimenti prestito = 0.
+- **Moltiplicazione per una cifra k**: per i crescenti, `p <-- a[i]*k + riporto`; cifra `p mod B`, nuovo riporto `p div B`.
+- **Divisione per una cifra k**: per i **decrescenti** (dalla cifra più significativa), `v <-- resto*B + a[i]`; cifra `v div k`, nuovo resto `v mod k`.
 
-### Moltiplicazione (A × B)
-#### Problema
-- **I** — due vettori di cifre A ($n$ cifre) e B ($m$ cifre) in base B
-- **O** — un vettore di cifre P (prodotto), di lunghezza al più $n+m$
-- **R** — P rappresenta il valore $A \cdot B$
+In tutti i casi il ciclo termina perché scorre un numero finito e fissato di cifre (al più una in più per il riporto finale).
 
-#### Idea algoritmica: moltiplicazione in colonna (come a mano)
-Si moltiplica A per ciascuna cifra di B, si accumulano i **prodotti parziali** opportunamente scalati (shiftati) di una posizione per ogni cifra di B già processata, sommandoli con l'addizione già definita sopra:
-1. P <-- vettore di soli zeri, lunghezza $n+m$
-2. per j <-- 0 fino a $m-1$ ripeti:
-	1. riporto <-- 0
-	2. per i <-- 0 fino a $n-1$ ripeti:
-		1. t <-- P[i+j] + A[i] · B[j] + riporto
-		2. P[i+j] <-- t mod Base
-		3. riporto <-- t div Base
-	3. P[n+j] <-- P[n+j] + riporto   *(propagazione dell'ultimo riporto)*
-3. produci in uscita P
-4. TERMINA
+#### Implementazione in ANSI C89
+```c
+#include <stdio.h>
 
-Correttezza (idea): è la formalizzazione cifra-per-cifra di $A \cdot B = A \cdot \sum_j B[j]\cdot Base^j = \sum_j (A \cdot B[j]) \cdot Base^j$ — ogni prodotto parziale $A \cdot B[j]$ viene sommato a P già shiftato di $j$ posizioni (cioè scritto a partire dall'indice $i+j$).
+/* R: c = a + b (indice 0 = cifra meno significativa); restituisce il
+   numero di cifre del risultato */
+int add_digits(const unsigned int a[], int na, const unsigned int b[], int nb,
+                unsigned int base, unsigned int c[])
+{
+    int i, n = na > nb ? na : nb;
+    unsigned int carry = 0;
 
-### Divisione (Q, R tali che $A = Q \cdot Base_N + R$, $N \neq 0$)
-#### Idea algoritmica
-L'algoritmo per sottrazioni successive visto sopra (§ Esempio: quoziente e resto della divisione intera) resta valido invariato: usa solo confronto, sottrazione e memorizzazione, indipendenti dalla base scelta per rappresentare i numeri — la base entra in gioco solo nella *rappresentazione* di A, N, Q, R come vettori di cifre (usando la sottrazione in colonna definita sopra al posto della sottrazione "in blocco"), non nella logica dell'algoritmo. In pratica, per basi grandi, si preferisce una variante **cifra per cifra** (divisione lunga): si processano le cifre di A da sinistra a destra, mantenendo un resto parziale R (inizialmente 0) a cui si accosta ad ogni passo la cifra successiva di A, e si sottrae N da R il maggior numero di volte possibile (al più $Base-1$, tramite confronti ripetuti) prima di passare alla cifra successiva — stessa idea, applicata localmente ad ogni cifra invece che al numero intero.
+    for (i = 0; i < n; i++) {
+        unsigned int s = (i < na ? a[i] : 0) + (i < nb ? b[i] : 0) + carry;
+        c[i] = s % base;
+        carry = s / base;
+    }
+    if (carry > 0) {
+        c[n] = carry;
+        n++;
+    }
+    return n;
+}
+
+/* R: c = a - b, richiede a >= b (quindi na >= nb); restituisce il numero
+   di cifre del risultato, senza zeri non significativi in testa */
+int sub_digits(const unsigned int a[], int na, const unsigned int b[], int nb,
+               unsigned int base, unsigned int c[])
+{
+    int i, borrow = 0;
+
+    for (i = 0; i < na; i++) {
+        int d = (int) a[i] - (i < nb ? (int) b[i] : 0) - borrow;
+        if (d < 0) {
+            d += (int) base;
+            borrow = 1;
+        } else {
+            borrow = 0;
+        }
+        c[i] = (unsigned int) d;
+    }
+    while (na > 1 && c[na - 1] == 0) {
+        na--;
+    }
+    return na;
+}
+
+/* R: c = a * k, con k singola cifra (0 <= k < base) */
+int mul_by_digit(const unsigned int a[], int na, unsigned int k,
+                  unsigned int base, unsigned int c[])
+{
+    int i, n = na;
+    unsigned int carry = 0;
+
+    for (i = 0; i < na; i++) {
+        unsigned int p = a[i] * k + carry;
+        c[i] = p % base;
+        carry = p / base;
+    }
+    while (carry > 0) {
+        c[n] = carry % base;
+        carry /= base;
+        n++;
+    }
+    return n;
+}
+
+/* R: c = a / k (quoziente), *resto = a % k, con k singola cifra (0 < k < base) */
+int div_by_digit(const unsigned int a[], int na, unsigned int k,
+                  unsigned int base, unsigned int c[], unsigned int *resto)
+{
+    int i;
+    unsigned int r = 0;
+
+    for (i = na - 1; i >= 0; i--) {
+        unsigned int v = r * base + a[i];
+        c[i] = v / k;
+        r = v % k;
+    }
+    while (na > 1 && c[na - 1] == 0) {
+        na--;
+    }
+    *resto = r;
+    return na;
+}
+```
+> Nota: moltiplicazione e divisione per un vettore di più cifre (non solo una singola cifra k) si ottengono componendo questi passi elementari — rispettivamente come somma di prodotti parziali traslati di una posizione, e come sequenza di stime di cifra + sottrazione, esattamente come nell'algoritmo "in colonna" manuale.
 
 Continue con [[Algoritmi 2]]

@@ -4,11 +4,21 @@
   "title": "Implement base B arithmetic operations",
   "titleGenerationStatus": "success",
   "createdAt": 1789543695221,
-  "lastActivityAt": 1789543695221,
+  "lastActivityAt": 1789543746300,
   "sessionId": "03434170-3b65-4cb5-8b54-2fe203f3ace6",
   "selectedModel": "sonnet",
   "providerState": {
     "providerSessionId": "03434170-3b65-4cb5-8b54-2fe203f3ace6"
   },
-  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Algoritmo.md"
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Algoritmo.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 3539,
+    "cacheReadInputTokens": 43724,
+    "contextWindow": 967000,
+    "contextTokens": 47265,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
 }

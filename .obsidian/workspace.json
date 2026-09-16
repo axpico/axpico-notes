@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Politecnico/Fondamenti di Informatica/Algoritmo.md",
+                "file": "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Algoritmo"
+              "title": "Algoritmi 2"
             }
           }
         ]
@@ -207,11 +207,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789543357595-v1pcoyz",
-                      "conversationId": "conv-1789543695205-hu7wokv8l"
+                      "tabId": "tab-1789543969792-mg81mlo",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1789543357595-v1pcoyz"
+                  "activeTabId": "tab-1789543969792-mg81mlo"
                 }
               },
               "icon": "bot",
@@ -258,8 +259,9 @@
   },
   "active": "56efc63866208b00",
   "lastOpenFiles": [
-    "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md",
+    "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.7008.37f8f1ede73c",
+    "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.12976.bddff29af067",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.7524.426315318a00",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.1540.8315b90a1225",
@@ -271,7 +273,6 @@
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.25625.ee695f08936a",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.23852.45a0a487948d",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.18976.8ed3dfec5d61",
-    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.18976.678552ed4fd3",
     "Politecnico/Analisi 1/Informazioni analisi 1.md",
     "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
