@@ -11,30 +11,17 @@
             "id": "f7cf24f8f549e198",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-09-16 10.06.40.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-16 10.06.40.excalidraw"
-            }
-          },
-          {
-            "id": "638d74e52b357162",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
+                "file": "Politecnico/Analisi 1/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Insieme numerici, logia e dimostrazioni"
+              "title": "Untitled"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -237,7 +224,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md"
+                "file": "Politecnico/Analisi 1/Untitled.md"
               },
               "icon": "lucide-info",
               "title": "File properties"
@@ -271,11 +258,12 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "638d74e52b357162",
+  "active": "f7cf24f8f549e198",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.55385.61aa8a589acc",
     "Excalidraw/Drawing 2026-09-16 10.06.40.excalidraw.md",
+    "Politecnico/Analisi 1/Untitled.md",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
+    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.55385.61aa8a589acc",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.55385.a997aa79d2d0",
     "Politecnico/Analisi 1/Informazioni analisi 1.md",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
@@ -289,7 +277,6 @@
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.29066.a937e44969a8",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.29066.15c6c2bec6bc",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.25625.ee695f08936a",
-    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.23852.45a0a487948d",
     "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "claude_skills/claude_skills index.md",
