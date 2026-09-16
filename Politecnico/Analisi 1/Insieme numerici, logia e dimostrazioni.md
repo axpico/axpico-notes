@@ -157,5 +157,71 @@ Si usa quando la tesi va provata per **tutti** i numeri naturali $n$ (o per tutt
 
 Se entrambi i passi valgono, il principio di induzione garantisce che $P(n)$ è vera per ogni $n \ge n_0$: il passo base "accende" il primo caso, e il passo induttivo lo propaga da un naturale al successivo, come tessere di un domino che cadono in sequenza.
 
+> [!info] Osservazione: base diversa da $0$
+> Invece di $n_0 = 0$ si può scegliere nel passo base un qualsiasi $n_0 \in \mathbb{N}$, $n_0 > 0$: in questo caso il principio garantisce $P(n)$ vera per ogni $n \ge n_0$ (non per tutti gli $n \in \mathbb{N}$, ma solo da $n_0$ in poi).
 
+#### Esempio: somma dei primi $n$ naturali
+**Proposizione.** $$\forall\, n \in \mathbb{N}, \quad 1+2+3+\dots+n = \frac{n(n+1)}{2}$$
+
+Definiamo $P(n)$: "$1+2+\dots+n = \frac{n(n+1)}{2}$". Dimostriamo per induzione.
+
+**(i) Passo base.** Verifichiamo $P(0)$: la somma da $1$ a $0$ è vuota, quindi vale per convenzione $0$; il membro destro dà $\frac{0(0+1)}{2}=0$. I due membri coincidono: $P(0)$ è vera.
+
+**(ii) Passo induttivo.** **Ipotesi induttiva**: assumiamo vera $P(n)$, cioè
+$$1+2+\dots+n = \frac{n(n+1)}{2}$$
+**Tesi**: dimostrare $P(n+1)$, cioè
+$$1+2+\dots+n+(n+1) = \frac{(n+1)(n+2)}{2}$$
+
+Partiamo dal membro sinistro della tesi e isoliamo la somma fino a $n$, in modo da poter applicare l'ipotesi induttiva:
+$$\underbrace{1+2+\dots+n}_{\text{per ip. ind.} \,=\, \frac{n(n+1)}{2}}+(n+1) = \frac{n(n+1)}{2}+(n+1)$$
+Mettiamo a denominatore comune e raccogliamo $(n+1)$:
+$$\frac{n(n+1)+2(n+1)}{2} = \frac{(n+1)(n+2)}{2}$$
+che è esattamente il membro destro di $P(n+1)$. Dunque $P(n) \Rightarrow P(n+1)$.
+
+Per il principio di induzione, essendo veri il passo base e il passo induttivo, $P(n)$ è vera $\forall\, n \in \mathbb{N}$. $\blacksquare$
+
+Lo schema generale di questo tipo di dimostrazioni è sempre lo stesso: nella tesi $P(n+1)$ si isola la sotto-espressione che coincide col membro sinistro di $P(n)$, la si sostituisce con l'ipotesi induttiva (membro destro di $P(n)$), e si manipola algebricamente fino a ottenere il membro destro di $P(n+1)$ — analogamente alla dimostrazione diretta, ma con l'ipotesi induttiva al posto dell'ipotesi del teorema.
+
+#### Teorema: disuguaglianza di Bernoulli
+**Teorema.** Sia $h \in \mathbb{R}$, $h \ge -1$. Allora
+$$(1+h)^n \ge 1+nh \qquad \forall\, n \in \mathbb{N}$$
+
+**Dimostrazione (per induzione).**
+
+**(i) Passo base.** $n=0$: $(1+h)^0 = 1$ e $1+0\cdot h = 1$. I due membri coincidono ($1\ge1$): $P(0)$ è vera.
+
+**(ii) Passo induttivo.** Ipotesi induttiva $P(n)$: $(1+h)^n \ge 1+nh$. Tesi $P(n+1)$: $(1+h)^{n+1} \ge 1+(n+1)h$.
+
+Poiché $h \ge -1$, si ha $1+h \ge 0$: possiamo quindi moltiplicare entrambi i membri della disuguaglianza dell'ipotesi induttiva per $(1+h) \ge 0$ senza invertirne il verso (proprietà fondamentale delle disuguaglianze: moltiplicare per un fattore negativo le inverte, per uno non negativo le preserva — qui serve proprio $h \ge -1$, altrimenti il passo non funzionerebbe). Partiamo dal membro sinistro della tesi:
+$$(1+h)^{n+1} = (1+h)^n(1+h) \underset{\text{ip. ind.}}{\ge} (1+nh)(1+h)$$
+Sviluppiamo il prodotto a destra:
+$$(1+nh)(1+h) = 1+h+nh+nh^2 = 1+(n+1)h+\underbrace{nh^2}_{\ge 0}$$
+Poiché $nh^2 \ge 0$ (quadrato, per $n\ge0$), si ha
+$$1+(n+1)h+nh^2 \ge 1+(n+1)h$$
+Concatenando le due disuguaglianze:
+$$(1+h)^{n+1} \ge 1+(n+1)h$$
+che è la tesi $P(n+1)$.
+
+Per il principio di induzione, $P(n)$ è vera $\forall\, n \in \mathbb{N}$. $\blacksquare$
+
+> [!info] Perché serve $h \ge -1$
+> La condizione garantisce $1+h \ge 0$: è quanto basta per moltiplicare l'ipotesi induttiva per $(1+h)$ mantenendo il verso della disuguaglianza. Senza questa ipotesi il passo induttivo non sarebbe giustificato.
+
+#### Teorema: somma della progressione geometrica
+**Teorema.** Sia $q \in \mathbb{R}$, $q \neq 1$. Allora
+$$\sum_{k=0}^{n} q^k = \frac{1-q^{n+1}}{1-q} \qquad \forall\, n \in \mathbb{N}$$
+
+**Dimostrazione (per induzione).**
+
+**(i) Passo base.** $n=0$: il membro sinistro è $\sum_{k=0}^{0} q^k = q^0 = 1$; il membro destro è $\frac{1-q^{1}}{1-q}=\frac{1-q}{1-q}=1$ (lecito dividere, poiché $q\neq1$). I due membri coincidono: $P(0)$ è vera.
+
+**(ii) Passo induttivo.** Ipotesi induttiva $P(n)$: $\sum_{k=0}^{n} q^k = \frac{1-q^{n+1}}{1-q}$. Tesi $P(n+1)$: $\sum_{k=0}^{n+1} q^k = \frac{1-q^{n+2}}{1-q}$.
+
+Partiamo dal membro sinistro della tesi e isoliamo la somma fino a $n$, per poter applicare l'ipotesi induttiva:
+$$\sum_{k=0}^{n+1} q^k = \underbrace{\sum_{k=0}^{n} q^k}_{\text{per ip. ind.} \,=\, \frac{1-q^{n+1}}{1-q}} + \,q^{n+1} = \frac{1-q^{n+1}}{1-q}+q^{n+1}$$
+Mettiamo a denominatore comune:
+$$\frac{1-q^{n+1}}{1-q}+q^{n+1} = \frac{1-q^{n+1}+q^{n+1}(1-q)}{1-q} = \frac{1-q^{n+1}+q^{n+1}-q^{n+2}}{1-q} = \frac{1-q^{n+2}}{1-q}$$
+che è esattamente il membro destro di $P(n+1)$.
+
+Per il principio di induzione, $P(n)$ è vera $\forall\, n \in \mathbb{N}$. $\blacksquare$
 

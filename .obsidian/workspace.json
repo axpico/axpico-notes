@@ -18,8 +18,23 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-09-16 10.06.40.excalidraw"
             }
+          },
+          {
+            "id": "638d74e52b357162",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Insieme numerici, logia e dimostrazioni"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -44,7 +59,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora file"
+              "title": "Files"
             }
           },
           {
@@ -206,8 +221,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1789545290172-a53zcm9",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
+                      "conversationId": "conv-1789570382106-a7yrjuouv"
                     }
                   ],
                   "activeTabId": "tab-1789545290172-a53zcm9"
@@ -222,7 +236,9 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {},
+              "state": {
+                "file": "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md"
+              },
               "icon": "lucide-info",
               "title": "File properties"
             }
@@ -232,8 +248,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409,
-    "collapsed": true
+    "width": 409
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -256,24 +271,25 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "f7cf24f8f549e198",
+  "active": "638d74e52b357162",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.55385.61aa8a589acc",
     "Excalidraw/Drawing 2026-09-16 10.06.40.excalidraw.md",
+    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
+    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.55385.a997aa79d2d0",
+    "Politecnico/Analisi 1/Informazioni analisi 1.md",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.7008.37f8f1ede73c",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.12976.bddff29af067",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.7524.426315318a00",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.1540.8315b90a1225",
-    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.30191.be23e59ca09a",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.29066.a937e44969a8",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.29066.15c6c2bec6bc",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.25625.ee695f08936a",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.23852.45a0a487948d",
-    "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.18976.8ed3dfec5d61",
-    "Politecnico/Analisi 1/Informazioni analisi 1.md",
     "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "claude_skills/claude_skills index.md",
@@ -294,7 +310,6 @@
     "Formulario/Elettromagnetismo/Forza di Lorentz.md",
     "Formulario/Elettromagnetismo/Teorema di Ampère.md",
     "Formulario/Elettromagnetismo/Campo Magnetico di un Filo Rettilineo.md",
-    "Formulario/Elettromagnetismo/Legge di Biot-Savart.md",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
