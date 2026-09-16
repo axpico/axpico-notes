@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789541221396-i1ds7xhcp",
+  "providerId": "claude",
+  "title": "Review files and complete exercise",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789541221405,
+  "lastActivityAt": 1789541257641,
+  "sessionId": "70009e75-543d-4b6e-85d2-a22ad820ae71",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "70009e75-543d-4b6e-85d2-a22ad820ae71"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1484,
+    "cacheReadInputTokens": 43080,
+    "contextWindow": 967000,
+    "contextTokens": 44566,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}

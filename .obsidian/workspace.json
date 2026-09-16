@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Politecnico/Fondamenti di Informatica/Senza nome.md",
+                "file": "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Senza nome"
+              "title": "Algoritmi 2"
             }
           }
         ]
@@ -207,12 +207,11 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789538197406-bl6v5n3",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
+                      "tabId": "tab-1789541208892-kkqsv96",
+                      "conversationId": "conv-1789541221396-i1ds7xhcp"
                     }
                   ],
-                  "activeTabId": "tab-1789538197406-bl6v5n3"
+                  "activeTabId": "tab-1789541208892-kkqsv96"
                 }
               },
               "icon": "bot",
@@ -257,10 +256,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "7bf9ee132c903405",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
+    "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.1540.8315b90a1225",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
-    "Politecnico/Fondamenti di Informatica/Senza nome.md",
+    "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.30191.be23e59ca09a",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.29066.a937e44969a8",
@@ -295,7 +295,6 @@
     "Formulario/Elettromagnetismo/Teorema di Ampère.md",
     "Formulario/Elettromagnetismo/Campo Magnetico di un Filo Rettilineo.md",
     "Formulario/Elettromagnetismo/Legge di Biot-Savart.md",
-    "Ripasso uni/fisica/Elettronica.md",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
