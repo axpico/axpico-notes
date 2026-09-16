@@ -80,7 +80,7 @@ int main(void)
 ```
 
 ## 2.1
-Reinvenzione dell'algoritmo di Euclide per il calcolo del MCD di 2 numeri $\mathbb{N}$
+Reinvenzione dell'[[Algoritmo]] di Euclide per il calcolo del MCD di 2 numeri $\mathbb{N}$
 
 ### Problema
 - **I**: 2 numeri naturali A, B (non entrambi nulli)
@@ -91,7 +91,7 @@ Reinvenzione dell'algoritmo di Euclide per il calcolo del MCD di 2 numeri $\math
 Insieme di passi elementari richiesto: lettura di un valore, confronto fra due numeri (esito vero/falso), calcolo del resto della divisione intera, assegnazione/memorizzazione in un contenitore, scrittura del risultato.
 
 ### Idea algoritmica
-Si usa la versione "a resto" dell'algoritmo di Euclide, basata sulla proprietà MCD(A, B) = MCD(B, A mod B), valida finché B ≠ 0, e sul caso base MCD(A, 0) = A.
+Si usa la versione "a resto" dell'[[Algoritmo]] di Euclide, basata sulla proprietà MCD(A, B) = MCD(B, A mod B), valida finché B ≠ 0, e sul caso base MCD(A, 0) = A.
 
 Si leggono i due numeri in A e B. Finché B è diverso da 0, si calcola il resto R della divisione di A per B, poi si fa scorrere la coppia: A prende il valore di B e B prende il valore di R (si ricalcola sempre il resto rispetto ai valori aggiornati). Quando B diventa 0, A contiene il MCD cercato.
 
@@ -147,7 +147,7 @@ int main(void)
 ```
 
 ## 2.2
-Variante "ingenua" dell'algoritmo per il calcolo del MCD: si parte dal più piccolo dei due numeri e lo si decrementa finché non si trova un valore che divide entrambi.
+Variante "ingenua" dell'[[Algoritmo]] per il calcolo del MCD: si parte dal più piccolo dei due numeri e lo si decrementa finché non si trova un valore che divide entrambi.
 
 ### Problema
 - **I**: 2 numeri naturali A, B (non entrambi nulli)
@@ -160,7 +160,7 @@ Insieme di passi elementari richiesto: lettura di un valore, confronto fra due n
 ### Idea algoritmica
 Ogni divisore comune di A e B è al più grande quanto il minore dei due, e D = 1 divide sempre entrambi: quindi basta partire da D = min(A, B) e scendere di 1 in 1 finché D non divide sia A sia B (resto nullo in entrambe le divisioni). Il primo D per cui questo accade, scendendo dall'alto, è per costruzione il più grande possibile: il MCD.
 
-È meno efficiente dell'algoritmo di Euclide (nel caso peggiore serve un numero di passi pari a min(A, B), invece che logaritmico), ma è più diretto da giustificare: è la traduzione letterale della definizione di MCD come "massimo divisore comune".
+È meno efficiente dell'[[Algoritmo]] di Euclide (nel caso peggiore serve un numero di passi pari a min(A, B), invece che logaritmico), ma è più diretto da giustificare: è la traduzione letterale della definizione di MCD come "massimo divisore comune".
 
 1. leggi A, B
 2. se (A < B) allora D <-- A altrimenti D <-- B

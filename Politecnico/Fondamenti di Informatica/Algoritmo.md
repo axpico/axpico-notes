@@ -294,9 +294,105 @@ int main(void)
 > Nota: nella pratica C il compilatore traduce `m / n` e `m % n` in un'unica istruzione macchina di divisione, ben più efficiente di questo ciclo; 
 
 
+## Aritmetica intera in base B
+Generalizzazione delle operazioni aritmetiche (addizione, sottrazione, moltiplicazione, divisione) a un intero rappresentato in una base $B \geq 2$ qualunque (non solo B = 10), tramite un esecutore che dispone unicamente di passi elementari su singole **cifre** (confronto, addizione/sottrazione di cifre, memorizzazione) — esattamente come si esegue "a mano" un'operazione in colonna.
 
-trovare algoritmo intero in base B
+### Rappresentazione posizionale
+Un numero naturale N in base B è rappresentato come sequenza di cifre $d_{k-1} d_{k-2} \dots d_1 d_0$, con $0 \le d_i < B$, tale che:
+$$N = \sum_{i=0}^{k-1} d_i \cdot B^i$$
+Per l'esecutore, N è quindi un **vettore di cifre** (array), indicizzato dalla cifra meno significativa ($d_0$) alla più significativa; l'operazione aritmetica elementare disponibile è quella su una singola cifra, con eventuale **riporto** (addizione/moltiplicazione) o **prestito** (sottrazione) da propagare alla cifra successiva — esattamente come l'algoritmo di divisione per sottrazioni successive (§ sopra) propaga il confronto ad ogni iterazione.
 
-esecuture addizione sottrazione divisione  e moltiplicazione 
--!=/ 
-sotto 1 != 0 
+### Addizione (A + B, colonna con riporto)
+#### Problema
+- **I** — due vettori di cifre A e B in base B (stessa base), di lunghezza $n$ e $m$
+- **O** — un vettore di cifre S (somma), di lunghezza al più $\max(n,m)+1$
+- **R** — S rappresenta, secondo la formula posizionale sopra, la somma dei valori rappresentati da A e B
+
+#### Idea algoritmica
+Si procede cifra per cifra da destra (meno significativa) verso sinistra, mantenendo un **riporto** (carry) che vale inizialmente 0:
+1. i <-- 0, riporto <-- 0
+2. finché (i < lunghezza massima oppure riporto ≠ 0) ripeti:
+	1. t <-- A[i] + B[i] + riporto  *(cifre mancanti trattate come 0)*
+	2. S[i] <-- t mod Base
+	3. riporto <-- t div Base   *(vale 0 oppure 1)*
+	4. i <-- i + 1
+3. produci in uscita S
+4. TERMINA
+
+Correttezza: ad ogni passo $t < 2 \cdot Base$ (due cifre + riporto al più 1), quindi $t \; div \; Base \in \{0,1\}$ — un solo bit/cifra di riporto basta, come nell'addizione in colonna appresa a scuola.
+
+#### Implementazione in ANSI C89 (base B generica, cifre in array `unsigned int`)
+```c
+#include <stdio.h>
+
+/* R: somma le cifre di a (na cifre) e b (nb cifre) in base "base",
+   scrive il risultato in s (deve avere spazio per max(na,nb)+1 cifre),
+   restituisce il numero di cifre effettive del risultato.
+   Cifre indicizzate dalla meno significativa (indice 0). */
+int somma_base_b(const unsigned int *a, int na,
+                  const unsigned int *b, int nb,
+                  unsigned int base, unsigned int *s)
+{
+    int i, n;
+    unsigned int riporto, t, da, db;
+
+    n = (na > nb) ? na : nb;
+    riporto = 0;
+
+    for (i = 0; i < n || riporto != 0; i++) {
+        da = (i < na) ? a[i] : 0;
+        db = (i < nb) ? b[i] : 0;
+        t = da + db + riporto;
+        s[i] = t % base;
+        riporto = t / base;
+    }
+
+    return i; /* numero di cifre scritte in s */
+}
+```
+
+### Sottrazione (A − B, colonna con prestito, $A \geq B$)
+#### Problema
+- **I** — due vettori di cifre A e B in base B, con $A \geq B$ (altrimenti il risultato non è un naturale)
+- **O** — un vettore di cifre D (differenza)
+- **R** — D rappresenta il valore $A - B$
+
+#### Idea algoritmica
+Simmetrica all'addizione, ma con un **prestito** (borrow, $\in \{0,1\}$) invece del riporto: se la cifra di A (al netto del prestito) è minore di quella di B, si "prende in prestito" una unità dalla base successiva:
+1. i <-- 0, prestito <-- 0
+2. finché (i < lunghezza di A) ripeti:
+	1. t <-- A[i] − prestito − B[i]  *(cifre mancanti di B trattate come 0)*
+	2. se (t < 0) allora: D[i] <-- t + Base, prestito <-- 1
+	3. altrimenti: D[i] <-- t, prestito <-- 0
+	4. i <-- i + 1
+3. produci in uscita D (eliminando eventuali zeri non significativi in testa)
+4. TERMINA
+
+Poiché $A \geq B$ per ipotesi, il prestito finale è sempre 0.
+
+### Moltiplicazione (A × B)
+#### Problema
+- **I** — due vettori di cifre A ($n$ cifre) e B ($m$ cifre) in base B
+- **O** — un vettore di cifre P (prodotto), di lunghezza al più $n+m$
+- **R** — P rappresenta il valore $A \cdot B$
+
+#### Idea algoritmica: moltiplicazione in colonna (come a mano)
+Si moltiplica A per ciascuna cifra di B, si accumulano i **prodotti parziali** opportunamente scalati (shiftati) di una posizione per ogni cifra di B già processata, sommandoli con l'addizione già definita sopra:
+1. P <-- vettore di soli zeri, lunghezza $n+m$
+2. per j <-- 0 fino a $m-1$ ripeti:
+	1. riporto <-- 0
+	2. per i <-- 0 fino a $n-1$ ripeti:
+		1. t <-- P[i+j] + A[i] · B[j] + riporto
+		2. P[i+j] <-- t mod Base
+		3. riporto <-- t div Base
+	3. P[n+j] <-- P[n+j] + riporto   *(propagazione dell'ultimo riporto)*
+3. produci in uscita P
+4. TERMINA
+
+Correttezza (idea): è la formalizzazione cifra-per-cifra di $A \cdot B = A \cdot \sum_j B[j]\cdot Base^j = \sum_j (A \cdot B[j]) \cdot Base^j$ — ogni prodotto parziale $A \cdot B[j]$ viene sommato a P già shiftato di $j$ posizioni (cioè scritto a partire dall'indice $i+j$).
+
+### Divisione (Q, R tali che $A = Q \cdot Base_N + R$, $N \neq 0$)
+#### Idea algoritmica
+L'algoritmo per sottrazioni successive visto sopra (§ Esempio: quoziente e resto della divisione intera) resta valido invariato: usa solo confronto, sottrazione e memorizzazione, indipendenti dalla base scelta per rappresentare i numeri — la base entra in gioco solo nella *rappresentazione* di A, N, Q, R come vettori di cifre (usando la sottrazione in colonna definita sopra al posto della sottrazione "in blocco"), non nella logica dell'algoritmo. In pratica, per basi grandi, si preferisce una variante **cifra per cifra** (divisione lunga): si processano le cifre di A da sinistra a destra, mantenendo un resto parziale R (inizialmente 0) a cui si accosta ad ogni passo la cifra successiva di A, e si sottrae N da R il maggior numero di volte possibile (al più $Base-1$, tramite confronti ripetuti) prima di passare alla cifra successiva — stessa idea, applicata localmente ad ogni cifra invece che al numero intero.
+
+Continue con [[Algoritmi 2]]

@@ -1,0 +1,14 @@
+{
+  "id": "conv-1789543695205-hu7wokv8l",
+  "providerId": "claude",
+  "title": "Implement base B arithmetic operations",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789543695221,
+  "lastActivityAt": 1789543695221,
+  "sessionId": "03434170-3b65-4cb5-8b54-2fe203f3ace6",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "03434170-3b65-4cb5-8b54-2fe203f3ace6"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Algoritmo.md"
+}
