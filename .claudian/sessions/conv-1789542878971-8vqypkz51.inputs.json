@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789542878971-8vqypkz51",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789542879092-d5e1qht",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789542878964-9qa4s0q",
+      "timestamp": 1789542878964,
+      "rawDisplayText": "aggiungi tags",
+      "canonicalText": "aggiungi tags",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Fondamenti di Informatica/Algoritmi 2.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "c6697eb839265a9f680920baef9c8a092ae580ab8541294d26e463157ae9f3a2",
+      "providerUserMessageId": "45726711-73d0-41b1-b422-5ee4ceac3918",
+      "providerAssistantMessageId": "481b19dc-347e-4e0a-9a58-8b1bc38c43c7"
+    }
+  ]
+}

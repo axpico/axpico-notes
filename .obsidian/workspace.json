@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#formulario",
+                "query": "tag:#ansi-c89",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -207,12 +207,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789541418842-cm1kxai",
+                      "tabId": "tab-1789542905151-o3cxn1s",
                       "conversationId": null,
                       "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1789541418842-cm1kxai"
+                  "activeTabId": "tab-1789542905151-o3cxn1s"
                 }
               },
               "icon": "bot",
@@ -257,11 +257,13 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "56efc63866208b00",
+  "active": "7bf9ee132c903405",
   "lastOpenFiles": [
+    "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
+    "Politecnico/Fondamenti di Informatica/Algoritmo.md",
+    "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.7524.426315318a00",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.1540.8315b90a1225",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
-    "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.30191.be23e59ca09a",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.29066.a937e44969a8",
@@ -271,10 +273,7 @@
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.18976.8ed3dfec5d61",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.18976.678552ed4fd3",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md.tmp.15461.a4f75701fc1c",
-    "Politecnico/Analisi 1/Insieme numerici.md.tmp.6783.f73712c2778a",
-    "Politecnico/Analisi 1/Insieme numerici.md.tmp.5208.6903094fcd5e",
     "Politecnico/Analisi 1/Informazioni analisi 1.md",
-    "Politecnico/Fondamenti di Informatica/Algoritmo.md",
     "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "claude_skills/claude_skills index.md",

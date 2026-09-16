@@ -1,5 +1,9 @@
 ---
-tags: [fondamenti-informatica, algoritmo, flowchart, ansi-c89, boehm-jacopini]
+tags:
+  - fondamenti-informatica
+  - algoritmo
+  - flowchart
+  - boehm-jacopini
 ---
 ## Algoritmo
 Un algoritmo si basa su due nozioni:

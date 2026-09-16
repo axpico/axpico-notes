@@ -1,3 +1,10 @@
+---
+tags:
+  - fondamenti-informatica
+  - algoritmo
+  - flowchart
+  - ciclo-sentinella
+---
 # Algoritmi 2
 ## 1
 
@@ -72,3 +79,5 @@ int main(void)
 }
 ```
 
+## 2
+Re invezione dell'algoritmo di euclide per il calcolo del MCD di 2 numeri $$

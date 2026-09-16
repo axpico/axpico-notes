@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789542878971-8vqypkz51",
+  "providerId": "claude",
+  "title": "Add tags",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789542878982,
+  "lastActivityAt": 1789542899785,
+  "sessionId": "4d362c45-62d0-460c-b73b-9909d63780fa",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "4d362c45-62d0-460c-b73b-9909d63780fa"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 370,
+    "cacheReadInputTokens": 38409,
+    "contextWindow": 967000,
+    "contextTokens": 38781,
+    "percentage": 4,
+    "contextWindowIsAuthoritative": true
+  }
+}
