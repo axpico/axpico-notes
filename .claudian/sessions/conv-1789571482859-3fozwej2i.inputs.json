@@ -67,7 +67,8 @@
         }
       ],
       "contentDigest": "1a0c681ba3a2af53b7d5f4224a812c82fe8188c63a1bb82a1b28b3f1e997d354",
-      "providerUserMessageId": "c7db572f-7f58-4cb8-b4a5-356b2986d81c"
+      "providerUserMessageId": "c7db572f-7f58-4cb8-b4a5-356b2986d81c",
+      "providerAssistantMessageId": "e885401e-6eee-4c65-9e88-b778e9a24463"
     }
   ]
 }

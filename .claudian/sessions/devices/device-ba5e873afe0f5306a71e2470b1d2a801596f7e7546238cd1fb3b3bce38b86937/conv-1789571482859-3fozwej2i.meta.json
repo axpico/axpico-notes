@@ -4,11 +4,21 @@
   "title": "Image analysis and page documentation",
   "titleGenerationStatus": "success",
   "createdAt": 1789571482864,
-  "lastActivityAt": 1789571482864,
+  "lastActivityAt": 1789571542580,
   "sessionId": "c942cd2d-c138-4958-8286-a91dbdec3792",
   "selectedModel": "sonnet",
   "providerState": {
     "providerSessionId": "c942cd2d-c138-4958-8286-a91dbdec3792"
   },
-  "linkedContentPath": "Politecnico/Analisi 1/Untitled.md"
+  "linkedContentPath": "Politecnico/Analisi 1/Estremo superiore ed estremo inferiore, completezza di ℝ, numeri complessi.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 6092,
+    "cacheReadInputTokens": 44118,
+    "contextWindow": 1000000,
+    "contextTokens": 50212,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
 }
