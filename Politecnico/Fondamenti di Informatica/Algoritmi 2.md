@@ -247,7 +247,6 @@ flowchart TD
     InitBin --> CondBin{INIZIO <= FINE e TROVATO = -1 ?}
     CondBin -- vero --> Mid[M <-- _INIZIO+FINE_ / 2]
     Mid --> CmpEq{A_M_ = X ?}
-    CmpEq -- vero --> SetFound[TROVATO <-- M]
     SetFound --> CondBin
     CmpEq -- falso --> CmpLt{A_M_ < X ?}
     CmpLt -- vero --> MoveRight[INIZIO <-- M + 1]
@@ -255,6 +254,7 @@ flowchart TD
     MoveRight --> CondBin
     MoveLeft --> CondBin
     CondBin -- falso --> Write[/scrivi TROVATO/]
+    CmpEq -- vero --> SetFound[TROVATO <-- M]
     Write --> End([FINE])
 ```
 
