@@ -207,12 +207,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789542905151-o3cxn1s",
+                      "tabId": "tab-1789543357595-v1pcoyz",
                       "conversationId": null,
                       "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1789542905151-o3cxn1s"
+                  "activeTabId": "tab-1789543357595-v1pcoyz"
                 }
               },
               "icon": "bot",
@@ -257,8 +257,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "7bf9ee132c903405",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
+    "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.12976.bddff29af067",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.7524.426315318a00",

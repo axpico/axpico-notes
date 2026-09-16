@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789543206532-uc0eslggn",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789543206661-v8gr6f8",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789543206525-ynug2po",
+      "timestamp": 1789543206525,
+      "rawDisplayText": "finsici",
+      "canonicalText": "finsici",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Fondamenti di Informatica/Algoritmi 2.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "78940bbdec31733203e57cb198eebded8dc46a2526e77b433ae3ccf89e449430",
+      "providerUserMessageId": "4302d3dc-bf88-4a33-a0fd-e55e7e911dd4",
+      "providerAssistantMessageId": "47a56253-1f80-41ff-8c90-5d2f873dac18"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789543291219-ae3j1ah",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789543291210-538aavz",
+      "timestamp": 1789543291210,
+      "rawDisplayText": "aggiungine uno piu facile, prendi il numeri minore e sottrai 1 fino a trovaer un numero che divide entrambi",
+      "canonicalText": "aggiungine uno piu facile, prendi il numeri minore e sottrai 1 fino a trovaer un numero che divide entrambi",
+      "images": [],
+      "contentDigest": "81ca81c162afb904d73facf8041753544caa03bf126340340da8669c4706bb1a",
+      "providerUserMessageId": "51f6382d-eca9-4678-8f2c-0b546913ef72",
+      "providerAssistantMessageId": "5831d7b6-1a8c-4d16-8d74-0835ab0f23af"
+    }
+  ]
+}

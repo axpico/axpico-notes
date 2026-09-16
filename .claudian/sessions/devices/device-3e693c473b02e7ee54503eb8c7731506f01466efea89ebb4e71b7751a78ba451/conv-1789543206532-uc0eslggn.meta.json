@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789543206532-uc0eslggn",
+  "providerId": "claude",
+  "title": "I can't generate a meaningful title from \"finsi...",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789543206541,
+  "lastActivityAt": 1789543309586,
+  "sessionId": "6ddbd71b-e6b0-418f-a7ea-5c9b4441a68c",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "6ddbd71b-e6b0-418f-a7ea-5c9b4441a68c"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1415,
+    "cacheReadInputTokens": 41616,
+    "contextWindow": 967000,
+    "contextTokens": 43033,
+    "percentage": 4,
+    "contextWindowIsAuthoritative": true
+  }
+}
