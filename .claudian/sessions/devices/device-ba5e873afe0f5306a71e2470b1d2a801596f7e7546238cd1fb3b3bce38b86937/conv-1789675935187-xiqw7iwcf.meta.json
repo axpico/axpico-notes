@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789675935187-xiqw7iwcf",
+  "providerId": "claude",
+  "title": "Write skills checking notes",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789675935195,
+  "lastActivityAt": 1789675999656,
+  "sessionId": "4f9a802e-95ab-4ce3-81f7-d45c7e4ef5ca",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "4f9a802e-95ab-4ce3-81f7-d45c7e4ef5ca"
+  },
+  "linkedContentPath": "Politecnico/Geometria e Algebra Lineare/Insiemi, vettori e sistemi lineari — nozioni di base.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 5858,
+    "cacheReadInputTokens": 43987,
+    "contextWindow": 1000000,
+    "contextTokens": 49847,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}
