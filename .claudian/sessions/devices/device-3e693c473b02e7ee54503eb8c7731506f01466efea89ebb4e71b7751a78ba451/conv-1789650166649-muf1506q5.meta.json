@@ -4,7 +4,7 @@
   "title": "Binary representation and encodings",
   "titleGenerationStatus": "success",
   "createdAt": 1789650166668,
-  "lastActivityAt": 1789650212820,
+  "lastActivityAt": 1789650547017,
   "sessionId": "24f6fb43-9e67-45e2-9194-315f86580469",
   "selectedModel": "sonnet",
   "providerState": {
@@ -14,11 +14,11 @@
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,
-    "cacheCreationInputTokens": 243,
-    "cacheReadInputTokens": 31781,
+    "cacheCreationInputTokens": 3047,
+    "cacheReadInputTokens": 40473,
     "contextWindow": 967000,
-    "contextTokens": 32026,
-    "percentage": 3,
+    "contextTokens": 43522,
+    "percentage": 5,
     "contextWindowIsAuthoritative": true
   }
 }

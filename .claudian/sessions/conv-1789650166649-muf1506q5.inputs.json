@@ -20,6 +20,20 @@
       "contentDigest": "a2fd2d402dd1504f58449db6ef61eb4fb3feddeedfa3dcd3ae8a8f1402d8fc4a",
       "providerUserMessageId": "15c5746e-e175-4f63-8420-2398850d252b",
       "providerAssistantMessageId": "d8b7a697-3e67-4f80-a8d9-e4ea75b5f7cb"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789650513156-nb0v2t4",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789650513141-d7qvqm2",
+      "timestamp": 1789650513142,
+      "rawDisplayText": "scrivi nella pagina. aggiungi un ifno su mac adress",
+      "canonicalText": "scrivi nella pagina. aggiungi un ifno su mac adress",
+      "images": [],
+      "contentDigest": "86ec9a5aa1dc54e29ce3822d8066899775441fbadb40315717f929af746490b0",
+      "providerUserMessageId": "527d886b-cfc4-4d63-b75d-b76b74acc41b",
+      "providerAssistantMessageId": "eef5c286-1f24-421c-aa90-224993e7cfb6"
     }
   ]
 }
