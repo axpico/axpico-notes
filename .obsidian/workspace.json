@@ -8,17 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8cee6952909d5f4b",
+            "id": "11432f986c6d1547",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Politecnico/Fondamenti di Informatica/Binari.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2026-09-17 16.25.42.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Binari"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-09-17 16.25.42.excalidraw"
             }
           }
         ]
@@ -207,11 +205,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789545290172-a53zcm9",
-                      "conversationId": "conv-1789650166649-muf1506q5"
+                      "tabId": "tab-1789655144951-h3fpjq2",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1789545290172-a53zcm9"
+                  "activeTabId": "tab-1789655144951-h3fpjq2"
                 }
               },
               "icon": "bot",
@@ -224,7 +223,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Politecnico/Fondamenti di Informatica/Binari.md"
+                "file": "Excalidraw/Drawing 2026-09-17 16.25.42.excalidraw.md"
               },
               "icon": "lucide-info",
               "title": "Proprietà file"
@@ -235,7 +234,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409
+    "width": 409,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -248,18 +248,20 @@
       "markdown-importer:Apri importazione Markdown": false,
       "audio-recorder:Avvia/ferma registrazione": false,
       "bases:Crea nuova Base": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
       "omnisearch:Omnisearch": false,
       "templater-obsidian:Templater": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-kanban:Create new board": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
       "obisidian-note-linker:Note Linker": false,
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "56efc63866208b00",
+  "active": "11432f986c6d1547",
   "lastOpenFiles": [
+    "Politecnico/Fondamenti di Informatica/Binari.md",
+    "Excalidraw/Drawing 2026-09-17 16.25.42.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.c4b40736fff0",
     "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.6450e8310a83",
     "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.b7f980bce4d8",
@@ -270,8 +272,6 @@
     "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.a57d786718d8",
     "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.b04530b9b42f",
     "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.ded14c1091e8",
-    "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.7eb9aeb2d9c2",
-    "Politecnico/Fondamenti di Informatica/Binari.md",
     "Excalidraw/Drawing 2026-09-16 10.06.40.excalidraw.md",
     "Politecnico/Analisi 1/Estremo superiore ed estremo inferiore, completezza di ℝ, numeri complessi.md",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
