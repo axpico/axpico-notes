@@ -29,7 +29,31 @@ Somma delle potenze di 2 corrispondenti alle cifre a 1, con posizione che parte 
 
 0,101₂ = 1·2⁻¹ + 0·2⁻² + 1·2⁻³ = 0,5 + 0 + 0,125 = **0,625₁₀**
 
-## 3. Complemento a 1
+## 3. Base 16 (esadecimale)
+
+Sistema posizionale in base 16: 16 simboli (0-9, poi A=10, B=11, C=12, D=13, E=14, F=15). Usato per scrivere in modo compatto i numeri binari, perché **1 cifra esadecimale = esattamente 4 bit** (2⁴=16): la conversione binario↔hex è quindi immediata, cifra per cifra, senza bisogno di passare per il decimale.
+
+**Binario → esadecimale**: raggruppa i bit a 4 a 4 partendo da destra (aggiungendo zeri a sinistra se serve), poi converti ogni gruppo nella cifra hex corrispondente.
+
+Esempio: 1101101₂ → raggruppa: `0110 1101` → **6D₁₆**
+
+**Esadecimale → binario**: operazione inversa, ogni cifra hex diventa un gruppo di 4 bit.
+
+Esempio: A3₁₆ → A=1010, 3=0011 → **10100011₂**
+
+**Decimale → esadecimale**: divisioni successive per 16, stesso procedimento del punto 1 ma con resti da 0 a 15 (10-15 → A-F), letti dal basso.
+
+Esempio: 187₁₀
+- 187 ÷ 16 = 11 resto **11 (B)**
+- 11 ÷ 16 = 0 resto **11 (B)**
+
+187₁₀ = **BB₁₆**
+
+**Esadecimale → decimale**: somma delle cifre moltiplicate per le potenze di 16 corrispondenti.
+
+BB₁₆ = 11·16¹ + 11·16⁰ = 176+11 = **187₁₀**
+
+## 4. Complemento a 1
 
 Si ottiene invertendo tutti i bit (0↔1) di un numero binario su n bit. È il modo storico di rappresentare i negativi: il bit più significativo (MSB) indica il segno (0 positivo, 1 negativo), gli altri bit vanno complementati per leggere il valore assoluto del negativo.
 
@@ -39,7 +63,7 @@ Esempio (8 bit), −5:
 
 **Difetto**: esistono due rappresentazioni dello zero (00000000 e 11111111), e le somme richiedono un "riporto circolare" (end-around carry) — scomodo in hardware.
 
-## 4. Complemento a 2
+## 5. Complemento a 2
 
 Si ottiene: complemento a 1 + 1. È lo standard usato da tutti i processori moderni per gli interi con segno, perché lo zero è unico e le sottrazioni si riconducono a somme senza correzioni particolari.
 
@@ -55,7 +79,7 @@ Range rappresentabile su n bit: da −2^(n−1) a 2^(n−1) − 1 (es. 8 bit: da
 
 **Per tornare dal complemento a 2 al valore assoluto** del negativo: si ricomplementa (complemento a 1 + 1), operazione involutiva.
 
-## 5. Codice ASCII
+## 6. Codice ASCII
 
 Standard che associa a ciascun carattere (lettere, cifre, simboli, comandi di controllo) un numero intero su 7 bit (0–127), poi tipicamente memorizzato su un byte (8 bit, con bit più significativo a 0 nell'ASCII standard).
 
@@ -67,7 +91,7 @@ Esempi utili da ricordare:
 
 Per convertire un carattere: si cerca il suo codice nella tabella ASCII e si converte quel numero in binario con il metodo del punto 1.
 
-## 6. Rappresentazione in virgola fissa
+## 7. Rappresentazione in virgola fissa
 
 Il numero binario ha un punto (virgola) implicito in una posizione **fissa e prestabilita**: n bit per la parte intera, m bit per la parte frazionaria, decisi a priori dal formato.
 
@@ -76,7 +100,7 @@ Esempio: formato Q4.4 (4 bit interi, 4 frazionari) su 8 bit: `0011.1010` = 3 + 0
 **Vantaggi**: aritmetica semplice ed efficiente (uguale a quella degli interi, spostando solo l'interpretazione).
 **Limiti**: range e precisione fissi e limitati — non adatta a numeri molto grandi e molto piccoli insieme.
 
-## 7. Rappresentazione in virgola mobile (floating point, standard IEEE 754)
+## 8. Rappresentazione in virgola mobile (floating point, standard IEEE 754)
 
 Il numero è rappresentato come:
 
@@ -95,7 +119,7 @@ Esempio, convertire 13,625₁₀:
 
 **Vantaggio** rispetto alla virgola fissa: range dinamico enorme (numeri molto grandi e molto piccoli) mantenendo un numero fisso di cifre significative — a costo di precisione variabile e di arrotondamenti (errori di rappresentazione tipici del floating point).
 
-## 8. Indirizzo MAC (Media Access Control)
+## 9. Indirizzo MAC (Media Access Control)
 
 Identificatore fisico a **48 bit (6 byte)** assegnato a un'interfaccia di rete (scheda Ethernet, Wi-Fi), scritto convenzionalmente come **12 cifre esadecimali** raggruppate a coppie separate da `:` o `-`.
 

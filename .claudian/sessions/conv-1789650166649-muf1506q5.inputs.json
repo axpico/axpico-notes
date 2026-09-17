@@ -34,6 +34,20 @@
       "contentDigest": "86ec9a5aa1dc54e29ce3822d8066899775441fbadb40315717f929af746490b0",
       "providerUserMessageId": "527d886b-cfc4-4d63-b75d-b76b74acc41b",
       "providerAssistantMessageId": "eef5c286-1f24-421c-aa90-224993e7cfb6"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789650816260-gzrqjgc",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789650816244-dlcmgmd",
+      "timestamp": 1789650816244,
+      "rawDisplayText": "aggiungi anceh unpezzo su base 16",
+      "canonicalText": "aggiungi anceh unpezzo su base 16",
+      "images": [],
+      "contentDigest": "ac6b4ec0b09fb12736f06d04f9a587c5793e5f334ec89ee42ef70863f3132732",
+      "providerUserMessageId": "f8275113-525f-4ab7-b1dc-ea720b28a1c3",
+      "providerAssistantMessageId": "d499510e-a38f-4344-bad5-41dc18716ce7"
     }
   ]
 }
