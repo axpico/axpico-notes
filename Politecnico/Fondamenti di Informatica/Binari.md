@@ -79,7 +79,21 @@ Range rappresentabile su n bit: da −2^(n−1) a 2^(n−1) − 1 (es. 8 bit: da
 
 **Per tornare dal complemento a 2 al valore assoluto** del negativo: si ricomplementa (complemento a 1 + 1), operazione involutiva.
 
-## 6. Codice ASCII
+## 6. Overflow e underflow
+
+**Overflow** (interi, complemento a 2): si verifica quando il risultato di un'operazione non entra nel numero di bit disponibili, cioè esce dal range rappresentabile [−2^(n−1), 2^(n−1)−1]. Si riconosce facilmente sommando due numeri con lo **stesso segno** e ottenendo un risultato con il **segno opposto**.
+
+Esempio (4 bit, range −8..+7): 5 + 5 = 0101 + 0101 = 1010 = **−6** (risultato assurdo: overflow, perché 10 non entra in 4 bit con segno).
+
+Nota: un riporto (carry) fuori dal bit più significativo non implica overflow (l'hardware lo tollera in aritmetica senza segno); il segnale corretto di overflow nel complemento a 2 è "carry in" ≠ "carry out" sull'ultimo bit, oppure, più semplicemente, il cambio di segno inatteso descritto sopra.
+
+**Overflow e underflow (virgola mobile, IEEE 754)**: qui i due termini hanno un significato diverso, legato all'**esponente**:
+- **Overflow**: il risultato è troppo **grande** in modulo per essere rappresentato (l'esponente richiesto supera il massimo codificabile) → il valore diventa **∞** (infinito, rappresentazione speciale IEEE 754).
+- **Underflow**: il risultato è troppo **piccolo** in modulo, più vicino a zero di quanto i bit di esponente permettano di rappresentare in forma normalizzata → si perde precisione (numeri "denormalizzati") o il valore collassa a **0**.
+
+In sintesi: negli interi (complemento a 2) esiste solo l'overflow (uscita dal range da un lato o dall'altro); in virgola mobile overflow e underflow sono i due lati opposti del range dinamico dell'esponente (troppo grande / troppo vicino a zero).
+
+## 7. Codice ASCII
 
 Standard che associa a ciascun carattere (lettere, cifre, simboli, comandi di controllo) un numero intero su 7 bit (0–127), poi tipicamente memorizzato su un byte (8 bit, con bit più significativo a 0 nell'ASCII standard).
 
@@ -91,7 +105,7 @@ Esempi utili da ricordare:
 
 Per convertire un carattere: si cerca il suo codice nella tabella ASCII e si converte quel numero in binario con il metodo del punto 1.
 
-## 7. Rappresentazione in virgola fissa
+## 8. Rappresentazione in virgola fissa
 
 Il numero binario ha un punto (virgola) implicito in una posizione **fissa e prestabilita**: n bit per la parte intera, m bit per la parte frazionaria, decisi a priori dal formato.
 
@@ -100,7 +114,7 @@ Esempio: formato Q4.4 (4 bit interi, 4 frazionari) su 8 bit: `0011.1010` = 3 + 0
 **Vantaggi**: aritmetica semplice ed efficiente (uguale a quella degli interi, spostando solo l'interpretazione).
 **Limiti**: range e precisione fissi e limitati — non adatta a numeri molto grandi e molto piccoli insieme.
 
-## 8. Rappresentazione in virgola mobile (floating point, standard IEEE 754)
+## 9. Rappresentazione in virgola mobile (floating point, standard IEEE 754)
 
 Il numero è rappresentato come:
 
@@ -119,7 +133,7 @@ Esempio, convertire 13,625₁₀:
 
 **Vantaggio** rispetto alla virgola fissa: range dinamico enorme (numeri molto grandi e molto piccoli) mantenendo un numero fisso di cifre significative — a costo di precisione variabile e di arrotondamenti (errori di rappresentazione tipici del floating point).
 
-## 9. Indirizzo MAC (Media Access Control)
+## 10. Indirizzo MAC (Media Access Control)
 
 Identificatore fisico a **48 bit (6 byte)** assegnato a un'interfaccia di rete (scheda Ethernet, Wi-Fi), scritto convenzionalmente come **12 cifre esadecimali** raggruppate a coppie separate da `:` o `-`.
 

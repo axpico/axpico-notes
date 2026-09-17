@@ -223,9 +223,11 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {},
+              "state": {
+                "file": "Politecnico/Fondamenti di Informatica/Binari.md"
+              },
               "icon": "lucide-info",
-              "title": "File properties"
+              "title": "Proprietà file"
             }
           }
         ],
@@ -258,6 +260,10 @@
   },
   "active": "56efc63866208b00",
   "lastOpenFiles": [
+    "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.c4b40736fff0",
+    "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.6450e8310a83",
+    "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.b7f980bce4d8",
+    "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.6fae5e99cefa",
     "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.4e5191b6dcfb",
     "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.5c492488b50d",
     "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.faf315381a11",
@@ -270,10 +276,6 @@
     "Politecnico/Analisi 1/Estremo superiore ed estremo inferiore, completezza di ℝ, numeri complessi.md",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
     "Politecnico/Fondamenti di Informatica/Algoritmo.md",
-    "Politecnico/Fondamenti di Informatica/Algoritmo.md.tmp.7008.37f8f1ede73c",
-    "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.12976.bddff29af067",
-    "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.7524.426315318a00",
-    "Politecnico/Fondamenti di Informatica/Algoritmi 2.md.tmp.1540.8315b90a1225",
     "Politecnico/Analisi 1/Insieme numerici, logia e dimostrazioni.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Politecnico/Analisi 1/Informazioni analisi 1.md",
