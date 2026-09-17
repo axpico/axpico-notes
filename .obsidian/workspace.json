@@ -33,7 +33,8 @@
               "title": "Untitled"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -248,8 +249,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409,
-    "collapsed": true
+    "width": 409
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -272,10 +272,10 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "11432f986c6d1547",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/Untitled.md",
     "Excalidraw/Drawing 2026-09-17 16.25.42.excalidraw.md",
+    "Politecnico/Geometria e Algebra Lineare/Untitled.md",
     "Politecnico/Fondamenti di Informatica/Binari.md",
     "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.c4b40736fff0",
     "Politecnico/Fondamenti di Informatica/Binari.md.tmp.13936.6450e8310a83",
