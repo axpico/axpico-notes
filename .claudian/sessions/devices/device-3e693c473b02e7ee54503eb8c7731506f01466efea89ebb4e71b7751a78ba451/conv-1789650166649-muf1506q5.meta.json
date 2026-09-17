@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789650166649-muf1506q5",
+  "providerId": "claude",
+  "title": "Binary representation and encodings",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789650166668,
+  "lastActivityAt": 1789650212820,
+  "sessionId": "24f6fb43-9e67-45e2-9194-315f86580469",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "24f6fb43-9e67-45e2-9194-315f86580469"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Binari.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 243,
+    "cacheReadInputTokens": 31781,
+    "contextWindow": 967000,
+    "contextTokens": 32026,
+    "percentage": 3,
+    "contextWindowIsAuthoritative": true
+  }
+}

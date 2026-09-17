@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3dff30f7cdeaa931",
+        "id": "4ed2b2c8deb4ba06",
         "type": "tabs",
         "children": [
           {
-            "id": "f7cf24f8f549e198",
+            "id": "8cee6952909d5f4b",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-09-16 10.06.40.excalidraw.md"
+                "file": "Politecnico/Fondamenti di Informatica/Binari.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-16 10.06.40.excalidraw"
+              "icon": "lucide-file",
+              "title": "Binari"
             }
           }
         ]
@@ -206,8 +208,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1789545290172-a53zcm9",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
+                      "conversationId": "conv-1789650166649-muf1506q5"
                     }
                   ],
                   "activeTabId": "tab-1789545290172-a53zcm9"
@@ -232,8 +233,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409,
-    "collapsed": true
+    "width": 409
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -256,8 +256,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "5543cbab6e5967d4",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
+    "Politecnico/Fondamenti di Informatica/Binari.md",
     "Excalidraw/Drawing 2026-09-16 10.06.40.excalidraw.md",
     "Politecnico/Analisi 1/Estremo superiore ed estremo inferiore, completezza di ℝ, numeri complessi.md",
     "Politecnico/Fondamenti di Informatica/Algoritmi 2.md",
@@ -294,7 +295,6 @@
     "Formulario/Elettromagnetismo/Raggio di Ciclotrone.md",
     "Formulario/Elettromagnetismo/Forza di Lorentz.md",
     "Formulario/Elettromagnetismo/Teorema di Ampère.md",
-    "Formulario/Elettromagnetismo/Campo Magnetico di un Filo Rettilineo.md",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",

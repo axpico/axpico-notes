@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789650166649-muf1506q5",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789650167030-4t4nxh2",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789650166588-07jobft",
+      "timestamp": 1789650166588,
+      "rawDisplayText": "spiega come ocnvertire in binario e viceversa e come fare complemente 1 e 2. ansci e virgola mobile e fissa",
+      "canonicalText": "spiega come ocnvertire in binario e viceversa e come fare complemente 1 e 2. ansci e virgola mobile e fissa",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Fondamenti di Informatica/Binari.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "a2fd2d402dd1504f58449db6ef61eb4fb3feddeedfa3dcd3ae8a8f1402d8fc4a",
+      "providerUserMessageId": "15c5746e-e175-4f63-8420-2398850d252b",
+      "providerAssistantMessageId": "d8b7a697-3e67-4f80-a8d9-e4ea75b5f7cb"
+    }
+  ]
+}
