@@ -1,0 +1,14 @@
+{
+  "id": "conv-1789757475928-pattzts1h",
+  "providerId": "claude",
+  "title": "Complete and fix content",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789757475933,
+  "lastActivityAt": 1789757475933,
+  "sessionId": "23ae1b01-eb2d-4193-af17-c4aef67348e6",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "23ae1b01-eb2d-4193-af17-c4aef67348e6"
+  },
+  "linkedContentPath": "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md"
+}

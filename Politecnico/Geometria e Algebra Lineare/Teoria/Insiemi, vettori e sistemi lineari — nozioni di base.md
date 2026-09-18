@@ -1,5 +1,6 @@
 ---
-tags: [geometria-algebra-lineare, appunti]
+tags:
+  - geometria-algebra-lineare
 ---
 ## 1. Insiemi
 
