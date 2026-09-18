@@ -51,7 +51,21 @@
         }
       ],
       "contentDigest": "fb6dac85ec2218d421e41fce66998c6b09e6d7b6f2d432f4b35991adc407cacb",
-      "providerUserMessageId": "e4872ab4-97fe-495e-ba7f-c02238f9ec82"
+      "providerUserMessageId": "e4872ab4-97fe-495e-ba7f-c02238f9ec82",
+      "providerAssistantMessageId": "5065ab37-8870-44f6-ad11-ab659df2352d"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789758765734-gws718n",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789758765729-dv4crep",
+      "timestamp": 1789758765729,
+      "rawDisplayText": "spiega meglio esergi 2 variate non capitpo",
+      "canonicalText": "spiega meglio esergi 2 variate non capitpo",
+      "images": [],
+      "contentDigest": "a460052755a0ed970e70196d2feeb3a59bf55b084853f5b1e2411956cf16b3a5",
+      "providerUserMessageId": "088a3c83-d163-400d-8b48-c6d7f3f172d4"
     }
   ]
 }

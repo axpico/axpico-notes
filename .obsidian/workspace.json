@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Politecnico/Analisi 1/Esercizi/Untitled.md",
+                "file": "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Sup - Inf - Max - Min di sottoinsiemi di ℝ"
             }
           },
           {
@@ -33,8 +33,7 @@
               "title": "Drawing 2026-09-18 13.01.37.excalidraw"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -237,7 +236,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Excalidraw/Drawing 2026-09-18 13.01.37.excalidraw.md"
+                "file": "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md"
               },
               "icon": "lucide-info",
               "title": "File properties"
@@ -248,8 +247,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409,
-    "collapsed": true
+    "width": 409
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -272,10 +270,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "36d458a5a7fd3901",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Esercizi/Untitled.md",
     "Excalidraw/Drawing 2026-09-18 13.01.37.excalidraw.md",
+    "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md",
+    "Politecnico/Analisi 1/Esercizi/Untitled.md.tmp.14588.c0bd1b6df0a6",
     "Politecnico/Analisi 1/Esercizi/Disequazioni.md",
     "Politecnico/Analisi 1/Esercizi/Disequazioni.md.tmp.12899.e2c6f39372cd",
     "Politecnico/Analisi 1/Esercizi/Untitled.md.tmp.12899.fa8069066832",
@@ -296,7 +295,6 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md.tmp.10575.7bc49e92ddd8",
     "Politecnico/Geometria e Algebra Lineare/Informazioni geometria e algebra lineare.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria",
-    "Politecnico/Geometria e Algebra Lineare/Untitled.md.tmp.29670.b8dcf1d51971",
     "Excalidraw/Drawing 2026-09-17 16.25.42.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Esercizi/Binari.md",
     "Politecnico/Fondamenti di Informatica/Teotira/Algoritmi 2.md",
@@ -310,7 +308,6 @@
     "Ripasso uni/fisica/Elettromagnetismo.md",
     "Ripasso uni/matematica/Algebra - Polinomi ed Equazioni.md",
     "Formulario/Elettromagnetismo/Energia Potenziale Magnetica.md",
-    "Formulario/Elettromagnetismo/Momento Torcente su una Spira.md",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",

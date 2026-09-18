@@ -4,11 +4,21 @@
   "title": "Note system with error correction",
   "titleGenerationStatus": "success",
   "createdAt": 1789758416151,
-  "lastActivityAt": 1789758416151,
+  "lastActivityAt": 1789758765729,
   "sessionId": "ea01b1f6-a465-48d6-9f87-aab3629734dc",
   "selectedModel": "sonnet",
   "providerState": {
     "providerSessionId": "ea01b1f6-a465-48d6-9f87-aab3629734dc"
   },
-  "linkedContentPath": "Politecnico/Analisi 1/Esercizi/Untitled.md"
+  "linkedContentPath": "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 8866,
+    "cacheReadInputTokens": 43293,
+    "contextWindow": 1000000,
+    "contextTokens": 52161,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
 }
