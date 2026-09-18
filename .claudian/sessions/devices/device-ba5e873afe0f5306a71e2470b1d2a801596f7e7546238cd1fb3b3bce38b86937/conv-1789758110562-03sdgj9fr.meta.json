@@ -4,11 +4,21 @@
   "title": "Organize notes and fix errors",
   "titleGenerationStatus": "success",
   "createdAt": 1789758110566,
-  "lastActivityAt": 1789758110566,
+  "lastActivityAt": 1789758332555,
   "sessionId": "16e3e706-82fc-4f83-8fd6-42afaede7a11",
   "selectedModel": "sonnet",
   "providerState": {
     "providerSessionId": "16e3e706-82fc-4f83-8fd6-42afaede7a11"
   },
-  "linkedContentPath": "Politecnico/Analisi 1/Esercizi/Untitled.md"
+  "linkedContentPath": "Politecnico/Analisi 1/Esercizi/Disequazioni.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 494,
+    "cacheReadInputTokens": 62051,
+    "contextWindow": 1000000,
+    "contextTokens": 62547,
+    "percentage": 6,
+    "contextWindowIsAuthoritative": true
+  }
 }

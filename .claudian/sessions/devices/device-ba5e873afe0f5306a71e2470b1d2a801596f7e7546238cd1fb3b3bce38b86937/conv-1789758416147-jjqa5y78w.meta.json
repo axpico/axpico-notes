@@ -1,0 +1,14 @@
+{
+  "id": "conv-1789758416147-jjqa5y78w",
+  "providerId": "claude",
+  "title": "Note system with error correction",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789758416151,
+  "lastActivityAt": 1789758416151,
+  "sessionId": "ea01b1f6-a465-48d6-9f87-aab3629734dc",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "ea01b1f6-a465-48d6-9f87-aab3629734dc"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Esercizi/Untitled.md"
+}
