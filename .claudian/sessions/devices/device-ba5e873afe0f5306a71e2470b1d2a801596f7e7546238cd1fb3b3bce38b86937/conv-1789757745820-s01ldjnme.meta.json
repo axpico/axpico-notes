@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789757745820-s01ldjnme",
+  "providerId": "claude",
+  "title": "Fix notes with examples and tags",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789757745824,
+  "lastActivityAt": 1789757828575,
+  "sessionId": "e5585489-558f-4681-b6df-e53ecacddfcc",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "e5585489-558f-4681-b6df-e53ecacddfcc"
+  },
+  "linkedContentPath": "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 4372,
+    "cacheReadInputTokens": 46828,
+    "contextWindow": 1000000,
+    "contextTokens": 51202,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -4,11 +4,21 @@
   "title": "Complete and fix content",
   "titleGenerationStatus": "success",
   "createdAt": 1789757475933,
-  "lastActivityAt": 1789757475933,
+  "lastActivityAt": 1789757631447,
   "sessionId": "23ae1b01-eb2d-4193-af17-c4aef67348e6",
   "selectedModel": "sonnet",
   "providerState": {
     "providerSessionId": "23ae1b01-eb2d-4193-af17-c4aef67348e6"
   },
-  "linkedContentPath": "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md"
+  "linkedContentPath": "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 13658,
+    "cacheReadInputTokens": 47521,
+    "contextWindow": 1000000,
+    "contextTokens": 61181,
+    "percentage": 6,
+    "contextWindowIsAuthoritative": true
+  }
 }
