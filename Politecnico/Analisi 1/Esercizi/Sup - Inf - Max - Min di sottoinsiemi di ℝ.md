@@ -182,7 +182,7 @@ $$S = \{a \in \mathbb{R} : \log(x^2 - 2ax + a) \text{ è definito su tutto } \ma
 
 *(spazio per lo svolgimento)*
 
-<br><br><br>
+
 
 **Esercizio 6.**
 
@@ -190,4 +190,3 @@ $$S = \left\{ x \in \mathbb{R}\setminus\{2\} : \frac{2x+1}{x-2} - \frac{5}{2(x+2
 
 *(spazio per lo svolgimento)*
 
-<br><br><br>
