@@ -65,7 +65,36 @@
       "canonicalText": "spiega meglio esergi 2 variate non capitpo",
       "images": [],
       "contentDigest": "a460052755a0ed970e70196d2feeb3a59bf55b084853f5b1e2411956cf16b3a5",
-      "providerUserMessageId": "088a3c83-d163-400d-8b48-c6d7f3f172d4"
+      "providerUserMessageId": "088a3c83-d163-400d-8b48-c6d7f3f172d4",
+      "providerAssistantMessageId": "3252cb5c-605c-45ab-bdd9-5e070da43912"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789758789336-dvsffgq",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789758789329-3u5uc6j",
+      "timestamp": 1789758789329,
+      "rawDisplayText": "scrivi su file",
+      "canonicalText": "scrivi su file",
+      "images": [],
+      "contentDigest": "55cd41e19b4a59d1a691f61c4699e072b19a02e58f9d0f39dd375d357629b9eb",
+      "providerUserMessageId": "482ce1a4-e4b9-4fa9-9bf1-885b50c8a51d",
+      "providerAssistantMessageId": "63e7658f-f9f5-4dfd-bc8a-df46ff83f159"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789759006812-mj1btlp",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789759006805-t5u39ff",
+      "timestamp": 1789759006805,
+      "rawDisplayText": "fai anche sup",
+      "canonicalText": "fai anche sup",
+      "images": [],
+      "contentDigest": "a1600974046dc2fb13084324852741c9170435c56b8e88ab76a3d47c2fc2d2a2",
+      "providerUserMessageId": "fcb0274a-862e-42bb-93e8-cd62edd05779",
+      "providerAssistantMessageId": "3d10ee0d-7fa0-48a1-b7fb-e4c8432eb592"
     }
   ]
 }

@@ -4,7 +4,7 @@
   "title": "Note system with error correction",
   "titleGenerationStatus": "success",
   "createdAt": 1789758416151,
-  "lastActivityAt": 1789758765729,
+  "lastActivityAt": 1789759018087,
   "sessionId": "ea01b1f6-a465-48d6-9f87-aab3629734dc",
   "selectedModel": "sonnet",
   "providerState": {
@@ -14,11 +14,11 @@
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,
-    "cacheCreationInputTokens": 8866,
-    "cacheReadInputTokens": 43293,
+    "cacheCreationInputTokens": 989,
+    "cacheReadInputTokens": 61612,
     "contextWindow": 1000000,
-    "contextTokens": 52161,
-    "percentage": 5,
+    "contextTokens": 62603,
+    "percentage": 6,
     "contextWindowIsAuthoritative": true
   }
 }

@@ -43,19 +43,78 @@ $$\Longrightarrow \quad \sup(S) = 1$$
 
 ## Esercizio 2 (variante con segno alternato)
 
-$$S = \left\{ (-1)^n \frac{n-1}{n} : n \in \mathbb{N}\setminus\{0\} \right\} = \left\{0, \tfrac{1}{2}, -\tfrac{2}{3}, \tfrac{3}{4}, -\tfrac{4}{5}, \dots \right\}$$
+$$S = \left\{ (-1)^n \frac{n-1}{n} : n \in \mathbb{N}\setminus\{0\} \right\}$$
 
-Dimostriamo che $\inf(S) = -1$ (per simmetria, $\sup(S) = 1$, con lo stesso argomento dell'Esercizio 1 ristretto agli $n$ pari; nessuno dei due valori è raggiunto ⇒ $\nexists \max(S)$, $\nexists \min(S)$).
+Il fattore $(-1)^n$ cambia solo il **segno** a seconda della parità di $n$:
 
-**(1)** $(-1)^n \dfrac{n-1}{n} \ge -1 \ \forall n$: per $n$ pari il termine è $\ge 0 > -1$; per $n$ dispari il termine è $-\dfrac{n-1}{n} \ge -1 \iff \dfrac{n-1}{n} \le 1$, sempre vero. ⇒ $-1$ è minorante.
+- $n$ pari → $(-1)^n=+1$ → termine $= +\dfrac{n-1}{n}$ (positivo)
+- $n$ dispari → $(-1)^n=-1$ → termine $= -\dfrac{n-1}{n}$ (negativo)
 
-**(2)** Fissato $\varepsilon > 0$, cerchiamo (tra gli $n$ dispari) $m$ tale che
+| $n$ | parità | $\frac{n-1}{n}$ | $(-1)^n\frac{n-1}{n}$ |
+|---|---|---|---|
+| 1 | dispari | 0 | **0** |
+| 2 | pari | 1/2 | **+1/2** |
+| 3 | dispari | 2/3 | **−2/3** |
+| 4 | pari | 3/4 | **+3/4** |
+| 5 | dispari | 4/5 | **−4/5** |
 
-$$-\frac{m-1}{m} < -1 + \varepsilon \quad\Longleftrightarrow\quad \frac{m-1}{m} > 1-\varepsilon$$
+$$S = \left\{0,\ \tfrac{1}{2},\ -\tfrac{2}{3},\ \tfrac{3}{4},\ -\tfrac{4}{5}, \dots \right\}$$
 
-che è la stessa disequazione dell'Esercizio 1, risolta da $m > \dfrac{1}{\varepsilon}$ (Archimede garantisce l'esistenza di un tale $m$ dispari).
+È come l'Esercizio 1 "sdoppiato" in due sottosuccessioni intrecciate: quella con $n$ pari sale verso $+1$, quella con $n$ dispari scende verso $-1$. Nessuna delle due tocca mai il proprio limite (perché $\frac{n-1}{n}\ne1\ \forall n$, come visto nell'Esercizio 1) → **non esistono max e min**, solo sup $=1$ e inf $=-1$.
+
+**Idea chiave:** si spezza lo studio nei due casi $n$ pari / $n$ dispari, perché la condizione "essere maggiorante/minorante" va verificata su *tutti* gli $n$, mentre la condizione di approssimazione con $\varepsilon$ va dimostrata solo sulla sottosuccessione che effettivamente si avvicina al valore cercato (dispari per l'inf, pari per il sup).
+
+Dimostriamo che $\inf(S) = -1$ (per il sup vale l'argomento simmetrico dell'Esercizio 1, ristretto agli $n$ pari).
+
+**(1) $-1$ è minorante:** verifichiamo $(-1)^n \dfrac{n-1}{n} \ge -1$ su tutti gli $n$, non solo i dispari.
+
+- $n$ pari: il termine è $\dfrac{n-1}{n}\ge 0 > -1$ ✓ (un numero positivo è sempre $\ge -1$)
+- $n$ dispari: il termine è $-\dfrac{n-1}{n}$. Vogliamo $-\dfrac{n-1}{n} \ge -1 \iff \dfrac{n-1}{n} \le 1$, sempre vero (visto nell'Esercizio 1).
+
+⇒ $-1$ è minorante di tutto $S$.
+
+**(2) $-1$ è il più grande dei minoranti:** dobbiamo mostrare che ci si avvicina a $-1$ quanto si vuole:
+
+$$\forall \varepsilon>0\ \exists x\in S \text{ t.c. } x < -1+\varepsilon$$
+
+Qui usiamo **solo** la sottosuccessione dispari (i termini pari sono $\ge0$, quindi inutili per avvicinarsi a $-1$). Cerchiamo $m$ dispari tale che
+
+$$-\frac{m-1}{m} < -1 + \varepsilon$$
+
+Moltiplicando per $-1$ (si inverte il verso):
+
+$$\frac{m-1}{m} > 1-\varepsilon$$
+
+Questa è **esattamente la stessa disequazione dell'Esercizio 1**, risolta da:
+
+$$m-1 > m-m\varepsilon \ \Longrightarrow\ m\varepsilon>1 \ \Longrightarrow\ m>\frac{1}{\varepsilon}$$
+
+Per l'assioma di Archimede esiste sicuramente un tale $m$ (tra gli interi maggiori di $1/\varepsilon$ ce n'è sempre uno dispari, eventualmente prendendo il successivo).
 
 $$\Longrightarrow \quad \inf(S) = -1$$
+
+Dimostriamo ora, per completezza, che $\sup(S) = 1$ con l'argomento simmetrico.
+
+**(1) $1$ è maggiorante:** verifichiamo $(-1)^n \dfrac{n-1}{n} \le 1$ su tutti gli $n$.
+
+- $n$ dispari: il termine è $-\dfrac{n-1}{n} \le 0 < 1$ ✓ (un numero negativo o nullo è sempre $\le 1$)
+- $n$ pari: il termine è $\dfrac{n-1}{n}$. Vogliamo $\dfrac{n-1}{n}\le 1$, sempre vero (visto nell'Esercizio 1).
+
+⇒ $1$ è maggiorante di tutto $S$.
+
+**(2) $1$ è il più piccolo dei maggioranti:**
+
+$$\forall \varepsilon>0\ \exists x\in S \text{ t.c. } x > 1-\varepsilon$$
+
+Qui usiamo **solo** la sottosuccessione pari (i termini dispari sono $\le0$, quindi troppo lontani da $1$). Cerchiamo $m$ pari tale che
+
+$$\frac{m-1}{m} > 1-\varepsilon$$
+
+Stessa disequazione di sempre, risolta da $m > \dfrac{1}{\varepsilon}$; per Archimede esiste sicuramente un tale $m$ (pari, eventualmente il successivo pari se quello trovato è dispari).
+
+$$\Longrightarrow \quad \sup(S) = 1$$
+
+Poiché $1\notin S$ e $-1\notin S$ (nessun termine tocca esattamente questi valori), $\nexists \max(S)$ e $\nexists \min(S)$.
 
 ---
 
