@@ -126,8 +126,6 @@ $$S = \left\{ \log(1+3x) : x \in \mathbb{R}, \ |x-2| \le \sqrt{x} \right\}$$
 
 $$|x-2| \le \sqrt{x} \iff (x-2)^2 \le x \iff x^2 - 4x + 4 \le x \iff x^2 - 5x + 4 \le 0$$
 
-> Correzione: il passaggio va a $x^2-5x+4\le 0$ (non $x^2-3x+4$), raccogliendo $-4x - x = -5x$.
-
 Le radici di $x^2-5x+4=0$ sono $x=1,\ x=4$, quindi $(x-1)(x-4)\le 0 \iff 1 \le x \le 4$.
 
 $$S = \{\log(1+3x) : x \in [1,4]\}$$
