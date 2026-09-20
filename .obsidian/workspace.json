@@ -8,15 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "36d458a5a7fd3901",
+            "id": "e94b4574ed1f41c8",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Drawing 2026-09-18 13.01.37.excalidraw.md"
+                "file": "Excalidraw/Drawing 2026-09-20 15.08.03.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-18 13.01.37.excalidraw"
+              "title": "Drawing 2026-09-20 15.08.03.excalidraw"
             }
           },
           {
@@ -32,8 +32,23 @@
               "icon": "lucide-file",
               "title": "Estremo superiore ed estremo inferiore, completezza di ℝ, numeri complessi"
             }
+          },
+          {
+            "id": "7e6e7f83ea5d058b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Insieme numerici, logia e dimostrazioni"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -58,7 +73,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Esplora file"
             }
           },
           {
@@ -92,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -271,17 +285,19 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "31575ad652a80057",
+  "active": "7e6e7f83ea5d058b",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-09-18 13.01.37.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ, numeri complessi.md",
+    "Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md",
+    "Excalidraw/Drawing 2026-09-20 15.08.03.excalidraw.md",
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md",
+    "Politecnico/Analisi 1/Esercizi/Disequazioni.md",
+    "Excalidraw/Drawing 2026-09-18 13.01.37.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md.tmp.14588.a97308f18098",
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md.tmp.14588.fc14f7287623",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md",
     "Politecnico/Analisi 1/Esercizi/Untitled.md.tmp.14588.c0bd1b6df0a6",
-    "Politecnico/Analisi 1/Esercizi/Disequazioni.md",
     "Politecnico/Analisi 1/Esercizi/Disequazioni.md.tmp.12899.e2c6f39372cd",
     "Politecnico/Analisi 1/Esercizi/Untitled.md.tmp.12899.fa8069066832",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
@@ -291,7 +307,6 @@
     "Politecnico/Fondamenti di Informatica/Esercizi",
     "Politecnico/Fondamenti di Informatica/Teotira",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Untitled.md.tmp.11621.6103f45ae54d",
-    "Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md",
     "Politecnico/Analisi 1/Informazioni analisi 1.md",
     "Politecnico/Analisi 1/Teoria",
     "Politecnico/Analisi 1/Esercizi",
