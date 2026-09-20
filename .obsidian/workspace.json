@@ -252,15 +252,15 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "audio-recorder:Start/stop recording": false,
-      "bases:Create new base": false,
+      "switcher:Apri selettore rapido": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota giornaliera": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "markdown-importer:Apri importazione Markdown": false,
+      "audio-recorder:Avvia/ferma registrazione": false,
+      "bases:Crea nuova Base": false,
       "omnisearch:Omnisearch": false,
       "templater-obsidian:Templater": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
@@ -271,10 +271,10 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "36d458a5a7fd3901",
+  "active": "31575ad652a80057",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ, numeri complessi.md",
     "Excalidraw/Drawing 2026-09-18 13.01.37.excalidraw.md",
+    "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ, numeri complessi.md",
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md.tmp.14588.a97308f18098",
