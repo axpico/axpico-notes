@@ -192,9 +192,9 @@ L'idea è **associare a un sistema lineare una matrice**, e trasformare il siste
 
 ### 7.1 Matrici: definizioni di base
 
-Una **matrice** $m \times n$ è una tabella rettangolare di numeri (reali o complessi) con $m$ **righe** e $n$ **colonne**:
+Una **matrice** $m \times n$ è una tabella rettangolare di numeri (rea\li o complessi) con $m$ **righe** e $n$ **colonne**:
 $$
-A = [a_{ij}] = \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix}
+A = [a_{ij}] = \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix}
 $$
 dove $i = 1,\dots,m$ indica la **riga** e $j = 1,\dots,n$ la **colonna**: $a_{ij}$ è l'elemento di posto $(i,j)$.
 
