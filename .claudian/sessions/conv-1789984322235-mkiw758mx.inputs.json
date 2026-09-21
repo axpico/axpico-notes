@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789984322235-mkiw758mx",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789984322422-fqkwzsi",
+      "userTurnOrdinal": 1,
+      "state": "staged",
+      "localMessageId": "msg-1789984322228-ishki6o",
+      "timestamp": 1789984322228,
+      "rawDisplayText": "leggi il fil ee sisteamlo se metti 'simbolo' non funziona nome mettere ''",
+      "canonicalText": "leggi il fil ee sisteamlo se metti 'simbolo' non funziona nome mettere ''",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Fondamenti di Informatica/Teotira/Programma.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "e981c951575b2c10beb77d3d511af10170ecdd2e76436fccc3de0597127763a7"
+    }
+  ]
+}

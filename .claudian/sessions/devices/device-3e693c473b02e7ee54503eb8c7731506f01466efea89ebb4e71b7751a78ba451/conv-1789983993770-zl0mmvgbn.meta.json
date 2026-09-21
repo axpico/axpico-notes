@@ -1,11 +1,24 @@
 {
   "id": "conv-1789983993770-zl0mmvgbn",
   "providerId": "claude",
-  "title": "sistma gli appuntied aggiungi Linguaggi di Program...",
-  "titleGenerationStatus": "pending",
+  "title": "C language and programming levels",
+  "titleGenerationStatus": "success",
   "createdAt": 1789983993897,
-  "lastActivityAt": 1789983993897,
-  "sessionId": null,
+  "lastActivityAt": 1789984232998,
+  "sessionId": "f00fecd2-d0d3-4c49-b124-6e7d1237b497",
   "selectedModel": "sonnet",
-  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Teotira/Programma.md"
+  "providerState": {
+    "providerSessionId": "f00fecd2-d0d3-4c49-b124-6e7d1237b497"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Teotira/Programma.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 4060,
+    "cacheReadInputTokens": 81876,
+    "contextWindow": 967000,
+    "contextTokens": 85938,
+    "percentage": 9,
+    "contextWindowIsAuthoritative": true
+  }
 }
