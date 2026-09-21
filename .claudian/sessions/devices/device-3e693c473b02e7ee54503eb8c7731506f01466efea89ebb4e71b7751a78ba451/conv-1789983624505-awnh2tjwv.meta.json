@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789983624505-awnh2tjwv",
+  "providerId": "claude",
+  "title": "Fix the file",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789983624507,
+  "lastActivityAt": 1789983650281,
+  "sessionId": "596365c6-aabc-47cd-b8ba-abfc8a4a32cf",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "596365c6-aabc-47cd-b8ba-abfc8a4a32cf"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Teotira/Programma.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 3612,
+    "cacheReadInputTokens": 36339,
+    "contextWindow": 967000,
+    "contextTokens": 39953,
+    "percentage": 4,
+    "contextWindowIsAuthoritative": true
+  }
+}

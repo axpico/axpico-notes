@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789983624505-awnh2tjwv",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789983624684-o25hhpz",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789983624498-6v94l18",
+      "timestamp": 1789983624498,
+      "rawDisplayText": "sistema il file",
+      "canonicalText": "sistema il file",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Fondamenti di Informatica/Teotira/Programma.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "cd7a3a5ce98ba92ccfbe939a86257499975ca33fd98fe0b07f263a0c901737ca",
+      "providerUserMessageId": "965153ad-7c02-4f1f-afce-7d0cb7806195",
+      "providerAssistantMessageId": "28ec0b32-40dc-47b0-a627-b06f18213d12"
+    }
+  ]
+}

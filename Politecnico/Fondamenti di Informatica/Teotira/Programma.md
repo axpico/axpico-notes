@@ -22,20 +22,26 @@ Il **C** è un linguaggio ad alto livello, indipendente dalla macchina, che perm
 
 Per eseguire un programma scritto in un linguaggio ad alto livello è necessario un **compilatore**, che lo traduce nell'opportuno linguaggio macchina.
 
+## Macchina virtuale C
+Esecutore considerato: la **macchina virtuale C**. Un **bus** trasporta le informazioni tra le sue unità.
 
+**RAM**
+- in C, per distinguere un contenitore (variabile) si usa un nome;
+- è comunque possibile usare direttamente l'indirizzo.
 
-Esecutore considerato: Macchina cirtuale C
-c'e un bus che trasporta informazioni 
-Ram
-- in c per distinguere contenitore si usano nomi 
-- si puo comunque usare indirizzo 
-Cpu
-- central processing unit 
-- eseguisce instruzione del programma
-standard I 
--  
-standard O 
-differenza con macchian di von numan e macchina virtual c
-- nel virtuale ignorariamo dove stanno i programmi 
+**CPU** (*central processing unit*)
+- esegue le istruzioni del programma.
 
-Introduzione al C 
+**Standard Input**
+- unità di ingresso.
+
+**Standard Output**
+- unità di uscita.
+
+Standard Input e Output sono utilizzati dal programma per interagire con l'utente.
+
+**Differenza tra macchina di Von Neumann e macchina virtuale C**
+- nella macchina virtuale si ignora dove risiedono fisicamente i programmi in memoria;
+- si considera comunque presente un'area di memoria riservata al programma da eseguire.
+
+## Introduzione al C 

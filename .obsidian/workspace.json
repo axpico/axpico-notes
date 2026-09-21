@@ -207,12 +207,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789982805184-rt8iaa2",
+                      "tabId": "tab-1789983652198-e7yfpb5",
                       "conversationId": null,
                       "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1789982805184-rt8iaa2"
+                  "activeTabId": "tab-1789983652198-e7yfpb5"
                 }
               },
               "icon": "bot",
@@ -236,7 +236,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409
+    "width": 409,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -259,8 +260,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "56efc63866208b00",
+  "active": "b38acbcadae29fa0",
   "lastOpenFiles": [
+    "Politecnico/Fondamenti di Informatica/Teotira/Programma.md.tmp.18572.2f25d7b71c93",
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md.tmp.6856.b230297f06f4",
     "Politecnico/Fondamenti di Informatica/Teotira/Algoritmi 2.md",
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md",
@@ -287,7 +289,6 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Untitled.md.tmp.11621.6103f45ae54d",
     "Politecnico/Analisi 1/Informazioni analisi 1.md",
     "Politecnico/Analisi 1/Teoria",
-    "Politecnico/Analisi 1/Esercizi",
     "Politecnico/Geometria e Algebra Lineare/Informazioni geometria e algebra lineare.md",
     "Excalidraw/Drawing 2026-09-17 16.25.42.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Esercizi/Binari.md",
