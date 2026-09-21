@@ -59,7 +59,8 @@
         }
       ],
       "contentDigest": "cb2e7450ad26e4511b7bd3524e75ea212501e62b4c03b82af57ff9d2639897d4",
-      "providerUserMessageId": "008d49b1-cadd-4222-9bed-afe67933dbff"
+      "providerUserMessageId": "008d49b1-cadd-4222-9bed-afe67933dbff",
+      "providerAssistantMessageId": "2ef4fee0-2f2d-4c3d-9339-27c45777ee94"
     }
   ]
 }

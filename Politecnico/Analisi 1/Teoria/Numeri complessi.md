@@ -1,5 +1,3 @@
-Numeri complessi
-
 L'equazione $x^2 + 1 = 0$ **non ha soluzioni in $\mathbb{R}$** (perché $x^2 \geq 0$ sempre). Si introduce quindi l'**unità immaginaria**:
 
 **Definizione.** $i$ è un numero tale che $i^2 = -1$.

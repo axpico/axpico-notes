@@ -4,11 +4,21 @@
   "title": "Organize notes and add explanatory graphics",
   "titleGenerationStatus": "success",
   "createdAt": 1789999620937,
-  "lastActivityAt": 1789999620937,
+  "lastActivityAt": 1789999691482,
   "sessionId": "005cc747-de14-4fbf-8354-68e2427aef3d",
   "selectedModel": "sonnet",
   "providerState": {
     "providerSessionId": "005cc747-de14-4fbf-8354-68e2427aef3d"
   },
-  "linkedContentPath": "Politecnico/Analisi 1/Teoria/Numeri complessi.md"
+  "linkedContentPath": "Politecnico/Analisi 1/Teoria/Numeri complessi.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 6430,
+    "cacheReadInputTokens": 54678,
+    "contextWindow": 1000000,
+    "contextTokens": 61110,
+    "percentage": 6,
+    "contextWindowIsAuthoritative": true
+  }
 }
