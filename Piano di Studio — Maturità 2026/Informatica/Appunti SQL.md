@@ -511,7 +511,7 @@ WHERE voto > 3 AND citta LIKE 'castellanza';
 |`%`|Zero o più caratteri qualsiasi|`'Ca%'` trova "Ca", "Cala", "Castellanza"|
 |`_`|Esattamente un carattere qualsiasi|`'_oma'` trova "Roma", "Coma" ma non "Paloma"|
 
-Senza jolly, `LIKE` si comporta come `=`: `LIKE 'Milano'` trova solo "Milano".
+Senza jolly, `LIKE` si comporta come '=': `LIKE 'Milano'` trova solo "Milano".
 
 ### Valutazione delle righe
 
@@ -1021,7 +1021,7 @@ Questo è un esempio di query correlata **doppiamente annidata**: per ogni stude
 
 ## Sottoquery scalari
 
-Una sottoquery è **scalare** quando restituisce esattamente **un solo valore** (una riga, una colonna). Solo in questo caso può essere usata con gli operatori di confronto semplici (`=`, `>`, `<`, `>=`, `<=`, `<>`), perché confrontare una colonna con un insieme di valori produce un errore.
+Una sottoquery è **scalare** quando restituisce esattamente **un solo valore** (una riga, una colonna). Solo in questo caso può essere usata con gli operatori di confronto semplici ('=', `>`, `<`, `>=`, `<=`, `<>`), perché confrontare una colonna con un insieme di valori produce un errore.
 
 ```sql
 SELECT cognome
@@ -1105,7 +1105,7 @@ WHERE voto > ANY (SELECT voto FROM Interrogazioni WHERE classe LIKE '5BI');
 
 Restituisce gli studenti il cui voto è maggiore di almeno uno dei voti della classe `5BI`. In pratica equivale a `voto > MIN(...)`: basta superare il voto più basso.
 
-> `= ANY (...)` è equivalente a `IN (...)`.
+> '= ANY (...)' è equivalente a `IN (...)`.
 
 ### `ALL`
 

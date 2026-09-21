@@ -207,15 +207,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789983652198-e7yfpb5",
-                      "conversationId": "conv-1789983993770-zl0mmvgbn"
-                    },
-                    {
-                      "tabId": "tab-1789984291179-hibuq37",
-                      "conversationId": "conv-1789984322235-mkiw758mx"
+                      "tabId": "tab-1789984467723-dqiwazt",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1789984291179-hibuq37"
+                  "activeTabId": "tab-1789984467723-dqiwazt"
                 }
               },
               "icon": "bot",
@@ -239,7 +236,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409
+    "width": 409,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -262,8 +260,12 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "56efc63866208b00",
+  "active": "b38acbcadae29fa0",
   "lastOpenFiles": [
+    "Piano di Studio — Maturità 2026/Informatica/Appunti SQL.md.tmp.15960.7c335b01e3ab",
+    "Piano di Studio — Maturità 2026/Informatica/Appunti SQL.md.tmp.15960.1c35cf66d703",
+    "Piano di Studio — Maturità 2026/Informatica/Appunti SQL.md.tmp.15960.bcbd30b9f7c3",
+    "Politecnico/Fondamenti di Informatica/Teotira/Programma.md.tmp.15960.0505237202a6",
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md.tmp.11768.9f707c5fd8a8",
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md.tmp.11768.4c0b59a0e14a",
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md.tmp.18572.2f25d7b71c93",
@@ -282,14 +284,10 @@
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md.tmp.14588.a97308f18098",
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md.tmp.14588.fc14f7287623",
     "Politecnico/Analisi 1/Esercizi/Untitled.md.tmp.14588.c0bd1b6df0a6",
-    "Politecnico/Analisi 1/Esercizi/Disequazioni.md.tmp.12899.e2c6f39372cd",
-    "Politecnico/Analisi 1/Esercizi/Untitled.md.tmp.12899.fa8069066832",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Excalidraw/Drawing 2026-09-16 10.06.40.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Teotira/Algoritmo.md",
     "Politecnico/Fondamenti di Informatica/Infrormazioni fondameneti di informatica.md",
-    "Politecnico/Fondamenti di Informatica/Esercizi",
-    "Politecnico/Fondamenti di Informatica/Teotira",
     "Politecnico/Analisi 1/Informazioni analisi 1.md",
     "Politecnico/Geometria e Algebra Lineare/Informazioni geometria e algebra lineare.md",
     "Excalidraw/Drawing 2026-09-17 16.25.42.excalidraw.md",

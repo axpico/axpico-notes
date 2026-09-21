@@ -149,7 +149,7 @@ nomeVariabile = espressione;
 ```
 Esecuzione: (1) valuta `espressione`; (2) memorizza il risultato in `nomeVariabile`, sostituendo il valore precedente.
 
-> Il simbolo `=` è l'operatore di **assegnamento**, non di uguaglianza: per confrontare due valori si usa `==`.
+> Il simbolo '=' è l'operatore di **assegnamento**, non di uguaglianza: per confrontare due valori si usa '=='.
 
 `espressione` può essere: una costante (`13`, `'a'`, `2.7182`), una variabile, oppure una combinazione di espressioni tramite operatori e parentesi tonde.
 

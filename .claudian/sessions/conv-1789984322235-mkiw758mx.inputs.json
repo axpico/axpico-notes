@@ -6,7 +6,7 @@
       "schemaVersion": 1,
       "id": "msg-1789984322422-fqkwzsi",
       "userTurnOrdinal": 1,
-      "state": "staged",
+      "state": "accepted",
       "localMessageId": "msg-1789984322228-ishki6o",
       "timestamp": 1789984322228,
       "rawDisplayText": "leggi il fil ee sisteamlo se metti 'simbolo' non funziona nome mettere ''",
@@ -17,7 +17,37 @@
         }
       },
       "images": [],
-      "contentDigest": "e981c951575b2c10beb77d3d511af10170ecdd2e76436fccc3de0597127763a7"
+      "contentDigest": "e981c951575b2c10beb77d3d511af10170ecdd2e76436fccc3de0597127763a7",
+      "providerUserMessageId": "b00c4479-330b-4ae6-8c09-9c854f58c065",
+      "providerAssistantMessageId": "38d4471a-2726-4055-983d-3bc60b4eb5eb"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789984396659-mbdctls",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789984396639-0qewevw",
+      "timestamp": 1789984396639,
+      "rawDisplayText": "Fatto — sistemata la riga 152 in [[Politecnico/Fondamenti di Informatica/Teotira/Programma.md]]: tolti i backtick attorno a `=` e `==` (che lì non renderizzavano bene) e sostituiti con apici singoli: `'='` e `'=='`.",
+      "canonicalText": "Fatto — sistemata la riga 152 in [[Politecnico/Fondamenti di Informatica/Teotira/Programma.md]]: tolti i backtick attorno a `=` e `==` (che lì non renderizzavano bene) e sostituiti con apici singoli: `'='` e `'=='`.",
+      "images": [],
+      "contentDigest": "b853f1f91867d4d39273cfffbcb193ac08fe904801bbd8e2e86cd88a2b3a4d1b",
+      "providerUserMessageId": "8c809ee3-19e5-4ce8-92af-de359eb8f4a9",
+      "providerAssistantMessageId": "cab30bed-448f-41f5-a90e-bec0b3e14ebd"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789984412368-7thxlyv",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789984412348-p8zlqnq",
+      "timestamp": 1789984412348,
+      "rawDisplayText": "sistema Dataview (inline field '='): Error: \n-- PARSING FAILED --------------------------------------------------\n\n> 1 | =\n    | ^\n\nExpected one of the following: \n\n'(', 'null', boolean, date, duration, file link, list ('[1, 2, 3]'), negated field, number, object ('{ a: 1, b: 2 }'), string, variable",
+      "canonicalText": "sistema Dataview (inline field '='): Error: \n-- PARSING FAILED --------------------------------------------------\n\n> 1 | =\n    | ^\n\nExpected one of the following: \n\n'(', 'null', boolean, date, duration, file link, list ('[1, 2, 3]'), negated field, number, object ('{ a: 1, b: 2 }'), string, variable",
+      "images": [],
+      "contentDigest": "61e371e171ce1ed28e4aa0c4c032de2e0fc706e73395acdf0ed0ca368baa2c52",
+      "providerUserMessageId": "4c748a40-b7d2-456b-859f-b1ad7fb4e739",
+      "providerAssistantMessageId": "50304270-13cb-4917-a08a-09eb6bdfe901"
     }
   ]
 }

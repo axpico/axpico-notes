@@ -1,11 +1,24 @@
 {
   "id": "conv-1789984322235-mkiw758mx",
   "providerId": "claude",
-  "title": "leggi il fil ee sisteamlo se metti 'simbolo' non f...",
-  "titleGenerationStatus": "pending",
+  "title": "Fix symbol quoting issue in file",
+  "titleGenerationStatus": "success",
   "createdAt": 1789984322251,
-  "lastActivityAt": 1789984322251,
-  "sessionId": null,
+  "lastActivityAt": 1789984456584,
+  "sessionId": "6f592ef8-0010-4ed0-b6b6-7173eb004359",
   "selectedModel": "sonnet",
-  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Teotira/Programma.md"
+  "providerState": {
+    "providerSessionId": "6f592ef8-0010-4ed0-b6b6-7173eb004359"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Teotira/Programma.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 183,
+    "cacheReadInputTokens": 52132,
+    "contextWindow": 967000,
+    "contextTokens": 52317,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
 }
