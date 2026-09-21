@@ -45,3 +45,28 @@ Standard Input e Output sono utilizzati dal programma per interagire con l'utent
 - si considera comunque presente un'area di memoria riservata al programma da eseguire.
 
 ## Introduzione al C 
+struttura di un programma in C
+```C
+#include <stdio.h> //direttiva
+int main()
+{
+	printf("Hello World!");
+	return 0;
+}
+```
+
+La prima parte del programma contiene le
+direttive per il compilatore
+ #include serve per aggiungere
+funzioni (sottoprogrammi) ai
+nostri programmi. In particolare:
+#include<nomeLibreria.h>
+permette di utilizzare nel codice tutte le
+funzioni presenti nella libreria
+nomeLibreria.h come se fossero
+istruzioni
+ La libreria stdio.h (standard
+input/output) contiene funzioni per la
+gestione dell’Input e dell’Output, tra cui
+printf e scanf sono funzioni che noi
+utilizziamo come istruzioni

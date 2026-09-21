@@ -208,8 +208,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1789983652198-e7yfpb5",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
+                      "conversationId": "conv-1789983993770-zl0mmvgbn"
                     }
                   ],
                   "activeTabId": "tab-1789983652198-e7yfpb5"
@@ -236,8 +235,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409,
-    "collapsed": true
+    "width": 409
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -260,7 +258,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "b38acbcadae29fa0",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md.tmp.18572.2f25d7b71c93",
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md.tmp.6856.b230297f06f4",
