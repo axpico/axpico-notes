@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1ec1ae85575aabce",
+        "id": "103140f55d2e6412",
         "type": "tabs",
         "children": [
           {
-            "id": "4b197d922beb98de",
+            "id": "b38acbcadae29fa0",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-09-21 08.18.53.excalidraw.md"
+                "file": "Politecnico/Fondamenti di Informatica/Teotira/Senza nome.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-21 08.18.53.excalidraw"
+              "icon": "lucide-file",
+              "title": "Senza nome"
             }
           }
         ]
@@ -257,10 +259,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "4b197d922beb98de",
+  "active": "b38acbcadae29fa0",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md",
+    "Politecnico/Fondamenti di Informatica/Teotira/Senza nome.md",
     "Excalidraw/Drawing 2026-09-21 08.18.53.excalidraw.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
     "Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md",
     "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ, numeri complessi.md",
@@ -295,7 +298,6 @@
     "Ripasso uni/matematica/Logica e Aritmetica.md",
     "Ripasso uni/matematica/Trigonometria - Riduzione angoli e identità.md",
     "Ripasso uni/fisica/Elettromagnetismo.md",
-    "Ripasso uni/matematica/Algebra - Polinomi ed Equazioni.md",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
