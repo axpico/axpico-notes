@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789982783883-gnag3yjp1",
+  "providerId": "claude",
+  "title": "Organize notes in file",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789982783927,
+  "lastActivityAt": 1789982803983,
+  "sessionId": "ac54787f-b3a1-48bb-8dea-e42f7c9f8943",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "ac54787f-b3a1-48bb-8dea-e42f7c9f8943"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Teotira/Programma.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 5462,
+    "cacheReadInputTokens": 32954,
+    "contextWindow": 967000,
+    "contextTokens": 38418,
+    "percentage": 4,
+    "contextWindowIsAuthoritative": true
+  }
+}
