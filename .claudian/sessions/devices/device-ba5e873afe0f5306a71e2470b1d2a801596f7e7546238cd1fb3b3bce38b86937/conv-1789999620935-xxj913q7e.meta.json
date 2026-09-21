@@ -1,0 +1,14 @@
+{
+  "id": "conv-1789999620935-xxj913q7e",
+  "providerId": "claude",
+  "title": "Organize notes and add explanatory graphics",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789999620937,
+  "lastActivityAt": 1789999620937,
+  "sessionId": "005cc747-de14-4fbf-8354-68e2427aef3d",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "005cc747-de14-4fbf-8354-68e2427aef3d"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Teoria/Numeri complessi.md"
+}

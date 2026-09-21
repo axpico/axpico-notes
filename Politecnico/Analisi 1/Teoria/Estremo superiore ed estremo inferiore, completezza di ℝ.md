@@ -1,5 +1,13 @@
 ---
-tags: [analisi1, estremo-superiore, estremo-inferiore, completezza-R, radici, logaritmi, valore-assoluto, numeri-complessi, politecnico]
+tags:
+  - analisi1
+  - estremo-superiore
+  - estremo-inferiore
+  - completezza-R
+  - radici
+  - logaritmi
+  - valore-assoluto
+  - politecnico
 ---
 ## 1. Massimo e minimo di un insieme
 
@@ -164,66 +172,3 @@ $$
 $$
 (dimostrazione lasciata come esercizio, tipicamente applicando la disuguaglianza triangolare a $a = (a+b) + (-b)$ e simmetrico).
 
-## 7. Numeri complessi
-
-L'equazione $x^2 + 1 = 0$ **non ha soluzioni in $\mathbb{R}$** (perché $x^2 \geq 0$ sempre). Si introduce quindi l'**unità immaginaria**:
-
-**Definizione.** $i$ è un numero tale che $i^2 = -1$.
-
-Con questo simbolo, $x^2 + 1 = 0 \Rightarrow x^2 = -1$, con soluzioni $x_1 = i$, $x_2 = -i$. Verifica:
-$$
-(x_1)^2 = (i)^2 = -1, \qquad (x_2)^2 = (-i)^2 = (-1)^2(i)^2 = -1.
-$$
-
-**Definizione (numero complesso).** Un numero complesso è un'espressione della forma
-$$
-z = a + ib, \qquad a, b \in \mathbb{R}
-$$
-detta **forma algebrica**. Si chiama:
-- $a = \mathrm{Re}(z)$ **parte reale**
-- $b = \mathrm{Im}(z)$ **parte immaginaria**
-
-L'insieme dei numeri complessi si indica con $\mathbb{C}$.
-
-### Somma
-
-Per $z = a+ib$, $w = c+id \in \mathbb{C}$ (con $a,b,c,d \in \mathbb{R}$):
-$$
-z + w = (a+c) + i(b+d).
-$$
-Si sommano cioè separatamente le parti reali e le parti immaginarie: $\mathrm{Re}(z+w) = a+c$, $\mathrm{Im}(z+w) = b+d$.
-
-### Prodotto
-
-$$
-z \cdot w = (a+bi)(c+di) = ac + adi + cbi + bdi^2 = ac + i(bc+ad) - bd = (ac - bd) + i(bc+ad),
-$$
-usando $i^2 = -1$. Quindi
-$$
-\mathrm{Re}(zw) = ac - bd, \qquad \mathrm{Im}(zw) = bc + ad.
-$$
-
-### Opposto
-
-L'opposto rispetto alla somma di $z = a+ib$ è $-z = -a - bi$ (cambia segno a entrambe le parti).
-
-### Inverso (rispetto al prodotto) e coniugato
-
-Dato $z = a+ib \neq 0$, si cerca $w$ tale che $zw = 1$: $w = z^{-1}$.
-
-Si introduce il **coniugato**: per $z = a+ib \in \mathbb{C}$,
-$$
-\bar{z} = a - ib \in \mathbb{C}
-$$
-(si cambia il segno solo alla parte immaginaria).
-
-Il coniugato serve a "razionalizzare" il denominatore: moltiplicando numeratore e denominatore per $\bar z$,
-$$
-z^{-1} = \frac{1}{a+ib} = \frac{a - ib}{(a+ib)(a-ib)} = \frac{a-ib}{a^2+b^2},
-$$
-perché $(a+ib)(a-ib) = a^2 - (ib)^2 = a^2 + b^2 \in \mathbb{R}$ (il prodotto di $z$ per il suo coniugato è sempre reale e non negativo). Esplicitamente:
-$$
-z^{-1} = \frac{a}{a^2+b^2} + i\, \frac{-b}{a^2+b^2}, \qquad \underbrace{\frac{a}{a^2+b^2}}_{\mathrm{Re}} , \ \underbrace{\frac{-b}{a^2+b^2}}_{\mathrm{Im}}.
-$$
-
-Questa costruzione (moltiplicare per il coniugato per eliminare la parte immaginaria dal denominatore) è la tecnica standard per dividere numeri complessi ed è l'analogo della "razionalizzazione" con le radici quadrate nei numeri reali.
