@@ -25,5 +25,17 @@ Per eseguire un programma scritto in un linguaggio ad alto livello è necessario
 
 
 Esecutore considerato: Macchina cirtuale C
+c'e un bus che trasporta informazioni 
+Ram
+- in c per distinguere contenitore si usano nomi 
+- si puo comunque usare indirizzo 
+Cpu
+- central processing unit 
+- eseguisce instruzione del programma
+standard I 
+-  
+standard O 
+differenza con macchian di von numan e macchina virtual c
+- nel virtuale ignorariamo dove stanno i programmi 
 
 Introduzione al C 
