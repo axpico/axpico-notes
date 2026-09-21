@@ -171,7 +171,7 @@ I caratteri (`char`) si assegnano tra apici singoli: `a = 'A';`. Attenzione: `a 
 - aritmetici: `+` `-` `*` somma, sottrazione, moltiplicazione
 - `/` divisione con troncamento della parte non intera
 - `%` resto della divisione intera (modulo)
-- relazionali (confronto): uguale ==, diverso `!=`, minore &lt;, maggiore &gt;, minore o uguale &lt;=, maggiore o uguale &gt;= — risultato booleano (`0` per falso, valore diverso da `0` per vero)
+- relazionali (confronto): uguale ==, diverso !=, minore &lt;, maggiore >;, minore o uguale<=, maggiore o uguale >;= — risultato booleano (`0` per falso, valore diverso da `0` per vero)
 
 - `/` tra interi calcola il quoziente troncato: `int a,b; float c; c = a / b;` esegue comunque una divisione intera prima della conversione. Per ottenere un risultato con parte decimale occorre forzare l'operando a `float`: `c = (1.0 * a) / b;`.
 - `%` (modulo): es. `17 % 5` vale `2`; utile per verificare la divisibilità tra numeri. Vale sempre `a` uguale a `(a/b)*b + a%b`.
