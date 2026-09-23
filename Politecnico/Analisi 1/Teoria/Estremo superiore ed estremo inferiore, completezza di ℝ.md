@@ -172,3 +172,36 @@ $$
 $$
 (dimostrazione lasciata come esercizio, tipicamente applicando la disuguaglianza triangolare a $a = (a+b) + (-b)$ e simmetrico).
 
+## 7. Esercizio: sup, inf, max, min di un insieme definito da una disequazione irrazionale
+
+**Testo.** Sia $A = \{x \in \mathbb{R} : x > \sqrt{6-x}\}$. Determinare $\sup A$, $\inf A$ e, se esistono, $\max A$, $\min A$.
+
+**Risoluzione.** Una disequazione con una radice al secondo membro, $x > \sqrt{6-x}$, richiede attenzione al segno di $x$ prima di elevare al quadrato: elevare al quadrato è un'operazione **reversibile solo tra quantità dello stesso segno** (non negative). Si distinguono quindi due casi, a seconda che $x$ possa o meno essere confrontato direttamente con una radice (sempre $\geq 0$):
+
+$$
+x > \sqrt{6-x} \iff
+\begin{cases} 6-x \geq 0 & \text{(dominio della radice)} \\[4pt]
+\begin{cases} x < 0 \\ \text{impossibile} \end{cases} \quad \vee \quad
+\begin{cases} x \geq 0 \\ x^2 > 6-x \end{cases}
+\end{cases}
+$$
+
+Il ramo $x<0$ è impossibile perché per $x<0$ si avrebbe $x < 0 \leq \sqrt{6-x}$, quindi la disequazione $x>\sqrt{6-x}$ non può mai valere. Resta solo il ramo $x\geq0$, dove elevare al quadrato è lecito:
+$$
+\begin{cases} x \geq 0 \\ x \leq 6 \\ x^2 + x - 6 > 0 \end{cases}
+$$
+L'ultima disequazione si fattorizza come $(x-2)(x+3)>0$, verificata per $x<-3$ oppure $x>2$. Intersecando con $x\geq0$ e $x\leq6$:
+$$
+\begin{cases} x \geq 0 \\ x \leq 6 \\ x<-3 \ \vee\ x>2 \end{cases} \iff 2 < x \leq 6.
+$$
+
+Quindi
+$$
+A = (2, 6].
+$$
+
+**Sup, inf, max, min.**
+- $6 \in A$ ed è maggiorante di $A$ $\Rightarrow$ $\max A = \sup A = 6$.
+- $\inf A = 2$: è un minorante ($2 \leq x\ \forall x\in A$) ed è il più grande possibile (per ogni $\varepsilon>0$ esiste $x_\varepsilon = 2+\varepsilon/2 \in A$ con $x_\varepsilon < 2+\varepsilon$, coerentemente con la caratterizzazione di $\inf$ vista sopra).
+- $\min A$ **non esiste**: $2 \notin A$ (l'intervallo è aperto in $2$), quindi nessun elemento di $A$ può essere il più piccolo (per ogni candidato in $A$ se ne trova sempre uno più vicino a $2$, ma ancora dentro $A$).
+

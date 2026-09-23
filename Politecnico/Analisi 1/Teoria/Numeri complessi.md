@@ -184,6 +184,16 @@ $$
 z\cdot w = rR\,e^{i(\theta+\varphi)}, \qquad z^n = r^n e^{in\theta}.
 $$
 
+## Teorema fondamentale dell'algebra
+
+**Teorema (fondamentale dell'algebra).** Un'equazione polinomiale
+$$
+a_n z^n + a_{n-1}z^{n-1} + \dots + a_1 z + a_0 = 0, \qquad a_i \in \mathbb{C} \ \ \forall i=0,\dots,n, \ \ a_n \neq 0,
+$$
+ammette **esattamente $n$ soluzioni in $\mathbb{C}$**, purché contate con la loro **molteplicità**. Il numero $n$ è il **grado** dell'equazione.
+
+Questo teorema è ciò che garantisce, in particolare, che ogni numero complesso $w \neq 0$ abbia esattamente $n$ radici $n$-esime distinte (sono le $n$ soluzioni dell'equazione $z^n - w = 0$, di grado $n$): è il risultato che rende sensato ed esaustivo il calcolo fatto sotto.
+
 ## Radici $n$-esime di un numero complesso
 
 **Definizione.** Dato $w \in \mathbb{C}$ e $n \in \mathbb{N}$, un numero $z \in \mathbb{C}$ è una **radice $n$-esima** di $w$ se
@@ -223,3 +233,144 @@ x^{2}+y^{2}=1
 (-0.5,-0.866)|label:k=4
 (0.5,-0.866)|label:k=5
 ```
+
+## Esercizio riepilogativo
+
+**Testo.**
+1. Determinare le soluzioni in $\mathbb{C}$ di
+$$
+\left[z^3 - (1+\sqrt3\,i)^9\right]\big(z+\bar z + 1\big) = 0
+$$
+e rappresentarle nel piano complesso.
+2. Detto $A$ l'insieme delle soluzioni, rappresentare l'insieme $B = \{w \in \mathbb{C} : w = iz,\ z\in A\}$.
+
+Un prodotto di due fattori è nullo se e solo se **almeno uno dei due fattori è nullo**: l'equazione si spezza quindi in due equazioni indipendenti, le cui soluzioni vanno poi riunite (unione degli insiemi di soluzioni).
+
+### Primo fattore: $z^3 = (1+\sqrt3\,i)^9$
+
+Si porta $1+\sqrt3\,i$ in forma trigonometrica: $a=1$, $b=\sqrt3 \Rightarrow$ modulo $2$, argomento $\arctan(\sqrt3)=\frac{\pi}{3}$ (primo quadrante), quindi $1+\sqrt3\,i = 2e^{i\pi/3}$. Per De Moivre:
+$$
+(1+\sqrt3\,i)^9 = \left(2e^{i\pi/3}\right)^9 = 2^9 e^{i\,9\cdot\pi/3} = 512\,e^{i3\pi} = 512\,e^{i\pi}
+$$
+(perché $e^{i3\pi} = e^{i\pi}$, essendo $e^{i\theta}$ periodica di periodo $2\pi$). Si deve dunque risolvere
+$$
+z^3 = w, \qquad w = 512\,e^{i\pi} \quad (R=512,\ \varphi=\pi).
+$$
+Radici cubiche: $r = \sqrt[3]{512} = 8$, $\theta_k = \dfrac{\pi}{3}+\dfrac{2k\pi}{3}$, $k=0,1,2$:
+$$
+\theta_0=\frac{\pi}{3}, \qquad \theta_1 = \pi, \qquad \theta_2 = \frac{5}{3}\pi.
+$$
+$$
+z_0 = 8\left(\cos\tfrac{\pi}{3}+i\sin\tfrac{\pi}{3}\right) = 4+4\sqrt3\,i,
+$$
+$$
+z_1 = 8\left(\cos\pi+i\sin\pi\right) = -8,
+$$
+$$
+z_2 = 8\left(\cos\tfrac{5}{3}\pi+i\sin\tfrac{5}{3}\pi\right) = 4-4\sqrt3\,i.
+$$
+Questi tre punti sono, come sempre per le radici $n$-esime, i vertici di un **triangolo equilatero** inscritto nella circonferenza di raggio $8$ centrata nell'origine.
+
+### Secondo fattore: $z + \bar z + 1 = 0$
+
+Con $z = a+ib$ ($a,b\in\mathbb{R}$): $\bar z = a - ib$, quindi $z+\bar z = 2a$ (Proprietà 5 del coniugato, vista sopra), e l'equazione diventa
+$$
+2a + 1 = 0 \ \Longrightarrow\ a = -\frac12.
+$$
+Le soluzioni sono quindi **tutti** i numeri complessi con parte reale $-\tfrac12$:
+$$
+z = -\frac12 + ib, \qquad \forall b \in \mathbb{R},
+$$
+cioè geometricamente la **retta verticale** $\mathrm{Re}(z) = -\tfrac12$ nel piano di Argand-Gauss.
+
+### Insieme delle soluzioni $A$
+
+$$
+A = \left\{z\in\mathbb{C} : \mathrm{Re}(z) = -\tfrac12\right\} \ \cup\ \{z_0,\, z_1,\, z_2\}.
+$$
+I tre punti $z_0,z_1,z_2$ non appartengono alla retta (hanno parte reale $4,-8,4$), quindi $A$ è geometricamente **una retta verticale più tre punti isolati** (i vertici del triangolo equilatero calcolato sopra).
+
+```desmos-graph
+left=-11; right=8;
+top=8; bottom=-8;
+grid=true
+---
+x=-\frac12
+(4,6.93)|label:z_0
+(-8,0)|label:z_1
+(4,-6.93)|label:z_2
+```
+
+### Insieme $B = \{w = iz : z \in A\}$
+
+Moltiplicare per $i = 1\cdot e^{i\pi/2}$ **ruota di $\frac{\pi}{2}$** (in senso antiorario) e lascia invariato il modulo (Interpretazione geometrica del prodotto, vista sopra: $R=1$, quindi nessun riscalamento).
+
+**Trasformazione della retta.** Se $z = -\tfrac12+ib$ ($b\in\mathbb{R}$):
+$$
+w = iz = i\left(-\tfrac12+ib\right) = -\frac{i}{2} + i^2 b = -b - \frac{i}{2}.
+$$
+Al variare di $b\in\mathbb{R}$, la parte reale $-b$ assume **tutti** i valori reali, mentre $\mathrm{Im}(w) = -\tfrac12$ resta fissa: la retta verticale ruota di $90°$ e diventa la **retta orizzontale**
+$$
+\mathrm{Im}(w) = -\frac12, \qquad w = a - \frac{i}{2},\ \ a\in\mathbb{R}.
+$$
+
+**Trasformazione dei tre punti** (stesso modulo $8$, argomento aumentato di $\frac{\pi}{2}$):
+$$
+w_0 = i z_0 = 8\,e^{i(\pi/3+\pi/2)} = 8\,e^{i5\pi/6} = -4\sqrt3+4i,
+$$
+$$
+w_1 = i z_1 = 8\,e^{i(\pi+\pi/2)} = 8\,e^{i3\pi/2} = -8i,
+$$
+$$
+w_2 = i z_2 = 8\,e^{i(5\pi/3+\pi/2)} = 8\,e^{i\pi/6} = 4\sqrt3+4i.
+$$
+
+$$
+B = \left\{w\in\mathbb{C} : \mathrm{Im}(w) = -\tfrac12\right\} \ \cup\ \{w_0,\, w_1,\, w_2\}.
+$$
+
+```desmos-graph
+left=-11; right=11;
+top=8; bottom=-11;
+grid=true
+---
+y=-\frac12
+(-6.93,4)|label:w_0
+(0,-8)|label:w_1
+(6.93,4)|label:w_2
+```
+
+### Esempio: radici quadrate di un numero complesso
+
+Calcolare $z \in \mathbb{C}$ tale che $z^2 = w$, con $w = -1+\sqrt3\,i$.
+
+**1. Forma trigonometrica di $w$.** Con $a=-1$, $b=\sqrt3$:
+$$
+R = |w| = \sqrt{1+3} = 2.
+$$
+Il punto $(-1,\sqrt3)$ è nel secondo quadrante ($a<0$, $b>0$); l'angolo di riferimento è $\arctan\frac{\sqrt3}{1} = \frac{\pi}{3}$, quindi
+$$
+\varphi = \pi - \frac{\pi}{3} = \frac{2}{3}\pi.
+$$
+Dunque
+$$
+w = 2e^{i\frac{2}{3}\pi} = 2\left[\cos\!\left(\tfrac{2}{3}\pi\right) + i\sin\!\left(\tfrac{2}{3}\pi\right)\right].
+$$
+
+**2. Radici quadrate ($n=2$).** Si cerca $z = re^{i\theta}$ con $z^2=w$:
+$$
+r = \sqrt{R} = \sqrt2, \qquad \theta_k = \frac{\varphi}{2} + \frac{2k\pi}{2} = \frac{\pi}{3} + k\pi, \qquad k=0,1.
+$$
+$$
+\theta_0 = \frac{\pi}{3}, \qquad \theta_1 = \frac{\pi}{3}+\pi = \frac{4}{3}\pi.
+$$
+
+**3. Le due radici.**
+$$
+z_0 = \sqrt2\,e^{i\pi/3} = \sqrt2\left(\cos\tfrac{\pi}{3}+i\sin\tfrac{\pi}{3}\right) = \sqrt2\left(\tfrac12+\tfrac{\sqrt3}{2}i\right) = \frac{\sqrt2}{2} + \frac{\sqrt6}{2}i,
+$$
+$$
+z_1 = \sqrt2\,e^{i4\pi/3} = \sqrt2\left(\cos\tfrac{4\pi}{3}+i\sin\tfrac{4\pi}{3}\right) = \sqrt2\left(-\tfrac12-\tfrac{\sqrt3}{2}i\right) = -\frac{\sqrt2}{2} - \frac{\sqrt6}{2}i.
+$$
+
+Coerentemente con il teorema, $z_1 = -z_0$ (le due radici quadrate sono sempre opposte, essendo $\theta_1 = \theta_0 + \pi$, cioè una rotazione di $\pi$ = cambio di segno).

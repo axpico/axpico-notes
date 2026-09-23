@@ -1,0 +1,24 @@
+{
+  "id": "conv-1790188378226-cpu0vtq8e",
+  "providerId": "claude",
+  "title": "Incomplete task specification",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790188378232,
+  "lastActivityAt": 1790188519609,
+  "sessionId": "80f2eadb-b3e8-4acd-94b0-9b4b7d0effbd",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "80f2eadb-b3e8-4acd-94b0-9b4b7d0effbd"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Teoria/Numeri complessi.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 2168,
+    "cacheReadInputTokens": 70881,
+    "contextWindow": 1000000,
+    "contextTokens": 73051,
+    "percentage": 7,
+    "contextWindowIsAuthoritative": true
+  }
+}
