@@ -20,6 +20,18 @@
               "icon": "lucide-file",
               "title": "Numeri complessi"
             }
+          },
+          {
+            "id": "eba5dce0bf1c8c96",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-09-23 08.10.02.excalidraw"
+            }
           }
         ]
       }
@@ -236,7 +248,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409
+    "width": 409,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -259,11 +272,12 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "2f3ba82a2ec25b01",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md",
+    "Politecnico/Analisi 1/Teoria/Numeri complessi.md",
     "Politecnico/Analisi 1/Teoria/Numeri complessi.md.tmp.10761.e9c866c64adf",
     "Excalidraw/Drawing 2026-09-21 08.18.53.excalidraw.md",
-    "Politecnico/Analisi 1/Teoria/Numeri complessi.md",
     "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md",
     "Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md",
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md",
@@ -283,7 +297,6 @@
     "Excalidraw/Drawing 2026-09-18 13.01.37.excalidraw.md",
     "Politecnico/Analisi 1/Esercizi/Disequazioni.md",
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md.tmp.14588.a97308f18098",
-    "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md.tmp.14588.fc14f7287623",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
     "Excalidraw/Drawing 2026-09-16 10.06.40.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Teotira/Algoritmo.md",
