@@ -132,6 +132,57 @@
       "contentDigest": "1926a7cb6436977bb7542bdbdf07bc8d756212c6a3495bfad5b1b3560cd5365d",
       "providerUserMessageId": "24e018e0-fd2b-4019-b1c5-756453acfeda",
       "providerAssistantMessageId": "ae272215-f7d0-4f67-9fd4-e28d7169fc6c"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790188913841-p0am35t",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1790188913831-qse4r3c",
+      "timestamp": 1790188913831,
+      "rawDisplayText": "Il grafico di $f^{-1}$ è il simmetrico del grafico di $f$ rispetto alla bisettrice $y=x$ (proprietà generale delle funzioni inverse).\n\n\nrispotto all origine non bisettrice",
+      "canonicalText": "Il grafico di $f^{-1}$ è il simmetrico del grafico di $f$ rispetto alla bisettrice $y=x$ (proprietà generale delle funzioni inverse).\n\n\nrispotto all origine non bisettrice",
+      "context": {
+        "editorSelection": {
+          "notePath": "Politecnico/Analisi 1/Teoria/Funzioni.md",
+          "mode": "selection",
+          "selectedText": "Il grafico di $f^{-1}$ è il simmetrico del grafico di $f$ rispetto alla bisettrice $y=x$ (proprietà generale delle funzioni inverse).",
+          "lineCount": 1,
+          "startLine": 158
+        }
+      },
+      "images": [],
+      "contentDigest": "f5bed35c73c952377ba2da7ac61ded40f79d2919d13fa97d945d9ce8b932f1e0",
+      "providerUserMessageId": "46a3e9f3-5d50-4739-85e2-8c32c4d8221a",
+      "providerAssistantMessageId": "7b73cbc2-379c-4048-b502-085c8c962673"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790188972859-xeli6w4",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1790188972854-7jb6due",
+      "timestamp": 1790188972854,
+      "rawDisplayText": "io paarp de;; omoettovota",
+      "canonicalText": "io paarp de;; omoettovota",
+      "images": [],
+      "contentDigest": "921c3e676dfecc2f1f9379e26e09ca35b3b47115d62651c330ce015c8c803c01",
+      "providerUserMessageId": "f218cb6e-0b92-4e9a-a27a-0de50ff8ec07",
+      "providerAssistantMessageId": "81914ce1-3f6a-412e-a41b-985f8f2734c6"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790189028677-rsalel9",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1790189028671-sp9g3wf",
+      "timestamp": 1790189028671,
+      "rawDisplayText": "scusa non e dispari rispetto all'origine non bisettrice",
+      "canonicalText": "scusa non e dispari rispetto all'origine non bisettrice",
+      "images": [],
+      "contentDigest": "568a084c0ce7fbfe43cb222b51ee4f58f073b6c30dfe3b9dbde23347ad028fb4",
+      "providerUserMessageId": "72050f49-02be-43ff-b9a7-4bce54ed95d3",
+      "providerAssistantMessageId": "ca3dfd0e-94df-4c11-a94f-a145930dc892"
     }
   ]
 }

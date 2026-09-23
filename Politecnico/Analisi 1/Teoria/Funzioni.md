@@ -193,7 +193,7 @@ Ristretta a un solo intervallo, invece, è monotona:
 
 **Esempio (pari).** $f(x)=x^2$ è pari: $x^2 = (-x)^2$. Il grafico è **simmetrico rispetto all'asse delle ordinate**.
 
-**Esempio (dispari).** $f(x)=x^3$, $f:\mathbb{R}\to\mathbb{R}$, è biettiva, strettamente crescente (il grafico è simmetrico rispetto alla bisettrice del $1°$ e $3°$ quadrante) ed è dispari:
+**Esempio (dispari).** $f(x)=x^3$, $f:\mathbb{R}\to\mathbb{R}$, è biettiva, strettamente crescente, e giace nel $1°$ e $3°$ quadrante (essendo positiva per $x>0$ e negativa per $x<0$); è dispari:
 $$
 -f(-x) = -(-x)^3 = -(-x^3) = x^3 = f(x) \quad \Longrightarrow \quad f(-x) = -f(x).
 $$

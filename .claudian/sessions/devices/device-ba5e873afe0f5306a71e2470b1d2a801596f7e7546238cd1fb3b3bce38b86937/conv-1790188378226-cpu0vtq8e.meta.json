@@ -4,7 +4,7 @@
   "title": "Incomplete task specification",
   "titleGenerationStatus": "success",
   "createdAt": 1790188378232,
-  "lastActivityAt": 1790188883679,
+  "lastActivityAt": 1790189053044,
   "sessionId": "80f2eadb-b3e8-4acd-94b0-9b4b7d0effbd",
   "selectedModel": "sonnet",
   "providerState": {
@@ -14,10 +14,10 @@
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,
-    "cacheCreationInputTokens": 5969,
-    "cacheReadInputTokens": 80941,
+    "cacheCreationInputTokens": 455,
+    "cacheReadInputTokens": 91059,
     "contextWindow": 1000000,
-    "contextTokens": 86912,
+    "contextTokens": 91516,
     "percentage": 9,
     "contextWindowIsAuthoritative": true
   }
