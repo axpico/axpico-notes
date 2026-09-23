@@ -1,0 +1,24 @@
+{
+  "id": "conv-1790009600029-w8qy8r5bi",
+  "providerId": "claude",
+  "title": "Solve exercises 5 and 6",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790009600032,
+  "lastActivityAt": 1790009650134,
+  "sessionId": "3f68bd16-0d7e-4074-a657-8ea6f9e0a1f6",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "3f68bd16-0d7e-4074-a657-8ea6f9e0a1f6"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1490,
+    "cacheReadInputTokens": 56577,
+    "contextWindow": 1000000,
+    "contextTokens": 58069,
+    "percentage": 6,
+    "contextWindowIsAuthoritative": true
+  }
+}

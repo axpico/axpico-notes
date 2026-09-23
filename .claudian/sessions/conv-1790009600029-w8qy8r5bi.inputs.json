@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1790009600029-w8qy8r5bi",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790009600165-zho5xb8",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1790009600025-f3p4mon",
+      "timestamp": 1790009600025,
+      "rawDisplayText": "risolvi es 5 e 6",
+      "canonicalText": "risolvi es 5 e 6",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "1cdc1dd8418f23bd5d52138f9370376adc79dfb9f26936490f9c4405a669597d",
+      "providerUserMessageId": "3ae656b7-db97-49db-af2c-7f0f49d68199",
+      "providerAssistantMessageId": "eafd0aea-121e-4ead-87f3-d3ca0b772bf9"
+    }
+  ]
+}
