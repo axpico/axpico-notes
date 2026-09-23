@@ -234,7 +234,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409
+    "width": 409,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -259,6 +260,8 @@
   },
   "active": "fcf1ec48dd21f907",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
     "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md",
     "Politecnico/Analisi 1/Teoria/Numeri complessi.md",
@@ -276,8 +279,6 @@
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md.tmp.18572.2f25d7b71c93",
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md.tmp.6856.b230297f06f4",
     "Politecnico/Fondamenti di Informatica/Teotira/Algoritmi 2.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
     "Excalidraw/Drawing 2026-09-20 15.08.03.excalidraw.md",
     "Excalidraw/Drawing 2026-09-18 13.01.37.excalidraw.md",
     "Politecnico/Analisi 1/Esercizi/Disequazioni.md",
