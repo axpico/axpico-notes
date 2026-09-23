@@ -1,0 +1,24 @@
+{
+  "id": "conv-1790189303433-dq4k66673",
+  "providerId": "claude",
+  "title": "Organize notes and complete exercises",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790189303440,
+  "lastActivityAt": 1790189463489,
+  "sessionId": "c97bd081-474e-46a2-9e93-420511386291",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "c97bd081-474e-46a2-9e93-420511386291"
+  },
+  "linkedContentPath": "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 17637,
+    "cacheReadInputTokens": 52007,
+    "contextWindow": 1000000,
+    "contextTokens": 69646,
+    "percentage": 7,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -33,8 +33,7 @@
               "title": "Drawing 2026-09-23 08.10.02.excalidraw"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -220,8 +219,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1790189090891-leie8kd",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
+                      "conversationId": "conv-1790189303433-dq4k66673"
                     }
                   ],
                   "activeTabId": "tab-1790189090891-leie8kd"
@@ -237,7 +235,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md"
+                "file": "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md"
               },
               "icon": "lucide-info",
               "title": "File properties"
@@ -271,14 +269,15 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "6d3c4277c601a1b7",
+  "active": "41c9241263f38e27",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md.tmp.7776.9a5879c9d828",
+    "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi",
     "Politecnico/Analisi 1/Teoria/Funzioni.md",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.3881.b2f88fe474eb",
     "Politecnico/Analisi 1/Teoria/Numeri complessi.md",
-    "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md.tmp.3881.bb77f6092ff2",
     "Politecnico/Analisi 1/Teoria/Numeri complessi.md.tmp.3881.697871794252",
     "Politecnico/Analisi 1/Teoria/Numeri complessi.md.tmp.3881.d2c707742e1d",
@@ -309,7 +308,6 @@
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "claude_skills/claude_skills index.md",
     "claude_skills/Skill Advanced Canvas for obsidian.md",
-    "claude_skills/Senza nome.md",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
