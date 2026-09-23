@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "a9b0def14c44ec0f",
+        "id": "b41f9adce7ae9051",
         "type": "tabs",
         "children": [
           {
-            "id": "eba5dce0bf1c8c96",
+            "id": "fcf1ec48dd21f907",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Politecnico/Fondamenti di Informatica/Teotira/Programma.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Programma"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-09-23 08.10.02.excalidraw"
             }
           }
         ]
@@ -260,8 +258,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "eba5dce0bf1c8c96",
+  "active": "fcf1ec48dd21f907",
   "lastOpenFiles": [
+    "Politecnico/Fondamenti di Informatica/Teotira/Programma.md",
     "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Numeri complessi.md",
     "Politecnico/Analisi 1/Teoria/Numeri complessi.md.tmp.10761.e9c866c64adf",
@@ -269,7 +268,6 @@
     "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md",
     "Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md",
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md",
-    "Politecnico/Fondamenti di Informatica/Teotira/Programma.md",
     "Piano di Studio — Maturità 2026/Informatica/Appunti SQL.md.tmp.15960.7c335b01e3ab",
     "Piano di Studio — Maturità 2026/Informatica/Appunti SQL.md.tmp.15960.1c35cf66d703",
     "Piano di Studio — Maturità 2026/Informatica/Appunti SQL.md.tmp.15960.bcbd30b9f7c3",
