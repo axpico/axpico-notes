@@ -1,5 +1,3 @@
-# Programma (esecuzione di un algoritmo)
-
 ## Definizione
 Un **programma** è la codifica di un **algoritmo** — cioè una combinazione di passi elementari eseguibili da un esecutore — in un **linguaggio** che comprende istruzioni (e altri costrutti) comprensibili dall'esecutore stesso.
 
