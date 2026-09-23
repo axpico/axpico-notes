@@ -1,5 +1,3 @@
-# Sistemi lineari — Teoria ed esercizi
-
 ## 1. Definizioni
 
 Un **sistema lineare** di $m$ equazioni in $n$ incognite $x_1,\dots,x_n$ è un insieme di condizioni

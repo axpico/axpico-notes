@@ -4,33 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1d48162ef46d687a",
+        "id": "4adc75e0b8dd4064",
         "type": "tabs",
         "children": [
           {
-            "id": "4b4e817154ca26a8",
+            "id": "27192edc166e3267",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Untitled"
-            }
-          },
-          {
-            "id": "6d3c4277c601a1b7",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-23 08.10.02.excalidraw"
+              "title": "New tab"
             }
           }
         ]
@@ -92,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 282.5,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -218,11 +203,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1790189090891-leie8kd",
-                      "conversationId": "conv-1790189303433-dq4k66673"
+                      "tabId": "tab-1790189519950-8tyl38b",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1790189090891-leie8kd"
+                  "activeTabId": "tab-1790189519950-8tyl38b"
                 }
               },
               "icon": "bot",
@@ -234,15 +220,13 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md"
-              },
+              "state": {},
               "icon": "lucide-info",
               "title": "File properties"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -269,11 +253,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "41c9241263f38e27",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md.tmp.7776.9a5879c9d828",
+    "Politecnico/Geometria e Algebra Lineare/Esercizi/Sistemi lineari — Teoria ed esercizi.md",
     "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md",
-    "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md",
+    "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md.tmp.7776.9a5879c9d828",
     "Politecnico/Geometria e Algebra Lineare/Esercizi",
     "Politecnico/Analisi 1/Teoria/Funzioni.md",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.3881.b2f88fe474eb",
@@ -292,7 +276,6 @@
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md",
     "Piano di Studio — Maturità 2026/Informatica/Appunti SQL.md.tmp.15960.7c335b01e3ab",
     "Piano di Studio — Maturità 2026/Informatica/Appunti SQL.md.tmp.15960.1c35cf66d703",
-    "Piano di Studio — Maturità 2026/Informatica/Appunti SQL.md.tmp.15960.bcbd30b9f7c3",
     "Politecnico/Fondamenti di Informatica/Teotira/Algoritmi 2.md",
     "Excalidraw/Drawing 2026-09-20 15.08.03.excalidraw.md",
     "Excalidraw/Drawing 2026-09-18 13.01.37.excalidraw.md",
