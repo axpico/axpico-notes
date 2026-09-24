@@ -227,12 +227,11 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 422,
-    "collapsed": true
+    "width": 422
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -255,7 +254,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "0c48489451580ba3",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-09-24 16.03.07.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Esercizi/Rappresentazione dei numeri binario, complementi, ASCII, virgola fissa-mobile.md",
