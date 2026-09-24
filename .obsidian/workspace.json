@@ -208,8 +208,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1790189519950-8tyl38b",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
+                      "conversationId": "conv-1790253043483-i6dxxqt40"
                     }
                   ],
                   "activeTabId": "tab-1790189519950-8tyl38b"
@@ -230,11 +229,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 409,
+    "width": 422,
     "collapsed": true
   },
   "left-ribbon": {

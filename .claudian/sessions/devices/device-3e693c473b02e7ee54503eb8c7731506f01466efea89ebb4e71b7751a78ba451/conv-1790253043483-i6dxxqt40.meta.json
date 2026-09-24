@@ -1,0 +1,24 @@
+{
+  "id": "conv-1790253043483-i6dxxqt40",
+  "providerId": "claude",
+  "title": "Explain two's complement",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790253043505,
+  "lastActivityAt": 1790253089570,
+  "sessionId": "a22f342f-ad9a-482d-a9b8-eb4569ba8d12",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "a22f342f-ad9a-482d-a9b8-eb4569ba8d12"
+  },
+  "linkedContentPath": "Politecnico/Fondamenti di Informatica/Esercizi/Rappresentazione dei numeri binario, complementi, ASCII, virgola fissa-mobile.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1762,
+    "cacheReadInputTokens": 46343,
+    "contextWindow": 1000000,
+    "contextTokens": 48107,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}

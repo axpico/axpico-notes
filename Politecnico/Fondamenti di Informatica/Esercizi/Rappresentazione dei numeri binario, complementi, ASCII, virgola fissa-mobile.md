@@ -70,15 +70,29 @@ Esempio (8 bit), −5:
 - compl. a 1 = 11111010
 - +1 → **11111011** = −5 in complemento a 2
 
-**Verifica**: il bit più significativo ha peso negativo. Per 8 bit:
+**Definizione matematica**: dato A su n bit, il suo complemento a 2 è C2(A) = 2ⁿ − A (aritmetica modulo 2ⁿ, come le lancette di un orologio). NOT bit-a-bit dà (2ⁿ−1)−A perché per ogni bit NOT(b) = 1−b; sommando 1 si ottiene esattamente 2ⁿ−A. Da qui: C2(0) = 2ⁿ, che su n bit trabocca e ridiventa 0 → **lo zero è unico** (nessun −0), a differenza del complemento a 1.
+
+**Verifica**: il bit più significativo ha peso negativo, pari a −2^(n−1), mentre gli altri bit mantengono i pesi binari positivi standard. Per 8 bit i pesi sono: −128, 64, 32, 16, 8, 4, 2, 1.
+
 11111011 = −128 + 64+32+16+8+2+1 = −128+123 = **−5** ✓
 
-Range rappresentabile su n bit: da −2^(n−1) a 2^(n−1) − 1 (es. 8 bit: da −128 a +127).
+Range rappresentabile su n bit: da −2^(n−1) a 2^(n−1) − 1 (es. 8 bit: da −128 a +127). Il range è asimmetrico: c'è un negativo in più (−2^(n−1) non ha un positivo corrispondente, perché sarebbe C2(0) che trabocca).
 
-**Per tornare dal complemento a 2 al valore assoluto** del negativo: si ricomplementa (complemento a 1 + 1), operazione involutiva.
+**Per tornare dal complemento a 2 al valore assoluto** del negativo: si ricomplementa (complemento a 1 + 1), operazione involutiva: C2(C2(A)) = A.
+
+**Sottrazione come addizione**: A − B si calcola come A + C2(B), riusando lo stesso sommatore hardware delle addizioni, senza circuiti dedicati né correzioni (a differenza del complemento a 1, che richiede l'end-around carry).
+
+Esempio (8 bit), 5 − 3 = 5 + C2(3):
+- 3 = 00000011 → C2(3) = 11111101 (= −3)
+- 00000101 + 11111101 = 1 00000010 → si scarta il riporto uscito dal 9° bit (aritmetica modulo 2⁸)
+- risultato: 00000010 = **2** ✓ (scartare questo riporto è normale, diverso dall'overflow)
+
+**Sign extension** (estensione di segno): per allargare un numero in complemento a 2 da n a m bit (m>n) si ripete il **bit di segno** verso sinistra, non si riempie di zeri come per i positivi puri.
+
+Esempio: −5 su 8 bit = `11111011` → su 16 bit = `1111111111111011` (si ripete l'1 iniziale).
 
 ## 6. Overflow e underflow
-
+s
 **Overflow** (interi, complemento a 2): si verifica quando il risultato di un'operazione non entra nel numero di bit disponibili, cioè esce dal range rappresentabile [−2^(n−1), 2^(n−1)−1]. Si riconosce facilmente sommando due numeri con lo **stesso segno** e ottenendo un risultato con il **segno opposto**.
 
 Esempio (4 bit, range −8..+7): 5 + 5 = 0101 + 0101 = 1010 = **−6** (risultato assurdo: overflow, perché 10 non entra in 4 bit con segno).

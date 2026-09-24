@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1790253043483-i6dxxqt40",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790253043731-gn6t62z",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1790253043445-1p2v3mk",
+      "timestamp": 1790253043445,
+      "rawDisplayText": "spiega meglio complemento a 2",
+      "canonicalText": "spiega meglio complemento a 2",
+      "context": {
+        "linkedContent": {
+          "path": "Politecnico/Fondamenti di Informatica/Esercizi/Rappresentazione dei numeri binario, complementi, ASCII, virgola fissa-mobile.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "e71354dfd184ce2932c59a3215ed3e7bab31eb65c342a38f9bdb5bc0549ed5f9",
+      "providerUserMessageId": "f4846d11-ea39-4120-b82f-715d95109118",
+      "providerAssistantMessageId": "d6bef247-e4f5-4847-90da-df25c3a56300"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790253075729-8bi4ecg",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1790253075715-ay24yld",
+      "timestamp": 1790253075715,
+      "rawDisplayText": "scrivi nel file",
+      "canonicalText": "scrivi nel file",
+      "images": [],
+      "contentDigest": "1bc2622540c5bf0dad079df3de550f5625e41d247e580f96bebba875b7a875ec",
+      "providerUserMessageId": "5456f072-4700-4d30-ad6b-2236277a529c",
+      "providerAssistantMessageId": "f26ec25c-4673-4810-bf15-9afa397e651a"
+    }
+  ]
+}
