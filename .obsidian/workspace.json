@@ -11,12 +11,14 @@
             "id": "0c48489451580ba3",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-09-24 16.03.07.excalidraw.md"
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-24 16.03.07.excalidraw"
+              "icon": "lucide-file",
+              "title": "Algebra delle matrici"
             }
           }
         ]
@@ -44,7 +46,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora file"
+              "title": "Files"
             }
           },
           {
@@ -78,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -205,11 +206,11 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1790189519950-8tyl38b",
-                      "conversationId": "conv-1790253043483-i6dxxqt40"
+                      "tabId": "tab-1790278508154-et7t1rb",
+                      "conversationId": "conv-1790278681871-wnw2kzd2d"
                     }
                   ],
-                  "activeTabId": "tab-1790189519950-8tyl38b"
+                  "activeTabId": "tab-1790278508154-et7t1rb"
                 }
               },
               "icon": "bot",
@@ -227,7 +228,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -254,8 +255,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "c691b1fd293f190b",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md",
     "Excalidraw/Drawing 2026-09-24 16.03.07.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Esercizi/Rappresentazione dei numeri binario, complementi, ASCII, virgola fissa-mobile.md",
     "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md",
@@ -270,7 +272,6 @@
     "Politecnico/Analisi 1/Teoria/Numeri complessi.md.tmp.3881.697871794252",
     "Politecnico/Analisi 1/Teoria/Numeri complessi.md.tmp.3881.d2c707742e1d",
     "Politecnico/Analisi 1/Teoria/Numeri complessi.md.tmp.3881.4b9a0fe340a0",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md",
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md",
     "Politecnico/Analisi 1/Teoria/Numeri complessi.md.tmp.10761.e9c866c64adf",
     "Excalidraw/Drawing 2026-09-21 08.18.53.excalidraw.md",

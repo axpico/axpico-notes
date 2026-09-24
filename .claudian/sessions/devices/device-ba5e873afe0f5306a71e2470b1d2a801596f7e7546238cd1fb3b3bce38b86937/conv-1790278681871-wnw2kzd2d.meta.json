@@ -1,0 +1,14 @@
+{
+  "id": "conv-1790278681871-wnw2kzd2d",
+  "providerId": "claude",
+  "title": "Fill missing content in notes",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790278681877,
+  "lastActivityAt": 1790278681877,
+  "sessionId": "7216079c-e7d1-498a-9359-8903cd79b4fe",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "7216079c-e7d1-498a-9359-8903cd79b4fe"
+  },
+  "linkedContentPath": "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md"
+}
