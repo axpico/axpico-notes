@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "30bb58f49be64b9d",
+        "id": "294212a11ae4ea13",
         "type": "tabs",
         "children": [
           {
-            "id": "849b07f9934addaf",
+            "id": "0c48489451580ba3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Politecnico/Fondamenti di Informatica/Esercizi/Rappresentazione dei numeri binario, complementi, ASCII, virgola fissa-mobile.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2026-09-24 16.03.07.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Rappresentazione dei numeri binario, complementi, ASCII, virgola fissa-mobile"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-09-24 16.03.07.excalidraw"
             }
           }
         ]
@@ -257,8 +255,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "849b07f9934addaf",
+  "active": "0c48489451580ba3",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-09-24 16.03.07.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Esercizi/Rappresentazione dei numeri binario, complementi, ASCII, virgola fissa-mobile.md",
     "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Sistemi lineari — Teoria ed esercizi.md",
