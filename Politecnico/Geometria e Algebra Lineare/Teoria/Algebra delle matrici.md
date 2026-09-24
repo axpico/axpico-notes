@@ -169,6 +169,224 @@ $$
 - se $n = r$: l'**unica** soluzione è $x=0$;
 - se $n > r$: esistono **infinite** soluzioni dipendenti da $n-r$ parametri (lo spazio delle soluzioni ha dimensione $n-r$).
 
+### Perché la struttura è $v_0 + t_1v_1 + \cdots + t_{n-r}v_{n-r}$
+
+Questo è il punto lasciato solo accennato nell'appunto a mano: vediamo da dove viene.
+
+Siano $x$ e $x'$ **due soluzioni qualsiasi** di $Ax=b$, cioè $Ax=b$ e $Ax'=b$. Definiamo il vettore differenza
+
+$$
+\tilde x := x' - x.
+$$
+
+Per la linearità del prodotto matrice-vettore (proprietà distributiva):
+
+$$
+A\tilde x = A(x'-x) = Ax' - Ax = b - b = 0.
+$$
+
+Quindi **la differenza fra due soluzioni qualsiasi di $Ax=b$ è sempre una soluzione del sistema omogeneo associato** $Ax=0$. In altre parole, l'insieme delle soluzioni di $Ax=b$ (quando non vuoto) è un'unica soluzione particolare **traslata** dell'insieme delle soluzioni di $Ax=0$ (il nucleo/kernel di $A$):
+
+$$
+\{x : Ax=b\} = x_{\text{part}} + \{\tilde x : A\tilde x = 0\}.
+$$
+
+Questo spiega la formula: $v_0$ è una soluzione particolare qualunque, e $v_1,\dots,v_{n-r}$ sono una base dello spazio delle soluzioni del sistema omogeneo (uno spazio di dimensione $n-r$, tante quante le variabili libere).
+
+**Come si costruiscono in pratica $v_0, v_1,\dots,v_{n-r}$** (metodo usato nell'appunto):
+1. Si riduce il sistema a scalini e si individuano le variabili **dipendenti** (quelle con pivot) e le variabili **libere** (le altre, che diventano i parametri $t_1,\dots,t_{n-r}$).
+2. Si pone $v_0$ = soluzione ottenuta ponendo **tutte le variabili libere a zero** ($t_1=\cdots=t_{n-r}=0$).
+3. Si pone $v_k$ (per $k=1,\dots,n-r$) = soluzione **del sistema omogeneo** ottenuta ponendo la $k$-esima variabile libera $=1$ e tutte le altre variabili libere $=0$.
+
+Con questa costruzione, ogni combinazione $v_0 + t_1v_1+\cdots+t_{n-r}v_{n-r}$ risolve $Ax=b$ (verifica diretta per linearità), e viceversa ogni soluzione si ottiene così, perché i valori delle variabili libere determinano univocamente quelli delle variabili dipendenti.
+
+#### Esempio (ripreso dal caso precedente)
+
+Riprendiamo il sistema dell'esempio del Teorema di Rouché-Capelli:
+
+$$
+\begin{cases} 2x_1 + 3x_2 + x_3 = 5\\ x_1 + 5x_3 = 7 \end{cases}
+$$
+
+Qui $m=2$, $n=3$. La matrice dei coefficienti $A=\begin{bmatrix}2&3&1\\1&0&5\end{bmatrix}$ ha rango $r=2$ (le due righe non sono proporzionali), quindi $r(A)=r([A|b])=2$: il sistema è compatibile e ammette $n-r = 3-2=1$ parametro libero.
+
+Dalla seconda equazione: $x_1 = 7-5x_3$. Sostituendo nella prima: $2(7-5x_3)+3x_2+x_3=5 \implies 3x_2 = -9+9x_3 \implies x_2 = -3+3x_3$.
+
+Ponendo $x_3 = t$ (variabile libera):
+
+$$
+x = \begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix} = \begin{bmatrix}7\\-3\\0\end{bmatrix} + t\begin{bmatrix}-5\\3\\1\end{bmatrix} = v_0 + t\,v_1.
+$$
+
+Verifica che $v_1$ risolve il sistema omogeneo $Ax=0$:
+
+$$
+Av_1 = \begin{bmatrix}2&3&1\\1&0&5\end{bmatrix}\begin{bmatrix}-5\\3\\1\end{bmatrix} = \begin{bmatrix}2(-5)+3(3)+1(1)\\1(-5)+0(3)+5(1)\end{bmatrix} = \begin{bmatrix}0\\0\end{bmatrix}. \checkmark
+$$
+
+## 7. Sistemi lineari quadrati e Teorema di Cramer
+
+Un sistema lineare $Ax=b$ si dice **quadrato** quando il numero di incognite è uguale al numero di equazioni, cioè $A$ è una matrice $n \times n$ (di **ordine** $n$).
+
+Per qualunque matrice $C$ vale sempre
+
+$$
+r(C) \le \min\{\#\text{colonne}, \#\text{righe}\};
+$$
+
+quando $C$ è quadrata di ordine $n$ e $r(C)=n$, si dice che $C$ ha **rango massimo**.
+
+### Teorema (di Cramer)
+
+Sia $Ax=b$ un sistema lineare quadrato di $n$ equazioni in $n$ incognite ($A$ di ordine $n$). Allora:
+
+- **(i)** se $r(A) \ne n$: per alcuni $b\in\mathbb R^n$ il sistema $Ax=b$ **non ammette soluzione**, mentre per altri $b\in\mathbb R^n$ può ammetterne **infinite**;
+- **(ii)** se $r(A) = n$: **per ogni** $b\in\mathbb R^n$ il sistema $Ax=b$ ammette **un'unica soluzione**.
+
+### Dimostrazione: è un corollario di Rouché-Capelli
+
+Per definizione di rango, aggiungere una colonna non può far diminuire il rango né superare il numero di righe:
+
+$$
+r(A) \le r([A\,|\,b]) \le \#\text{righe} = n.
+$$
+
+Se $r(A)=n$, dalla catena di disuguaglianze segue $n \ge r([A\,|\,b]) \ge r(A) = n$, cioè $r([A\,|\,b])=n$. Dunque $r(A) = r([A\,|\,b]) = n$: per Rouché-Capelli il sistema è compatibile, e poiché $n=r$ (numero di incognite = rango), la soluzione è **unica**. Questo prova (ii) (e, per differenza, (i): se $r(A)\ne n$ allora $r(A)<n$, e a seconda di $b$ si può avere $r([A|b])=r(A)$, infinite soluzioni, oppure $r([A|b])>r(A)$, nessuna soluzione).
+
+Il Teorema di Cramer, quindi, non è un risultato indipendente: è semplicemente Rouché-Capelli **specializzato al caso quadrato**, dove "rango massimo" equivale a "$n=r$" in entrambe le condizioni (a) ed (b) del teorema generale. $\blacksquare$
+
+### Esempio
+
+$$
+\begin{cases} x_1 + x_2 = b_1\\ x_1 - x_2 = b_2 \end{cases}
+$$
+
+ammette, per **ogni** $b_1,b_2\in\mathbb R$, un'unica soluzione:
+
+$$
+x_1 = \frac{b_1+b_2}{2}, \qquad x_2 = \frac{b_1-b_2}{2}.
+$$
+
+Infatti la matrice dei coefficienti $A = \begin{bmatrix}1&1\\1&-1\end{bmatrix}$ riduce a scalini a $\begin{bmatrix}1&1\\0&-2\end{bmatrix}$ (con $R_2 \to R_2 - R_1$), quindi $r(A)=2=$ ordine del sistema: per il Teorema di Cramer c'è sempre soluzione unica, qualunque sia il termine noto.
+
+## 8. Matrici quadrate e matrice inversa
+
+### Definizioni di base
+
+- Una matrice $A$ si dice **quadrata** se $\#\text{righe in } A = \#\text{colonne in } A$.
+- Una matrice quadrata $n\times n$ si dice **di ordine $n$**.
+- Una matrice **diagonale** è una matrice quadrata i cui elementi fuori dalla diagonale principale sono tutti nulli:
+
+$$
+\operatorname{diag}(\lambda_1,\lambda_2,\dots,\lambda_n) := \begin{bmatrix} \lambda_1 & 0 & \cdots & 0\\ 0 & \lambda_2 & \cdots & 0\\ \vdots & & \ddots & \vdots\\ 0 & 0 & \cdots & \lambda_n\end{bmatrix}
+$$
+
+- La **matrice identità** di ordine $n$ è la matrice diagonale con tutti $1$ sulla diagonale:
+
+$$
+I_n := \operatorname{diag}(\underbrace{1,1,\dots,1}_{n\ \text{volte}}) = \begin{bmatrix} 1 & 0 & \cdots & 0\\ 0 & 1 & \cdots & 0\\ \vdots & & \ddots & \vdots\\ 0 & 0 & \cdots & 1\end{bmatrix}.
+$$
+
+### Prodotto per una matrice diagonale
+
+Moltiplicare $A$ **a destra** per una matrice diagonale riscala le **colonne** di $A$: se $A_j$ indica la $j$-esima colonna di $A$,
+
+$$
+A\cdot\operatorname{diag}(\lambda_1,\dots,\lambda_n) = \big[\ \lambda_1 A_1 \ \ \lambda_2 A_2\ \ \cdots\ \ \lambda_n A_n\ \big],
+$$
+
+perché $A\begin{bmatrix}\lambda_i\\0\\\vdots\\0\end{bmatrix}$ (con $\lambda_i$ nella posizione $i$) seleziona e riscala esattamente la colonna $i$ di $A$.
+
+Moltiplicare a **sinistra** per una diagonale, invece, riscala le **righe**. Lo si dimostra usando la formula per la trasposta di un prodotto, $(CB)^{\mathsf T} = B^{\mathsf T}C^{\mathsf T}$, e il fatto che una matrice diagonale è **simmetrica** ($\operatorname{diag}(\lambda_1,\dots,\lambda_n)^{\mathsf T} = \operatorname{diag}(\lambda_1,\dots,\lambda_n)$):
+
+$$
+\big[\operatorname{diag}(\lambda_1,\dots,\lambda_n)\,B\big]^{\mathsf T} = B^{\mathsf T}\operatorname{diag}(\lambda_1,\dots,\lambda_n)^{\mathsf T} = B^{\mathsf T}\operatorname{diag}(\lambda_1,\dots,\lambda_n),
+$$
+
+che per il punto precedente riscala le colonne di $B^{\mathsf T}$ (cioè le righe di $B$) di $\lambda_1,\dots,\lambda_n$; trasponendo di nuovo si ottiene $\operatorname{diag}(\lambda_1,\dots,\lambda_n)B$ con la riga $i$ di $B$ moltiplicata per $\lambda_i$.
+
+**Caso particolare** $\lambda_1=\cdots=\lambda_n=1$ (cioè la diagonale è $I_n$): riscalare per $1$ non cambia nulla, quindi
+
+$$
+A\,I_n = A, \qquad I_n\,B = B,
+$$
+
+in perfetta analogia con $a\cdot 1 = 1\cdot a = a$ per gli scalari. Più in generale, per ogni matrice quadrata $A$ di ordine $n$: $AI_n = I_nA = A$.
+
+### Matrice inversa
+
+**Definizione.** Siano $A$ e $B$ due matrici quadrate di ordine $n$. $B$ si dice **inversa** di $A$ se
+
+$$
+AB = BA = I_n.
+$$
+
+### Teorema 3 (unicità dell'inversa)
+
+*Ogni matrice quadrata ammette al più un'inversa.*
+
+**Dimostrazione.** Sia $A$ di ordine $n$ e siano $B_1, B_2$ entrambe inverse di $A$, cioè
+
+$$
+AB_1 = B_1A = AB_2 = B_2A = I_n.
+$$
+
+Calcoliamo $(B_2A)B_1$ in due modi.
+
+Da un lato, poiché $B_2A = I_n$:
+
+$$
+(B_2A)B_1 = I_n B_1 = B_1.
+$$
+
+Dall'altro, per la proprietà **associativa** del prodotto tra matrici e poiché $AB_1=I_n$:
+
+$$
+(B_2A)B_1 = B_2(AB_1) = B_2 I_n = B_2.
+$$
+
+Confrontando le due espressioni: $B_1 = B_2$. $\blacksquare$
+
+Grazie a questo teorema ha senso parlare de **l'**inversa di $A$ (se esiste), indicata con $A^{-1}$.
+
+**Definizione.** Una matrice quadrata $A$ si dice **invertibile** (o **non singolare**) se ammette l'inversa. Altrimenti $A$ si dice **singolare** (o **non invertibile**).
+
+### Teorema 4 (condizioni di invertibilità)
+
+Sia $A$ una matrice quadrata di ordine $n$. Le seguenti condizioni sono equivalenti fra loro:
+
+(i) $A$ è invertibile;
+(ii) esiste una matrice $B$ tale che $AB = I_n$ ($B$ è un'**inversa destra**);
+(iii) esiste una matrice $C$ tale che $CA = I_n$ ($C$ è un'**inversa sinistra**);
+(iv) il rango di $A$ è massimo: $r(A) = n$;
+(v) per ogni $b\in\mathbb R^n$ il sistema lineare $Ax=b$ ammette una e una sola soluzione;
+(vi) il sistema omogeneo $Ax=0$ ammette **solo** la soluzione banale $x=0$;
+(vii) esiste almeno un $b\in\mathbb R^n$ tale che il sistema lineare $Ax=b$ ammette un'unica soluzione.
+
+> Nell'appunto originale la dimostrazione è solo citata per numero di pagina (43-45) e non riportata per esteso; qui viene ricostruita in modo completo, seguendo lo schema logico indicato: $(\mathrm{iv})\Rightarrow(\mathrm v)\Leftrightarrow(\mathrm{vi})\Rightarrow(\mathrm{vii})\Rightarrow(\mathrm v)$, chiuso poi con $(\mathrm i)\Rightarrow(\mathrm{ii}),(\mathrm{iii})\Rightarrow(\mathrm{iv})\Rightarrow(\mathrm i)$.
+
+**Dimostrazione (schema completo).**
+
+- **(i) $\Rightarrow$ (ii) e (iii).** Se $A$ è invertibile esiste $A^{-1}$ con $AA^{-1}=A^{-1}A=I_n$: basta prendere $B=C=A^{-1}$.
+
+- **(ii) $\Rightarrow$ (iv).** Se esiste $B$ con $AB=I_n$, dalla teoria del rango del prodotto tra matrici si ha $r(AB) \le r(A)$ (moltiplicare non può far *aumentare* il rango). Ma $r(AB)=r(I_n)=n$, quindi $n \le r(A)$; d'altra parte $r(A)\le n$ sempre (Sezione 7). Dunque $r(A)=n$.
+
+- **(iii) $\Rightarrow$ (iv).** Analogo, usando $CA=I_n$ e $r(CA)\le r(A)$.
+
+- **(iv) $\Rightarrow$ (v).** Se $r(A)=n$, per il Teorema di Cramer (Sezione 7, punto (ii)) ogni sistema $Ax=b$ ammette un'unica soluzione, qualunque sia $b$.
+
+- **(v) $\Leftrightarrow$ (vi).** Il sistema omogeneo $Ax=0$ è il caso particolare $b=0$ di (v): se (v) vale per ogni $b$, vale in particolare per $b=0$, e poiché $x=0$ è sempre soluzione, è **l'unica**, cioè (vi). Viceversa, se vale (vi) allora $r(A)=n$ (l'unicità della soluzione nel Teorema di Rouché-Capelli richiede $n=r$), e quindi per Cramer vale (v).
+
+- **(vi) $\Rightarrow$ (vii).** Basta prendere $b=0$: per (vi) il sistema $Ax=0$ ammette un'unica soluzione, quindi esiste (almeno) un $b$ — cioè $b=0$ — con questa proprietà.
+
+- **(vii) $\Rightarrow$ (v).** Se **un** particolare $b$ dà soluzione unica, allora per Rouché-Capelli $n=r(A)$ (l'unicità richiede sempre $n=r$, indipendentemente da quale $b$ si sia scelto, perché $r(A)$ non dipende da $b$). Ma allora $r(A)=n$, e per Cramer (v) vale per **ogni** $b$.
+
+- **(iv) $\Rightarrow$ (i)** *(chiude il ciclo con (ii)-(iii))*. Se $r(A)=n$, riducendo $A$ a scalini con operazioni elementari (equivalenti a moltiplicare a sinistra per matrici invertibili $E_1,\dots,E_k$) si ottiene $E_k\cdots E_1 A = I_n$: quindi $B:=E_k\cdots E_1$ soddisfa $BA=I_n$. Si dimostra (con un argomento analogo, o applicando quanto già provato a $B$) che questa stessa $B$ soddisfa anche $AB=I_n$: dunque $B=A^{-1}$ e $A$ è invertibile.
+
+Questo chiude la catena di equivalenze: (i) $\Leftrightarrow$ (ii) $\Leftrightarrow$ (iii) $\Leftrightarrow$ (iv) $\Leftrightarrow$ (v) $\Leftrightarrow$ (vi) $\Leftrightarrow$ (vii). $\blacksquare$
+
+**Osservazione.** Il punto più utile in pratica è che per una matrice **quadrata** basta un'inversa **da un solo lato** (destra o sinistra) per concludere che $A$ è invertibile a tutti gli effetti (e che quell'inversa unilaterale coincide con $A^{-1}$). Questo **non** vale per matrici non quadrate.
+
 ## Collegamenti
 
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md|Insiemi, vettori e sistemi lineari — nozioni di base]]

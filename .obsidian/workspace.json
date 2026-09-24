@@ -206,11 +206,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1790278508154-et7t1rb",
-                      "conversationId": "conv-1790278681871-wnw2kzd2d"
+                      "tabId": "tab-1790278944904-8gdce4a",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1790278508154-et7t1rb"
+                  "activeTabId": "tab-1790278944904-8gdce4a"
                 }
               },
               "icon": "bot",
@@ -228,7 +229,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -255,8 +256,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "56efc63866208b00",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md.tmp.48721.31b15c2ef4eb",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md",
     "Excalidraw/Drawing 2026-09-24 16.03.07.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Esercizi/Rappresentazione dei numeri binario, complementi, ASCII, virgola fissa-mobile.md",
@@ -293,7 +295,6 @@
     "Excalidraw/Drawing 2026-09-17 16.25.42.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "claude_skills/claude_skills index.md",
-    "claude_skills/Skill Advanced Canvas for obsidian.md",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 3.png",
