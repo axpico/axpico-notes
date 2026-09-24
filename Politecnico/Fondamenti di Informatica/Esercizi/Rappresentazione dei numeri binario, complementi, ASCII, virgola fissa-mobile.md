@@ -1,5 +1,3 @@
-# Rappresentazione dei numeri: binario, complementi, ASCII, virgola fissa/mobile
-
 ## 1. Conversione decimale → binario
 
 **Metodo delle divisioni successive per 2**: dividi il numero per 2, annoti il resto, ripeti sul quoziente finché non arrivi a 0. Le cifre binarie sono i resti letti dal basso verso l'alto (dall'ultimo al primo).
