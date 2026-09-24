@@ -11,10 +11,14 @@
             "id": "849b07f9934addaf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Fondamenti di Informatica/Esercizi/Binari.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "Binari"
             }
           }
         ]
