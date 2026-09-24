@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4adc75e0b8dd4064",
+        "id": "30bb58f49be64b9d",
         "type": "tabs",
         "children": [
           {
-            "id": "27192edc166e3267",
+            "id": "849b07f9934addaf",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-23 08.10.02.excalidraw"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -256,11 +254,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "27192edc166e3267",
+  "active": "849b07f9934addaf",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Sistemi lineari — Teoria ed esercizi.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
-    "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md.tmp.7776.9a5879c9d828",
     "Politecnico/Geometria e Algebra Lineare/Esercizi",
     "Politecnico/Analisi 1/Teoria/Funzioni.md",
