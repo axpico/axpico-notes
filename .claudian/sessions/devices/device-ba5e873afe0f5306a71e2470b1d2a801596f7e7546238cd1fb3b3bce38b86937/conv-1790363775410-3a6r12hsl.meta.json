@@ -4,7 +4,7 @@
   "title": "Organizza esercizi di sup/inf e svolgi 5-6",
   "titleGenerationStatus": "success",
   "createdAt": 1790363775415,
-  "lastActivityAt": 1790364191983,
+  "lastActivityAt": 1790364526523,
   "sessionId": "71c6c9de-c4c4-4663-a8b3-f1bb4f1996df",
   "selectedModel": "sonnet",
   "providerState": {
@@ -14,11 +14,11 @@
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,
-    "cacheCreationInputTokens": 1359,
-    "cacheReadInputTokens": 67949,
+    "cacheCreationInputTokens": 5987,
+    "cacheReadInputTokens": 94749,
     "contextWindow": 1000000,
-    "contextTokens": 69310,
-    "percentage": 7,
+    "contextTokens": 100738,
+    "percentage": 10,
     "contextWindowIsAuthoritative": true
   }
 }
