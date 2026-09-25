@@ -1,3 +1,14 @@
+---
+tags:
+  - analisi1
+  - sup-inf-max-min
+  - insiemi-di-numeri-reali
+  - assioma-di-archimede
+  - domini-di-funzioni
+  - disequazioni-logaritmiche
+  - disequazioni-fratte
+---
+
 ## Richiami teorici
 
 Dato $\emptyset \neq S \subseteq \mathbb{R}$ e $z \in \mathbb{R}$, si ha $z = \sup(S)$ se e solo se:
@@ -178,7 +189,32 @@ $$\Longrightarrow \quad \inf(S) = 0, \quad \nexists \min(S)$$
 
 $$S = \{a \in \mathbb{R} : \log(x^2 - 2ax + a) \text{ è definito su tutto } \mathbb{R}\}$$
 
-*(spazio per lo svolgimento)*
+**Condizione:** il logaritmo è definito ovunque su $x\in\mathbb{R}$ se e solo se l'argomento è **sempre strettamente positivo**:
+
+$$x^2 - 2ax + a > 0 \quad \forall x \in \mathbb{R}$$
+
+**Metodo (somma e sottrazione di $a^2$, poi raccolgo):** completo il quadrato aggiungendo e togliendo $a^2$:
+
+$$x^2 - 2ax + a = \underbrace{x^2 - 2ax + a^2}_{(x-a)^2} - a^2 + a = (x-a)^2 - (a^2 - a)$$
+
+Poiché $(x-a)^2 \ge 0\ \forall x$, il minimo valore dell'espressione (al variare di $x$) è $-(a^2-a)$, raggiunto per $x=a$. La condizione "sempre $>0$" equivale quindi a chiedere che **il minimo** sia positivo:
+
+$$-(a^2-a) > 0 \iff a^2 - a < 0$$
+
+Raccolgo $a$ a fattor comune:
+
+$$a(a-1) < 0$$
+
+Prodotto di due fattori di segno opposto ⇒ $0 < a < 1$.
+
+$$S = (0,1)$$
+
+**Sup/inf:** poiché $S$ è un intervallo aperto, $0,1 \notin S$ ⇒ $\nexists \max(S),\ \nexists\min(S)$.
+
+- $\sup(S)=1$: **(1)** $a<1\ \forall a\in S$ ⇒ $1$ maggiorante. **(2)** fissato $\varepsilon>0$, se $\varepsilon\ge1$ ogni $a\in(0,1)$ soddisfa $a>1-\varepsilon$; se $0<\varepsilon<1$ basta prendere $a = 1-\tfrac{\varepsilon}{2} \in (0,1)\cap(1-\varepsilon,1) \subset S$, e $a>1-\varepsilon$. ⇒ $\sup(S)=1$.
+- $\inf(S)=0$: **(1)** $a>0\ \forall a\in S$ ⇒ $0$ minorante. **(2)** fissato $\varepsilon>0$, analogamente $a=\min\{\varepsilon/2,\ 1/2\} \in S$ soddisfa $a<0+\varepsilon$. ⇒ $\inf(S)=0$.
+
+$$\Longrightarrow \quad \inf(S)=0,\ \sup(S)=1,\ \nexists\min(S),\ \nexists\max(S)$$
 
 
 
@@ -186,5 +222,35 @@ $$S = \{a \in \mathbb{R} : \log(x^2 - 2ax + a) \text{ è definito su tutto } \ma
 
 $$S = \left\{ x \in \mathbb{R}\setminus\{2\} : \frac{2x+1}{x-2} - \frac{5}{2(x+2)} < \frac{1}{2} \right\}$$
 
-*(spazio per lo svolgimento)*
+**Condizioni di esistenza:** $x\ne 2$ (dato) e $x\ne -2$ (secondo denominatore).
+
+Porto tutto a primo membro e metto a denominatore comune $D(x) = 2(x-2)(x+2)$:
+
+$$\frac{2x+1}{x-2} - \frac{5}{2(x+2)} - \frac{1}{2} < 0$$
+
+$$\frac{2(2x+1)(x+2) - 5(x-2) - (x-2)(x+2)}{2(x-2)(x+2)} < 0$$
+
+**Numeratore:**
+
+$$2(2x+1)(x+2) = 2(2x^2+5x+2) = 4x^2+10x+4$$
+$$-5(x-2) = -5x+10, \qquad -(x^2-4) = -x^2+4$$
+
+Sommando: $N(x) = 4x^2+10x+4-5x+10-x^2+4 = 3x^2+5x+18$.
+
+**Segno di $N(x)$:** $\Delta = 5^2-4\cdot3\cdot18 = 25-216 = -191 < 0$ e coefficiente direttore $3>0$ ⇒ $N(x)>0\ \forall x\in\mathbb{R}$ (parabola sempre sopra l'asse $x$, nessuna radice reale).
+
+Poiché $N(x)$ è **sempre positivo**, il segno della frazione dipende solo dal denominatore:
+
+$$\frac{N(x)}{2(x-2)(x+2)} < 0 \iff (x-2)(x+2) < 0 \iff -2 < x < 2$$
+
+(coerente con le c.e. $x\ne\pm2$, già escluse come estremi aperti)
+
+$$S = (-2,2)$$
+
+**Sup/inf:** intervallo aperto ⇒ $\nexists\max(S),\ \nexists\min(S)$.
+
+- $\sup(S)=2$: **(1)** $x<2\ \forall x\in S$. **(2)** fissato $\varepsilon>0$, prendo $x=2-\min\{\varepsilon,1\}/2 \in S$ con $x>2-\varepsilon$. ⇒ $\sup(S)=2$.
+- $\inf(S)=-2$: per simmetria (stesso argomento con $x=-2+\min\{\varepsilon,1\}/2$). ⇒ $\inf(S)=-2$.
+
+$$\Longrightarrow \quad \inf(S)=-2,\ \sup(S)=2,\ \nexists\min(S),\ \nexists\max(S)$$
 

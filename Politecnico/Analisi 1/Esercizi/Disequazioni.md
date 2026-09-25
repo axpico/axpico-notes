@@ -119,4 +119,4 @@ $$\big(\sqrt x+\sqrt{1-x}\big)^2 = 1+2\sqrt{x(1-x)} \ge 1 \quad\text{sempre vero
 Unendo i due casi con la condizione 1 ($x\ge0$):
 
 $$\boxed{D=[0,+\infty)}$$
-*
+

@@ -59,7 +59,21 @@
         }
       ],
       "contentDigest": "8d775e47f8c57321ccc0c08b3085f8d878770fa1760aa513851964661b8e1082",
-      "providerUserMessageId": "6a8232e9-98fe-4012-8771-30101288c6fe"
+      "providerUserMessageId": "6a8232e9-98fe-4012-8771-30101288c6fe",
+      "providerAssistantMessageId": "f6142aa1-7ac8-4c66-8d33-df9507320c61"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790364191988-03l9hdu",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1790364191983-4080det",
+      "timestamp": 1790364191983,
+      "rawDisplayText": "crea un nuovo file gli es di quelli complessi",
+      "canonicalText": "crea un nuovo file gli es di quelli complessi",
+      "images": [],
+      "contentDigest": "0a59f88915b72d6579656bd7cfcca26a8ee9005bef26b96b6791f7fb588db79b",
+      "providerUserMessageId": "026cbea9-cc65-4857-9e2b-b4911ba4c901"
     }
   ]
 }
