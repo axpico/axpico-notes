@@ -367,7 +367,7 @@ Sia $A$ una matrice quadrata di ordine $n$. Le seguenti condizioni sono equivale
 
 **Dimostrazione (schema completo).**
 
-- **(i) $\Rightarrow$ (ii) e (iii).** Se $A$ è invertibile esiste $A^{-1}$ con $AA^{-1}=A^{-1}A=I_n$: basta prendere $B=C=A^{-1}$.
+- **(i) $\Rightarrow$ (ii) e (iii).** Se $A$ è invertibile esiste $A^{-1}$ con $AA^{-1}=A^{-1}A=I_n$: basta prendere $B=C=A^{-1}$
 
 - **(ii) $\Rightarrow$ (iv).** Se esiste $B$ con $AB=I_n$, dalla teoria del rango del prodotto tra matrici si ha $r(AB) \le r(A)$ (moltiplicare non può far *aumentare* il rango). Ma $r(AB)=r(I_n)=n$, quindi $n \le r(A)$; d'altra parte $r(A)\le n$ sempre (Sezione 7). Dunque $r(A)=n$.
 
