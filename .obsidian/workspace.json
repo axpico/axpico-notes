@@ -8,17 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0c48489451580ba3",
+            "id": "a281f7b5187345d3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2026-09-25 13.00.23.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Algebra delle matrici"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-09-25 13.00.23.excalidraw"
             }
           }
         ]
@@ -80,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 282.5,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -233,7 +232,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 422
+    "width": 422,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -256,15 +256,16 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "a281f7b5187345d3",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
+    "Excalidraw/Drawing 2026-09-25 13.00.23.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md.tmp.48721.31b15c2ef4eb",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md",
     "Excalidraw/Drawing 2026-09-24 16.03.07.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Esercizi/Rappresentazione dei numeri binario, complementi, ASCII, virgola fissa-mobile.md",
     "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Sistemi lineari — Teoria ed esercizi.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md.tmp.7776.9a5879c9d828",
     "Politecnico/Geometria e Algebra Lineare/Esercizi",
     "Politecnico/Analisi 1/Teoria/Funzioni.md",
@@ -281,7 +282,6 @@
     "Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md",
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md",
     "Piano di Studio — Maturità 2026/Informatica/Appunti SQL.md.tmp.15960.7c335b01e3ab",
-    "Piano di Studio — Maturità 2026/Informatica/Appunti SQL.md.tmp.15960.1c35cf66d703",
     "Politecnico/Fondamenti di Informatica/Teotira/Algoritmi 2.md",
     "Excalidraw/Drawing 2026-09-20 15.08.03.excalidraw.md",
     "Excalidraw/Drawing 2026-09-18 13.01.37.excalidraw.md",
