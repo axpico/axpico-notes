@@ -33,7 +33,8 @@
               "title": "Sup - Inf - Max - Min di sottoinsiemi di ℝ"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -220,8 +221,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1790278944904-8gdce4a",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
+                      "conversationId": "conv-1790363775410-3a6r12hsl"
                     }
                   ],
                   "activeTabId": "tab-1790278944904-8gdce4a"
@@ -242,7 +242,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -250,15 +250,15 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Apri selettore rapido": false,
-      "graph:Apri vista grafo": false,
-      "canvas:Crea nuova lavagna": false,
-      "daily-notes:Apri nota giornaliera": false,
-      "templates:Inserisci modello": false,
-      "command-palette:Apri riquadro comandi": false,
-      "markdown-importer:Apri importazione Markdown": false,
-      "audio-recorder:Avvia/ferma registrazione": false,
-      "bases:Crea nuova Base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "audio-recorder:Start/stop recording": false,
+      "bases:Create new base": false,
       "omnisearch:Omnisearch": false,
       "templater-obsidian:Templater": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
@@ -269,7 +269,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "0a6e8ac6eeef6a93",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-09-25 13.00.23.excalidraw.md",
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md",

@@ -1,0 +1,14 @@
+{
+  "id": "conv-1790363775410-3a6r12hsl",
+  "providerId": "claude",
+  "title": "Organizza esercizi di sup/inf e svolgi 5-6",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790363775415,
+  "lastActivityAt": 1790363775415,
+  "sessionId": "71c6c9de-c4c4-4663-a8b3-f1bb4f1996df",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "71c6c9de-c4c4-4663-a8b3-f1bb4f1996df"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md"
+}
