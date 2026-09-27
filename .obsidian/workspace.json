@@ -250,7 +250,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 422
+    "width": 422,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -275,9 +276,9 @@
   },
   "active": "a07ab06c2c66d13e",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-09-25 13.00.23.excalidraw.md",
-    "Excalidraw/Drawing 2026-09-27 15.51.33.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md",
+    "Excalidraw/Drawing 2026-09-27 15.51.33.excalidraw.md",
+    "Excalidraw/Drawing 2026-09-25 13.00.23.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Sistemi lineari — Teoria ed esercizi.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md.tmp.31159.7515705c9809",
