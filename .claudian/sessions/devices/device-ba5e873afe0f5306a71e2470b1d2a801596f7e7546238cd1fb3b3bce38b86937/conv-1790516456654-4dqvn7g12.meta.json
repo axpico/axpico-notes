@@ -1,0 +1,24 @@
+{
+  "id": "conv-1790516456654-4dqvn7g12",
+  "providerId": "claude",
+  "title": "Split file and update tags",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790516456658,
+  "lastActivityAt": 1790516622178,
+  "sessionId": "c5ebfe7b-6056-446c-afed-8713010a98d6",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "c5ebfe7b-6056-446c-afed-8713010a98d6"
+  },
+  "linkedContentPath": "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 291,
+    "cacheReadInputTokens": 74202,
+    "contextWindow": 1000000,
+    "contextTokens": 74495,
+    "percentage": 7,
+    "contextWindowIsAuthoritative": true
+  }
+}
