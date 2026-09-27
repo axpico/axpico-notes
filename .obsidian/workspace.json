@@ -221,9 +221,14 @@
                     {
                       "tabId": "tab-1790516429140-ipelunj",
                       "conversationId": "conv-1790516456654-4dqvn7g12"
+                    },
+                    {
+                      "tabId": "tab-1790525180616-d9f6os7",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1790516429140-ipelunj"
+                  "activeTabId": "tab-1790525180616-d9f6os7"
                 }
               },
               "icon": "bot",
@@ -245,7 +250,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 422
+    "width": 415.498779296875
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -270,8 +275,8 @@
   },
   "active": "a07ab06c2c66d13e",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-09-27 15.51.33.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md",
+    "Excalidraw/Drawing 2026-09-27 15.51.33.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md.tmp.31159.89f4fe317c11",
     "Pasted Image 20260927165845_769.png",
     "Excalidraw/Drawing 2026-09-25 13.00.23.excalidraw.md",
