@@ -95,8 +95,6 @@ $$
 A^{\mathsf T}=\begin{bmatrix}2&3\\-1&1\\0&4\end{bmatrix}
 $$
 
-> **Errore tipico (svolgimento a mano).** Un errore ricorrente in questo esercizio è scrivere la prima riga di $A^{\mathsf T}$ come $[3\ \ 2]$ invece di $[2\ \ 3]$. Va ricordato: la **colonna $j$ di $A$ diventa la riga $j$ di $A^{\mathsf T}$**, mantenendo l'ordine degli elementi. Qui la colonna 1 di $A$ è $\begin{bmatrix}2\\3\end{bmatrix}$ (nell'ordine: elemento di riga 1, poi elemento di riga 2), quindi la riga 1 di $A^{\mathsf T}$ deve essere $[2\ \ 3]$, non $[3\ \ 2]$: le altre due colonne/righe (di solito) vengono trasposte correttamente perché coincidono per simmetria dei valori, mascherando l'errore.
-
 ### Soluzione 2
 
 $$
