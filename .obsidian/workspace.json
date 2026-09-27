@@ -23,10 +23,14 @@
             "id": "bc478021eee52b39",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Matrici quadrate e matrice inversa"
             }
           }
         ],
@@ -266,6 +270,13 @@
   },
   "active": "bc478021eee52b39",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md.tmp.31159.4e6c99a92799",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md.tmp.31159.87c56d5aab81",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md.tmp.31159.46849cd7a4f6",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md.tmp.31159.abcef3106428",
     "Excalidraw/Drawing 2026-09-25 13.00.23.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md.tmp.31159.96b27dc96928",
@@ -276,18 +287,13 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md.tmp.31159.a23bb992832d",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md.tmp.31159.6cc061117e16",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md",
     "Politecnico/Analisi 1/Esercizi/Numeri Complessi.md",
     "Politecnico/Analisi 1/Esercizi/Numeri Complessi.md.tmp.4211.af0436deecb0",
     "Politecnico/Analisi 1/Esercizi/Numeri Complessi.md.tmp.4211.f042b48a0911",
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md",
     "Politecnico/Analisi 1/Esercizi/Disequazioni.md",
-    "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md.tmp.4211.523cc5caf77a",
-    "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md.tmp.4211.68db36069528",
-    "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md.tmp.4211.7161d335b914",
     "Politecnico/Fondamenti di Informatica/Esercizi/Rappresentazione dei numeri binario, complementi, ASCII, virgola fissa-mobile.md",
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md.tmp.48721.31b15c2ef4eb",
     "Excalidraw/Drawing 2026-09-24 16.03.07.excalidraw.md",
     "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Sistemi lineari — Teoria ed esercizi.md",
@@ -299,9 +305,6 @@
     "Politecnico/Fondamenti di Informatica/Teotira/Algoritmi 2.md",
     "Excalidraw/Drawing 2026-09-20 15.08.03.excalidraw.md",
     "Excalidraw/Drawing 2026-09-18 13.01.37.excalidraw.md",
-    "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
-    "Excalidraw/Drawing 2026-09-16 10.06.40.excalidraw.md",
-    "Politecnico/Fondamenti di Informatica/Teotira/Algoritmo.md",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",

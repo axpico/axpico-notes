@@ -123,7 +123,99 @@ Questo chiude la catena di equivalenze: (i) $\Leftrightarrow$ (ii) $\Leftrightar
 
 **Osservazione.** Il punto più utile in pratica è che per una matrice **quadrata** basta un'inversa **da un solo lato** (destra o sinistra) per concludere che $A$ è invertibile a tutti gli effetti (e che quell'inversa unilaterale coincide con $A^{-1}$). Questo **non** vale per matrici non quadrate.
 
+### Dimostrazione diretta ed elementare di (i) $\Rightarrow$ (v) $\Rightarrow$ (ii)
+
+Oltre allo schema "ciclico" sopra (che passa per il rango), esiste una dimostrazione diretta e molto concreta di questi due passaggi, utile perché non richiede il Teorema di Cramer: è quella riportata negli appunti a mano e ricostruita qui per esteso.
+
+**(i) $\Rightarrow$ (v).** Supponiamo $A$ invertibile, con inversa $A^{-1}$. Fissato un qualsiasi $b\in\mathbb R^n$, mostriamo che $Ax=b$ ammette **esattamente una** soluzione.
+
+*Esistenza.* Poniamo $x := A^{-1}b$. Allora, per l'associatività del prodotto tra matrici,
+
+$$
+Ax = A(A^{-1}b) = (AA^{-1})b = I_n b = b,
+$$
+
+quindi $x=A^{-1}b$ è effettivamente una soluzione.
+
+*Unicità.* Sia $x$ una soluzione qualunque, cioè $Ax=b$. Moltiplicando **a sinistra** entrambi i membri per $A^{-1}$:
+
+$$
+A^{-1}(Ax) = A^{-1}b \quad\overset{\text{associativa}}{\Longrightarrow}\quad (A^{-1}A)x = A^{-1}b \quad\Longrightarrow\quad I_n x = A^{-1}b \quad\Longrightarrow\quad x = A^{-1}b.
+$$
+
+Ogni soluzione coincide quindi con $A^{-1}b$: la soluzione è unica. $\blacksquare$
+
+**(v) $\Rightarrow$ (ii).** Supponiamo che per ogni $b\in\mathbb R^n$ il sistema $Ax=b$ ammetta un'unica soluzione. Vogliamo costruire esplicitamente una matrice $B$ con $AB=I_n$.
+
+Siano $e_1,\dots,e_n\in\mathbb R^n$ le colonne della matrice identità, cioè
+
+$$
+e_1 = \begin{bmatrix}1\\0\\\vdots\\0\end{bmatrix},\quad e_2 = \begin{bmatrix}0\\1\\\vdots\\0\end{bmatrix},\quad \dots,\quad e_n = \begin{bmatrix}0\\0\\\vdots\\1\end{bmatrix}.
+$$
+
+Per ipotesi (v), per ogni $j=1,\dots,n$ il sistema $Ax = e_j$ ammette un'(unica) soluzione: chiamiamola $u_j$. Costruiamo la matrice $B$ affiancando queste soluzioni come colonne:
+
+$$
+B := \big[\, u_1 \mid u_2 \mid \cdots \mid u_n \,\big].
+$$
+
+Allora, usando che moltiplicare $A$ per una matrice equivale a moltiplicare $A$ per ciascuna colonna separatamente,
+
+$$
+AB = \big[\, Au_1 \mid Au_2 \mid \cdots \mid Au_n \,\big] = \big[\, e_1 \mid e_2 \mid \cdots \mid e_n \,\big] = I_n.
+$$
+
+Dunque $B$ è un'inversa destra di $A$, cioè vale (ii). $\blacksquare$
+
+> Questa costruzione è anche la giustificazione teorica del metodo pratico per calcolare $A^{-1}$: risolvere gli $n$ sistemi $Ax=e_j$ (uno per ogni colonna di $I_n$) equivale esattamente a fare l'eliminazione di Gauss-Jordan sulla matrice orlata $[A\mid I_n]$ — si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]].
+
+### Teorema 5 (formula esplicita dell'inversa $2\times 2$)
+
+Una matrice $2\times 2$
+
+$$
+A = \begin{bmatrix} a & b\\ c & d\end{bmatrix}
+$$
+
+è **invertibile se e solo se** $ad-bc \ne 0$, e in tal caso
+
+$$
+A^{-1} = \frac{1}{ad-bc}\begin{bmatrix} d & -b\\ -c & a\end{bmatrix}.
+$$
+
+**Verifica.** Basta controllare che $AA^{-1}=I_2$ (e analogamente $A^{-1}A=I_2$):
+
+$$
+A\cdot\frac{1}{ad-bc}\begin{bmatrix} d & -b\\ -c & a\end{bmatrix} = \frac{1}{ad-bc}\begin{bmatrix} ad-bc & -ab+ba\\ cd-dc & -cb+da\end{bmatrix} = \frac{1}{ad-bc}\begin{bmatrix} ad-bc & 0\\ 0 & ad-bc\end{bmatrix} = I_2.
+$$
+
+La quantità $ad-bc$ è il **determinante** di $A$ nel caso $2\times2$: la formula generalizza l'idea che una matrice è invertibile esattamente quando il suo "fattore di scala" non è nullo.
+
+#### Esempio
+
+Sia $A = \begin{bmatrix}1&2\\3&4\end{bmatrix}$. Allora $ad-bc = 1\cdot 4 - 2\cdot 3 = 4-6=-2 \ne 0$, quindi $A$ è invertibile e
+
+$$
+A^{-1} = \frac{1}{-2}\begin{bmatrix}4&-2\\-3&1\end{bmatrix} = \begin{bmatrix}-2&1\\ \tfrac32 & -\tfrac12\end{bmatrix}.
+$$
+
+(Verifica diretta: $AA^{-1}=I_2$, calcolo lasciato al lettore.)
+
+### Esempio (invertibilità di una matrice triangolare)
+
+Sia
+
+$$
+A = \begin{bmatrix} 1 & 0 & 1\\ 0 & 4 & 2\\ 0 & 0 & 7\end{bmatrix}.
+$$
+
+$A$ è già **a scala** (triangolare superiore) e ha tutti i pivot non nulli ($1,4,7$ sulla diagonale), quindi $r(A)=3=$ ordine di $A$: per il Teorema 4, punto (iv) $\Rightarrow$ (i), $A$ è **invertibile**. (Per il calcolo esplicito di $A^{-1}$ si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]].)
+
+> **Osservazione generale.** Una matrice triangolare (superiore o inferiore) è invertibile se e solo se tutti gli elementi sulla diagonale principale sono non nulli: infatti in tal caso la matrice è già a scala con $n$ pivot, cioè $r(A)=n$.
+
 ## Collegamenti
 
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md|Operazioni tra matrici]]
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md|Sistemi lineari quadrati e teorema di Cramer]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md|Equazioni matriciali]]

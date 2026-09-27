@@ -81,7 +81,21 @@
         }
       ],
       "contentDigest": "4650fa6959ccaa4c2fa6ba06f25ef006832a524ee21e4061ed2e7ce60f6a3d8e",
-      "providerUserMessageId": "8dbaea1b-d2ea-4518-8e62-7397bc631b9e"
+      "providerUserMessageId": "8dbaea1b-d2ea-4518-8e62-7397bc631b9e",
+      "providerAssistantMessageId": "abe3442d-fc6e-4dd3-8f1a-4ad6ede9f28e"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790516926869-s1b0pmi",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1790516926863-4r8lymr",
+      "timestamp": 1790516926863,
+      "rawDisplayText": "fai un file con essercizi con una decini di esercizi da fare per imparare tutto",
+      "canonicalText": "fai un file con essercizi con una decini di esercizi da fare per imparare tutto",
+      "images": [],
+      "contentDigest": "3bfe5b21d16223a809419d58ae325072d2315d32f7e609c8b4e55aafa58bb794",
+      "providerUserMessageId": "af6a7166-d29f-4ab0-90e6-1a6cfc862909"
     }
   ]
 }
