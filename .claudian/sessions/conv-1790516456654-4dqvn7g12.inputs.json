@@ -95,7 +95,8 @@
       "canonicalText": "fai un file con essercizi con una decini di esercizi da fare per imparare tutto",
       "images": [],
       "contentDigest": "3bfe5b21d16223a809419d58ae325072d2315d32f7e609c8b4e55aafa58bb794",
-      "providerUserMessageId": "af6a7166-d29f-4ab0-90e6-1a6cfc862909"
+      "providerUserMessageId": "af6a7166-d29f-4ab0-90e6-1a6cfc862909",
+      "providerAssistantMessageId": "3ec1f745-672b-4f98-aba2-27ec718c9f89"
     }
   ]
 }

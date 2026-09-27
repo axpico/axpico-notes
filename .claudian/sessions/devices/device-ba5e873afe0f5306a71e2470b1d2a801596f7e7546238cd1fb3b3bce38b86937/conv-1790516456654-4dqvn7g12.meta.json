@@ -4,7 +4,7 @@
   "title": "Split file and update tags",
   "titleGenerationStatus": "success",
   "createdAt": 1790516456658,
-  "lastActivityAt": 1790516926863,
+  "lastActivityAt": 1790517059331,
   "sessionId": "c5ebfe7b-6056-446c-afed-8713010a98d6",
   "selectedModel": "sonnet",
   "providerState": {
@@ -14,11 +14,11 @@
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,
-    "cacheCreationInputTokens": 780,
-    "cacheReadInputTokens": 101713,
+    "cacheCreationInputTokens": 15360,
+    "cacheReadInputTokens": 111110,
     "contextWindow": 1000000,
-    "contextTokens": 102495,
-    "percentage": 10,
+    "contextTokens": 126472,
+    "percentage": 13,
     "contextWindowIsAuthoritative": true
   }
 }
