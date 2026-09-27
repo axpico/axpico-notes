@@ -33,7 +33,8 @@
               "title": "Matrici — Esercizi svolti"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -221,11 +222,6 @@
                     {
                       "tabId": "tab-1790516429140-ipelunj",
                       "conversationId": "conv-1790516456654-4dqvn7g12"
-                    },
-                    {
-                      "tabId": "tab-1790517086890-swdjg0p",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
                     }
                   ],
                   "activeTabId": "tab-1790516429140-ipelunj"
@@ -250,8 +246,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 422,
-    "collapsed": true
+    "width": 422
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -276,6 +271,8 @@
   },
   "active": "a07ab06c2c66d13e",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md.tmp.31159.89f4fe317c11",
+    "Pasted Image 20260927165845_769.png",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md",
     "Excalidraw/Drawing 2026-09-27 15.51.33.excalidraw.md",
     "Excalidraw/Drawing 2026-09-25 13.00.23.excalidraw.md",
@@ -311,7 +308,6 @@
     "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md",
     "Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md",
     "Politecnico/Fondamenti di Informatica/Teotira/Algoritmi 2.md",
-    "Excalidraw/Drawing 2026-09-20 15.08.03.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",
@@ -321,7 +317,6 @@
     "Ripasso uni/POK/Img/Campo elettrico/Linne di forza.png",
     "Ripasso uni/POK/Img/Campo elettrico/Confronto con forza gravitazionale 2.png",
     "Ripasso uni/POK/Img/Campo elettrico/Atomo di idrogeno 2.png",
-    "Ripasso uni/POK/Img/Campo elettrico/Confronto con forza gravitazionale 1.png",
-    "Ripasso uni/POK/Img/Campo elettrico/Atomo di idrogeno 3.png"
+    "Ripasso uni/POK/Img/Campo elettrico/Confronto con forza gravitazionale 1.png"
   ]
 }
