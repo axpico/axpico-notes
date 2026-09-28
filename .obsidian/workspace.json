@@ -33,7 +33,8 @@
               "title": "Funzioni"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -220,8 +221,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1790525180616-d9f6os7",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
+                      "conversationId": "conv-1790606009480-d8b9gesua"
                     }
                   ],
                   "activeTabId": "tab-1790525180616-d9f6os7"
@@ -269,10 +269,17 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "1370fda871c95bbe",
+  "active": "ea6f786383723b69",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Teoria/Funzioni.md",
+    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.7477bad42046",
+    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.192fd707e053",
+    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.bf2e6b9bb809",
+    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.2f1c162a3619",
+    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.d51ef683e1dd",
+    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.394a43eb2d9d",
+    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.f6b817a06b07",
     "Excalidraw/Drawing 2026-09-28 08.04.23.excalidraw.md",
+    "Politecnico/Analisi 1/Teoria/Funzioni.md",
     "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md",
     "Politecnico/Analisi 1/Esercizi/Numeri Complessi.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md",
@@ -288,16 +295,10 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md.tmp.31159.4e6c99a92799",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md.tmp.31159.87c56d5aab81",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md.tmp.31159.46849cd7a4f6",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md.tmp.31159.abcef3106428",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md.tmp.31159.96b27dc96928",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md.tmp.31159.0a0b73503b02",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md.tmp.31159.a23bb992832d",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md.tmp.31159.6cc061117e16",
     "Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md",
     "Politecnico/Analisi 1/Esercizi/Disequazioni.md",
     "Politecnico/Fondamenti di Informatica/Esercizi/Rappresentazione dei numeri binario, complementi, ASCII, virgola fissa-mobile.md",
@@ -307,7 +308,6 @@
     "Politecnico/Analisi 1/Teoria/Numeri complessi.md",
     "Excalidraw/Drawing 2026-09-21 08.18.53.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md",
-    "Politecnico/Fondamenti di Informatica/Teotira/Algoritmi 2.md",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",

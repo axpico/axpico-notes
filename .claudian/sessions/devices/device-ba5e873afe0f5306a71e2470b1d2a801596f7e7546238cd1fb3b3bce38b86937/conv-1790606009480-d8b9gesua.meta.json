@@ -1,0 +1,24 @@
+{
+  "id": "conv-1790606009480-d8b9gesua",
+  "providerId": "claude",
+  "title": "Extract image content to tagged notes",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790606009487,
+  "lastActivityAt": 1790606146822,
+  "sessionId": "28bc1b64-900d-4880-900f-7ce5c79512aa",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "28bc1b64-900d-4880-900f-7ce5c79512aa"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Teoria/Funzioni.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 299,
+    "cacheReadInputTokens": 79829,
+    "contextWindow": 1000000,
+    "contextTokens": 80130,
+    "percentage": 8,
+    "contextWindowIsAuthoritative": true
+  }
+}

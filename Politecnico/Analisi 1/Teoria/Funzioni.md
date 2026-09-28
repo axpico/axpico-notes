@@ -1,3 +1,7 @@
+---
+tags: [analisi1, funzioni, estremo-superiore, estremo-inferiore, funzioni-elementari, teoria]
+---
+
 ## Definizione di funzione
 
 **Definizione.** Siano $A$, $B$ due insiemi. Una **funzione** $f: A \to B$ è una legge che ad ogni elemento di $A$ associa **uno e un solo** elemento di $B$:
@@ -230,3 +234,265 @@ y=\sin(x)
 ```
 
 **Esempio (onda quadra).** Una funzione a gradino che alterna i valori $1$ e $-1$ su intervalli di ampiezza $1$ (es. $f(x)=1$ su $[2k,2k+1)$, $f(x)=-1$ su $[2k+1,2k+2)$, $k\in\mathbb{Z}$) ha periodo $T=2$.
+
+## Estremo superiore ed estremo inferiore di una funzione
+
+**Definizione (limitatezza superiore/inferiore).** Sia $f: A \subseteq \mathbb{R} \to \mathbb{R}$.
+- $f$ è **limitata superiormente** su $A$ se $f(A) \subseteq \mathbb{R}$ è limitato superiormente, cioè
+$$
+\exists\, M \in \mathbb{R} \ \text{t.c.}\ f(x) \leq M \quad \forall x \in A.
+$$
+- $f$ è **limitata inferiormente** su $A$ se $f(A) \subseteq \mathbb{R}$ è limitato inferiormente, cioè
+$$
+\exists\, m \in \mathbb{R} \ \text{t.c.}\ f(x) \geq m \quad \forall x \in A.
+$$
+- $f$ è **limitata** su $A$ se è limitata sia superiormente sia inferiormente.
+
+**Esempio.** $f: \mathbb{R} \to \mathbb{R}$, $f(x) = \arctan(x)$, con $f(\mathbb{R}) = \left(-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right)$. L'arcotangente è limitata sia superiormente sia inferiormente (il grafico resta compreso tra le due asintoti orizzontali $y = \pm\pi/2$, senza mai raggiungerle).
+
+```desmos-graph
+left=-10; right=10;
+top=2.5; bottom=-2.5;
+grid=true
+---
+y=\arctan(x)
+```
+
+Graficamente: se $f$ è limitata superiormente esiste una retta orizzontale $y=M$ che il grafico non supera mai; se è limitata inferiormente esiste $y=m$ che il grafico non scende mai sotto; una funzione **illimitata superiormente** (es. $f(x)=e^{-x}$ per $x\to-\infty$) non ammette invece alcuna retta $y=M$ che la maggiori su tutto $A$.
+
+**Definizione (estremo superiore/inferiore e massimo/minimo di una funzione).** Sia $f: A \to \mathbb{R}$. Si definiscono
+$$
+\sup_A f := \sup f(A), \qquad \inf_A f := \inf f(A),
+$$
+$$
+\max_A f := \max f(A), \qquad \min_A f := \min f(A),
+$$
+quando questi ultimi due esistono (cioè quando l'estremo superiore/inferiore di $f(A)$ appartiene a $f(A)$, cioè è un valore effettivamente assunto da $f$).
+
+**Esempio.** $f: A \to \mathbb{R}$, $A = (0,+\infty)$, $f(x) = \dfrac{1}{x}$. Si vogliono trovare $\sup$ e $\inf$ di $f$ in $A$.
+
+```desmos-graph
+left=0; right=6;
+top=6; bottom=-1;
+grid=true
+---
+y=1/x
+```
+
+$$
+\sup_A f := \sup f(A) = \sup_{x\in(0,+\infty)} f = \sup f\big((0,+\infty)\big) = +\infty
+$$
+quindi $f$ è **illimitata superiormente** su $A$.
+$$
+\inf_A f = 0
+$$
+quindi $f$ è **limitata inferiormente** su $A$ (l'estremo inferiore $0$ non è mai raggiunto: $1/x > 0$ per ogni $x>0$).
+
+Di conseguenza $f$ **non** è limitata superiormente ma **è** limitata inferiormente; non ammette né massimo né minimo su $A$ (l'estremo superiore non è finito, e l'estremo inferiore $0 \notin f(A)$).
+
+## Funzioni elementari
+
+Si passano in rassegna le funzioni elementari $f: \mathbb{R} \to \mathbb{R}$ (o su opportuni sottoinsiemi), con dominio, limitatezza e principali proprietà.
+
+### a) Funzioni lineari (affini)
+
+$$
+f(x) = ax+b, \qquad a,b \in \mathbb{R}.
+$$
+Retta di coefficiente angolare $a$ e intercetta $b$; dominio e codominio $\mathbb{R}$.
+
+```desmos-graph
+left=-5; right=5;
+top=5; bottom=-5;
+grid=true
+---
+y=2x+1
+```
+
+### b) Potenze
+
+$$
+f(x) = x^n, \qquad n \in \mathbb{N}.
+$$
+- Se $n$ è **pari**: grafico simmetrico rispetto all'asse $y$ (funzione pari), con minimo in $x=0$ (tipo parabola).
+- Se $n$ è **dispari**: grafico simmetrico rispetto all'origine (funzione dispari), strettamente crescente (tipo cubica).
+
+```desmos-graph
+left=-3; right=3;
+top=6; bottom=-6;
+grid=true
+---
+y=x^4
+y=x^3
+```
+
+**Potenze con esponente razionale.**
+$$
+f(x) = x^{p/q}, \qquad p,q \in \mathbb{N} \ \text{coprimi}.
+$$
+- Se $q$ è **pari**, $f$ è ben definita solo per $x \geq 0$ (es. $p=1,\ q=4$: $f(x) = x^{1/4} = \sqrt[4]{x}$).
+- Se $q$ è **dispari**, $f$ è ben definita su tutto $\mathbb{R}$ (es. $p=1,\ q=3$: $f(x) = x^{1/3} = \sqrt[3]{x}$).
+
+```desmos-graph
+left=-3; right=3;
+top=3; bottom=-3;
+grid=true
+---
+y=x^{1/4}
+y=x^{1/3}
+```
+
+**Potenze con esponente razionale negativo.**
+$$
+f(x) = x^{-p/q}, \qquad p,q \in \mathbb{N},\ q \neq 0.
+$$
+- Se $q$ è **pari**, $f$ è ben definita in $(0,+\infty)$: es. $f(x) = x^{-1/2} = \dfrac{1}{\sqrt{x}}$.
+- Se $q$ è **dispari**, $f$ è ben definita in $\mathbb{R}\setminus\{0\}$: es. $p=q=1$, $f(x) = \dfrac{1}{x}$.
+
+```desmos-graph
+left=-3; right=3;
+top=5; bottom=-5;
+grid=true
+---
+y=1/\sqrt{x}
+y=1/x
+```
+
+### c) Funzioni goniometriche (circolari)
+
+$f(x) = \sin(x)$: funzione **periodica di periodo $2\pi$**, **limitata** sia superiormente sia inferiormente, con
+$$
+f(\mathbb{R}) = [-1,1], \qquad \sup_{\mathbb{R}} f = \max_{\mathbb{R}} f = 1, \qquad \inf_{\mathbb{R}} f = \min_{\mathbb{R}} f = -1.
+$$
+Le stesse proprietà di periodicità e limitatezza valgono per $f(x) = \cos(x)$.
+
+```desmos-graph
+left=-8; right=8;
+top=2; bottom=-2;
+grid=true
+---
+y=\sin(x)
+y=\cos(x)
+```
+
+$$
+f(x) = \operatorname{tg}(x) = \tan(x) = \frac{\sin(x)}{\cos(x)}
+$$
+definita in $\mathbb{R}\setminus\left\{\dfrac{\pi}{2}+k\pi,\ k\in\mathbb{Z}\right\}$; funzione periodica di periodo $T=\pi$; **illimitata** sia superiormente sia inferiormente.
+
+$$
+f(x) = \operatorname{ctg}(x) = \cot(x) = \frac{\cos(x)}{\sin(x)}
+$$
+definita in $\mathbb{R}\setminus\{k\pi,\ k\in\mathbb{Z}\}$; funzione periodica di periodo $T=\pi$; **illimitata** sia superiormente sia inferiormente.
+
+```desmos-graph
+left=-6.5; right=6.5;
+top=5; bottom=-5;
+grid=true
+---
+y=\tan(x)
+```
+
+### d) Funzioni circolari inverse
+
+Le funzioni trigonometriche non sono iniettive su tutto il loro dominio naturale (sono periodiche), quindi per definirne l'inversa si **restringono** a un intervallo su cui risultano iniettive (e suriettive sull'immagine), rendendole così invertibili:
+
+- $\sin(x)$ ristretto a $\left[-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right]$ $\Rightarrow$ $f(x) = \arcsin(x): [-1,1] \to \left[-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right]$.
+- $\cos(x)$ ristretto a $[0,\pi]$ $\Rightarrow$ $f(x) = \arccos(x): [-1,1] \to [0,\pi]$.
+- $\operatorname{tg}(x)$ ristretta a $\left(-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right)$ $\Rightarrow$ $f(x) = \arctan(x): \mathbb{R} \to \left(-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right)$.
+- $\operatorname{ctg}(x)$ ristretta a $(0,\pi)$ $\Rightarrow$ $f(x) = \operatorname{arcctg}(x): \mathbb{R} \to (0,\pi)$.
+
+```desmos-graph
+left=-2; right=2;
+top=4; bottom=-2;
+grid=true
+---
+y=\arcsin(x)
+y=\arccos(x)
+```
+
+### e) Esponenziale e logaritmo
+
+$$
+f: \mathbb{R} \to (0,+\infty), \qquad f(x) = a^x, \qquad a>0,\ a\neq 1.
+$$
+- Se $a>1$: $f$ è **strettamente crescente**.
+- Se $0<a<1$: $f$ è **strettamente decrescente**.
+
+In entrambi i casi $f$ è **limitata inferiormente** ($\inf_{\mathbb{R}} f = 0$, mai raggiunto) ma **illimitata superiormente** ($\sup_{\mathbb{R}} f = +\infty$).
+
+Con dominio $\mathbb{R}$ e codominio $(0,+\infty)$, $f$ è **biiettiva**, quindi invertibile:
+$$
+f^{-1}: (0,+\infty) \to \mathbb{R}, \qquad a^x = y \ \Longleftrightarrow\ x = \log_a(y),
+$$
+cioè $f^{-1}(x) = \log_a(x)$, con $f^{-1}: (0,+\infty) \to \mathbb{R}$. Se $a>1$ il logaritmo è crescente; se $0<a<1$ è decrescente (grafico simmetrico rispetto alla bisettrice $y=x$ rispetto a quello dell'esponenziale, come per ogni funzione inversa).
+
+```desmos-graph
+left=-3; right=6;
+top=5; bottom=-5;
+grid=true
+---
+y=2^x
+y=\log(x)/\log(2)
+y=x
+```
+
+### f) Valore assoluto (modulo)
+
+$$
+f: \mathbb{R} \to \mathbb{R}, \qquad f(x) = |x|.
+$$
+$f$ è **limitata inferiormente** ($\inf_{\mathbb{R}} f = \min_{\mathbb{R}} f = 0$) ma **illimitata superiormente** ($\sup_{\mathbb{R}} f = +\infty$); è **pari**; $f(\mathbb{R}) = [0,+\infty)$; **non è iniettiva** (es. $f(-1)=f(1)=1$).
+
+```desmos-graph
+left=-5; right=5;
+top=5; bottom=-1;
+grid=true
+---
+y=|x|
+```
+
+### g) La parte intera
+
+**Definizione.** Dato $x \in \mathbb{R}$, si definisce
+$$
+[x] := \text{il più grande intero minore o uguale a } x
+$$
+(funzione "floor"). Esempi:
+$$
+[\pi] = 3, \qquad [2] = 2, \qquad [-\pi] = -4, \qquad [-0{,}5] = -1.
+$$
+Il grafico è una funzione **a gradini**, costante e uguale a $k$ su ogni intervallo $[k,k+1)$, $k \in \mathbb{Z}$, con un salto (discontinuità) in corrispondenza di ogni intero.
+
+### h) Funzione segno
+
+$$
+f(x) = \operatorname{sgn}(x) :=
+\begin{cases}
+1 & \text{se } x>0 \\
+0 & \text{se } x=0 \\
+-1 & \text{se } x<0
+\end{cases}
+$$
+
+### i) Funzioni iperboliche
+
+$$
+\sinh(x) := \frac{e^x - e^{-x}}{2}, \qquad \cosh(x) := \frac{e^x + e^{-x}}{2}, \qquad \operatorname{tgh}(x) := \frac{\sinh(x)}{\cosh(x)}.
+$$
+
+```desmos-graph
+left=-3; right=3;
+top=5; bottom=-5;
+grid=true
+---
+y=\sinh(x)
+y=\cosh(x)
+y=\tanh(x)
+```
+
+**Identità fondamentale.** Analogamente all'identità $\sin^2(x)+\cos^2(x)=1$ per le funzioni circolari, per le funzioni iperboliche vale
+$$
+\cosh^2(x) - \sinh^2(x) = 1,
+$$
+che è l'equazione dell'**iperbole equilatera** $x^2-y^2=1$ (da cui il nome "iperboliche": il punto $(\cosh x, \sinh x)$ percorre un ramo di questa iperbole, così come $(\cos x, \sin x)$ percorre la circonferenza unitaria $x^2+y^2=1$).
