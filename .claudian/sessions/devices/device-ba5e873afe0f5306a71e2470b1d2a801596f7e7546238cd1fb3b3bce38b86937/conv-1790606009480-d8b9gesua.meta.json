@@ -4,7 +4,7 @@
   "title": "Extract image content to tagged notes",
   "titleGenerationStatus": "success",
   "createdAt": 1790606009487,
-  "lastActivityAt": 1790606146822,
+  "lastActivityAt": 1790606246228,
   "sessionId": "28bc1b64-900d-4880-900f-7ce5c79512aa",
   "selectedModel": "sonnet",
   "providerState": {
@@ -14,11 +14,11 @@
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,
-    "cacheCreationInputTokens": 299,
-    "cacheReadInputTokens": 79829,
+    "cacheCreationInputTokens": 2223,
+    "cacheReadInputTokens": 87109,
     "contextWindow": 1000000,
-    "contextTokens": 80130,
-    "percentage": 8,
+    "contextTokens": 89334,
+    "percentage": 9,
     "contextWindowIsAuthoritative": true
   }
 }

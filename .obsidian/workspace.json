@@ -4,37 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "ee1ecc30f327bea7",
+        "id": "8157bf8f0a06ad7b",
         "type": "tabs",
         "children": [
           {
-            "id": "1370fda871c95bbe",
+            "id": "3a4ac6a258ec2af6",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-09-28 08.04.23.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-28 08.04.23.excalidraw"
-            }
-          },
-          {
-            "id": "ea6f786383723b69",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Politecnico/Analisi 1/Teoria/Funzioni.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Funzioni"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -59,7 +42,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora file"
+              "title": "Files"
             }
           },
           {
@@ -220,11 +203,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1790525180616-d9f6os7",
-                      "conversationId": "conv-1790606009480-d8b9gesua"
+                      "tabId": "tab-1790606315961-yu6zm84",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1790525180616-d9f6os7"
+                  "activeTabId": "tab-1790606315961-yu6zm84"
                 }
               },
               "icon": "bot",
@@ -242,7 +226,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -269,31 +253,32 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "ea6f786383723b69",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/Teoria/Successioni.md",
+    "Politecnico/Analisi 1/Teoria/Numeri complessi.md",
+    "Excalidraw/Drawing 2026-09-28 08.04.23.excalidraw.md",
+    "Politecnico/Analisi 1/Teoria/Successioni.md.tmp.7344.111a5e31c501",
+    "Politecnico/Analisi 1/Teoria/Funzioni.md",
+    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.615f5e40105f",
+    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.a20aace3254a",
+    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.31311f7582e3",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.7477bad42046",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.192fd707e053",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.bf2e6b9bb809",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.2f1c162a3619",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.d51ef683e1dd",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.394a43eb2d9d",
-    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.f6b817a06b07",
-    "Excalidraw/Drawing 2026-09-28 08.04.23.excalidraw.md",
-    "Politecnico/Analisi 1/Teoria/Funzioni.md",
     "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md",
     "Politecnico/Analisi 1/Esercizi/Numeri Complessi.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md",
     "Excalidraw/Drawing 2026-09-27 15.51.33.excalidraw.md",
-    "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md.tmp.31159.89f4fe317c11",
     "Pasted Image 20260927165845_769.png",
     "Excalidraw/Drawing 2026-09-25 13.00.23.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Sistemi lineari — Teoria ed esercizi.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md",
-    "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md.tmp.31159.7515705c9809",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md.tmp.31159.4e6c99a92799",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md.tmp.31159.87c56d5aab81",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
@@ -305,7 +290,6 @@
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md",
     "Excalidraw/Drawing 2026-09-24 16.03.07.excalidraw.md",
     "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md",
-    "Politecnico/Analisi 1/Teoria/Numeri complessi.md",
     "Excalidraw/Drawing 2026-09-21 08.18.53.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",

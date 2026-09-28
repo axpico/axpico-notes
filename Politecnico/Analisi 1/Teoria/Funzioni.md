@@ -166,7 +166,7 @@ left=-1; right=6;
 top=6; bottom=-1;
 grid=true
 ---
-y=x^2\left\{x\ge0\right\}
+y=x^2\{x\ge0\}
 y=\sqrt{x}
 y=x
 ```
@@ -449,7 +449,7 @@ left=-5; right=5;
 top=5; bottom=-1;
 grid=true
 ---
-y=|x|
+y=\operatorname{abs}(x)
 ```
 
 ### g) La parte intera
