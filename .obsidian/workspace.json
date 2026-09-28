@@ -242,7 +242,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -250,15 +250,15 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Apri selettore rapido": false,
-      "graph:Apri vista grafo": false,
-      "canvas:Crea nuova lavagna": false,
-      "daily-notes:Apri nota giornaliera": false,
-      "templates:Inserisci modello": false,
-      "command-palette:Apri riquadro comandi": false,
-      "markdown-importer:Apri importazione Markdown": false,
-      "audio-recorder:Avvia/ferma registrazione": false,
-      "bases:Crea nuova Base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "audio-recorder:Start/stop recording": false,
+      "bases:Create new base": false,
       "omnisearch:Omnisearch": false,
       "templater-obsidian:Templater": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
@@ -269,12 +269,12 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "1370fda871c95bbe",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/Teoria/Funzioni.md",
+    "Excalidraw/Drawing 2026-09-28 08.04.23.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md",
     "Politecnico/Analisi 1/Esercizi/Numeri Complessi.md",
-    "Excalidraw/Drawing 2026-09-28 08.04.23.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md",
     "Excalidraw/Drawing 2026-09-27 15.51.33.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md.tmp.31159.89f4fe317c11",
