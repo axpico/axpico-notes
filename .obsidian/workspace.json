@@ -33,8 +33,7 @@
               "title": "Limiti di successioni"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -221,9 +220,14 @@
                     {
                       "tabId": "tab-1790790934735-gkl7xvi",
                       "conversationId": "conv-1790791046523-pbg3pwa1l"
+                    },
+                    {
+                      "tabId": "tab-1790792416888-p5w53ob",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1790790934735-gkl7xvi"
+                  "activeTabId": "tab-1790792416888-p5w53ob"
                 }
               },
               "icon": "bot",
@@ -268,10 +272,10 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "607f3b3507fce773",
+  "active": "617edc83942dafa1",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Teoria/Successioni.md",
     "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
+    "Politecnico/Analisi 1/Teoria/Successioni.md",
     "Politecnico/Analisi 1/Teoria/Numeri complessi.md",
     "Excalidraw/Drawing 2026-09-30 10.21.52.excalidraw.md",
     "Excalidraw/Drawing 2026-09-30 15.20.30.excalidraw.md",
