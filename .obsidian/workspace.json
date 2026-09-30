@@ -232,7 +232,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 415.498779296875
+    "width": 415.498779296875,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -257,8 +258,8 @@
   },
   "active": "6fb5da13f7642329",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Esercizi/Numeri Complessi.md",
     "Excalidraw/Drawing 2026-09-30 10.21.52.excalidraw.md",
+    "Politecnico/Analisi 1/Esercizi/Numeri Complessi.md",
     "Politecnico/Analisi 1/Teoria/Successioni.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md",
     "Pasted Image 20260927165845_769.png",
