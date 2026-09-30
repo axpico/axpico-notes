@@ -1,0 +1,24 @@
+{
+  "id": "conv-1790792489609-rqshs1vm5",
+  "providerId": "claude",
+  "title": "Complete exercises and theory",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790792489615,
+  "lastActivityAt": 1790792600645,
+  "sessionId": "ad6044ae-6612-447e-aa48-13a28713378e",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "ad6044ae-6612-447e-aa48-13a28713378e"
+  },
+  "linkedContentPath": "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 5742,
+    "cacheReadInputTokens": 79836,
+    "contextWindow": 1000000,
+    "contextTokens": 85580,
+    "percentage": 9,
+    "contextWindowIsAuthoritative": true
+  }
+}
