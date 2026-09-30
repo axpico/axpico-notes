@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8157bf8f0a06ad7b",
+        "id": "7fef75cc3a5b1a49",
         "type": "tabs",
         "children": [
           {
-            "id": "3a4ac6a258ec2af6",
+            "id": "6fb5da13f7642329",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "Formulario/Dinamica/Accelerazione minima per carico di rottura.md",
-                "bFile": "Formulario/Dinamica/Accelerazione minima per carico di rottura.md",
-                "aRef": "HEAD",
-                "bRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: Accelerazione minima per carico di rottura  (Index)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -234,7 +229,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 415.498779296875
+    "width": 415.498779296875,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -257,7 +253,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "3a4ac6a258ec2af6",
+  "active": "6fb5da13f7642329",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/Teoria/Successioni.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md",
