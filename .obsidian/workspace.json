@@ -219,8 +219,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1790606315961-yu6zm84",
-                      "conversationId": null,
-                      "draftModel": "sonnet"
+                      "conversationId": "conv-1790776453552-p3emtplac"
                     }
                   ],
                   "activeTabId": "tab-1790606315961-yu6zm84"
@@ -241,12 +240,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 415.498779296875,
-    "collapsed": true
+    "width": 415.498779296875
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -269,7 +267,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "914ed8c0270802d7",
+  "active": "56efc63866208b00",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-09-30 15.20.30.excalidraw.md",
     "Excalidraw/Drawing 2026-09-30 10.21.52.excalidraw.md",

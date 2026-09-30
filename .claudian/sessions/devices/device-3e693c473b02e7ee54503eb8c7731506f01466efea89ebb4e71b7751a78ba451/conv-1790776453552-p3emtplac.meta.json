@@ -1,0 +1,14 @@
+{
+  "id": "conv-1790776453552-p3emtplac",
+  "providerId": "claude",
+  "title": "risulato",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1790776453570,
+  "lastActivityAt": 1790776461034,
+  "sessionId": "8bb05625-911c-4cc9-a313-9a8ab1df6c90",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "8bb05625-911c-4cc9-a313-9a8ab1df6c90"
+  },
+  "linkedContentPath": "Excalidraw/Drawing 2026-09-30 15.20.30.excalidraw.md"
+}
