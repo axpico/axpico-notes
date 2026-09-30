@@ -1,0 +1,24 @@
+{
+  "id": "conv-1790791046523-pbg3pwa1l",
+  "providerId": "claude",
+  "title": "Organize notes from image",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790791046529,
+  "lastActivityAt": 1790791107726,
+  "sessionId": "d4d0c0bf-c11f-4df9-b98e-3780c3760cce",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "d4d0c0bf-c11f-4df9-b98e-3780c3760cce"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Teoria/Successioni.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 8065,
+    "cacheReadInputTokens": 51721,
+    "contextWindow": 1000000,
+    "contextTokens": 59788,
+    "percentage": 6,
+    "contextWindowIsAuthoritative": true
+  }
+}
