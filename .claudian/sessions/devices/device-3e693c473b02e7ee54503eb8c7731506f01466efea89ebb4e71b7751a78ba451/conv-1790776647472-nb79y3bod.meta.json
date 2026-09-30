@@ -1,0 +1,24 @@
+{
+  "id": "conv-1790776647472-nb79y3bod",
+  "providerId": "claude",
+  "title": "Resolve with Meg J",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790776647481,
+  "lastActivityAt": 1790776768945,
+  "sessionId": "db415d57-6886-4d18-b4fe-400bffca7a88",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "db415d57-6886-4d18-b4fe-400bffca7a88"
+  },
+  "linkedContentPath": "Excalidraw/Drawing 2026-09-30 15.20.30.excalidraw.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 2636,
+    "cacheReadInputTokens": 39869,
+    "contextWindow": 1000000,
+    "contextTokens": 42507,
+    "percentage": 4,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -218,11 +218,11 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1790606315961-yu6zm84",
-                      "conversationId": "conv-1790776453552-p3emtplac"
+                      "tabId": "tab-1790776641580-e0hliju",
+                      "conversationId": "conv-1790776647472-nb79y3bod"
                     }
                   ],
-                  "activeTabId": "tab-1790606315961-yu6zm84"
+                  "activeTabId": "tab-1790776641580-e0hliju"
                 }
               },
               "icon": "bot",
@@ -244,7 +244,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 415.498779296875
+    "width": 415.498779296875,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -267,7 +268,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "56efc63866208b00",
+  "active": "617edc83942dafa1",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-09-30 15.20.30.excalidraw.md",
     "Excalidraw/Drawing 2026-09-30 10.21.52.excalidraw.md",
