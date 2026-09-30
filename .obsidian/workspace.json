@@ -18,8 +18,21 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-09-30 10.21.52.excalidraw"
             }
+          },
+          {
+            "id": "617edc83942dafa1",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-09-30 15.20.30.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-09-30 15.20.30.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -256,8 +269,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "6fb5da13f7642329",
+  "active": "914ed8c0270802d7",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-09-30 15.20.30.excalidraw.md",
     "Excalidraw/Drawing 2026-09-30 10.21.52.excalidraw.md",
     "Politecnico/Analisi 1/Esercizi/Numeri Complessi.md",
     "Politecnico/Analisi 1/Teoria/Successioni.md",
@@ -294,7 +308,6 @@
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md",
     "Excalidraw/Drawing 2026-09-24 16.03.07.excalidraw.md",
     "Excalidraw/Drawing 2026-09-23 08.10.02.excalidraw.md",
-    "Excalidraw/Drawing 2026-09-21 08.18.53.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",
