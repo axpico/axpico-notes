@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Politecnico/Analisi 1/Teoria/Successioni.md",
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Successioni"
+              "title": "Applicazioni (terminologia generale)"
             }
           }
         ]
@@ -213,7 +213,9 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {},
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md"
+              },
               "icon": "lucide-info",
               "title": "File properties"
             }
@@ -253,8 +255,11 @@
       "auto-note-linker:Suggest links for current note": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "dc8c39aa51a70592",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-10-01 13.15.18.excalidraw.md",
+    "Excalidraw/Drawing 2026-09-30 15.20.30.excalidraw.md",
+    "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
     "Politecnico/Analisi 1/Teoria/Successioni.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Determinanti, Cramer e inversa — Esercizi svolti.md",
@@ -266,13 +271,10 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md",
-    "Excalidraw/Drawing 2026-10-01 13.15.18.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Sistemi lineari — Teoria ed esercizi.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Determinante, sviluppo di Laplace e formula di Cramer.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md",
-    "Excalidraw/Drawing 2026-09-30 15.20.30.excalidraw.md",
-    "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
     "Politecnico/Analisi 1/Teoria/Numeri complessi.md",
     "Excalidraw/Drawing 2026-09-30 10.21.52.excalidraw.md",
     "Ripasso uni/matematica/Linguaggio matematico.md",
