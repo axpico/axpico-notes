@@ -69,6 +69,19 @@
       "contentDigest": "e2f973472962313ae59fdf1b9cdf64d5861f5f21064c423eb42f37a55da4dc82",
       "providerUserMessageId": "4e0b32df-c679-49a4-9936-2971a6bd1d14",
       "providerAssistantMessageId": "f82225d4-888b-49c5-99b0-9654a55ad1fb"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790945479866-we2mr9x",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1790945479859-65pffp9",
+      "timestamp": 1790945479859,
+      "rawDisplayText": "prendi i contenuti del pdf e aggiungi agli appunti tutto quello che manca",
+      "canonicalText": "prendi i contenuti del pdf e aggiungi agli appunti tutto quello che manca",
+      "images": [],
+      "contentDigest": "1a343908fb074c4d727b0b6b0399e312a5ccc2405ea5b719184d0a8b135fc219",
+      "providerUserMessageId": "1282b855-02c8-4b96-9e2c-ed0e198052aa"
     }
   ]
 }
