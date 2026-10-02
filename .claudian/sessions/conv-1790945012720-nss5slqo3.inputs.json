@@ -81,7 +81,22 @@
       "canonicalText": "prendi i contenuti del pdf e aggiungi agli appunti tutto quello che manca",
       "images": [],
       "contentDigest": "1a343908fb074c4d727b0b6b0399e312a5ccc2405ea5b719184d0a8b135fc219",
-      "providerUserMessageId": "1282b855-02c8-4b96-9e2c-ed0e198052aa"
+      "providerUserMessageId": "1282b855-02c8-4b96-9e2c-ed0e198052aa",
+      "providerAssistantMessageId": "785a5098-a753-4c16-82b5-e019e89d8d5d"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790945639091-0y7g7q0",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1790945639084-g6a16ku",
+      "timestamp": 1790945639084,
+      "rawDisplayText": "crea 10 esercizi svolti e mettei dentro esercizi per capire tutto questo nuovoi argomento",
+      "canonicalText": "crea 10 esercizi svolti e mettei dentro esercizi per capire tutto questo nuovoi argomento",
+      "images": [],
+      "contentDigest": "7358982c60f57c265b11ac3be705ff2bfeae8f70624daa927c5ccb7e5b80df2d",
+      "providerUserMessageId": "615b8d55-5137-4afb-b923-3fd51dda7bb8",
+      "providerAssistantMessageId": "039cd549-b6d0-4c41-996d-16b2efdfeb71"
     }
   ]
 }

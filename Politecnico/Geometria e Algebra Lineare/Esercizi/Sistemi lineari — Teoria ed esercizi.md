@@ -316,3 +316,13 @@ Ultima riga $0=-4$: contraddizione. $\text{rk}(A)=2 \ne \text{rk}(A')=3 \Rightar
 In ogni caso ($\text{rk}(A)=0$ oppure $\text{rk}(A)=1$, cioè $\text{rk}(A)\le 1$) vale: $r_1=\underline 0$ oppure $r_2 = \lambda r_1$ per qualche $\lambda \in \mathbb{R}$. $\blacksquare$
 
 *Osservazione:* l'ipotesi $\text{rk}(A)\le 1$ è essenziale — se $\text{rk}(A)=2$ le righe sono linearmente indipendenti, quindi né $r_1=\underline 0$ né $r_2$ può essere multipla di $r_1$.
+
+---
+
+## Collegamenti
+
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md|Insiemi, vettori e sistemi lineari — nozioni di base]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Sistemi lineari e teorema di Rouché-Capelli]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md|Sistemi lineari quadrati e teorema di Cramer]]
+- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md|Esercizi — Matrici]]

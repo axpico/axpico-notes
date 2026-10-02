@@ -4,7 +4,7 @@
   "title": "Add missing GAL theory content and create notes",
   "titleGenerationStatus": "success",
   "createdAt": 1790945012727,
-  "lastActivityAt": 1790945479859,
+  "lastActivityAt": 1790945744041,
   "sessionId": "26bfd71b-51f7-4b0f-af5b-0022faf92926",
   "selectedModel": "sonnet",
   "providerState": {
@@ -14,11 +14,11 @@
   "usage": {
     "model": "sonnet",
     "inputTokens": 2,
-    "cacheCreationInputTokens": 10125,
-    "cacheReadInputTokens": 65669,
+    "cacheCreationInputTokens": 471,
+    "cacheReadInputTokens": 152819,
     "contextWindow": 1000000,
-    "contextTokens": 75796,
-    "percentage": 8,
+    "contextTokens": 153292,
+    "percentage": 15,
     "contextWindowIsAuthoritative": true
   }
 }

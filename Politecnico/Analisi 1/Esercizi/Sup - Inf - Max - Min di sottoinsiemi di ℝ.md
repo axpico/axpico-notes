@@ -254,3 +254,11 @@ $$S = (-2,2)$$
 
 $$\Longrightarrow \quad \inf(S)=-2,\ \sup(S)=2,\ \nexists\min(S),\ \nexists\max(S)$$
 
+
+---
+
+## Collegamenti
+
+- [[Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md|Analisi — Estremo superiore ed inferiore, completezza di ℝ]]
+- [[Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md|Analisi — Insiemi numerici, logica e dimostrazioni]]
+- [[Politecnico/Analisi 1/Esercizi/Disequazioni.md|Esercizi — Disequazioni]]

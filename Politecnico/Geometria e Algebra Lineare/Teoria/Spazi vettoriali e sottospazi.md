@@ -70,7 +70,15 @@ $$
 $$
 è uno spazio vettoriale (di dimensione infinita). Lo zero è la successione identicamente nulla. Lo stesso vale per lo spazio delle funzioni $f:X\to\mathbb R$ con operazioni punto per punto.
 
-6. **Spazio banale** $\{\vec 0\}$: è l'unico spazio con un solo elemento.
+6. **Funzioni a valori in $\mathbb K$.** Sia $S\ne\varnothing$ un insieme. L'insieme delle funzioni $f:S\to\mathbb K$ è uno spazio vettoriale su $\mathbb K$ rispetto alle operazioni *punto per punto*:
+   - $(f+g)(x):=f(x)+g(x)\ \ \forall x\in S$;
+   - $(\lambda f)(x):=\lambda f(x)\ \ \forall x\in S,\ \forall\lambda\in\mathbb K$.
+
+   Lo zero è la funzione identicamente nulla, l'opposto di $f$ è $-f$. Le successioni (esempio 5) sono il caso $S=\mathbb N$, e $\mathbb K^n$ il caso $S=\{1,\dots,n\}$.
+
+7. **Funzioni a valori in uno spazio vettoriale.** Il campo $\mathbb K$ si identifica con $\mathbb K^1$, quindi è esso stesso uno spazio vettoriale su $\mathbb K$: l'esempio 6 si generalizza. Se $S\ne\varnothing$ e $V$ è uno spazio vettoriale su $\mathbb K$, le applicazioni $f:S\to V$ formano un (altro) spazio vettoriale su $\mathbb K$, con somma e prodotto per scalare definiti punto per punto come sopra (le operazioni a destra sono quelle di $V$).
+
+8. **Spazio banale** $\{\vec 0\}$: è l'unico spazio con un solo elemento. Inoltre $\mathbb R^n$, i vettori liberi del piano e quelli dello spazio euclideo sono esempi di spazio vettoriale su $\mathbb R$, mentre $\mathbb C^n$ lo è su $\mathbb C$.
 
 ### Sottospazi vettoriali
 
@@ -101,6 +109,28 @@ $$
 
 **Sottospazi banali.** Ogni spazio $V$ ha sempre almeno due sottospazi: $\{\vec 0\}$ e $V$ stesso.
 
+**Osservazione (ogni sottospazio contiene l'origine).** Se $W$ è un sottospazio di $V$, per definizione $W\ne\varnothing$, quindi contiene un vettore $\vec u$ e, per la chiusura rispetto al prodotto per scalare, $\lambda\vec u\in W$ per ogni $\lambda\in\mathbb K$. Ponendo $\lambda=0$:
+
+$$
+\vec 0=0\cdot\vec u\in W .
+$$
+
+**Ogni sottospazio contiene il vettore nullo**: è il criterio più rapido per escludere che un insieme sia un sottospazio (se $\vec 0\notin W$, allora $W$ non lo è).
+
+#### Altri esempi in $\mathbb R^3$ e negli spazi di funzioni
+
+- **Esempio 1 (piano coordinato).** $W:=\{(x,y,0):\ x,y\in\mathbb R\}$ è un sottospazio di $\mathbb R^3$: $W\subseteq\mathbb R^3$, $W\neq\varnothing$; se $\vec u=(u_1,u_2,u_3),\vec v=(v_1,v_2,v_3)\in W$ allora $u_3=v_3=0$ e $\vec u+\vec v=(u_1+v_1,u_2+v_2,0)\in W$; analogamente $\lambda\vec u\in W$.
+- **Esempio 2 (sfera unitaria).** $W:=\{(x,y,z):\ x^2+y^2+z^2=1\}$ è un sottoinsieme non vuoto di $\mathbb R^3$ ma **non** un sottospazio: viola la chiusura per prodotto per scalare ($\vec u=(1,0,0)\in W$ ma $2\vec u=(2,0,0)\notin W$). Non contiene neanche l'origine.
+- **Esempio 3 (sottospazio banale).** Per ogni spazio vettoriale $V$, $W:=\{\vec 0\}$ è un sottospazio, detto **sottospazio banale** (come $V$ stesso).
+- **Esempio 4 (funzioni differenziabili).** Sia $V:=\{\text{funzioni } f:\mathbb R\to\mathbb R\}$ (spazio vettoriale su $\mathbb R$ con le operazioni punto per punto) e $W:=\{f:\mathbb R\to\mathbb R\ \text{differenziabili}\}$. Se $f,g\in W$ e $\lambda\in\mathbb R$, allora $f+g$ e $\lambda f$ sono differenziabili: $W$ è un sottospazio di $V$.
+- **Esempio 5 (piani in $\mathbb R^3$).** Sia $W:=\{(x,y,z)\in\mathbb R^3:\ ax+by+cz=d\}$ con $a^2+b^2+c^2\ne0$ (il piano di equazione data).
+  - Se $d\ne0$, $W$ **non** è un sottospazio, perché $\vec 0=(0,0,0)\notin W$.
+  - Se $d=0$, $W$ è un sottospazio: $\vec 0\in W$; se $\vec u=(x_1,y_1,z_1)$ e $\vec v=(x_2,y_2,z_2)$ sono in $W$, cioè $ax_1+by_1+cz_1=0$ e $ax_2+by_2+cz_2=0$, sommando $a(x_1+x_2)+b(y_1+y_2)+c(z_1+z_2)=0$, quindi $\vec u+\vec v\in W$; e $a(\lambda x_1)+b(\lambda y_1)+c(\lambda z_1)=\lambda\cdot0=0$, quindi $\lambda\vec u\in W$.
+
+  **Conclusione:** un piano di $\mathbb R^3$ è un sottospazio di $\mathbb R^3$ **se e solo se passa per l'origine**. (Analogamente per le rette.)
+
+Per la costruzione del più piccolo sottospazio contenente dei vettori assegnati (span) si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md|Combinazioni lineari e sottospazio generato]].
+
 #### Esempi importanti
 
 1. **Soluzioni di un sistema omogeneo.** Per $A\in M_{m,n}(\mathbb K)$ l'insieme
@@ -118,3 +148,6 @@ $$
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md|Insiemi, vettori e sistemi lineari — nozioni di base]]
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md|Operazioni tra matrici]]
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Sistemi lineari e teorema di Rouché-Capelli]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md|Combinazioni lineari e sottospazio generato]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md|Applicazioni (terminologia generale)]]
+- [[Politecnico/Analisi 1/Teoria/Numeri complessi.md|Analisi — Numeri complessi]]

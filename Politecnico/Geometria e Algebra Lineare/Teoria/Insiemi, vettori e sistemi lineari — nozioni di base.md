@@ -112,7 +112,7 @@ $$
 x \cdot y := \sum_{k=1}^{n} x_k y_k = x_1y_1 + x_2y_2 + \dots + x_ny_n \qquad \text{(prodotto scalare standard)}
 $$
 
-Con queste operazioni, $\mathbb{R}^n$ è uno **spazio vettoriale**. Per l'introduzione geometrica dei vettori liberi si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md|Vettori geometrici liberi]]; per la definizione astratta (assiomi, esempi, sottospazi) [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]].
+Con queste operazioni, $\mathbb{R}^n$ è uno **spazio vettoriale**. Per l'introduzione geometrica dei vettori liberi si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md|Vettori geometrici liberi]]; per la definizione astratta (assiomi, esempi, sottospazi) [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]; per la terminologia sulle funzioni [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md|Applicazioni (terminologia generale)]].
 
 ### Convenzioni di notazione
 
@@ -329,3 +329,14 @@ $$
   - **determinato** ($S=\{x\}$, soluzione unica) $\iff$ **ogni** colonna di $A$ contiene un pivot, cioè $r(A) = n$ (numero di incognite): nessuna variabile libera;
   - **indeterminato** (infinite soluzioni) $\iff$ **esiste almeno una** colonna di $A$ senza pivot: le incognite corrispondenti a quelle colonne sono variabili libere, e parametrizzano l'insieme $S$ (come $x_3=t$ nell'esempio sopra).
 
+
+---
+
+## Collegamenti
+
+- [[Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md|Analisi — Insiemi numerici, logica e dimostrazioni]]
+- [[Politecnico/Analisi 1/Teoria/Numeri complessi.md|Analisi — Numeri complessi]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Sistemi lineari e teorema di Rouché-Capelli]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md|Operazioni tra matrici]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
+- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Sistemi lineari — Teoria ed esercizi.md|Esercizi — Sistemi lineari]]

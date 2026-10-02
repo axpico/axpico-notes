@@ -1,0 +1,24 @@
+{
+  "id": "conv-1790945658109-uv6miieg7",
+  "providerId": "claude",
+  "title": "Link algebra and analysis notes",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790945658113,
+  "lastActivityAt": 1790945772858,
+  "sessionId": "9567bfee-062b-4e49-94f5-049902458039",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "9567bfee-062b-4e49-94f5-049902458039"
+  },
+  "linkedContentPath": "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 411,
+    "cacheReadInputTokens": 74231,
+    "contextWindow": 1000000,
+    "contextTokens": 74644,
+    "percentage": 7,
+    "contextWindowIsAuthoritative": true
+  }
+}

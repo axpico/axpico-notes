@@ -205,3 +205,13 @@ $$
 - $\inf A = 2$: è un minorante ($2 \leq x\ \forall x\in A$) ed è il più grande possibile (per ogni $\varepsilon>0$ esiste $x_\varepsilon = 2+\varepsilon/2 \in A$ con $x_\varepsilon < 2+\varepsilon$, coerentemente con la caratterizzazione di $\inf$ vista sopra).
 - $\min A$ **non esiste**: $2 \notin A$ (l'intervallo è aperto in $2$), quindi nessun elemento di $A$ può essere il più piccolo (per ogni candidato in $A$ se ne trova sempre uno più vicino a $2$, ma ancora dentro $A$).
 
+
+---
+
+## Collegamenti
+
+- [[Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md|Analisi — Insiemi numerici, logica e dimostrazioni]]
+- [[Politecnico/Analisi 1/Teoria/Funzioni.md|Analisi — Funzioni]]
+- [[Politecnico/Analisi 1/Teoria/Successioni.md|Analisi — Successioni]]
+- [[Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md|Esercizi — Sup, Inf, Max, Min]]
+- [[Politecnico/Analisi 1/Esercizi/Disequazioni.md|Esercizi — Disequazioni]]

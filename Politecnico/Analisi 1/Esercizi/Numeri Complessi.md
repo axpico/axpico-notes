@@ -236,3 +236,10 @@ $$z = 4 + 12i + 9i^2 = 4+12i-9 = -5+12i$$
 Razionalizzo moltiplicando per il coniugato del denominatore:
 
 $$z = \frac{(3-i)^2}{(3+i)(3-i)} = \frac{9-6i+i^2}{9+1} = \frac{8-6i}{10} = \frac45-\frac35 i$$
+
+---
+
+## Collegamenti
+
+- [[Politecnico/Analisi 1/Teoria/Numeri complessi.md|Analisi — Numeri complessi]]
+- [[Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md|Analisi — Insiemi numerici, logica e dimostrazioni]]

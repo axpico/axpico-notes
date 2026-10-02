@@ -374,3 +374,13 @@ z_1 = \sqrt2\,e^{i4\pi/3} = \sqrt2\left(\cos\tfrac{4\pi}{3}+i\sin\tfrac{4\pi}{3}
 $$
 
 Coerentemente con il teorema, $z_1 = -z_0$ (le due radici quadrate sono sempre opposte, essendo $\theta_1 = \theta_0 + \pi$, cioè una rotazione di $\pi$ = cambio di segno).
+
+---
+
+## Collegamenti
+
+- [[Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md|Analisi — Insiemi numerici, logica e dimostrazioni]]
+- [[Politecnico/Analisi 1/Teoria/Funzioni.md|Analisi — Funzioni]]
+- [[Politecnico/Analisi 1/Esercizi/Numeri Complessi.md|Esercizi — Numeri complessi]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md|Insiemi, vettori e sistemi lineari — nozioni di base]]

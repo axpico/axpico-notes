@@ -188,3 +188,11 @@ Verifica: $x+y=\tfrac{9}{3}=3$ ✓; $x-2y-3z=\tfrac{3t+7-4+6t}3-3t=3t+1-3t=1$ �
 | Invertibilità / unicità con parametro | $\det A\ne0$ | sempre il primo controllo |
 | Calcolare $A^{-1}$ | MEG-J su $[A\,|\,I]$; o $\frac1{|A|}C^{\mathsf T}$ | MEG-J numerico; cofattori simbolico |
 | Caso $\det A=0$ | rango (pivot o minori) + Rouché–Capelli, poi Cramer ridotto | sistemi con $\infty^k$ soluzioni |
+
+---
+
+## Collegamenti
+
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md|Sistemi lineari quadrati e teorema di Cramer]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]]
+- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md|Esercizi — Matrici]]

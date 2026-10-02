@@ -182,3 +182,9 @@ $0$ **non appartiene** all'immagine (nessun $n$ dà $\frac1n=0$), quindi **non e
 > $\inf\{b_n\}$ si può vedere come l'estremo superiore dell'insieme dei minoranti di $I_{b_n}$, cioè $(-\infty,0]$: $\inf = \max(-\infty,0] = 0$.
 
 **Continua in** [[Limiti di successioni]].
+
+---
+
+## Collegamenti
+
+- [[Politecnico/Analisi 1/Teoria/Funzioni.md|Analisi — Funzioni]]

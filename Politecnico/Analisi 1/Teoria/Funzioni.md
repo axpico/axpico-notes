@@ -496,3 +496,13 @@ $$
 \cosh^2(x) - \sinh^2(x) = 1,
 $$
 che è l'equazione dell'**iperbole equilatera** $x^2-y^2=1$ (da cui il nome "iperboliche": il punto $(\cosh x, \sinh x)$ percorre un ramo di questa iperbole, così come $(\cos x, \sin x)$ percorre la circonferenza unitaria $x^2+y^2=1$).
+
+---
+
+## Collegamenti
+
+- [[Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md|Analisi — Insiemi numerici, logica e dimostrazioni]]
+- [[Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md|Analisi — Estremo superiore ed inferiore, completezza di ℝ]]
+- [[Politecnico/Analisi 1/Teoria/Successioni.md|Analisi — Successioni]]
+- [[Politecnico/Analisi 1/Esercizi/Disequazioni.md|Esercizi — Disequazioni]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md|Applicazioni (terminologia generale)]]

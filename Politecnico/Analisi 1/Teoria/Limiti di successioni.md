@@ -194,3 +194,10 @@ Basta prendere $\nu_M=\left[\sqrt M\right]+1$: allora $a_n>M\ \ \forall n>\nu_M$
 | Diverge a $+\infty$ | $\forall M\ \exists\nu_M:\ a_n>M\ \forall n>\nu_M$ | $n^2$ |
 | Diverge a $-\infty$ | $\forall M\ \exists\nu_M:\ a_n<-M\ \forall n>\nu_M$ | $-n^2$ |
 | Non ammette limite | (oscilla, $\ge2$ candidati) | $(-1)^n$, $\sin(n\pi/2)$ |
+
+---
+
+## Collegamenti
+
+- [[Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md|Analisi — Estremo superiore ed inferiore, completezza di ℝ]]
+- [[Politecnico/Analisi 1/Teoria/Funzioni.md|Analisi — Funzioni]]
