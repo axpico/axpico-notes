@@ -11,15 +11,32 @@
             "id": "46544af4f123dcf5",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-10-01 13.15.18.excalidraw.md"
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-01 13.15.18.excalidraw"
+              "icon": "lucide-file",
+              "title": "Equazioni matriciali"
+            }
+          },
+          {
+            "id": "b980d7d95330fbb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Matrici quadrate e matrice inversa"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -44,7 +61,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora file"
+              "title": "Files"
             }
           },
           {
@@ -78,8 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -207,9 +223,13 @@
                     {
                       "tabId": "tab-1790792416888-p5w53ob",
                       "conversationId": "conv-1790792489609-rqshs1vm5"
+                    },
+                    {
+                      "tabId": "tab-1790944929210-im7jh8k",
+                      "conversationId": "conv-1790945012720-nss5slqo3"
                     }
                   ],
-                  "activeTabId": "tab-1790792416888-p5w53ob"
+                  "activeTabId": "tab-1790944929210-im7jh8k"
                 }
               },
               "icon": "bot",
@@ -227,12 +247,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 437.5,
-    "collapsed": true
+    "width": 437.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -255,8 +274,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "209ae5d1db99f502",
+  "active": "b980d7d95330fbb3",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md",
     "Excalidraw/Drawing 2026-10-01 13.15.18.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Sistemi lineari — Teoria ed esercizi.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md",
@@ -288,12 +310,9 @@
     "Excalidraw/Drawing 2026-09-25 13.00.23.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Algebra delle matrici.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",

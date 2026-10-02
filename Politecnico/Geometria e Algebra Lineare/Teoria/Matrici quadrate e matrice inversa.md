@@ -213,6 +213,96 @@ $A$ è già **a scala** (triangolare superiore) e ha tutti i pivot non nulli ($1
 
 > **Osservazione generale.** Una matrice triangolare (superiore o inferiore) è invertibile se e solo se tutti gli elementi sulla diagonale principale sono non nulli: infatti in tal caso la matrice è già a scala con $n$ pivot, cioè $r(A)=n$.
 
+### Interpretazione funzionale dell'invertibilità
+
+Una matrice $A\in M_{n,n}(\mathbb R)$ definisce una **trasformazione** (funzione) di $\mathbb R^n$ in sé:
+
+$$
+x\in\mathbb R^n \longmapsto y := Ax \in\mathbb R^n .
+$$
+
+Dire che $A$ è invertibile equivale a dire che questa funzione è **biiettiva**: dato $y$ posso risalire all'unico $x$ che lo ha prodotto, $x = A^{-1}y$ (è la condizione (v) del Teorema 4: $Ax=y$ ha **una e una sola** soluzione per ogni $y$). In altre parole $A^{-1}$ rappresenta la trasformazione **inversa**: "disfa" ciò che fa $A$.
+
+Il prodotto di matrici corrisponde alla **composizione** di trasformazioni. Date $A,B$ di ordine $n$, poniamo $C:=AB$ (ancora $n\times n$). La trasformazione associata a $C$ è
+
+$$
+x \longmapsto y = Cx = (AB)x = A(Bx),
+$$
+
+cioè: prima si applica $B$ a $x$, poi $A$ al risultato. Da qui l'intuizione: se $A$ e $B$ sono entrambe invertibili (ciascuna "reversibile"), lo è anche la composizione, e per tornare indietro bisogna disfare i passaggi **in ordine inverso**:
+
+$$
+y = A(Bx) \ \Rightarrow\ A^{-1}y = Bx \ \Rightarrow\ B^{-1}A^{-1}y = x .
+$$
+
+Questo suggerisce $(AB)^{-1}=B^{-1}A^{-1}$ (analogia: per togliere prima i calzini e poi le scarpe non si può che togliere prima le scarpe). Il teorema seguente lo dimostra rigorosamente.
+
+### Teorema 6 (invertibilità di un prodotto)
+
+*Siano $A$ e $B$ due matrici quadrate dello stesso ordine $n$. Allora il prodotto $AB$ è invertibile **se e solo se** sia $A$ sia $B$ sono invertibili. In tal caso*
+
+$$
+(AB)^{-1} = B^{-1}A^{-1}.
+$$
+
+(Nell'appunto a mano questo è il "Teorema 1" del capitolo; qui è numerato di seguito ai teoremi già presenti nella nota.)
+
+**Dimostrazione.**
+
+**Necessità** ($AB$ invertibile $\Rightarrow$ $A$ e $B$ invertibili). Supponiamo $AB$ invertibile e poniamo $C:=(AB)^{-1}$, in modo che $(AB)C=C(AB)=I_n$.
+
+- Per l'associatività,
+$$
+I_n = (AB)C = A(BC).
+$$
+Quindi $BC$ è un'**inversa destra** di $A$. Per il Teorema 4, punto (ii)$\Rightarrow$(i), una matrice quadrata con un'inversa destra è invertibile: dunque $A$ è invertibile (e $A^{-1}=BC$ per l'unicità dell'inversa, Teorema 3).
+- Analogamente,
+$$
+I_n = C(AB) = (CA)B,
+$$
+quindi $CA$ è un'**inversa sinistra** di $B$; per il Teorema 4, (iii)$\Rightarrow$(i), $B$ è invertibile e $B^{-1}=CA$.
+
+**Formula.** Dalla relazione appena trovata $B^{-1}=CA$, moltiplicando **a destra** per $A^{-1}$ (che esiste per quanto già dimostrato):
+
+$$
+B^{-1}A^{-1} = (CA)A^{-1} = C(AA^{-1}) = CI_n = C = (AB)^{-1}.
+$$
+
+**Sufficienza** ($A$ e $B$ invertibili $\Rightarrow$ $AB$ invertibile). Supponiamo $A,B$ invertibili e consideriamo $B^{-1}A^{-1}$. Per l'associatività:
+
+$$
+(B^{-1}A^{-1})(AB) = B^{-1}(A^{-1}A)B = B^{-1}I_nB = B^{-1}B = I_n .
+$$
+
+Quindi $B^{-1}A^{-1}$ è un'inversa sinistra di $AB$; per il Teorema 4, (iii)$\Rightarrow$(i), $AB$ è invertibile, e per l'unicità $(AB)^{-1}=B^{-1}A^{-1}$. (Si verifica direttamente anche $(AB)(B^{-1}A^{-1})=AA^{-1}=I_n$.) $\blacksquare$
+
+**Osservazioni.**
+
+1. **L'ordine si inverte**: in generale $(AB)^{-1}\ne A^{-1}B^{-1}$, perché il prodotto non è commutativo.
+2. **Estensione per induzione** a più fattori: se $A_1,\dots,A_k$ sono invertibili, allora
+$$
+(A_1A_2\cdots A_k)^{-1} = A_k^{-1}\cdots A_2^{-1}A_1^{-1}.
+$$
+In particolare $(A^k)^{-1}=(A^{-1})^k$.
+3. **Attenzione**: l'ipotesi "matrici quadrate" è essenziale. Per matrici non quadrate $AB$ può essere invertibile senza che $A$ o $B$ lo siano (esempio: $A=\begin{bmatrix}1&0\end{bmatrix}$ ($1\times2$), $B=\begin{bmatrix}1\\0\end{bmatrix}$ ($2\times1$), $AB=[1]$ è invertibile, ma $A,B$ non sono nemmeno quadrate).
+4. Il teorema si applica comodamente alle matrici elementari della riduzione di Gauss-Jordan: $E_k\cdots E_1A=I_n$ implica $A^{-1}=E_k\cdots E_1$, e $A=E_1^{-1}\cdots E_k^{-1}$ è prodotto di matrici elementari.
+
+#### Esempio
+
+Siano $A=\begin{bmatrix}1&2\\0&1\end{bmatrix}$, $B=\begin{bmatrix}1&0\\3&1\end{bmatrix}$. Entrambe hanno $\det=1\ne0$ e $A^{-1}=\begin{bmatrix}1&-2\\0&1\end{bmatrix}$, $B^{-1}=\begin{bmatrix}1&0\\-3&1\end{bmatrix}$. Allora
+
+$$
+AB=\begin{bmatrix}7&2\\3&1\end{bmatrix},\qquad (AB)^{-1}=\frac{1}{7-6}\begin{bmatrix}1&-2\\-3&7\end{bmatrix}=\begin{bmatrix}1&-2\\-3&7\end{bmatrix},
+$$
+
+e infatti
+
+$$
+B^{-1}A^{-1}=\begin{bmatrix}1&0\\-3&1\end{bmatrix}\begin{bmatrix}1&-2\\0&1\end{bmatrix}=\begin{bmatrix}1&-2\\-3&7\end{bmatrix}=(AB)^{-1}\ \checkmark,
+$$
+
+mentre $A^{-1}B^{-1}=\begin{bmatrix}7&-2\\-3&1\end{bmatrix}\neq(AB)^{-1}$.
+
 ## Collegamenti
 
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md|Operazioni tra matrici]]
@@ -220,3 +310,5 @@ $A$ è già **a scala** (triangolare superiore) e ha tutti i pivot non nulli ($1
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md|Equazioni matriciali]]
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Determinante, sviluppo di Laplace e formula di Cramer.md|Determinante, sviluppo di Laplace e formula di Cramer]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md|Vettori geometrici liberi]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]

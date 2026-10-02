@@ -1,0 +1,24 @@
+{
+  "id": "conv-1790945012720-nss5slqo3",
+  "providerId": "claude",
+  "title": "Add missing GAL theory content and create notes",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790945012727,
+  "lastActivityAt": 1790945126625,
+  "sessionId": "26bfd71b-51f7-4b0f-af5b-0022faf92926",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "26bfd71b-51f7-4b0f-af5b-0022faf92926"
+  },
+  "linkedContentPath": "Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 10125,
+    "cacheReadInputTokens": 65669,
+    "contextWindow": 1000000,
+    "contextTokens": 75796,
+    "percentage": 8,
+    "contextWindowIsAuthoritative": true
+  }
+}
