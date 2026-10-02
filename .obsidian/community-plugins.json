@@ -1,19 +1,14 @@
 [
   "dataview",
-  "templater-obsidian",
-  "calendar",
   "table-editor-obsidian",
-  "obsidian-kanban",
   "obsidian-git",
   "obsidian-doubleshift",
   "obsidian-excalidraw-plugin",
   "editing-toolbar",
   "omnisearch",
   "realclaudian",
-  "obisidian-note-linker",
   "obsidian-math-plus",
   "obsidian-desmos",
-  "latex-math",
   "excalidraw-extras",
   "advanced-canvas"
 ]
