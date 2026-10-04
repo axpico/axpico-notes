@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 282.5,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
