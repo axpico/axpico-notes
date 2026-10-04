@@ -253,8 +253,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
-      "realclaudian:Open Claudian": false,
-      "auto-note-linker:Suggest links for current note": false
+      "realclaudian:Open Claudian": false
     }
   },
   "active": "dc8c39aa51a70592",
