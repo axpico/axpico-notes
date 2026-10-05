@@ -1,0 +1,24 @@
+{
+  "id": "conv-1791206757633-nmuu5znuu",
+  "providerId": "claude",
+  "title": "Add to notes, create page if needed",
+  "titleGenerationStatus": "success",
+  "createdAt": 1791206757639,
+  "lastActivityAt": 1791206812237,
+  "sessionId": "73db0ca1-9ffe-416d-80d9-609d07e8355f",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "73db0ca1-9ffe-416d-80d9-609d07e8355f"
+  },
+  "linkedContentPath": "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 7457,
+    "cacheReadInputTokens": 51951,
+    "contextWindow": 1000000,
+    "contextTokens": 59410,
+    "percentage": 6,
+    "contextWindowIsAuthoritative": true
+  }
+}
