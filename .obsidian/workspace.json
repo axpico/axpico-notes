@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Limiti di successioni"
             }
+          },
+          {
+            "id": "61ab8b8358b235b4",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-10-05 08.07.30.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-10-05 08.07.30.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -256,15 +269,16 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "dc8c39aa51a70592",
+  "active": "61ab8b8358b235b4",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
+    "Excalidraw/Drawing 2026-10-05 08.07.30.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md",
     "Excalidraw/Drawing 2026-10-01 13.15.18.excalidraw.md",
     "Excalidraw/Drawing 2026-09-30 15.20.30.excalidraw.md",
-    "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
     "Politecnico/Analisi 1/Teoria/Successioni.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Determinanti, Cramer e inversa — Esercizi svolti.md",
     "Politecnico/Fondamenti di Informatica/Teotira/Programma.md",
@@ -294,7 +308,6 @@
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.2f1c162a3619",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.d51ef683e1dd",
     "Excalidraw/Drawing 2026-09-27 15.51.33.excalidraw.md",
-    "Excalidraw/Drawing 2026-09-25 13.00.23.excalidraw.md",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",
