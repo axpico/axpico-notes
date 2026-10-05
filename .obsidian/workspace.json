@@ -33,7 +33,8 @@
               "title": "Drawing 2026-10-05 08.07.30.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -268,11 +269,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "dc8c39aa51a70592",
+  "active": "61ab8b8358b235b4",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md",
     "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
     "Excalidraw/Drawing 2026-10-05 08.07.30.excalidraw.md",
+    "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md",
