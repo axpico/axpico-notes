@@ -34,18 +34,6 @@
               "icon": "lucide-file",
               "title": "Algebra dei limiti e teoremi sui limiti"
             }
-          },
-          {
-            "id": "61ab8b8358b235b4",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-10-05 08.07.30.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-05 08.07.30.excalidraw"
-            }
           }
         ],
         "currentTab": 1
@@ -224,11 +212,12 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1790945797345-b193bto",
-                      "conversationId": "conv-1791206757633-nmuu5znuu"
+                      "tabId": "tab-1791206967146-muuwcu6",
+                      "conversationId": null,
+                      "draftModel": "sonnet"
                     }
                   ],
-                  "activeTabId": "tab-1790945797345-b193bto"
+                  "activeTabId": "tab-1791206967146-muuwcu6"
                 }
               },
               "icon": "bot",
@@ -262,7 +251,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.4661865234375
+    "width": 385.4661865234375,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
