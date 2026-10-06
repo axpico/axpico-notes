@@ -248,7 +248,6 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
       "audio-recorder:Start/stop recording": false,
       "bases:Create new base": false,
       "omnisearch:Omnisearch": false,
