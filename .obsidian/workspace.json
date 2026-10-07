@@ -18,8 +18,21 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-10-07 10.04.24.excalidraw"
             }
+          },
+          {
+            "id": "524bdab86fb7a655",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-10-07 15.17.50.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-10-07 15.17.50.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -221,7 +234,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.4661865234375
+    "width": 385.4661865234375,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -240,10 +254,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "e3c5f6a9d8d77c4a",
+  "active": "524bdab86fb7a655",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti.md",
     "Excalidraw/Drawing 2026-10-07 10.04.24.excalidraw.md",
+    "Excalidraw/Drawing 2026-10-07 15.17.50.excalidraw.md",
+    "Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti.md",
     "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
     "Politecnico/Analisi 1/Teoria/Limiti di successioni.md.tmp.7215.15ab199921c6",
     "Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti.md.tmp.7215.469130fbcc49",
@@ -271,7 +286,6 @@
     "Ripasso uni/matematica/Linguaggio matematico.md",
     "Politecnico/Analisi 1/Esercizi/Numeri Complessi.md",
     "Pasted Image 20260927165845_769.png",
-    "Excalidraw/Drawing 2026-09-28 08.04.23.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Successioni.md.tmp.7344.111a5e31c501",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.615f5e40105f",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.a20aace3254a",
