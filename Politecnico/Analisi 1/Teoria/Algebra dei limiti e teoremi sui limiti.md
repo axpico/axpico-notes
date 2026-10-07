@@ -213,5 +213,6 @@ cioè $\forall\varepsilon>0\ \exists\,\nu_\varepsilon\in\mathbb{N}$ t.c. $|c_n-\
 
 ## Collegamenti
 
+- Prosegue in [[Successioni monotone, infinitesimi e limiti notevoli]]
 - [[Limiti di successioni]]
 - [[Successioni]]

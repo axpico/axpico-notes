@@ -4,35 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "4e5a6525d0dfd631",
+        "id": "294ec3313aa2d340",
         "type": "tabs",
         "children": [
           {
-            "id": "e3c5f6a9d8d77c4a",
+            "id": "d0a4bb7c3bf81795",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-10-07 10.04.24.excalidraw.md"
+                "file": "Politecnico/Geometria e Algebra Lineare/Esercizi/Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-07 10.04.24.excalidraw"
+              "icon": "lucide-file",
+              "title": "Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi"
             }
           },
           {
-            "id": "5297f6295a546e05",
+            "id": "7df58babe98c5e8a",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-10-07 15.17.50.excalidraw.md"
+                "file": "Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-07 15.17.50.excalidraw"
+              "icon": "lucide-file",
+              "title": "Algebra dei limiti e teoremi sui limiti"
+            }
+          },
+          {
+            "id": "9bf6810754238944",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Successioni monotone, infinitesimi e limiti notevoli"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -57,7 +75,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora file"
+              "title": "Files"
             }
           },
           {
@@ -91,8 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -205,7 +222,7 @@
               "type": "empty",
               "state": {},
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "New tab"
             }
           },
           {
@@ -229,6 +246,29 @@
               "icon": "lucide-ghost",
               "title": "auto-note-linker-suggestions"
             }
+          },
+          {
+            "id": "278df55cbb664f14",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {
+                "tabWorkspace": {
+                  "version": 1,
+                  "openTabs": [
+                    {
+                      "tabId": "tab-1791395017743-yyw3xr8",
+                      "conversationId": null,
+                      "draftModel": "sonnet",
+                      "providerId": "claude"
+                    }
+                  ],
+                  "activeTabId": "tab-1791395017743-yyw3xr8"
+                }
+              },
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
         ]
       }
@@ -238,14 +278,14 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Apri selettore rapido": false,
-      "graph:Apri vista grafo": false,
-      "canvas:Crea nuova lavagna": false,
-      "daily-notes:Apri nota giornaliera": false,
-      "templates:Inserisci modello": false,
-      "command-palette:Apri riquadro comandi": false,
-      "audio-recorder:Avvia/ferma registrazione": false,
-      "bases:Crea nuova Base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "bases:Create new base": false,
       "omnisearch:Omnisearch": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
@@ -253,18 +293,25 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "5297f6295a546e05",
+  "active": "9bf6810754238944",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti.md",
+    "Politecnico/Geometria e Algebra Lineare/Esercizi/Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi.md",
     "Excalidraw/Drawing 2026-10-07 15.17.50.excalidraw.md",
+    "Politecnico/Geometria e Algebra Lineare/Esercizi/Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi.md.tmp.23409.4541ec0f0156",
+    "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
+    "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md.tmp.7730.247d68e356a8",
+    "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md.tmp.7730.1d4b9bd7f36e",
+    "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
+    "Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md",
+    "Politecnico/Analisi 1/Teoria/Funzioni.md",
+    "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md",
     "Excalidraw/Drawing 2026-10-07 10.04.24.excalidraw.md",
     "Ripasso uni/POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico/6. Confronto con forza gravitazionale.md",
     "Senza nome.base",
-    "Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti.md",
-    "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
     "Politecnico/Analisi 1/Teoria/Limiti di successioni.md.tmp.7215.15ab199921c6",
     "Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti.md.tmp.7215.469130fbcc49",
     "Excalidraw/Drawing 2026-10-05 08.07.30.excalidraw.md",
-    "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md",
@@ -281,17 +328,10 @@
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Sistemi lineari — Teoria ed esercizi.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Determinante, sviluppo di Laplace e formula di Cramer.md",
-    "Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md",
-    "Politecnico/Analisi 1/Teoria/Numeri complessi.md",
-    "Excalidraw/Drawing 2026-09-30 10.21.52.excalidraw.md",
-    "Ripasso uni/matematica/Linguaggio matematico.md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Analisi 1/Teoria/Successioni.md.tmp.7344.111a5e31c501",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.615f5e40105f",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.a20aace3254a",
-    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.31311f7582e3",
-    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.7477bad42046",
-    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.192fd707e053",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",
