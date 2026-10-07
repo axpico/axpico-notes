@@ -217,13 +217,11 @@
               "title": "auto-note-linker-suggestions"
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 385.4661865234375,
-    "collapsed": true
+    "width": 385.4661865234375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -242,7 +240,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "e3c5f6a9d8d77c4a",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti.md",
     "Excalidraw/Drawing 2026-10-07 10.04.24.excalidraw.md",
