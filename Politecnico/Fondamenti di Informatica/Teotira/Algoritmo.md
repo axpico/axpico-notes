@@ -468,3 +468,5 @@ int div_by_digit(const unsigned int a[], int na, unsigned int k,
 > Nota: moltiplicazione e divisione per un vettore di più cifre (non solo una singola cifra k) si ottengono componendo questi passi elementari — rispettivamente come somma di prodotti parziali traslati di una posizione, e come sequenza di stime di cifra + sottrazione, esattamente come nell'algoritmo "in colonna" manuale.
 
 Continue con [[Algoritmi 2]]
+
+Collegato: [[Programma]] (dall'algoritmo al programma eseguibile), [[Rappresentazione dei numeri binario, complementi, ASCII, virgola fissa-mobile]]

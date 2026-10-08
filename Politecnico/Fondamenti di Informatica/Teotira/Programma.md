@@ -278,3 +278,9 @@ Per un linguaggio compilato come il C, dal codice sorgente si arriva a un progra
 4. **Collegamento (linking)** — il **collegatore (linker)** unisce il file oggetto ai sottoprogrammi richiesti (dalle librerie o definiti dal programmatore), risolvendo i riferimenti agli indirizzi; genera il **file eseguibile** (`.exe`). Errori tipici: nomi di funzioni non trovate.
 5. **Caricamento (loading)** — il **caricatore (loader)**, a cura del Sistema Operativo, copia il contenuto del file eseguibile in un'area libera della memoria centrale.
 6. **Esecuzione** — il programma riceve i dati in ingresso e produce i risultati in uscita. Possono verificarsi **errori di run-time** (errori semantici): risultati scorretti (es. overflow), calcoli impossibili (divisione per zero, radice/logaritmo di numero negativo), o errori nella concezione dell'algoritmo.
+
+
+## Collegamenti
+
+- [[Algoritmo]]
+- [[Algoritmi 2]]

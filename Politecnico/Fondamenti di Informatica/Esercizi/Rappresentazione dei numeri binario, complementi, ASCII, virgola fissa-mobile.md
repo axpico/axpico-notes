@@ -162,3 +162,10 @@ Due bit del primo byte (i due meno significativi, letti da destra) hanno signifi
 - **bit I/G** (Individual/Group, bit meno significativo): 0 = indirizzo unicast (una singola interfaccia), 1 = indirizzo multicast/broadcast (es. `FF:FF:FF:FF:FF:FF` è il broadcast Ethernet)
 
 A differenza dell'indirizzo IP (livello di rete, logico e può cambiare), il MAC address è un identificatore di **livello 2 (data link)** del modello OSI, tipicamente fisso e "cablato" nella scheda di rete (anche se oggi molti sistemi operativi lo randomizzano per privacy).
+
+
+## Collegamenti
+
+- [[Algoritmo]]
+- [[Programma]]
+- [[Algoritmi 2]]

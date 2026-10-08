@@ -80,3 +80,4 @@ L'inversa è $\tau_{\vec v}^{-1}=\tau_{-\vec v}$. (Per $\vec v=\vec 0$ la trasla
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]]
 - [[Politecnico/Analisi 1/Teoria/Funzioni.md|Analisi — Funzioni]]
+- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti.md|Esercizi — Vettori, spazi vettoriali, sottospazi e applicazioni]]

@@ -49,7 +49,8 @@
               "title": "Successioni monotone, infinitesimi e limiti notevoli"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -257,25 +258,25 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1791395017743-yyw3xr8",
+                      "tabId": "tab-1791458482069-7gtxloj",
                       "conversationId": null,
                       "draftModel": "sonnet",
                       "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1791395017743-yyw3xr8"
+                  "activeTabId": "tab-1791458482069-7gtxloj"
                 }
               },
               "icon": "bot",
               "title": "Claudian"
             }
           }
-        ]
+        ],
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
-    "width": 385.4661865234375,
-    "collapsed": true
+    "width": 385.4661865234375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -294,7 +295,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "d0a4bb7c3bf81795",
+  "active": "278df55cbb664f14",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
     "Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti.md",
