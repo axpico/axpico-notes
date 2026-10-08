@@ -28,7 +28,7 @@
               "type": "markdown",
               "state": {
                 "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Esercizi/Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti.md",
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -245,9 +245,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1791484044307-qkokadg",
-                      "conversationId": null,
-                      "draftModel": "sonnet",
-                      "providerId": "claude"
+                      "conversationId": "conv-1791484891465-e0nkh5rog"
                     }
                   ],
                   "activeTabId": "tab-1791484044307-qkokadg"
@@ -261,7 +259,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.4661865234375
+    "width": 385.4661865234375,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -280,9 +279,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "7f6e8a2466010494",
   "lastOpenFiles": [
     "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md.tmp.24526.e68cd9d4fc6e",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md.tmp.24526.27f947c0def2",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
     "04 Applicazioni lineari. Nucleo ed immagine. Sistemi di riferimento. Basi e dimensione. Teorema di rappresentazione (matrice rappresentativa). Basi ed isomorfismi.pdf",
     "Excalidraw/Drawing 2026-10-08 13.28.52.excalidraw.md",
@@ -316,8 +317,6 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md",
     "Pasted Image 20260927165845_769.png",
-    "Politecnico/Analisi 1/Teoria/Successioni.md.tmp.7344.111a5e31c501",
-    "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.615f5e40105f",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
     "Pasted Image 20260909152157_367.png",

@@ -37,7 +37,7 @@ $(x,y)$ sono le **coordinate** di $P$ nel riferimento $(O,\vec u,\vec v)$. Geome
 **Esempio (riferimento obliquo).** $O=(0,0)$, $\vec u=(2,0)$, $\vec v=(1,1)$ e $P$ con $\overrightarrow{OP}=2\vec u+3\vec v=(7,3)$, cioè coordinate $(2,3)$ nel riferimento $(O,\vec u,\vec v)$.
 
 ```desmos-graph
-left=-2; right=10; top=6; bottom=-2; width=700; height=467;
+left=-2; right=12; top=6; bottom=-2; width=770; height=440;
 ---
 y=0
 y=x
