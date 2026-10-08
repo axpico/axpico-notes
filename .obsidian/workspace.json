@@ -48,9 +48,21 @@
               "icon": "lucide-file",
               "title": "Successioni monotone, infinitesimi e limiti notevoli"
             }
+          },
+          {
+            "id": "630dc28a2e728bce",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-10-08 13.28.52.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-10-08 13.28.52.excalidraw"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -75,7 +87,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Esplora file"
             }
           },
           {
@@ -258,13 +270,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1791458482069-7gtxloj",
+                      "tabId": "tab-1791459249981-bobog7i",
                       "conversationId": null,
                       "draftModel": "sonnet",
                       "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1791458482069-7gtxloj"
+                  "activeTabId": "tab-1791459249981-bobog7i"
                 }
               },
               "icon": "bot",
@@ -276,7 +288,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.4661865234375
+    "width": 385.4661865234375,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -295,12 +308,13 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "278df55cbb664f14",
+  "active": "630dc28a2e728bce",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-10-07 15.17.50.excalidraw.md",
+    "Excalidraw/Drawing 2026-10-08 13.28.52.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
     "Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi.md",
-    "Excalidraw/Drawing 2026-10-07 15.17.50.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi.md.tmp.23409.4541ec0f0156",
     "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md.tmp.7730.247d68e356a8",
     "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md.tmp.7730.1d4b9bd7f36e",
@@ -329,7 +343,6 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Sistemi lineari — Teoria ed esercizi.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Untitled.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Determinante, sviluppo di Laplace e formula di Cramer.md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Analisi 1/Teoria/Successioni.md.tmp.7344.111a5e31c501",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.615f5e40105f",
