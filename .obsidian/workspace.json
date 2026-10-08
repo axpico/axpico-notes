@@ -256,7 +256,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.4661865234375
+    "width": 385.4661865234375,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -275,7 +276,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "630dc28a2e728bce",
   "lastOpenFiles": [
     "04 Applicazioni lineari. Nucleo ed immagine. Sistemi di riferimento. Basi e dimensione. Teorema di rappresentazione (matrice rappresentativa). Basi ed isomorfismi.pdf",
     "Excalidraw/Drawing 2026-10-08 13.28.52.excalidraw.md",
