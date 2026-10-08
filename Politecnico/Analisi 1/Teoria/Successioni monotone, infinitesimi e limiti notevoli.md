@@ -84,7 +84,7 @@ $$
 a^n=(1+x)^n\ge1+nx=1+n(a-1)\xrightarrow[n\to\infty]{}+\infty,
 $$
 e per il confronto $a^n\to+\infty$.
-- **$a=1$.** $1^n=1\to1$.
+- **$a=1$,** $1^n=1\to1$.
 - **$-1<a<1$, $a\ne0$.** $|a^n|=|a|^n=\dfrac{1}{(1/|a|)^n}$ e $1/|a|>1$, quindi $(1/|a|)^n\to+\infty$ per il caso 1 ⟹ $|a|^n\to0$ ⟹ $a^n\to0$ (lemma). Per $a=0$ è banale.
 - **$a\le-1$.** Considero due sottosuccessioni:
 $$
