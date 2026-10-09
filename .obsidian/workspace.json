@@ -18,8 +18,21 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-10-09 12.52.31.excalidraw"
             }
+          },
+          {
+            "id": "a7bc5f25f0fc4758",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-10-09 15.14.29.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-10-09 15.14.29.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -264,9 +277,10 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "8406356878aa9a26",
+  "active": "a7bc5f25f0fc4758",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-10-09 12.52.31.excalidraw.md",
+    "Excalidraw/Drawing 2026-10-09 15.14.29.excalidraw.md",
     "Excalidraw/Drawing 2026-10-08 13.28.52.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
@@ -299,7 +313,6 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/03 Inveribilita del prodotto di matrici. Vettori nella geometria euclidea. Spazi vettoriali. Applicazioni (terminologia generale).pdf",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Analisi 1/Teoria/Successioni.md.tmp.7344.111a5e31c501",
     "Politecnico/Analisi 1/Teoria/Funzioni.md.tmp.7344.615f5e40105f",
