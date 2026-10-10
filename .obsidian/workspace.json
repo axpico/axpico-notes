@@ -4,37 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "294ec3313aa2d340",
+        "id": "25c09e8361034d29",
         "type": "tabs",
         "children": [
           {
-            "id": "a7bc5f25f0fc4758",
+            "id": "453419c554ab825b",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-10-09 15.14.29.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-09 15.14.29.excalidraw"
-            }
-          },
-          {
-            "id": "8c4fd6efef5947fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Politecnico/Analisi 1/Esercizi/Limiti di successioni.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Limiti di successioni"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
