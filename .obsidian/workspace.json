@@ -11,13 +11,32 @@
             "id": "453419c554ab825b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/Indice.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Indice"
+            }
+          },
+          {
+            "id": "5b26076643e575c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spazi vettoriali e sottospazi"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -76,7 +95,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 282.5,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -224,24 +244,26 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1791563929157-nsfm7cc",
+                      "tabId": "tab-1791632969194-9hdy61z",
                       "conversationId": null,
                       "draftModel": "sonnet",
                       "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1791563929157-nsfm7cc"
+                  "activeTabId": "tab-1791632969194-9hdy61z"
                 }
               },
               "icon": "bot",
               "title": "Claudian"
             }
           }
-        ]
+        ],
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
-    "width": 385.501953125
+    "width": 385.501953125,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -260,8 +282,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "5b26076643e575c0",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Indice.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md",
+    "Politecnico/Analisi 1/Indice.md",
     "Excalidraw/Drawing 2026-10-09 15.14.29.excalidraw.md",
     "Politecnico/Analisi 1/Esercizi/Limiti di successioni.md",
     "Politecnico/Analisi 1/Esercizi/Limiti di successioni.md.tmp.16989.19c1d5f99884",
@@ -295,9 +320,6 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md",
     "Excalidraw/Drawing 2026-10-01 13.15.18.excalidraw.md",
-    "Excalidraw/Drawing 2026-09-30 15.20.30.excalidraw.md",
-    "Politecnico/Analisi 1/Teoria/Successioni.md",
-    "Politecnico/Geometria e Algebra Lineare/Esercizi/Determinanti, Cramer e inversa — Esercizi svolti.md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
