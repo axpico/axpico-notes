@@ -76,37 +76,9 @@
               "icon": "lucide-file",
               "title": "Basi, dimensione e coordinate"
             }
-          },
-          {
-            "id": "c6e5393b572610c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Combinazioni lineari e sottospazio generato"
-            }
-          },
-          {
-            "id": "85cbd6492bdd5002",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Spazi vettoriali e sottospazi"
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -314,19 +286,20 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1791632969194-9hdy61z",
-                      "conversationId": "conv-1791725686835-qnqoat89m"
+                      "tabId": "tab-1791726688595-drvdgtw",
+                      "conversationId": null,
+                      "draftModel": "sonnet",
+                      "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1791632969194-9hdy61z"
+                  "activeTabId": "tab-1791726688595-drvdgtw"
                 }
               },
               "icon": "bot",
               "title": "Claudian"
             }
           }
-        ],
-        "currentTab": 10
+        ]
       }
     ],
     "direction": "horizontal",
@@ -349,15 +322,17 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "278df55cbb664f14",
+  "active": "cf48f5a551918659",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md",
+    "claude_skills/Skill Iconize for obsidian.md",
+    "Recording 20261011154059.m4a",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md",
     "Excalidraw/Drawing 2026-10-11 15.09.32.excalidraw.md",
     "Politecnico/Analisi 1/Indice.md",
     "Excalidraw/Drawing 2026-10-09 15.14.29.excalidraw.md",
@@ -384,9 +359,7 @@
     "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md",
     "Excalidraw/Drawing 2026-10-07 10.04.24.excalidraw.md",
     "Ripasso uni/POK/Introduzione-alla-fisica-sperimentale-elettromagnetismo-ottica-fisica-moderna/Campo elettrico/6. Confronto con forza gravitazionale.md",
-    "Senza nome.base",
     "Excalidraw/Drawing 2026-10-05 08.07.30.excalidraw.md",
-    "Politecnico/Geometria e Algebra Lineare/Esercizi/Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti.md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",

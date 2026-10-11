@@ -7,3 +7,4 @@ tags: [claude-skills, index]
 | ----- | ------------------------------------------------------------------------------------------ |
 | [[claude_skills/Skill Desmos for obsidian.md\|Desmos]] | Inserire/correggere grafici Desmos (2D/3D) in note Obsidian tramite blocchi `desmos-graph` |
 | [[claude_skills/Skill Advanced Canvas for obsidian.md\|Advanced Canvas]] | Creare/gestire Canvas Obsidian (flowchart, presentazioni, portal, export) col plugin Advanced Canvas |
+| [[claude_skills/Skill Iconize for obsidian.md\|Iconize]] | Assegnare/leggere/rimuovere icone di file e cartelle col plugin Iconize (`data.json`, frontmatter, ID Lucide) |

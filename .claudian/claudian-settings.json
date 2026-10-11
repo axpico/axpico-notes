@@ -9,7 +9,7 @@
   "titleGenerationModel": "",
   "excludedTags": [],
   "mediaFolder": "",
-  "systemPrompt": "Before answering, check claude_skills/claude_skills index.md for a skill relevant to the user's request. If one matches, mention it and use it.\nAlso exaplin all at a university level",
+  "systemPrompt": "Before answering, check claude_skills/claude_skills index.md for a skill relevant to the user's request. If one matches, mention it and use it. Also exaplin all at a university level. Each time you crate a file u need to put an icon for that file (check claude_skills/claude_skills index.md).",
   "sharedEnvironmentVariables": "",
   "envSnippets": [],
   "customContextLimits": {},
