@@ -5,7 +5,7 @@ tags:
   - applicazioni
   - funzioni
 ---
-## Applicazioni (terminologia generale)
+z## Applicazioni (terminologia generale)
 
 ### Definizione
 
