@@ -84,7 +84,7 @@ $$
 
 Non tutti i **sottoinsiemi** di uno spazio vettoriale sono a loro volta spazi vettoriali. Quelli che lo sono (con le stesse operazioni di $V$) si chiamano **sottospazi**.
 
-**Definizione.** Sia $V$ uno spazio vettoriale su $\mathbb K$. Un sottoinsieme $W\subseteq V$ si dice **sottospazio vettoriale** di $V$ (si scrive $W\le V$, nell'appunto $W<V$) se:
+**Definizione.** Sia $V$ uno spazio vettoriale su $\mathbb K$. Un sottoinsieme $W\subseteq V$ si dice **sottospazio vettoriale** di $V$ (si scrive $W\le V$)  se:
 
 1. $W\ne\varnothing$ (equivalentemente $\vec 0\in W$);
 2. $W$ è **chiuso rispetto alla somma**: $\vec u,\vec v\in W\Rightarrow\vec u+\vec v\in W$;

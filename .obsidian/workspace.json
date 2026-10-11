@@ -22,7 +22,35 @@
             }
           },
           {
-            "id": "f5e1b4db41b8ed17",
+            "id": "69cc3def315dc4df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Teorema di rappresentazione e matrice rappresentativa"
+            }
+          },
+          {
+            "id": "e7cdb2a4e16513e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Applicazioni lineari, nucleo e immagine"
+            }
+          },
+          {
+            "id": "67e5d50ea3b61eb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,19 +64,49 @@
             }
           },
           {
-            "id": "7c6052505caa1469",
+            "id": "cf48f5a551918659",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-10-11 15.09.32.excalidraw.md"
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-11 15.09.32.excalidraw"
+              "icon": "lucide-file",
+              "title": "Basi, dimensione e coordinate"
+            }
+          },
+          {
+            "id": "c6e5393b572610c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Combinazioni lineari e sottospazio generato"
+            }
+          },
+          {
+            "id": "85cbd6492bdd5002",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spazi vettoriali e sottospazi"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -257,9 +315,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1791632969194-9hdy61z",
-                      "conversationId": null,
-                      "draftModel": "sonnet",
-                      "providerId": "claude"
+                      "conversationId": "conv-1791725686835-qnqoat89m"
                     }
                   ],
                   "activeTabId": "tab-1791632969194-9hdy61z"
@@ -274,8 +330,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.501953125,
-    "collapsed": true
+    "width": 385.501953125
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -294,18 +349,20 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "f5e1b4db41b8ed17",
+  "active": "278df55cbb664f14",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-10-11 15.09.32.excalidraw.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md",
-    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
+    "Politecnico/Geometria e Algebra Lineare/Indice.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md",
+    "Excalidraw/Drawing 2026-10-11 15.09.32.excalidraw.md",
     "Politecnico/Analisi 1/Indice.md",
     "Excalidraw/Drawing 2026-10-09 15.14.29.excalidraw.md",
     "Politecnico/Analisi 1/Esercizi/Limiti di successioni.md",
     "Politecnico/Analisi 1/Esercizi/Limiti di successioni.md.tmp.16989.19c1d5f99884",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md.tmp.13054.7d8703c894a3",
     "Excalidraw/Drawing 2026-10-09 12.52.31.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md.tmp.13054.171e4c8daa84",
@@ -313,7 +370,6 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md.tmp.13054.3b8567ed96a2",
     "Excalidraw/Drawing 2026-10-08 13.28.52.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
     "04 Applicazioni lineari. Nucleo ed immagine. Sistemi di riferimento. Basi e dimensione. Teorema di rappresentazione (matrice rappresentativa). Basi ed isomorfismi.pdf",
     "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
     "Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti.md",
@@ -331,7 +387,6 @@
     "Senza nome.base",
     "Excalidraw/Drawing 2026-10-05 08.07.30.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
