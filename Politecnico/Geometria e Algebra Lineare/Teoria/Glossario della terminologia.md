@@ -121,24 +121,24 @@ Ordine alfabetico per area tematica. Ogni voce rimanda alla nota di teoria dove 
 ### 6. Spazi vettoriali
 *Fonti: [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]], [[Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md|Combinazioni lineari]], [[Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md|Basi, dimensione e coordinate]]*
 
-| Termine | Significato |
-|---|---|
-| **Spazio vettoriale su $\mathbb K$** | Insieme $V$ con somma e prodotto per scalare che soddisfano gli assiomi (associatività, commutatività, neutro, opposto, distributività, ...). |
-| **Vettore** (senso astratto) | Elemento di uno spazio vettoriale (anche matrici, funzioni, polinomi). |
-| **Sottospazio vettoriale $W\le V$** | Sottoinsieme non vuoto, chiuso per somma e prodotto per scalare (contiene $\mathbf 0$). |
-| **Chiusura** | Somma o multiplo di elementi di $W$ restano in $W$. |
-| **Combinazione lineare** | $\alpha_1\vec v_1+\dots+\alpha_n\vec v_n$ con $\alpha_i\in\mathbb K$. |
-| **Sottospazio generato / span** | $\operatorname{span}(\vec v_1,\dots,\vec v_n)$: insieme di tutte le combinazioni lineari; il **più piccolo** sottospazio che le contiene. |
-| **Insieme di generatori** | Vettori il cui span è $V$ ("generano $V$"). |
-| **Linearmente indipendenti** | $\sum\lambda_i\mathbf v_i=\mathbf 0\Rightarrow$ tutti $\lambda_i=0$. |
-| **Linearmente dipendenti** | Esiste una combinazione non banale uguale a $\mathbf 0$: un vettore dipende dagli altri. |
-| **Base $\mathcal B$** | Lista ordinata di vettori indipendenti che generano $V$. |
-| **Coordinate $[\mathbf v]_{\mathcal B}$** | Coefficienti dell'unica scrittura di $\mathbf v$ nella base. |
-| **Base canonica** | $\mathbf e_1,\dots,\mathbf e_n$ di $\mathbb K^n$. |
-| **Dimensione $\dim V$** | Numero di elementi di una (qualunque) base (Steinitz); $\dim\{\mathbf 0\}=0$. |
-| **Dimensione finita** | $V$ ha una base finita. |
-| **Matrici elementari $E_{ij}$** | Base di $M_{\mathbb K}(m,n)$; da cui $\dim M_{\mathbb K}(m,n)=mn$. |
-| **Matrice simmetrica** | $A^{\mathsf T}=A$; le $2\times2$ formano un sottospazio di dimensione $3$. |
+| Termine                                   | Significato                                                                                                                                   |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Spazio vettoriale su $\mathbb K$**      | Insieme $V$ con somma e prodotto per scalare che soddisfano gli assiomi (associatività, commutatività, neutro, opposto, distributività, ...). |
+| **Vettore** (senso astratto)              | Elemento di uno spazio vettoriale (anche matrici, funzioni, polinomi).                                                                        |
+| **Sottospazio vettoriale $W\le V$**       | Sottoinsieme non vuoto, chiuso per somma e prodotto per scalare (contiene $\mathbf 0$).                                                       |
+| **Chiusura**                              | Somma o multiplo di elementi di $W$ restano in $W$.                                                                                           |
+| **Combinazione lineare**                  | $\alpha_1\vec v_1+\dots+\alpha_n\vec v_n$ con $\alpha_i\in\mathbb K$.                                                                         |
+| **Sottospazio generato / span**           | $\operatorname{span}(\vec v_1,\dots,\vec v_n)$: insieme di tutte le combinazioni lineari; il **più piccolo** sottospazio che le contiene.     |
+| **Insieme di generatori**                 | Vettori il cui span è $V$ ("generano $V$").                                                                                                   |
+| **Linearmente indipendenti**              | $\sum\lambda_i\mathbf v_i=\mathbf 0\Rightarrow$ tutti $\lambda_i=0$.                                                                          |
+| **Linearmente dipendenti**                | Esiste una combinazione non banale uguale a $\mathbf 0$: un vettore dipende dagli altri.                                                      |
+| **Base $\mathcal B$**                     | Lista ordinata di vettori indipendenti che generano $V$.                                                                                      |
+| **Coordinate $[\mathbf v]_{\mathcal B}$** | Coefficienti dell'unica scrittura di $\mathbf v$ nella base.                                                                                  |
+| **Base canonica**                         | $\mathbf e_1,\dots,\mathbf e_n$ di $\mathbb K^n$.                                                                                             |
+| **Dimensione $\dim V$**                   | Numero di elementi di una (qualunque) base (Steinitz); $\dim\{\mathbf 0\}=0$.                                                                 |
+| **Dimensione finita**                     | $V$ ha una base finita.                                                                                                                       |
+| **Matrici elementari $E_{ij}$**           | Base di $M_{\mathbb K}(m,n)$; da cui $\dim M_{\mathbb K}(m,n)=mn$.                                                                            |
+| **Matrice simmetrica**                    | $A^{\mathsf T}=A$; le $2\times2$ formano un sottospazio di dimensione $3$.                                                                    |
 
 ---
 
