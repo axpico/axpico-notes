@@ -217,20 +217,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Esercizi/Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti.md"
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md"
               },
               "icon": "lucide-info",
-              "title": "File properties"
-            }
-          },
-          {
-            "id": "11a1f90c9f84a0a4",
-            "type": "leaf",
-            "state": {
-              "type": "auto-note-linker-suggestions",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "auto-note-linker-suggestions"
+              "title": "Proprietà file"
             }
           },
           {
@@ -243,23 +233,25 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1791726688595-drvdgtw",
-                      "conversationId": "conv-1791726909388-k9ehytld3"
+                      "tabId": "tab-1791731069395-r2pqtxa",
+                      "conversationId": null,
+                      "draftModel": "sonnet",
+                      "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1791726688595-drvdgtw"
+                  "activeTabId": "tab-1791731069395-r2pqtxa"
                 }
               },
               "icon": "bot",
               "title": "Claudian"
             }
           }
-        ]
+        ],
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
-    "width": 385.501953125,
-    "collapsed": true
+    "width": 549
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -278,10 +270,10 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "9c44b2e155675b7e",
+  "active": "278df55cbb664f14",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Glossario della terminologia.md",
