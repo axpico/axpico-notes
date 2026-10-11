@@ -233,21 +233,20 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1791731069395-r2pqtxa",
+                      "tabId": "tab-1791731311317-eu807f7",
                       "conversationId": null,
                       "draftModel": "sonnet",
                       "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1791731069395-r2pqtxa"
+                  "activeTabId": "tab-1791731311317-eu807f7"
                 }
               },
               "icon": "bot",
               "title": "Claudian"
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "horizontal",
@@ -270,7 +269,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "278df55cbb664f14",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
