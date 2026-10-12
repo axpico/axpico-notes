@@ -312,3 +312,8 @@ int main(void)
 
 
 
+
+## Collegamenti
+- [[Indice]]
+- [[Algoritmo]] · [[Programma]]
+- [[Rappresentazione dei numeri binario, complementi, ASCII, virgola fissa-mobile]]

@@ -11,10 +11,14 @@
             "id": "4dca7b7bcbcaa84a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Analisi 1/Teoria/Confronti e stime asintotiche.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "Confronti e stime asintotiche"
             }
           }
         ]
@@ -42,7 +46,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora file"
+              "title": "Files"
             }
           },
           {
@@ -190,7 +194,7 @@
               "type": "empty",
               "state": {},
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "New tab"
             }
           },
           {
@@ -215,36 +219,37 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1791731311317-eu807f7",
+                      "tabId": "tab-1791819704119-gixwlfa",
                       "conversationId": null,
                       "draftModel": "sonnet",
                       "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1791731311317-eu807f7"
+                  "activeTabId": "tab-1791819704119-gixwlfa"
                 }
               },
               "icon": "bot",
               "title": "Claudian"
             }
           }
-        ]
+        ],
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
-    "width": 549,
+    "width": 404.80859375,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Apri selettore rapido": false,
-      "graph:Apri vista grafo": false,
-      "canvas:Crea nuova lavagna": false,
-      "daily-notes:Apri nota giornaliera": false,
-      "templates:Inserisci modello": false,
-      "command-palette:Apri riquadro comandi": false,
-      "audio-recorder:Avvia/ferma registrazione": false,
-      "bases:Crea nuova Base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "bases:Create new base": false,
       "omnisearch:Omnisearch": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
@@ -254,6 +259,10 @@
   },
   "active": "4dca7b7bcbcaa84a",
   "lastOpenFiles": [
+    "Limiti di successioni — Esercizi.md",
+    "Politecnico/Analisi 1/Teoria/Confronti e stime asintotiche.md",
+    "Politecnico/Analisi 1/Indice.md",
+    "Politecnico/Fondamenti di Informatica/Indice.md",
     "Excalidraw/Drawing 2026-10-11 15.09.32.excalidraw.md",
     "Excalidraw/Drawing 2026-10-11 16.08.36.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
@@ -266,7 +275,6 @@
     "claude_skills/Skill Iconize for obsidian.md",
     "Recording 20261011154059.m4a",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md",
-    "Politecnico/Analisi 1/Indice.md",
     "Excalidraw/Drawing 2026-10-09 15.14.29.excalidraw.md",
     "Politecnico/Analisi 1/Esercizi/Limiti di successioni.md",
     "Politecnico/Analisi 1/Esercizi/Limiti di successioni.md.tmp.16989.19c1d5f99884",
@@ -287,9 +295,6 @@
     "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md.tmp.7730.1d4b9bd7f36e",
     "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
     "Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md",
-    "Politecnico/Analisi 1/Teoria/Funzioni.md",
-    "Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md",
-    "Excalidraw/Drawing 2026-10-07 10.04.24.excalidraw.md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",

@@ -24,3 +24,4 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 7. [[Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti|Algebra dei limiti e teoremi sui limiti]]
 8. [[Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli|Successioni monotone, infinitesimi e limiti notevoli]]
    - Esercizi: [[Politecnico/Analisi 1/Esercizi/Limiti di successioni|Limiti di successioni — Esercizi]]
+9. [[Politecnico/Analisi 1/Teoria/Confronti e stime asintotiche|Confronti e stime asintotiche]]
