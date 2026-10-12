@@ -250,7 +250,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 549
+    "width": 549,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -269,7 +270,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "9c44b2e155675b7e",
   "lastOpenFiles": [
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
