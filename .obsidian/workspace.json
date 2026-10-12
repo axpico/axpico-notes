@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "25c09e8361034d29",
+        "id": "9db5343e8ed7f9d4",
         "type": "tabs",
         "children": [
           {
-            "id": "9c44b2e155675b7e",
+            "id": "4dca7b7bcbcaa84a",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-10-11 15.09.32.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-11 15.09.32.excalidraw"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -234,7 +232,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 549
+    "width": 549,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -253,10 +252,10 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "9c44b2e155675b7e",
+  "active": "4dca7b7bcbcaa84a",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-10-11 16.08.36.excalidraw.md",
     "Excalidraw/Drawing 2026-10-11 15.09.32.excalidraw.md",
+    "Excalidraw/Drawing 2026-10-11 16.08.36.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
