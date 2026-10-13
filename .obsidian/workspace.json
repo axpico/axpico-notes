@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9fdb20f993bab52f",
+        "id": "6713338658d870b7",
         "type": "tabs",
         "children": [
           {
-            "id": "4b6c77036b2d729d",
+            "id": "104a4147683bc1bc",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -76,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 282.5,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -227,12 +228,12 @@
               "title": "Claudian"
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 404.80859375
+    "width": 404.80859375,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -251,11 +252,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "278df55cbb664f14",
+  "active": "104a4147683bc1bc",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/Esami vecchi/2018/PrimoParziale 2018.pdf",
     "Politecnico/Analisi 1/Esami vecchi/2023/Settembre 23.pdf",
     "Politecnico/Analisi 1/Indice.md",
-    "Politecnico/Analisi 1/Esami vecchi/2018/PrimoParziale 2018.pdf",
     "Politecnico/Analisi 1/Esami vecchi/2018",
     "Politecnico/Analisi 1/Esami vecchi/2023/Prima Prova Parziale 6-11-23.pdf",
     "Politecnico/Analisi 1/Esami vecchi/2023/Luglio 23.pdf",
