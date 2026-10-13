@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "bc1c3a2da070a9df",
+        "id": "9fdb20f993bab52f",
         "type": "tabs",
         "children": [
           {
-            "id": "dfab60fd5bb4f51d",
+            "id": "4b6c77036b2d729d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -214,13 +214,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1791885757344-jeske4k",
+                      "tabId": "tab-1791885907857-9sxr05a",
                       "conversationId": null,
                       "draftModel": "sonnet",
                       "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1791885757344-jeske4k"
+                  "activeTabId": "tab-1791885907857-9sxr05a"
                 }
               },
               "icon": "bot",
@@ -253,19 +253,19 @@
   },
   "active": "278df55cbb664f14",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL1.pdf",
-    "Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL2.pdf",
-    "Politecnico/Analisi 1/Teoria/Confronti e stime asintotiche.md",
-    "Politecnico/Analisi 1/Esami vecchi/Agosto 2019.pdf",
-    "Politecnico/Analisi 1/Esami vecchi/Febbraio 2019.pdf",
-    "Politecnico/Analisi 1/Esami vecchi/Giugno 2019.pdf",
-    "Politecnico/Analisi 1/Esami vecchi/Luglio 2019.pdf",
-    "Politecnico/Analisi 1/Esami vecchi/PrimoParziale 2018.pdf",
-    "Politecnico/Analisi 1/Esami vecchi/SecondoParziale 2019.pdf",
-    "Politecnico/Analisi 1/Esami vecchi/Agosto 22.pdf",
-    "Politecnico/Analisi 1/Esami vecchi/Febbraio 22.pdf",
-    "Limiti di successioni — Esercizi.md",
+    "Politecnico/Analisi 1/Esami vecchi/2023/Settembre 23.pdf",
     "Politecnico/Analisi 1/Indice.md",
+    "Politecnico/Analisi 1/Esami vecchi/2018/PrimoParziale 2018.pdf",
+    "Politecnico/Analisi 1/Esami vecchi/2018",
+    "Politecnico/Analisi 1/Esami vecchi/2023/Prima Prova Parziale 6-11-23.pdf",
+    "Politecnico/Analisi 1/Esami vecchi/2023/Luglio 23.pdf",
+    "Politecnico/Analisi 1/Esami vecchi/2023/Gennaio 2023.pdf",
+    "Politecnico/Analisi 1/Esami vecchi/2023/Febbraio 23.pdf",
+    "Politecnico/Analisi 1/Esami vecchi/2023",
+    "Politecnico/Analisi 1/Esami vecchi/2024/Novembre 2024-Soluzioni.pdf",
+    "Politecnico/Analisi 1/Esami vecchi/2024/EsameLuglio2024-Soluzioni.pdf",
+    "Politecnico/Analisi 1/Teoria/Confronti e stime asintotiche.md",
+    "Limiti di successioni — Esercizi.md",
     "Politecnico/Fondamenti di Informatica/Indice.md",
     "Excalidraw/Drawing 2026-10-11 15.09.32.excalidraw.md",
     "Excalidraw/Drawing 2026-10-11 16.08.36.excalidraw.md",
