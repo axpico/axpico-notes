@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9db5343e8ed7f9d4",
+        "id": "bc1c3a2da070a9df",
         "type": "tabs",
         "children": [
           {
-            "id": "4dca7b7bcbcaa84a",
+            "id": "dfab60fd5bb4f51d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Politecnico/Analisi 1/Teoria/Confronti e stime asintotiche.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Confronti e stime asintotiche"
+              "title": "New tab"
             }
           }
         ]
@@ -80,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -219,13 +214,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1791819704119-gixwlfa",
+                      "tabId": "tab-1791885757344-jeske4k",
                       "conversationId": null,
                       "draftModel": "sonnet",
                       "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1791819704119-gixwlfa"
+                  "activeTabId": "tab-1791885757344-jeske4k"
                 }
               },
               "icon": "bot",
@@ -237,8 +232,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 404.80859375,
-    "collapsed": true
+    "width": 404.80859375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -257,10 +251,20 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "4dca7b7bcbcaa84a",
+  "active": "278df55cbb664f14",
   "lastOpenFiles": [
-    "Limiti di successioni — Esercizi.md",
+    "Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL1.pdf",
+    "Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL2.pdf",
     "Politecnico/Analisi 1/Teoria/Confronti e stime asintotiche.md",
+    "Politecnico/Analisi 1/Esami vecchi/Agosto 2019.pdf",
+    "Politecnico/Analisi 1/Esami vecchi/Febbraio 2019.pdf",
+    "Politecnico/Analisi 1/Esami vecchi/Giugno 2019.pdf",
+    "Politecnico/Analisi 1/Esami vecchi/Luglio 2019.pdf",
+    "Politecnico/Analisi 1/Esami vecchi/PrimoParziale 2018.pdf",
+    "Politecnico/Analisi 1/Esami vecchi/SecondoParziale 2019.pdf",
+    "Politecnico/Analisi 1/Esami vecchi/Agosto 22.pdf",
+    "Politecnico/Analisi 1/Esami vecchi/Febbraio 22.pdf",
+    "Limiti di successioni — Esercizi.md",
     "Politecnico/Analisi 1/Indice.md",
     "Politecnico/Fondamenti di Informatica/Indice.md",
     "Excalidraw/Drawing 2026-10-11 15.09.32.excalidraw.md",
@@ -273,28 +277,17 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md",
     "claude_skills/Skill Iconize for obsidian.md",
-    "Recording 20261011154059.m4a",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md",
     "Excalidraw/Drawing 2026-10-09 15.14.29.excalidraw.md",
     "Politecnico/Analisi 1/Esercizi/Limiti di successioni.md",
-    "Politecnico/Analisi 1/Esercizi/Limiti di successioni.md.tmp.16989.19c1d5f99884",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md.tmp.13054.7d8703c894a3",
     "Excalidraw/Drawing 2026-10-09 12.52.31.excalidraw.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md.tmp.13054.171e4c8daa84",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md.tmp.13054.13d8cd15618b",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md.tmp.13054.3b8567ed96a2",
     "Excalidraw/Drawing 2026-10-08 13.28.52.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md",
-    "04 Applicazioni lineari. Nucleo ed immagine. Sistemi di riferimento. Basi e dimensione. Teorema di rappresentazione (matrice rappresentativa). Basi ed isomorfismi.pdf",
     "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
     "Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi.md",
     "Excalidraw/Drawing 2026-10-07 15.17.50.excalidraw.md",
-    "Politecnico/Geometria e Algebra Lineare/Esercizi/Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi.md.tmp.23409.4541ec0f0156",
-    "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md.tmp.7730.247d68e356a8",
-    "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md.tmp.7730.1d4b9bd7f36e",
     "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
-    "Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",

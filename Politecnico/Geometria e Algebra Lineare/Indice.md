@@ -39,3 +39,7 @@ Consultazione rapida: [[Politecnico/Geometria e Algebra Lineare/Teoria/Glossario
 14. [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale)|Applicazioni (terminologia generale)]]
 15. [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine|Applicazioni lineari, nucleo e immagine]]
 16. [[Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa|Teorema di rappresentazione e matrice rappresentativa]]
+
+## PDF — Esercizi
+- [[Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL1.pdf|EserciziGAL1]]
+- [[Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL2.pdf|EserciziGAL2]]
