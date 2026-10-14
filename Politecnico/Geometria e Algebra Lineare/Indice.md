@@ -44,3 +44,25 @@ Consultazione rapida: [[Politecnico/Geometria e Algebra Lineare/Teoria/Glossario
 ## PDF — Esercizi
 - [[Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL1.pdf|EserciziGAL1]]
 - [[Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL2.pdf|EserciziGAL2]]
+
+## PDF — Esami vecchi
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/Esempio Parte C con soluzioni.pdf|Esempio Parte C con soluzioni]]
+
+### 2024-2025
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2024-2025/0. Prova in itinere 2024.pdf|0. Prova in itinere 2024]]
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2024-2025/1. Parte A gennaio 2025.pdf|1. Parte A gennaio 2025]]
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2024-2025/1. Parte B gennaio 2025.pdf|1. Parte B gennaio 2025]]
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2024-2025/1. Parte C gennaio 2025.pdf|1. Parte C gennaio 2025]]
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2024-2025/2. Parte A febbraio 2025.pdf|2. Parte A febbraio 2025]]
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2024-2025/2. Parte B febbraio 2025.pdf|2. Parte B febbraio 2025]]
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2024-2025/3. Parte C febbraio 2025.pdf|3. Parte C febbraio 2025]]
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2024-2025/5. Parte A settembre 2025.pdf|5. Parte A settembre 2025]]
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2024-2025/5. Parte B settembre 2025.pdf|5. Parte B settembre 2025]]
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2024-2025/5. Parte C settembre 2025.pdf|5. Parte C settembre 2025]]
+
+### 2025-2026
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2025-2026/0. Prova parziale 11 nov 2025.pdf|0. Prova parziale 11 nov 2025]]
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2025-2026/1. Parte-AB 20.01.2026.pdf|1. Parte-AB 20.01.2026]]
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2025-2026/1. Parte-C 20.01.2026.pdf|1. Parte-C 20.01.2026]]
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2025-2026/2. GAL-AB-feb2026 con soluzioni.pdf|2. GAL-AB-feb2026 con soluzioni]]
+- [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2025-2026/3. GAL-AB-June2026 con soluzioni.pdf|3. GAL-AB-June2026 con soluzioni]]

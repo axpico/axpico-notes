@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "797ba3e09b5b3c7c",
+        "id": "16397298e0dffc9f",
         "type": "tabs",
         "children": [
           {
-            "id": "57e7e1000dfea522",
+            "id": "857bab47ddb8134e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Politecnico/Analisi 1/Teoria/Serie numeriche.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Serie numeriche"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -55,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#index",
+                "query": "tag:Elettromagnetismo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -219,20 +214,19 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792001531179-qjz9itp",
-                      "conversationId": null,
-                      "draftModel": "sonnet",
-                      "providerId": "claude"
+                      "tabId": "tab-1792005311727-5kwhutg",
+                      "conversationId": "conv-1792005346199-0s23q3zd0"
                     }
                   ],
-                  "activeTabId": "tab-1792001531179-qjz9itp"
+                  "activeTabId": "tab-1792005311727-5kwhutg"
                 }
               },
               "icon": "bot",
               "title": "Claudian"
             }
           }
-        ]
+        ],
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
@@ -255,44 +249,44 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "57e7e1000dfea522",
+  "active": "41c9241263f38e27",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Teoria/Serie numeriche.md",
-    "claude_skills/claude_skills index.md",
-    "Politecnico/Analisi 1/Teoria/Confronti e stime asintotiche.md",
-    "Excalidraw/Drawing 2026-10-11 16.08.36.excalidraw.md",
-    "Politecnico/Analisi 1/Teoria/Serie numeriche.md.tmp.63359.2836bc291d9d",
-    "Politecnico/Analisi 1/Teoria/Confronti e stime asintotiche.md.tmp.63359.4bd2fd9a3231",
-    "Excalidraw/Drawing 2026-10-14 15.22.26.excalidraw.md",
-    "Politecnico/Geometria e Algebra Lineare/Esercizi/Isomorfismi, basi, dipendenza lineare e somma di sottospazi — Esercizi corretti.md",
-    "Politecnico/Geometria e Algebra Lineare/Esercizi/Isomorfismi, basi, dipendenza lineare e somma di sottospazi — Esercizi corretti.md.tmp.15412.ddd5dc1d84b5",
-    "Politecnico/Analisi 1/Esami vecchi/2018/PrimoParziale 2018.pdf",
-    "Politecnico/Analisi 1/Esami vecchi/2023/Settembre 23.pdf",
-    "Politecnico/Analisi 1/Indice.md",
-    "Politecnico/Analisi 1/Esami vecchi/2018",
-    "Politecnico/Analisi 1/Esami vecchi/2023/Prima Prova Parziale 6-11-23.pdf",
-    "Politecnico/Analisi 1/Esami vecchi/2023/Luglio 23.pdf",
-    "Politecnico/Analisi 1/Esami vecchi/2023/Gennaio 2023.pdf",
-    "Politecnico/Analisi 1/Esami vecchi/2023/Febbraio 23.pdf",
-    "Limiti di successioni — Esercizi.md",
-    "Politecnico/Fondamenti di Informatica/Indice.md",
-    "Excalidraw/Drawing 2026-10-11 15.09.32.excalidraw.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
-    "Politecnico/Geometria e Algebra Lineare/Indice.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Glossario della terminologia.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md",
-    "claude_skills/Skill Iconize for obsidian.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md",
-    "Excalidraw/Drawing 2026-10-09 15.14.29.excalidraw.md",
-    "Politecnico/Analisi 1/Esercizi/Limiti di successioni.md",
-    "Excalidraw/Drawing 2026-10-09 12.52.31.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-08 13.28.52.excalidraw.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md",
-    "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
-    "Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Agosto 2022.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Febbraio 2022.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Gennaio 2022.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Novembre 2022 (I prova in itinere).md",
+    "Formulario/Elettromagnetismo/Energia Potenziale Magnetica.md",
+    "Campo Magnetico.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Agosto 2026.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Luglio 2026.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Giugno 2026.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Febbraio 2026.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Febbraio 2023.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Gennaio 2026.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Novembre 2023 (prima prova parziale).md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Settembre 2023.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Luglio 2023.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Gennaio 2023.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Febbraio 2024.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Gennaio 2024.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Giugno 2024.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Settembre 2024.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Luglio 2024.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Febbraio 2025.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Gennaio 2025.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Settembre 2025.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Giugno 2025.md",
+    "Politecnico/Analisi 1/Esercizi non svolti/Luglio 2025.md",
+    "Politecnico/Geometria e Algebra Lineare/Esercizi non svolti",
+    "Politecnico/Analisi 1/Esercizi non svolti",
+    "Politecnico/Geometria e Algebra Lineare/Esami vecchi/Esempio Parte C con soluzioni.pdf",
+    "Politecnico/Geometria e Algebra Lineare/Esami vecchi/2025-2026/3. GAL-AB-June2026 con soluzioni.pdf",
+    "Politecnico/Geometria e Algebra Lineare/Esami vecchi/2025-2026/2. GAL-AB-feb2026 con soluzioni.pdf",
+    "Politecnico/Geometria e Algebra Lineare/Esami vecchi/2025-2026/1. Parte-C 20.01.2026.pdf",
+    "Politecnico/Geometria e Algebra Lineare/Esami vecchi/2025-2026/1. Parte-AB 20.01.2026.pdf",
+    "Politecnico/Geometria e Algebra Lineare/Esami vecchi/2025-2026/0. Prova parziale 11 nov 2025.pdf",
+    "Politecnico/Geometria e Algebra Lineare/Esami vecchi/2025-2026",
+    "Politecnico/Geometria e Algebra Lineare/Esami vecchi/2024-2025/5. Parte C settembre 2025.pdf",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",

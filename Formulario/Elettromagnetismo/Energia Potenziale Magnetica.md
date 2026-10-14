@@ -7,7 +7,7 @@ tags:
 ---
 # Energia Potenziale Magnetica
 
-**Energia potenziale di orientamento di una spira (dipolo magnetico) in un [[Campo Magnetico]] uniforme:**
+**Energia potenziale di orientamento di una spira (dipolo magnetico) in un Campo Magnetico uniforme:**
 $$U = -\vec m \cdot \vec B$$
 
 Dove:
