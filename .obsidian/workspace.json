@@ -250,7 +250,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 404.80859375
+    "width": 404.80859375,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -269,7 +270,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "57e7e1000dfea522",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/Teoria/Confronti e stime asintotiche.md",
     "Excalidraw/Drawing 2026-10-11 16.08.36.excalidraw.md",
