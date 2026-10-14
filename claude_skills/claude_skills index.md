@@ -1,5 +1,7 @@
 ---
-tags: [claude-skills, index]
+tags:
+  - claude-skills
+  - indice
 ---
 # Indice Skills
 
