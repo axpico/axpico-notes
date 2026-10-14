@@ -18,6 +18,18 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-10-14 15.22.26.excalidraw"
             }
+          },
+          {
+            "id": "0b19600a7cb02723",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-10-11 16.08.36.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-10-11 16.08.36.excalidraw"
+            }
           }
         ]
       }
@@ -234,7 +246,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 404.80859375
+    "width": 404.80859375,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
