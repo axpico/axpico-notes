@@ -33,6 +33,7 @@ Consultazione rapida: [[Politecnico/Geometria e Algebra Lineare/Teoria/Glossario
 12. [[Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato|Combinazioni lineari e sottospazio generato]]
     - Esercizi: [[Politecnico/Geometria e Algebra Lineare/Esercizi/Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti|Vettori, spazi vettoriali, sottospazi]]
     - Esercizi: [[Politecnico/Geometria e Algebra Lineare/Esercizi/Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi|Rango, sottospazi, combinazioni lineari, indipendenza]]
+    - Esercizi: [[Politecnico/Geometria e Algebra Lineare/Esercizi/Isomorfismi, basi, dipendenza lineare e somma di sottospazi — Esercizi corretti|Isomorfismi, basi, dipendenza lineare e somma di sottospazi]]
 13. [[Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate|Basi, dimensione e coordinate]]
 
 ## 5. Applicazioni lineari
