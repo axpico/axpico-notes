@@ -26,6 +26,9 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
    - Esercizi: [[Politecnico/Analisi 1/Esercizi/Limiti di successioni|Limiti di successioni — Esercizi]]
 9. [[Politecnico/Analisi 1/Teoria/Confronti e stime asintotiche|Confronti e stime asintotiche]]
 
+## 4. Serie numeriche
+10. [[Politecnico/Analisi 1/Teoria/Serie numeriche|Serie numeriche]] (telescopiche, geometrica, armonica, criteri del confronto)
+
 ## PDF — Esami vecchi
 - [[Politecnico/Analisi 1/Esami vecchi/2019/Agosto 2019.pdf|Agosto 2019]]
 - [[Politecnico/Analisi 1/Esami vecchi/2026/Agosto 2026.pdf|Agosto 2026]]

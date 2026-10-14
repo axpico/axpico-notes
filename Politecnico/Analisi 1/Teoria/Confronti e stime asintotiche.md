@@ -224,6 +224,38 @@ $$\text{rapporto}\ \sim\ \frac{n^3\cdot\frac7{n^2}\cdot\frac1{n^2}}{\frac1{3n}}=
 
 **Passo 6 — limite.** Il rapporto è equivalente alla costante $21$, quindi converge a $21$.
 
+## 8. Esponenziale e logaritmo: cosa si conserva?
+
+Nel §4 si è visto che $a_n\sim b_n\not\Rightarrow e^{a_n}\sim e^{b_n}$. Qui si precisa cosa succede con $e^{(\cdot)}$ e $\log(\cdot)$.
+
+### 8.1 Esponenziale
+
+**Esempio.** $a_n=n^2+n$, $b_n=n^2$. Allora $\dfrac{a_n}{b_n}=1+\dfrac1n\to1$, cioè $a_n\sim b_n$, ma
+$$\frac{e^{a_n}}{e^{b_n}}=e^{a_n-b_n}=e^{n}\longrightarrow+\infty .$$
+Quindi $e^{a_n}$ è un infinito di **ordine superiore** a $e^{b_n}$: l'esponenziale trasforma una differenza *additiva* $a_n-b_n=n$ (trascurabile rispetto a $b_n$, non rispetto a $1$) in un fattore *moltiplicativo* $e^{n}$.
+
+Criterio corretto: $\;e^{a_n}\sim e^{b_n}\iff a_n-b_n\to0$.
+*(Infatti $\frac{e^{a_n}}{e^{b_n}}=e^{a_n-b_n}\to1\iff a_n-b_n\to0$, per continuità e iniettività di $\exp$.)*
+
+### 8.2 Logaritmo
+
+**Esempio 1 (potenze).** $a_n=n^\beta$, $b_n=n^\alpha$ con $\beta>\alpha>0$. Allora $a_n\gg b_n$ (infinito di ordine superiore), ma
+$$\lim_{n\to\infty}\frac{\log a_n}{\log b_n}=\lim\frac{\beta\log n}{\alpha\log n}=\frac\beta\alpha\in(0,+\infty)$$
+quindi $\log a_n$ e $\log b_n$ sono infiniti **dello stesso ordine**: il logaritmo "schiaccia" gli ordini di infinito delle potenze (non le distingue, a meno di una costante).
+
+**Esempio 2 (equivalenti che non restano tali).** $a_n=1+\frac1n$, $b_n=1+\frac1{n^2}$. Entrambe tendono a $1$ e $\dfrac{a_n}{b_n}\to1$, quindi $a_n\sim b_n$. Però
+$$\frac{\log a_n}{\log b_n}=\frac{\log\left(1+\frac1n\right)}{\log\left(1+\frac1{n^2}\right)}\sim\frac{1/n}{1/n^2}=n\longrightarrow+\infty,$$
+cioè $\log a_n$ è un infinitesimo di ordine **inferiore** a $\log b_n$: $\log a_n\not\sim\log b_n$.
+
+**Teorema.** Se $a_n\sim b_n$ e **$a_n\not\to1$** (quindi, essendo equivalenti, nemmeno $b_n\to1$), allora $\log a_n\sim\log b_n$.
+
+*Dimostrazione.* Con $a_n,b_n>0$:
+$$\frac{\log a_n}{\log b_n}=\frac{\log b_n+\log\frac{a_n}{b_n}}{\log b_n}=1+\frac{\log\frac{a_n}{b_n}}{\log b_n}.$$
+Poiché $\frac{a_n}{b_n}\to1$, il numeratore $\log\frac{a_n}{b_n}\to0$. Il denominatore $\log b_n$ **non tende a $0$** perché $b_n\not\to1$ (se $b_n\to\ell\neq1$, $\ell>0$, allora $\log b_n\to\log\ell\neq0$; se $b_n\to0^+$ o $+\infty$, $|\log b_n|\to\infty$). Dunque la frazione $\to0$ e il rapporto $\to1$. ∎
+
+> [!warning] Dove sta la trappola
+> Il logaritmo "legge" le **differenze relative**: $\log a_n-\log b_n=\log\frac{a_n}{b_n}\to0$ sempre, ma questo basta per l'equivalenza *solo se* $\log b_n$ non è a sua volta infinitesimo. Quando $b_n\to1$ si deve usare $\log(1+\varepsilon_n)\sim\varepsilon_n$ sulle singole successioni, non l'equivalenza di partenza.
+
 ## Riepilogo operativo
 
 1. Identifica la parte **dominante** di ogni fattore (gerarchia degli infiniti, equivalenze notevoli).
