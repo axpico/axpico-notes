@@ -8,15 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "104a4147683bc1bc",
+            "id": "86ab2c22baec0c4f",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Drawing 2026-10-11 16.08.36.excalidraw.md"
+                "file": "Excalidraw/Drawing 2026-10-14 15.22.26.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-11 16.08.36.excalidraw"
+              "title": "Drawing 2026-10-14 15.22.26.excalidraw"
             }
           }
         ]
@@ -234,7 +234,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 404.80859375
+    "width": 404.80859375,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -253,10 +254,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "104a4147683bc1bc",
+  "active": "86ab2c22baec0c4f",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Esami vecchi/2018/PrimoParziale 2018.pdf",
     "Excalidraw/Drawing 2026-10-11 16.08.36.excalidraw.md",
+    "Excalidraw/Drawing 2026-10-14 15.22.26.excalidraw.md",
+    "Politecnico/Analisi 1/Esami vecchi/2018/PrimoParziale 2018.pdf",
     "Politecnico/Analisi 1/Esami vecchi/2023/Settembre 23.pdf",
     "Politecnico/Analisi 1/Indice.md",
     "Politecnico/Analisi 1/Esami vecchi/2018",
