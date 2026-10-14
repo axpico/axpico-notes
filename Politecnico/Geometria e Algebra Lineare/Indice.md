@@ -66,3 +66,14 @@ Consultazione rapida: [[Politecnico/Geometria e Algebra Lineare/Teoria/Glossario
 - [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2025-2026/1. Parte-C 20.01.2026.pdf|1. Parte-C 20.01.2026]]
 - [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2025-2026/2. GAL-AB-feb2026 con soluzioni.pdf|2. GAL-AB-feb2026 con soluzioni]]
 - [[Politecnico/Geometria e Algebra Lineare/Esami vecchi/2025-2026/3. GAL-AB-June2026 con soluzioni.pdf|3. GAL-AB-June2026 con soluzioni]]
+
+## Esercizi d'esame non svolti (senza soluzioni)
+
+- [[Politecnico/Geometria e Algebra Lineare/Esercizi non svolti/Febbraio 2026 (12-02-2026).md|Febbraio 2026 (12-02-2026)]]
+- [[Politecnico/Geometria e Algebra Lineare/Esercizi non svolti/Gennaio 2026 (20-01-2026).md|Gennaio 2026 (20-01-2026)]]
+- [[Politecnico/Geometria e Algebra Lineare/Esercizi non svolti/Giugno 2026 (23-06-2026).md|Giugno 2026 (23-06-2026)]]
+- [[Politecnico/Geometria e Algebra Lineare/Esercizi non svolti/Febbraio 2025 (03-02-2025).md|Febbraio 2025 (03-02-2025)]]
+- [[Politecnico/Geometria e Algebra Lineare/Esercizi non svolti/Gennaio 2025 (15-01-2025).md|Gennaio 2025 (15-01-2025)]]
+- [[Politecnico/Geometria e Algebra Lineare/Esercizi non svolti/Prova in itinere 11-11-2025.md|Prova in itinere 11-11-2025]]
+- [[Politecnico/Geometria e Algebra Lineare/Esercizi non svolti/Settembre 2025 (05-09-2025).md|Settembre 2025 (05-09-2025)]]
+- [[Politecnico/Geometria e Algebra Lineare/Esercizi non svolti/Prova in itinere 13-11-2024 (Parte A).md|Prova in itinere 13-11-2024 (Parte A)]]
