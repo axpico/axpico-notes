@@ -41,9 +41,6 @@ $$S_n=\left(1-\tfrac12\right)+\left(\tfrac12-\tfrac13\right)+\left(\tfrac13-\tfr
 Quindi
 $$\sum_{k=1}^{\infty}\frac1{k(k+1)}=\lim_{n\to\infty}\left(1-\frac1{n+1}\right)=1\quad\Rightarrow\quad\text{serie convergente, somma }1.$$
 
-> [!bug] Correzione agli appunti a mano
-> Nel foglio le righe "$S_1=1-\frac12,\ S_2=\frac12-\frac13,\ S_3=\frac13-\frac14$" sono in realtà i **termini** $a_1,a_2,a_3$, non le somme parziali. Le somme parziali sono $S_1=\frac12,\ S_2=\frac23,\ S_3=\frac34,\dots,S_n=1-\frac1{n+1}$.
-
 ### 2.2 Caso generale
 
 Se $a_k=A_{k+1}-A_k$ con $A_k\to0$ allora
@@ -202,9 +199,6 @@ allora, per $a_n\ge0$:
 |---|---|
 | $\ell\in[0,+\infty)$ e $\alpha>1$ | $\sum a_n$ **converge** |
 | $\ell\in(0,+\infty]$ e $\alpha\le1$ | $\sum a_n$ **diverge** |
-
-> [!bug] Correzione agli appunti a mano
-> Il foglio riporta "(ii) $\ell\in(0,\infty)$, $0\le\alpha<1$": il caso **$\alpha=1$** deve essere incluso (è il confronto con la serie armonica, usato nell'Esercizio 3 qui sotto), e $\ell=+\infty$ è ammesso. La condizione corretta è $\alpha\le1$ e $\ell\in(0,+\infty]$.
 
 ### 8.2 Corollario (asintotico)
 
