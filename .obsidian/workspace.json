@@ -11,10 +11,12 @@
             "id": "104a4147683bc1bc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-10-11 16.08.36.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-10-11 16.08.36.excalidraw"
             }
           }
         ]
@@ -255,6 +257,7 @@
   "active": "104a4147683bc1bc",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/Esami vecchi/2018/PrimoParziale 2018.pdf",
+    "Excalidraw/Drawing 2026-10-11 16.08.36.excalidraw.md",
     "Politecnico/Analisi 1/Esami vecchi/2023/Settembre 23.pdf",
     "Politecnico/Analisi 1/Indice.md",
     "Politecnico/Analisi 1/Esami vecchi/2018",
@@ -269,7 +272,6 @@
     "Limiti di successioni — Esercizi.md",
     "Politecnico/Fondamenti di Informatica/Indice.md",
     "Excalidraw/Drawing 2026-10-11 15.09.32.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-11 16.08.36.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
