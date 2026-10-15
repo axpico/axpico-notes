@@ -136,12 +136,38 @@ Dire se $P_1(0,5)$ e $P_2(3,4)$ appartengono alla retta (1): $x=1+t,\ y=2-3t$.
 - $P_1$: $0=1+t$ e $5=2-3t$. Dalla prima $t=-1$; la seconda: $2-3(-1)=5$ ✓. Il sistema ha l'unica soluzione $t=-1$, quindi $P_1\in\ell$. (Con la cartesiana: $3\cdot0+5=5$ ✓.)
 - $P_2$: $3=1+t$ e $4=2-3t$. Dalla prima $t=2$; la seconda darebbe $2-6=-4\ne4$. Sistema **incompatibile**, quindi $P_2\notin\ell$. (Cartesiana: $3\cdot3+4=13\ne5$.)
 
+**Grafico** (retta $3x+y=5$, punti $A,B$ sulla retta, $P_1$ sulla retta, $P_2$ fuori):
+
+```desmos-graph
+left=-2; right=5;
+top=8; bottom=-3;
+---
+y=5-3x
+(1,2)|label:A
+(2,-1)|label:B
+(0,5)|label:P1
+(3,4)|label:P2
+```
+
 #### Esempio 7 — dal cartesiano al parametrico: un piano
 
 Piano $x+2y-3z=4$. È un sistema di **un'equazione** in 3 incognite: $x$ dipendente, $y,z$ libere. Poniamo $y=t,\ z=s$:
 $$x=4-2t+3s .$$
 $$\begin{bmatrix}x\\y\\z\end{bmatrix}=\underbrace{\begin{bmatrix}4\\0\\0\end{bmatrix}}_{\mathbf r_0}+t\underbrace{\begin{bmatrix}-2\\1\\0\end{bmatrix}}_{\mathbf u}+s\underbrace{\begin{bmatrix}3\\0\\1\end{bmatrix}}_{\mathbf v},\qquad t,s\in\mathbb R .$$
 È il piano per $O_\Pi(4,0,0)$, $A=O_\Pi+\mathbf u=(2,1,0)$, $B=O_\Pi+\mathbf v=(7,0,1)$. Controllo: $2+2\cdot1=4$ ✓, $7-3\cdot1=4$ ✓. La mappa $(t,s)\mapsto$ punto è una biiezione tra $\mathbb R^2$ e il piano.
+
+**Grafico (curve di livello).** Fissando $z=c$ il piano $x+2y-3z=4$ taglia il piano $(x,y)$ nella retta $x+2y=4+3c$: al variare di $c$ si ottiene una famiglia di rette parallele. Qui $z=0$ e $z=1$, con le proiezioni su $(x,y)$ di $O_\Pi$, $A$ (entrambi a $z=0$) e $B$ (a $z=1$):
+
+```desmos-graph
+left=-2; right=10;
+top=5; bottom=-3;
+---
+x+2y=4
+x+2y=7
+(4,0)|label:O_Π (z=0)
+(2,1)|label:A (z=0)
+(7,0)|label:B (z=1)
+```
 
 #### Esempio 8 — dal cartesiano al parametrico: una retta in $\mathbb R^3$
 
@@ -173,6 +199,15 @@ $$\boxed{\ \begin{cases}-2x+y=2\\-3x+z=4\end{cases}\ }$$
 Piano $\mathbf r=(1,0,2)+t(1,1,0)+s(0,1,1)$. Righe: $\mathbf v_1^T=(1,1,0)$, $\mathbf v_2^T=(0,1,1)$. Sistema per $\mathbf u$: $u_1+u_2=0,\ u_2+u_3=0\Rightarrow\mathbf u=\alpha(1,-1,1)$ (una sola variabile libera: $3-2=1$ equazione cartesiana). Allora $x-y+z=1-0+2=3$.
 
 Controllo sui punti $\mathbf r_0=(1,0,2)$, $\mathbf r_0+\mathbf v_1=(2,1,2)$, $\mathbf r_0+\mathbf v_2=(1,1,3)$: $1-0+2=3$ ✓, $2-1+2=3$ ✓, $1-1+3=3$ ✓.
+
+**Grafico** (piano $x-y+z=3$, cioè $z=3-x+y$, con $\mathbf r_0$, $\mathbf r_0+\mathbf v_1$, $\mathbf r_0+\mathbf v_2$):
+
+```desmos-graph-3d
+z=3-x+y
+(1,0,2)
+(2,1,2)
+(1,1,3)
+```
 
 ### Schema riassuntivo
 

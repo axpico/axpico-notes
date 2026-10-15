@@ -35,7 +35,8 @@
               "title": "Rette e piani — equazioni parametriche e cartesiane"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,8 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md",
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -136,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md",
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,9 +225,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1792077833438-qovr79r",
-                      "conversationId": null,
-                      "draftModel": "sonnet",
-                      "providerId": "claude"
+                      "conversationId": "conv-1792078757833-aryh1v1dm"
                     }
                   ],
                   "activeTabId": "tab-1792077833438-qovr79r"
@@ -237,7 +235,8 @@
               "title": "Claudian"
             }
           }
-        ]
+        ],
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -260,12 +259,12 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "2b55081ebe251e76",
+  "active": "278df55cbb664f14",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Glossario della terminologia.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md",
     "Politecnico/Geometria e Algebra Lineare/sediUnELx",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Cambio di base, rette e piani — Esercizi svolti.md",
     "Politecnico/Geometria e Algebra Lineare/05 Passaggi tra due basi e due sistemi di riferimento. Equazioni cartesiane e parametriche di rette e piani. Rappresentazione di span lineare come nucleo di una matrice.pdf",
