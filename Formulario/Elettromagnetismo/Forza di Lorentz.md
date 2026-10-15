@@ -7,7 +7,7 @@ tags:
 ---
 # Forza di Lorentz
 
-**Forza su una carica in moto in presenza di [[Campo Elettrico]] e [[Campo Magnetico]]:**
+**Forza su una carica in moto in presenza di [[Campo Elettrico]] e Campo Magnetico:**
 $$\vec F = q\vec E + q\vec v \times \vec B$$
 
 Dove:

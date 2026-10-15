@@ -7,7 +7,7 @@ tags:
 ---
 # Raggio di Ciclotrone
 
-**Raggio della traiettoria circolare di una carica in moto perpendicolare a un [[Campo Magnetico]] uniforme (da [[Forza di Lorentz]] = forza centripeta):**
+**Raggio della traiettoria circolare di una carica in moto perpendicolare a un Campo Magnetico uniforme (da [[Forza di Lorentz]] = forza centripeta):**
 $$r = \frac{mv}{qB}$$
 
 Dove:

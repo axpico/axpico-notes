@@ -7,7 +7,7 @@ tags:
 ---
 # Momento Torcente su una Spira
 
-**Momento meccanico su una spira percorsa da corrente immersa in un [[Campo Magnetico]] uniforme:**
+**Momento meccanico su una spira percorsa da corrente immersa in un Campo Magnetico uniforme:**
 $$\vec \tau = \vec m \times \vec B \qquad \tau = IAB\sin\theta$$
 
 Dove:

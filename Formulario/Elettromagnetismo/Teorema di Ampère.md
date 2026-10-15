@@ -7,7 +7,7 @@ tags:
 ---
 # Teorema di Ampère
 
-**Circuitazione del [[Campo Magnetico]] lungo un percorso chiuso:**
+**Circuitazione del Campo Magnetico lungo un percorso chiuso:**
 $$\oint_\gamma \vec B \cdot d\vec l = \mu_0 I_{conc}$$
 
 Dove:

@@ -7,7 +7,7 @@ tags:
 ---
 # Forza di Laplace
 
-**Forza su un filo percorso da corrente immerso in un [[Campo Magnetico]] uniforme:**
+**Forza su un filo percorso da corrente immerso in un Campo Magnetico uniforme:**
 $$\vec F = I\,\vec l \times \vec B$$
 
 Dove:

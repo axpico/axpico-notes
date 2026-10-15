@@ -7,7 +7,7 @@ tags:
 ---
 # Periodo di Ciclotrone
 
-**Periodo del moto circolare di una carica in un [[Campo Magnetico]] uniforme (da [[Raggio di Ciclotrone]]):**
+**Periodo del moto circolare di una carica in un Campo Magnetico uniforme (da [[Raggio di Ciclotrone]]):**
 $$T = \frac{2\pi m}{qB}$$
 
 Dove:

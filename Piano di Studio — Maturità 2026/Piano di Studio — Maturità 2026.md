@@ -3,6 +3,7 @@ tags:
   - maturita-2026
   - piano-di-studio
   - calendario
+  - indice
 ---
 ## ITALIANO — 23 mag / 1 giu
 
