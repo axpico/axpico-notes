@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "273da22c0a82356d",
+        "id": "12a58bb1bfa6c174",
         "type": "tabs",
         "children": [
           {
-            "id": "37bb8cb577621003",
+            "id": "cdc5944192f8e9e1",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Politecnico/Analisi 1/Dimostrazioni/Programma di massima e bibliografia.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Programma di massima e bibliografia"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -216,11 +214,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792007089949-29p7m9w",
-                      "conversationId": "conv-1792064866312-zwv1hzvvb"
+                      "tabId": "tab-1792066190936-qzpl7cv",
+                      "conversationId": null,
+                      "draftModel": "sonnet",
+                      "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1792007089949-29p7m9w"
+                  "activeTabId": "tab-1792066190936-qzpl7cv"
                 }
               },
               "icon": "bot",
@@ -231,8 +231,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 404.80859375,
-    "collapsed": true
+    "width": 404.80859375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -251,44 +250,44 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "37bb8cb577621003",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/Esami",
-    "Politecnico/Analisi 1/Esami",
-    "Politecnico/Analisi 1/Dimostrazioni",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.7 Formule di de Moivre - prodotto e potenze (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.6 Disuguaglianza triangolare (★★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.5 Somma di una progressione geometrica (★★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.1 Parità di quadrati (★★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.2 √2 è irrazionale (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Politecnico/Analisi 1/Dimostrazioni/Programma di massima e bibliografia.pdf",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Non svolti/Febbraio 2025 (03-02-2025).md",
-    "Piano di Studio — Maturità 2026/Piano di Studio — Maturità 2026.md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2022 (I prova in itinere).md",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Non svolti/Giugno 2026 (23-06-2026).md",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Non svolti/Febbraio 2026 (12-02-2026).md",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Non svolti/Gennaio 2026 (20-01-2026).md",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Non svolti/Settembre 2025 (05-09-2025).md",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Non svolti/Gennaio 2025 (15-01-2025).md",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Non svolti/Prova in itinere 11-11-2025.md",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Non svolti/Prova in itinere 13-11-2024 (Parte A).md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2018 (primo parziale).md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Gennaio 2019 (secondo parziale).md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Luglio 2019.md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Giugno 2019.md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Febbraio 2019.md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Agosto 2019.md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Giugno 2022 (II appello, 27 giugno).md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Giugno 2022 (I appello, 9 giugno).md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Agosto 2022.md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Febbraio 2022.md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Gennaio 2022.md",
-    "Formulario/Elettromagnetismo/Energia Potenziale Magnetica.md",
-    "Campo Magnetico.md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Agosto 2026.md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Luglio 2026.md",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Non svolti",
-    "Politecnico/Analisi 1/Esami/Non svolti",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/Esempio Parte C con soluzioni.pdf",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/3. GAL-AB-June2026 con soluzioni.pdf",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/2. GAL-AB-feb2026 con soluzioni.pdf",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/1. Parte-C 20.01.2026.pdf",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/1. Parte-AB 20.01.2026.pdf",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte (Sezioni 1-3).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.4 Algebra delle derivate - prodotto e quoziente (★★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 2 - Successioni e limiti/2.8 Limiti notevoli di potenza e radice n-esima (★★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.7 Convergenza assoluta ⟹ convergenza semplice (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.6 Criterio del rapporto (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.5 Criterio del confronto asintotico (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.3 Serie geometrica (★★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.4 Criterio del confronto (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.2 Carattere delle serie a termini non negativi (★★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.1 Condizione necessaria di convergenza (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.9 Natura dei punti stazionari (★★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.8 Test di monotonia e funzioni costanti (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.7 Teorema di Lagrange (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.6 Teorema di Rolle (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.5 Teorema di Fermat (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.4 Algebra delle derivate",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.3 Differenziabilità ⟺ derivabilità (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.2 Derivate di alcune funzioni elementari (★★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.11 Formula di Taylor con resto di Peano (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.1 Derivabile ⟹ continua (★).md",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 6 - Calcolo integrale",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 4 - Limiti di funzioni e continuità",
+    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 2 - Successioni e limiti/2.8 Limiti notevoli",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 2 - Successioni e limiti/2.3 Algebra dei limiti",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 2 - Successioni e limiti",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",

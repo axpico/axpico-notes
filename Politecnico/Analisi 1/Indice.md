@@ -7,6 +7,8 @@ tags:
 
 Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 
+Dimostrazioni richieste (con esercizi e soluzioni): [[Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni|Indice Dimostrazioni]]
+
 ## 1. Fondamenti
 1. [[Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni|Insiemi numerici, logica e dimostrazioni]]
 2. [[Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ|Estremo superiore/inferiore, completezza di ℝ]]
