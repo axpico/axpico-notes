@@ -65,3 +65,5 @@ La corrispondenza $P\mapsto(x,y)$ è una biiezione $\mathcal E\to\mathbb R^2$ ch
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md|Vettori geometrici liberi]]
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md|Applicazioni lineari, nucleo e immagine]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md|Rette e piani — equazioni parametriche e cartesiane]]
+- [[Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md|Cambio di base e matrice di passaggio]]

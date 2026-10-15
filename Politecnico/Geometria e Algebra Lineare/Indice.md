@@ -40,6 +40,13 @@ Consultazione rapida: [[Politecnico/Geometria e Algebra Lineare/Teoria/Glossario
 14. [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale)|Applicazioni (terminologia generale)]]
 15. [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine|Applicazioni lineari, nucleo e immagine]]
 16. [[Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa|Teorema di rappresentazione e matrice rappresentativa]]
+17. [[Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio|Cambio di base e matrice di passaggio]]
+
+## 6. Geometria analitica: rette e piani
+18. [[Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane|Rette e piani — equazioni parametriche e cartesiane]] (include span come nucleo di una matrice)
+
+## PDF — Appunti scansionati
+- [[Politecnico/Geometria e Algebra Lineare/05 Passaggi tra due basi e due sistemi di riferimento. Equazioni cartesiane e parametriche di rette e piani. Rappresentazione di span lineare come nucleo di una matrice.pdf|Lezione 5 — Passaggi tra basi, rette e piani, span come nucleo]] → sintetizzata in 17 e 18
 
 ## PDF — Esercizi
 - [[Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL1.pdf|EserciziGAL1]]

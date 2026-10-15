@@ -168,6 +168,23 @@ Ordine alfabetico per area tematica. Ogni voce rimanda alla nota di teoria dove 
 
 ---
 
+### 8. Cambio di base, rette e piani
+*Fonti: [[Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md|Cambio di base e matrice di passaggio]], [[Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md|Rette e piani]]*
+
+| Termine | Significato |
+|---|---|
+| **Vettore delle coordinate $[\mathbf v]_{\mathcal B}$** | Coefficienti di $\mathbf v$ nella base $\mathcal B$. |
+| **Matrice di passaggio $S$ da $\mathcal B$ a $\widetilde{\mathcal B}$** | Colonne = vettori di $\widetilde{\mathcal B}$ in coordinate $\mathcal B$; vale $\mathbf c=S\tilde{\mathbf c}$, $\tilde{\mathbf c}=S^{-1}\mathbf c$. |
+| **Cambio di base per $M(\ell)$** | $\widetilde A=S_W^{-1}AS_V$; per endomorfismi $S^{-1}AS$ (matrici **simili**). |
+| **Mappa di parametrizzazione $P_{\mathcal B}$** | $\mathbf c\mapsto\sum c_j\mathbf v_j$, inversa della mappa di coordinate. |
+| **Mappa identità $\mathrm I$** | $\mathrm I(\mathbf v)=\mathbf v$; $M^{\widetilde{\mathcal B}}_{\mathcal B}(\mathrm I)=S$. |
+| **Vettore posizione** | $\mathbf r_P=\overrightarrow{OP}$ rispetto all'origine $O$. |
+| **Vettore direzione** | Vettore non nullo parallelo alla retta. |
+| **Equazione parametrica** | $\mathbf r=\mathbf r_0+t\mathbf a$ (retta), $\mathbf r=\mathbf r_0+t\mathbf u+s\mathbf v$ (piano). |
+| **Equazioni cartesiane** | Sistema lineare $A\mathbf x=\mathbf b$ che descrive la retta/il piano. |
+| **Span come nucleo** | $\operatorname{span}\{\mathbf v_j\}=\ker A$ dove le righe di $A$ sono una base dei vettori ortogonali ai $\mathbf v_j$. |
+---
+
 ### Simboli utili
 
 | Simbolo | Lettura |
