@@ -11,12 +11,12 @@
             "id": "c3bc99f94a617b55",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "pdf",
               "state": {
-                "file": "Excalidraw/Drawing 2026-10-15 16.07.50.excalidraw.md"
+                "file": "Politecnico/Geometria e Algebra Lineare/05 Passaggi tra due basi e due sistemi di riferimento. Equazioni cartesiane e parametriche di rette e piani. Rappresentazione di span lineare come nucleo di una matrice.pdf"
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-15 16.07.50.excalidraw"
+              "icon": "lucide-file-text",
+              "title": "05 Passaggi tra due basi e due sistemi di riferimento. Equazioni cartesiane e parametriche di rette e piani. Rappresentazione di span lineare come nucleo di una matrice"
             }
           }
         ]
@@ -176,16 +176,6 @@
             }
           },
           {
-            "id": "5565b038db07ac30",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
-          },
-          {
             "id": "56efc63866208b00",
             "type": "leaf",
             "state": {
@@ -234,8 +224,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 404.80859375,
-    "collapsed": true
+    "width": 404.80859375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -256,8 +245,11 @@
   },
   "active": "c3bc99f94a617b55",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.7 Formule di de Moivre - prodotto e potenze (★).md",
     "Excalidraw/Drawing 2026-10-15 16.07.50.excalidraw.md",
+    "Politecnico/Geometria e Algebra Lineare/05 Passaggi tra due basi e due sistemi di riferimento. Equazioni cartesiane e parametriche di rette e piani. Rappresentazione di span lineare come nucleo di una matrice.pdf",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
+    "Politecnico/Geometria e Algebra Lineare/Indice.md",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.7 Formule di de Moivre - prodotto e potenze (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.1 Parità di quadrati (★★).md",
@@ -281,17 +273,13 @@
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.8 Test di monotonia e funzioni costanti (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.7 Teorema di Lagrange (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.6 Teorema di Rolle (★).md",
-    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.5 Teorema di Fermat (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.4 Algebra delle derivate",
-    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.3 Differenziabilità ⟺ derivabilità (★).md",
-    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.2 Derivate di alcune funzioni elementari (★★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 6 - Calcolo integrale",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 4 - Limiti di funzioni e continuità",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 2 - Successioni e limiti/2.8 Limiti notevoli",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 2 - Successioni e limiti/2.3 Algebra dei limiti",
-    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 2 - Successioni e limiti",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",

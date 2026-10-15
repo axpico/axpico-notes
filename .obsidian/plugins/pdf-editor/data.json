@@ -1,0 +1,43 @@
+{
+  "preferences": {
+    "fontSize": 14,
+    "letterSpacing": 0,
+    "lineSpacing": 1.2,
+    "trashImportedOriginals": false,
+    "textAlignment": "left",
+    "textFamily": "sans",
+    "textColor": [
+      0.05,
+      0.05,
+      0.05
+    ],
+    "penColor": [
+      0.085,
+      0.085,
+      0.085
+    ],
+    "markerColor": [
+      1,
+      0.84,
+      0
+    ],
+    "penWidth": 2,
+    "markerWidth": 14,
+    "toolbarTopOffset": 0,
+    "floatingToolbar": true,
+    "autoDetectPageLimit": 50,
+    "keepOriginalBackups": true,
+    "smoothPen": true,
+    "holdShapes": false,
+    "holdHighlighter": true,
+    "snapToText": false,
+    "autoDetectLines": false,
+    "flowAnswerLines": true
+  },
+  "backups": {
+    "Politecnico/Geometria e Algebra Lineare/05 Passaggi tra due basi e due sistemi di riferimento. Equazioni cartesiane e parametriche di rette e piani. Rappresentazione di span lineare come nucleo di una matrice.pdf": {
+      "original": ".obsidian/plugins/pdf-editor/recovery/05 Passaggi tra due basi e due sistemi di riferimento. Equazioni cartesiane e parametriche di rette e piani. Rappresentazione di span lineare come nucleo di una matrice - ca8f4fdf/original.pdf",
+      "originalHash": "3de8404f832e3242aa982a6ea921ad961e1f4d3c4a79971949771414d751d652"
+    }
+  }
+}

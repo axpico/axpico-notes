@@ -1,6 +1,5 @@
 [
   "dataview",
-  "table-editor-obsidian",
   "obsidian-git",
   "obsidian-doubleshift",
   "obsidian-excalidraw-plugin",
@@ -11,5 +10,6 @@
   "obsidian-desmos",
   "advanced-canvas",
   "excalidraw-extras",
-  "obsidian-icon-folder"
+  "obsidian-icon-folder",
+  "pdf-editor"
 ]
