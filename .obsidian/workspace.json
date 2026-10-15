@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Politecnico/Analisi 1/Teoria/Serie numeriche.md",
-                "mode": "preview",
+                "file": "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Serie numeriche"
+              "title": "Indice Dimostrazioni"
             }
           }
         ]
@@ -257,6 +257,8 @@
   },
   "active": "cdc5944192f8e9e1",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/Dimostrazioni/Programma di massima e bibliografia.pdf",
+    "Politecnico/Analisi 1/Teoria/Serie numeriche.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.4 Criterio del confronto (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.7 Formule di de Moivre - prodotto e potenze (★).md",
@@ -265,7 +267,6 @@
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.1 Parità di quadrati (★★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.2 √2 è irrazionale (★).md",
-    "Politecnico/Analisi 1/Dimostrazioni/Programma di massima e bibliografia.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte (Sezioni 1-3).md",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.4 Algebra delle derivate - prodotto e quoziente (★★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 2 - Successioni e limiti/2.8 Limiti notevoli di potenza e radice n-esima (★★).md",
@@ -284,8 +285,6 @@
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.4 Algebra delle derivate",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.3 Differenziabilità ⟺ derivabilità (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.2 Derivate di alcune funzioni elementari (★★).md",
-    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.11 Formula di Taylor con resto di Peano (★).md",
-    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.1 Derivabile ⟹ continua (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 6 - Calcolo integrale",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 4 - Limiti di funzioni e continuità",
