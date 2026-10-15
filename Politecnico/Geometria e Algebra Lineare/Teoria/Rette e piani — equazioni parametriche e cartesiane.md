@@ -200,13 +200,17 @@ Piano $\mathbf r=(1,0,2)+t(1,1,0)+s(0,1,1)$. Righe: $\mathbf v_1^T=(1,1,0)$, $\m
 
 Controllo sui punti $\mathbf r_0=(1,0,2)$, $\mathbf r_0+\mathbf v_1=(2,1,2)$, $\mathbf r_0+\mathbf v_2=(1,1,3)$: $1-0+2=3$ ✓, $2-1+2=3$ ✓, $1-1+3=3$ ✓.
 
-**Grafico** (piano $x-y+z=3$, cioè $z=3-x+y$, con $\mathbf r_0$, $\mathbf r_0+\mathbf v_1$, $\mathbf r_0+\mathbf v_2$):
+**Grafico (curve di livello).** Per $z=c$ il piano $x-y+z=3$ dà la retta $x-y=3-c$. Proiezioni su $(x,y)$ dei tre punti: $\mathbf r_0$ e $\mathbf r_0+\mathbf v_1$ stanno a $z=2$ (stessa retta $x-y=1$), $\mathbf r_0+\mathbf v_2$ a $z=3$ ($x-y=0$):
 
-```desmos-graph-3d
-z=3-x+y
-(1,0,2)
-(2,1,2)
-(1,1,3)
+```desmos-graph
+left=-2; right=5;
+top=4; bottom=-2;
+---
+x-y=1
+x-y=0
+(1,0)|label:r0 (z=2)
+(2,1)|label:r0+v1 (z=2)
+(1,1)|label:r0+v2 (z=3)
 ```
 
 ### Schema riassuntivo

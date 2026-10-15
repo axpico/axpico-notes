@@ -4,7 +4,7 @@
 
 # Plugin Desmos per Obsidian
 
-Il plugin renderizza grafici Desmos interattivi (statici nel export) direttamente dentro le note Obsidian, tramite blocchi di codice con linguaggio `desmos-graph` (2D) o `desmos-graph-3d` (3D, richiede il plugin separato `obsidian-desmos-3d`).
+Il plugin renderizza grafici Desmos interattivi (statici nel export) direttamente dentro le note Obsidian, tramite blocchi di codice con linguaggio `desmos-graph` (solo 2D; il 3D non è supportato).
 
 ## Sintassi base
 
@@ -76,15 +76,9 @@ y=2x|hidden
 ```
 ````
 
-## Grafici 3D (plugin separato)
+## Grafici 3D — NON supportati
 
-Se è installato anche `obsidian-desmos-3d`, si usa lo stesso schema ma con linguaggio `desmos-graph-3d`:
-
-````markdown
-```desmos-graph-3d
-z=x^2+y^2
-```
-````
+Non esiste un plugin Desmos 3D per Obsidian: il linguaggio `desmos-graph-3d` **non esiste**, non usarlo. Per piani/superfici in 3D usa grafici 2D equivalenti, ad esempio le **curve di livello** (fissa `z=c` e disegna le rette/curve risultanti nel piano `(x,y)`, proiettando i punti con la loro quota in etichetta).
 
 ## CSS
 

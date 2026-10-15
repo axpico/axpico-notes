@@ -226,21 +226,26 @@
                     {
                       "tabId": "tab-1792077833438-qovr79r",
                       "conversationId": "conv-1792078757833-aryh1v1dm"
+                    },
+                    {
+                      "tabId": "tab-1792079100203-c737uw8",
+                      "conversationId": null,
+                      "draftModel": "sonnet",
+                      "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1792077833438-qovr79r"
+                  "activeTabId": "tab-1792079100203-c737uw8"
                 }
               },
               "icon": "bot",
               "title": "Claudian"
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 337
+    "width": 239
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -256,13 +261,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
-      "realclaudian:Open Claudian": false
+      "realclaudian:Open Claudian": false,
+      "infranodus-graph-view:InfraNodus Graph View": false,
+      "3d-graph:3D Graph": false
     }
   },
-  "active": "278df55cbb664f14",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Glossario della terminologia.md",
     "Politecnico/Geometria e Algebra Lineare/sediUnELx",
