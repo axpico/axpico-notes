@@ -1,5 +1,5 @@
 ---
-tags: [analisi-1, esame, non-svolti]
+tags: [analisi1, esame, non-svolti]
 ---
 # Analisi 1 — Primo parziale, 07-11-2018 (prof. D. Monticelli) — tre versioni
 

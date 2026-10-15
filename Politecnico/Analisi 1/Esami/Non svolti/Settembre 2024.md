@@ -1,5 +1,5 @@
 ---
-tags: [analisi-1, esame, non-svolti]
+tags: [analisi1, esame, non-svolti]
 ---
 # Analisi 1 — Quinto appello, 09-09-2024
 

@@ -1,5 +1,5 @@
 ---
-tags: [analisi-1, esame, non-svolti]
+tags: [analisi1, esame, non-svolti]
 ---
 # Analisi 1 — Appello del 03-07-2026 (prof. Fabio Punzo)
 

@@ -1,5 +1,5 @@
 ---
-tags: [analisi-1, esame, non-svolti]
+tags: [analisi1, esame, non-svolti]
 ---
 # Analisi 1 — Quarto appello, 05-07-2024 (prof. D.D. Monticelli)
 

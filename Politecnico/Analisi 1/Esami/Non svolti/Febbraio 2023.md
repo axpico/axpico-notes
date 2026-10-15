@@ -1,5 +1,5 @@
 ---
-tags: [analisi-1, esame, non-svolti]
+tags: [analisi1, esame, non-svolti]
 ---
 # Analisi 1 — Secondo appello, 09-02-2023 (prof. D.D. Monticelli)
 

@@ -3,7 +3,6 @@ tags:
   - geometria-algebra-lineare
   - matrici
   - matrice-inversa
-  - algebra-lineare
 ---
 ## Matrici quadrate e matrice inversa
 

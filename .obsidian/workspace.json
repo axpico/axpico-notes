@@ -18,6 +18,16 @@
               "icon": "lucide-file-text",
               "title": "05 Passaggi tra due basi e due sistemi di riferimento. Equazioni cartesiane e parametriche di rette e piani. Rappresentazione di span lineare come nucleo di una matrice"
             }
+          },
+          {
+            "id": "2b55081ebe251e76",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista grafo"
+            }
           }
         ]
       }
@@ -53,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:Elettromagnetismo",
+                "query": "tag:#geometria-algebra-lineare",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +71,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Ricerca"
             }
           },
           {
@@ -78,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -207,24 +216,25 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792066190936-qzpl7cv",
+                      "tabId": "tab-1792077268427-yw1wk0r",
                       "conversationId": null,
                       "draftModel": "sonnet",
                       "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1792066190936-qzpl7cv"
+                  "activeTabId": "tab-1792077268427-yw1wk0r"
                 }
               },
               "icon": "bot",
               "title": "Claudian"
             }
           }
-        ]
+        ],
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 404.80859375
+    "width": 337
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -243,17 +253,27 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "c3bc99f94a617b55",
+  "active": "41c9241263f38e27",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-10-15 16.07.50.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/05 Passaggi tra due basi e due sistemi di riferimento. Equazioni cartesiane e parametriche di rette e piani. Rappresentazione di span lineare come nucleo di una matrice.pdf",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/sedigr88f",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/sed7nQDuS",
+    "Politecnico/Analisi 1/Esami/Non svolti/Agosto 2026.md",
+    "Politecnico/Analisi 1/Esami/Non svolti/sedwf5eGg",
+    "Politecnico/Analisi 1/Esami/Non svolti/sedqa3W7e",
+    "Politecnico/Analisi 1/Esami/Non svolti/sedQH3jv2",
+    "Politecnico/Analisi 1/Esami/Non svolti/sed7XE9Mf",
+    "Politecnico/Analisi 1/Esami/Non svolti/sedPAfdpa",
+    "Politecnico/Analisi 1/Esami/Non svolti/seds4MOpg",
+    "Politecnico/Analisi 1/Esami/Non svolti/sed834vze",
+    "Politecnico/Analisi 1/Esami/Non svolti/sedUD23DZ",
+    "Excalidraw/Drawing 2026-10-15 16.07.50.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.7 Formule di de Moivre - prodotto e potenze (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.1 Parità di quadrati (★★).md",
-    "Politecnico/Analisi 1/Dimostrazioni/Programma di massima e bibliografia.pdf",
     "Politecnico/Analisi 1/Teoria/Serie numeriche.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.4 Criterio del confronto (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.6 Disuguaglianza triangolare (★★).md",
@@ -268,18 +288,9 @@
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.3 Serie geometrica (★★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.2 Carattere delle serie a termini non negativi (★★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.1 Condizione necessaria di convergenza (★).md",
-    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.9 Natura dei punti stazionari (★★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.8 Test di monotonia e funzioni costanti (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.7 Teorema di Lagrange (★).md",
-    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.6 Teorema di Rolle (★).md",
-    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.4 Algebra delle derivate",
-    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale",
-    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 6 - Calcolo integrale",
-    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 4 - Limiti di funzioni e continuità",
-    "Politecnico/Analisi 1/Dimostrazioni/Seconda parte",
-    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 2 - Successioni e limiti/2.8 Limiti notevoli",
-    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 2 - Successioni e limiti/2.3 Algebra dei limiti",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",

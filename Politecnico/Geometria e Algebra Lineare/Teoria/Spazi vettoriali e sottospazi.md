@@ -3,7 +3,6 @@ tags:
   - geometria-algebra-lineare
   - spazi-vettoriali
   - sottospazi
-  - algebra-lineare
 ---
 ## Spazi vettoriali
 

@@ -2,7 +2,6 @@
 tags:
   - geometria-algebra-lineare
   - matrici
-  - algebra-lineare
 ---
 ## 1. Somma, differenza e prodotto per scalare
 

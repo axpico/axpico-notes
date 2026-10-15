@@ -4,7 +4,6 @@ tags:
   - applicazioni-lineari
   - nucleo
   - immagine
-  - algebra-lineare
 ---
 ## Applicazioni lineari, nucleo e immagine
 

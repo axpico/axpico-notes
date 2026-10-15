@@ -4,7 +4,6 @@ tags:
   - applicazioni-lineari
   - matrice-rappresentativa
   - teorema-di-rappresentazione
-  - algebra-lineare
 ---
 ## Teorema di rappresentazione e matrice rappresentativa
 

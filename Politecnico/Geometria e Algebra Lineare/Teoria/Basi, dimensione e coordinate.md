@@ -4,7 +4,6 @@ tags:
   - basi
   - dimensione
   - coordinate
-  - algebra-lineare
 ---
 ## Basi, dimensione e coordinate
 
