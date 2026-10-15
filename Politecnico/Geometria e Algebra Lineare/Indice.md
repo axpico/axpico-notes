@@ -6,9 +6,6 @@ tags:
 # Geometria e Algebra Lineare — Indice (ordine di studio)
 
 Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
-
-Consultazione rapida: [[Politecnico/Geometria e Algebra Lineare/Teoria/Glossario della terminologia|Glossario della terminologia]]
-
 ## 1. Fondamenti
 1. [[Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base|Insiemi, vettori e sistemi lineari — nozioni di base]]
 2. [[Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi|Vettori geometrici liberi]]

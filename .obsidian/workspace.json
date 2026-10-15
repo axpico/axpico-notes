@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -260,11 +260,13 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "2b55081ebe251e76",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/sediUnELx",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
+    "Politecnico/Geometria e Algebra Lineare/Indice.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Glossario della terminologia.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md",
+    "Politecnico/Geometria e Algebra Lineare/sediUnELx",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Cambio di base, rette e piani — Esercizi svolti.md",
     "Politecnico/Geometria e Algebra Lineare/05 Passaggi tra due basi e due sistemi di riferimento. Equazioni cartesiane e parametriche di rette e piani. Rappresentazione di span lineare come nucleo di una matrice.pdf",
     "Politecnico/Geometria e Algebra Lineare/Teoria/sedigr88f",
@@ -276,10 +278,8 @@
     "Politecnico/Analisi 1/Esami/Non svolti/sed7XE9Mf",
     "Politecnico/Analisi 1/Esami/Non svolti/sedPAfdpa",
     "Politecnico/Analisi 1/Esami/Non svolti/seds4MOpg",
-    "Politecnico/Analisi 1/Esami/Non svolti/sed834vze",
     "Excalidraw/Drawing 2026-10-15 16.07.50.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
-    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.7 Formule di de Moivre - prodotto e potenze (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
