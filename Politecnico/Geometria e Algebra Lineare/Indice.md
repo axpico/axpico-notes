@@ -45,6 +45,9 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 ## Video
 - [Playlist YouTube — Essence of linear algebra (3Blue1Brown)](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) — intuizione geometrica su vettori, basi, applicazioni lineari, cambio di base
 
+## Repository
+- [PoliNetwork info1y — Geometria e Algebra Lineare (GitLab)](https://gitlab.com/polinetwork/info1y/-/tree/main/GEOMETRIA%20E%20ALGEBRA%20LINEARE?ref_type=heads) — appunti, esercizi ed esami condivisi
+
 ## PDF — Appunti scansionati
 
 ## PDF — Esercizi

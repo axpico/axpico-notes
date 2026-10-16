@@ -225,13 +225,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792150445879-lh3jc60",
+                      "tabId": "tab-1792150600421-341phjj",
                       "conversationId": null,
                       "draftModel": "sonnet",
                       "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1792150445879-lh3jc60"
+                  "activeTabId": "tab-1792150600421-341phjj"
                 }
               },
               "icon": "bot",
@@ -262,6 +262,7 @@
   },
   "active": "a4a367f756b05e11",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Indice.md.tmp.23600.7c19936662dc",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md.tmp.26016.9a5e76e7391d",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",

@@ -31,6 +31,9 @@ Dimostrazioni richieste (con esercizi e soluzioni): [[Politecnico/Analisi 1/Dimo
 ## 4. Serie numeriche
 10. [[Politecnico/Analisi 1/Teoria/Serie numeriche|Serie numeriche]] (telescopiche, geometrica, armonica, criteri del confronto)
 
+## Repository
+- [PoliNetwork info1y — Analisi I (GitLab)](https://gitlab.com/polinetwork/info1y/-/tree/main/ANALISI%20I?ref_type=heads) — appunti, esercizi ed esami condivisi
+
 ## PDF — Esami vecchi
 - [[Agosto 2019.pdf|Agosto 2019]]
 - [[Agosto 2026.pdf|Agosto 2026]]
