@@ -217,6 +217,27 @@ x-y=0
 
 $$\underbrace{A\mathbf x=\mathbf b}_{\text{cartesiano}}\ \underset{\ \text{ortogonali ai generatori, righe}\ }{\overset{\ \text{Gauss, variabili libere}\ }{\rightleftarrows}}\ \underbrace{\mathbf r=\mathbf r_0+\textstyle\sum t_i\mathbf a_i}_{\text{parametrico}}$$
 
+### Ripasso intuitivo e controlli
+
+**Varietà affine.** Retta e piano sono $P_0+W$ con $W$ sottospazio vettoriale (la *direzione*): $\dim W=1$ per la retta, $2$ per il piano, in qualunque $\mathbb R^n$.
+
+| | Parametrica | Cartesiana |
+|---|---|---|
+| Idea | come **genero** i punti | quali condizioni **verificano** i punti |
+| Forma | $X=P_0+t\mathbf v$ | $A\mathbf x=\mathbf b$ |
+| Pregio | scrivere punti è immediato | verificare l'appartenenza è immediato |
+
+- Il numero di parametri è la **dimensione**; il numero di equazioni indipendenti è la **codimensione** $n-\dim$. Controllo: $\dim W+\#\text{equazioni indipendenti}=n$.
+- Retta per due punti $P,Q$: $X=P+t(Q-P)$.
+- Cartesiano → parametrico: Gauss; le variabili libere diventano parametri; $\{A\mathbf x=\mathbf b\}=\mathbf x_p+\ker A$ (Rouché-Capelli).
+- Parametrico → cartesiano: impongo che $\mathbf x=s\mathbf v+t\mathbf w$ sia compatibile nelle incognite $s,t$ (Gauss su $[\mathbf v|\mathbf w|\mathbf x]$: le condizioni sulle righe nulle sono le equazioni). Scorciatoia in $\mathbb R^3$: piano $\mathbf n\cdot(X-P_0)=0$ con $\mathbf n=\mathbf v\times\mathbf w$.
+- Esempio rapido: $(1,2,0)+t(1,1,1)$ ha $x=1+t,\ y=2+t,\ z=t$; eliminando $t=z$ si ottiene $\begin{cases}x-z=1\\y-z=2\end{cases}$.
+
+**Errori tipici**
+1. Direzioni $\mathbf v,\mathbf w$ del piano dipendenti: il "piano" collassa in una retta.
+2. Direzione della retta per due punti scritta come un vettore che dipende dal punto, invece di $Q-P$.
+3. Passare all'omogeneo e dimenticare il termine noto: la soluzione è $\mathbf x_p+\ker A$, non solo $\ker A$.
+
 ### Collegamenti
 
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md|Combinazioni lineari e sottospazio generato]] (span)

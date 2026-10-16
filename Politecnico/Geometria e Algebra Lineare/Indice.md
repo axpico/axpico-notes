@@ -42,8 +42,10 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 ## 6. Geometria analitica: rette e piani
 18. [[Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane|Rette e piani — equazioni parametriche e cartesiane]] (include span come nucleo di una matrice)
 
+## Video
+- [Playlist YouTube — Essence of linear algebra (3Blue1Brown)](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) — intuizione geometrica su vettori, basi, applicazioni lineari, cambio di base
+
 ## PDF — Appunti scansionati
-- [[Politecnico/Geometria e Algebra Lineare/05 Passaggi tra due basi e due sistemi di riferimento. Equazioni cartesiane e parametriche di rette e piani. Rappresentazione di span lineare come nucleo di una matrice.pdf|Lezione 5 — Passaggi tra basi, rette e piani, span come nucleo]] → sintetizzata in 17 e 18
 
 ## PDF — Esercizi
 - [[Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL1.pdf|EserciziGAL1]]

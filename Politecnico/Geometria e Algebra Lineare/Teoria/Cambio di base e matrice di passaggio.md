@@ -158,6 +158,25 @@ $$\widetilde A=\frac12\begin{bmatrix}e^{-i\theta}&-ie^{-i\theta}\\e^{i\theta}&ie
 
 **Commento.** Sul campo $\mathbb R$ una rotazione (con $\theta\ne0,\pi$) non è diagonalizzabile; su $\mathbb C$ sì, con base formata dai vettori $(1,i)$ e $(1,-i)$ (autovettori, con autovalori $e^{-i\theta}$ e $e^{i\theta}$). In generale: data $L:V\to V$ con $\dim V<\infty$ c'è un metodo per stabilire se esiste una base rispetto alla quale la matrice è diagonale (e trovarla): sarà il tema degli autovalori.
 
+### Ripasso intuitivo e controlli
+
+**Verso di $S$ (l'errore più frequente).** $S$ ha per colonne la base *nuova* in coordinate *vecchie*, ma agisce $\tilde{\mathbf c}\mapsto\mathbf c$ (nuove → vecchie). Lettura: $\mathbf c=S\tilde{\mathbf c}$ costruisce $\sum\tilde c_j\tilde{\mathbf v}_j$ e lo scrive in coordinate vecchie. Per andare vecchie → nuove serve $S^{-1}$.
+
+**Esempio numerico.** In $\mathbb R^2$, $\mathcal B=$ canonica, $\widetilde{\mathcal B}=((1,1),(1,-1))$:
+$$S=\begin{pmatrix}1&1\\1&-1\end{pmatrix},\quad S^{-1}=\tfrac12\begin{pmatrix}1&1\\1&-1\end{pmatrix},\quad \mathbf v=(3,1)\ \Rightarrow\ \tilde{\mathbf c}=S^{-1}\binom31=\binom21 .$$
+Verifica: $2(1,1)+1\,(1,-1)=(3,1)$ ✓.
+
+**Tra due basi non canoniche.** Se $S_1,S_2$ hanno come colonne le due basi (in canonica), allora $S_{\mathcal B_1\to\mathcal B_2}=S_1^{-1}S_2$.
+
+**Endomorfismi.** Per $V=W$ e stessa base, $\widetilde A=S^{-1}AS$: matrici **simili**, stessa applicazione in basi diverse, quindi stessi rango, determinante, traccia, autovalori. La diagonalizzazione cerca la base in cui $\widetilde A$ è diagonale.
+
+**Legame con rette e piani.** Una parametrizzazione $\tilde{\mathbf c}\mapsto\mathbf c$ è un'applicazione lineare invertibile (qui $S$); lo span della nota [[Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md|Rette e piani]] è l'immagine di $[\mathbf v|\mathbf w]$, la forma cartesiana è il nucleo di un'altra matrice.
+
+**Errori tipici**
+1. Scambiare $S$ e $S^{-1}$.
+2. Mettere i vettori della base per riga invece che per colonna.
+3. Nel Teorema 2, sbagliare l'ordine: è $S_W^{-1}AS_V$ (da destra: nuove di $V$ → vecchie di $V$ → $A$ → nuove di $W$).
+
 ### Collegamenti
 
 - [[Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md|Basi, dimensione e coordinate]]
