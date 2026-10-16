@@ -11,14 +11,12 @@
             "id": "2b55081ebe251e76",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
-                "mode": "source",
-                "source": false
+                "file": "Politecnico/Geometria e Algebra Lineare/06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Rette e piani — equazioni parametriche e cartesiane"
+              "icon": "lucide-file-text",
+              "title": "06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango"
             }
           }
         ]
@@ -211,9 +209,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1792150600421-341phjj",
-                      "conversationId": null,
-                      "draftModel": "sonnet",
-                      "providerId": "claude"
+                      "conversationId": "conv-1792152755679-led2fwh2x"
                     }
                   ],
                   "activeTabId": "tab-1792150600421-341phjj"
@@ -223,7 +219,8 @@
               "title": "Claudian"
             }
           }
-        ]
+        ],
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -248,9 +245,9 @@
   },
   "active": "2b55081ebe251e76",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.7 Convergenza assoluta ⟹ convergenza semplice (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md.tmp.23600.7c19936662dc",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md.tmp.26016.9a5e76e7391d",
