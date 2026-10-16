@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 282.5,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -226,7 +227,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 303.5
+    "width": 303.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -244,7 +246,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "62c6b9478c538bd2",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/Esercizi/Asintotici, o piccolo e serie a termini non negativi.md",
     "Politecnico/Analisi 1/Esercizi/Asintotici, o piccolo e serie a termini non negativi.md.tmp.19039.449be5e54594",
