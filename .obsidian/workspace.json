@@ -18,8 +18,21 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-10-16 15.19.37.excalidraw"
             }
+          },
+          {
+            "id": "0e74b1763f1655eb",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-10-16 16.57.07.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-10-16 16.57.07.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -245,12 +258,13 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "e1d4abc02d49fd0a",
+  "active": "0e74b1763f1655eb",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-10-16 15.19.37.excalidraw.md",
+    "Excalidraw/Drawing 2026-10-16 16.57.07.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Serie numeriche.md",
     "Politecnico/Analisi 1/Indice.md",
     "Politecnico/Analisi 1/Dimostrazioni/Programma di massima e bibliografia.pdf",
-    "Excalidraw/Drawing 2026-10-16 15.19.37.excalidraw.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.7 Convergenza assoluta ⟹ convergenza semplice (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Politecnico/Geometria e Algebra Lineare/06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf",
