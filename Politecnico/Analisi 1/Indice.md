@@ -27,6 +27,7 @@ Dimostrazioni richieste (con esercizi e soluzioni): [[Politecnico/Analisi 1/Dimo
 8. [[Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli|Successioni monotone, infinitesimi e limiti notevoli]]
    - Esercizi: [[Politecnico/Analisi 1/Esercizi/Limiti di successioni|Limiti di successioni — Esercizi]]
 9. [[Politecnico/Analisi 1/Teoria/Confronti e stime asintotiche|Confronti e stime asintotiche]]
+   - Esercizi: [[Politecnico/Analisi 1/Esercizi/Asintotici, o piccolo e serie a termini non negativi|Asintotici, o piccolo e serie a termini non negativi]]
 
 ## 4. Serie numeriche
 10. [[Politecnico/Analisi 1/Teoria/Serie numeriche|Serie numeriche]] (telescopiche, geometrica, armonica, criteri del confronto)

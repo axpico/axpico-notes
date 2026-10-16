@@ -4,35 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "1ebf2d8848245ad0",
+        "id": "619444d2adc9f374",
         "type": "tabs",
         "children": [
           {
-            "id": "e1d4abc02d49fd0a",
+            "id": "62c6b9478c538bd2",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-10-16 15.19.37.excalidraw.md"
+                "file": "Politecnico/Analisi 1/Esercizi/Asintotici, o piccolo e serie a termini non negativi.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-16 15.19.37.excalidraw"
-            }
-          },
-          {
-            "id": "0e74b1763f1655eb",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-10-16 16.57.07.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-16 16.57.07.excalidraw"
+              "icon": "lucide-file",
+              "title": "Asintotici, o piccolo e serie a termini non negativi"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -57,7 +46,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora file"
+              "title": "Files"
             }
           },
           {
@@ -91,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -118,13 +106,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
+                "file": "Politecnico/Analisi 1/Esercizi/Asintotici, o piccolo e serie a termini non negativi.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura"
+              "title": "Outline"
             }
           },
           {
@@ -196,7 +184,7 @@
               "type": "empty",
               "state": {},
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "New tab"
             }
           },
           {
@@ -221,13 +209,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792157686687-n5qmbms",
+                      "tabId": "tab-1792172875276-1vi1rci",
                       "conversationId": null,
                       "draftModel": "sonnet",
                       "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1792157686687-n5qmbms"
+                  "activeTabId": "tab-1792172875276-1vi1rci"
                 }
               },
               "icon": "bot",
@@ -242,14 +230,14 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Apri selettore rapido": false,
-      "graph:Apri vista grafo": false,
-      "canvas:Crea nuova lavagna": false,
-      "daily-notes:Apri nota giornaliera": false,
-      "templates:Inserisci modello": false,
-      "command-palette:Apri riquadro comandi": false,
-      "audio-recorder:Avvia/ferma registrazione": false,
-      "bases:Crea nuova Base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "bases:Create new base": false,
       "omnisearch:Omnisearch": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
@@ -258,14 +246,19 @@
   },
   "active": "a4a367f756b05e11",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/Esercizi/Asintotici, o piccolo e serie a termini non negativi.md",
+    "Politecnico/Analisi 1/Esercizi/Asintotici, o piccolo e serie a termini non negativi.md.tmp.19039.449be5e54594",
     "Excalidraw/Drawing 2026-10-16 15.19.37.excalidraw.md",
     "Excalidraw/Drawing 2026-10-16 16.57.07.excalidraw.md",
+    "Politecnico/Geometria e Algebra Lineare/06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Dipendenza lineare.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Dipendenza lineare.md.tmp.10147.3617a8939e99",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Dipendenza lineare.md.tmp.10147.e54183e61447",
     "Politecnico/Analisi 1/Teoria/Serie numeriche.md",
     "Politecnico/Analisi 1/Indice.md",
     "Politecnico/Analisi 1/Dimostrazioni/Programma di massima e bibliografia.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.7 Convergenza assoluta ⟹ convergenza semplice (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
-    "Politecnico/Geometria e Algebra Lineare/06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md.tmp.23600.7c19936662dc",
@@ -276,10 +269,7 @@
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Cambio di base, rette e piani — Esercizi svolti.md",
     "Politecnico/Geometria e Algebra Lineare/05 Passaggi tra due basi e due sistemi di riferimento. Equazioni cartesiane e parametriche di rette e piani. Rappresentazione di span lineare come nucleo di una matrice.pdf",
     "Politecnico/Geometria e Algebra Lineare/Teoria/sedigr88f",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/sed7nQDuS",
     "Politecnico/Analisi 1/Esami/Non svolti/Agosto 2026.md",
-    "Politecnico/Analisi 1/Esami/Non svolti/sedwf5eGg",
-    "Politecnico/Analisi 1/Esami/Non svolti/sedqa3W7e",
     "Excalidraw/Drawing 2026-10-15 16.07.50.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.7 Formule di de Moivre - prodotto e potenze (★).md",
@@ -292,8 +282,6 @@
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte (Sezioni 1-3).md",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 5 - Calcolo differenziale/5.4 Algebra delle derivate - prodotto e quoziente (★★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 2 - Successioni e limiti/2.8 Limiti notevoli di potenza e radice n-esima (★★).md",
-    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.6 Criterio del rapporto (★).md",
-    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.5 Criterio del confronto asintotico (★).md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",

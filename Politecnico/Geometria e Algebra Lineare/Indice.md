@@ -32,6 +32,7 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
     - Esercizi: [[Politecnico/Geometria e Algebra Lineare/Esercizi/Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi|Rango, sottospazi, combinazioni lineari, indipendenza]]
     - Esercizi: [[Politecnico/Geometria e Algebra Lineare/Esercizi/Isomorfismi, basi, dipendenza lineare e somma di sottospazi — Esercizi corretti|Isomorfismi, basi, dipendenza lineare e somma di sottospazi]]
 13. [[Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate|Basi, dimensione e coordinate]]
+    - Lezione 6 (in corso, pp. 1–19): [[Politecnico/Geometria e Algebra Lineare/Teoria/Dipendenza lineare|Dipendenza lineare]]
 
 ## 5. Applicazioni lineari
 14. [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale)|Applicazioni (terminologia generale)]]
