@@ -6,7 +6,6 @@
       {
         "id": "619444d2adc9f374",
         "type": "tabs",
-        "dimension": 40.64064064064064,
         "children": [
           {
             "id": "fff56e0a57349608",
@@ -19,14 +18,7 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-10-17 15.05.03.excalidraw"
             }
-          }
-        ]
-      },
-      {
-        "id": "5da60664eceb1b48",
-        "type": "tabs",
-        "dimension": 59.35935935935935,
-        "children": [
+          },
           {
             "id": "3447d2e506e014b1",
             "type": "leaf",
@@ -40,35 +32,9 @@
               "icon": "lucide-file",
               "title": "Novembre 2018 (primo parziale)"
             }
-          },
-          {
-            "id": "c2aa83863e503734",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Politecnico/Analisi 1/Esami/Vecchi/2018/PrimoParziale 2018.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "PrimoParziale 2018"
-            }
-          },
-          {
-            "id": "adb44df1a8773de9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Successioni monotone, infinitesimi e limiti notevoli"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -127,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -293,11 +258,13 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "adb44df1a8773de9",
+  "active": "3447d2e506e014b1",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-10-17 15.05.03.excalidraw.md",
-    "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md",
+    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2018 (primo parziale).md",
+    "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
+    "Excalidraw/Drawing 2026-10-17 15.05.03.excalidraw.md",
     "Politecnico/Analisi 1/Esami/Vecchi/2018/PrimoParziale 2018.pdf",
     "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2022 (I prova in itinere).md",
     "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2025.md",
@@ -319,7 +286,6 @@
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.7 Convergenza assoluta ⟹ convergenza semplice (★).md",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
-    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md.tmp.23600.7c19936662dc",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md.tmp.26016.9a5e76e7391d",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md",
@@ -330,7 +296,6 @@
     "Politecnico/Analisi 1/Esami/Non svolti/Agosto 2026.md",
     "Excalidraw/Drawing 2026-10-15 16.07.50.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md",
-    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.7 Formule di de Moivre - prodotto e potenze (★).md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
