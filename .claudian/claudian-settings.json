@@ -96,19 +96,14 @@
         },
         {
           "value": "haiku",
-          "label": "Haiku 5.5",
+          "label": "Haiku 4.5",
           "description": "Fastest for quick answers",
-          "resolvedModel": "claude-haiku-5-5",
+          "resolvedModel": "claude-haiku-4-5-20251001",
           "reasoningMetadataResolved": true,
-          "supportedEffortLevels": [
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
+          "supportedEffortLevels": []
         }
-      ]
+      ],
+      "sessionEnvironmentHash": ""
     },
     "codex": {
       "enabled": false,
@@ -125,7 +120,8 @@
       "wslDistroOverridesByHost": {},
       "responseStyle": "pragmatic",
       "responseVerbosity": "default",
-      "selectedModels": []
+      "selectedModels": [],
+      "sessionEnvironmentHash": ""
     },
     "grok": {
       "cliPath": "",
@@ -158,6 +154,7 @@
       "environmentVariables": "",
       "modelAliases": {},
       "preferredThinkingByModel": {},
+      "sessionEnvironmentHash": "",
       "visibleModels": [],
       "selectedModels": []
     },
@@ -180,6 +177,7 @@
     "providerId": "claude",
     "model": "sonnet"
   },
+  "inlineEditModel": null,
   "savedProviderModel": {
     "claude": "sonnet"
   },
