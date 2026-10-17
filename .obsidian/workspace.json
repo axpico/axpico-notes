@@ -223,24 +223,24 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792243263973-vuq3fj5",
-                      "conversationId": "conv-1792248464723-efdmw9l3i"
+                      "tabId": "tab-1792250040195-adfkk5c",
+                      "conversationId": null,
+                      "draftModel": "sonnet",
+                      "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1792243263973-vuq3fj5"
+                  "activeTabId": "tab-1792250040195-adfkk5c"
                 }
               },
               "icon": "bot",
               "title": "Claudian"
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 326.5,
-    "collapsed": true
+    "width": 326.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -258,7 +258,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "c2089dcaef4f33cb",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf",
