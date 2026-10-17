@@ -33,8 +33,7 @@
               "title": "Novembre 2018 (primo parziale)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 282.5,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -240,7 +240,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 326.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -258,11 +259,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "3447d2e506e014b1",
+  "active": "fff56e0a57349608",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2018 (primo parziale).md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2018 (primo parziale).md",
     "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
     "Excalidraw/Drawing 2026-10-17 15.05.03.excalidraw.md",
     "Politecnico/Analisi 1/Esami/Vecchi/2018/PrimoParziale 2018.pdf",
