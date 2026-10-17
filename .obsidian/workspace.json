@@ -6,7 +6,7 @@
       {
         "id": "619444d2adc9f374",
         "type": "tabs",
-        "dimension": 65.93655589123867,
+        "dimension": 40.64064064064064,
         "children": [
           {
             "id": "fff56e0a57349608",
@@ -25,7 +25,7 @@
       {
         "id": "5da60664eceb1b48",
         "type": "tabs",
-        "dimension": 34.06344410876133,
+        "dimension": 59.35935935935935,
         "children": [
           {
             "id": "3447d2e506e014b1",
@@ -257,11 +257,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792172875276-1vi1rci",
-                      "conversationId": "conv-1792242982240-yhd1odm9m"
+                      "tabId": "tab-1792243263973-vuq3fj5",
+                      "conversationId": null,
+                      "draftModel": "sonnet",
+                      "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1792172875276-1vi1rci"
+                  "activeTabId": "tab-1792243263973-vuq3fj5"
                 }
               },
               "icon": "bot",
@@ -291,10 +293,10 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "fff56e0a57349608",
+  "active": "adb44df1a8773de9",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
     "Excalidraw/Drawing 2026-10-17 15.05.03.excalidraw.md",
+    "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
     "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2018 (primo parziale).md",
     "Politecnico/Analisi 1/Esami/Vecchi/2018/PrimoParziale 2018.pdf",
     "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2022 (I prova in itinere).md",
