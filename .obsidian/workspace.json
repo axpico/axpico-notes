@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fff56e0a57349608",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-10-17 15.05.03.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-17 15.05.03.excalidraw"
-            }
-          },
-          {
             "id": "e7abf3a275060ecf",
             "type": "leaf",
             "state": {
@@ -33,8 +21,7 @@
               "title": "Criteri per le serie, serie alternate e convergenza assoluta"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -223,11 +210,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792250040195-adfkk5c",
-                      "conversationId": "conv-1792417099200-q459qo86w"
+                      "tabId": "tab-1792419362452-uho2woo",
+                      "conversationId": null,
+                      "draftModel": "sonnet",
+                      "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1792250040195-adfkk5c"
+                  "activeTabId": "tab-1792419362452-uho2woo"
                 }
               },
               "icon": "bot",
@@ -249,7 +238,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 326.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
