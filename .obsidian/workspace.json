@@ -234,8 +234,19 @@
               "icon": "bot",
               "title": "Claudian"
             }
+          },
+          {
+            "id": "dd5eebc713973aa2",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw-sidepanel",
+              "state": {},
+              "icon": "excalidraw-icon",
+              "title": "Excalidraw Sidepanel"
+            }
           }
-        ]
+        ],
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
@@ -260,8 +271,8 @@
   },
   "active": "fff56e0a57349608",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Teoria/Serie numeriche.md",
     "Excalidraw/Drawing 2026-10-17 15.05.03.excalidraw.md",
+    "Politecnico/Analisi 1/Teoria/Serie numeriche.md",
     "Politecnico/Analisi 1/Indice.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.3 Serie geometrica (★★).md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md",
