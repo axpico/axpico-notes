@@ -245,13 +245,11 @@
               "title": "Excalidraw Sidepanel"
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 326.5,
-    "collapsed": true
+    "width": 326.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -269,7 +267,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "fff56e0a57349608",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-10-17 15.05.03.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Serie numeriche.md",
