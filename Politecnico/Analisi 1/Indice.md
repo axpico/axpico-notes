@@ -31,6 +31,7 @@ Dimostrazioni richieste (con esercizi e soluzioni): [[Politecnico/Analisi 1/Dimo
 
 ## 4. Serie numeriche
 10. [[Politecnico/Analisi 1/Teoria/Serie numeriche|Serie numeriche]] (telescopiche, geometrica, armonica, criteri del confronto)
+11. [[Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta|Criteri per le serie, serie alternate e convergenza assoluta]] (rapporto, radice, Leibniz, convergenza assoluta)
 
 ## Repository
 - [PoliNetwork info1y — Analisi I (GitLab)](https://gitlab.com/polinetwork/info1y/-/tree/main/ANALISI%20I?ref_type=heads) — appunti, esercizi ed esami condivisi

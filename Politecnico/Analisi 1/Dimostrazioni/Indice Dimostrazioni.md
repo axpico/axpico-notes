@@ -40,7 +40,7 @@ Teoria: [[Politecnico/Analisi 1/Teoria/Limiti di successioni|Limiti di successio
 - [[Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 2 - Successioni e limiti/2.9 Confronto tra infiniti (★★)|2.9 Confronto tra infiniti (★★)]]
 
 ### Sezione 3 - Serie numeriche
-Teoria: [[Politecnico/Analisi 1/Teoria/Serie numeriche|Serie numeriche]]
+Teoria: [[Politecnico/Analisi 1/Teoria/Serie numeriche|Serie numeriche]] · [[Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta|Criteri per le serie, serie alternate e convergenza assoluta]]
 
 - [[Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.1 Condizione necessaria di convergenza (★)|3.1 Condizione necessaria di convergenza (★)]]
 - [[Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.2 Carattere delle serie a termini non negativi (★★)|3.2 Carattere delle serie a termini non negativi (★★)]]
