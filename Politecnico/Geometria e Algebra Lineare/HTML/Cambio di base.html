@@ -1,0 +1,495 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Cambio di base</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;700&family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{
+  /* Layout: una colonna di lettura. Una figura viva con la base modificabile guida tutta la pagina:
+     ogni sezione sotto ricalcola i numeri sulla base e sul punto scelti. Blu = griglia canonica, arancione = base nuova. */
+  --bg:#f2f4f8; --paper:#ffffff; --fg:#121c33; --muted:#566178; --line:#d3d9e5; --grid:rgba(18,28,51,.05);
+  --canon:#2c5bd1; --canon-soft:rgba(44,91,209,.10);
+  --new:#c63f08; --new-soft:rgba(198,63,8,.10);
+  --ok:#16794f; --ok-soft:rgba(22,121,79,.13);
+  --bad:#bd2323; --bad-soft:rgba(189,35,35,.11);
+  --f-display:'Bricolage Grotesque','Hanken Grotesk',system-ui,sans-serif;
+  --f-body:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-math:'STIX Two Text','Cambria Math','Times New Roman',serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1525; --paper:#162036; --fg:#e7ecf6; --muted:#9aa6c0; --line:#2b3757; --grid:rgba(231,236,246,.05);
+    --canon:#7ea4ff; --canon-soft:rgba(126,164,255,.15);
+    --new:#ff9d62; --new-soft:rgba(255,157,98,.15);
+    --ok:#52d4a3; --ok-soft:rgba(82,212,163,.16);
+    --bad:#ff8f8f; --bad-soft:rgba(255,143,143,.15);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1525; --paper:#162036; --fg:#e7ecf6; --muted:#9aa6c0; --line:#2b3757; --grid:rgba(231,236,246,.05);
+  --canon:#7ea4ff; --canon-soft:rgba(126,164,255,.15);
+  --new:#ff9d62; --new-soft:rgba(255,157,98,.15);
+  --ok:#52d4a3; --ok-soft:rgba(82,212,163,.16);
+  --bad:#ff8f8f; --bad-soft:rgba(255,143,143,.15);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{
+  background-color:var(--bg);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px;
+  color:var(--fg);
+  font:400 17px/1.65 var(--f-body);
+  padding-block:32px 80px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+}
+.wrap{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
+section{display:flex;flex-direction:column;gap:18px;min-width:0}
+p{margin:0;max-width:66ch}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance;line-height:1.12}
+h1{font-size:clamp(2.4rem,8vw,4rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.5rem,4.2vw,2rem);font-weight:800;letter-spacing:-.01em}
+h3{font-size:1.05rem;font-weight:700}
+.kicker{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:10px}
+.lead{font-size:1.2rem;line-height:1.55;margin-top:14px;max-width:58ch}
+.m{font-family:var(--f-math);font-style:italic;font-size:1.08em}
+.c{color:var(--canon);font-weight:700}
+.n{color:var(--new);font-weight:700}
+.muted{color:var(--muted)}
+.tag{display:inline-block;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;padding:2px 8px;border-radius:5px;background:var(--fg);color:var(--bg);margin-right:8px;vertical-align:2px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.eq{font-family:var(--f-math);font-size:1.18rem;overflow-x:auto;white-space:nowrap;padding:4px 0;max-width:100%}
+.mat{display:inline-grid;gap:.05em .85em;padding:.05em .55em;border:solid var(--fg);border-width:0 2px;border-radius:8px;vertical-align:middle;text-align:center;line-height:1.5;margin:0 .15em}
+.mat span{min-width:1.1em;font-variant-numeric:tabular-nums}
+.glos{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 14px;margin:0}
+.glos dt{font-family:var(--f-math);font-style:italic;font-size:1.15rem;white-space:nowrap}
+.glos dd{margin:0}
+.callout{border-left:4px solid var(--fg);background:var(--paper);padding:12px 16px;border-radius:0 8px 8px 0;max-width:66ch}
+.warn{border-left:4px solid var(--bad);background:var(--bad-soft);padding:12px 16px;border-radius:0 8px 8px 0;max-width:66ch}
+
+/* figura */
+.fig{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+@media (min-width:760px){.fig{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}}
+#fig{width:100%;height:auto;max-width:520px;display:block;margin:0 auto;border-radius:6px;background:var(--paper);cursor:crosshair}
+#fig .gc{stroke:var(--canon);stroke-opacity:.2;stroke-width:1}
+#fig .gn{stroke:var(--new);stroke-opacity:.26;stroke-width:1}
+#fig .ax{stroke:var(--fg);stroke-opacity:.5;stroke-width:1.2}
+#fig .dc{stroke:var(--canon);stroke-width:2.4;stroke-dasharray:7 5;fill:none}
+#fig .dn{stroke:var(--new);stroke-width:2.4;stroke-dasharray:7 5;fill:none}
+#fig .ec{stroke:var(--canon);stroke-width:3.2}
+#fig .vn{stroke:var(--new);stroke-width:3.2}
+#fig .fc{fill:var(--canon)}
+#fig .fn{fill:var(--new)}
+#fig .pt{fill:var(--fg);stroke:var(--paper);stroke-width:2}
+#fig text{font:italic 600 17px var(--f-math);paint-order:stroke;stroke:var(--paper);stroke-width:4px;stroke-linejoin:round;pointer-events:none}
+#fig text.tick{font:500 11px var(--f-body);fill:var(--muted);stroke-width:3px}
+#fig text.lc{fill:var(--canon)}
+#fig text.ln{fill:var(--new)}
+#fig text.lp{fill:var(--fg)}
+.side{display:flex;flex-direction:column;gap:14px;min-width:0}
+.sub{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.basis{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
+.basis .grp{display:flex;align-items:center;gap:6px;font-family:var(--f-math);font-size:1.15rem}
+.ctl{display:grid;grid-template-columns:auto minmax(0,1fr) 2.2rem;gap:6px 10px;align-items:center}
+.ctl label{font-family:var(--f-math);font-style:italic;font-size:1.1rem}
+.ctl output{font-family:var(--f-math);font-size:1.1rem;text-align:right;font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:var(--fg);min-width:0}
+.presets{display:flex;flex-wrap:wrap;gap:8px}
+.checks{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.92rem}
+.checks label{display:flex;gap:6px;align-items:center}
+.say{border-radius:8px;padding:10px 14px;min-width:0}
+.say.c{background:var(--canon-soft);color:var(--canon);font-weight:400}
+.say.n{background:var(--new-soft);color:var(--new);font-weight:400}
+.say .sub{color:inherit}
+.say p{color:var(--fg);margin-top:2px}
+.say .eq{color:var(--fg);font-size:1.3rem}
+button{font:inherit}
+.btn{font-weight:700;font-size:.92rem;padding:7px 14px;border-radius:8px;border:1.5px solid var(--fg);background:var(--fg);color:var(--bg);cursor:pointer}
+.btn.ghost{background:transparent;color:var(--fg)}
+.btn.sm{padding:4px 10px;font-weight:600}
+.btn:disabled{opacity:.4;cursor:default}
+:focus-visible{outline:3px solid var(--canon);outline-offset:2px}
+
+/* due direzioni */
+.cols{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:760px){.cols{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.cols .card{border-top-width:4px}
+.cols .card.n{border-top-color:var(--new)}
+.cols .card.c{border-top-color:var(--canon)}
+.pipe{display:flex;flex-direction:column;gap:12px}
+.pst{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.pst .sh{display:flex;gap:10px;align-items:center}
+.sn{flex:none;width:1.8rem;height:1.8rem;border-radius:50%;background:var(--fg);color:var(--bg);display:grid;place-items:center;font-weight:700;font-size:.9rem}
+
+/* esercizi */
+.num{width:3.6rem;font:400 1.15rem var(--f-math);text-align:center;padding:6px 4px;border:1.5px solid var(--line);border-radius:6px;background:var(--paper);color:var(--fg)}
+.num.ok{border-color:var(--ok);background:var(--ok-soft)}
+.num.bad{border-color:var(--bad);background:var(--bad-soft)}
+.num.sm{width:3.2rem}
+.ans{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;font-family:var(--f-math);font-size:1.15rem}
+.grid3{display:inline-grid;grid-template-columns:repeat(2,auto);gap:6px 10px;padding:6px 12px;border:solid var(--fg);border-width:0 2px;border-radius:8px}
+.msg{min-height:1.6em;font-weight:500}
+.msg.ok{color:var(--ok)}
+.msg.bad{color:var(--bad)}
+details{border:1px solid var(--line);border-radius:8px;padding:8px 14px;background:var(--paper);min-width:0}
+details[open]{padding-bottom:12px}
+summary{cursor:pointer;font-weight:700}
+details>*:not(summary){margin-top:10px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+
+<div class="wrap">
+
+<header>
+  <p class="kicker">Geometria e Algebra Lineare</p>
+  <h1>Cambio di base</h1>
+  <p class="lead">Un punto ha più modi di essere descritto. «5 a destra e 4 in su» è uno. «3 passi lungo una freccia e 1 passo lungo un'altra» è un secondo. Il punto è lo stesso, cambiano solo i numeri. Cambiare base significa passare da una descrizione all'altra.</p>
+</header>
+
+<section>
+  <h2>Le lettere che useremo</h2>
+  <div class="card">
+    <dl class="glos">
+      <dt>P</dt><dd>un punto del piano. Non cambia mai.</dd>
+      <dt class="c">e₁, e₂</dt><dd>le due frecce della <b class="c">base canonica</b>: e₁ = 1 a destra, e₂ = 1 in su. È la descrizione che usi di solito.</dd>
+      <dt class="n">v₁, v₂</dt><dd>le due frecce della <b class="n">base nuova</b>. Le scegli tu, purché non siano sulla stessa retta.</dd>
+      <dt>coordinate</dt><dd>quante volte devi ripetere ciascuna freccia per arrivare in P. Sono la «ricetta» del punto.</dd>
+      <dt>S</dt><dd>una tabella di numeri con v₁ e v₂ <b>in colonna</b>. Traduce una ricetta nuova in una canonica.</dd>
+      <dt>S⁻¹</dt><dd>la tabella che fa il contrario: traduce una ricetta canonica in una nuova.</dd>
+      <dt>A</dt><dd>la tabella di una trasformazione <i>L</i> (una «macchina» che sposta i punti), scritta in coordinate canoniche.</dd>
+      <dt>A′</dt><dd>la tabella della stessa macchina, scritta in coordinate nuove.</dd>
+    </dl>
+  </div>
+</section>
+
+<section>
+  <h2>Cos'è una «ricetta»</h2>
+  <p>Per dire dove si trova un punto devi prima scegliere due frecce di partenza. Sono il tuo metro di misura e si chiamano <b>base</b>. Una <b>ricetta</b> è l'istruzione per arrivare al punto con quelle frecce: «prendi la prima freccia tante volte, la seconda tante volte, poi mettile una dopo l'altra». I due numeri della ricetta sono le <b>coordinate</b>.</p>
+  <div class="cols">
+    <div class="card c"><h3>Ricetta canonica</h3><p>Le frecce sono <b class="c">e₁</b> (1 a destra) e <b class="c">e₂</b> (1 in su). La ricetta «5 e 4» significa: 5 volte e₁ e 4 volte e₂.</p></div>
+    <div class="card n"><h3>Ricetta nuova</h3><p>Le frecce sono <b class="n">v₁</b> e <b class="n">v₂</b>, che scegli tu. La ricetta «3 e 1» significa: 3 volte v₁ e 1 volta v₂.</p></div>
+  </div>
+  <p class="callout">I numeri da soli non dicono niente. «3 e 1» è un punto diverso a seconda delle frecce a cui si riferiscono: devi sempre chiederti «3 volte quale freccia?». È come una lunghezza in chilometri o in miglia: 10 km e 6,2 miglia sono la stessa distanza con un'altra unità. Qui l'unità di misura sono le due frecce. Cambi le frecce, cambiano i numeri, il punto resta dov'è.</p>
+</section>
+
+<section>
+  <h2>1. Guarda lo stesso punto in due modi</h2>
+  <p>Tocca un punto della figura o usa i cursori per spostare P. Cambia anche la base nuova: scrivi i numeri di v₁ e v₂ oppure premi uno dei preset. Le due descrizioni a destra si aggiornano e tutte le sezioni sotto usano gli stessi numeri.</p>
+  <div class="card fig">
+    <svg id="fig" viewBox="0 0 520 520" role="img" aria-label="Il piano con la griglia canonica in blu, la griglia della base nuova in arancione e il punto P descritto in entrambi i modi."></svg>
+    <div class="side">
+      <div>
+        <div class="sub">Base nuova</div>
+        <div class="basis">
+          <div class="grp n">v₁ = ( <input class="num sm" id="bp" type="number" min="-4" max="4" step="1" value="1" aria-label="v1 prima componente"> , <input class="num sm" id="bq" type="number" min="-4" max="4" step="1" value="1" aria-label="v1 seconda componente"> )</div>
+          <div class="grp n">v₂ = ( <input class="num sm" id="br" type="number" min="-4" max="4" step="1" value="2" aria-label="v2 prima componente"> , <input class="num sm" id="bs" type="number" min="-4" max="4" step="1" value="1" aria-label="v2 seconda componente"> )</div>
+        </div>
+      </div>
+      <div class="presets" aria-label="Basi pronte">
+        <button class="btn ghost sm" data-b="1,1,2,1" type="button">Base dell'esempio</button>
+        <button class="btn ghost sm" data-b="2,0,0,1" type="button">Allungata</button>
+        <button class="btn ghost sm" data-b="1,1,-1,1" type="button">Ruotata</button>
+        <button class="btn ghost sm" data-b="0,1,1,0" type="button">Scambiata</button>
+      </div>
+      <div>
+        <div class="sub">Punto P</div>
+        <div class="ctl">
+          <label for="xr">x</label><input id="xr" type="range" min="-7" max="7" step="1" value="5"><output id="xo">5</output>
+          <label for="yr">y</label><input id="yr" type="range" min="-7" max="7" step="1" value="4"><output id="yo">4</output>
+        </div>
+      </div>
+      <div class="checks">
+        <label><input id="gc" type="checkbox" checked> griglia blu</label>
+        <label><input id="gn" type="checkbox" checked> griglia arancione</label>
+      </div>
+    </div>
+  </div>
+  <div class="cols" id="say"></div>
+  <p class="callout">Segui le linee tratteggiate. Quella blu fa prima il tratto orizzontale e poi quello verticale. Quella arancione fa prima il tratto lungo v₁ e poi quello lungo v₂. Arrivano nello stesso punto: sono due itinerari verso P.</p>
+</section>
+
+<section>
+  <h2>2. Come passi da una descrizione all'altra</h2>
+  <p>I due versi non sono ugualmente facili. Uno è un semplice conto, l'altro richiede di risolvere un sistema.</p>
+  <div id="dirs" class="cols"></div>
+  <p class="callout"><b>Da ricordare.</b> S ha v₁ e v₂ in colonna e traduce <b>nuovo → canonico</b>. Per andare <b>canonico → nuovo</b> usi S⁻¹. Il nome «matrice da base vecchia a base nuova» inganna: contiene la base nuova, ma agisce partendo dalle coordinate nuove.</p>
+</section>
+
+<section>
+  <h2>3. Cambiare base a una trasformazione</h2>
+  <p>Ora una trasformazione <i>L</i> che sposta i punti. Nella base canonica la sua tabella è</p>
+  <div class="eq"><span class="m">A</span> = <span class="mat" style="grid-template-columns:repeat(2,auto)"><span>4</span><span>−2</span><span>1</span><span>1</span></span></div>
+  <p>Immagina <i>L</i> come una macchina scritta in una lingua sola, quella canonica: accetta solo ricette canoniche. Se hai una ricetta nuova, devi fare tre passaggi. Sotto li vedi con il punto P scelto nella figura.</p>
+  <div id="pipe" class="pipe"></div>
+  <div id="ap"></div>
+  <details>
+    <summary>E se dominio e codominio hanno basi diverse?</summary>
+    <p>La macchina <i>L</i>: V → W prende vettori da uno spazio e li manda in un altro. Ogni spazio ha la sua base nuova, quindi hai due tabelle di passaggio: <span class="m">S<sub>V</sub></span> per l'ingresso e <span class="m">S<sub>W</sub></span> per l'uscita. La formula diventa <b class="m">A′ = S<sub>W</sub>⁻¹ · A · S<sub>V</sub></b>. Si legge da destra: traduci l'ingresso (<span class="m">S<sub>V</sub></span>), applica la macchina (<span class="m">A</span>), ritraduci l'uscita (<span class="m">S<sub>W</sub>⁻¹</span>). È la stessa idea a tre passaggi di sopra.</p>
+  </details>
+</section>
+
+<section>
+  <h2>4. Esercizio 1: trova la ricetta</h2>
+  <div class="card">
+    <p>Base nuova: <b class="n">v₁ = (1, 1)</b> e <b class="n">v₂ = (2, 1)</b>. Trova i numeri <i class="m">a</i> e <i class="m">b</i> tali che <i class="m">a</i>·v₁ + <i class="m">b</i>·v₂ = <b>(7, 3)</b>.</p>
+    <div class="ans"><i class="m">a</i> = <input class="num" id="e1a" type="text" inputmode="text" autocomplete="off" aria-label="a" size="3"> &nbsp; <i class="m">b</i> = <input class="num" id="e1b" type="text" inputmode="text" autocomplete="off" aria-label="b" size="3"></div>
+    <div class="eq" id="e1v">a·(1, 1) + b·(2, 1) = ( ? , ? )</div>
+    <p class="msg" id="e1m" role="status">Scrivi due numeri: qui sopra vedi subito dove arrivi con la tua ricetta.</p>
+    <details><summary>Suggerimento</summary>
+      <p>Puoi andare per tentativi guardando la riga sopra. Oppure usi S⁻¹ della sezione 2, perché hai coordinate canoniche (7, 3) e vuoi quelle nuove.</p>
+    </details>
+    <details><summary>Svolgimento</summary>
+      <p>Moltiplichi S⁻¹ per le coordinate canoniche:</p>
+      <div class="eq"><span class="mat" style="grid-template-columns:repeat(2,auto)"><span>−1</span><span>2</span><span>1</span><span>−1</span></span><span class="mat"><span>7</span><span>3</span></span> = <span class="mat"><span>−7 + 6</span><span>7 − 3</span></span> = <span class="mat"><span>−1</span><span>4</span></span></div>
+      <p>Controllo: (−1)·(1, 1) + 4·(2, 1) = (−1 + 8, −1 + 4) = (7, 3).</p>
+    </details>
+  </div>
+</section>
+
+<section>
+  <h2>5. Esercizio 2: dominio e codominio diversi</h2>
+  <div class="card">
+    <p><i>L</i>: ℝ² → ℝ³ con <i>L</i>(x, y) = (x + y, x − y, 2x). Trova la tabella <span class="m">A′</span> (3 righe, 2 colonne) con queste basi nuove:</p>
+    <ul style="margin:0;padding-left:1.2em">
+      <li>dominio: <b class="n">(1, 1) e (1, −1)</b></li>
+      <li>codominio: <b class="n">(1, 1, 0), (0, 1, 1), (0, 0, 1)</b></li>
+    </ul>
+    <p>Dati già pronti:</p>
+    <div class="eq"><span class="m">A</span> = <span class="mat" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>1</span><span>1</span><span>−1</span><span>2</span><span>0</span></span> &nbsp; <span class="m">S<sub>V</sub></span> = <span class="mat" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>1</span><span>1</span><span>−1</span></span> &nbsp; <span class="m">S<sub>W</sub>⁻¹</span> = <span class="mat" style="grid-template-columns:repeat(3,auto)"><span>1</span><span>0</span><span>0</span><span>−1</span><span>1</span><span>0</span><span>1</span><span>−1</span><span>1</span></span></div>
+    <h3><span class="tag">Passo 1</span>Calcola A·S<sub>V</sub></h3>
+    <p class="muted">Le due colonne sono L(1, 1) e L(1, −1): le immagini dei vettori della base nuova del dominio.</p>
+    <div class="ans"><span class="m">A·S<sub>V</sub></span> = <span class="grid3" id="g1"></span> <button class="btn" id="e2c1" type="button">Controlla</button></div>
+    <p class="msg" id="e2m1" role="status"></p>
+    <div id="stage2" hidden>
+      <h3><span class="tag">Passo 2</span>Moltiplica per S<sub>W</sub>⁻¹</h3>
+      <p class="muted">Ora <span class="m">A′ = S<sub>W</sub>⁻¹ · (A·S<sub>V</sub>)</span>. Fai una colonna alla volta: ogni colonna di A·S<sub>V</sub> viene tradotta con S<sub>W</sub>⁻¹.</p>
+      <div class="ans"><span class="m">A′</span> = <span class="grid3" id="g2"></span> <button class="btn" id="e2c2" type="button">Controlla</button></div>
+      <p class="msg" id="e2m2" role="status"></p>
+    </div>
+    <details><summary>Svolgimento completo</summary>
+      <p><b>Passo 1.</b> L(1, 1) = (2, 0, 2) e L(1, −1) = (0, 2, 2), quindi</p>
+      <div class="eq"><span class="m">A·S<sub>V</sub></span> = <span class="mat" style="grid-template-columns:repeat(2,auto)"><span>2</span><span>0</span><span>0</span><span>2</span><span>2</span><span>2</span></span></div>
+      <p><b>Passo 2.</b> Prima colonna: S<sub>W</sub>⁻¹·(2, 0, 2) = (2, −2 + 0, 2 − 0 + 2) = (2, −2, 4). Seconda colonna: S<sub>W</sub>⁻¹·(0, 2, 2) = (0, 2, −2 + 2) = (0, 2, 0).</p>
+      <div class="eq"><span class="m">A′</span> = <span class="mat" style="grid-template-columns:repeat(2,auto)"><span>2</span><span>0</span><span>−2</span><span>2</span><span>4</span><span>0</span></span></div>
+      <p><b>Controllo senza tabelle.</b> Scrivi (2, 0, 2) = a(1, 1, 0) + b(0, 1, 1) + c(0, 0, 1) = (a, a + b, b + c). Dalla prima componente a = 2, dalla seconda b = −2, dalla terza c = 4. Sono i numeri della prima colonna.</p>
+    </details>
+    <details><summary>Da dove viene S<sub>W</sub>⁻¹</summary>
+      <p>S<sub>W</sub> ha le tre frecce del codominio in colonna ed è triangolare. Per invertirla risolvi S<sub>W</sub>·x = y dall'alto: x₁ = y₁, x₂ = y₂ − y₁, x₃ = y₃ − y₂ + y₁. I coefficienti di queste tre righe sono le righe di S<sub>W</sub>⁻¹.</p>
+    </details>
+  </div>
+</section>
+
+<section>
+  <h2>Errori da evitare</h2>
+  <div class="card">
+    <p><b>1. Scambiare S e S⁻¹.</b> Parti da coordinate canoniche e vuoi quelle nuove: serve S⁻¹.</p>
+    <p><b>2. Scrivere le frecce della base per riga.</b> Vanno in colonna.</p>
+    <p><b>3. Sbagliare l'ordine.</b> È <span class="m">S<sub>W</sub>⁻¹ · A · S<sub>V</sub></span>. A destra c'è ciò che succede per primo.</p>
+  </div>
+</section>
+
+</div>
+
+<script>
+const $=s=>document.querySelector(s);
+const fmt=n=>String(n).replace('-','−');
+const gcd=(a,b)=>b?gcd(b,a%b):Math.abs(a);
+const F=(n,d=1)=>{if(d<0){n=-n;d=-d}const g=gcd(n,d)||1;return{n:n/g,d:d/g}};
+const L=n=>F(n,1);
+const add=(a,b)=>F(a.n*b.d+b.n*a.d,a.d*b.d);
+const mul=(a,b)=>F(a.n*b.n,a.d*b.d);
+const val=a=>a.n/a.d;
+const eqF=(a,b)=>a.n===b.n&&a.d===b.d;
+const fs=a=>a.d===1?fmt(a.n):`${fmt(a.n)}/${a.d}`;
+const cell=v=>typeof v==='object'?fs(v):typeof v==='number'?fmt(v):v;
+const M=rows=>`<span class="mat" style="grid-template-columns:repeat(${rows[0].length},auto)">${rows.flat().map(v=>`<span>${cell(v)}</span>`).join('')}</span>`;
+const V=a=>M(a.map(x=>[x]));
+const term=v=>{const t=cell(v);return t.startsWith('−')?`(${t})`:t};
+const mm=(P,Q)=>P.map(r=>Q[0].map((_,j)=>r.reduce((s,v,k)=>add(s,mul(v,Q[k][j])),F(0))));
+const lift=m=>m.map(r=>r.map(L));
+const parse=s=>parseFloat(String(s).trim().replace('−','-').replace(',','.'));
+
+const st={p:1,q:1,r:2,s:1,x:5,y:4};
+const A0=[[4,-2],[1,1]];
+const O=260,U=32.5,sx=x=>O+U*x,sy=y=>O-U*y;
+const ln=(x1,y1,x2,y2,cls,extra='')=>`<line class="${cls}" x1="${sx(x1)}" y1="${sy(y1)}" x2="${sx(x2)}" y2="${sy(y2)}" ${extra}/>`;
+
+function draw(det,c1,c2){
+  const {p,q,r,s,x,y}=st;
+  let g=`<defs>
+    <marker id="hc" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="fc" d="M0 0L10 5L0 10z"/></marker>
+    <marker id="hn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="fn" d="M0 0L10 5L0 10z"/></marker>
+  </defs>`;
+  if($('#gc').checked) for(let k=-8;k<=8;k++){g+=ln(k,-8.2,k,8.2,'gc');g+=ln(-8.2,k,8.2,k,'gc');}
+  if(det!==0&&$('#gn').checked) for(let k=-16;k<=16;k++){
+    g+=ln(k*p-16*r,k*q-16*s,k*p+16*r,k*q+16*s,'gn');
+    g+=ln(k*r-16*p,k*s-16*q,k*r+16*p,k*s+16*q,'gn');
+  }
+  g+=ln(-8.2,0,8.2,0,'ax')+ln(0,-8.2,0,8.2,'ax');
+  for(let k=-6;k<=6;k+=2){ if(k===0) continue;
+    g+=`<text class="tick" x="${sx(k)}" y="${sy(0)+14}" text-anchor="middle">${fmt(k)}</text>`;
+    g+=`<text class="tick" x="${sx(0)-6}" y="${sy(k)+4}" text-anchor="end">${fmt(k)}</text>`;
+  }
+  g+=`<polyline class="dc" points="${sx(0)},${sy(0)} ${sx(x)},${sy(0)} ${sx(x)},${sy(y)}"/>`;
+  if(det!==0){
+    const a=val(c1),b=val(c2);
+    g+=`<polyline class="dn" points="${sx(0)},${sy(0)} ${sx(a*p)},${sy(a*q)} ${sx(x)},${sy(y)}"/>`;
+  }
+  g+=ln(0,0,1,0,'ec','marker-end="url(#hc)"')+ln(0,0,0,1,'ec','marker-end="url(#hc)"');
+  g+=ln(0,0,p,q,'vn','marker-end="url(#hn)"')+ln(0,0,r,s,'vn','marker-end="url(#hn)"');
+  g+=`<text class="lc" x="${sx(1)+2}" y="${sy(0)+22}">e₁</text><text class="lc" x="${sx(0)-26}" y="${sy(1)+6}">e₂</text>`;
+  g+=`<text class="ln" x="${sx(p)+(p>=0?6:-26)}" y="${sy(q)+(q>=0?-8:18)}">v₁</text><text class="ln" x="${sx(r)+(r>=0?6:-26)}" y="${sy(s)+(s>=0?-8:18)}">v₂</text>`;
+  g+=`<circle class="pt" cx="${sx(x)}" cy="${sy(y)}" r="6.5"/><text class="lp" x="${sx(x)+10}" y="${sy(y)-10}">P</text>`;
+  $('#fig').innerHTML=g;
+}
+
+const stepsTxt=v=>{const t=cell(v);const w=(v.n===1&&v.d===1)||(v.n===-1&&v.d===1)?'passo':'passi';return t.startsWith('−')?`${t} ${w} (all'indietro)`:`${t} ${w}`};
+const singular=`<div class="warn" style="grid-column:1/-1">Con questi numeri v₁ e v₂ stanno sulla stessa retta, quindi non formano una base e non si può tradurre niente. Cambia uno dei quattro numeri della base nuova.</div>`;
+
+function update(){
+  const {p,q,r,s,x,y}=st;
+  $('#xo').textContent=fmt(x);$('#yo').textContent=fmt(y);
+  const det=p*s-r*q;
+  if(det===0){
+    draw(0);
+    $('#say').innerHTML=singular;$('#dirs').innerHTML=singular;
+    $('#pipe').innerHTML=`<div class="warn">${singular.replace(/<[^>]+>/g,'')}</div>`;$('#ap').innerHTML='';
+    return;
+  }
+  const S=lift([[p,r],[q,s]]);
+  const Si=[[F(s,det),F(-r,det)],[F(-q,det),F(p,det)]];
+  const cn=mm(Si,[[L(x)],[L(y)]]);
+  const c1=cn[0][0],c2=cn[1][0];
+  draw(det,c1,c2);
+
+  $('#say').innerHTML=`
+    <div class="say c"><div class="sub">Descrizione canonica (griglia blu)</div>
+      <p>Vai ${fmt(x)} a destra e ${fmt(y)} in su.</p>
+      <div class="eq">(${fmt(x)}, ${fmt(y)})</div></div>
+    <div class="say n"><div class="sub">Descrizione nuova (griglia arancione)</div>
+      <p>Fai ${stepsTxt(c1)} lungo v₁ e ${stepsTxt(c2)} lungo v₂.</p>
+      <div class="eq">(${fs(c1)}, ${fs(c2)})</div></div>`;
+
+  $('#dirs').innerHTML=`
+    <div class="card n">
+      <h3>Da nuovo a canonico: un conto</h3>
+      <p>Hai la ricetta nuova (${fs(c1)}, ${fs(c2)}). Esegui la ricetta con le frecce v₁ = (${fmt(p)}, ${fmt(q)}) e v₂ = (${fmt(r)}, ${fmt(s)}):</p>
+      <div class="eq">${term(c1)}·(${fmt(p)}, ${fmt(q)}) + ${term(c2)}·(${fmt(r)}, ${fmt(s)}) = (${fmt(x)}, ${fmt(y)})</div>
+      <p>In forma di tabella è moltiplicare per <b>S</b>:</p>
+      <div class="eq"><span class="m">S</span> ${M(S)}${V([c1,c2])} = ${V([x,y])}</div>
+      <p class="muted">La colonna 1 di S è v₁, la colonna 2 è v₂.</p>
+    </div>
+    <div class="card c">
+      <h3>Da canonico a nuovo: un sistema</h3>
+      <p>Hai (${fmt(x)}, ${fmt(y)}) e cerchi <i class="m">a</i> e <i class="m">b</i> con <i class="m">a</i>·v₁ + <i class="m">b</i>·v₂ = (${fmt(x)}, ${fmt(y)}). Sono due equazioni:</p>
+      <div class="eq">${fmt(p)}·a + ${term(r)}·b = ${fmt(x)}<br>${term(q)}·a + ${term(s)}·b = ${fmt(y)}</div>
+      <p>Risolverlo equivale a moltiplicare per <b>S⁻¹</b>. Per una 2×2: scambi i due numeri della diagonale, cambi segno agli altri due e dividi per il determinante.</p>
+      <div class="eq">determinante = ${fmt(p)}·${term(s)} − ${term(r)}·${term(q)} = ${fmt(det)}</div>
+      <div class="eq"><span class="m">S⁻¹</span> = 1/${term(det)} ${M([[s,-r],[-q,p]])} = ${M(Si)}</div>
+      <div class="eq"><span class="m">S⁻¹</span> ${V([x,y])} = ${V([c1,c2])}</div>
+    </div>`;
+
+  const c=[[L(x)],[L(y)]];
+  const Ac=mm(lift(A0),c);
+  const res=mm(Si,Ac);
+  const Ap=mm(Si,mm(lift(A0),S));
+  const chk=mm(Ap,cn);
+  const same=eqF(chk[0][0],res[0][0])&&eqF(chk[1][0],res[1][0]);
+  const diag=Ap[0][1].n===0&&Ap[1][0].n===0;
+  $('#pipe').innerHTML=`
+    <div class="pst"><div class="sh"><span class="sn">1</span><h3>Traduci l'ingresso in canonico</h3></div>
+      <p class="muted">La macchina capisce solo ricette canoniche.</p>
+      <div class="eq"><span class="m">S</span> ${V([c1,c2])} = ${V([x,y])}</div></div>
+    <div class="pst"><div class="sh"><span class="sn">2</span><h3>Applica la macchina</h3></div>
+      <p class="muted">Moltiplichi per A: è il punto in cui L sposta P.</p>
+      <div class="eq"><span class="m">A</span> ${V([x,y])} = ${M(A0)}${V([x,y])} = ${V(Ac.map(r=>r[0]))}</div></div>
+    <div class="pst"><div class="sh"><span class="sn">3</span><h3>Ritraduci l'uscita in nuovo</h3></div>
+      <p class="muted">Il risultato è in coordinate canoniche, lo riscrivi con le frecce nuove usando S⁻¹.</p>
+      <div class="eq"><span class="m">S⁻¹</span> ${V(Ac.map(r=>r[0]))} = ${V(res.map(r=>r[0]))}</div></div>`;
+  $('#ap').innerHTML=`
+    <div class="card">
+      <h3>Tutto in un colpo: la tabella A′</h3>
+      <p>I tre passaggi si possono fondere in una sola tabella, <span class="m">A′ = S⁻¹ · A · S</span>. Con la tua base viene</p>
+      <div class="eq"><span class="m">A′</span> = ${M(Ap)}</div>
+      <p>Controllo: <span class="m">A′</span> applicata alle coordinate nuove di P, ${V([c1,c2])}, dà ${V(chk.map(r=>r[0]))}. ${same?'È lo stesso risultato dei tre passaggi.':'Non coincide: c\'è un errore.'}</p>
+      ${diag?`<div class="callout">A′ è diagonale. Vuol dire che nella base nuova la macchina fa solo questo: moltiplica la prima coordinata per ${fs(Ap[0][0])} e la seconda per ${fs(Ap[1][1])}. v₁ e v₂ vengono soltanto allungate, senza cambiare direzione. Si chiamano <b>autovettori</b> e quei fattori <b>autovalori</b>: è il tema della lezione dopo.</div>`:
+      `<div class="callout">Con questa base A′ non è diagonale. Premi «Base dell'esempio» in alto: con v₁ = (1, 1) e v₂ = (2, 1) la macchina allunga entrambe le frecce e la tabella diventa diagonale.</div>`}
+    </div>`;
+}
+
+/* controlli figura */
+['xr','yr'].forEach(id=>$('#'+id).addEventListener('input',()=>{st.x=+$('#xr').value;st.y=+$('#yr').value;update();}));
+['gc','gn'].forEach(id=>$('#'+id).addEventListener('input',update));
+[['bp','p'],['bq','q'],['br','r'],['bs','s']].forEach(([id,k])=>$('#'+id).addEventListener('input',e=>{
+  const v=parseInt(e.target.value,10);
+  if(!isNaN(v)){st[k]=Math.max(-4,Math.min(4,v));update();}
+}));
+document.querySelectorAll('.presets button').forEach(b=>b.addEventListener('click',()=>{
+  const [p,q,r,s]=b.dataset.b.split(',').map(Number);
+  Object.assign(st,{p,q,r,s});
+  $('#bp').value=p;$('#bq').value=q;$('#br').value=r;$('#bs').value=s;update();
+}));
+$('#fig').addEventListener('click',e=>{
+  const rc=$('#fig').getBoundingClientRect();
+  const vx=(e.clientX-rc.left)/rc.width*520, vy=(e.clientY-rc.top)/rc.height*520;
+  st.x=Math.max(-7,Math.min(7,Math.round((vx-O)/U)));
+  st.y=Math.max(-7,Math.min(7,Math.round((O-vy)/U)));
+  $('#xr').value=st.x;$('#yr').value=st.y;update();
+});
+update();
+
+/* ---------- esercizio 1 ---------- */
+function e1(){
+  const a=parse($('#e1a').value),b=parse($('#e1b').value),m=$('#e1m');
+  const ea=$('#e1a'),eb=$('#e1b');
+  [ea,eb].forEach(e=>e.classList.remove('ok','bad'));
+  if(isNaN(a)||isNaN(b)){
+    $('#e1v').textContent=`${isNaN(a)?'a':fmt(a)}·(1, 1) + ${isNaN(b)?'b':fmt(b)}·(2, 1) = ( ? , ? )`;
+    m.className='msg';m.textContent='Scrivi due numeri: qui sopra vedi subito dove arrivi con la tua ricetta.';return;
+  }
+  const rx=a+2*b, ry=a+b;
+  $('#e1v').textContent=`${term(a)}·(1, 1) + ${term(b)}·(2, 1) = (${fmt(rx)}, ${fmt(ry)})`;
+  if(rx===7&&ry===3){m.className='msg ok';m.textContent='Giusto. Arrivi proprio in (7, 3).';ea.classList.add('ok');eb.classList.add('ok');}
+  else{
+    m.className='msg bad';
+    m.textContent=`Arrivi in (${fmt(rx)}, ${fmt(ry)}) e vuoi (7, 3): ti manca (${fmt(7-rx)}, ${fmt(3-ry)}).`;
+    if(a===13&&b===10) m.textContent+=' Hai moltiplicato per S invece che per S⁻¹.';
+  }
+}
+$('#e1a').addEventListener('input',e1);$('#e1b').addEventListener('input',e1);
+
+/* ---------- esercizio 2 ---------- */
+const grid=(pre,rows,cols)=>Array.from({length:rows},(_,r)=>Array.from({length:cols},(_,c)=>`<input class="num" id="${pre}${r}${c}" type="text" inputmode="text" autocomplete="off" aria-label="riga ${r+1}, colonna ${c+1}" size="3">`).join('')).join('');
+$('#g1').innerHTML=grid('b',3,2);
+$('#g2').innerHTML=grid('a',3,2);
+const ex1=[[2,0],[0,2],[2,2]], ex2=[[2,0],[-2,2],[4,0]];
+function checkGrid(pre,exp,msg){
+  let n=0,empty=false;
+  for(let r=0;r<3;r++)for(let c=0;c<2;c++){
+    const el=$(`#${pre}${r}${c}`);el.classList.remove('ok','bad');
+    const v=parse(el.value);
+    if(isNaN(v)){empty=true;continue;}
+    if(v===exp[r][c]){n++;el.classList.add('ok');}else el.classList.add('bad');
+  }
+  if(empty){msg.className='msg bad';msg.textContent='Compila tutte e sei le celle.';return -1;}
+  return n;
+}
+$('#e2c1').addEventListener('click',()=>{
+  const m=$('#e2m1'),n=checkGrid('b',ex1,m);
+  if(n<0) return;
+  if(n===6){m.className='msg ok';m.textContent='Giusto. Ora passa al secondo passo.';$('#stage2').hidden=false;}
+  else{m.className='msg bad';m.textContent=`${n} celle su 6 sono giuste. Controlla L(1, 1) = (1 + 1, 1 − 1, 2·1) per la prima colonna e L(1, −1) per la seconda.`;}
+});
+$('#e2c2').addEventListener('click',()=>{
+  const m=$('#e2m2'),n=checkGrid('a',ex2,m);
+  if(n<0) return;
+  if(n===6){m.className='msg ok';m.textContent='Giusto. Tutte e sei le celle tornano.';}
+  else{m.className='msg bad';m.textContent=`${n} celle su 6 sono giuste. Prima colonna: S_W⁻¹ applicata a (2, 0, 2). Seconda: applicata a (0, 2, 2).`;}
+});
+document.querySelectorAll('#g1 .num, #g2 .num').forEach(e=>e.addEventListener('input',()=>e.classList.remove('ok','bad')));
+</script>
+
+</body></html>

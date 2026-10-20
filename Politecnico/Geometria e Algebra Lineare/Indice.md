@@ -17,6 +17,7 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 6. [[Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali|Equazioni matriciali]]
 7. [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa|Eliminazione di Gauss-Jordan e matrice inversa]]
    - Esercizi: [[Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti|Matrici — Esercizi svolti]]
+   - Esercizi (HTML interattivo): [[Politecnico/Geometria e Algebra Lineare/HTML/esercizi_matrice_inversa.html|10 esercizi: matrice inversa con Gauss-Jordan]]
 
 ## 3. Sistemi lineari
 8. [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli|Sistemi lineari e teorema di Rouché-Capelli]]
@@ -39,6 +40,7 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 15. [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine|Applicazioni lineari, nucleo e immagine]]
 16. [[Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa|Teorema di rappresentazione e matrice rappresentativa]]
 17. [[Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio|Cambio di base e matrice di passaggio]]
+    - HTML interattivo: [[Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html|Cambio di base]]
 
 ## 6. Geometria analitica: rette e piani
 18. [[Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane|Rette e piani — equazioni parametriche e cartesiane]] (include span come nucleo di una matrice)

@@ -8,17 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e7abf3a275060ecf",
+            "id": "66744d3842e2bfa1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "html-viewer",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md",
-                "mode": "source",
-                "source": false
+                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html"
               },
-              "icon": "lucide-file",
-              "title": "Operazioni tra matrici"
+              "icon": "code",
+              "title": "Cambio di base"
             }
           }
         ]
@@ -209,13 +207,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792419362452-uho2woo",
+                      "tabId": "tab-1792508250282-o69rd7h",
                       "conversationId": null,
                       "draftModel": "sonnet",
                       "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1792419362452-uho2woo"
+                  "activeTabId": "tab-1792508250282-o69rd7h"
                 }
               },
               "icon": "bot",
@@ -232,7 +230,8 @@
               "title": "Excalidraw Sidepanel"
             }
           }
-        ]
+        ],
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -255,13 +254,14 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "e7abf3a275060ecf",
+  "active": "66744d3842e2bfa1",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/esercizi_matrice_inversa.html",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md",
     "Excalidraw/Drawing 2026-10-20 16.27.26.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/HTML",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md",
-    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta.md",
@@ -291,7 +291,6 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Dipendenza lineare.md.tmp.10147.e54183e61447",
     "Politecnico/Analisi 1/Dimostrazioni/Programma di massima e bibliografia.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.7 Convergenza assoluta ⟹ convergenza semplice (★).md",
-    "Politecnico/Geometria e Algebra Lineare/Indice.md.tmp.23600.7c19936662dc",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
