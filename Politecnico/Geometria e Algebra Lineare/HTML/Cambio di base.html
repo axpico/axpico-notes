@@ -283,6 +283,125 @@ details>*:not(summary){margin-top:10px}
 </section>
 
 <section>
+  <style>
+    .dgw{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+    #map{display:block;width:100%;min-width:620px;height:auto}
+    #map .panel{fill:none;stroke:var(--line);stroke-width:1.5}
+    #map .ttl{font:700 12px var(--f-body);letter-spacing:.1em;fill:var(--muted)}
+    #map .vec{font:italic 600 19px var(--f-math);fill:var(--fg)}
+    #map .boxc{fill:var(--canon-soft);stroke:var(--canon);stroke-width:2}
+    #map .boxn{fill:var(--new-soft);stroke:var(--new);stroke-width:2}
+    #map .t1{font:700 13px var(--f-body)}
+    #map .t1.c{fill:var(--canon)}
+    #map .t1.n{fill:var(--new)}
+    #map .t2{font:400 21px var(--f-math);fill:var(--fg)}
+    #map .ac{stroke:var(--canon);stroke-width:3;fill:none}
+    #map .an{stroke:var(--new);stroke-width:3;fill:none}
+    #map .as{stroke:var(--fg);stroke-width:2;fill:none;stroke-dasharray:6 4}
+    #map .lab{font:italic 600 18px var(--f-math);fill:var(--fg)}
+    #map .labc{font:italic 600 20px var(--f-math);fill:var(--canon)}
+    #map .labn{font:italic 600 20px var(--f-math);fill:var(--new)}
+    #map .cap{font:500 14px var(--f-body);fill:var(--muted)}
+    #map .fml{font:600 21px var(--f-math);fill:var(--fg)}
+    #map .bdg{fill:var(--fg)}
+    #map .bdt{font:700 14px var(--f-body);fill:var(--bg)}
+    .tbl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 16px;margin:0}
+    .tbl dt{font-family:var(--f-math);font-style:italic;font-size:1.15rem;white-space:nowrap}
+    .tbl dd{margin:0}
+  </style>
+  <h2>Mappa: cosa appartiene a quale base</h2>
+  <p>Lo schema mette in colonna i due spazi. Le caselle blu usano la base vecchia, quelle arancioni la base nuova. Ogni casella descrive lo stesso vettore, solo con frecce diverse. I numeri sono quelli dell'esempio (P = (5, 4), A della sezione 3, S_V = S_W = S).</p>
+  <div class="dgw">
+    <svg id="map" viewBox="0 0 600 430" role="img" aria-label="Schema: dominio a sinistra, codominio a destra. In alto le coordinate vecchie c e d, in basso le coordinate nuove c primo e d primo. Le frecce orizzontali sono A e A primo, quelle verticali S_V e S_W.">
+      <defs>
+        <marker id="mk-c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--canon)"/></marker>
+        <marker id="mk-n" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--new)"/></marker>
+        <marker id="mk-s" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--fg)"/></marker>
+      </defs>
+      <text class="vec" x="135" y="26" text-anchor="middle">vettore v</text>
+      <text class="vec" x="465" y="26" text-anchor="middle">vettore L(v)</text>
+      <rect class="panel" x="10" y="42" width="250" height="334" rx="14"/>
+      <rect class="panel" x="340" y="42" width="250" height="334" rx="14"/>
+      <text class="ttl" x="135" y="68" text-anchor="middle">DOMINIO V · INGRESSO</text>
+      <text class="ttl" x="465" y="68" text-anchor="middle">CODOMINIO W · USCITA</text>
+
+      <rect class="boxc" x="45" y="92" width="180" height="76" rx="10"/>
+      <text class="t1 c" x="135" y="118" text-anchor="middle">coordinate vecchie  c</text>
+      <text class="t2" x="135" y="150" text-anchor="middle">(5, 4)</text>
+      <rect class="boxn" x="45" y="258" width="180" height="76" rx="10"/>
+      <text class="t1 n" x="135" y="284" text-anchor="middle">coordinate nuove  c′</text>
+      <text class="t2" x="135" y="316" text-anchor="middle">(3, 1)</text>
+
+      <rect class="boxc" x="375" y="92" width="180" height="76" rx="10"/>
+      <text class="t1 c" x="465" y="118" text-anchor="middle">coordinate vecchie  d</text>
+      <text class="t2" x="465" y="150" text-anchor="middle">(12, 9)</text>
+      <rect class="boxn" x="375" y="258" width="180" height="76" rx="10"/>
+      <text class="t1 n" x="465" y="284" text-anchor="middle">coordinate nuove  d′</text>
+      <text class="t2" x="465" y="316" text-anchor="middle">(6, 3)</text>
+
+      <line class="ac" x1="227" y1="130" x2="371" y2="130" marker-end="url(#mk-c)"/>
+      <text class="labc" x="299" y="112" text-anchor="middle">A</text>
+      <circle class="bdg" cx="299" cy="130" r="12"/><text class="bdt" x="299" y="135" text-anchor="middle">2</text>
+      <line class="an" x1="227" y1="296" x2="371" y2="296" marker-end="url(#mk-n)"/>
+      <text class="labn" x="299" y="278" text-anchor="middle">A′</text>
+      <circle class="bdg" cx="299" cy="296" r="12"/><text class="bdt" x="299" y="301" text-anchor="middle">4</text>
+      <text class="cap" x="299" y="326" text-anchor="middle">scorciatoia</text>
+
+      <line class="as" x1="92" y1="256" x2="92" y2="172" marker-end="url(#mk-s)"/>
+      <text class="lab" x="72" y="218" text-anchor="end">S<tspan font-size="13" dy="4">V</tspan></text>
+      <circle class="bdg" cx="92" cy="214" r="12"/><text class="bdt" x="92" y="219" text-anchor="middle">1</text>
+      <line class="as" x1="178" y1="172" x2="178" y2="254" marker-end="url(#mk-s)"/>
+      <text class="lab" x="188" y="218">S<tspan font-size="13" dy="4">V</tspan><tspan dy="-4">⁻¹</tspan></text>
+
+      <line class="as" x1="422" y1="256" x2="422" y2="172" marker-end="url(#mk-s)"/>
+      <text class="lab" x="414" y="218" text-anchor="end">S<tspan font-size="13" dy="4">W</tspan></text>
+      <line class="as" x1="508" y1="172" x2="508" y2="254" marker-end="url(#mk-s)"/>
+      <text class="lab" x="528" y="218">S<tspan font-size="13" dy="4">W</tspan><tspan dy="-4">⁻¹</tspan></text>
+      <circle class="bdg" cx="508" cy="214" r="12"/><text class="bdt" x="508" y="219" text-anchor="middle">3</text>
+
+      <text class="cap" x="135" y="360" text-anchor="middle">base vecchia sopra, nuova sotto</text>
+      <text class="cap" x="465" y="360" text-anchor="middle">base vecchia sopra, nuova sotto</text>
+      <text class="fml" x="300" y="410" text-anchor="middle">A′ = S<tspan font-size="14" dy="5">W</tspan><tspan dy="-5">⁻¹ · A · S</tspan><tspan font-size="14" dy="5">V</tspan></text>
+    </svg>
+  </div>
+  <div class="card">
+    <h3>Lo stesso schema con i numeri</h3>
+    <p>Dati: base nuova v₁ = (1, 1) e v₂ = (2, 1), e la trasformazione A della sezione 3. Dominio e codominio sono entrambi ℝ² con la stessa base, quindi S<sub>V</sub> = S<sub>W</sub> = S. Parti dal punto con ricetta nuova c′ = (3, 1).</p>
+    <div class="eq"><span class="m">S</span> = <span class="mat" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>2</span><span>1</span><span>1</span></span> &nbsp; <span class="m">S⁻¹</span> = <span class="mat" style="grid-template-columns:repeat(2,auto)"><span>−1</span><span>2</span><span>1</span><span>−1</span></span> &nbsp; <span class="m">A</span> = <span class="mat" style="grid-template-columns:repeat(2,auto)"><span>4</span><span>−2</span><span>1</span><span>1</span></span></div>
+    <div class="pipe">
+      <div class="pst"><div class="sh"><span class="sn">1</span><h3>Da c′ a c con S<sub>V</sub> (la freccia sale)</h3></div>
+        <p class="muted">Traduci la ricetta nuova in canonica.</p>
+        <div class="eq"><span class="m">S · c′</span> = <span class="mat" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>2</span><span>1</span><span>1</span></span><span class="mat"><span>3</span><span>1</span></span> = <span class="mat"><span>1·3 + 2·1</span><span>1·3 + 1·1</span></span> = <span class="mat"><span>5</span><span>4</span></span></div></div>
+      <div class="pst"><div class="sh"><span class="sn">2</span><h3>Da c a d con A (la freccia va a destra)</h3></div>
+        <p class="muted">La macchina lavora sulla ricetta canonica.</p>
+        <div class="eq"><span class="m">A · c</span> = <span class="mat" style="grid-template-columns:repeat(2,auto)"><span>4</span><span>−2</span><span>1</span><span>1</span></span><span class="mat"><span>5</span><span>4</span></span> = <span class="mat"><span>4·5 − 2·4</span><span>1·5 + 1·4</span></span> = <span class="mat"><span>12</span><span>9</span></span></div></div>
+      <div class="pst"><div class="sh"><span class="sn">3</span><h3>Da d a d′ con S<sub>W</sub>⁻¹ (la freccia scende)</h3></div>
+        <p class="muted">Riscrivi il risultato con le frecce nuove.</p>
+        <div class="eq"><span class="m">S⁻¹ · d</span> = <span class="mat" style="grid-template-columns:repeat(2,auto)"><span>−1</span><span>2</span><span>1</span><span>−1</span></span><span class="mat"><span>12</span><span>9</span></span> = <span class="mat"><span>−12 + 18</span><span>12 − 9</span></span> = <span class="mat"><span>6</span><span>3</span></span></div></div>
+      <div class="pst"><div class="sh"><span class="sn">4</span><h3>Scorciatoia: direttamente con A′</h3></div>
+        <p class="muted">A′ = S⁻¹ · A · S = diagonale (sezione 3). Parti da c′ e arrivi subito a d′.</p>
+        <div class="eq"><span class="m">A′ · c′</span> = <span class="mat" style="grid-template-columns:repeat(2,auto)"><span>2</span><span>0</span><span>0</span><span>3</span></span><span class="mat"><span>3</span><span>1</span></span> = <span class="mat"><span>2·3</span><span>3·1</span></span> = <span class="mat"><span>6</span><span>3</span></span></div>
+        <p>Stesso risultato del passo 3: (6, 3).</p></div>
+    </div>
+  </div>
+  <p class="callout">Percorso lungo (passi 1, 2, 3): parti da c′, sali con S<sub>V</sub> a c, vai a destra con A fino a d, scendi con S<sub>W</sub>⁻¹ a d′. Percorso diretto: vai a destra in basso con A′ da c′ a d′. I due percorsi danno lo stesso risultato, ed è proprio per questo che A′ = S<sub>W</sub>⁻¹ · A · S<sub>V</sub>.</p>
+  <div class="card">
+    <h3>Chi appartiene a cosa</h3>
+    <dl class="tbl">
+      <dt>v</dt><dd>un vettore del dominio V. È l'oggetto, non ha coordinate finché non scegli una base.</dd>
+      <dt class="c">c</dt><dd>coordinate di v nella base <b class="c">vecchia</b> di V.</dd>
+      <dt class="n">c′</dt><dd>coordinate di v nella base <b class="n">nuova</b> di V.</dd>
+      <dt class="c">d</dt><dd>coordinate di L(v) nella base <b class="c">vecchia</b> di W.</dd>
+      <dt class="n">d′</dt><dd>coordinate di L(v) nella base <b class="n">nuova</b> di W.</dd>
+      <dt class="c">A</dt><dd>la tabella di L con le basi <b class="c">vecchie</b>: prende c e dà d.</dd>
+      <dt class="n">A′</dt><dd>la tabella di L con le basi <b class="n">nuove</b>: prende c′ e dà d′.</dd>
+      <dt>S<sub>V</sub></dt><dd>vive nel <b>dominio</b>: converte tra c′ e c. Ha le frecce nuove di V in colonna.</dd>
+      <dt>S<sub>W</sub></dt><dd>vive nel <b>codominio</b>: converte tra d′ e d. Ha le frecce nuove di W in colonna.</dd>
+    </dl>
+  </div>
+</section>
+
+<section>
   <h2>Errori da evitare</h2>
   <div class="card">
     <p><b>1. Scambiare S e S⁻¹.</b> Parti da coordinate canoniche e vuoi quelle nuove: serve S⁻¹.</p>

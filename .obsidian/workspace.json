@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "619444d2adc9f374",
+        "id": "3d0cbe5206d70e59",
         "type": "tabs",
         "children": [
           {
-            "id": "66744d3842e2bfa1",
+            "id": "0fe0dbe8f2e33aeb",
             "type": "leaf",
             "state": {
-              "type": "html-viewer",
-              "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html"
-              },
-              "icon": "code",
-              "title": "Cambio di base"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -230,13 +228,11 @@
               "title": "Excalidraw Sidepanel"
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 326.5,
-    "collapsed": true
+    "width": 326.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -254,11 +250,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "66744d3842e2bfa1",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/esercizi_matrice_inversa.html",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md",
     "Excalidraw/Drawing 2026-10-20 16.27.26.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/HTML",
