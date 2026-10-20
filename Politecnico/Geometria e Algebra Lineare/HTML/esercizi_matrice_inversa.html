@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 esercizi: matrice inversa con Gauss-Jordan</title>
+<style>
+  :root { --bg:#f7f7f5; --fg:#1d1d1b; --card:#fff; --acc:#2a5bd7; --mut:#6b6b66; --bd:#e2e2dc; --hi:#fff3c4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#161617; --fg:#ececea; --card:#202022; --acc:#7da2ff; --mut:#9a9a94; --bd:#333336; --hi:#4a3f12; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui,sans-serif; }
+  main { max-width:860px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  .sub { color:var(--mut); margin:0 0 20px; }
+  .box { background:var(--card); border:1px solid var(--bd); border-radius:10px; padding:14px 16px; margin-bottom:16px; }
+  .box ol { margin:6px 0 0; padding-left:20px; }
+  .ex { background:var(--card); border:1px solid var(--bd); border-radius:10px; padding:16px; margin-bottom:16px; }
+  .ex h2 { font-size:1.05rem; margin:0 0 10px; display:flex; gap:8px; align-items:baseline; flex-wrap:wrap; }
+  .tag { font-size:.75rem; color:var(--mut); border:1px solid var(--bd); border-radius:20px; padding:1px 8px; }
+  .row { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  table.m { border-collapse:collapse; display:inline-table; position:relative; margin:4px 8px; }
+  table.m td { padding:3px 9px; text-align:center; font-variant-numeric:tabular-nums; min-width:34px; }
+  table.m td.sep { border-left:2px solid var(--fg); padding:0; min-width:0; }
+  table.m::before, table.m::after { content:""; position:absolute; top:0; bottom:0; width:6px; border:2px solid var(--fg); }
+  table.m::before { left:-2px; border-right:none; }
+  table.m::after { right:-2px; border-left:none; }
+  td.hl { background:var(--hi); border-radius:4px; }
+  button { background:var(--acc); color:#fff; border:0; border-radius:8px; padding:8px 14px; font:inherit; cursor:pointer; }
+  button.ghost { background:transparent; color:var(--acc); border:1px solid var(--acc); }
+  button.tex { background:transparent; color:var(--acc); border:1px solid var(--bd); padding:2px 8px; font-size:.8rem; margin-left:8px; }
+  .sol { display:none; margin-top:14px; border-top:1px dashed var(--bd); padding-top:12px; }
+  .sol.open { display:block; }
+  .step { margin:10px 0; overflow-x:auto; }
+  .op { font-size:.9rem; color:var(--mut); margin-bottom:2px; }
+  .res { margin-top:12px; font-weight:600; }
+  .chk { color:var(--mut); font-size:.9rem; margin-top:4px; }
+  .actions { margin-top:12px; display:flex; gap:8px; flex-wrap:wrap; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Matrice inversa con Gauss-Jordan</h1>
+  <p class="sub">10 esercizi a difficoltà crescente. Prova a risolverli su carta, poi controlla i passaggi.</p>
+
+  <div class="box">
+    <strong>Metodo</strong>
+    <ol>
+      <li>Scrivi la matrice aumentata <b>[A | I]</b>.</li>
+      <li>Con operazioni elementari sulle righe (scambio, moltiplicazione per uno scalare, somma di un multiplo di una riga a un'altra) trasforma A in I.</li>
+      <li>Quando a sinistra c'è I, a destra c'è <b>A<sup>-1</sup></b>.</li>
+      <li>Se durante il procedimento una riga di A diventa tutta nulla, la matrice non è invertibile.</li>
+    </ol>
+  </div>
+
+  <div id="list"></div>
+</main>
+
+<script>
+// ---------- Frazioni ----------
+const gcd = (a, b) => b === 0 ? Math.abs(a) : gcd(b, a % b);
+class F {
+  constructor(n, d = 1) {
+    if (d < 0) { n = -n; d = -d; }
+    const g = gcd(n, d) || 1;
+    this.n = n / g; this.d = d / g;
+  }
+  add(o) { return new F(this.n * o.d + o.n * this.d, this.d * o.d); }
+  sub(o) { return new F(this.n * o.d - o.n * this.d, this.d * o.d); }
+  mul(o) { return new F(this.n * o.n, this.d * o.d); }
+  div(o) { return new F(this.n * o.d, this.d * o.n); }
+  isZero() { return this.n === 0; }
+  isOne() { return this.n === 1 && this.d === 1; }
+  html() {
+    if (this.d === 1) return String(this.n).replace("-", "−");
+    const s = this.n < 0 ? "−" : "";
+    return `${s}<sup>${Math.abs(this.n)}</sup>&frasl;<sub>${this.d}</sub>`;
+  }
+  text() { return this.d === 1 ? String(this.n) : `${this.n}/${this.d}`; }
+  tex() {
+    if (this.d === 1) return String(this.n);
+    return `${this.n < 0 ? "-" : ""}\\frac{${Math.abs(this.n)}}{${this.d}}`;
+  }
+}
+
+// ---------- LaTeX + copia ----------
+function texMatrix(M) {
+  const body = M.map(r => r.map(v => v.tex()).join(" & ")).join(" \\\\\n");
+  return `\\begin{bmatrix}\n${body}\n\\end{bmatrix}`;
+}
+function texAug(M, n) {
+  const cols = "c".repeat(n) + "|" + "c".repeat(n);
+  const body = M.map(r => r.map(v => v.tex()).join(" & ")).join(" \\\\\n");
+  return `\\left[\\begin{array}{${cols}}\n${body}\n\\end{array}\\right]`;
+}
+async function copyText(text, btn) {
+  const old = btn.textContent;
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch (e) {
+    const ta = document.createElement("textarea");
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); } catch (_) {}
+    ta.remove();
+  }
+  btn.textContent = "Copiato ✓";
+  setTimeout(() => { btn.textContent = old; }, 1200);
+}
+const fr = x => new F(x, 1);
+
+// ---------- Esercizi ----------
+const exercises = [
+  { tag: "2×2", A: [[2,1],[5,3]] },
+  { tag: "2×2", A: [[1,2],[3,4]] },
+  { tag: "2×2", A: [[4,7],[2,6]] },
+  { tag: "3×3", A: [[1,2,3],[0,1,4],[5,6,0]] },
+  { tag: "3×3", A: [[2,0,1],[1,1,0],[0,3,1]] },
+  { tag: "3×3 · pivot nullo, serve uno scambio", A: [[0,1,2],[1,0,3],[4,-3,8]] },
+  { tag: "3×3 · Vandermonde", A: [[1,1,1],[1,2,3],[1,4,9]] },
+  { tag: "3×3 · tridiagonale", A: [[2,-1,0],[-1,2,-1],[0,-1,2]] },
+  { tag: "4×4", A: [[1,0,2,0],[0,1,0,3],[1,1,1,2],[0,0,1,2]] },
+  { tag: "4×4 · tridiagonale", A: [[2,1,0,0],[1,2,1,0],[0,1,2,1],[0,0,1,2]] },
+];
+
+// ---------- Rendering ----------
+function matHTML(M, n, hlRow = -1, hlCol = -1) {
+  let h = '<table class="m">';
+  M.forEach((row, i) => {
+    h += "<tr>";
+    row.forEach((v, j) => {
+      if (j === n) h += '<td class="sep"></td>';
+      const hl = (i === hlRow && j === hlCol) ? ' class="hl"' : "";
+      h += `<td${hl}>${v.html()}</td>`;
+    });
+    h += "</tr>";
+  });
+  return h + "</table>";
+}
+function plainMat(M) {
+  let h = '<table class="m">';
+  M.forEach(row => { h += "<tr>" + row.map(v => `<td>${v.html()}</td>`).join("") + "</tr>"; });
+  return h + "</table>";
+}
+const R = i => `R<sub>${i + 1}</sub>`;
+function coefStr(c) {
+  // coefficiente positivo da sottrarre/sommare
+  return c.text();
+}
+
+function solve(A) {
+  const n = A.length;
+  const M = A.map((r, i) => [...r.map(fr), ...Array.from({ length: n }, (_, j) => fr(i === j ? 1 : 0))]);
+  const steps = [{ op: "Matrice aumentata iniziale [A | I]", M: M.map(r => [...r]), hl: [-1, -1] }];
+  for (let c = 0; c < n; c++) {
+    let p = -1;
+    for (let r = c; r < n; r++) if (!M[r][c].isZero()) { p = r; break; }
+    if (p === -1) return { singular: true, steps };
+    if (p !== c) {
+      [M[p], M[c]] = [M[c], M[p]];
+      steps.push({ op: `Pivot nullo in posizione (${c + 1},${c + 1}): scambio ${R(c)} ↔ ${R(p)}`, M: M.map(r => [...r]), hl: [c, c] });
+    }
+    const pv = M[c][c];
+    if (!pv.isOne()) {
+      M[c] = M[c].map(v => v.div(pv));
+      steps.push({ op: `Normalizzo il pivot: ${R(c)} → (1/${pv.text()})·${R(c)}`.replace("(1/-", "(−1/").replace("/(", "/("), M: M.map(r => [...r]), hl: [c, c] });
+    }
+    for (let r = 0; r < n; r++) {
+      if (r === c || M[r][c].isZero()) continue;
+      const f = M[r][c];
+      M[r] = M[r].map((v, j) => v.sub(f.mul(M[c][j])));
+      const neg = f.n < 0;
+      const mag = new F(Math.abs(f.n), f.d);
+      const opTxt = `${R(r)} → ${R(r)} ${neg ? "+" : "−"} ${mag.isOne() ? "" : "(" + mag.text() + ")·"}${R(c)}`;
+      steps.push({ op: opTxt, M: M.map(r => [...r]), hl: [r, c] });
+    }
+  }
+  const inv = M.map(r => r.slice(n));
+  return { singular: false, steps, inv };
+}
+
+function verify(A, inv) {
+  const n = A.length;
+  for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) {
+    let s = fr(0);
+    for (let k = 0; k < n; k++) s = s.add(fr(A[i][k]).mul(inv[k][j]));
+    if (s.n !== (i === j ? 1 : 0) || s.d !== 1) return false;
+  }
+  return true;
+}
+
+const list = document.getElementById("list");
+exercises.forEach((ex, idx) => {
+  const sol = solve(ex.A);
+  const sec = document.createElement("section");
+  sec.className = "ex";
+  const Afr = ex.A.map(r => r.map(fr));
+  let html = `<h2>Esercizio ${idx + 1} <span class="tag">${ex.tag}</span></h2>
+    <div class="row"><span>Calcola l'inversa di</span> <span>A =</span> ${plainMat(Afr)}</div>
+    <div class="actions"><button class="ghost" data-t="sol">Mostra i passaggi</button>
+      <button class="ghost" data-copy="A">Copia LaTeX di A</button></div>
+    <div class="sol" id="sol${idx}">`;
+  sol.steps.forEach((s, k) => {
+    html += `<div class="step"><div class="op">${s.op}<button class="tex" data-copy="step${k}">Copia LaTeX</button></div>${matHTML(s.M, ex.A.length, s.hl[0], s.hl[1])}</div>`;
+  });
+  if (sol.singular) {
+    html += `<div class="res">La matrice non è invertibile.</div>`;
+  } else {
+    html += `<div class="res">A<sup>-1</sup> = ${plainMat(sol.inv)}<button class="tex" data-copy="inv">Copia LaTeX</button></div>
+             <div class="chk">Verifica A · A<sup>-1</sup> = I: ${verify(ex.A, sol.inv) ? "ok ✓" : "errore"}</div>`;
+  }
+  html += "</div>";
+  sec.innerHTML = html;
+  sec.querySelectorAll("[data-copy]").forEach(b => {
+    b.addEventListener("click", () => {
+      const k = b.dataset.copy;
+      let t = "";
+      if (k === "A") t = texMatrix(Afr);
+      else if (k === "inv") t = texMatrix(sol.inv);
+      else t = texAug(sol.steps[+k.slice(4)].M, ex.A.length);
+      copyText(t, b);
+    });
+  });
+  const btn = sec.querySelector('button[data-t="sol"]');
+  btn.addEventListener("click", () => {
+    const open = sec.querySelector(".sol").classList.toggle("open");
+    btn.textContent = open ? "Nascondi i passaggi" : "Mostra i passaggi";
+  });
+  list.appendChild(sec);
+});
+</script>
+</body>
+</html>

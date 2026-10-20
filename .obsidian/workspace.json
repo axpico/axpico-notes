@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "Operazioni tra matrici"
             }
-          },
-          {
-            "id": "fbbac637441d1e7c",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-10-20 16.27.26.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-20 16.27.26.excalidraw"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -269,10 +255,12 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "fbbac637441d1e7c",
+  "active": "e7abf3a275060ecf",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md",
+    "Politecnico/Geometria e Algebra Lineare/HTML/esercizi_matrice_inversa.html",
     "Excalidraw/Drawing 2026-10-20 16.27.26.excalidraw.md",
+    "Politecnico/Geometria e Algebra Lineare/HTML",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
@@ -304,9 +292,6 @@
     "Politecnico/Analisi 1/Dimostrazioni/Programma di massima e bibliografia.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.7 Convergenza assoluta ⟹ convergenza semplice (★).md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md.tmp.23600.7c19936662dc",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md.tmp.26016.9a5e76e7391d",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Glossario della terminologia.md",
-    "Politecnico/Geometria e Algebra Lineare/sediUnELx",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
