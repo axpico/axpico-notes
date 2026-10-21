@@ -40,7 +40,7 @@ Il risultato finale è, per il teorema precedente, sempre lo stesso $U_0$, indip
 
 Il MEG-J non serve solo a risolvere un singolo sistema $Ax=b$: applicato alla **matrice orlata** (o aumentata) $[A \mid I_n]$, permette di calcolare l'inversa di una matrice quadrata $A$ **quando esiste**.
 
-**Idea.** Come mostrato nella dimostrazione di (v) $\Rightarrow$ (ii) del Teorema 4 (si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]]), se $A$ è invertibile la $j$-esima colonna di $A^{-1}$ è la (unica) soluzione $u_j$ del sistema $Ax = e_j$, dove $e_j$ è la $j$-esima colonna di $I_n$. Risolvere **simultaneamente** tutti questi $n$ sistemi equivale a ridurre a scala l'intera matrice orlata $[A\mid I_n]$ trattando ciascuna colonna di $I_n$ come termine noto.
+**Idea.** Come mostrato nella dimostrazione di (v) $\Rightarrow$ (ii) del Teorema 4 (si veda [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]]), se $A$ è invertibile la $j$-esima colonna di $A^{-1}$ è la (unica) soluzione $u_j$ del sistema $Ax = e_j$, dove $e_j$ è la $j$-esima colonna di $I_n$. Risolvere **simultaneamente** tutti questi $n$ sistemi equivale a ridurre a scala l'intera matrice orlata $[A\mid I_n]$ trattando ciascuna colonna di $I_n$ come termine noto.
 
 **Procedura.**
 
@@ -57,9 +57,9 @@ Questo metodo è quello usato in pratica (più efficiente della formula generale
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Sistemi lineari e teorema di Rouché-Capelli]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md|Equazioni matriciali]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md|Esercizi — Matrici]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Determinanti, Cramer e inversa — Esercizi svolti.md|Esercizi — Determinanti, Cramer e inversa]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Sistemi lineari — Teoria ed esercizi.md|Esercizi — Sistemi lineari]]
+- [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]]
+- [[Sistemi lineari e teorema di Rouché-Capelli|Sistemi lineari e teorema di Rouché-Capelli]]
+- [[Equazioni matriciali|Equazioni matriciali]]
+- [[Matrici — Esercizi svolti|Esercizi — Matrici]]
+- [[Determinanti, Cramer e inversa — Esercizi svolti|Esercizi — Determinanti, Cramer e inversa]]
+- [[Sistemi lineari — Teoria ed esercizi|Esercizi — Sistemi lineari]]

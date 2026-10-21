@@ -62,7 +62,7 @@ $$\ell(\alpha f+\beta g)=\alpha\int_0^1 f+\beta\int_0^1 g=\alpha\,\ell(f)+\beta\
 **Es. 4 — La mappa associata a una matrice (l'esempio fondamentale).**
 Sia $A\in M_{m\times n}(\mathbb K)$. Definiamo
 $$\ell_A:\mathbb K^n\to\mathbb K^m,\qquad \ell_A(\mathbf x):=A\mathbf x\quad(\mathbf x\ \text{vettore colonna}).$$
-È lineare perché $A(\mathbf x+\mathbf y)=A\mathbf x+A\mathbf y$ e $A(\lambda\mathbf x)=\lambda A\mathbf x$. Il [[Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md|teorema di rappresentazione]] dirà che *ogni* mappa lineare tra spazi di dimensione finita è, scelte le basi, di questa forma.
+È lineare perché $A(\mathbf x+\mathbf y)=A\mathbf x+A\mathbf y$ e $A(\lambda\mathbf x)=\lambda A\mathbf x$. Il [[Teorema di rappresentazione e matrice rappresentativa|teorema di rappresentazione]] dirà che *ogni* mappa lineare tra spazi di dimensione finita è, scelte le basi, di questa forma.
 
 **Mappa nulla.** $\ell(\mathbf v)=\mathbf 0$ per ogni $\mathbf v$. È lineare e corrisponde alla matrice nulla.
 
@@ -80,7 +80,7 @@ Date $f:X\to Y$ e $g:Y\to Z$, la **composta** è $g\circ f:X\to Z$ con $(g\circ 
 
 **Composizione $\leftrightarrow$ prodotto di matrici.** Se $A\in M_{m\times n}$ e $B\in M_{p\times m}$,
 $$\ell_B\circ\ell_A=\ell_{BA}$$
-perché $(\ell_B\circ\ell_A)(\mathbf x)=B(A\mathbf x)=(BA)\mathbf x$ per l'associatività. Questo è il motivo per cui il prodotto di matrici è definito in quel modo, e perché **non è commutativo**: la composizione di funzioni in generale non lo è. Vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md|Operazioni tra matrici]].
+perché $(\ell_B\circ\ell_A)(\mathbf x)=B(A\mathbf x)=(BA)\mathbf x$ per l'associatività. Questo è il motivo per cui il prodotto di matrici è definito in quel modo, e perché **non è commutativo**: la composizione di funzioni in generale non lo è. Vedi [[Operazioni tra matrici|Operazioni tra matrici]].
 
 ---
 
@@ -93,7 +93,7 @@ Sia $\ell:V\to W$ lineare.
 | **Immagine** | $\operatorname{im}(\ell)=\{\ell(\mathbf v):\mathbf v\in V\}$ | $W$ (arrivo) | *Quali vettori posso ottenere?* |
 | **Nucleo** | $\ker(\ell)=\{\mathbf x\in V:\ell(\mathbf x)=\mathbf 0\}$ | $V$ (partenza) | *Quali vettori vengono annullati?* |
 
-Il nucleo è la controimmagine del vettore nullo: $\ker\ell=\ell^{-1}(\mathbf 0)$. Per la terminologia generale vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md|Applicazioni (terminologia generale)]].
+Il nucleo è la controimmagine del vettore nullo: $\ker\ell=\ell^{-1}(\mathbf 0)$. Per la terminologia generale vedi [[Applicazioni (terminologia generale)|Applicazioni (terminologia generale)]].
 
 **Proposizione 1.** $\ker(\ell)$ è un sottospazio di $V$ e $\operatorname{im}(\ell)$ è un sottospazio di $W$.
 
@@ -114,7 +114,7 @@ Per $\ell_A:\mathbb K^n\to\mathbb K^m$:
 $$A\mathbf x=x_1A^1+x_2A^2+\dots+x_nA^n,$$
 cioè $A\mathbf x$ è *sempre* una combinazione lineare delle colonne, e ogni combinazione si ottiene scegliendo opportunamente $\mathbf x$.
 
-Di conseguenza $A\mathbf x=\mathbf b$ è risolubile $\iff\mathbf b\in\operatorname{im}(A)$. È il contenuto del teorema di [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Rouché–Capelli]].
+Di conseguenza $A\mathbf x=\mathbf b$ è risolubile $\iff\mathbf b\in\operatorname{im}(A)$. È il contenuto del teorema di [[Sistemi lineari e teorema di Rouché-Capelli|Rouché–Capelli]].
 
 #### Esempio numerico completo
 
@@ -207,7 +207,7 @@ $$\ell^{-1}(\alpha\mathbf w_1+\beta\mathbf w_2)=\alpha\mathbf v_1+\beta\mathbf v
 
 **Caso matriciale.** Se $A$ è quadrata e invertibile, $\ell_A$ è biiettiva e
 $$(\ell_A)^{-1}=\ell_{A^{-1}},$$
-perché $\ell_{A^{-1}}\circ\ell_A=\ell_{A^{-1}A}=\ell_I=\mathrm{id}$. Allora $A\mathbf x=\mathbf b$ ha l'unica soluzione $\mathbf x=A^{-1}\mathbf b$. Vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]].
+perché $\ell_{A^{-1}}\circ\ell_A=\ell_{A^{-1}A}=\ell_I=\mathrm{id}$. Allora $A\mathbf x=\mathbf b$ ha l'unica soluzione $\mathbf x=A^{-1}\mathbf b$. Vedi [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]].
 
 ---
 
@@ -229,10 +229,10 @@ perché $\ell_{A^{-1}}\circ\ell_A=\ell_{A^{-1}A}=\ell_I=\mathrm{id}$. Allora $A\
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md|Applicazioni (terminologia generale)]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Sistemi lineari e teorema di Rouché-Capelli]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md|Operazioni tra matrici]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md|Sistemi di riferimento nel piano]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md|Basi, dimensione e coordinate]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md|Teorema di rappresentazione e matrice rappresentativa]]
+- [[Applicazioni (terminologia generale)|Applicazioni (terminologia generale)]]
+- [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]]
+- [[Sistemi lineari e teorema di Rouché-Capelli|Sistemi lineari e teorema di Rouché-Capelli]]
+- [[Operazioni tra matrici|Operazioni tra matrici]]
+- [[Sistemi di riferimento nel piano|Sistemi di riferimento nel piano]]
+- [[Basi, dimensione e coordinate|Basi, dimensione e coordinate]]
+- [[Teorema di rappresentazione e matrice rappresentativa|Teorema di rappresentazione e matrice rappresentativa]]

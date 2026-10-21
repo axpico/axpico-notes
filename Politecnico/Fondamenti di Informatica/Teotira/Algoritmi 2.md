@@ -314,6 +314,6 @@ int main(void)
 
 
 ## Collegamenti
-- [[Indice]]
+- [[Politecnico/Analisi 1/Indice]]
 - [[Algoritmo]] · [[Programma]]
 - [[Rappresentazione dei numeri binario, complementi, ASCII, virgola fissa-mobile]]

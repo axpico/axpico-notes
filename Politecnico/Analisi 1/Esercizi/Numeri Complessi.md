@@ -241,5 +241,5 @@ $$z = \frac{(3-i)^2}{(3+i)(3-i)} = \frac{9-6i+i^2}{9+1} = \frac{8-6i}{10} = \fra
 
 ## Collegamenti
 
-- [[Politecnico/Analisi 1/Teoria/Numeri complessi.md|Analisi — Numeri complessi]]
-- [[Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md|Analisi — Insiemi numerici, logica e dimostrazioni]]
+- [[Politecnico/Analisi 1/Teoria/Numeri complessi|Analisi — Numeri complessi]]
+- [[Insieme numerici, logia e dimostrazioni|Analisi — Insiemi numerici, logica e dimostrazioni]]

@@ -9,7 +9,7 @@ tags:
 
 > **Idea.** Un vettore $\mathbf v$ è un oggetto geometrico/astratto; le sue **coordinate** dipendono dalla base scelta. Cambiando base cambiano i numeri, non il vettore. La **matrice di passaggio** è il "dizionario" lineare che traduce le coordinate da una base all'altra. Lo stesso accade per una mappa lineare: la sua matrice rappresentativa dipende dalle basi di dominio e codominio, e cambia secondo una regola precisa (Teorema 2).
 
-Prerequisiti: [[Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md|Basi, dimensione e coordinate]], [[Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md|Teorema di rappresentazione e matrice rappresentativa]], [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]].
+Prerequisiti: [[Basi, dimensione e coordinate|Basi, dimensione e coordinate]], [[Teorema di rappresentazione e matrice rappresentativa|Teorema di rappresentazione e matrice rappresentativa]], [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]].
 
 ### Notazione
 
@@ -47,7 +47,7 @@ Invertibilità: se $S\tilde{\mathbf c}=\mathbf 0$ allora $\mathbf v=\sum\tilde c
  (coordinate nuove $\to$ vettore $\to$ coordinate vecchie).
 2. **Come matrice rappresentativa dell'identità.** $S=M^{\widetilde{\mathcal B}}_{\mathcal B}(\mathrm{I})$, cioè la matrice rappresentativa dell'applicazione identità $\mathrm I:V\to V$ ($\mathrm I(\mathbf v)=\mathbf v$) con la base $\widetilde{\mathcal B}$ nel dominio e $\mathcal B$ nel codominio. Allora $S^{-1}=M^{\mathcal B}_{\widetilde{\mathcal B}}(\mathrm I)$.
 
-Per la notazione $M^{\text{dominio}}_{\text{codominio}}(\ell)$ vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md|Teorema di rappresentazione e matrice rappresentativa]].
+Per la notazione $M^{\text{dominio}}_{\text{codominio}}(\ell)$ vedi [[Teorema di rappresentazione e matrice rappresentativa|Teorema di rappresentazione e matrice rappresentativa]].
 
 ### Teorema 2 (cambio di base per la matrice rappresentativa)
 
@@ -170,7 +170,7 @@ Verifica: $2(1,1)+1\,(1,-1)=(3,1)$ ✓.
 
 **Endomorfismi.** Per $V=W$ e stessa base, $\widetilde A=S^{-1}AS$: matrici **simili**, stessa applicazione in basi diverse, quindi stessi rango, determinante, traccia, autovalori. La diagonalizzazione cerca la base in cui $\widetilde A$ è diagonale.
 
-**Legame con rette e piani.** Una parametrizzazione $\tilde{\mathbf c}\mapsto\mathbf c$ è un'applicazione lineare invertibile (qui $S$); lo span della nota [[Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md|Rette e piani]] è l'immagine di $[\mathbf v|\mathbf w]$, la forma cartesiana è il nucleo di un'altra matrice.
+**Legame con rette e piani.** Una parametrizzazione $\tilde{\mathbf c}\mapsto\mathbf c$ è un'applicazione lineare invertibile (qui $S$); lo span della nota [[Rette e piani — equazioni parametriche e cartesiane|Rette e piani]] è l'immagine di $[\mathbf v|\mathbf w]$, la forma cartesiana è il nucleo di un'altra matrice.
 
 **Errori tipici**
 1. Scambiare $S$ e $S^{-1}$.
@@ -179,8 +179,8 @@ Verifica: $2(1,1)+1\,(1,-1)=(3,1)$ ✓.
 
 ### Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md|Basi, dimensione e coordinate]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e matrice inversa]] (per calcolare $S^{-1}$)
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md|Applicazioni lineari, nucleo e immagine]]
+- [[Basi, dimensione e coordinate|Basi, dimensione e coordinate]]
+- [[Eliminazione di Gauss-Jordan e calcolo della matrice inversa|Eliminazione di Gauss-Jordan e matrice inversa]] (per calcolare $S^{-1}$)
+- [[Applicazioni lineari, nucleo e immagine|Applicazioni lineari, nucleo e immagine]]
 
-> **Nota.** Nelle dispense della lezione 5 il paragrafo sul passaggio tra due *sistemi di riferimento* (cambio di origine + cambio di base nello spazio affine, pp. 21–36 e 41–53) è stato rimandato a una lezione successiva; quando verrà svolto andrà in [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md|Sistemi di riferimento nel piano]].
+> **Nota.** Nelle dispense della lezione 5 il paragrafo sul passaggio tra due *sistemi di riferimento* (cambio di origine + cambio di base nello spazio affine, pp. 21–36 e 41–53) è stato rimandato a una lezione successiva; quando verrà svolto andrà in [[Sistemi di riferimento nel piano|Sistemi di riferimento nel piano]].

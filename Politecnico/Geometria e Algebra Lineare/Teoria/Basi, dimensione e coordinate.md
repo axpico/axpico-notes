@@ -11,7 +11,7 @@ tags:
 
 Sia $V$ uno spazio vettoriale su $\mathbb K$. Un insieme ordinato $\mathcal B=(\mathbf v_1,\dots,\mathbf v_n)$ di vettori di $V$ è una **base** se:
 
-1. **genera** $V$: $\operatorname{span}(\mathbf v_1,\dots,\mathbf v_n)=V$ (vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md|Combinazioni lineari e sottospazio generato]]);
+1. **genera** $V$: $\operatorname{span}(\mathbf v_1,\dots,\mathbf v_n)=V$ (vedi [[Combinazioni lineari e sottospazio generato|Combinazioni lineari e sottospazio generato]]);
 2. è **linearmente indipendente**: $\lambda_1\mathbf v_1+\dots+\lambda_n\mathbf v_n=\mathbf 0\Rightarrow\lambda_1=\dots=\lambda_n=0$.
 
 **Teorema (coordinate).** $\mathcal B$ è una base $\iff$ ogni $\mathbf v\in V$ si scrive in **un unico modo**
@@ -21,7 +21,7 @@ $$\mathbf v=c_1\mathbf v_1+\dots+c_n\mathbf v_n,\qquad c_i\in\mathbb K.$$
 
 I coefficienti $(c_1,\dots,c_n)$ sono le **coordinate** (o componenti) di $\mathbf v$ rispetto a $\mathcal B$:
 $$[\mathbf v]_{\mathcal B}:=\begin{pmatrix}c_1\\\vdots\\c_n\end{pmatrix}\in\mathbb K^n.$$
-Cambiando la base cambiano le coordinate dello stesso vettore (stesso fenomeno dei sistemi di riferimento, vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md|Sistemi di riferimento nel piano]]).
+Cambiando la base cambiano le coordinate dello stesso vettore (stesso fenomeno dei sistemi di riferimento, vedi [[Sistemi di riferimento nel piano|Sistemi di riferimento nel piano]]).
 
 **Base canonica di $\mathbb K^n$:** $\mathbf e_1=(1,0,\dots,0),\ \dots,\ \mathbf e_n=(0,\dots,0,1)$. Rispetto ad essa le coordinate di $\mathbf x\in\mathbb K^n$ coincidono con le sue componenti: $\mathbf x=x_1\mathbf e_1+\dots+x_n\mathbf e_n$.
 
@@ -70,13 +70,13 @@ $$c_1B_1+c_2B_2+c_3B_3=\begin{pmatrix}c_1+c_2&c_3\\c_3&c_2-c_1\end{pmatrix}=\beg
 $$c_1=\frac{a-d}{2},\qquad c_2=\frac{a+d}{2},\qquad c_3=b.$$
 L'esistenza e unicità per ogni $(a,b,d)$ prova che $\mathcal B'$ è base. In forma matriciale il sistema è $M\mathbf c=(a,b,d)^{\mathsf T}$ con
 $$M=\begin{pmatrix}1&1&0\\0&0&1\\-1&1&0\end{pmatrix},$$
-e $\mathcal B'$ è base $\iff M$ è invertibile (sviluppando lungo la seconda riga, $\det M=-1\cdot\det\begin{pmatrix}1&1\\-1&1\end{pmatrix}=-2\ne0$). Si risolve con Gauss–Jordan (vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Gauss-Jordan]]).
+e $\mathcal B'$ è base $\iff M$ è invertibile (sviluppando lungo la seconda riga, $\det M=-1\cdot\det\begin{pmatrix}1&1\\-1&1\end{pmatrix}=-2\ne0$). Si risolve con Gauss–Jordan (vedi [[Eliminazione di Gauss-Jordan e calcolo della matrice inversa|Gauss-Jordan]]).
 
 > **Metodo generale.** Per trovare le coordinate di $\mathbf v$ rispetto a una base $\mathcal B=(\mathbf v_1,\dots,\mathbf v_n)$ di $V\cong\mathbb K^n$: si risolve $c_1\mathbf v_1+\dots+c_n\mathbf v_n=\mathbf v$, cioè il sistema lineare $[\mathbf v_1|\cdots|\mathbf v_n]\,\mathbf c=\mathbf v$. La base garantisce soluzione esistente e unica.
 
 ### Isomorfismi
 
-Una mappa lineare **biiettiva** $\ell:V\to W$ è un **isomorfismo** ($V\cong W$): trasporta basi in basi e conserva tutta la struttura (la sua inversa è lineare, vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md|Applicazioni lineari, nucleo e immagine]]).
+Una mappa lineare **biiettiva** $\ell:V\to W$ è un **isomorfismo** ($V\cong W$): trasporta basi in basi e conserva tutta la struttura (la sua inversa è lineare, vedi [[Applicazioni lineari, nucleo e immagine|Applicazioni lineari, nucleo e immagine]]).
 
 **Teorema (coordinate come isomorfismo).** Se $\mathcal B$ è una base di $V$ con $\dim V=n$, la mappa
 $$\kappa_{\mathcal B}:V\to\mathbb K^n,\qquad\mathbf v\mapsto[\mathbf v]_{\mathcal B}$$
@@ -86,8 +86,8 @@ Per questo il calcolo in qualunque spazio di dimensione finita si riduce a calco
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md|Combinazioni lineari e sottospazio generato]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md|Applicazioni lineari, nucleo e immagine]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Teorema di rappresentazione e matrice rappresentativa.md|Teorema di rappresentazione e matrice rappresentativa]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md|Cambio di base e matrice di passaggio]]
+- [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]]
+- [[Combinazioni lineari e sottospazio generato|Combinazioni lineari e sottospazio generato]]
+- [[Applicazioni lineari, nucleo e immagine|Applicazioni lineari, nucleo e immagine]]
+- [[Teorema di rappresentazione e matrice rappresentativa|Teorema di rappresentazione e matrice rappresentativa]]
+- [[Cambio di base e matrice di passaggio|Cambio di base e matrice di passaggio]]

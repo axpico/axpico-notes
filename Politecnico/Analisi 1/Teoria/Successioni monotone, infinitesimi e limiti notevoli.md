@@ -272,6 +272,6 @@ dove $x_n\ll y_n$ significa $\dfrac{x_n}{y_n}\to0$.
 ## Collegamenti
 
 - [[Algebra dei limiti e teoremi sui limiti]]
-- [[Limiti di successioni]]
+- [[Politecnico/Analisi 1/Teoria/Limiti di successioni]]
 - [[Successioni]]
 - [[Estremo superiore ed estremo inferiore, completezza di ℝ]]

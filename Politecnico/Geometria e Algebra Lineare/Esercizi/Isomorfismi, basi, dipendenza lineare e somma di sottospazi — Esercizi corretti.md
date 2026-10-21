@@ -9,10 +9,10 @@ tags:
 ---
 ## Collegamenti alla teoria
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md|Combinazioni lineari e sottospazio generato]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate|Basi, dimensione e coordinate]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine|Applicazioni lineari, nucleo e immagine]]
+- [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]]
+- [[Combinazioni lineari e sottospazio generato|Combinazioni lineari e sottospazio generato]]
+- [[Basi, dimensione e coordinate|Basi, dimensione e coordinate]]
+- [[Applicazioni lineari, nucleo e immagine|Applicazioni lineari, nucleo e immagine]]
 
 > Pagina ottenuta correggendo e completando gli appunti manoscritti (Excalidraw, 14/10/2026). Dove l'originale conteneva una svista o una scrittura ambigua, è segnalato in **Nota di correzione**.
 

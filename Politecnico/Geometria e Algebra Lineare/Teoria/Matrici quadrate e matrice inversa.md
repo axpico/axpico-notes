@@ -166,7 +166,7 @@ $$
 
 Dunque $B$ è un'inversa destra di $A$, cioè vale (ii). $\blacksquare$
 
-> Questa costruzione è anche la giustificazione teorica del metodo pratico per calcolare $A^{-1}$: risolvere gli $n$ sistemi $Ax=e_j$ (uno per ogni colonna di $I_n$) equivale esattamente a fare l'eliminazione di Gauss-Jordan sulla matrice orlata $[A\mid I_n]$ — si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]].
+> Questa costruzione è anche la giustificazione teorica del metodo pratico per calcolare $A^{-1}$: risolvere gli $n$ sistemi $Ax=e_j$ (uno per ogni colonna di $I_n$) equivale esattamente a fare l'eliminazione di Gauss-Jordan sulla matrice orlata $[A\mid I_n]$ — si veda [[Eliminazione di Gauss-Jordan e calcolo della matrice inversa|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]].
 
 ### Teorema 5 (formula esplicita dell'inversa $2\times 2$)
 
@@ -208,7 +208,7 @@ $$
 A = \begin{bmatrix} 1 & 0 & 1\\ 0 & 4 & 2\\ 0 & 0 & 7\end{bmatrix}.
 $$
 
-$A$ è già **a scala** (triangolare superiore) e ha tutti i pivot non nulli ($1,4,7$ sulla diagonale), quindi $r(A)=3=$ ordine di $A$: per il Teorema 4, punto (iv) $\Rightarrow$ (i), $A$ è **invertibile**. (Per il calcolo esplicito di $A^{-1}$ si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]].)
+$A$ è già **a scala** (triangolare superiore) e ha tutti i pivot non nulli ($1,4,7$ sulla diagonale), quindi $r(A)=3=$ ordine di $A$: per il Teorema 4, punto (iv) $\Rightarrow$ (i), $A$ è **invertibile**. (Per il calcolo esplicito di $A^{-1}$ si veda [[Eliminazione di Gauss-Jordan e calcolo della matrice inversa|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]].)
 
 > **Osservazione generale.** Una matrice triangolare (superiore o inferiore) è invertibile se e solo se tutti gli elementi sulla diagonale principale sono non nulli: infatti in tal caso la matrice è già a scala con $n$ pivot, cioè $r(A)=n$.
 
@@ -304,12 +304,12 @@ mentre $A^{-1}B^{-1}=\begin{bmatrix}7&-2\\-3&1\end{bmatrix}\neq(AB)^{-1}$.
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md|Operazioni tra matrici]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md|Sistemi lineari quadrati e teorema di Cramer]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Equazioni matriciali.md|Equazioni matriciali]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Determinante, sviluppo di Laplace e formula di Cramer.md|Determinante, sviluppo di Laplace e formula di Cramer]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md|Vettori geometrici liberi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md|Esercizi — Matrici]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Determinanti, Cramer e inversa — Esercizi svolti.md|Esercizi — Determinanti, Cramer e inversa]]
+- [[Operazioni tra matrici|Operazioni tra matrici]]
+- [[Sistemi lineari quadrati e teorema di Cramer|Sistemi lineari quadrati e teorema di Cramer]]
+- [[Eliminazione di Gauss-Jordan e calcolo della matrice inversa|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
+- [[Equazioni matriciali|Equazioni matriciali]]
+- [[Determinante, sviluppo di Laplace e formula di Cramer|Determinante, sviluppo di Laplace e formula di Cramer]]
+- [[Vettori geometrici liberi|Vettori geometrici liberi]]
+- [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]]
+- [[Matrici — Esercizi svolti|Esercizi — Matrici]]
+- [[Determinanti, Cramer e inversa — Esercizi svolti|Esercizi — Determinanti, Cramer e inversa]]

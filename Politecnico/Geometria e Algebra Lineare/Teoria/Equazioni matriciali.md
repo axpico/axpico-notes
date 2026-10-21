@@ -36,7 +36,7 @@ $$
 
 (Attenzione: bisogna moltiplicare **a sinistra** su entrambi i lati — moltiplicare a destra darebbe $AXA^{-1}$, che non si semplifica.)
 
-Equivalentemente, se $X = [x_1\mid x_2\mid\cdots\mid x_p]$ e $B=[b_1\mid b_2\mid\cdots\mid b_p]$ sono scritte per colonne, l'equazione $AX=B$ equivale a $p$ sistemi lineari indipendenti $Ax_j = b_j$ (uno per ogni colonna), esattamente come nella costruzione dell'inversa vista in [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]].
+Equivalentemente, se $X = [x_1\mid x_2\mid\cdots\mid x_p]$ e $B=[b_1\mid b_2\mid\cdots\mid b_p]$ sono scritte per colonne, l'equazione $AX=B$ equivale a $p$ sistemi lineari indipendenti $Ax_j = b_j$ (uno per ogni colonna), esattamente come nella costruzione dell'inversa vista in [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]].
 
 ## Soluzione di $YA=C$
 
@@ -48,7 +48,7 @@ $$
 
 ## Esempio completo
 
-Sia $A = \begin{bmatrix}1&2\\3&4\end{bmatrix}$. Per il Teorema 5 (si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]]), $A$ è invertibile perché $ad-bc = 1\cdot4-2\cdot3=-2\ne0$, e
+Sia $A = \begin{bmatrix}1&2\\3&4\end{bmatrix}$. Per il Teorema 5 (si veda [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]]), $A$ è invertibile perché $ad-bc = 1\cdot4-2\cdot3=-2\ne0$, e
 
 $$
 A^{-1} = \frac{1}{-2}\begin{bmatrix}4&-2\\-3&1\end{bmatrix} = \begin{bmatrix}-2&1\\ \tfrac32&-\tfrac12\end{bmatrix}.
@@ -98,8 +98,8 @@ $$
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md|Operazioni tra matrici]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Teorema 6 — inversa di un prodotto $(AB)^{-1}=B^{-1}A^{-1}$]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md|Esercizi — Matrici]]
+- [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]]
+- [[Eliminazione di Gauss-Jordan e calcolo della matrice inversa|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
+- [[Operazioni tra matrici|Operazioni tra matrici]]
+- [[Matrici quadrate e matrice inversa|Teorema 6 — inversa di un prodotto $(AB)^{-1}=B^{-1}A^{-1}$]]
+- [[Matrici — Esercizi svolti|Esercizi — Matrici]]

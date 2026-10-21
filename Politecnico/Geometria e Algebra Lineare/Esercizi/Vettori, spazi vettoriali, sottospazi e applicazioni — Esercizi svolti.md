@@ -13,11 +13,11 @@ Dieci esercizi, in ordine di difficoltà crescente, per **capire e fissare** gli
 
 ## Collegamenti alla teoria
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]] (Teorema 6: inversa del prodotto)
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md|Vettori geometrici liberi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md|Combinazioni lineari e sottospazio generato]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md|Applicazioni (terminologia generale)]]
+- [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]] (Teorema 6: inversa del prodotto)
+- [[Vettori geometrici liberi|Vettori geometrici liberi]]
+- [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]]
+- [[Combinazioni lineari e sottospazio generato|Combinazioni lineari e sottospazio generato]]
+- [[Applicazioni (terminologia generale)|Applicazioni (terminologia generale)]]
 
 ---
 

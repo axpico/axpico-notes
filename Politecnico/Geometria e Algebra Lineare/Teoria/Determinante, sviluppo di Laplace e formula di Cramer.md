@@ -24,7 +24,7 @@ $$
 n=1:\ \det[a]=a,\qquad\qquad n=2:\ \det\begin{bmatrix}a&b\\c&d\end{bmatrix}=ad-bc .
 $$
 
-Per $n=2$ è la quantità che compare nella formula dell'inversa (Teorema 5 nella nota [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]]).
+Per $n=2$ è la quantità che compare nella formula dell'inversa (Teorema 5 nella nota [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]]).
 
 ### Minori e complementi algebrici
 
@@ -109,11 +109,11 @@ Attenzione alla **trasposizione**: il cofattore $C_{ij}$ va nella posizione $(j,
 
 Per $n=2$ ritrova la formula nota: $C=\begin{bmatrix}d&-c\\-b&a\end{bmatrix}$, $C^{\mathsf T}=\begin{bmatrix}d&-b\\-c&a\end{bmatrix}$.
 
-Per $n\ge3$ il metodo è più costoso di Gauss–Jordan (vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan]]): $\sim n^2$ determinanti di ordine $n-1$ contro $O(n^3)$ operazioni. Ha però il vantaggio di dare una formula **simbolica** (utile con parametri).
+Per $n\ge3$ il metodo è più costoso di Gauss–Jordan (vedi [[Eliminazione di Gauss-Jordan e calcolo della matrice inversa|Eliminazione di Gauss-Jordan]]): $\sim n^2$ determinanti di ordine $n-1$ contro $O(n^3)$ operazioni. Ha però il vantaggio di dare una formula **simbolica** (utile con parametri).
 
 ## Regola di Cramer (formula risolutiva)
 
-Nella nota [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md|Teorema di Cramer]] si è visto *che* esiste un'unica soluzione se $r(A)=n$. Col determinante si ottiene anche **la formula**.
+Nella nota [[Sistemi lineari quadrati e teorema di Cramer|Teorema di Cramer]] si è visto *che* esiste un'unica soluzione se $r(A)=n$. Col determinante si ottiene anche **la formula**.
 
 **Teorema (regola di Cramer).** Sia $A\in M_n(\mathbb R)$ con $\det A\ne0$ e $A\underline x=\underline b$. Indicata con $A_i$ la matrice ottenuta da $A$ **sostituendo la $i$-esima colonna con la colonna dei termini noti** $\underline b$, la soluzione è
 
@@ -155,12 +155,12 @@ Se $A$ è quadrata con $\det A=0$ e $r(A)=r<n$ (sistema compatibile):
 3. si porta a destra il contributo dei parametri e si applica Cramer al sistema $r\times r$ ottenuto, che ha $\det\ne0$;
 4. le soluzioni sono $\infty^{\,n-r}$.
 
-Un esempio completo è nella nota [[Politecnico/Geometria e Algebra Lineare/Esercizi/Determinanti, Cramer e inversa — Esercizi svolti.md|Determinanti, Cramer e inversa — Esercizi svolti]] (Esercizio 5).
+Un esempio completo è nella nota [[Determinanti, Cramer e inversa — Esercizi svolti|Determinanti, Cramer e inversa — Esercizi svolti]] (Esercizio 5).
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md|Sistemi lineari quadrati e teorema di Cramer]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Sistemi lineari e teorema di Rouché-Capelli]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi.md|Esercizi — Rango, sottospazi, combinazioni lineari]]
+- [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]]
+- [[Sistemi lineari quadrati e teorema di Cramer|Sistemi lineari quadrati e teorema di Cramer]]
+- [[Sistemi lineari e teorema di Rouché-Capelli|Sistemi lineari e teorema di Rouché-Capelli]]
+- [[Eliminazione di Gauss-Jordan e calcolo della matrice inversa|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
+- [[Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi|Esercizi — Rango, sottospazi, combinazioni lineari]]

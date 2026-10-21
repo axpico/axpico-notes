@@ -6,7 +6,7 @@ tags:
 ---
 ## Vettori geometrici liberi
 
-Nella geometria euclidea (piano o spazio) un vettore si introduce in due passi: prima i **segmenti orientati**, poi una **relazione di equivalenza** che identifica quelli "uguali a meno di spostamento". Il risultato è il concetto di **vettore libero**, che è l'oggetto geometrico di cui $\mathbb R^2,\mathbb R^3$ sono il modello in coordinate (si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md|Insiemi, vettori e sistemi lineari — nozioni di base]]).
+Nella geometria euclidea (piano o spazio) un vettore si introduce in due passi: prima i **segmenti orientati**, poi una **relazione di equivalenza** che identifica quelli "uguali a meno di spostamento". Il risultato è il concetto di **vettore libero**, che è l'oggetto geometrico di cui $\mathbb R^2,\mathbb R^3$ sono il modello in coordinate (si veda [[Insiemi, vettori e sistemi lineari — nozioni di base|Insiemi, vettori e sistemi lineari — nozioni di base]]).
 
 ### Segmenti orientati
 
@@ -53,7 +53,7 @@ $$
 \tau_{\vec v}(A) := B \iff \overrightarrow{AB}=\vec v .
 $$
 
-**Corrispondenza biunivoca vettori-traslazioni.** Ogni vettore libero $\vec v$ definisce una traslazione $\tau_{\vec v}$ e, viceversa, per ogni traslazione $\tau$ esiste **un unico** vettore $\vec v$ tale che $\tau=\tau_{\vec v}$ (basta prendere il vettore rappresentato da $\overrightarrow{A\tau(A)}$, che per definizione non dipende da $A$). Perciò un modo alternativo di introdurre i vettori liberi è **identificarli con le traslazioni**. Le traslazioni sono applicazioni biiettive del piano (o spazio) in sé, con $\tau_{\vec v}^{-1}=\tau_{-\vec v}$: si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md|Applicazioni (terminologia generale)]].
+**Corrispondenza biunivoca vettori-traslazioni.** Ogni vettore libero $\vec v$ definisce una traslazione $\tau_{\vec v}$ e, viceversa, per ogni traslazione $\tau$ esiste **un unico** vettore $\vec v$ tale che $\tau=\tau_{\vec v}$ (basta prendere il vettore rappresentato da $\overrightarrow{A\tau(A)}$, che per definizione non dipende da $A$). Perciò un modo alternativo di introdurre i vettori liberi è **identificarli con le traslazioni**. Le traslazioni sono applicazioni biiettive del piano (o spazio) in sé, con $\tau_{\vec v}^{-1}=\tau_{-\vec v}$: si veda [[Applicazioni (terminologia generale)|Applicazioni (terminologia generale)]].
 
 In generale una traslazione (del piano o dello spazio euclideo) è una trasformazione tale che, per ogni coppia di punti $A_1,A_2$, i segmenti orientati $\overrightarrow{A_1\,\tau(A_1)}$ e $\overrightarrow{A_2\,\tau(A_2)}$ sono **equivalenti tra loro**: tutti i punti vengono spostati dello stesso vettore.
 
@@ -153,12 +153,12 @@ Notare che $(-1)\vec v=-\vec v$ e $1\cdot\vec v=\vec v$.
 
 ### Perché è importante
 
-Somma e prodotto per scalare di vettori liberi soddisfano le stesse proprietà algebriche delle operazioni su $\mathbb R^n$ e delle matrici. Estrarre tali proprietà e prenderle come definizione porta al concetto astratto di **spazio vettoriale**: si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]].
+Somma e prodotto per scalare di vettori liberi soddisfano le stesse proprietà algebriche delle operazioni su $\mathbb R^n$ e delle matrici. Estrarre tali proprietà e prenderle come definizione porta al concetto astratto di **spazio vettoriale**: si veda [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]].
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md|Insiemi, vettori e sistemi lineari — nozioni di base]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md|Applicazioni (terminologia generale)]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md|Operazioni tra matrici]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti.md|Esercizi — Vettori, spazi vettoriali, sottospazi e applicazioni]]
+- [[Insiemi, vettori e sistemi lineari — nozioni di base|Insiemi, vettori e sistemi lineari — nozioni di base]]
+- [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]]
+- [[Applicazioni (terminologia generale)|Applicazioni (terminologia generale)]]
+- [[Operazioni tra matrici|Operazioni tra matrici]]
+- [[Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti|Esercizi — Vettori, spazi vettoriali, sottospazi e applicazioni]]

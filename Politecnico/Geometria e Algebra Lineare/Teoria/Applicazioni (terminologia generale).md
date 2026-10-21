@@ -61,7 +61,7 @@ Per definizione ogni $x\in X$ ha **esattamente una** immagine; invece il **numer
 
 ### Applicazione inversa
 
-Se $f:X\to Y$ è biiettiva, a ogni $y\in Y$ si associa la sua unica controimmagine: si ottiene l'applicazione **inversa** $f^{-1}:Y\to X$, con $f^{-1}(f(x))=x$ e $f(f^{-1}(y))=y$. Si noti il legame con le matrici: l'applicazione $x\mapsto Ax$ di $\mathbb R^n$ in sé è biiettiva **se e solo se** $A$ è invertibile (condizione (v) del Teorema 4 in [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]]), e l'inversa è $y\mapsto A^{-1}y$.
+Se $f:X\to Y$ è biiettiva, a ogni $y\in Y$ si associa la sua unica controimmagine: si ottiene l'applicazione **inversa** $f^{-1}:Y\to X$, con $f^{-1}(f(x))=x$ e $f(f^{-1}(y))=y$. Si noti il legame con le matrici: l'applicazione $x\mapsto Ax$ di $\mathbb R^n$ in sé è biiettiva **se e solo se** $A$ è invertibile (condizione (v) del Teorema 4 in [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]]), e l'inversa è $y\mapsto A^{-1}y$.
 
 ### Esercizio: le traslazioni sono biiettive
 
@@ -76,8 +76,8 @@ L'inversa è $\tau_{\vec v}^{-1}=\tau_{-\vec v}$. (Per $\vec v=\vec 0$ la trasla
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md|Vettori geometrici liberi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]]
-- [[Politecnico/Analisi 1/Teoria/Funzioni.md|Analisi — Funzioni]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti.md|Esercizi — Vettori, spazi vettoriali, sottospazi e applicazioni]]
+- [[Vettori geometrici liberi|Vettori geometrici liberi]]
+- [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]]
+- [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]]
+- [[Funzioni|Analisi — Funzioni]]
+- [[Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti|Esercizi — Vettori, spazi vettoriali, sottospazi e applicazioni]]

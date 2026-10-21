@@ -210,8 +210,8 @@ $$
 
 ## Collegamenti
 
-- [[Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md|Analisi — Insiemi numerici, logica e dimostrazioni]]
-- [[Politecnico/Analisi 1/Teoria/Funzioni.md|Analisi — Funzioni]]
-- [[Politecnico/Analisi 1/Teoria/Successioni.md|Analisi — Successioni]]
-- [[Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ.md|Esercizi — Sup, Inf, Max, Min]]
-- [[Politecnico/Analisi 1/Esercizi/Disequazioni.md|Esercizi — Disequazioni]]
+- [[Insieme numerici, logia e dimostrazioni|Analisi — Insiemi numerici, logica e dimostrazioni]]
+- [[Funzioni|Analisi — Funzioni]]
+- [[Successioni|Analisi — Successioni]]
+- [[Sup - Inf - Max - Min di sottoinsiemi di ℝ|Esercizi — Sup, Inf, Max, Min]]
+- [[Disequazioni|Esercizi — Disequazioni]]

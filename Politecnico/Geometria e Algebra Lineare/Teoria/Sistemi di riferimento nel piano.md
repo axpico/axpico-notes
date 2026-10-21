@@ -11,7 +11,7 @@ tags:
 
 ### Idea
 
-Il piano euclideo $\mathcal E$ è un insieme di **punti**, che non sono numeri. Per fare calcoli serve una **corrispondenza biunivoca** (biiettiva) tra punti e coppie di numeri: un **sistema di riferimento**. Così un problema geometrico diventa un problema algebrico, e viceversa (vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md|Vettori geometrici liberi]]).
+Il piano euclideo $\mathcal E$ è un insieme di **punti**, che non sono numeri. Per fare calcoli serve una **corrispondenza biunivoca** (biiettiva) tra punti e coppie di numeri: un **sistema di riferimento**. Così un problema geometrico diventa un problema algebrico, e viceversa (vedi [[Vettori geometrici liberi|Vettori geometrici liberi]]).
 
 ### Definizione
 
@@ -62,8 +62,8 @@ La corrispondenza $P\mapsto(x,y)$ è una biiezione $\mathcal E\to\mathbb R^2$ ch
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md|Vettori geometrici liberi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md|Applicazioni lineari, nucleo e immagine]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md|Rette e piani — equazioni parametriche e cartesiane]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md|Cambio di base e matrice di passaggio]]
+- [[Vettori geometrici liberi|Vettori geometrici liberi]]
+- [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]]
+- [[Applicazioni lineari, nucleo e immagine|Applicazioni lineari, nucleo e immagine]]
+- [[Rette e piani — equazioni parametriche e cartesiane|Rette e piani — equazioni parametriche e cartesiane]]
+- [[Cambio di base e matrice di passaggio|Cambio di base e matrice di passaggio]]

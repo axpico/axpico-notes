@@ -19,7 +19,7 @@ $$
 $$
 \vec v_1+2\vec v_2=(1,0,1)+(0,2,2)=(1,2,3)=\vec w
 $$
-(coefficienti $\alpha_1=1$, $\alpha_2=2$). Trovare i coefficienti equivale a risolvere un **sistema lineare** nelle incognite $\alpha_j$: $\vec w$ è combinazione lineare di $\vec v_1,\dots,\vec v_n\in\mathbb K^m$ se e solo se il sistema con matrice completa $[\vec v_1\mid\cdots\mid\vec v_n\mid\vec w]$ è risolvibile, cioè (Rouché-Capelli) se e solo se $r([\vec v_1\cdots\vec v_n])=r([\vec v_1\cdots\vec v_n\mid\vec w])$. Si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Sistemi lineari e teorema di Rouché-Capelli]].
+(coefficienti $\alpha_1=1$, $\alpha_2=2$). Trovare i coefficienti equivale a risolvere un **sistema lineare** nelle incognite $\alpha_j$: $\vec w$ è combinazione lineare di $\vec v_1,\dots,\vec v_n\in\mathbb K^m$ se e solo se il sistema con matrice completa $[\vec v_1\mid\cdots\mid\vec v_n\mid\vec w]$ è risolvibile, cioè (Rouché-Capelli) se e solo se $r([\vec v_1\cdots\vec v_n])=r([\vec v_1\cdots\vec v_n\mid\vec w])$. Si veda [[Sistemi lineari e teorema di Rouché-Capelli|Sistemi lineari e teorema di Rouché-Capelli]].
 
 **Esempio 2 (spazio delle funzioni).** In $V=\{f:\mathbb R\to\mathbb R\}$ la funzione $f(x)=x^3$ **non** è combinazione lineare di $g_1(x)=x^2$, $g_2(x)=x^4$, $g_3(x)=\cos x$. Infatti $g_1,g_2,g_3$ sono funzioni **pari** ($g(-x)=g(x)$), quindi ogni loro combinazione lineare $\alpha_1g_1+\alpha_2g_2+\alpha_3g_3$ è ancora una funzione pari (le funzioni pari sono un sottospazio), mentre $x^3$ è dispari e non nulla, quindi non è pari.
 
@@ -73,12 +73,12 @@ $$
 
 Per il teorema di Rouché-Capelli, l'insieme delle soluzioni di un sistema **omogeneo** $A\vec x=\vec 0$ in $n$ incognite è $\{\vec 0\}$ (se $r(A)=n$) oppure lo **span lineare di un numero finito di vettori** di $\mathbb K^n$ (i vettori che moltiplicano i parametri liberi: sono $n-r(A)$). In entrambi i casi l'insieme delle soluzioni è un **sottospazio di $\mathbb K^n$** (per la Proposizione 1; il caso $\{\vec 0\}$ è lo span del vettore nullo, il sottospazio banale).
 
-Invece, se $\vec b\ne\vec 0$, l'insieme delle soluzioni di $A\vec x=\vec b$ **non** è un sottospazio di $\mathbb K^n$. *Perché?* Perché $\vec 0$ **non** è una soluzione ($A\vec 0=\vec 0\ne\vec b$), mentre ogni sottospazio contiene il vettore nullo (si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]). Per esempio le soluzioni di $x+y=1$ in $\mathbb R^2$ sono una retta che non passa per l'origine. (Si tratta di un **sottospazio affine**: soluzione particolare + soluzioni dell'omogeneo associato.)
+Invece, se $\vec b\ne\vec 0$, l'insieme delle soluzioni di $A\vec x=\vec b$ **non** è un sottospazio di $\mathbb K^n$. *Perché?* Perché $\vec 0$ **non** è una soluzione ($A\vec 0=\vec 0\ne\vec b$), mentre ogni sottospazio contiene il vettore nullo (si veda [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]]). Per esempio le soluzioni di $x+y=1$ in $\mathbb R^2$ sono una retta che non passa per l'origine. (Si tratta di un **sottospazio affine**: soluzione particolare + soluzioni dell'omogeneo associato.)
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Sistemi lineari e teorema di Rouché-Capelli]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md|Vettori geometrici liberi]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti.md|Esercizi — Vettori, spazi vettoriali, sottospazi e applicazioni]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi.md|Esercizi — Rango, sottospazi, combinazioni lineari]]
+- [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]]
+- [[Sistemi lineari e teorema di Rouché-Capelli|Sistemi lineari e teorema di Rouché-Capelli]]
+- [[Vettori geometrici liberi|Vettori geometrici liberi]]
+- [[Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti|Esercizi — Vettori, spazi vettoriali, sottospazi e applicazioni]]
+- [[Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi|Esercizi — Rango, sottospazi, combinazioni lineari]]

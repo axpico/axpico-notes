@@ -13,7 +13,7 @@ tags:
 >
 > Passare dall'uno all'altro è, algebricamente, passare tra due rappresentazioni di un sottospazio: come **span** (immagine di una parametrizzazione) e come **nucleo** di una matrice.
 
-Prerequisiti: [[Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md|Vettori geometrici liberi]], [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md|Sistemi di riferimento nel piano]], [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Sistemi lineari e teorema di Rouché-Capelli]].
+Prerequisiti: [[Vettori geometrici liberi|Vettori geometrici liberi]], [[Sistemi di riferimento nel piano|Sistemi di riferimento nel piano]], [[Sistemi lineari e teorema di Rouché-Capelli|Sistemi lineari e teorema di Rouché-Capelli]].
 
 Il ragionamento vale sia nel piano ($\mathbb R^2$) sia nello spazio ($\mathbb R^3$). Fissato un sistema di riferimento con origine $O$, ogni punto $P$ si identifica con il suo **vettore posizione** $\mathbf r_P=\overrightarrow{OP}$.
 
@@ -63,7 +63,7 @@ $$\mathbf r=\overrightarrow{OO_\Pi}+\overrightarrow{O_\Pi P}\ \Longrightarrow\ \
 
 Un sistema lineare $A\mathbf x=\mathbf b$ compatibile ha come insieme delle soluzioni
 $$\{\text{soluzioni}\}=\mathbf x_p+\ker A$$
-([[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Rouché-Capelli]]): una soluzione particolare più il nucleo. Il nucleo si descrive con $n-\operatorname{rk}A$ **variabili libere** $\Rightarrow$ $n-\operatorname{rk}A$ **parametri**.
+([[Sistemi lineari e teorema di Rouché-Capelli|Rouché-Capelli]]): una soluzione particolare più il nucleo. Il nucleo si descrive con $n-\operatorname{rk}A$ **variabili libere** $\Rightarrow$ $n-\operatorname{rk}A$ **parametri**.
 
 **Procedura.**
 1. Ridurre il sistema a scala (metodo di eliminazione di Gauss).
@@ -240,6 +240,6 @@ $$\underbrace{A\mathbf x=\mathbf b}_{\text{cartesiano}}\ \underset{\ \text{ortog
 
 ### Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md|Combinazioni lineari e sottospazio generato]] (span)
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md|Applicazioni lineari, nucleo e immagine]] (nucleo)
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
+- [[Combinazioni lineari e sottospazio generato|Combinazioni lineari e sottospazio generato]] (span)
+- [[Applicazioni lineari, nucleo e immagine|Applicazioni lineari, nucleo e immagine]] (nucleo)
+- [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]]

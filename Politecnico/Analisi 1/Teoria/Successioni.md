@@ -181,10 +181,10 @@ $0$ **non appartiene** all'immagine (nessun $n$ dà $\frac1n=0$), quindi **non e
 > [!tip] Modo alternativo
 > $\inf\{b_n\}$ si può vedere come l'estremo superiore dell'insieme dei minoranti di $I_{b_n}$, cioè $(-\infty,0]$: $\inf = \max(-\infty,0] = 0$.
 
-**Continua in** [[Limiti di successioni]].
+**Continua in** [[Politecnico/Analisi 1/Teoria/Limiti di successioni]].
 
 ---
 
 ## Collegamenti
 
-- [[Politecnico/Analisi 1/Teoria/Funzioni.md|Analisi — Funzioni]]
+- [[Funzioni|Analisi — Funzioni]]

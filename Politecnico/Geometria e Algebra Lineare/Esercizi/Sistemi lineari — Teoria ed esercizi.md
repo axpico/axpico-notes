@@ -321,8 +321,8 @@ In ogni caso ($\text{rk}(A)=0$ oppure $\text{rk}(A)=1$, cioè $\text{rk}(A)\le 1
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md|Insiemi, vettori e sistemi lineari — nozioni di base]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Sistemi lineari e teorema di Rouché-Capelli]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md|Sistemi lineari quadrati e teorema di Cramer]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md|Esercizi — Matrici]]
+- [[Insiemi, vettori e sistemi lineari — nozioni di base|Insiemi, vettori e sistemi lineari — nozioni di base]]
+- [[Sistemi lineari e teorema di Rouché-Capelli|Sistemi lineari e teorema di Rouché-Capelli]]
+- [[Eliminazione di Gauss-Jordan e calcolo della matrice inversa|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
+- [[Sistemi lineari quadrati e teorema di Cramer|Sistemi lineari quadrati e teorema di Cramer]]
+- [[Matrici — Esercizi svolti|Esercizi — Matrici]]

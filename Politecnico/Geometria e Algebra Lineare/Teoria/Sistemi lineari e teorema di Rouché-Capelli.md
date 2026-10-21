@@ -107,11 +107,11 @@ $$
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md|Operazioni tra matrici]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md|Sistemi lineari quadrati e teorema di Cramer]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md|Insiemi, vettori e sistemi lineari — nozioni di base]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md|Esercizi — Matrici]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Sistemi lineari — Teoria ed esercizi.md|Esercizi — Sistemi lineari]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md|Combinazioni lineari e sottospazio generato]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi.md|Esercizi — Rango, sottospazi, combinazioni lineari]]
+- [[Operazioni tra matrici|Operazioni tra matrici]]
+- [[Sistemi lineari quadrati e teorema di Cramer|Sistemi lineari quadrati e teorema di Cramer]]
+- [[Insiemi, vettori e sistemi lineari — nozioni di base|Insiemi, vettori e sistemi lineari — nozioni di base]]
+- [[Matrici — Esercizi svolti|Esercizi — Matrici]]
+- [[Sistemi lineari — Teoria ed esercizi|Esercizi — Sistemi lineari]]
+- [[Combinazioni lineari e sottospazio generato|Combinazioni lineari e sottospazio generato]]
+- [[Eliminazione di Gauss-Jordan e calcolo della matrice inversa|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
+- [[Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi|Esercizi — Rango, sottospazi, combinazioni lineari]]

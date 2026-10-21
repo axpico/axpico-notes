@@ -13,7 +13,7 @@ tags:
 $$\ell=\ell_A,\qquad\text{cioè}\qquad\ell(\mathbf x)=A\mathbf x\quad\forall\,\mathbf x\in\mathbb K^n.$$
 La matrice $A$ è **unica** ed è detta **matrice rappresentativa** di $\ell$ (rispetto alle basi canoniche).
 
-La mappa $\ell_A$ (vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md|Applicazioni lineari, nucleo e immagine]]) è quella che associa a $\mathbf x\in\mathbb K^n$ il vettore $A\mathbf x\in\mathbb K^m$. Il teorema dice che questo esempio è **l'unico**: le mappe lineari $\mathbb K^n\to\mathbb K^m$ sono esattamente le $\ell_A$, e
+La mappa $\ell_A$ (vedi [[Applicazioni lineari, nucleo e immagine|Applicazioni lineari, nucleo e immagine]]) è quella che associa a $\mathbf x\in\mathbb K^n$ il vettore $A\mathbf x\in\mathbb K^m$. Il teorema dice che questo esempio è **l'unico**: le mappe lineari $\mathbb K^n\to\mathbb K^m$ sono esattamente le $\ell_A$, e
 $$M_{\mathbb K}(m,n)\ \longleftrightarrow\ \{\text{mappe lineari }\mathbb K^n\to\mathbb K^m\},\qquad A\mapsto\ell_A$$
 è una biiezione (anzi un isomorfismo di spazi vettoriali).
 
@@ -51,15 +51,15 @@ cioè il diagramma $V\xrightarrow{\ \ell\ }W$, $\ \mathbb K^n\xrightarrow{\ \ell
 
 **Procedura per calcolarla:**
 1. calcolare $\ell(\mathbf v_j)$ per ogni vettore della base di partenza;
-2. esprimere ciascuno in coordinate rispetto a $\mathcal C$ (risolvendo un sistema lineare, vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md|Basi, dimensione e coordinate]]);
+2. esprimere ciascuno in coordinate rispetto a $\mathcal C$ (risolvendo un sistema lineare, vedi [[Basi, dimensione e coordinate|Basi, dimensione e coordinate]]);
 3. incolonnare i risultati.
 
 **Composizione.** $M^{\mathcal B}_{\mathcal D}(g\circ f)=M^{\mathcal C}_{\mathcal D}(g)\,M^{\mathcal B}_{\mathcal C}(f)$: la composizione corrisponde al prodotto di matrici. Inoltre $\ell$ è un isomorfismo $\iff$ la matrice rappresentativa è quadrata invertibile, e $M(\ell^{-1})=M(\ell)^{-1}$.
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md|Applicazioni lineari, nucleo e immagine]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md|Basi, dimensione e coordinate]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md|Cambio di base e matrice di passaggio]] (come cambia $M^{\mathcal B}_{\mathcal C}(\ell)$ cambiando le basi)
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md|Operazioni tra matrici]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]]
+- [[Applicazioni lineari, nucleo e immagine|Applicazioni lineari, nucleo e immagine]]
+- [[Basi, dimensione e coordinate|Basi, dimensione e coordinate]]
+- [[Cambio di base e matrice di passaggio|Cambio di base e matrice di passaggio]] (come cambia $M^{\mathcal B}_{\mathcal C}(\ell)$ cambiando le basi)
+- [[Operazioni tra matrici|Operazioni tra matrici]]
+- [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]]

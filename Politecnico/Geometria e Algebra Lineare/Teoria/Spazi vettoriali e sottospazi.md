@@ -8,7 +8,7 @@ tags:
 
 ### Motivazione
 
-Gli stessi "fenomeni algebrici" compaiono in contesti diversi: nei vettori del piano e dello spazio ([[Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md|Vettori geometrici liberi]]), negli elementi di $\mathbb R^n$ e $\mathbb C^n$, nelle matrici $m\times n$ (somma e prodotto per scalare, [[Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md|Operazioni tra matrici]]), nei polinomi, nelle successioni. In tutti questi casi sono definite una **somma** e un **prodotto per scalare** con le stesse proprietà. Isolando queste proprietà si ottiene la nozione astratta di **spazio vettoriale**: dimostrare un teorema una volta sola per ogni spazio vettoriale lo dimostra per tutti questi esempi insieme.
+Gli stessi "fenomeni algebrici" compaiono in contesti diversi: nei vettori del piano e dello spazio ([[Vettori geometrici liberi|Vettori geometrici liberi]]), negli elementi di $\mathbb R^n$ e $\mathbb C^n$, nelle matrici $m\times n$ (somma e prodotto per scalare, [[Operazioni tra matrici|Operazioni tra matrici]]), nei polinomi, nelle successioni. In tutti questi casi sono definite una **somma** e un **prodotto per scalare** con le stesse proprietà. Isolando queste proprietà si ottiene la nozione astratta di **spazio vettoriale**: dimostrare un teorema una volta sola per ogni spazio vettoriale lo dimostra per tutti questi esempi insieme.
 
 ### Definizione
 
@@ -51,7 +51,7 @@ $$
 
 2. **$\mathbb C^n$ come spazio su $\mathbb C$** (stessa costruzione con gli scalari complessi). Notare che *lo stesso insieme* può essere spazio vettoriale su campi diversi: $\mathbb C^n$ è anche spazio su $\mathbb R$, ma è un altro spazio vettoriale.
 
-3. **Spazio delle matrici** $M_{m,n}(\mathbb K):=\{A:\ A\ \text{è una matrice } m\times n \text{ a elementi in } \mathbb K\}$, con somma e prodotto per scalare elemento per elemento. Lo zero è la matrice nulla. È uno spazio vettoriale (le proprietà 1-8 sono quelle elencate in [[Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md|Operazioni tra matrici]]); si noti che qui il prodotto *tra matrici* non entra nella struttura di spazio vettoriale.
+3. **Spazio delle matrici** $M_{m,n}(\mathbb K):=\{A:\ A\ \text{è una matrice } m\times n \text{ a elementi in } \mathbb K\}$, con somma e prodotto per scalare elemento per elemento. Lo zero è la matrice nulla. È uno spazio vettoriale (le proprietà 1-8 sono quelle elencate in [[Operazioni tra matrici|Operazioni tra matrici]]); si noti che qui il prodotto *tra matrici* non entra nella struttura di spazio vettoriale.
 
 4. **Polinomi.** Un polinomio (a coefficienti reali) è
 $$
@@ -128,7 +128,7 @@ $$
 
   **Conclusione:** un piano di $\mathbb R^3$ è un sottospazio di $\mathbb R^3$ **se e solo se passa per l'origine**. (Analogamente per le rette.)
 
-Per la costruzione del più piccolo sottospazio contenente dei vettori assegnati (span) si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md|Combinazioni lineari e sottospazio generato]].
+Per la costruzione del più piccolo sottospazio contenente dei vettori assegnati (span) si veda [[Combinazioni lineari e sottospazio generato|Combinazioni lineari e sottospazio generato]].
 
 #### Esempi importanti
 
@@ -136,19 +136,19 @@ Per la costruzione del più piccolo sottospazio contenente dei vettori assegnati
 $$
 \ker A=\{x\in\mathbb K^n:\ Ax=0\}
 $$
-è un sottospazio di $\mathbb K^n$: se $Ax=0$ e $Ay=0$ allora $A(\lambda x+\mu y)=\lambda Ax+\mu Ay=0$ (per le proprietà del prodotto matrice-vettore). Al contrario, l'insieme delle soluzioni di un sistema **non omogeneo** $Ax=b$, $b\ne0$, **non** è un sottospazio (non contiene $0$): si veda [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Sistemi lineari e teorema di Rouché-Capelli]].
+è un sottospazio di $\mathbb K^n$: se $Ax=0$ e $Ay=0$ allora $A(\lambda x+\mu y)=\lambda Ax+\mu Ay=0$ (per le proprietà del prodotto matrice-vettore). Al contrario, l'insieme delle soluzioni di un sistema **non omogeneo** $Ax=b$, $b\ne0$, **non** è un sottospazio (non contiene $0$): si veda [[Sistemi lineari e teorema di Rouché-Capelli|Sistemi lineari e teorema di Rouché-Capelli]].
 2. **Polinomi di grado $\le n$** sono un sottospazio di $\mathbb R[x]$: $\mathbb R_0[x]\le\mathbb R_1[x]\le\mathbb R_2[x]\le\cdots\le\mathbb R[x]$.
 3. **Matrici simmetriche** $\{A\in M_{n,n}:\ A^{\mathsf T}=A\}$ e **matrici diagonali** (e **triangolari superiori**) sono sottospazi di $M_{n,n}(\mathbb K)$. Le matrici **invertibili** *non* sono un sottospazio (non contengono la matrice nulla e la somma di invertibili può non esserlo, ad esempio $I+(-I)=0$).
 4. **Intersezione.** Se $W_1,W_2\le V$ allora $W_1\cap W_2\le V$ (basta verificare la chiusura, che segue da quella di entrambi). L'**unione** invece in generale non è un sottospazio (si veda l'esempio dei due assi).
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Vettori geometrici liberi.md|Vettori geometrici liberi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md|Insiemi, vettori e sistemi lineari — nozioni di base]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md|Operazioni tra matrici]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Sistemi lineari e teorema di Rouché-Capelli]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md|Combinazioni lineari e sottospazio generato]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md|Applicazioni (terminologia generale)]]
-- [[Politecnico/Analisi 1/Teoria/Numeri complessi.md|Analisi — Numeri complessi]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti.md|Esercizi — Vettori, spazi vettoriali, sottospazi e applicazioni]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi.md|Esercizi — Rango, sottospazi, combinazioni lineari]]
+- [[Vettori geometrici liberi|Vettori geometrici liberi]]
+- [[Insiemi, vettori e sistemi lineari — nozioni di base|Insiemi, vettori e sistemi lineari — nozioni di base]]
+- [[Operazioni tra matrici|Operazioni tra matrici]]
+- [[Sistemi lineari e teorema di Rouché-Capelli|Sistemi lineari e teorema di Rouché-Capelli]]
+- [[Combinazioni lineari e sottospazio generato|Combinazioni lineari e sottospazio generato]]
+- [[Applicazioni (terminologia generale)|Applicazioni (terminologia generale)]]
+- [[Politecnico/Analisi 1/Teoria/Numeri complessi|Analisi — Numeri complessi]]
+- [[Vettori, spazi vettoriali, sottospazi e applicazioni — Esercizi svolti|Esercizi — Vettori, spazi vettoriali, sottospazi e applicazioni]]
+- [[Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi|Esercizi — Rango, sottospazi, combinazioni lineari]]

@@ -9,7 +9,7 @@ tags:
   - gauss-jordan
   - rouche-capelli
 ---
-Esercizi trascritti dagli appunti a mano (GAL 1), **con gli errori corretti**. Teoria di riferimento: [[Politecnico/Geometria e Algebra Lineare/Teoria/Determinante, sviluppo di Laplace e formula di Cramer.md|Determinante, sviluppo di Laplace e formula di Cramer]], [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Gauss-Jordan]], [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Rouché-Capelli]].
+Esercizi trascritti dagli appunti a mano (GAL 1), **con gli errori corretti**. Teoria di riferimento: [[Determinante, sviluppo di Laplace e formula di Cramer|Determinante, sviluppo di Laplace e formula di Cramer]], [[Eliminazione di Gauss-Jordan e calcolo della matrice inversa|Gauss-Jordan]], [[Sistemi lineari e teorema di Rouché-Capelli|Rouché-Capelli]].
 
 ---
 
@@ -193,6 +193,6 @@ Verifica: $x+y=\tfrac{9}{3}=3$ ✓; $x-2y-3z=\tfrac{3t+7-4+6t}3-3t=3t+1-3t=1$ �
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari quadrati e teorema di Cramer.md|Sistemi lineari quadrati e teorema di Cramer]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md|Esercizi — Matrici]]
+- [[Sistemi lineari quadrati e teorema di Cramer|Sistemi lineari quadrati e teorema di Cramer]]
+- [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]]
+- [[Matrici — Esercizi svolti|Esercizi — Matrici]]

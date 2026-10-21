@@ -230,8 +230,8 @@ Per il principio di induzione, $P(n)$ è vera $\forall\, n \in \mathbb{N}$. $\bl
 
 ## Collegamenti
 
-- [[Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md|Analisi — Estremo superiore ed inferiore, completezza di ℝ]]
-- [[Politecnico/Analisi 1/Teoria/Funzioni.md|Analisi — Funzioni]]
-- [[Politecnico/Analisi 1/Teoria/Numeri complessi.md|Analisi — Numeri complessi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md|Insiemi, vettori e sistemi lineari — nozioni di base]]
-- [[Politecnico/Analisi 1/Esercizi/Disequazioni.md|Esercizi — Disequazioni]]
+- [[Estremo superiore ed estremo inferiore, completezza di ℝ|Analisi — Estremo superiore ed inferiore, completezza di ℝ]]
+- [[Funzioni|Analisi — Funzioni]]
+- [[Politecnico/Analisi 1/Teoria/Numeri complessi|Analisi — Numeri complessi]]
+- [[Insiemi, vettori e sistemi lineari — nozioni di base|Insiemi, vettori e sistemi lineari — nozioni di base]]
+- [[Disequazioni|Esercizi — Disequazioni]]

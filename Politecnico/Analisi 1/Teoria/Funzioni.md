@@ -501,8 +501,8 @@ che è l'equazione dell'**iperbole equilatera** $x^2-y^2=1$ (da cui il nome "ipe
 
 ## Collegamenti
 
-- [[Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md|Analisi — Insiemi numerici, logica e dimostrazioni]]
-- [[Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md|Analisi — Estremo superiore ed inferiore, completezza di ℝ]]
-- [[Politecnico/Analisi 1/Teoria/Successioni.md|Analisi — Successioni]]
-- [[Politecnico/Analisi 1/Esercizi/Disequazioni.md|Esercizi — Disequazioni]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni (terminologia generale).md|Applicazioni (terminologia generale)]]
+- [[Insieme numerici, logia e dimostrazioni|Analisi — Insiemi numerici, logica e dimostrazioni]]
+- [[Estremo superiore ed estremo inferiore, completezza di ℝ|Analisi — Estremo superiore ed inferiore, completezza di ℝ]]
+- [[Successioni|Analisi — Successioni]]
+- [[Disequazioni|Esercizi — Disequazioni]]
+- [[Applicazioni (terminologia generale)|Applicazioni (terminologia generale)]]

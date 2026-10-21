@@ -10,10 +10,10 @@ tags:
 ---
 ## Collegamenti alla teoria
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Sistemi lineari e Rouché-Capelli]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Determinante, sviluppo di Laplace e formula di Cramer.md|Determinante e Laplace]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Combinazioni lineari e sottospazio generato.md|Combinazioni lineari e sottospazio generato]]
+- [[Sistemi lineari e teorema di Rouché-Capelli|Sistemi lineari e Rouché-Capelli]]
+- [[Determinante, sviluppo di Laplace e formula di Cramer|Determinante e Laplace]]
+- [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]]
+- [[Combinazioni lineari e sottospazio generato|Combinazioni lineari e sottospazio generato]]
 
 ---
 
@@ -65,7 +65,7 @@ $$
 \cdot:\mathbb K\times V\to V,\ (\alpha,\vec v)\mapsto\alpha\vec v
 $$
 
-che soddisfano gli 8 assiomi (vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]). Gli esempi dei fogli:
+che soddisfano gli 8 assiomi (vedi [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]]). Gli esempi dei fogli:
 
 | Spazio | Elementi | Note |
 |---|---|---|

@@ -8,7 +8,7 @@ tags:
 ---
 # Asintotici, $o$ piccolo e serie a termini non negativi — Esercizi
 
-Trascrizione degli appunti di Analisi 1 (lezione/esercitazione). Teoria collegata: [[Confronti e stime asintotiche]], [[Successioni monotone, infinitesimi e limiti notevoli]], [[Serie numeriche]]. Esercizi precedenti: [[Limiti di successioni]].
+Trascrizione degli appunti di Analisi 1 (lezione/esercitazione). Teoria collegata: [[Confronti e stime asintotiche]], [[Successioni monotone, infinitesimi e limiti notevoli]], [[Serie numeriche]]. Esercizi precedenti: [[Politecnico/Analisi 1/Esercizi/Limiti di successioni]].
 
 > [!todo] Esercizi non svolti
 > Quelli numerati $3.1$, $3.2$, $6.1$ sono riportati **solo come testo**: non sono stati svolti negli appunti (e non li svolgo qui).

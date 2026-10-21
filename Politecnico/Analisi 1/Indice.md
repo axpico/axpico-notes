@@ -7,31 +7,31 @@ tags:
 
 Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 
-Dimostrazioni richieste (con esercizi e soluzioni): [[Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni|Indice Dimostrazioni]]
+Dimostrazioni richieste (con esercizi e soluzioni): [[Indice Dimostrazioni|Indice Dimostrazioni]]
 
 ## 1. Fondamenti
-1. [[Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni|Insiemi numerici, logica e dimostrazioni]]
-2. [[Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ|Estremo superiore/inferiore, completezza di ℝ]]
-   - Esercizi: [[Politecnico/Analisi 1/Esercizi/Sup - Inf - Max - Min di sottoinsiemi di ℝ|Sup - Inf - Max - Min]]
-3. [[Politecnico/Analisi 1/Teoria/Funzioni|Funzioni]]
-   - Esercizi: [[Politecnico/Analisi 1/Esercizi/Disequazioni|Disequazioni]]
+1. [[Insieme numerici, logia e dimostrazioni|Insiemi numerici, logica e dimostrazioni]]
+2. [[Estremo superiore ed estremo inferiore, completezza di ℝ|Estremo superiore/inferiore, completezza di ℝ]]
+   - Esercizi: [[Sup - Inf - Max - Min di sottoinsiemi di ℝ|Sup - Inf - Max - Min]]
+3. [[Funzioni|Funzioni]]
+   - Esercizi: [[Disequazioni|Disequazioni]]
 
 ## 2. Numeri complessi
 4. [[Politecnico/Analisi 1/Teoria/Numeri complessi|Numeri complessi]]
    - Esercizi: [[Politecnico/Analisi 1/Esercizi/Numeri Complessi|Numeri Complessi]]
 
 ## 3. Successioni e limiti
-5. [[Politecnico/Analisi 1/Teoria/Successioni|Successioni]]
+5. [[Successioni|Successioni]]
 6. [[Politecnico/Analisi 1/Teoria/Limiti di successioni|Limiti di successioni]]
-7. [[Politecnico/Analisi 1/Teoria/Algebra dei limiti e teoremi sui limiti|Algebra dei limiti e teoremi sui limiti]]
-8. [[Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli|Successioni monotone, infinitesimi e limiti notevoli]]
+7. [[Algebra dei limiti e teoremi sui limiti|Algebra dei limiti e teoremi sui limiti]]
+8. [[Successioni monotone, infinitesimi e limiti notevoli|Successioni monotone, infinitesimi e limiti notevoli]]
    - Esercizi: [[Politecnico/Analisi 1/Esercizi/Limiti di successioni|Limiti di successioni — Esercizi]]
-9. [[Politecnico/Analisi 1/Teoria/Confronti e stime asintotiche|Confronti e stime asintotiche]]
-   - Esercizi: [[Politecnico/Analisi 1/Esercizi/Asintotici, o piccolo e serie a termini non negativi|Asintotici, o piccolo e serie a termini non negativi]]
+9. [[Confronti e stime asintotiche|Confronti e stime asintotiche]]
+   - Esercizi: [[Asintotici, o piccolo e serie a termini non negativi|Asintotici, o piccolo e serie a termini non negativi]]
 
 ## 4. Serie numeriche
-10. [[Politecnico/Analisi 1/Teoria/Serie numeriche|Serie numeriche]] (telescopiche, geometrica, armonica, criteri del confronto)
-11. [[Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta|Criteri per le serie, serie alternate e convergenza assoluta]] (rapporto, radice, Leibniz, convergenza assoluta)
+10. [[Serie numeriche|Serie numeriche]] (telescopiche, geometrica, armonica, criteri del confronto)
+11. [[Criteri per le serie, serie alternate e convergenza assoluta|Criteri per le serie, serie alternate e convergenza assoluta]] (rapporto, radice, Leibniz, convergenza assoluta)
 
 ## Repository
 - [PoliNetwork info1y — Analisi I (GitLab)](https://gitlab.com/polinetwork/info1y/-/tree/main/ANALISI%20I?ref_type=heads) — appunti, esercizi ed esami condivisi

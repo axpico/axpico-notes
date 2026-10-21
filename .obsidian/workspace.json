@@ -11,12 +11,14 @@
             "id": "0fe0dbe8f2e33aeb",
             "type": "leaf",
             "state": {
-              "type": "html-viewer",
+              "type": "markdown",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html"
+                "file": "Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "code",
-              "title": "Cambio di base"
+              "icon": "lucide-file",
+              "title": "Criteri per le serie, serie alternate e convergenza assoluta"
             }
           }
         ]
@@ -256,8 +258,9 @@
   },
   "active": "0fe0dbe8f2e33aeb",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/HTML/esercizi_matrice_inversa.html",
+    "Politecnico/Analisi 1/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
+    "Politecnico/Geometria e Algebra Lineare/HTML/esercizi_matrice_inversa.html",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md",
     "Excalidraw/Drawing 2026-10-20 16.27.26.excalidraw.md",
@@ -265,7 +268,6 @@
     "Politecnico/Geometria e Algebra Lineare/06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta.md",
-    "Politecnico/Analisi 1/Indice.md",
     "Excalidraw/Drawing 2026-10-17 15.05.03.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta.md.tmp.112468.2878b43f8a89",
     "Politecnico/Analisi 1/Teoria/Serie numeriche.md",

@@ -5,14 +5,14 @@ tags:
 ---
 ## Dipendenza lineare
 
-↑ [[Politecnico/Geometria e Algebra Lineare/Indice|Indice]] · tappa 4 (Spazi vettoriali) · prima: [[Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate|Basi, dimensione e coordinate]]
+↑ [[Politecnico/Geometria e Algebra Lineare/Indice|Indice]] · tappa 4 (Spazi vettoriali) · prima: [[Basi, dimensione e coordinate|Basi, dimensione e coordinate]]
 
-> Fonte: [[Politecnico/Geometria e Algebra Lineare/06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf|Lezione 6 (PDF)]] — ALG cap. 4 §7, pp. 177–180, 201–209.
+> Fonte: [[06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf|Lezione 6 (PDF)]] — ALG cap. 4 §7, pp. 177–180, 201–209.
 > Programma della lezione: dipendenza lineare · condizioni di una base · basi di nucleo e span · rango di matrice e mappa lineare · teorema di nullità più rango. **Queste note coprono solo le pp. 1–19 (dipendenza lineare).**
 
 ### 1. Motivazione geometrica: quando un'equazione parametrica descrive davvero una retta o un piano?
 
-Dalla Lezione 5 (vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md|Rette e piani — equazioni parametriche e cartesiane]]):
+Dalla Lezione 5 (vedi [[Rette e piani — equazioni parametriche e cartesiane|Rette e piani — equazioni parametriche e cartesiane]]):
 
 - retta: $\vec r=\vec r_0+t\vec a,\ t\in\mathbb R$ (1)
 - piano: $\vec r=\vec r_0+t\vec u+s\vec v,\ s,t\in\mathbb R$ (2)
@@ -98,7 +98,7 @@ Per ogni $n$, $\{\mathbf e_1,\dots,\mathbf e_n\}$ in $\mathbb K^n$ è indipenden
 Si suppone per assurdo che siano dipendenti: esiste $\mathbf c'\neq\mathbf 0$ con
  (b) $c_1'\mathbf v_1+\dots+c_n'\mathbf v_n=\mathbf 0$.
 
-*Conclusione (completamento mio, non presente nelle pagine lette).* (a) e (b) sono due scritture diverse dello **stesso** vettore $\mathbf 0$ come combinazione degli elementi di $\mathcal B$. Ma, per il teorema delle coordinate (vedi [[Politecnico/Geometria e Algebra Lineare/Teoria/Basi, dimensione e coordinate.md|Basi, dimensione e coordinate]]), in una base la scrittura di ogni vettore è **unica**: contraddizione. $\blacksquare$
+*Conclusione (completamento mio, non presente nelle pagine lette).* (a) e (b) sono due scritture diverse dello **stesso** vettore $\mathbf 0$ come combinazione degli elementi di $\mathcal B$. Ma, per il teorema delle coordinate (vedi [[Basi, dimensione e coordinate|Basi, dimensione e coordinate]]), in una base la scrittura di ogni vettore è **unica**: contraddizione. $\blacksquare$
 
 ### Riepilogo
 

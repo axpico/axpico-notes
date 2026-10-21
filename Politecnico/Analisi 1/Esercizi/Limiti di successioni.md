@@ -7,7 +7,7 @@ tags:
 ---
 # Limiti di successioni — Esercizi
 
-Teoria collegata: [[Limiti di successioni]], [[Algebra dei limiti e teoremi sui limiti]], [[Successioni monotone, infinitesimi e limiti notevoli]].
+Teoria collegata: [[Politecnico/Analisi 1/Esercizi/Limiti di successioni]], [[Algebra dei limiti e teoremi sui limiti]], [[Successioni monotone, infinitesimi e limiti notevoli]].
 
 ## Strumenti usati
 

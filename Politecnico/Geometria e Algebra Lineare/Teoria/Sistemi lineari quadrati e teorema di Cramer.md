@@ -52,9 +52,9 @@ Infatti la matrice dei coefficienti $A = \begin{bmatrix}1&1\\1&-1\end{bmatrix}$ 
 
 ## Collegamenti
 
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi lineari e teorema di Rouché-Capelli.md|Sistemi lineari e teorema di Rouché-Capelli]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Matrici quadrate e matrice inversa.md|Matrici quadrate e matrice inversa]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Eliminazione di Gauss-Jordan e calcolo della matrice inversa.md|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Determinante, sviluppo di Laplace e formula di Cramer.md|Determinante, sviluppo di Laplace e formula di Cramer]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Determinanti, Cramer e inversa — Esercizi svolti.md|Esercizi — Determinanti, Cramer e inversa]]
-- [[Politecnico/Geometria e Algebra Lineare/Esercizi/Matrici — Esercizi svolti.md|Esercizi — Matrici]]
+- [[Sistemi lineari e teorema di Rouché-Capelli|Sistemi lineari e teorema di Rouché-Capelli]]
+- [[Matrici quadrate e matrice inversa|Matrici quadrate e matrice inversa]]
+- [[Eliminazione di Gauss-Jordan e calcolo della matrice inversa|Eliminazione di Gauss-Jordan e calcolo della matrice inversa]]
+- [[Determinante, sviluppo di Laplace e formula di Cramer|Determinante, sviluppo di Laplace e formula di Cramer]]
+- [[Determinanti, Cramer e inversa — Esercizi svolti|Esercizi — Determinanti, Cramer e inversa]]
+- [[Matrici — Esercizi svolti|Esercizi — Matrici]]

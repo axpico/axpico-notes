@@ -5,7 +5,7 @@ tags:
   - limiti
   - politecnico
 ---
-Prosegue da [[Limiti di successioni]].
+Prosegue da [[Politecnico/Analisi 1/Teoria/Limiti di successioni]].
 
 ## Successioni regolari
 
@@ -214,5 +214,5 @@ cioè $\forall\varepsilon>0\ \exists\,\nu_\varepsilon\in\mathbb{N}$ t.c. $|c_n-\
 ## Collegamenti
 
 - Prosegue in [[Successioni monotone, infinitesimi e limiti notevoli]]
-- [[Limiti di successioni]]
+- [[Politecnico/Analisi 1/Teoria/Limiti di successioni]]
 - [[Successioni]]

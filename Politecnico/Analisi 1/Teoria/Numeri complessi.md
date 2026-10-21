@@ -379,8 +379,8 @@ Coerentemente con il teorema, $z_1 = -z_0$ (le due radici quadrate sono sempre o
 
 ## Collegamenti
 
-- [[Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md|Analisi — Insiemi numerici, logica e dimostrazioni]]
-- [[Politecnico/Analisi 1/Teoria/Funzioni.md|Analisi — Funzioni]]
-- [[Politecnico/Analisi 1/Esercizi/Numeri Complessi.md|Esercizi — Numeri complessi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Spazi vettoriali e sottospazi.md|Spazi vettoriali e sottospazi]]
-- [[Politecnico/Geometria e Algebra Lineare/Teoria/Insiemi, vettori e sistemi lineari — nozioni di base.md|Insiemi, vettori e sistemi lineari — nozioni di base]]
+- [[Insieme numerici, logia e dimostrazioni|Analisi — Insiemi numerici, logica e dimostrazioni]]
+- [[Funzioni|Analisi — Funzioni]]
+- [[Politecnico/Analisi 1/Esercizi/Numeri Complessi|Esercizi — Numeri complessi]]
+- [[Spazi vettoriali e sottospazi|Spazi vettoriali e sottospazi]]
+- [[Insiemi, vettori e sistemi lineari — nozioni di base|Insiemi, vettori e sistemi lineari — nozioni di base]]

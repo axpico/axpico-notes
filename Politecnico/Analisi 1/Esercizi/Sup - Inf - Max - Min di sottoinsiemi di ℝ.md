@@ -259,6 +259,6 @@ $$\Longrightarrow \quad \inf(S)=-2,\ \sup(S)=2,\ \nexists\min(S),\ \nexists\max(
 
 ## Collegamenti
 
-- [[Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md|Analisi — Estremo superiore ed inferiore, completezza di ℝ]]
-- [[Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md|Analisi — Insiemi numerici, logica e dimostrazioni]]
-- [[Politecnico/Analisi 1/Esercizi/Disequazioni.md|Esercizi — Disequazioni]]
+- [[Estremo superiore ed estremo inferiore, completezza di ℝ|Analisi — Estremo superiore ed inferiore, completezza di ℝ]]
+- [[Insieme numerici, logia e dimostrazioni|Analisi — Insiemi numerici, logica e dimostrazioni]]
+- [[Disequazioni|Esercizi — Disequazioni]]

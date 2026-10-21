@@ -125,6 +125,6 @@ $$\boxed{D=[0,+\infty)}$$
 
 ## Collegamenti
 
-- [[Politecnico/Analisi 1/Teoria/Funzioni.md|Analisi — Funzioni]]
-- [[Politecnico/Analisi 1/Teoria/Insieme numerici, logia e dimostrazioni.md|Analisi — Insiemi numerici, logica e dimostrazioni]]
-- [[Politecnico/Analisi 1/Teoria/Estremo superiore ed estremo inferiore, completezza di ℝ.md|Analisi — Estremo superiore ed inferiore, completezza di ℝ]]
+- [[Funzioni|Analisi — Funzioni]]
+- [[Insieme numerici, logia e dimostrazioni|Analisi — Insiemi numerici, logica e dimostrazioni]]
+- [[Estremo superiore ed estremo inferiore, completezza di ℝ|Analisi — Estremo superiore ed inferiore, completezza di ℝ]]
