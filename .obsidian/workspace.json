@@ -255,13 +255,11 @@
               "title": "Excalidraw Sidepanel"
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 326.5,
-    "collapsed": true
+    "width": 326.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -279,7 +277,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "6f1f369b18c97e60",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-10-22 16.29.00.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/07 Lezione 7 NUOVA (parte 1).pdf",
