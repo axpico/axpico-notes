@@ -39,7 +39,7 @@ Per $\ell=\ell_A$:
 
 **Teorema delle dimensioni (rango–nullità).** Per $\ell:V\to W$ lineare con $\dim V$ finita,
 $$\dim V=\dim\ker\ell+\dim\operatorname{im}\ell,$$
-cioè, per $A\in M(m,n)$: $n=\dim\ker A+\operatorname{rk}A$.
+cioè, per $A\in M(m,n)$: $n=\dim\ker A+\operatorname{rk}A$. Dimostrazione ed esempi: [[Rango e teorema di nullità più rango|Rango e teorema di nullità più rango]].
 
 ### Caso generale: basi qualsiasi
 

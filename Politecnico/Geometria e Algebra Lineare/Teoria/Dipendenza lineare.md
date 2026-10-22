@@ -8,7 +8,7 @@ tags:
 ↑ [[Politecnico/Geometria e Algebra Lineare/Indice|Indice]] · tappa 4 (Spazi vettoriali) · prima: [[Basi, dimensione e coordinate|Basi, dimensione e coordinate]]
 
 > Fonte: [[06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf|Lezione 6 (PDF)]] — ALG cap. 4 §7, pp. 177–180, 201–209.
-> Programma della lezione: dipendenza lineare · condizioni di una base · basi di nucleo e span · rango di matrice e mappa lineare · teorema di nullità più rango. **Queste note coprono solo le pp. 1–19 (dipendenza lineare).**
+> Programma della lezione: dipendenza lineare · condizioni di una base · basi di nucleo e span · rango di matrice e mappa lineare · teorema di nullità più rango. Queste note coprono le pp. 1–40 (dipendenza lineare e condizioni di una base). Seguito: [[Basi di nucleo, immagine e span|Basi di nucleo, immagine e span]] (pp. 41–62) e [[Rango e teorema di nullità più rango|Rango e teorema di nullità più rango]] (pp. 63–92).
 
 ### 1. Motivazione geometrica: quando un'equazione parametrica descrive davvero una retta o un piano?
 
@@ -93,12 +93,95 @@ Per ogni $n$, $\{\mathbf e_1,\dots,\mathbf e_n\}$ in $\mathbb K^n$ è indipenden
 
 **Osservazione.** Il caso precedente è un'istanza del fatto generale: **ogni base** $\mathcal B=\{\mathbf v_1,\dots,\mathbf v_n\}$ di un qualsiasi spazio vettoriale $V$ è un sistema linearmente indipendente.
 
-*Impostazione della dimostrazione (p. 19 — la scansione si interrompe qui).* La combinazione banale dà
+*Dimostrazione (pp. 19–20).* La combinazione banale dà
  (a) $0\mathbf v_1+\dots+0\mathbf v_n=\mathbf 0$.
 Si suppone per assurdo che siano dipendenti: esiste $\mathbf c'\neq\mathbf 0$ con
  (b) $c_1'\mathbf v_1+\dots+c_n'\mathbf v_n=\mathbf 0$.
+Quindi lo stesso vettore $\mathbf 0$ si scrive in **due modi distinti** come combinazione lineare di $\mathbf v_1,\dots,\mathbf v_n$. Ma in una base la scrittura di ogni vettore è **unica** (teorema delle coordinate, vedi [[Basi, dimensione e coordinate|Basi, dimensione e coordinate]]): contraddizione. $\blacksquare$
 
-*Conclusione (completamento mio, non presente nelle pagine lette).* (a) e (b) sono due scritture diverse dello **stesso** vettore $\mathbf 0$ come combinazione degli elementi di $\mathcal B$. Ma, per il teorema delle coordinate (vedi [[Basi, dimensione e coordinate|Basi, dimensione e coordinate]]), in una base la scrittura di ogni vettore è **unica**: contraddizione. $\blacksquare$
+### 7. Teorema 2 (condizioni di essere una base)
+
+In realtà vale un'affermazione più forte.
+
+> **Teorema 2.** Sia $V$ uno spazio vettoriale e $\mathcal B=\{\mathbf v_1,\dots,\mathbf v_n\}\subset V$. Sono equivalenti:
+> - (a) $\mathcal B$ è una base di $V$;
+> - (b) (b.1) $\mathbf v_1,\dots,\mathbf v_n$ sono linearmente indipendenti **e** (b.2) $\dim V=n$;
+> - (c) (c.1) $\mathbf v_1,\dots,\mathbf v_n$ sono linearmente indipendenti **e** (c.2) non esiste alcun $\mathbf u\in V$ tale che $\mathbf u,\mathbf v_1,\dots,\mathbf v_n$ siano linearmente indipendenti (cioè $\mathcal B$ è un sistema indipendente **massimale**).
+>
+> (Dimostrazione saltata a lezione.)
+
+**Esempi.**
+- $\begin{pmatrix}1\\2\end{pmatrix},\begin{pmatrix}2\\1\end{pmatrix}$ sono indipendenti ($1:2\neq2:1$) e $\dim\mathbb R^2=2$: per (b) formano una base di $\mathbb R^2$.
+- Due vettori indipendenti di $\mathbb R^3$ (ad es. $\begin{pmatrix}1\\2\\3\end{pmatrix},\begin{pmatrix}3\\2\\1\end{pmatrix}$, non proporzionali) **non** formano una base di $\mathbb R^3$: $\dim\mathbb R^3=3$, quindi nessuna base di $\mathbb R^3$ può avere 2 vettori.
+
+> *Nota:* nella scansione il secondo esempio è parzialmente illeggibile; i vettori qui sopra sono un esempio equivalente.
+
+### 8. Come verificare l'indipendenza in $\mathbb K^m$: il criterio del rango
+
+Serve un metodo per stabilire se $\mathcal B=\{\mathbf v_1,\dots,\mathbf v_n\}$ è dipendente o indipendente. In $V=\mathbb K^m$ c'è un metodo efficace: l'uguaglianza
+$$c_1\mathbf v_1+\dots+c_n\mathbf v_n=\mathbf 0$$
+è il sistema lineare omogeneo
+$$(\ast)\qquad A\mathbf c=\mathbf 0,\qquad A:=[\mathbf v_1|\mathbf v_2|\cdots|\mathbf v_n],\quad \mathbf c=(c_1,\dots,c_n).$$
+Per definizione i vettori sono indipendenti $\iff(\ast)$ ha solo la soluzione banale $\iff$ (Rouché–Capelli, vedi [[Sistemi lineari e teorema di Rouché-Capelli|Rouché-Capelli]])
+
+> $$\mathbf v_1,\dots,\mathbf v_n\ \text{indipendenti}\iff r\bigl([\mathbf v_1|\cdots|\mathbf v_n]\bigr)=n\ (=\#\text{vettori}).$$
+
+(Il rango è il numero di righe non nulle della matrice ridotta a scala.)
+
+**Esempio 1 (dipendenti).** $\mathbf v_1=\begin{pmatrix}1\\2\\3\end{pmatrix},\ \mathbf v_2=\begin{pmatrix}1\\1\\1\end{pmatrix},\ \mathbf v_3=\begin{pmatrix}3\\2\\1\end{pmatrix}$:
+$$\begin{pmatrix}1&1&3\\2&1&2\\3&1&1\end{pmatrix}\xrightarrow[R_3\to R_3-3R_1]{R_2\to R_2-2R_1}\begin{pmatrix}1&1&3\\0&-1&-4\\0&-2&-8\end{pmatrix}\xrightarrow{R_3\to R_3-2R_2}\begin{pmatrix}1&1&3\\0&-1&-4\\0&0&0\end{pmatrix}.$$
+$r(A)=2<3$: **dipendenti**.
+
+> *Nota:* nella trascrizione $\mathbf v_2$ compare come $(1,1,2)^{\mathsf T}$, ma la matrice scritta ha seconda colonna $(1,1,1)^{\mathsf T}$; i calcoli sono coerenti con $(1,1,1)^{\mathsf T}$ (infatti $\mathbf v_1-4\mathbf v_2+\mathbf v_3=\mathbf 0$).
+
+**Esempio 2 (indipendenti).** $\mathbf v_1=\begin{pmatrix}1\\2\\3\end{pmatrix},\ \mathbf v_2=\begin{pmatrix}0\\0\\1\end{pmatrix},\ \mathbf v_3=\begin{pmatrix}3\\2\\1\end{pmatrix}$:
+$$\begin{pmatrix}1&0&3\\2&0&2\\3&1&1\end{pmatrix}\xrightarrow[R_3\to R_3-3R_1]{R_2\to R_2-2R_1}\begin{pmatrix}1&0&3\\0&0&-4\\0&1&-8\end{pmatrix}\xrightarrow{R_2\leftrightarrow R_3}\begin{pmatrix}1&0&3\\0&1&-8\\0&0&-4\end{pmatrix}.$$
+$r(A)=3=\#$vettori: **indipendenti**. Essendo 3 vettori indipendenti in $\mathbb R^3$ ($\dim=3$), per il Teorema 2 sono anche una **base** di $\mathbb R^3$.
+
+> *Nota:* la matrice scritta ha seconda colonna $(0,0,1)^{\mathsf T}$; i calcoli usano questa.
+
+### 9. Spazi qualsiasi di dimensione finita: si passa alle coordinate
+
+> **Proposizione 2.** Sia $\dim V<\infty$ e $\mathcal B$ una base di $V$. Siano $\mathbf v_1,\dots,\mathbf v_n\in V$ e $\mathbf c_k:=[\mathbf v_k]_{\mathcal B}$ i loro vettori delle coordinate. Allora
+> $$\mathbf v_1,\dots,\mathbf v_n\ \text{indipendenti}\iff\mathbf c_1,\dots,\mathbf c_n\ \text{indipendenti}.$$
+> (Dimostrazione saltata; segue dal fatto che $\mathbf v\mapsto[\mathbf v]_{\mathcal B}$ è un isomorfismo.)
+
+**Esempio (polinomi).** Stabilire se sono indipendenti
+$$f_1(x)=x^2-x+1,\qquad f_2(x)=x^2+x-1,\qquad f_3(x)=x^2+x+1.$$
+Stanno in $P_2=\{\text{polinomi di grado}\le2\}$, con base $\mathcal B=\{p_0,p_1,p_2\}$, $p_k(x)=x^k$. Coordinate:
+$$\mathbf c_1=\begin{pmatrix}1\\-1\\1\end{pmatrix},\quad\mathbf c_2=\begin{pmatrix}-1\\1\\1\end{pmatrix},\quad\mathbf c_3=\begin{pmatrix}1\\1\\1\end{pmatrix}.$$
+$$\begin{pmatrix}1&-1&1\\-1&1&1\\1&1&1\end{pmatrix}\xrightarrow[R_3\to R_3-R_1]{R_2\to R_2+R_1}\begin{pmatrix}1&-1&1\\0&0&2\\0&2&0\end{pmatrix}\xrightarrow{R_2\leftrightarrow R_3}\begin{pmatrix}1&-1&1\\0&2&0\\0&0&2\end{pmatrix}.$$
+$r=3$: le coordinate sono indipendenti, quindi (Prop. 2) anche $f_1,f_2,f_3$.
+
+### 10. Spazi di dimensione infinita: Proposizione 3
+
+Se $\dim V=+\infty$ non ci sono basi finite, ma vale:
+
+> **Proposizione 3.** Sia $L:V\to W$ lineare, $\mathbf v_1,\dots,\mathbf v_n\in V$ e $\mathbf w_k:=L(\mathbf v_k)$. Se $\mathbf v_1,\dots,\mathbf v_n$ sono **dipendenti**, allora anche $\mathbf w_1,\dots,\mathbf w_n$ sono **dipendenti**.
+>
+> Equivalentemente (contronominale): **se le immagini sono indipendenti, i vettori di partenza sono indipendenti.**
+
+*Dimostrazione.* Esiste $\mathbf c\neq\mathbf 0$ con $\sum c_k\mathbf v_k=\mathbf 0$. Applicando $L$ (lineare, $L(\mathbf 0)=\mathbf 0$):
+$$\mathbf 0=L\Bigl(\sum c_k\mathbf v_k\Bigr)=\sum c_kL(\mathbf v_k)=\sum c_k\mathbf w_k,\qquad\mathbf c\neq\mathbf 0.\qquad\blacksquare$$
+
+**Esempio.** In $V=C^\infty(\mathbb R)$, $f_1=\cos x$, $f_2=\cos 2x$, $f_3=\sin x$ sono indipendenti.
+Si usa $L:V\to\mathbb R^3$, $L(f)=\bigl(f(0),f'(0),f''(0)\bigr)$:
+$$L(f_1)=\begin{pmatrix}1\\0\\-1\end{pmatrix},\quad L(f_2)=\begin{pmatrix}1\\0\\-4\end{pmatrix},\quad L(f_3)=\begin{pmatrix}0\\1\\0\end{pmatrix},$$
+$$\begin{pmatrix}1&1&0\\0&0&1\\-1&-4&0\end{pmatrix}\xrightarrow{R_3\to R_3+R_1}\begin{pmatrix}1&1&0\\0&0&1\\0&-3&0\end{pmatrix}\xrightarrow{R_2\leftrightarrow R_3}\begin{pmatrix}1&1&0\\0&-3&0\\0&0&1\end{pmatrix}.$$
+Rango $3$: le immagini sono indipendenti, quindi (Prop. 3) $f_1,f_2,f_3$ sono indipendenti.
+
+### 11. Tre osservazioni
+
+**Osservazione 1 (sottosistemi).** Ogni sottosistema di un sistema indipendente è indipendente. Equivalentemente: **se un sottosistema è dipendente, tutto il sistema è dipendente.** Basta aggiungere coefficienti $0$ per i vettori mancanti.
+Esempio in $\mathbb R^4$: $\mathbf v_1=(1,0,1,0)$, $\mathbf v_2=(1,2,3,4)$, $\mathbf v_3=(1,0,0,0)$, $\mathbf v_4=(0,0,-1,0)$. Da $\mathbf v_1-\mathbf v_3+\mathbf v_4=\mathbf 0$ segue $1\mathbf v_1+0\mathbf v_2-1\mathbf v_3+1\mathbf v_4=\mathbf 0$: tutto il sistema è dipendente.
+Analogamente $(1,2,1),(2,4,2),(2,1,2)$ sono dipendenti perché già $\mathbf v_2=2\mathbf v_1$.
+
+**Osservazione 2 (troppi vettori).** Se $\dim V=n<m$, allora $m$ vettori qualsiasi di $V$ sono dipendenti.
+*Dimostrazione (per assurdo).* Se $\mathbf v_1,\dots,\mathbf v_m$ fossero indipendenti, per l'Oss. 1 lo sarebbero i primi $n$. Per il Teorema 2 (b) formano allora una base, quindi $\mathbf v_{n+1}$ è combinazione lineare di $\mathbf v_1,\dots,\mathbf v_n$. Per la Prop. 1, $\mathbf v_1,\dots,\mathbf v_{n+1}$ sono dipendenti e quindi, per l'Oss. 1, lo sono anche $\mathbf v_1,\dots,\mathbf v_m$. Contraddizione. $\blacksquare$
+Esempio: $(1,0),(1,1),(2,1)$ sono dipendenti: sono 3 vettori in $\mathbb R^2$.
+
+**Osservazione 3 (un solo vettore).** $\{\mathbf v\}$ è indipendente $\iff\mathbf v\neq\mathbf 0$.
+*(Perché? Domanda lasciata aperta a lezione.)* Se $\mathbf v=\mathbf 0$, allora $1\cdot\mathbf 0=\mathbf 0$ è una combinazione non banale. Se $\mathbf v\neq\mathbf 0$ e $c\mathbf v=\mathbf 0$ con $c\neq0$, moltiplicando per $c^{-1}$ si ottiene $\mathbf v=\mathbf 0$, assurdo.
 
 ### Riepilogo
 
@@ -111,3 +194,8 @@ Si suppone per assurdo che siano dipendenti: esiste $\mathbf c'\neq\mathbf 0$ co
 | 2 vettori | dipendenti $\iff$ proporzionali |
 | Geometria | $\vec u,\vec v$ indipendenti $\iff$ (2) è un piano; $\vec a\ne\vec 0\iff$ (1) è una retta |
 | Basi | ogni base è indipendente (e genera) |
+| Teorema 2 | base $\iff$ indipendenti e $\#=\dim V$ $\iff$ indipendenti massimali |
+| In $\mathbb K^m$ | indipendenti $\iff r([\mathbf v_1\vert\cdots\vert\mathbf v_n])=n$ |
+| Prop. 2 | indipendenza $\iff$ indipendenza delle coordinate |
+| Prop. 3 | immagini indipendenti $\Rightarrow$ vettori indipendenti |
+| Oss. 2 | più di $\dim V$ vettori $\Rightarrow$ dipendenti |

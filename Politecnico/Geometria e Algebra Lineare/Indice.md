@@ -33,7 +33,7 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
     - Esercizi: [[Rango, sottospazi, combinazioni lineari e indipendenza — Appunti ed esercizi|Rango, sottospazi, combinazioni lineari, indipendenza]]
     - Esercizi: [[Isomorfismi, basi, dipendenza lineare e somma di sottospazi — Esercizi corretti|Isomorfismi, basi, dipendenza lineare e somma di sottospazi]]
 13. [[Basi, dimensione e coordinate|Basi, dimensione e coordinate]]
-    - Lezione 6 (in corso, pp. 1–19): [[Dipendenza lineare|Dipendenza lineare]]
+    - Lezione 6 (pp. 1–40): [[Dipendenza lineare|Dipendenza lineare e condizioni di una base]]
 
 ## 5. Applicazioni lineari
 14. [[Applicazioni (terminologia generale)|Applicazioni (terminologia generale)]]
@@ -41,9 +41,12 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 16. [[Teorema di rappresentazione e matrice rappresentativa|Teorema di rappresentazione e matrice rappresentativa]]
 17. [[Cambio di base e matrice di passaggio|Cambio di base e matrice di passaggio]]
     - HTML interattivo: [[Cambio di base.html|Cambio di base]]
+18. [[Basi di nucleo, immagine e span|Basi di nucleo, immagine e span]] (Lezione 6, pp. 41–62)
+19. [[Rango e teorema di nullità più rango|Rango e teorema di nullità più rango]] (Lezione 6, pp. 63–92)
 
 ## 6. Geometria analitica: rette e piani
-18. [[Rette e piani — equazioni parametriche e cartesiane|Rette e piani — equazioni parametriche e cartesiane]] (include span come nucleo di una matrice)
+20. [[Rette e piani — equazioni parametriche e cartesiane|Rette e piani — equazioni parametriche e cartesiane]] (include span come nucleo di una matrice)
+21. [[Posizione reciproca di rette e piani|Posizione reciproca di rette e piani]] (Lezione 7, parte 1)
 
 ## Video
 - [Playlist YouTube — Essence of linear algebra (3Blue1Brown)](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) — intuizione geometrica su vettori, basi, applicazioni lineari, cambio di base
@@ -52,6 +55,8 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 - [PoliNetwork info1y — Geometria e Algebra Lineare (GitLab)](https://gitlab.com/polinetwork/info1y/-/tree/main/GEOMETRIA%20E%20ALGEBRA%20LINEARE?ref_type=heads) — appunti, esercizi ed esami condivisi
 
 ## PDF — Appunti scansionati
+- [[06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf|Lezione 6]]
+- [[07 Lezione 7 NUOVA (parte 1).pdf|Lezione 7 (parte 1)]]
 
 ## PDF — Esercizi
 - [[EserciziGAL1.pdf|EserciziGAL1]]
