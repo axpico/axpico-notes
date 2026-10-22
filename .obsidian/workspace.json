@@ -4,47 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "9accb407bb669f80",
+        "id": "11ee85459ec61ea3",
         "type": "tabs",
         "children": [
           {
-            "id": "1c3cc21df0fd901e",
+            "id": "4b78acfab154669f",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-10-22 16.29.00.excalidraw.md"
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Posizione reciproca di rette e piani.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-22 16.29.00.excalidraw"
-            }
-          },
-          {
-            "id": "aa238eae2d3e6024",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango"
-            }
-          },
-          {
-            "id": "6f1f369b18c97e60",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/07 Lezione 7 NUOVA (parte 1).pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "07 Lezione 7 NUOVA (parte 1)"
+              "icon": "lucide-file",
+              "title": "Posizione reciproca di rette e piani"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,7 +46,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora file"
+              "title": "Files"
             }
           },
           {
@@ -207,7 +184,7 @@
               "type": "empty",
               "state": {},
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "New tab"
             }
           },
           {
@@ -263,24 +240,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Apri selettore rapido": false,
-      "graph:Apri vista grafo": false,
-      "canvas:Crea nuova lavagna": false,
-      "daily-notes:Apri nota giornaliera": false,
-      "templates:Inserisci modello": false,
-      "command-palette:Apri riquadro comandi": false,
-      "audio-recorder:Avvia/ferma registrazione": false,
-      "bases:Crea nuova Base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "bases:Create new base": false,
       "omnisearch:Omnisearch": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "4b78acfab154669f",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-10-22 16.29.00.excalidraw.md",
+    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/07 Lezione 7 NUOVA (parte 1).pdf",
+    "Excalidraw/Drawing 2026-10-22 16.29.00.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf",
     "Politecnico/Analisi 1/Formulario AM1 - asintotici.pdf",
     "Politecnico/Analisi 1/Indice.md",
@@ -290,7 +268,6 @@
     "Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/esercizi_matrice_inversa.html",
-    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md",
     "Excalidraw/Drawing 2026-10-20 16.27.26.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/HTML",
