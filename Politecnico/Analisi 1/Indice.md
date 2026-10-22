@@ -9,6 +9,8 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 
 Dimostrazioni richieste (con esercizi e soluzioni): [[Indice Dimostrazioni|Indice Dimostrazioni]]
 
+Formulario (asintotici, limiti notevoli): [[Formulario AM1 - asintotici.pdf|Formulario AM1 - asintotici]]
+
 ## 1. Fondamenti
 1. [[Insieme numerici, logia e dimostrazioni|Insiemi numerici, logica e dimostrazioni]]
 2. [[Estremo superiore ed estremo inferiore, completezza di ℝ|Estremo superiore/inferiore, completezza di ℝ]]

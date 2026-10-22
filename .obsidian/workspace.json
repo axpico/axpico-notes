@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3d0cbe5206d70e59",
+        "id": "978f45c3bfcc9cef",
         "type": "tabs",
         "children": [
           {
-            "id": "6ff6d862ecbe8ad0",
+            "id": "919164756bbc1f3b",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-10-21 15.29.58.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-21 15.29.58.excalidraw"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -78,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -208,13 +205,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792508250282-o69rd7h",
+                      "tabId": "tab-1792668306623-kgy0m63",
                       "conversationId": null,
                       "draftModel": "sonnet",
                       "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1792508250282-o69rd7h"
+                  "activeTabId": "tab-1792668306623-kgy0m63"
                 }
               },
               "icon": "bot",
@@ -231,7 +228,8 @@
               "title": "Excalidraw Sidepanel"
             }
           }
-        ]
+        ],
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -254,11 +252,14 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "6ff6d862ecbe8ad0",
+  "active": "919164756bbc1f3b",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta.md",
-    "Excalidraw/Drawing 2026-10-21 15.29.58.excalidraw.md",
+    "Politecnico/Analisi 1/Formulario AM1 - asintotici.pdf",
     "Politecnico/Analisi 1/Indice.md",
+    "Politecnico/Analisi 1/Indice.md.tmp.35880.260a04f83556",
+    "Excalidraw/Drawing 2026-10-22 13.11.56.excalidraw.md",
+    "Excalidraw/Drawing 2026-10-21 15.29.58.excalidraw.md",
+    "Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/esercizi_matrice_inversa.html",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
@@ -287,11 +288,7 @@
     "Politecnico/Analisi 1/Esercizi/Asintotici, o piccolo e serie a termini non negativi.md",
     "Politecnico/Analisi 1/Esercizi/Asintotici, o piccolo e serie a termini non negativi.md.tmp.19039.449be5e54594",
     "Excalidraw/Drawing 2026-10-16 15.19.37.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-16 16.57.07.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Dipendenza lineare.md.tmp.10147.3617a8939e99",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Dipendenza lineare.md.tmp.10147.e54183e61447",
-    "Politecnico/Analisi 1/Dimostrazioni/Programma di massima e bibliografia.pdf",
-    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.7 Convergenza assoluta ⟹ convergenza semplice (★).md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
