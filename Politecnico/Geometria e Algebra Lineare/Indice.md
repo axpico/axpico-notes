@@ -47,6 +47,8 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 ## 6. Geometria analitica: rette e piani
 20. [[Rette e piani — equazioni parametriche e cartesiane|Rette e piani — equazioni parametriche e cartesiane]] (include span come nucleo di una matrice)
 21. [[Posizione reciproca di rette e piani|Posizione reciproca di rette e piani]] (Lezione 7, parte 1)
+22. [[Ortogonalità e fasci di rette e piani|Ortogonalità e fasci di rette e piani]] (Lezione 7, parti 2–3)
+    - HTML interattivo: [[Lezione 7 — Rette, piani, ortogonalità e fasci.html|Lezione 7 completa (posizione reciproca, ortogonalità, fasci)]]
 
 ## Video
 - [Playlist YouTube — Essence of linear algebra (3Blue1Brown)](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) — intuizione geometrica su vettori, basi, applicazioni lineari, cambio di base
@@ -57,6 +59,8 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 ## PDF — Appunti scansionati
 - [[06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf|Lezione 6]]
 - [[07 Lezione 7 NUOVA (parte 1).pdf|Lezione 7 (parte 1)]]
+- [[07 Lezione 7 NUOVA (parte 2).pdf|Lezione 7 (parte 2)]]
+- [[07 Lezione 7 NUOVA (parte 3).pdf|Lezione 7 (parte 3)]]
 
 ## PDF — Esercizi
 - [[EserciziGAL1.pdf|EserciziGAL1]]

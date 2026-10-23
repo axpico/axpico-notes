@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lezione 7 — Rette, piani, ortogonalità e fasci</title>
+<style>/* KaTeX CSS inline */@font-face{font-family:KaTeX_AMS;font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_AMS-Regular.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_AMS-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_AMS-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Caligraphic;font-style:normal;font-weight:700;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Caligraphic-Bold.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Caligraphic-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Caligraphic-Bold.ttf) format("truetype")}@font-face{font-family:KaTeX_Caligraphic;font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Caligraphic-Regular.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Caligraphic-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Caligraphic-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Fraktur;font-style:normal;font-weight:700;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Fraktur-Bold.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Fraktur-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Fraktur-Bold.ttf) format("truetype")}@font-face{font-family:KaTeX_Fraktur;font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Fraktur-Regular.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Fraktur-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Fraktur-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Main;font-style:normal;font-weight:700;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Main-Bold.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Main-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Main-Bold.ttf) format("truetype")}@font-face{font-family:KaTeX_Main;font-style:italic;font-weight:700;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Main-BoldItalic.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Main-BoldItalic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Main-BoldItalic.ttf) format("truetype")}@font-face{font-family:KaTeX_Main;font-style:italic;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Main-Italic.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Main-Italic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Main-Italic.ttf) format("truetype")}@font-face{font-family:KaTeX_Main;font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Main-Regular.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Main-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Main-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Math;font-style:italic;font-weight:700;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Math-BoldItalic.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Math-BoldItalic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Math-BoldItalic.ttf) format("truetype")}@font-face{font-family:KaTeX_Math;font-style:italic;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Math-Italic.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Math-Italic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Math-Italic.ttf) format("truetype")}@font-face{font-family:"KaTeX_SansSerif";font-style:normal;font-weight:700;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_SansSerif-Bold.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_SansSerif-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_SansSerif-Bold.ttf) format("truetype")}@font-face{font-family:"KaTeX_SansSerif";font-style:italic;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_SansSerif-Italic.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_SansSerif-Italic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_SansSerif-Italic.ttf) format("truetype")}@font-face{font-family:"KaTeX_SansSerif";font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_SansSerif-Regular.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_SansSerif-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_SansSerif-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Script;font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Script-Regular.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Script-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Script-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Size1;font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Size1-Regular.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Size1-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Size1-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Size2;font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Size2-Regular.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Size2-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Size2-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Size3;font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Size3-Regular.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Size3-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Size3-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Size4;font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Size4-Regular.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Size4-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Size4-Regular.ttf) format("truetype")}@font-face{font-family:KaTeX_Typewriter;font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Typewriter-Regular.woff2) format("woff2"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Typewriter-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/fonts/KaTeX_Typewriter-Regular.ttf) format("truetype")}.katex{font:normal 1.21em KaTeX_Main,Times New Roman,serif;line-height:1.2;text-indent:0;text-rendering:auto}.katex *{-ms-high-contrast-adjust:none!important;border-color:currentColor}.katex .katex-version:after{content:"0.16.11"}.katex .katex-mathml{clip:rect(1px,1px,1px,1px);border:0;height:1px;overflow:hidden;padding:0;position:absolute;width:1px}.katex .katex-html>.newline{display:block}.katex .base{position:relative;white-space:nowrap;width:-webkit-min-content;width:-moz-min-content;width:min-content}.katex .base,.katex .strut{display:inline-block}.katex .textbf{font-weight:700}.katex .textit{font-style:italic}.katex .textrm{font-family:KaTeX_Main}.katex .textsf{font-family:KaTeX_SansSerif}.katex .texttt{font-family:KaTeX_Typewriter}.katex .mathnormal{font-family:KaTeX_Math;font-style:italic}.katex .mathit{font-family:KaTeX_Main;font-style:italic}.katex .mathrm{font-style:normal}.katex .mathbf{font-family:KaTeX_Main;font-weight:700}.katex .boldsymbol{font-family:KaTeX_Math;font-style:italic;font-weight:700}.katex .amsrm,.katex .mathbb,.katex .textbb{font-family:KaTeX_AMS}.katex .mathcal{font-family:KaTeX_Caligraphic}.katex .mathfrak,.katex .textfrak{font-family:KaTeX_Fraktur}.katex .mathboldfrak,.katex .textboldfrak{font-family:KaTeX_Fraktur;font-weight:700}.katex .mathtt{font-family:KaTeX_Typewriter}.katex .mathscr,.katex .textscr{font-family:KaTeX_Script}.katex .mathsf,.katex .textsf{font-family:KaTeX_SansSerif}.katex .mathboldsf,.katex .textboldsf{font-family:KaTeX_SansSerif;font-weight:700}.katex .mathitsf,.katex .textitsf{font-family:KaTeX_SansSerif;font-style:italic}.katex .mainrm{font-family:KaTeX_Main;font-style:normal}.katex .vlist-t{border-collapse:collapse;display:inline-table;table-layout:fixed}.katex .vlist-r{display:table-row}.katex .vlist{display:table-cell;position:relative;vertical-align:bottom}.katex .vlist>span{display:block;height:0;position:relative}.katex .vlist>span>span{display:inline-block}.katex .vlist>span>.pstrut{overflow:hidden;width:0}.katex .vlist-t2{margin-right:-2px}.katex .vlist-s{display:table-cell;font-size:1px;min-width:2px;vertical-align:bottom;width:2px}.katex .vbox{align-items:baseline;display:inline-flex;flex-direction:column}.katex .hbox{width:100%}.katex .hbox,.katex .thinbox{display:inline-flex;flex-direction:row}.katex .thinbox{max-width:0;width:0}.katex .msupsub{text-align:left}.katex .mfrac>span>span{text-align:center}.katex .mfrac .frac-line{border-bottom-style:solid;display:inline-block;width:100%}.katex .hdashline,.katex .hline,.katex .mfrac .frac-line,.katex .overline .overline-line,.katex .rule,.katex .underline .underline-line{min-height:1px}.katex .mspace{display:inline-block}.katex .clap,.katex .llap,.katex .rlap{position:relative;width:0}.katex .clap>.inner,.katex .llap>.inner,.katex .rlap>.inner{position:absolute}.katex .clap>.fix,.katex .llap>.fix,.katex .rlap>.fix{display:inline-block}.katex .llap>.inner{right:0}.katex .clap>.inner,.katex .rlap>.inner{left:0}.katex .clap>.inner>span{margin-left:-50%;margin-right:50%}.katex .rule{border:0 solid;display:inline-block;position:relative}.katex .hline,.katex .overline .overline-line,.katex .underline .underline-line{border-bottom-style:solid;display:inline-block;width:100%}.katex .hdashline{border-bottom-style:dashed;display:inline-block;width:100%}.katex .sqrt>.root{margin-left:.2777777778em;margin-right:-.5555555556em}.katex .fontsize-ensurer.reset-size1.size1,.katex .sizing.reset-size1.size1{font-size:1em}.katex .fontsize-ensurer.reset-size1.size2,.katex .sizing.reset-size1.size2{font-size:1.2em}.katex .fontsize-ensurer.reset-size1.size3,.katex .sizing.reset-size1.size3{font-size:1.4em}.katex .fontsize-ensurer.reset-size1.size4,.katex .sizing.reset-size1.size4{font-size:1.6em}.katex .fontsize-ensurer.reset-size1.size5,.katex .sizing.reset-size1.size5{font-size:1.8em}.katex .fontsize-ensurer.reset-size1.size6,.katex .sizing.reset-size1.size6{font-size:2em}.katex .fontsize-ensurer.reset-size1.size7,.katex .sizing.reset-size1.size7{font-size:2.4em}.katex .fontsize-ensurer.reset-size1.size8,.katex .sizing.reset-size1.size8{font-size:2.88em}.katex .fontsize-ensurer.reset-size1.size9,.katex .sizing.reset-size1.size9{font-size:3.456em}.katex .fontsize-ensurer.reset-size1.size10,.katex .sizing.reset-size1.size10{font-size:4.148em}.katex .fontsize-ensurer.reset-size1.size11,.katex .sizing.reset-size1.size11{font-size:4.976em}.katex .fontsize-ensurer.reset-size2.size1,.katex .sizing.reset-size2.size1{font-size:.8333333333em}.katex .fontsize-ensurer.reset-size2.size2,.katex .sizing.reset-size2.size2{font-size:1em}.katex .fontsize-ensurer.reset-size2.size3,.katex .sizing.reset-size2.size3{font-size:1.1666666667em}.katex .fontsize-ensurer.reset-size2.size4,.katex .sizing.reset-size2.size4{font-size:1.3333333333em}.katex .fontsize-ensurer.reset-size2.size5,.katex .sizing.reset-size2.size5{font-size:1.5em}.katex .fontsize-ensurer.reset-size2.size6,.katex .sizing.reset-size2.size6{font-size:1.6666666667em}.katex .fontsize-ensurer.reset-size2.size7,.katex .sizing.reset-size2.size7{font-size:2em}.katex .fontsize-ensurer.reset-size2.size8,.katex .sizing.reset-size2.size8{font-size:2.4em}.katex .fontsize-ensurer.reset-size2.size9,.katex .sizing.reset-size2.size9{font-size:2.88em}.katex .fontsize-ensurer.reset-size2.size10,.katex .sizing.reset-size2.size10{font-size:3.4566666667em}.katex .fontsize-ensurer.reset-size2.size11,.katex .sizing.reset-size2.size11{font-size:4.1466666667em}.katex .fontsize-ensurer.reset-size3.size1,.katex .sizing.reset-size3.size1{font-size:.7142857143em}.katex .fontsize-ensurer.reset-size3.size2,.katex .sizing.reset-size3.size2{font-size:.8571428571em}.katex .fontsize-ensurer.reset-size3.size3,.katex .sizing.reset-size3.size3{font-size:1em}.katex .fontsize-ensurer.reset-size3.size4,.katex .sizing.reset-size3.size4{font-size:1.1428571429em}.katex .fontsize-ensurer.reset-size3.size5,.katex .sizing.reset-size3.size5{font-size:1.2857142857em}.katex .fontsize-ensurer.reset-size3.size6,.katex .sizing.reset-size3.size6{font-size:1.4285714286em}.katex .fontsize-ensurer.reset-size3.size7,.katex .sizing.reset-size3.size7{font-size:1.7142857143em}.katex .fontsize-ensurer.reset-size3.size8,.katex .sizing.reset-size3.size8{font-size:2.0571428571em}.katex .fontsize-ensurer.reset-size3.size9,.katex .sizing.reset-size3.size9{font-size:2.4685714286em}.katex .fontsize-ensurer.reset-size3.size10,.katex .sizing.reset-size3.size10{font-size:2.9628571429em}.katex .fontsize-ensurer.reset-size3.size11,.katex .sizing.reset-size3.size11{font-size:3.5542857143em}.katex .fontsize-ensurer.reset-size4.size1,.katex .sizing.reset-size4.size1{font-size:.625em}.katex .fontsize-ensurer.reset-size4.size2,.katex .sizing.reset-size4.size2{font-size:.75em}.katex .fontsize-ensurer.reset-size4.size3,.katex .sizing.reset-size4.size3{font-size:.875em}.katex .fontsize-ensurer.reset-size4.size4,.katex .sizing.reset-size4.size4{font-size:1em}.katex .fontsize-ensurer.reset-size4.size5,.katex .sizing.reset-size4.size5{font-size:1.125em}.katex .fontsize-ensurer.reset-size4.size6,.katex .sizing.reset-size4.size6{font-size:1.25em}.katex .fontsize-ensurer.reset-size4.size7,.katex .sizing.reset-size4.size7{font-size:1.5em}.katex .fontsize-ensurer.reset-size4.size8,.katex .sizing.reset-size4.size8{font-size:1.8em}.katex .fontsize-ensurer.reset-size4.size9,.katex .sizing.reset-size4.size9{font-size:2.16em}.katex .fontsize-ensurer.reset-size4.size10,.katex .sizing.reset-size4.size10{font-size:2.5925em}.katex .fontsize-ensurer.reset-size4.size11,.katex .sizing.reset-size4.size11{font-size:3.11em}.katex .fontsize-ensurer.reset-size5.size1,.katex .sizing.reset-size5.size1{font-size:.5555555556em}.katex .fontsize-ensurer.reset-size5.size2,.katex .sizing.reset-size5.size2{font-size:.6666666667em}.katex .fontsize-ensurer.reset-size5.size3,.katex .sizing.reset-size5.size3{font-size:.7777777778em}.katex .fontsize-ensurer.reset-size5.size4,.katex .sizing.reset-size5.size4{font-size:.8888888889em}.katex .fontsize-ensurer.reset-size5.size5,.katex .sizing.reset-size5.size5{font-size:1em}.katex .fontsize-ensurer.reset-size5.size6,.katex .sizing.reset-size5.size6{font-size:1.1111111111em}.katex .fontsize-ensurer.reset-size5.size7,.katex .sizing.reset-size5.size7{font-size:1.3333333333em}.katex .fontsize-ensurer.reset-size5.size8,.katex .sizing.reset-size5.size8{font-size:1.6em}.katex .fontsize-ensurer.reset-size5.size9,.katex .sizing.reset-size5.size9{font-size:1.92em}.katex .fontsize-ensurer.reset-size5.size10,.katex .sizing.reset-size5.size10{font-size:2.3044444444em}.katex .fontsize-ensurer.reset-size5.size11,.katex .sizing.reset-size5.size11{font-size:2.7644444444em}.katex .fontsize-ensurer.reset-size6.size1,.katex .sizing.reset-size6.size1{font-size:.5em}.katex .fontsize-ensurer.reset-size6.size2,.katex .sizing.reset-size6.size2{font-size:.6em}.katex .fontsize-ensurer.reset-size6.size3,.katex .sizing.reset-size6.size3{font-size:.7em}.katex .fontsize-ensurer.reset-size6.size4,.katex .sizing.reset-size6.size4{font-size:.8em}.katex .fontsize-ensurer.reset-size6.size5,.katex .sizing.reset-size6.size5{font-size:.9em}.katex .fontsize-ensurer.reset-size6.size6,.katex .sizing.reset-size6.size6{font-size:1em}.katex .fontsize-ensurer.reset-size6.size7,.katex .sizing.reset-size6.size7{font-size:1.2em}.katex .fontsize-ensurer.reset-size6.size8,.katex .sizing.reset-size6.size8{font-size:1.44em}.katex .fontsize-ensurer.reset-size6.size9,.katex .sizing.reset-size6.size9{font-size:1.728em}.katex .fontsize-ensurer.reset-size6.size10,.katex .sizing.reset-size6.size10{font-size:2.074em}.katex .fontsize-ensurer.reset-size6.size11,.katex .sizing.reset-size6.size11{font-size:2.488em}.katex .fontsize-ensurer.reset-size7.size1,.katex .sizing.reset-size7.size1{font-size:.4166666667em}.katex .fontsize-ensurer.reset-size7.size2,.katex .sizing.reset-size7.size2{font-size:.5em}.katex .fontsize-ensurer.reset-size7.size3,.katex .sizing.reset-size7.size3{font-size:.5833333333em}.katex .fontsize-ensurer.reset-size7.size4,.katex .sizing.reset-size7.size4{font-size:.6666666667em}.katex .fontsize-ensurer.reset-size7.size5,.katex .sizing.reset-size7.size5{font-size:.75em}.katex .fontsize-ensurer.reset-size7.size6,.katex .sizing.reset-size7.size6{font-size:.8333333333em}.katex .fontsize-ensurer.reset-size7.size7,.katex .sizing.reset-size7.size7{font-size:1em}.katex .fontsize-ensurer.reset-size7.size8,.katex .sizing.reset-size7.size8{font-size:1.2em}.katex .fontsize-ensurer.reset-size7.size9,.katex .sizing.reset-size7.size9{font-size:1.44em}.katex .fontsize-ensurer.reset-size7.size10,.katex .sizing.reset-size7.size10{font-size:1.7283333333em}.katex .fontsize-ensurer.reset-size7.size11,.katex .sizing.reset-size7.size11{font-size:2.0733333333em}.katex .fontsize-ensurer.reset-size8.size1,.katex .sizing.reset-size8.size1{font-size:.3472222222em}.katex .fontsize-ensurer.reset-size8.size2,.katex .sizing.reset-size8.size2{font-size:.4166666667em}.katex .fontsize-ensurer.reset-size8.size3,.katex .sizing.reset-size8.size3{font-size:.4861111111em}.katex .fontsize-ensurer.reset-size8.size4,.katex .sizing.reset-size8.size4{font-size:.5555555556em}.katex .fontsize-ensurer.reset-size8.size5,.katex .sizing.reset-size8.size5{font-size:.625em}.katex .fontsize-ensurer.reset-size8.size6,.katex .sizing.reset-size8.size6{font-size:.6944444444em}.katex .fontsize-ensurer.reset-size8.size7,.katex .sizing.reset-size8.size7{font-size:.8333333333em}.katex .fontsize-ensurer.reset-size8.size8,.katex .sizing.reset-size8.size8{font-size:1em}.katex .fontsize-ensurer.reset-size8.size9,.katex .sizing.reset-size8.size9{font-size:1.2em}.katex .fontsize-ensurer.reset-size8.size10,.katex .sizing.reset-size8.size10{font-size:1.4402777778em}.katex .fontsize-ensurer.reset-size8.size11,.katex .sizing.reset-size8.size11{font-size:1.7277777778em}.katex .fontsize-ensurer.reset-size9.size1,.katex .sizing.reset-size9.size1{font-size:.2893518519em}.katex .fontsize-ensurer.reset-size9.size2,.katex .sizing.reset-size9.size2{font-size:.3472222222em}.katex .fontsize-ensurer.reset-size9.size3,.katex .sizing.reset-size9.size3{font-size:.4050925926em}.katex .fontsize-ensurer.reset-size9.size4,.katex .sizing.reset-size9.size4{font-size:.462962963em}.katex .fontsize-ensurer.reset-size9.size5,.katex .sizing.reset-size9.size5{font-size:.5208333333em}.katex .fontsize-ensurer.reset-size9.size6,.katex .sizing.reset-size9.size6{font-size:.5787037037em}.katex .fontsize-ensurer.reset-size9.size7,.katex .sizing.reset-size9.size7{font-size:.6944444444em}.katex .fontsize-ensurer.reset-size9.size8,.katex .sizing.reset-size9.size8{font-size:.8333333333em}.katex .fontsize-ensurer.reset-size9.size9,.katex .sizing.reset-size9.size9{font-size:1em}.katex .fontsize-ensurer.reset-size9.size10,.katex .sizing.reset-size9.size10{font-size:1.2002314815em}.katex .fontsize-ensurer.reset-size9.size11,.katex .sizing.reset-size9.size11{font-size:1.4398148148em}.katex .fontsize-ensurer.reset-size10.size1,.katex .sizing.reset-size10.size1{font-size:.2410800386em}.katex .fontsize-ensurer.reset-size10.size2,.katex .sizing.reset-size10.size2{font-size:.2892960463em}.katex .fontsize-ensurer.reset-size10.size3,.katex .sizing.reset-size10.size3{font-size:.337512054em}.katex .fontsize-ensurer.reset-size10.size4,.katex .sizing.reset-size10.size4{font-size:.3857280617em}.katex .fontsize-ensurer.reset-size10.size5,.katex .sizing.reset-size10.size5{font-size:.4339440694em}.katex .fontsize-ensurer.reset-size10.size6,.katex .sizing.reset-size10.size6{font-size:.4821600771em}.katex .fontsize-ensurer.reset-size10.size7,.katex .sizing.reset-size10.size7{font-size:.5785920926em}.katex .fontsize-ensurer.reset-size10.size8,.katex .sizing.reset-size10.size8{font-size:.6943105111em}.katex .fontsize-ensurer.reset-size10.size9,.katex .sizing.reset-size10.size9{font-size:.8331726133em}.katex .fontsize-ensurer.reset-size10.size10,.katex .sizing.reset-size10.size10{font-size:1em}.katex .fontsize-ensurer.reset-size10.size11,.katex .sizing.reset-size10.size11{font-size:1.1996142719em}.katex .fontsize-ensurer.reset-size11.size1,.katex .sizing.reset-size11.size1{font-size:.2009646302em}.katex .fontsize-ensurer.reset-size11.size2,.katex .sizing.reset-size11.size2{font-size:.2411575563em}.katex .fontsize-ensurer.reset-size11.size3,.katex .sizing.reset-size11.size3{font-size:.2813504823em}.katex .fontsize-ensurer.reset-size11.size4,.katex .sizing.reset-size11.size4{font-size:.3215434084em}.katex .fontsize-ensurer.reset-size11.size5,.katex .sizing.reset-size11.size5{font-size:.3617363344em}.katex .fontsize-ensurer.reset-size11.size6,.katex .sizing.reset-size11.size6{font-size:.4019292605em}.katex .fontsize-ensurer.reset-size11.size7,.katex .sizing.reset-size11.size7{font-size:.4823151125em}.katex .fontsize-ensurer.reset-size11.size8,.katex .sizing.reset-size11.size8{font-size:.578778135em}.katex .fontsize-ensurer.reset-size11.size9,.katex .sizing.reset-size11.size9{font-size:.6945337621em}.katex .fontsize-ensurer.reset-size11.size10,.katex .sizing.reset-size11.size10{font-size:.8336012862em}.katex .fontsize-ensurer.reset-size11.size11,.katex .sizing.reset-size11.size11{font-size:1em}.katex .delimsizing.size1{font-family:KaTeX_Size1}.katex .delimsizing.size2{font-family:KaTeX_Size2}.katex .delimsizing.size3{font-family:KaTeX_Size3}.katex .delimsizing.size4{font-family:KaTeX_Size4}.katex .delimsizing.mult .delim-size1>span{font-family:KaTeX_Size1}.katex .delimsizing.mult .delim-size4>span{font-family:KaTeX_Size4}.katex .nulldelimiter{display:inline-block;width:.12em}.katex .delimcenter,.katex .op-symbol{position:relative}.katex .op-symbol.small-op{font-family:KaTeX_Size1}.katex .op-symbol.large-op{font-family:KaTeX_Size2}.katex .accent>.vlist-t,.katex .op-limits>.vlist-t{text-align:center}.katex .accent .accent-body{position:relative}.katex .accent .accent-body:not(.accent-full){width:0}.katex .overlay{display:block}.katex .mtable .vertical-separator{display:inline-block;min-width:1px}.katex .mtable .arraycolsep{display:inline-block}.katex .mtable .col-align-c>.vlist-t{text-align:center}.katex .mtable .col-align-l>.vlist-t{text-align:left}.katex .mtable .col-align-r>.vlist-t{text-align:right}.katex .svg-align{text-align:left}.katex svg{fill:currentColor;stroke:currentColor;fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;display:block;height:inherit;position:absolute;width:100%}.katex svg path{stroke:none}.katex img{border-style:none;max-height:none;max-width:none;min-height:0;min-width:0}.katex .stretchy{display:block;overflow:hidden;position:relative;width:100%}.katex .stretchy:after,.katex .stretchy:before{content:""}.katex .hide-tail{overflow:hidden;position:relative;width:100%}.katex .halfarrow-left{left:0;overflow:hidden;position:absolute;width:50.2%}.katex .halfarrow-right{overflow:hidden;position:absolute;right:0;width:50.2%}.katex .brace-left{left:0;overflow:hidden;position:absolute;width:25.1%}.katex .brace-center{left:25%;overflow:hidden;position:absolute;width:50%}.katex .brace-right{overflow:hidden;position:absolute;right:0;width:25.1%}.katex .x-arrow-pad{padding:0 .5em}.katex .cd-arrow-pad{padding:0 .55556em 0 .27778em}.katex .mover,.katex .munder,.katex .x-arrow{text-align:center}.katex .boxpad{padding:0 .3em}.katex .fbox,.katex .fcolorbox{border:.04em solid;box-sizing:border-box}.katex .cancel-pad{padding:0 .2em}.katex .cancel-lap{margin-left:-.2em;margin-right:-.2em}.katex .sout{border-bottom-style:solid;border-bottom-width:.08em}.katex .angl{border-right:.049em solid;border-top:.049em solid;box-sizing:border-box;margin-right:.03889em}.katex .anglpad{padding:0 .03889em}.katex .eqn-num:before{content:"(" counter(katexEqnNo) ")";counter-increment:katexEqnNo}.katex .mml-eqn-num:before{content:"(" counter(mmlEqnNo) ")";counter-increment:mmlEqnNo}.katex .mtr-glue{width:50%}.katex .cd-vert-arrow{display:inline-block;position:relative}.katex .cd-label-left{display:inline-block;position:absolute;right:calc(50% + .3em);text-align:left}.katex .cd-label-right{display:inline-block;left:calc(50% + .3em);position:absolute;text-align:right}.katex-display{display:block;margin:1em 0;text-align:center}.katex-display>.katex{display:block;text-align:center;white-space:nowrap}.katex-display>.katex>.katex-html{display:block;position:relative}.katex-display>.katex>.katex-html>.tag{position:absolute;right:0}.katex-display.leqno>.katex>.katex-html>.tag{left:0;right:auto}.katex-display.fleqn>.katex{padding-left:2em;text-align:left}body{counter-reset:katexEqnNo mmlEqnNo}
+</style>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]})"></script>
+<style>
+:root{--bg:#f3f5f9;--paper:#fff;--fg:#14203a;--muted:#5a6680;--line:#d5dbe6;--acc:#2c5bd1;--acc-soft:rgba(44,91,209,.09);
+--ok:#16794f;--ok-soft:rgba(22,121,79,.11);--warn:#b45309;--warn-soft:rgba(180,83,9,.11);
+--c1:#2c5bd1;--c2:#d9480f;--c3:#16794f;--c4:#7c3aed;--c5:#8a94a8;--axis:#b8c0cf}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1525;--paper:#162036;--fg:#e7ecf6;--muted:#9aa6c0;--line:#2b3757;--acc:#7ea4ff;--acc-soft:rgba(126,164,255,.13);
+--ok:#52d4a3;--ok-soft:rgba(82,212,163,.13);--warn:#fbbf24;--warn-soft:rgba(251,191,36,.12);
+--c1:#7ea4ff;--c2:#ff9d62;--c3:#52d4a3;--c4:#c4a5ff;--c5:#7d89a3;--axis:#3a4766}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{display:grid;grid-template-columns:220px 1fr;max-width:1240px;margin:auto;gap:22px;padding:22px}
+nav{position:sticky;top:22px;align-self:start;font-size:14px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 16px;max-height:calc(100vh - 44px);overflow:auto}
+nav b{display:block;margin:10px 0 3px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.07em}
+nav a{display:block;color:var(--fg);text-decoration:none;padding:2px 0}
+nav a:hover{color:var(--acc)}
+main{min-width:0}
+section{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:18px}
+h1{font-size:28px;margin:0 0 4px}
+h2{font-size:21px;margin:0 0 12px}
+h2 .tag{font-size:12px;font-weight:600;color:var(--acc);background:var(--acc-soft);padding:2px 8px;border-radius:99px;vertical-align:middle;margin-right:8px}
+.sub{color:var(--muted);margin:0}
+.tldr{border-left:4px solid var(--acc);background:var(--acc-soft);padding:8px 14px;border-radius:0 10px 10px 0;margin:10px 0 14px}
+.tldr.ok{border-color:var(--ok);background:var(--ok-soft)}
+.tldr.warn{border-color:var(--warn);background:var(--warn-soft)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:10px 0}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+figure{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:8px;text-align:center}
+figure canvas{width:100%;height:210px;display:block;cursor:grab;touch-action:none}
+figure canvas.big{height:340px}
+figure canvas:active{cursor:grabbing}
+figcaption{font-size:14px;margin-top:4px}
+figcaption b{display:block;font-size:15px}
+.rk{font-size:12.5px;color:var(--muted)}
+.legend{font-size:13px;color:var(--muted);margin:4px 0 0}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;vertical-align:middle;margin:0 3px 0 8px}
+.steps{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0;padding:0;list-style:none;counter-reset:s}
+.steps li{flex:1 1 180px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:14.5px;counter-increment:s}
+.steps.col{flex-direction:column}.steps.col li{flex:none}
+.steps li::before{content:counter(s);display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--acc);color:#fff;font-weight:700;font-size:12px;margin-right:6px}
+table{border-collapse:collapse;width:100%;margin:8px 0;font-size:14.5px}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left}
+th{background:var(--acc-soft)}
+details{border:1px solid var(--line);border-radius:10px;padding:6px 12px;margin:8px 0}
+summary{cursor:pointer;font-weight:600;color:var(--acc)}
+.katex-display{overflow-x:auto;overflow-y:hidden;padding:2px 0}
+.tool{display:grid;grid-template-columns:minmax(260px,330px) 1fr;gap:16px;align-items:start}
+.tool .row{display:flex;flex-direction:column;margin-bottom:8px}
+.tool label{font-weight:600;font-size:14px}
+.tool input,.tool select{font:inherit;padding:5px 8px;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--fg)}
+.tool button{font:inherit;padding:7px 16px;border:0;border-radius:8px;background:var(--acc);color:#fff;cursor:pointer;width:100%}
+#out{margin-top:10px}
+.hint{font-size:12.5px;color:var(--muted);text-align:right;margin:-4px 0 6px}
+@media (max-width:860px){.wrap{grid-template-columns:1fr}nav{position:static;max-height:none}.tool{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <b>Lezione 7</b><a href="#intro">Mappa</a>
+  <b>1 · Posizione reciproca</b>
+  <a href="#rr2">Rette nel piano</a><a href="#rr3">Rette nello spazio</a><a href="#pp">Due piani</a><a href="#rp">Retta e piano</a>
+  <b>2 · Ortogonalità</b>
+  <a href="#ort">Prodotto scalare</a><a href="#norm">Vettore normale</a><a href="#ortex">Esempi</a>
+  <b>3 · Fasci</b>
+  <a href="#fasci">Cos'è un fascio</a><a href="#fpar">Piani paralleli</a><a href="#fretta">Piani per una retta</a><a href="#fmisto">Esempio misto</a>
+  <b>Strumenti</b><a href="#tool">Laboratorio 3D</a><a href="#riep">Riepilogo</a>
+</nav>
+
+<main>
+<section id="intro">
+  <h1>Lezione 7 — Rette, piani, ortogonalità e fasci</h1>
+  <p class="sub">GAL · Politecnico · 🖱️ ogni scena 3D si ruota trascinandola</p>
+  <div class="tldr"><b>Un'idea sola:</b> ogni domanda geometrica diventa un <b>sistema lineare</b>, e la risposta la danno i <b>ranghi</b>.</div>
+  <ul class="steps">
+    <li><b>Posizione reciproca</b><br>intersecare e poi classificare con Rouché–Capelli</li>
+    <li><b>Ortogonalità</b><br>prodotto scalare $\mathbf x^T\mathbf y=0$ e vettore normale $(a,b,c)$</li>
+    <li><b>Fasci</b><br>famiglie con parametri: si impongono le condizioni sui parametri</li>
+  </ul>
+  <details><summary>Ripasso: Rouché–Capelli</summary>
+    <p>$A\mathbf x=\mathbf b$ è compatibile $\iff r(A)=r([A|\mathbf b])$. In quel caso le soluzioni hanno dimensione $n-r(A)$: un punto (0), una retta (1), un piano (2). Se $r([A|\mathbf b])\gt r(A)$, le condizioni sono contraddittorie e l'intersezione è vuota.</p>
+  </details>
+</section>
+
+<!-- ============ PARTE 1 ============ -->
+<section id="rr2">
+  <h2><span class="tag">Parte 1</span>Due rette nel piano</h2>
+  <div class="tldr">$t\mathbf v_1-s\mathbf v_2=\mathbf r_2-\mathbf r_1$, cioè $A=[\mathbf v_1|-\mathbf v_2]$ e $\mathbf b=\mathbf r_2-\mathbf r_1$.</div>
+  <div class="grid">
+    <figure><canvas data-s="p_inc"></canvas><figcaption><b>Incidenti</b><span class="rk">$r(A)=2,\ r'=2$ · un punto</span></figcaption></figure>
+    <figure><canvas data-s="p_par"></canvas><figcaption><b>Parallele distinte</b><span class="rk">$r(A)=1,\ r'=2$ · nessun punto</span></figcaption></figure>
+    <figure><canvas data-s="p_coi"></canvas><figcaption><b>Coincidenti</b><span class="rk">$r(A)=1,\ r'=1$ · infiniti punti</span></figcaption></figure>
+  </div>
+  <details><summary>Esempio svolto: $\ell_1:\binom76+t\binom12$, $\ell_2:\binom0{-6}+s\binom34$</summary>
+    $$\left(\begin{array}{cc|c}1&-3&-7\\2&-4&-12\end{array}\right)\xrightarrow{R_2-2R_1}\left(\begin{array}{cc|c}1&-3&-7\\0&2&2\end{array}\right)\Rightarrow s=1,\ t=-4,\quad P(3,-2).$$
+    <p>In forma cartesiana basta risolvere le due equazioni: $2x-y=3$ e $x+2y=-1$ hanno $\det=5\ne0$, quindi le rette sono incidenti in $(1,-1)$.</p>
+  </details>
+</section>
+
+<section id="rr3">
+  <h2><span class="tag">Parte 1</span>Due rette nello spazio</h2>
+  <div class="tldr warn">Stesso sistema, ma $A$ è $3\times2$ e compare un <b>4° caso: sghembe</b> (non parallele e senza punti comuni).</div>
+  <div class="grid">
+    <figure><canvas data-s="s_coi"></canvas><figcaption><b>Coincidenti</b><span class="rk">$r=1,\ r'=1$</span></figcaption></figure>
+    <figure><canvas data-s="s_par"></canvas><figcaption><b>Parallele</b><span class="rk">$r=1,\ r'=2$</span></figcaption></figure>
+    <figure><canvas data-s="s_inc"></canvas><figcaption><b>Incidenti</b><span class="rk">$r=2,\ r'=2$</span></figcaption></figure>
+    <figure><canvas data-s="s_skw"></canvas><figcaption><b>Sghembe</b><span class="rk">$r=2,\ r'=3$</span></figcaption></figure>
+  </div>
+  <details><summary>Esempi della lezione (sono quelli disegnati)</summary>
+    <p><b>Sghembe:</b> $\ell_1:(1,2,3)+t(1,-1,0)$, $\ell_2:(3,2,1)+s(2,1,1)$.</p>
+    $$\left(\begin{array}{cc|c}1&-2&2\\-1&-1&0\\0&-1&-2\end{array}\right)\to\left(\begin{array}{cc|c}1&-2&2\\0&-1&-2\\0&0&8\end{array}\right)\Rightarrow r'=3.$$
+    <p><b>Incidenti:</b> con $\ell_2:(3,2,1)+s(2,1,-3)$ si trova $s=-\frac23,\ t=\frac23$, quindi il punto è $P\left(\frac53,\frac43,3\right)$.</p>
+  </details>
+</section>
+
+<section id="pp">
+  <h2><span class="tag">Parte 1</span>Due piani</h2>
+  <div class="tldr">Due equazioni cartesiane danno $r'\le2$: due piani non sono <b>mai</b> «sghembi».</div>
+  <div class="grid">
+    <figure><canvas data-s="pp_par"></canvas><figcaption><b>Paralleli</b><span class="rk">$x+y-z=1$ · $z-x-y=2$</span></figcaption></figure>
+    <figure><canvas data-s="pp_coi"></canvas><figcaption><b>Coincidenti</b><span class="rk">$2x-y-3z=1$ · $-4x+2y+6z=-2$</span></figcaption></figure>
+    <figure><canvas data-s="pp_inc"></canvas><figcaption><b>Incidenti in una retta</b><span class="rk">$x+y+z=0$ · $2x+3y+z=1$</span></figcaption></figure>
+  </div>
+  <table><tr><th>$r(A)$</th><th>$r'$</th><th>Posizione</th></tr>
+    <tr><td>1</td><td>2</td><td>paralleli distinti</td></tr><tr><td>1</td><td>1</td><td>coincidenti</td></tr><tr><td>2</td><td>2</td><td>retta $\ell=\Pi_1\cap\Pi_2$</td></tr></table>
+  <details><summary>Calcolo della retta (caso incidente)</summary>
+    $$\left(\begin{array}{ccc|c}1&1&1&0\\0&1&-1&1\end{array}\right),\ z=t\ \Rightarrow\ \ell:\ (-1,1,0)+t(-2,1,1).$$
+  </details>
+</section>
+
+<section id="rp">
+  <h2><span class="tag">Parte 1</span>Retta e piano</h2>
+  <div class="tldr">Si sostituisce la parametrica di $\ell$ nella cartesiana di $\Pi$: un'equazione in $t$.</div>
+  <div class="grid">
+    <figure><canvas data-s="rp_inc"></canvas><figcaption><b>Incidente</b><span class="rk">$t=-1$ → $P(0,2,1)$</span></figcaption></figure>
+    <figure><canvas data-s="rp_par"></canvas><figcaption><b>Parallela</b><span class="rk">$0\cdot t=1$ impossibile</span></figcaption></figure>
+    <figure><canvas data-s="rp_cont"></canvas><figcaption><b>Contenuta</b><span class="rk">$0\cdot t=0$ · infinite soluzioni</span></figcaption></figure>
+  </div>
+  <p class="legend">Piano $\Pi:\ x+z=1$ in tutte e tre le scene.</p>
+</section>
+
+<!-- ============ PARTE 2 ============ -->
+<section id="ort">
+  <h2><span class="tag">Parte 2</span>Ortogonalità e prodotto scalare</h2>
+  <div class="grid two">
+    <div>
+      <div class="tldr ok">In un riferimento <b>cartesiano</b> (ortonormale):
+      $$\vec a\perp\vec b\iff \mathbf x^T\mathbf y=x_1y_1+x_2y_2+x_3y_3=0$$</div>
+      <details><summary>Perché serve l'ortonormalità?</summary>
+        <p>$\vec a\cdot\vec b=\sum_{i,j}x_iy_j(\vec v_i\cdot\vec v_j)$. Solo se $\vec v_i\cdot\vec v_j=\delta_{ij}$ restano i termini $\sum x_iy_i$. In una base obliqua compaiono anche i termini misti, e la formula non misura più l'angolo.</p>
+      </details>
+    </div>
+    <figure><canvas data-s="o_basis"></canvas><figcaption><b>Base ortonormale</b><span class="rk">$|\vec v_i|=1$, $\vec v_i\perp\vec v_j$</span></figcaption></figure>
+  </div>
+</section>
+
+<section id="norm">
+  <h2><span class="tag">Parte 2</span>Vettore normale a un piano</h2>
+  <div class="grid two">
+    <figure><canvas data-s="o_norm" class="big"></canvas><figcaption><b>$\Pi:\ ax+by+cz=d$ ha normale $\mathbf n=(a,b,c)$</b><span class="rk">i vettori $\overrightarrow{AB}$ nel piano sono tutti ⟂ $\mathbf n$</span></figcaption></figure>
+    <div>
+      <ul class="steps col">
+        <li>$A,B\in\Pi$ ⇒ $\overrightarrow{AB}$ risolve l'omogenea $ax+by+cz=0$</li>
+        <li>$ax+by+cz=[x\,y\,z](a,b,c)^T$ ⇒ $\overrightarrow{AB}\perp(a,b,c)$</li>
+        <li><b>$\vec u\perp\Pi\iff\vec u=\lambda(a,b,c)$</b></li>
+      </ul>
+      <table><tr><th>Retta di direzione $\vec v$</th><th>Test</th></tr>
+        <tr><td><b>⟂</b> al piano</td><td>$\vec v\propto(a,b,c)$</td></tr>
+        <tr><td><b>∥</b> al piano</td><td>$av_x+bv_y+cv_z=0$</td></tr>
+        <tr><td>∥ in senso stretto</td><td>in più, un punto di $\ell$ non sta su $\Pi$</td></tr></table>
+      <p class="rk">Algebra lineare: le direzioni del piano formano $\ker[a\ b\ c]$ (dimensione 2); $\mathbf n$ genera il complemento ortogonale.</p>
+    </div>
+  </div>
+</section>
+
+<section id="ortex">
+  <h2><span class="tag">Parte 2</span>Esempi</h2>
+  <div class="grid two">
+    <figure><canvas data-s="o_ex1" class="big"></canvas>
+      <figcaption><b>$\Pi:\ -x-y+2z=2$, $\mathbf n=(-1,-1,2)$</b>
+      <span class="legend"><span class="dot" style="background:var(--c2)"></span>$\ell_1$ ⟂ ($\vec v_1=-\mathbf n$)
+      <span class="dot" style="background:var(--c3)"></span>$\ell_2$ ∥ ($-1-1+2=0$)
+      <span class="dot" style="background:var(--c4)"></span>$\ell_3$ incidente</span></figcaption></figure>
+    <figure><canvas data-s="o_ex3" class="big"></canvas>
+      <figcaption><b>Rette incidenti e ortogonali</b>
+      <span class="rk">$\ell_1:(1,3,2)+t(1,2,1)$ · $\ell_2:(1,0,2)+s(1,-1,1)$ · punto $(0,1,1)$ · $1-2+1=0$</span></figcaption></figure>
+  </div>
+  <details><summary>Dettagli esempio 1 (incluso il controllo del senso stretto)</summary>
+    <p>$\ell_2:(1,2,3)+t(1,1,1)$: la direzione risolve l'omogenea, e $(1,2,3)$ dà $-1-2+6=3\ne2$. Quindi $\ell_2$ è parallela a $\Pi$ <b>in senso stretto</b>. Per $\ell_3:(1,1,2)+t(1,0,1)$ si ha $-1+0+2=1\ne0$: la retta incontra il piano in un punto.</p>
+  </details>
+  <details><summary>Esempio 2: retta per $P(0,1,2)$ ortogonale a $x+y+z=1$</summary>
+    <p>La direzione è $(1,1,1)$: $x=t,\ y=1+t,\ z=2+t$. Eliminando il parametro, $\boxed{x-y+1=x-z+2=0}$.</p>
+  </details>
+  <details><summary>Esempio 3: il sistema</summary>
+    $$\left(\begin{array}{cc|c}1&-1&0\\2&1&-3\\1&-1&0\end{array}\right)\to\left(\begin{array}{cc|c}1&-1&0\\0&3&-3\\0&0&0\end{array}\right)\Rightarrow t=s=-1.$$
+  </details>
+  <div class="tldr warn">Nello spazio «ortogonali» riguarda le <b>direzioni</b>: anche due rette sghembe possono esserlo. Incidenza e ortogonalità vanno verificate <b>separatamente</b>.</div>
+</section>
+
+<!-- ============ PARTE 3 ============ -->
+<section id="fasci">
+  <h2><span class="tag">Parte 3</span>Cos'è un fascio</h2>
+  <div class="grid two">
+    <div>
+      <div class="tldr">Un <b>fascio</b> è una famiglia di rette o piani descritta da un'equazione con <b>parametri</b>.</div>
+      <p>Rette per $P(2,1)$: $\ a(x-2)+b(y-1)=0,\ (a,b)\ne(0,0)$.</p>
+      <p class="rk">I parametri sono omogenei: $(a,b)$ e $(\lambda a,\lambda b)$ danno la stessa retta.</p>
+      <ul class="steps col">
+        <li>scrivi il fascio che soddisfa già alcune condizioni</li>
+        <li>imponi le altre condizioni come equazioni nei parametri</li>
+        <li>scegli <b>una</b> soluzione non nulla</li>
+      </ul>
+    </div>
+    <figure><canvas data-s="f_2d" class="big"></canvas><figcaption><b>Fascio di rette per $P(2,1)$</b></figcaption></figure>
+  </div>
+</section>
+
+<section id="fpar">
+  <h2><span class="tag">Parte 3</span>① Piani paralleli a $\Pi_0:\ ax+by+cz=d$</h2>
+  <div class="grid two">
+    <figure><canvas data-s="f_par" class="big"></canvas><figcaption><b>$x+y+z=g$ per $g=-2,\dots,2$</b><span class="rk">in evidenza $g=0$, l'unico che contiene $\ell$</span></figcaption></figure>
+    <div>
+      <div class="tldr ok">$$ax+by+cz=g,\qquad g\in\mathbb R$$ Stessa normale, termine noto libero (<b>fascio improprio</b>).</div>
+      <p><b>Esempio:</b> il piano $\parallel x+y+z=1$ che contiene $\ell:\ x+2y-1=x+2z+1=0$.</p>
+      $$\left(\begin{array}{ccc|c}1&2&0&1\\1&0&2&-1\\1&1&1&g\end{array}\right)\to\left(\begin{array}{ccc|c}1&2&0&1\\0&-2&2&-2\\0&0&0&g\end{array}\right)$$
+      <p>Per avere infinite soluzioni serve $g=0$, quindi $\boxed{x+y+z=0}$.</p>
+    </div>
+  </div>
+</section>
+
+<section id="fretta">
+  <h2><span class="tag">Parte 3</span>② Piani per una retta $\ell:\ E_1=E_2=0$</h2>
+  <div class="grid two">
+    <div>
+      <div class="tldr ok">$$pE_1+qE_2=0,\qquad (p,q)\ne(0,0)$$ È il <b>fascio proprio</b>: tutti e soli i piani che contengono $\ell$.</div>
+      <p><b>Esempio:</b> per $\ell:\ x+2y-1=x+2z+1=0$ e $P_0(1,2,3)$.</p>
+      <p>Imponendo $P_0$: $4p+8q=0$. Con $p=2,\ q=-1$ si ottiene $\boxed{x+4y-2z=3}$.</p>
+      <details><summary>Perché sono <em>tutti</em> i piani per $\ell$?</summary>
+        <p>Se $\Pi\supset\ell$, il sistema $\{E_1,E_2,E_\Pi\}$ ha le stesse soluzioni di $\{E_1,E_2\}$. Per Rouché–Capelli $r'=r=2$, quindi la riga di $E_\Pi$ è combinazione di quelle di $E_1$ ed $E_2$.</p>
+      </details>
+      <p class="rk">⚠️ Se $P_0\in\ell$ si ottiene $0=0$: una retta e un suo punto non individuano un piano.</p>
+    </div>
+    <figure><canvas data-s="f_line" class="big"></canvas><figcaption><b>Il «libro» di piani attorno a $\ell$</b><span class="rk">in evidenza il piano per $P_0(1,2,3)$</span></figcaption></figure>
+  </div>
+</section>
+
+<section id="fmisto">
+  <h2><span class="tag">Parte 3</span>③ Esempio misto</h2>
+  <p>Trovare il piano $\Pi$ <b>parallelo</b> a $\ell_0:\ 3x-y-z=x-z+2=0$ e passante per $P(1,0,-1)$ e $Q(1,1,0)$.</p>
+  <div class="grid two">
+    <div>
+      <ul class="steps col">
+        <li>Piani per $P$: $ax+by+cz=a-c$</li>
+        <li>Passaggio per $Q$: $c=-b$, quindi $ax+by-bz=a+b$</li>
+        <li>$\ell_0\cap\Pi=\emptyset$: $$\left(\begin{array}{ccc|c}1&0&-1&-2\\0&-1&2&6\\0&0&a+b&3a+7b\end{array}\right)$$</li>
+        <li>$a+b=0$ e $b\ne0$ ⇒ $\boxed{x-y+z=0}$</li>
+      </ul>
+      <div class="tldr warn">⚠️ PDF p. 29: compare $3a+6b$, ma il valore corretto è $3a+7b$. La risposta non cambia.</div>
+      <details><summary>Metodo rapido</summary><p>$\mathbf n\perp(1,2,1)$ (direzione di $\ell_0$) e $\mathbf n\perp\overrightarrow{PQ}=(0,1,1)$ danno $\mathbf n\propto(1,-1,1)$. Imponendo il passaggio per $P$ si ottiene $x-y+z=0$.</p></details>
+    </div>
+    <figure><canvas data-s="f_mix" class="big"></canvas><figcaption><b>$\Pi:\ x-y+z=0$, $\ell_0$ parallela a $\Pi$</b></figcaption></figure>
+  </div>
+</section>
+
+<!-- ============ TOOL ============ -->
+<section id="tool">
+  <h2>🧪 Laboratorio 3D</h2>
+  <div class="tool">
+    <div>
+      <div class="row"><label>Tipo</label>
+        <select id="kind"><option value="ll">retta – retta</option><option value="lp">retta – piano</option><option value="pp">piano – piano</option></select></div>
+      <div id="fields"></div>
+      <button id="go">Classifica e disegna</button>
+      <div id="out" class="tldr">—</div>
+    </div>
+    <figure><canvas id="cv" class="big" style="height:400px"></canvas><figcaption class="rk">trascina per ruotare</figcaption></figure>
+  </div>
+</section>
+
+<section id="riep">
+  <h2>Riepilogo</h2>
+  <table>
+    <tr><th>Obiettivo</th><th>Strumento</th></tr>
+    <tr><td>retta–retta</td><td>$[\mathbf v_1|-\mathbf v_2]\binom ts=\mathbf r_2-\mathbf r_1$ (sghembe: $r=2,\ r'=3$)</td></tr>
+    <tr><td>piano–piano</td><td>2 cartesiane: paralleli, coincidenti oppure una retta</td></tr>
+    <tr><td>retta–piano</td><td>parametrica nella cartesiana</td></tr>
+    <tr><td>$\perp$ / $\parallel$ al piano</td><td>$\vec v\propto(a,b,c)$ / $\ \mathbf n\cdot\vec v=0$</td></tr>
+    <tr><td>piani $\parallel\Pi_0$</td><td>$ax+by+cz=g$</td></tr>
+    <tr><td>piani per $\ell$</td><td>$pE_1+qE_2=0$</td></tr>
+  </table>
+</section>
+</main>
+</div>
+
+<script>
+/* ---------- vettori ---------- */
+const add=(a,b)=>a.map((x,i)=>x+b[i]),sub=(a,b)=>a.map((x,i)=>x-b[i]),mul=(a,k)=>a.map(x=>x*k),
+dot=(a,b)=>a[0]*b[0]+a[1]*b[1]+a[2]*b[2],cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]],
+nrm=a=>Math.hypot(...a),unit=a=>mul(a,1/nrm(a));
+const L=(p,d,c,o={})=>({t:'line',p,d,c,...o}),P=(n,d,c,o={})=>({t:'plane',n,d,c,...o}),
+Pt=(p,c,label)=>({t:'pt',p,c,label}),V=(p,v,c,label)=>({t:'vec',p,v,c,label});
+
+/* ---------- scene ---------- */
+const S={
+ p_inc:{flat:1,center:[0,0,0],zoom:20,objs:[L([-1,-1,0],[1,1,0],'c1',{label:'ℓ₁'}),L([-1,1.5,0],[1,-.6,0],'c2',{label:'ℓ₂'}),Pt([.5625,.5625,0],'c3','P')]},
+ p_par:{flat:1,center:[0,0,0],zoom:20,objs:[L([0,-1,0],[2,1,0],'c1',{label:'ℓ₁'}),L([0,1,0],[2,1,0],'c2',{label:'ℓ₂'})]},
+ p_coi:{flat:1,center:[0,0,0],zoom:20,objs:[L([0,0,0],[2,1,0],'c1',{w:6,label:'ℓ₁'}),L([0,0,0],[2,1,0],'c2',{dash:1,label:''})]},
+ s_coi:{center:[2,2,2],zoom:24,objs:[L([1,2,3],[1,-1,0],'c1',{w:6,label:'ℓ₁=ℓ₂'}),L([1,2,3],[1,-1,0],'c2',{dash:1})]},
+ s_par:{center:[2,2,2],zoom:24,objs:[L([1,2,3],[1,-1,0],'c1',{label:'ℓ₁'}),L([3,2,1],[1,-1,0],'c2',{label:'ℓ₂'})]},
+ s_inc:{center:[2,2,2],zoom:24,objs:[L([1,2,3],[1,-1,0],'c1',{label:'ℓ₁'}),L([3,2,1],[2,1,-3],'c2',{label:'ℓ₂'}),Pt([5/3,4/3,3],'c3','P')]},
+ s_skw:{center:[2,2,2],zoom:24,objs:[L([1,2,3],[1,-1,0],'c1',{label:'ℓ₁'}),L([3,2,1],[2,1,1],'c2',{label:'ℓ₂'})]},
+ pp_par:{center:[0,0,0],zoom:24,objs:[P([1,1,-1],1,'c1',{label:'Π₁'}),P([-1,-1,1],2,'c2',{label:'Π₂'})]},
+ pp_coi:{center:[0,0,0],zoom:24,objs:[P([2,-1,-3],1,'c1',{label:'Π₁=Π₂',a:.3})]},
+ pp_inc:{center:[0,0,0],zoom:24,objs:[P([1,1,1],0,'c1',{label:'Π₁'}),P([2,3,1],1,'c2',{label:'Π₂'}),L([-1,1,0],[-2,1,1],'c3',{w:4,label:'ℓ'})]},
+ rp_inc:{center:[.5,1.5,.5],zoom:24,objs:[P([1,0,1],1,'c1',{label:'Π'}),L([1,3,2],[1,1,1],'c2',{label:'ℓ'}),Pt([0,2,1],'c3','P')]},
+ rp_par:{center:[.5,1.5,.5],zoom:24,objs:[P([1,0,1],1,'c1',{label:'Π'}),L([1,1,1],[1,0,-1],'c2',{label:'ℓ'})]},
+ rp_cont:{center:[.5,1.5,.5],zoom:24,objs:[P([1,0,1],1,'c1',{label:'Π'}),L([1,2,0],[-1,0,1],'c2',{w:4,label:'ℓ'})]},
+ o_basis:{center:[0,0,0],zoom:42,axes:0,objs:[V([0,0,0],[1.6,0,0],'c1','v₁'),V([0,0,0],[0,1.6,0],'c2','v₂'),V([0,0,0],[0,0,1.6],'c3','v₃'),Pt([0,0,0],'c5','O')]},
+ o_norm:{center:[-1/3,-1/3,2/3],zoom:34,objs:[P([-1,-1,2],2,'c1',{label:'Π'}),
+   V([-1/3,-1/3,2/3],mul(unit([-1,-1,2]),2),'c2','n'),
+   V([-1/3,-1/3,2/3],[1.6,-1.6,0],'c3','AB'),V([-1/3,-1/3,2/3],[1.2,.8,1],'c4','AB′')]},
+ o_ex1:{center:[.4,.6,1.4],zoom:26,objs:[P([-1,-1,2],2,'c1',{label:'Π'}),L([1,0,1],[1,1,-2],'c2',{label:'ℓ₁'}),L([1,2,3],[1,1,1],'c3',{label:'ℓ₂'}),L([1,1,2],[1,0,1],'c4',{label:'ℓ₃'})]},
+ o_ex3:{center:[0,1,1],zoom:34,objs:[L([1,3,2],[1,2,1],'c1',{label:'ℓ₁'}),L([1,0,2],[1,-1,1],'c2',{label:'ℓ₂'}),Pt([0,1,1],'c3','(0,1,1)'),{t:'right',p:[0,1,1],a:[1,2,1],b:[1,-1,1]}]},
+ f_2d:{flat:1,center:[2,1,0],zoom:26,objs:[...[0,30,60,90,120,150].map((g,i)=>L([2,1,0],[Math.cos(g*Math.PI/180),Math.sin(g*Math.PI/180),0],i%2?'c1':'c4')),Pt([2,1,0],'c2','P(2,1)')]},
+ f_par:{center:[0,0,0],zoom:26,objs:[...[-2,-1,1,2].map(g=>P([1,1,1],g,'c5',{a:.08,size:1.8})),P([1,1,1],0,'c1',{label:'g=0',size:1.8}),L([-1,1,0],[2,-1,-1],'c2',{w:4,label:'ℓ'})]},
+ f_line:{center:[-1,1,0],zoom:30,objs:[...[0,36,72,108,144].map(g=>{const p=Math.cos(g*Math.PI/180),q=Math.sin(g*Math.PI/180);return P(add(mul([1,2,0],p),mul([1,0,2],q)),p-q,'c5',{a:.07,size:1.7})}),
+   P([1,4,-2],3,'c1',{label:'x+4y−2z=3',size:2.6}),L([-1,1,0],[2,-1,-1],'c2',{w:4,label:'ℓ'}),Pt([1,2,3],'c3','P₀')]},
+ f_mix:{center:[.5,0,.5],zoom:28,objs:[P([1,-1,1],0,'c1',{label:'Π'}),L([0,-2,2],[1,2,1],'c2',{label:'ℓ₀'}),Pt([1,0,-1],'c3','P'),Pt([1,1,0],'c4','Q')]}
+};
+
+/* ---------- motore di disegno 3D (proiezione ortografica) ---------- */
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue('--'+n).trim();
+function hexA(h,a){const n=parseInt(h.slice(1),16);return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`}
+function basisOf(n){const u0=Math.abs(n[0])<.9*nrm(n)?[1,0,0]:[0,1,0];const u=unit(cross(n,u0));return [u,unit(cross(n,u))]}
+function draw(cv,sc){
+  const dpr=devicePixelRatio||1,W=cv.clientWidth,H=cv.clientHeight;
+  if(cv.width!==W*dpr){cv.width=W*dpr;cv.height=H*dpr}
+  const g=cv.getContext('2d');g.setTransform(dpr,0,0,dpr,0,0);g.clearRect(0,0,W,H);
+  const yaw=sc.flat?0:sc.yaw,el=sc.flat?Math.PI/2:sc.el,c=sc.center,k=sc.zoom*Math.min(W,H)/210;
+  const pr=p=>{const q=sub(p,c),x=q[0]*Math.cos(yaw)-q[1]*Math.sin(yaw),y=q[0]*Math.sin(yaw)+q[1]*Math.cos(yaw);
+    return [W/2+k*x,H/2-k*(q[2]*Math.cos(el)+y*Math.sin(el))]};
+  const seg=(a,b)=>{const A=pr(a),B=pr(b);g.beginPath();g.moveTo(...A);g.lineTo(...B);g.stroke()};
+  const txt=(s,p,col,dx=6,dy=-6)=>{if(!s)return;const q=pr(p);g.fillStyle=col;g.font='600 13px system-ui';g.fillText(s,q[0]+dx,q[1]+dy)};
+  const R=sc.range||4;
+  if(sc.axes!==0){g.strokeStyle=css('axis');g.lineWidth=1;g.setLineDash([]);
+    const ax=sc.flat?[0,1]:[0,1,2];ax.forEach(i=>{const e=[0,0,0];e[i]=1;seg(add(c,mul(e,-R)),add(c,mul(e,R)));txt('xyz'[i],add(c,mul(e,R)),css('axis'))})}
+  const order={plane:0,line:1,right:2,vec:3,pt:4};
+  [...sc.objs].sort((a,b)=>order[a.t]-order[b.t]).forEach(o=>{
+    const col=css(o.c||'c1');g.setLineDash(o.dash?[7,6]:[]);
+    if(o.t==='plane'){const nn=dot(o.n,o.n),p0=sub(c,mul(o.n,(dot(o.n,c)-o.d)/nn)),[u,w]=basisOf(o.n),s=o.size||2.4;
+      const C=[[-1,-1],[1,-1],[1,1],[-1,1]].map(([i,j])=>pr(add(p0,add(mul(u,i*s),mul(w,j*s)))));
+      g.beginPath();C.forEach((q,i)=>i?g.lineTo(...q):g.moveTo(...q));g.closePath();g.fillStyle=hexA(col,o.a??.2);g.fill();
+      g.strokeStyle=hexA(col,.55);g.lineWidth=1.2;g.stroke();
+      g.strokeStyle=hexA(col,.18);for(let i=-.5;i<=.5;i+=.5){seg(add(p0,add(mul(u,i*s),mul(w,-s))),add(p0,add(mul(u,i*s),mul(w,s))));seg(add(p0,add(mul(w,i*s),mul(u,-s))),add(p0,add(mul(w,i*s),mul(u,s))))}
+      txt(o.label,add(p0,add(mul(u,s),mul(w,s))),col,-10,-4)}
+    if(o.t==='line'){const t0=dot(sub(c,o.p),o.d)/dot(o.d,o.d),h=(sc.len||4.2)/nrm(o.d),A=add(o.p,mul(o.d,t0-h)),B=add(o.p,mul(o.d,t0+h));
+      g.strokeStyle=col;g.lineWidth=o.w||2.6;g.lineCap='round';seg(A,B);txt(o.label,B,col)}
+    if(o.t==='vec'){const A=pr(o.p),B=pr(add(o.p,o.v)),ang=Math.atan2(B[1]-A[1],B[0]-A[0]);
+      g.strokeStyle=g.fillStyle=col;g.lineWidth=2.6;g.beginPath();g.moveTo(...A);g.lineTo(...B);g.stroke();
+      g.beginPath();g.moveTo(...B);g.lineTo(B[0]-11*Math.cos(ang-.4),B[1]-11*Math.sin(ang-.4));g.lineTo(B[0]-11*Math.cos(ang+.4),B[1]-11*Math.sin(ang+.4));g.fill();
+      txt(o.label,add(o.p,o.v),col)}
+    if(o.t==='right'){const a=mul(unit(o.a),.35),b=mul(unit(o.b),.35);g.strokeStyle=css('fg');g.lineWidth=1.3;
+      seg(add(o.p,a),add(o.p,add(a,b)));seg(add(o.p,b),add(o.p,add(a,b)))}
+    if(o.t==='pt'){const q=pr(o.p);g.fillStyle=col;g.beginPath();g.arc(q[0],q[1],5,0,7);g.fill();g.strokeStyle=css('paper');g.lineWidth=2;g.stroke();txt(o.label,o.p,col,8,-8)}
+  });
+}
+/* interazione + animazione */
+const live=[];
+function attach(cv,sc){sc.yaw??=-.6;sc.el??=.45;sc.vis=false;let drag=null;
+  cv.addEventListener('pointerdown',e=>{drag=[e.clientX,e.clientY];cv.setPointerCapture(e.pointerId);sc.hold=true});
+  cv.addEventListener('pointermove',e=>{if(!drag||sc.flat)return;sc.yaw+=(e.clientX-drag[0])*.01;sc.el=Math.max(-1.5,Math.min(1.5,sc.el+(e.clientY-drag[1])*.01));drag=[e.clientX,e.clientY]});
+  cv.addEventListener('pointerup',()=>{drag=null;setTimeout(()=>sc.hold=false,2500)});
+  new IntersectionObserver(es=>sc.vis=es[0].isIntersecting).observe(cv);
+  live.push([cv,sc])}
+document.querySelectorAll('canvas[data-s]').forEach(cv=>attach(cv,S[cv.dataset.s]));
+(function loop(){live.forEach(([cv,sc])=>{if(!sc.vis)return;if(!sc.flat&&!sc.hold)sc.yaw+=.004;draw(cv,sc)});requestAnimationFrame(loop)})();
+
+/* ---------- laboratorio ---------- */
+const F={ll:[["r1","Punto ℓ₁","1,2,3"],["v1","Direzione ℓ₁","1,-1,0"],["r2","Punto ℓ₂","3,2,1"],["v2","Direzione ℓ₂","2,1,1"]],
+ lp:[["r1","Punto ℓ","1,3,2"],["v1","Direzione ℓ","1,1,1"],["n","Piano: a,b,c,d (ax+by+cz=d)","1,0,1,1"]],
+ pp:[["p1","Π₁: a,b,c,d","1,1,1,0"],["p2","Π₂: a,b,c,d","2,3,1,1"]]};
+const kind=document.getElementById('kind'),fields=document.getElementById('fields'),out=document.getElementById('out'),lab={center:[0,0,0],zoom:22,objs:[]};
+attach(document.getElementById('cv'),lab);
+const form=()=>fields.innerHTML=F[kind.value].map(([id,l,d])=>`<div class="row"><label>${l}</label><input id="f_${id}" value="${d}"></div>`).join('');
+const vec=id=>{const v=document.getElementById('f_'+id).value.split(',').map(Number);if(v.some(isNaN))throw 0;return v};
+function rank(M){M=M.map(r=>r.slice());let r=0;const n=M[0].length;
+  for(let c=0;c<n&&r<M.length;c++){let p=r;for(let i=r;i<M.length;i++)if(Math.abs(M[i][c])>Math.abs(M[p][c]))p=i;
+    if(Math.abs(M[p][c])<1e-9)continue;[M[r],M[p]]=[M[p],M[r]];
+    for(let i=0;i<M.length;i++)if(i!==r){const f=M[i][c]/M[r][c];for(let j=c;j<n;j++)M[i][j]-=f*M[r][j]}r++}return r}
+const fmt=p=>'('+p.map(x=>+x.toFixed(3)).join(', ')+')';
+function classify(){let res,objs=[],cen;try{const k=kind.value;
+ if(k==='ll'){const [r1,v1,r2,v2]=['r1','v1','r2','v2'].map(vec);const A=[0,1,2].map(i=>[v1[i],-v2[i]]),b=sub(r2,r1);
+  const ra=rank(A),rb=rank(A.map((r,i)=>[...r,b[i]]));res={'1,1':'coincidenti','1,2':'parallele distinte','2,2':'incidenti','2,3':'sghembe'}[ra+','+rb];
+  objs=[L(r1,v1,'c1',{label:'ℓ₁'}),L(r2,v2,'c2',{label:'ℓ₂',dash:ra+','+rb==='1,1'})];cen=mul(add(r1,r2),.5);
+  if(res==='incidenti'){const n=cross(v1,v2),t=dot(cross(b,v2),n)/dot(n,n),X=add(r1,mul(v1,t));objs.push(Pt(X,'c3','P'));cen=X;res+=' in '+fmt(X)}
+  if(res&&ra===2&&Math.abs(dot(v1,v2))<1e-9)res+=' · direzioni ⟂';
+  out.innerHTML=`$r(A)=${ra}$, $r'=${rb}$ → <b>${res}</b>`}
+ if(k==='lp'){const [r1,v1,n]=['r1','v1','n'].map(vec),nn=n.slice(0,3),co=dot(nn,v1),rhs=n[3]-dot(nn,r1);
+  objs=[P(nn,n[3],'c1',{label:'Π'}),L(r1,v1,'c2',{label:'ℓ'})];cen=sub(r1,mul(nn,(dot(nn,r1)-n[3])/dot(nn,nn)));
+  if(Math.abs(co)>1e-9){const X=add(r1,mul(v1,rhs/co));objs.push(Pt(X,'c3','P'));cen=X;res='incidenti in '+fmt(X)}
+  else res=Math.abs(rhs)<1e-9?'retta contenuta nel piano':'retta parallela (senso stretto)';
+  if(rank([v1,nn])===1)res+=' · retta ⟂ piano';
+  out.innerHTML=`$(\\mathbf n\\cdot\\mathbf v)\\,t=${+co.toFixed(3)}\\,t=${+rhs.toFixed(3)}$ → <b>${res}</b>`}
+ if(k==='pp'){const [p1,p2]=['p1','p2'].map(vec),n1=p1.slice(0,3),n2=p2.slice(0,3),ra=rank([n1,n2]),rb=rank([p1,p2]);
+  res={'1,1':'coincidenti','1,2':'paralleli distinti','2,2':'incidenti in una retta'}[ra+','+rb];
+  objs=[P(n1,p1[3],'c1',{label:'Π₁'}),P(n2,p2[3],'c2',{label:'Π₂'})];cen=mul(n1,p1[3]/dot(n1,n1));
+  if(ra===2){const d=cross(n1,n2),X=mul(add(mul(cross(n2,d),p1[3]),mul(cross(d,n1),p2[3])),1/dot(d,d));objs.push(L(X,d,'c3',{w:4,label:'ℓ'}));cen=X;res+=': '+fmt(X)+' + t'+fmt(d)}
+  if(res&&Math.abs(dot(n1,n2))<1e-9)res+=' · piani ⟂';
+  out.innerHTML=`$r(A)=${ra}$, $r'=${rb}$ → <b>${res}</b>`}
+ if(!res)throw 0;lab.objs=objs;lab.center=cen;
+ if(window.renderMathInElement)renderMathInElement(out,{delimiters:[{left:'$',right:'$',display:false}]});
+}catch(e){out.textContent='Dati non validi: servono 3 numeri (4 per i piani) e direzioni/normali non nulle.'}}
+kind.onchange=()=>{form();classify()};document.getElementById('go').onclick=classify;form();classify();
+</script>
+</body>
+</html>

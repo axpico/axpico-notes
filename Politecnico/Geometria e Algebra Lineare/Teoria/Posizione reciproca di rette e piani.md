@@ -136,7 +136,10 @@ Ci sono infinite soluzioni $(x,y,z)=(1-t,\ 2,\ t)$, quindi $\ell\subset\Pi$. Si 
 
 ## Collegamenti
 
+- HTML interattivo: [[Lezione 7 — Rette, piani, ortogonalità e fasci.html|Lezione 7 completa]]
+
 - [[Rette e piani — equazioni parametriche e cartesiane|Rette e piani — equazioni parametriche e cartesiane]]
 - [[Sistemi lineari e teorema di Rouché-Capelli|Sistemi lineari e teorema di Rouché-Capelli]]
 - [[Dipendenza lineare|Dipendenza lineare]]
 - [[Rango e teorema di nullità più rango|Rango e teorema di nullità più rango]]
+- Prosegue in: [[Ortogonalità e fasci di rette e piani|Ortogonalità e fasci di rette e piani]] (Lezione 7, parti 2–3)

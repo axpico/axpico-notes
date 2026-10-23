@@ -4,17 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "1d70158451931825",
+        "id": "ca634e2c5075e626",
         "type": "tabs",
         "children": [
           {
-            "id": "c74f0f016d200d8a",
+            "id": "b95693b51bbe46a0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "type": "html-viewer",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html"
+              },
+              "icon": "code",
+              "title": "Lezione 7 — Rette, piani, ortogonalità e fasci"
             }
           }
         ]
@@ -76,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 282.5,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -205,11 +208,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792668306623-kgy0m63",
-                      "conversationId": "conv-1792755123937-6oe3ij2sw"
+                      "tabId": "tab-1792756135745-wlbjeq2",
+                      "conversationId": null,
+                      "draftModel": "opus",
+                      "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1792668306623-kgy0m63"
+                  "activeTabId": "tab-1792756135745-wlbjeq2"
                 }
               },
               "icon": "bot",
@@ -231,7 +236,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 326.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -249,30 +255,31 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "278df55cbb664f14",
+  "active": "b95693b51bbe46a0",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/sedxzKq3w",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/sed9448y6",
+    "Politecnico/Geometria e Algebra Lineare/sed4coq2j",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.35932.cb434531e020",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/sed7JnczU",
+    "Politecnico/Geometria e Algebra Lineare/sedDBiRp9",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Ortogonalità e fasci di rette e piani.md",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/07 Lezione 7 NUOVA (parte 3).pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/07 Lezione 7 NUOVA (parte 2).pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Posizione reciproca di rette e piani.md",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni",
-    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/07 Lezione 7 NUOVA (parte 1).pdf",
     "Excalidraw/Drawing 2026-10-22 16.29.00.excalidraw.md",
-    "Politecnico/Analisi 1/Formulario AM1 - asintotici.pdf",
     "Politecnico/Analisi 1/Indice.md",
-    "Politecnico/Analisi 1/Indice.md.tmp.35880.260a04f83556",
     "Excalidraw/Drawing 2026-10-22 13.11.56.excalidraw.md",
     "Excalidraw/Drawing 2026-10-21 15.29.58.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta.md",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
-    "Politecnico/Geometria e Algebra Lineare/HTML/esercizi_matrice_inversa.html",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Operazioni tra matrici.md",
     "Excalidraw/Drawing 2026-10-20 16.27.26.excalidraw.md",
-    "Politecnico/Geometria e Algebra Lineare/HTML",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Excalidraw/Drawing 2026-10-17 15.05.03.excalidraw.md",
-    "Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta.md.tmp.112468.2878b43f8a89",
     "Politecnico/Analisi 1/Teoria/Serie numeriche.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.3 Serie geometrica (★★).md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md",
@@ -286,7 +293,6 @@
     "Politecnico/Analisi 1/Esami/Non svolti/Giugno 2022 (II appello, 27 giugno).md",
     "Politecnico/Analisi 1/Esami/Non svolti/Giugno 2024.md",
     "Politecnico/Analisi 1/Esami/Non svolti/Giugno 2022 (I appello, 9 giugno).md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Gennaio 2019 (secondo parziale).md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
