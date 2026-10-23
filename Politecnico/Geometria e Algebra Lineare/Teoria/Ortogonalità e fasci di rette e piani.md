@@ -7,7 +7,7 @@ tags:
 ---
 ## Ortogonalità e fasci di rette e piani
 
-↑ [[Politecnico/Geometria e Algebra Lineare/Indice|Indice]] · tappa 6 (Geometria analitica) · prima: [[Posizione reciproca di rette e piani|Posizione reciproca di rette e piani]]
+↑ [[Politecnico/Geometria e Algebra Lineare/Indice|Indice]] · tappa 6 (Geometria analitica) · prima: [[Posizione reciproca di rette e piani|Posizione reciproca di rette e piani]] · dopo: [[Completamento a base|Completamento a base]]
 
 > Fonte: [[07 Lezione 7 NUOVA (parte 2).pdf|Lezione 7 (parte 2, PDF)]] (Addendum: ortogonalità, pp. 1–15) e [[07 Lezione 7 NUOVA (parte 3).pdf|Lezione 7 (parte 3, PDF)]] (Addendum 2: fasci, pp. 16–30).
 
