@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "92e3e9f2703a12dd",
+        "id": "ec9f3917d478ed5e",
         "type": "tabs",
         "children": [
           {
-            "id": "3626243c14149086",
+            "id": "04579fa5d75719b4",
             "type": "leaf",
             "state": {
               "type": "html-viewer",
@@ -235,7 +235,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 326.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -253,7 +254,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "04579fa5d75719b4",
   "lastOpenFiles": [
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 8 — Completamento, somma di sottospazi e Grassmann.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/sedPsqGk1",
