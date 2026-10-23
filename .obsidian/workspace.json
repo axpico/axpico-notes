@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ca634e2c5075e626",
+        "id": "4cb6af1291bac800",
         "type": "tabs",
         "children": [
           {
-            "id": "b95693b51bbe46a0",
+            "id": "c8470469843ba7fc",
             "type": "leaf",
             "state": {
-              "type": "html-viewer",
+              "type": "markdown",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html"
+                "file": "Politecnico/Geometria e Algebra Lineare/Indice.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "code",
-              "title": "Lezione 7 — Rette, piani, ortogonalità e fasci"
+              "icon": "lucide-file",
+              "title": "Indice"
             }
           }
         ]
@@ -209,9 +211,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1792756135745-wlbjeq2",
-                      "conversationId": null,
-                      "draftModel": "opus",
-                      "providerId": "claude"
+                      "conversationId": "conv-1792756331661-exbntgh44"
                     }
                   ],
                   "activeTabId": "tab-1792756135745-wlbjeq2"
@@ -236,8 +236,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5,
-    "collapsed": true
+    "width": 326.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -255,8 +254,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "b95693b51bbe46a0",
+  "active": "278df55cbb664f14",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Completamento a base.md",
+    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/08 completa.pdf",
+    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/07 Lezione 7 NUOVA (parte 2).pdf",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html",
     "Politecnico/Geometria e Algebra Lineare/Teoria/sedxzKq3w",
     "Politecnico/Geometria e Algebra Lineare/Teoria/sed9448y6",
@@ -266,11 +268,8 @@
     "Politecnico/Geometria e Algebra Lineare/sedDBiRp9",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Ortogonalità e fasci di rette e piani.md",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/07 Lezione 7 NUOVA (parte 3).pdf",
-    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/07 Lezione 7 NUOVA (parte 2).pdf",
-    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/06 Dipendenza lineare. Condizioni di una base. Basi di nucleo e di span. Rango di una matrice ed una mappa lineare. Teorema di nullita piu rango.pdf",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Posizione reciproca di rette e piani.md",
-    "Politecnico/Geometria e Algebra Lineare/PDF lezioni",
     "Excalidraw/Drawing 2026-10-22 16.29.00.excalidraw.md",
     "Politecnico/Analisi 1/Indice.md",
     "Excalidraw/Drawing 2026-10-22 13.11.56.excalidraw.md",
