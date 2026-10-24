@@ -55,7 +55,7 @@ th{background:#ece7da}
 footer{margin:80px 0 40px;color:var(--mute);font-size:14px}
 /* --- fix layout pannelli stretti --- */
 .layout>main{min-width:0}
-main table{display:block;overflow-x:auto;max-width:100%}
+main table{display:block;width:fit-content;overflow-x:auto;max-width:100%}
 .katex-display{overflow-x:auto;overflow-y:hidden;padding:2px 0}
 .katex .katex-mathml{position:absolute;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden} /* copia di katex.css: evita formule doppie se il CSS CDN non carica */
 .out{max-width:100%;white-space:pre;overflow-x:auto}
@@ -88,6 +88,9 @@ main table{display:block;overflow-x:auto;max-width:100%}
 .ex ol.opts li.pick-ok{background:rgba(47,125,79,.18)}
 .ex ol.opts li.pick-ko{background:rgba(194,65,45,.15);text-decoration:line-through}
 .ex .hint{font-size:13px;color:var(--mute)}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px;align-items:start}
+.tgrid>table{display:table;width:100%;margin:0}
+.tgrid th,.tgrid td{text-align:center;vertical-align:middle}
 </style>
 </head>
 <body>
@@ -231,26 +234,30 @@ Il gioco è lo stesso del limite finito, ma con un'asta da superare invece di un
 <!-- ===== 6 ===== -->
 <h2 id="alg"><small>§6</small>Algebra dei limiti e forme indeterminate</h2>
 <p>Siano $a_n\to a$, $b_n\to b$ con $a,b\in\overline{\mathbb R}=\mathbb R\cup\{\pm\infty\}$. Le tabelle dicono quando il limite di un'operazione è <b>determinato</b> dai soli limiti $a,b$.</p>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px">
+<div class="tgrid">
 <table><tr><th colspan="3">Somma $a_n+b_n$</th></tr>
-<tr><td>$a$</td><td>$b$</td><td>$a+b$</td></tr>
+<tr><th>$\lim a_n$</th><th>$\lim b_n$</th><th>limite</th></tr>
+<tr><td>$a\in\mathbb R$</td><td>$b\in\mathbb R$</td><td>$a+b$</td></tr>
 <tr><td>$\pm\infty$</td><td>$b\in\mathbb R$</td><td>$\pm\infty$</td></tr>
 <tr><td>$+\infty$</td><td>$+\infty$</td><td>$+\infty$</td></tr>
 <tr><td>$-\infty$</td><td>$-\infty$</td><td>$-\infty$</td></tr>
 <tr><td>$+\infty$</td><td>$-\infty$</td><td class="no">FI</td></tr></table>
 <table><tr><th colspan="3">Prodotto $a_nb_n$</th></tr>
-<tr><td>$a$</td><td>$b$</td><td>$ab$</td></tr>
+<tr><th>$\lim a_n$</th><th>$\lim b_n$</th><th>limite</th></tr>
+<tr><td>$a\in\mathbb R$</td><td>$b\in\mathbb R$</td><td>$ab$</td></tr>
 <tr><td>$\pm\infty$</td><td>$b\ne0$</td><td>$\pm\infty$ (regola dei segni)</td></tr>
 <tr><td>$\pm\infty$</td><td>$\pm\infty$</td><td>$\pm\infty$ (segni)</td></tr>
 <tr><td>$0$</td><td>$\pm\infty$</td><td class="no">FI</td></tr></table>
 <table><tr><th colspan="3">Quoziente $a_n/b_n$ ($b_n\ne0$)</th></tr>
-<tr><td>$a$</td><td>$b\ne0$</td><td>$a/b$</td></tr>
+<tr><th>$\lim a_n$</th><th>$\lim b_n$</th><th>limite</th></tr>
+<tr><td>$a\in\mathbb R$</td><td>$b\in\mathbb R$, $b\ne0$</td><td>$a/b$</td></tr>
 <tr><td>$a\in\mathbb R$</td><td>$\pm\infty$</td><td>$0$</td></tr>
 <tr><td>$\pm\infty$</td><td>$b\ne0$ finito</td><td>$\pm\infty$ (segni)</td></tr>
 <tr><td>$a\ne0$</td><td>$0$</td><td>$\pm\infty$ se $b_n$ ha segno definitivo, altrimenti irregolare</td></tr>
 <tr><td>$0$ / $\pm\infty$</td><td>$0$ / $\pm\infty$</td><td class="no">FI</td></tr></table>
 <table><tr><th colspan="3">Potenza $a_n^{b_n}$ ($a_n\gt0$)</th></tr>
-<tr><td>$a\gt0$</td><td>$b$</td><td>$a^b$</td></tr>
+<tr><th>$\lim a_n$</th><th>$\lim b_n$</th><th>limite</th></tr>
+<tr><td>$a\gt0$ finito</td><td>$b\in\mathbb R$</td><td>$a^b$</td></tr>
 <tr><td>$0\le a\lt1$</td><td>$\pm\infty$</td><td>$0$ / $+\infty$</td></tr>
 <tr><td>$a\gt1$</td><td>$\pm\infty$</td><td>$+\infty$ / $0$</td></tr>
 <tr><td>$+\infty$</td><td>$b\gt0$ / $b\lt0$</td><td>$+\infty$ / $0$</td></tr>

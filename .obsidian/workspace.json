@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "dd28f47ec144d6b3",
+        "id": "807f9689cdfcddbd",
         "type": "tabs",
         "children": [
           {
-            "id": "66582ed07d1dd301",
+            "id": "92abd4a12302b661",
             "type": "leaf",
             "state": {
               "type": "html-viewer",
@@ -208,11 +208,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792850646059-iyt6rl9",
-                      "conversationId": "conv-1792850911369-qui7iklxj"
+                      "tabId": "tab-1792852354684-upabzlp",
+                      "conversationId": null,
+                      "draftModel": "opus",
+                      "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1792850646059-iyt6rl9"
+                  "activeTabId": "tab-1792852354684-upabzlp"
                 }
               },
               "icon": "bot",
@@ -251,21 +253,21 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "66582ed07d1dd301",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/HTML/sedGHkJsD",
+    "Politecnico/Analisi 1/HTML/sedxtobzQ",
+    "Politecnico/Analisi 1/HTML/sedmOKh8v",
     "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html",
+    "Politecnico/Analisi 1/HTML/sedlA5nef",
+    "Politecnico/Analisi 1/HTML/sedCmvFOc",
+    "Politecnico/Analisi 1/HTML/sedWQdxXv",
+    "Politecnico/Analisi 1/HTML/sedazjLtL",
+    "Politecnico/Analisi 1/HTML/sedXy7g4A",
     "Politecnico/Analisi 1/HTML/sedIY8euq",
     "Politecnico/Analisi 1/HTML/sedsAL3vT",
-    "Politecnico/Analisi 1/HTML/3 - Serie numeriche.html.tmp.37840.6b78105ad61c",
-    "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html.tmp.37840.517d842b11cf",
-    "Politecnico/Analisi 1/HTML/1 - Successioni.html",
-    "Politecnico/Analisi 1/Esami/Vecchi/2025/Giugno2025-Soluzioni.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
-    "Politecnico/Analisi 1/HTML/sedgkuld6",
-    "Politecnico/Analisi 1/HTML/3 - Serie numeriche.html",
-    "Politecnico/Analisi 1/HTML/sediVkF4f",
-    "Politecnico/Analisi 1/HTML/sedohDM3D",
     "Politecnico/Analisi 1/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Intersezione, somma e somma diretta di sottospazi — formula di Grassmann.md",
