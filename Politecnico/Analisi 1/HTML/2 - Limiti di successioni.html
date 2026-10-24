@@ -125,6 +125,9 @@ main table{display:block;overflow-x:auto;max-width:100%}
 Una proprietà $P(n)$ vale <b>definitivamente</b> se $\exists\,n_0\in\mathbb N$ tale che $P(n)$ è vera $\forall n\ge n_0$.
 </div>
 <p>Si ammette quindi un numero <b>finito</b> di eccezioni iniziali. La negazione è: $P(n)$ è falsa per <b>infiniti</b> indici (non "falsa da qualche parte"). Esempio: "$n\gt100$" vale definitivamente; "$n$ è pari" no, perché è falsa per tutti gli infiniti dispari. Il comportamento al limite dipende solo dalla coda della successione.</p>
+<div class="box tip"><div class="t">Intuizione</div>
+"Definitivamente" significa "da un certo punto in poi". Puoi cambiare, cancellare o aggiungere i primi mille (o il primo miliardo di) termini e nessuna affermazione "definitiva" cambia: i limiti guardano solo la <b>coda</b> $\{a_n\}_{n\ge n_0}$. Due proprietà definitive valgono anche insieme, definitivamente: se $P$ vale da $n_1$ e $Q$ da $n_2$, entrambe valgono da $\max\{n_1,n_2\}$. Questo trucco del $\max$ torna in quasi tutte le dimostrazioni sui limiti.
+</div>
 
 <!-- ===== 2 ===== -->
 <h2 id="lim"><small>§2</small>Definizione di limite</h2>
@@ -135,6 +138,25 @@ $$\forall\varepsilon\gt0\ \ \exists\,\nu_\varepsilon\in\mathbb N:\quad |a_n-\ell
 </div>
 <p><b>Lettura geometrica:</b> per ogni striscia $S_{\ell,\varepsilon}$, per quanto sottile, i punti $P_n=(n,a_n)$ vi appartengono <em>definitivamente</em>; solo un numero finito ne resta fuori. In generale $\nu_\varepsilon$ dipende da $\varepsilon$: più la striscia è stretta, più bisogna andare avanti.</p>
 <p><b>Esempio:</b> $\frac1n\to0$. Dato $\varepsilon$, $\left|\frac1n\right|\lt\varepsilon\iff n\gt\frac1\varepsilon$; basta $\nu_\varepsilon=\left[\frac1\varepsilon\right]+1$. ∎</p>
+
+<div class="box tip"><div class="t">Intuizione: cos'è davvero $\nu_\varepsilon$</div>
+<p style="margin-top:0">Leggi la definizione come un <b>gioco a due</b>. Lo scettico sceglie una tolleranza $\varepsilon\gt0$ ("voglio $a_n$ entro $\varepsilon$ da $\ell$"). Tu devi rispondere con un indice $\nu_\varepsilon$, una <b>soglia</b>: "da $\nu_\varepsilon$ in poi, <em>tutti</em> i termini rispettano la tua tolleranza". $a_n\to\ell$ vuol dire che <b>vinci sempre</b>, per qualunque $\varepsilon$. Il pedice ricorda che la soglia è una funzione di $\varepsilon$: $\varepsilon\mapsto\nu_\varepsilon$.</p>
+<ul>
+<li><b>Non è unico.</b> Se $\nu_\varepsilon$ funziona, funziona anche ogni indice più grande. La definizione chiede solo che <em>una</em> soglia esista, non la migliore. Per questo nelle dimostrazioni si può prendere senza problemi il $\max$ di due soglie.</li>
+<li><b>Dipende da $\varepsilon$, ed è normale che esploda.</b> In generale $\nu_\varepsilon\to+\infty$ per $\varepsilon\to0^+$: più è stretta la tolleranza, più avanti bisogna andare. Per $\frac1n$ la soglia è circa $\frac1\varepsilon$; per $\frac1{\sqrt n}$ è circa $\frac1{\varepsilon^2}$, cioè la convergenza è più lenta.</li>
+<li><b>L'ordine dei quantificatori è tutto.</b> $\forall\varepsilon\ \exists\nu$: prima l'avversario sceglie $\varepsilon$, poi tu scegli $\nu$ conoscendolo. Invertendo, $\exists\nu\ \forall\varepsilon$, si chiederebbe un'unica soglia valida per ogni tolleranza, quindi $|a_n-\ell|\lt\varepsilon$ per ogni $\varepsilon\gt0$, cioè $a_n=\ell$ da $\nu$ in poi: la successione sarebbe definitivamente costante. È una proprietà molto più forte.</li>
+<li><b>Contano solo gli $\varepsilon$ piccoli.</b> Una soglia per $\varepsilon$ va bene anche per ogni $\varepsilon'\gt\varepsilon$. Si può quindi supporre $\varepsilon\lt1$ (o $\lt$ qualunque costante comoda) senza perdere generalità.</li>
+</ul>
+</div>
+
+<div class="box"><div class="t">Metodo: come si trova $\nu_\varepsilon$ in un esercizio</div>
+<p style="margin-top:0">Si parte da $|a_n-\ell|\lt\varepsilon$ e la si riduce a una condizione del tipo $n\gt g(\varepsilon)$; poi $\nu_\varepsilon=\left[g(\varepsilon)\right]+1$ (o $\max\{0,\left[g(\varepsilon)\right]+1\}$ se $g$ può essere negativa). Non serve risolvere la disequazione esattamente: basta una <b>condizione sufficiente</b>, quindi si può <b>maggiorare</b> $|a_n-\ell|$ con qualcosa di più semplice.</p>
+<p><b>Esempio.</b> $a_n=\dfrac{2n+1}{n+3}\to2$. Si calcola la distanza dal limite:
+$$|a_n-2|=\left|\frac{2n+1-2n-6}{n+3}\right|=\frac5{n+3}.$$
+<i>Strada esatta:</i> $\frac5{n+3}\lt\varepsilon\iff n\gt\frac5\varepsilon-3$, quindi $\nu_\varepsilon=\max\left\{0,\left[\frac5\varepsilon-3\right]+1\right\}$.<br>
+<i>Strada per maggiorazione:</i> $\frac5{n+3}\lt\frac5n$, e $\frac5n\lt\varepsilon\iff n\gt\frac5\varepsilon$. Quindi $\nu_\varepsilon=\left[\frac5\varepsilon\right]+1$ va bene lo stesso. È più grande del necessario, ma è legittimo (vedi "non è unico"), e con espressioni complicate è spesso l'unica via praticabile.</p>
+<p style="margin-bottom:0"><b>Perché $[\,\cdot\,]+1$.</b> Serve un <em>naturale</em> strettamente maggiore di $g(\varepsilon)$. La parte intera $[x]$ è il più grande intero $\le x$, quindi $[x]+1\gt x$ sempre. Questo è il motivo per cui compare in ogni soglia.</p>
+</div>
 
 <div class="lab"><div class="t">La striscia ε e il testimone ν_ε</div>
   <div class="ctl">
@@ -190,6 +212,9 @@ $a_n\to+\infty$ se $\ \forall M\gt0\ \exists\,\nu_M:\ a_n\gt M\ \ \forall n\gt\n
 $a_n\to-\infty$ se $\ \forall M\gt0\ \exists\,\nu_M:\ a_n\lt-M\ \ \forall n\gt\nu_M$.
 </div>
 <p><b>Esempio:</b> $n^2\to+\infty$. $n^2\gt M\iff n\gt\sqrt M$ (la radice negativa si scarta perché $n\ge0$), e basta $\nu_M=[\sqrt M]+1$.</p>
+<div class="box tip"><div class="t">Intuizione: $M$ prende il posto di $\varepsilon$</div>
+Il gioco è lo stesso del limite finito, ma con un'asta da superare invece di una striscia in cui restare. L'avversario fissa un'altezza $M$, arbitrariamente grande; tu rispondi con una soglia $\nu_M$ oltre la quale tutti i termini stanno sopra $M$. Attenzione: "divergere" è più forte di "essere illimitata". $a_n=n\cdot\frac{1+(-1)^n}2=0,0,2,0,4,0,\dots$ è illimitata superiormente, ma non tende a $+\infty$, perché infiniti termini (quelli dispari) restano a $0$, sotto qualunque $M\gt0$.
+</div>
 <div class="lab"><div class="t">ν_M per n²</div>
   <div class="ctl"><label>$M=10^{k}$, $k$ = <input type="range" id="C1" min="0" max="10" step="0.1" value="2"> <span id="C1v"></span></label></div>
   <div class="out" id="oC"></div>
@@ -235,6 +260,10 @@ $a_n\to-\infty$ se $\ \forall M\gt0\ \exists\,\nu_M:\ a_n\lt-M\ \ \forall n\gt\n
 $$+\infty-\infty,\quad 0\cdot(\pm\infty),\quad \frac00,\quad \frac{\pm\infty}{\pm\infty},\quad 0^0,\quad 1^{\pm\infty},\quad (+\infty)^0 .$$
 "Indeterminata" non vuol dire che il limite non esiste: vuol dire che <b>non è determinato dai limiti dei pezzi</b>; dipende dalle successioni specifiche e va risolto con manipolazioni (raccoglimenti, razionalizzazioni, limiti notevoli, asintotici). Le ultime tre si riducono a $0\cdot\infty$ scrivendo $a_n^{b_n}=e^{b_n\log a_n}$.
 </div>
+<div class="box tip"><div class="t">Perché "indeterminata": esempi espliciti</div>
+Per $+\infty-\infty$, con $a_n=n+c$ e $b_n=n$ si ottiene $a_n-b_n\to c$ per <em>qualunque</em> $c\in\mathbb R$. Con $a_n=n^2$, $b_n=n$ si ottiene $+\infty$; con $a_n=n+(-1)^n$, $b_n=n$ il limite non esiste. Le informazioni "$a_n\to+\infty$, $b_n\to+\infty$" sono identiche in tutti i casi, eppure i risultati sono diversi: i limiti dei pezzi non bastano.<br>
+Per $1^\infty$ l'intuizione "uno elevato a qualcosa fa uno" è sbagliata: $\left(1+\frac1n\right)^n\to e$. La base si avvicina a $1$, ma l'esponente cresce abbastanza da compensare. Scrivendo $e^{n\log(1+1/n)}$, l'esponente è proprio una forma $\infty\cdot0$, e $n\log(1+\frac1n)\to1$.
+</div>
 <p><b>Quoziente irregolare.</b> $a_n=1$, $b_n=\frac{(-1)^n}n\to0$: $\frac{a_n}{b_n}=(-1)^nn$ ha $c_{2n}\to+\infty$, $c_{2n+1}\to-\infty$. Qui $b_n$ cambia segno infinite volte.</p>
 
 <div class="lab"><div class="t">Stessa forma indeterminata, risultati diversi</div>
@@ -277,6 +306,9 @@ Per $n\gt\nu_\varepsilon=\max\{\nu_{\varepsilon,1},\nu_{\varepsilon,2}\}$:
 $$\ell-\varepsilon\lt a_n\le c_n\le b_n\lt\ell+\varepsilon\ \Longrightarrow\ |c_n-\ell|\lt\varepsilon. \ \blacksquare$$
 Nota la differenza col teorema di confronto: qui l'<b>esistenza</b> del limite di $c_n$ è una conclusione, non un'ipotesi.
 </details>
+<div class="box tip"><div class="t">Intuizione e uso pratico</div>
+Se le due "guardie" $a_n$ e $b_n$ entrano nella striscia $S_{\ell,\varepsilon}$, il "prigioniero" $c_n$, che sta sempre tra loro, non può che entrarci anche lui. In pratica il teorema serve quando $c_n$ ha un pezzo <b>oscillante ma limitato</b> ($\sin n$, $\cos n^2$, $(-1)^n$, $\arctan n$) di cui il limite non esiste o è difficile: lo si sostituisce con i suoi limiti superiore e inferiore. Es.: $-1\le\sin n\le1$ dà $-\frac1n\le\frac{\sin n}n\le\frac1n$, e le due guardie tendono a $0$.
+</div>
 <div class="lab"><div class="t">Due carabinieri</div>
   <div class="ctl"><label>$c_n=$ <select id="E1"><option value="0">sin(n)/n  tra ±1/n</option><option value="1">cos(n²)/√n  tra ±1/√n</option><option value="2">1 + (−1)ⁿ/n²  tra 1 ± 1/n²</option></select></label>
   <label>termini <input type="range" id="E2" min="10" max="150" value="50"></label></div>
@@ -395,6 +427,10 @@ $$(\log_an)^\gamma\ \ll\ n^b\ \ll\ \alpha^n\ \ll\ n!\ \ll\ n^n\qquad(a,\alpha\gt
 <div class="box"><div class="t">Definizioni</div>
 $a_n\sim b_n$ (asintotiche) se $\dfrac{a_n}{b_n}\to1$; $\qquad a_n=o(b_n)$ ("o piccolo") se $\dfrac{a_n}{b_n}\to0$.<br>
 <b>Collegamento:</b> $a_n\sim b_n\iff a_n=b_n+o(b_n)$, perché $\frac{a_n-b_n}{b_n}=\frac{a_n}{b_n}-1$.
+</div>
+<div class="box tip"><div class="t">Intuizione: errore relativo, non assoluto</div>
+$a_n\sim b_n$ significa che l'<b>errore relativo</b> $\frac{a_n-b_n}{b_n}$ tende a $0$. L'errore assoluto $a_n-b_n$ invece può fare qualunque cosa: $n^2+n\sim n^2$ ma la differenza $n$ diverge. Ecco perché $\sim$ è compatibile con prodotti e quozienti (gli errori relativi si compongono bene), ma non con le differenze. Sottraendo, i termini principali si cancellano e resta proprio la parte che l'equivalenza aveva buttato via.<br>
+$o(b_n)$ si legge "<b>trascurabile rispetto a $b_n$</b>". Non è un numero preciso, è un'etichetta per "qualche successione che, divisa per $b_n$, va a $0$". Per questo $o(n)-o(n)$ non fa $0$: le due etichette possono indicare successioni diverse.
 </div>
 <p>$\sim$ è una relazione di equivalenza (riflessiva, simmetrica, transitiva: $\frac{a_n}{c_n}=\frac{a_n}{b_n}\frac{b_n}{c_n}\to1$) e <b>conserva il comportamento</b>: due successioni equivalenti convergono allo stesso limite, divergono con lo stesso segno, o sono entrambe irregolari. È per questo che si possono sostituire pezzi con equivalenti più semplici.</p>
 <table>

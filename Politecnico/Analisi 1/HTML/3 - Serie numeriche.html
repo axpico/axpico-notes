@@ -128,6 +128,9 @@ Data $\{a_k\}$, le <b>somme parziali</b> sono $S_n:=\sum_{k=1}^na_k$ (ricorsivam
 $$\sum_{k=1}^\infty a_k:=\lim_{n\to\infty}S_n .$$
 La serie è <b>convergente</b> se il limite è finito, <b>divergente</b> se è $\pm\infty$, <b>indeterminata</b> se non esiste. Questa proprietà è il <b>carattere</b> della serie.
 </div>
+<div class="box tip"><div class="t">Intuizione: il paradosso di Zenone</div>
+$\frac12+\frac14+\frac18+\dots$: percorri metà strada, poi metà di quella che resta, e così via. Dopo $n$ passi hai percorso $S_n=1-\frac1{2^n}$ e ti manca esattamente $\frac1{2^n}$. Nessuna somma <em>finita</em> arriva a $1$, ma $S_n\to1$. Ed è proprio questo il significato di "$\sum_{k\ge1}\frac1{2^k}=1$": non si sommano davvero infiniti numeri, si guarda dove vanno le somme parziali. Una serie è quindi <b>una successione travestita</b>, e tutti gli strumenti dei limiti (file 2) si applicano a $S_n$.
+</div>
 <div class="box warn"><div class="t">Non confondere</div>$a_n$ (termine generale) e $S_n$ (somma parziale) sono <b>due successioni diverse</b>. Il carattere della serie è il comportamento di $S_n$. Esempio: $a_n=\frac1n\to0$, ma $S_n\to+\infty$.</div>
 
 <div class="lab"><div class="t">Somme parziali in diretta</div>
@@ -164,6 +167,17 @@ $$S_n=\begin{cases}\dfrac{1-x^{n+1}}{1-x}&x\ne1\\[1mm]n+1&x=1\end{cases}\qquad\L
 <h2 id="arm"><small>§4</small>Serie armonica e armonica generalizzata</h2>
 $$\sum_{k=1}^\infty\frac1k=+\infty,\qquad\qquad \sum_{k=1}^\infty\frac1{k^\alpha}\ \text{ converge}\iff\alpha\gt1 .$$
 <p>Per $\alpha\le0$ il termine non è infinitesimo; per $0\lt\alpha\le1$ i termini sono positivi e la somma è $+\infty$. Le dimostrazioni (criterio dell'integrale o di condensazione) si assumono note; l'idea è che $\sum\frac1{k^\alpha}$ si comporta come $\int_1^\infty\frac{dx}{x^\alpha}$. In particolare $S_n=\sum_{k\le n}\frac1k\approx\log n+0{,}5772$: diverge, ma lentissimamente.</p>
+<details class="proof"><summary>Dimostrazione elementare: la serie armonica diverge (Oresme)</summary>
+Si raggruppano i termini in blocchi di lunghezza doppia, $2^{j-1}$ termini per volta:
+$$1+\tfrac12+\underbrace{\tfrac13+\tfrac14}_{\ge2\cdot\frac14=\frac12}+\underbrace{\tfrac15+\dots+\tfrac18}_{\ge4\cdot\frac18=\frac12}+\underbrace{\tfrac19+\dots+\tfrac1{16}}_{\ge8\cdot\frac1{16}=\frac12}+\dots$$
+Ogni blocco $\sum_{k=2^{j-1}+1}^{2^j}\frac1k$ ha $2^{j-1}$ termini, ciascuno $\ge\frac1{2^j}$, quindi vale almeno $\frac12$. Perciò $S_{2^m}\ge1+\frac m2\to+\infty$. Essendo $S_n$ crescente, diverge. ∎<br>
+<i>Morale:</i> i termini vanno a $0$, ma <b>troppo lentamente</b>. Ogni volta che si raddoppia il numero di termini si aggiunge almeno $\frac12$, e infiniti mezzi fanno $+\infty$.
+</details>
+<details class="proof"><summary>Perché $\alpha\gt1$ converge (idea con l'integrale)</summary>
+$\frac1{x^\alpha}$ è decrescente, quindi per $k-1\le x\le k$ vale $\frac1{k^\alpha}\le\frac1{x^\alpha}$, e integrando $\frac1{k^\alpha}\le\int_{k-1}^k\frac{dx}{x^\alpha}$. Sommando per $k=2,\dots,n$:
+$$S_n\le1+\int_1^n\frac{dx}{x^\alpha}=1+\frac{1-n^{1-\alpha}}{\alpha-1}\lt1+\frac1{\alpha-1}.$$
+Le somme parziali sono crescenti e limitate, quindi la serie converge. Geometricamente: i rettangoli di base $1$ e altezza $\frac1{k^\alpha}$ stanno sotto la curva, e l'area sotto la curva è finita esattamente quando $\alpha\gt1$. ∎
+</details>
 <div class="box tip"><div class="t">Da sapere a memoria</div>$\sum\frac1{k^\alpha}$ converge $\iff\alpha\gt1$. Il caso limite $\alpha=1$ <b>diverge</b>, anche se $\frac1k\to0$.</div>
 <div class="lab"><div class="t">S_n per 1/k^α su scale enormi</div>
   <div class="ctl"><label>$\alpha$ = <input type="range" id="H1" min="0.5" max="2.5" step="0.05" value="1"> <span id="H1v"></span></label></div>
@@ -208,6 +222,9 @@ $a_n\ge0$, $b_n\gt0$, $\exists\,\ell=\lim\frac{a_n}{b_n}\in[0,+\infty]$.<br>
 (1) Definitivamente $\frac{a_n}{b_n}\lt\ell+\varepsilon$, cioè $a_n\lt(\ell+\varepsilon)b_n$: maggiorante convergente.<br>
 (2) Se $\ell\in(0,\infty)$, con $\varepsilon=\frac\ell3$: $a_n\gt\frac{2\ell}3b_n$, minorante divergente. Se $\ell=+\infty$: con $M=1$, $a_n\gt b_n$ definitivamente. ∎
 </details>
+<div class="box tip"><div class="t">Intuizione</div>
+Se $\frac{a_n}{b_n}\to\ell\in(0,\infty)$, da un certo punto in poi $a_n$ è "più o meno $\ell$ volte" $b_n$: precisamente $\frac\ell2b_n\lt a_n\lt2\ell b_n$. Moltiplicare una serie per una costante positiva non ne cambia il carattere, e i primi termini non contano. Quindi le due serie convergono o divergono insieme. In pratica: <b>si sostituisce il termine generale col suo termine dominante</b> (stime asintotiche del file 2) e ci si riduce quasi sempre a una armonica generalizzata $\frac1{n^\alpha}$. Con $\ell=0$ ($a_n$ molto più piccolo) si può solo concludere la convergenza, con $\ell=\infty$ ($a_n$ molto più grande) solo la divergenza.
+</div>
 <p><b>Corollario:</b> $a_n\sim b_n$ (termini positivi) ⟹ <b>stesso carattere</b>. Il caso pratico è $b_n=\frac1{n^\alpha}$, con $\ell=\lim n^\alpha a_n$:</p>
 <table><tr><th>condizione</th><th>conclusione</th></tr>
 <tr><td>$\ell\in[0,+\infty)$ e $\alpha\gt1$</td><td class="ok">converge</td></tr>
@@ -236,6 +253,9 @@ $a_n\gt0$ e $\exists\,\ell=\lim\frac{a_{n+1}}{a_n}\in[0,+\infty]$. Se $\ell\lt1$
 $a_n\ge0$ e $\exists\,\ell=\lim\sqrt[n]{a_n}$. Se $\ell\lt1$ converge ($a_n\lt x^n$ definitivamente); se $\ell\gt1$ diverge ($a_n\gt1$ definitivamente).
 </div>
 <div class="box warn"><div class="t">ℓ = 1 non decide</div>$\sum\frac1n$ (diverge) e $\sum\frac1{n^2}$ (converge) hanno entrambe rapporto e radice $\to1$. Rapporto e radice "vedono" solo comportamenti esponenziali, non le potenze. Se il limite non esiste, il criterio non si applica.</div>
+<div class="box tip"><div class="t">Intuizione: "localmente geometrica"</div>
+Per una geometrica $x^n$ il rapporto tra termini consecutivi è esattamente $x$. Se $\frac{a_{n+1}}{a_n}\to\ell$, la serie <b>si comporta da un certo punto in poi come una geometrica di ragione circa $\ell$</b>: ogni termine è circa $\ell$ volte il precedente. Per $\ell\lt1$ i termini calano esponenzialmente, il che basta (e avanza) per convergere. Per $\ell=1$ i termini calano "meno che esponenzialmente" ($\frac1n$, $\frac1{n^2}$, …) e il criterio non ha la risoluzione per distinguerli: serve il confronto con $\frac1{n^\alpha}$.
+</div>
 <p><b>Quando usarli:</b> rapporto con fattoriali ed esponenziali (si semplifica quasi tutto); radice con potenze $n$-esime. Se $\frac{a_{n+1}}{a_n}\to\ell$ allora anche $\sqrt[n]{a_n}\to\ell$: la radice è almeno altrettanto potente.</p>
 <p><b>Esempi:</b> $\sum\frac1{n!}$: rapporto $\frac1{n+1}\to0$ ⟹ converge. $\ \sum\frac n{3^n}$: radice $\frac{\sqrt[n]n}3\to\frac13$ ⟹ converge.</p>
 <div class="lab"><div class="t">Calcolatore rapporto / radice</div>
@@ -249,6 +269,15 @@ $a_n\ge0$ e $\exists\,\ell=\lim\sqrt[n]{a_n}$. Se $\ell\lt1$ converge ($a_n\lt x
 Se $a_n\gt0$, $a_n\to0$ e $a_n$ è <b>decrescente</b>, allora $\sum(-1)^na_n$ converge, e
 $$|S_n-S|\le a_{n+1}\qquad\text{(l'errore è al più il primo termine trascurato).}$$
 </div>
+<details class="proof"><summary>Dimostrazione</summary>
+Indici da $0$: $S_n=\sum_{k=0}^n(-1)^ka_k$.<br>
+<i>Pari decrescenti:</i> $S_{2m+2}-S_{2m}=-a_{2m+1}+a_{2m+2}\le0$ perché $a_n$ decresce.<br>
+<i>Dispari crescenti:</i> $S_{2m+1}-S_{2m-1}=a_{2m}-a_{2m+1}\ge0$.<br>
+<i>Incastro:</i> $S_{2m+1}=S_{2m}-a_{2m+1}\lt S_{2m}$, quindi
+$$S_1\le S_3\le\dots\le S_{2m+1}\lt S_{2m}\le\dots\le S_2\le S_0 .$$
+Le pari sono decrescenti e limitate inferiormente (da $S_1$), le dispari crescenti e limitate superiormente (da $S_0$). Per il teorema sulle monotone $S_{2m}\to P$ e $S_{2m+1}\to D$. Poiché $S_{2m}-S_{2m+1}=a_{2m+1}\to0$, $P=D=:S$. Le due sottosuccessioni coprono tutti gli indici, quindi $S_n\to S$.<br>
+<i>Stima dell'errore:</i> $S$ sta sempre tra due somme parziali consecutive, che distano $a_{n+1}$, quindi $|S_n-S|\le a_{n+1}$. ∎
+</details>
 <p><b>Idea:</b> le somme parziali pari e dispari sono monotone in versi opposti e la loro distanza è $a_{n+1}\to0$: "si stringono" attorno a $S$ oscillando. Tutte e tre le ipotesi servono (soprattutto la monotonia), e Leibniz dà solo convergenza <b>semplice</b>.</p>
 <p><b>Es.</b> $\sum\frac{(-1)^n}n$: $\frac1n\gt0$, $\to0$, decrescente ⟹ converge (a $-\log2$). $\ \sum(-1)^n\arctan\frac1{\sqrt n}$: $\arctan$ è crescente, quindi $a_n$ decresce come $\frac1{\sqrt n}$ ⟹ converge.</p>
 <div class="lab"><div class="t">Oscillazione e stima dell'errore</div>

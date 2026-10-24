@@ -125,6 +125,9 @@ L'intero $n$ si chiama <b>indice</b>; i valori $a_n$ sono i <b>termini</b> (o el
   <li>l'<b>immagine</b> $I_{a_n}:=\{a_n:n\in\mathbb N\}\subseteq\mathbb R$: insieme dei valori effettivamente assunti, <b>senza ordine né ripetizioni</b>.</li>
 </ul>
 <p><b>Esempio.</b> $a_n=(-1)^n$: la successione è $\{1,-1,1,-1,\dots\}$ (infiniti termini), ma l'immagine è $I_{a_n}=\{-1,1\}$ (due soli elementi). Il grafico di una successione è un insieme <em>discreto</em> di punti $P_n=(n,a_n)$, non una curva continua.</p>
+<div class="box tip"><div class="t">Perché "funzione" e non "insieme"</div>
+Un insieme dimentica due informazioni che per l'analisi sono essenziali: l'<b>ordine</b> (chi viene dopo chi) e la <b>molteplicità</b> (quante volte compare un valore). $a_n=(-1)^n=\{1,-1,1,-1,\dots\}$ e $c_n=\{1,-1,-1,-1,\dots\}$ (cioè $c_0=1$, $c_n=-1$ per $n\ge1$) hanno la stessa immagine $\{-1,1\}$, ma si comportano in modo opposto: $a_n$ oscilla per sempre, mentre $c_n$ è costante da $n=1$ in poi e quindi tende a $-1$. I limiti chiedono "cosa succede quando $n$ cresce", quindi l'ordine dato da $n$ è il cuore della definizione.
+</div>
 
 <div class="lab"><div class="t">Esploratore di successioni</div>
   <div class="ctl">
@@ -165,6 +168,10 @@ $\{a_n\}$ è <b>limitata superiormente</b> se $\exists\,M\in\mathbb R:\ a_n\le M
 <p><b>Negazione</b> (importante per le dimostrazioni): $a_n$ è <b>illimitata superiormente</b> se
 $$\forall M\in\mathbb R\ \ \exists\,n_0\in\mathbb N:\ a_{n_0}\gt M.$$
 L'ordine dei quantificatori conta: $n_0$ può dipendere da $M$.</p>
+<div class="box tip"><div class="t">Intuizione geometrica</div>
+Nel grafico, "limitata" vuol dire che tutti i punti $P_n=(n,a_n)$ stanno in una <b>fascia orizzontale</b> $-K\le y\le K$. Basta <em>una</em> fascia, anche enorme: $a_n=10^{100}\sin n$ è limitata. "Illimitata superiormente" vuol dire che <b>nessuna</b> retta orizzontale $y=M$ sta sopra tutti i punti: per quanto alzi $M$, qualche punto la buca.<br>
+Come si costruisce una negazione: si scambiano $\forall\leftrightarrow\exists$ e si nega la parte finale. Da "$\exists M\ \forall n:\ a_n\le M$" si passa a "$\forall M\ \exists n:\ a_n\gt M$". Funziona sempre allo stesso modo, ed è la tecnica che serve per negare la definizione di limite nel file 2.
+</div>
 
 <h3>Esercizio svolto: $a_n=n^3$</h3>
 <ul>
@@ -208,6 +215,10 @@ Il dominio $\mathbb N$ è discreto: da $a_n\lt a_{n+1}$ per ogni $n$ segue, per 
 <tr><td>$\inf\{a_n\}=\lambda$</td><td>$a_n\ge\lambda\ \forall n$</td><td>$\forall\varepsilon\gt0\ \exists\,n_\varepsilon:\ a_{n_\varepsilon}\lt\lambda+\varepsilon$</td></tr>
 </table>
 <p>Lettura di (ii) per il $\sup$: $\Lambda$ è il <em>più piccolo</em> maggiorante, quindi $\Lambda-\varepsilon$ non è più un maggiorante, cioè qualche termine lo supera. Se $\Lambda$ è <em>assunto</em> da un termine, allora $\sup=\max$; altrimenti il massimo non esiste.</p>
+<div class="box tip"><div class="t">Intuizione: sup come "tetto ottimale"</div>
+La condizione (i) dice che $\Lambda$ è <b>un</b> tetto: nessun termine lo supera. La (ii) dice che è il tetto <b>più basso possibile</b>: abbassandolo anche di pochissimo ($\Lambda-\varepsilon$), qualche termine sfonda. Il massimo è un tetto che viene <em>toccato</em>. Il sup può invece essere solo <em>avvicinato</em> arbitrariamente, come $1$ per $1-\frac1n$.<br>
+<b>Perché serve la completezza.</b> L'esistenza del sup non è ovvia. In $\mathbb Q$ l'insieme $\{q\in\mathbb Q:q^2\lt2\}$ è limitato ma non ha sup in $\mathbb Q$: il "tetto ottimale" sarebbe $\sqrt2\notin\mathbb Q$. L'assioma di completezza di $\mathbb R$ dice proprio che in $\mathbb R$ questi buchi non ci sono. È la proprietà che renderà convergenti le successioni monotone limitate.
+</div>
 
 <h3>Esempio: $b_n=\frac1n$, $n\ge1$</h3>
 <ul>

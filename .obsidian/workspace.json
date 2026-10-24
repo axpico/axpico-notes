@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "a0fbc6244267ca4a",
+        "id": "dd28f47ec144d6b3",
         "type": "tabs",
         "children": [
           {
-            "id": "8795db8831cc8f72",
+            "id": "66582ed07d1dd301",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "html-viewer",
               "state": {
-                "file": "Politecnico/Analisi 1/Esami/Vecchi/2025/Giugno2025-Soluzioni.pdf"
+                "file": "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html"
               },
-              "icon": "lucide-file-text",
-              "title": "Giugno2025-Soluzioni"
+              "icon": "code",
+              "title": "2 - Limiti di successioni"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 282.5,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -232,8 +233,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5,
-    "collapsed": true
+    "width": 326.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -251,21 +251,22 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "8795db8831cc8f72",
+  "active": "66582ed07d1dd301",
   "lastOpenFiles": [
-    "Politecnico/Analisi 1/HTML/1 - Successioni.html",
     "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html",
+    "Politecnico/Analisi 1/HTML/sedIY8euq",
+    "Politecnico/Analisi 1/HTML/sedsAL3vT",
+    "Politecnico/Analisi 1/HTML/3 - Serie numeriche.html.tmp.37840.6b78105ad61c",
+    "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html.tmp.37840.517d842b11cf",
+    "Politecnico/Analisi 1/HTML/1 - Successioni.html",
+    "Politecnico/Analisi 1/Esami/Vecchi/2025/Giugno2025-Soluzioni.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
     "Politecnico/Analisi 1/HTML/sedgkuld6",
     "Politecnico/Analisi 1/HTML/3 - Serie numeriche.html",
     "Politecnico/Analisi 1/HTML/sediVkF4f",
     "Politecnico/Analisi 1/HTML/sedohDM3D",
-    "Politecnico/Analisi 1/HTML/sedDVp60c",
     "Politecnico/Analisi 1/Indice.md",
-    "Politecnico/Analisi 1/HTML/1 - Successioni.html.tmp.11494.5b1f3c68a1e9",
-    "Politecnico/Analisi 1/HTML",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Intersezione, somma e somma diretta di sottospazi — formula di Grassmann.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Completamento a base.md",
