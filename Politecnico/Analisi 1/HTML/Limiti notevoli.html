@@ -1,0 +1,565 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Limiti notevoli</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,600&display=swap">
+<style>
+/* Layout: griglia di schede a colonne fluide, una sezione per famiglia di limiti, formula in evidenza e condizione sotto */
+:root {
+  --bg: #f3f5f8;
+  --surface: #ffffff;
+  --fg: #16202e;
+  --muted: #5a6677;
+  --line: #d5dce6;
+  --accent: #1f4fd8;
+  --accent-soft: #e4ebfc;
+  --warn: #a4400f;
+  --warn-soft: #fbece3;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1520; --surface: #172030; --fg: #e6ebf3; --muted: #93a0b4; --line: #2a3750;
+    --accent: #7fa2ff; --accent-soft: #1e2d52; --warn: #f0a074; --warn-soft: #3a2619;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1520; --surface: #172030; --fg: #e6ebf3; --muted: #93a0b4; --line: #2a3750;
+  --accent: #7fa2ff; --accent-soft: #1e2d52; --warn: #f0a074; --warn-soft: #3a2619;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: 15px; line-height: 1.5;
+  padding-block: 28px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1080px; margin: 0 auto; }
+header { display: flex; flex-direction: column; gap: 6px; margin-bottom: 20px; }
+h1 { font-family: var(--font-display); font-weight: 600; font-size: clamp(30px, 6vw, 44px); line-height: 1.1; margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); max-width: 62ch; margin: 0; }
+.sub code, .note code { font-family: var(--font-mono); font-size: 0.9em; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 8px; }
+nav a {
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: .03em; text-transform: uppercase;
+  color: var(--fg); text-decoration: none; border: 1px solid var(--line); background: var(--surface);
+  padding: 6px 10px; border-radius: 4px;
+}
+nav a:hover, nav a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+section { margin-top: 34px; }
+h2 { display: flex; align-items: baseline; gap: 10px; font-size: 13px; font-family: var(--font-mono); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 12px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+h2 small { color: var(--muted); text-transform: none; letter-spacing: 0; font-size: 12px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.card.wide { grid-column: 1 / -1; }
+.tag { font-family: var(--font-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.formula { font-size: 1.15em; overflow-x: auto; overflow-y: hidden; padding-block: 2px; }
+.cond { color: var(--muted); font-size: 13.5px; margin: 0; }
+.how { font-size: 13.5px; margin: 0; padding-top: 8px; border-top: 1px dashed var(--line); }
+.how b { font-weight: 600; }
+.note { background: var(--warn-soft); border-left: 3px solid var(--warn); padding: 10px 14px; border-radius: 0 4px 4px 0; font-size: 14px; margin: 12px 0 0; }
+.note b { color: var(--warn); }
+.tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 9px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--font-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 500; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+.scale { font-size: 1.25em; text-align: center; overflow-x: auto; padding: 6px 0; }
+footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+mjx-container { max-width: 100%; }
+.chain { display: flex; flex-direction: column; gap: 12px; margin-top: 12px; }
+.step { display: grid; grid-template-columns: auto 1fr; gap: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; min-width: 0; }
+.step .n { font-family: var(--font-mono); font-size: 12px; color: var(--accent); background: var(--accent-soft); width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.step .body { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.step .res { font-size: 1.15em; overflow-x: auto; overflow-y: hidden; }
+.step .calc { background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 8px 12px; overflow-x: auto; overflow-y: hidden; }
+.step .words { margin: 0; font-size: 14px; color: var(--muted); }
+.step .words b { color: var(--fg); font-weight: 600; }
+@media (max-width: 480px) { .step { grid-template-columns: 1fr; } }
+button { font: inherit; color: var(--fg); cursor: pointer; }
+button:focus-visible, .flash:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.modes { display: inline-flex; gap: 3px; padding: 3px; margin-bottom: 18px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+.modes button, .seg button { font-family: var(--font-mono); font-size: 12.5px; letter-spacing: .03em; border: 0; background: transparent; padding: 7px 14px; border-radius: 4px; }
+.modes button[aria-selected="true"], .seg button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); font-weight: 500; }
+.studybar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.seg { display: inline-flex; gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+.tools { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn { font-family: var(--font-mono); font-size: 12.5px; border: 1px solid var(--line); background: var(--surface); padding: 8px 14px; border-radius: 4px; }
+.btn:hover { border-color: var(--accent); }
+.progress { margin-bottom: 18px; }
+.bar { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.bar span { display: block; height: 100%; width: 0; background: var(--accent); }
+.progress p { margin: 6px 0 0; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.flash { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 22px 20px; min-height: 230px; display: flex; flex-direction: column; gap: 14px; cursor: pointer; min-width: 0; }
+.flash .meta { display: flex; justify-content: space-between; gap: 12px; font-family: var(--font-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.flash .q { font-size: 1.3em; overflow-x: auto; overflow-y: hidden; }
+.flash .ans { border-top: 1px dashed var(--line); padding-top: 14px; font-size: 1.25em; overflow-x: auto; overflow-y: hidden; }
+.flash .how2 { color: var(--muted); font-size: 14px; margin: 0; }
+.flash .tapto { color: var(--muted); font-size: 13px; margin-top: auto; }
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+.actions .big { padding: 13px 16px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); font-weight: 500; }
+.actions .big.yes { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
+.actions .big.no { background: var(--warn-soft); color: var(--warn); border-color: var(--warn); }
+.actions .big.solo { grid-column: 1 / -1; }
+.hint { color: var(--muted); font-size: 13px; margin: 12px 0 0; }
+.done { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 26px 20px; display: flex; flex-direction: column; gap: 12px; }
+.done p { margin: 0; }
+.done .row { display: flex; flex-wrap: wrap; gap: 10px; }
+@media (prefers-reduced-motion: no-preference) { nav a { transition: border-color .15s, color .15s; } }
+</style>
+<script>
+window.MathJax = { tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] }, svg: { fontCache: 'global' } };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script>
+
+<div class="wrap">
+<div class="modes" role="tablist" aria-label="Modalità">
+  <button id="tabSheet" role="tab" aria-selected="true">Cheat sheet</button>
+  <button id="tabStudy" role="tab" aria-selected="false">Studia</button>
+</div>
+<header>
+  <h1>Limiti notevoli</h1>
+  <p class="sub">Successioni. Ovunque compare $a_n$ si intende $a_n\to0$ con $a_n\neq0$, salvo diversa indicazione. Ogni scheda riporta il risultato, le ipotesi e il trucco della dimostrazione.</p>
+  <nav id="secnav" aria-label="Sezioni">
+    <a href="#strumenti">Strumenti</a>
+    <a href="#base">Base</a>
+    <a href="#nepero">Nepero</a>
+    <a href="#trig">Trigonometrici</a>
+    <a href="#explog">Exp e log</a>
+    <a href="#polinomi">Polinomi</a>
+    <a href="#infiniti">Gerarchia</a>
+  </nav>
+</header>
+
+<div id="sheet">
+<section id="strumenti">
+  <h2>Strumenti <small>da usare dentro le dimostrazioni e nei calcoli</small></h2>
+  <div class="grid">
+    <div class="card">
+      <span class="tag">Due carabinieri</span>
+      <div class="formula">$a_n\le b_n\le c_n,\ a_n\to L,\ c_n\to L\ \Rightarrow\ b_n\to L$</div>
+      <p class="cond">Vale anche se la disuguaglianza è solo definitiva.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Confronto per limiti infiniti</span>
+      <div class="formula">$a_n\le b_n$<br>$a_n\to+\infty\Rightarrow b_n\to+\infty$<br>$b_n\to-\infty\Rightarrow a_n\to-\infty$</div>
+      <p class="cond">Da $b_n\to+\infty$ non si deduce nulla su $a_n$.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Limitata × infinitesima</span>
+      <div class="formula">$|a_n|\le M,\ b_n\to0\ \Rightarrow\ a_nb_n\to0$</div>
+      <p class="cond">Esempio: $\dfrac{\sin n}{n}\to0$. Con $a_n=n$ e $b_n=\frac1n$ il prodotto vale $1$: la limitatezza è necessaria.</p>
+      <p class="how"><b>Lemma:</b> $a_n\to0\iff|a_n|\to0$.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Monotone</span>
+      <div class="formula">crescente $\Rightarrow a_n\to\sup a_n$<br>decrescente $\Rightarrow a_n\to\inf a_n$</div>
+      <p class="cond">Crescente e limitata superiormente: converge. Prova l'esistenza del limite senza calcolarlo.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Disuguaglianza di Bernoulli</span>
+      <div class="formula">$(1+x)^n\ge1+nx$</div>
+      <p class="cond">Per $x>-1$, $n\in\mathbb{N}$.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Criterio del rapporto</span>
+      <div class="formula">$a_n>0,\ \dfrac{a_{n+1}}{a_n}\to b<1\ \Rightarrow\ a_n\to0$</div>
+      <p class="how"><b>Idea:</b> definitivamente $a_n<C\,q^n$ con $b<q<1$, poi carabinieri.</p>
+    </div>
+  </div>
+</section>
+
+<section id="base">
+  <h2>Base <small>geometrica e radici</small></h2>
+  <div class="grid">
+    <div class="card wide">
+      <span class="tag">(a) Successione geometrica</span>
+      <div class="formula">$$\lim_{n\to\infty}a^n=\begin{cases}+\infty & a\gt1\\ 1 & a=1\\ 0 & -1\lt a\lt1\\ \nexists & a\le-1\end{cases}$$</div>
+      <p class="how"><b>$a>1$:</b> Bernoulli con $x=a-1$, quindi $a^n\ge1+n(a-1)\to+\infty$. <b>$|a|<1$:</b> $|a|^n=1/(1/|a|)^n\to0$. <b>$a\le-1$:</b> le sottosuccessioni $a^{2k}$ e $a^{2k+1}$ hanno limiti diversi.</p>
+    </div>
+    <div class="card">
+      <span class="tag">(b) Radice n-esima</span>
+      <div class="formula">$\sqrt[n]{a}\to1\quad(a>0)$</div>
+      <p class="cond">Estensione: $\sqrt[n]{n^b}=(\sqrt[n]{n})^b\to1$ per ogni $b\in\mathbb{R}$.</p>
+      <p class="how"><b>Idea:</b> per $a\ge1$ pongo $b_n=\sqrt[n]{a}-1$. Bernoulli dà $0\le b_n\le\frac{a-1}{n}$. Per $a<1$ passo al reciproco.</p>
+    </div>
+  </div>
+</section>
+
+<section id="nepero">
+  <h2>Nepero <small>forma indeterminata $1^\infty$</small></h2>
+  <div class="grid">
+    <div class="card">
+      <span class="tag">Definizione di e</span>
+      <div class="formula">$\left(1+\dfrac1n\right)^n\to e\approx2{,}718$</div>
+      <p class="cond">Crescente e limitata da $3$, quindi converge. $e\in\mathbb{R}\setminus\mathbb{Q}$.</p>
+    </div>
+    <div class="card">
+      <span class="tag">(c) Generalizzazione</span>
+      <div class="formula">$\left(1+\dfrac{\alpha}{a_n}\right)^{a_n}\to e^{\alpha}$</div>
+      <p class="cond">Con $a_n\to\pm\infty$ e $\alpha\in\mathbb{R}$.</p>
+    </div>
+    <div class="card">
+      <span class="tag">(e1) Forma con $a_n\to0$</span>
+      <div class="formula">$(1+a_n)^{1/a_n}\to e$</div>
+      <p class="how"><b>Trucco:</b> $b_n=\frac1{a_n}\to\pm\infty$, poi (c) con $\alpha=1$.</p>
+    </div>
+  </div>
+</section>
+
+<section id="trig">
+  <h2>Trigonometrici <small>$a_n\to0$</small></h2>
+  <div class="grid">
+    <div class="card wide">
+      <span class="tag">Disuguaglianza fondamentale</span>
+      <div class="formula">$\cos x\lt\dfrac{\sin x}{x}\lt1\qquad0\lt|x|\lt\dfrac\pi2$</div>
+      <p class="how"><b>Idea:</b> sulla circonferenza goniometrica area$(\triangle OAB)<$ area(settore)$<$ area$(\triangle OAD)$ dà $\sin x<x<\tan x$. Il rapporto $\frac{\sin x}{x}$ è pari, quindi vale anche per $x<0$.</p>
+    </div>
+    <div class="card">
+      <span class="tag">(d1) Seno</span>
+      <div class="formula">$\sin a_n\to0$</div>
+      <p class="how"><b>Trucco:</b> $0\le|\sin a_n|\le|a_n|$.</p>
+    </div>
+    <div class="card">
+      <span class="tag">(d2) Coseno</span>
+      <div class="formula">$\cos a_n\to1$</div>
+      <p class="how"><b>Trucco:</b> $0\le1-\cos a_n=\dfrac{\sin^2a_n}{1+\cos a_n}\le\sin^2a_n$.</p>
+    </div>
+    <div class="card">
+      <span class="tag">(d3) Seno su argomento</span>
+      <div class="formula">$\dfrac{\sin a_n}{a_n}\to1$</div>
+      <p class="how"><b>Trucco:</b> carabinieri tra $\cos a_n$ e $1$.</p>
+    </div>
+    <div class="card">
+      <span class="tag">(d4) Uno meno coseno</span>
+      <div class="formula">$\dfrac{1-\cos a_n}{a_n^2}\to\dfrac12$</div>
+      <p class="how"><b>Trucco:</b> moltiplico e divido per $1+\cos a_n$, ottengo $\left(\frac{\sin a_n}{a_n}\right)^2\cdot\frac1{1+\cos a_n}$.</p>
+    </div>
+  </div>
+</section>
+
+<section id="explog">
+  <h2>Esponenziale e logaritmo <small>$a_n\to0$, $a_n\neq0$</small></h2>
+
+  <div class="card wide">
+    <span class="tag">L'idea in una riga</span>
+    <p style="margin:0">Vicino a $0$ queste tre funzioni sono quasi una retta:</p>
+    <div class="formula">$\log(1+x)\approx x\qquad e^x-1\approx x\qquad(1+x)^\alpha-1\approx\alpha x$</div>
+    <p class="cond">Dividere per $a_n$ toglie la retta e lascia solo il coefficiente: $1$, $1$, $\alpha$. Controllo numerico con $a_n=0{,}01$:</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Rapporto</th><th>Valore con $a_n=0{,}01$</th><th>Limite</th></tr></thead>
+        <tbody>
+          <tr><td>$\dfrac{\log(1+a_n)}{a_n}$</td><td>$\approx0{,}995$</td><td>$1$</td></tr>
+          <tr><td>$\dfrac{e^{a_n}-1}{a_n}$</td><td>$\approx1{,}005$</td><td>$1$</td></tr>
+          <tr><td>$\dfrac{(1+a_n)^3-1}{a_n}$</td><td>$\approx3{,}03$</td><td>$\alpha=3$</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="chain">
+    <div class="step">
+      <span class="n">0</span>
+      <div class="body">
+        <span class="tag">Punto di partenza (e1)</span>
+        <div class="res">$(1+a_n)^{1/a_n}\to e$</div>
+        <p class="words">È la definizione di $e$ riscritta. Se $a_n\to0$, allora $b_n=\frac1{a_n}$ va all'infinito e $\left(1+\frac1{b_n}\right)^{b_n}\to e$.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="n">1</span>
+      <div class="body">
+        <span class="tag">(e2) Logaritmo</span>
+        <div class="res">$\dfrac{\log(1+a_n)}{a_n}\to1$</div>
+        <div class="calc">$\dfrac{\log(1+a_n)}{a_n}=\dfrac1{a_n}\cdot\log(1+a_n)=\log\left[(1+a_n)^{1/a_n}\right]\to\log e=1$</div>
+        <p class="words"><b>In parole:</b> il fattore $\frac1{a_n}$ entra nel logaritmo come esponente, perché $c\log x=\log x^c$. Dentro resta il limite del passo 0, e $\log e=1$. Si può portare il limite fuori dal logaritmo perché il logaritmo è continuo.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="n">2</span>
+      <div class="body">
+        <span class="tag">(e3) Esponenziale</span>
+        <div class="res">$\dfrac{e^{a_n}-1}{a_n}\to1$</div>
+        <div class="calc">
+          $b_n:=e^{a_n}-1\to0\ \Rightarrow\ e^{a_n}=1+b_n\ \Rightarrow\ a_n=\log(1+b_n)$<br>
+          $\dfrac{e^{a_n}-1}{a_n}=\dfrac{b_n}{\log(1+b_n)}=\dfrac{1}{\frac{\log(1+b_n)}{b_n}}\to\dfrac11=1$
+        </div>
+        <p class="words"><b>In parole:</b> chiamo $b_n$ la quantità $e^{a_n}-1$. Poiché $a_n\to0$ anche $b_n\to0$. Invertendo l'esponenziale con il logaritmo, il rapporto diventa il reciproco del limite del passo 1, applicato a $b_n$ al posto di $a_n$.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="n">3</span>
+      <div class="body">
+        <span class="tag">(e4) Potenza</span>
+        <div class="res">$\dfrac{(1+a_n)^\alpha-1}{a_n}\to\alpha$</div>
+        <div class="calc">
+          $(1+a_n)^\alpha=e^{\alpha\log(1+a_n)}$, e pongo $t_n:=\alpha\log(1+a_n)\to0$<br>
+          $\dfrac{(1+a_n)^\alpha-1}{a_n}=\underbrace{\dfrac{e^{t_n}-1}{t_n}}_{\to1\ \text{(passo 2)}}\cdot\underbrace{\alpha\,\dfrac{\log(1+a_n)}{a_n}}_{\to\alpha\ \text{(passo 1)}}\to\alpha$
+        </div>
+        <p class="words"><b>In parole:</b> ogni potenza con esponente reale si scrive con l'esponenziale. Spezzo il rapporto in due fattori già noti: il primo vale $1$ per (e3), il secondo vale $\alpha$ per (e2). Se $\alpha=0$ la quantità è $0$ e il limite è $0$.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="note"><b>Trappola.</b> Quello che sta dentro $e$ o $\log$ deve coincidere con il denominatore. Se non coincide, si aggiusta moltiplicando e dividendo.</div>
+
+  <div class="grid" style="margin-top:12px">
+    <div class="card">
+      <span class="tag">Esempio 1</span>
+      <div class="formula">$\dfrac{e^{3a_n}-1}{a_n}=\dfrac{e^{3a_n}-1}{3a_n}\cdot3\to3$</div>
+      <p class="cond">Il limite è $3$, non $1$.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Esempio 2</span>
+      <div class="formula">$\dfrac{\log(1+5a_n)}{a_n}=\dfrac{\log(1+5a_n)}{5a_n}\cdot5\to5$</div>
+      <p class="cond">Qui il termine $5a_n$ tende a $0$, quindi vale (e2).</p>
+    </div>
+    <div class="card">
+      <span class="tag">Esempio 3, combinato</span>
+      <div class="formula">$\dfrac{e^{2a_n}-1}{\sin a_n}=\dfrac{e^{2a_n}-1}{2a_n}\cdot2\cdot\dfrac{a_n}{\sin a_n}\to1\cdot2\cdot1=2$</div>
+      <p class="cond">Si porta ogni pezzo alla forma notevole e si moltiplicano i limiti.</p>
+    </div>
+  </div>
+</section>
+
+<section id="polinomi">
+  <h2>Rapporto tra polinomi <small>(f)</small></h2>
+  <div class="card" style="margin-bottom:12px">
+    <p class="cond" style="margin:0">$P(n)=a_kn^k+\dots+a_0$ con $a_k\ne0$, $\ Q(n)=b_hn^h+\dots+b_0$ con $b_h\ne0$. Si raccoglie il monomio di grado massimo: $\dfrac{P}{Q}=n^{k-h}\cdot\dfrac{a_k+o(1)}{b_h+o(1)}$.</p>
+  </div>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Gradi</th><th>Segno</th><th>Limite di $P(n)/Q(n)$</th></tr></thead>
+      <tbody>
+        <tr><td>$k>h$</td><td>$\frac{a_k}{b_h}>0$</td><td>$+\infty$</td></tr>
+        <tr><td>$k>h$</td><td>$\frac{a_k}{b_h}<0$</td><td>$-\infty$</td></tr>
+        <tr><td>$k=h$</td><td>qualsiasi</td><td>$\dfrac{a_k}{b_h}$</td></tr>
+        <tr><td>$k<h$</td><td>qualsiasi</td><td>$0$</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="cond" style="margin-top:10px">Esempio: $\dfrac{n^5+n^4-2n^2}{-2n^3-n^2-2n}$ ha $k=5>h=3$ e $\frac{a_k}{b_h}=-\frac12<0$, quindi tende a $-\infty$.</p>
+</section>
+
+<section id="infiniti">
+  <h2>Gerarchia degli infiniti <small>(g) e (h)</small></h2>
+  <div class="card" style="margin-bottom:12px">
+    <span class="tag">Scala (a, α &gt; 1, b &gt; 0)</span>
+    <div class="scale">$\log_an\ \ll\ n^b\ \ll\ \alpha^n\ \ll\ n!\ \ll\ n^n$</div>
+    <p class="cond" style="text-align:center">$x_n\ll y_n$ significa $\dfrac{x_n}{y_n}\to0$.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <span class="tag">(h) Logaritmo contro potenza</span>
+      <div class="formula">$\dfrac{\log_an}{n^b}\to0$</div>
+      <p class="how"><b>Idea:</b> da $2^x>x$ si ricava $\log_an<\frac2b\log_a2\cdot n^{b/2}$, poi si divide per $n^b$ e si usano i carabinieri.</p>
+    </div>
+    <div class="card">
+      <span class="tag">(g1) Potenza contro esponenziale</span>
+      <div class="formula">$\dfrac{n^b}{\alpha^n}\to0$</div>
+      <p class="how"><b>Rapporto:</b> $\left(1+\frac1n\right)^b\frac1\alpha\to\frac1\alpha<1$.</p>
+    </div>
+    <div class="card">
+      <span class="tag">(g2) Esponenziale contro fattoriale</span>
+      <div class="formula">$\dfrac{\alpha^n}{n!}\to0$</div>
+      <p class="how"><b>Rapporto:</b> $\dfrac{\alpha}{n+1}\to0$.</p>
+    </div>
+    <div class="card">
+      <span class="tag">(g3) Fattoriale contro $n^n$</span>
+      <div class="formula">$\dfrac{n!}{n^n}\to0$</div>
+      <p class="how"><b>Rapporto:</b> $\left(\dfrac{n}{n+1}\right)^n=\dfrac1{\left(1+\frac1n\right)^n}\to\dfrac1e<1$.</p>
+    </div>
+  </div>
+  <p class="note"><b>Attenzione al rapporto in (g2).</b> Il valore corretto è $\frac{\alpha}{n+1}$. La forma $\frac{1}{\alpha(n+1)}$ che compare negli appunti a mano è un refuso.</p>
+</section>
+
+</div>
+
+<div id="study" hidden>
+  <div class="studybar">
+    <div class="seg" role="group" aria-label="Mazzo">
+      <button id="deckAll" aria-pressed="true">Tutte</button>
+      <button id="deckReview" aria-pressed="false">Da ripassare</button>
+    </div>
+    <div class="tools">
+      <button class="btn" id="shuffle">Mescola</button>
+      <button class="btn" id="reset">Azzera progressi</button>
+    </div>
+  </div>
+  <div class="progress">
+    <div class="bar" role="progressbar" aria-label="Schede sapute"><span id="barKnown"></span></div>
+    <p id="stats"></p>
+  </div>
+  <div id="stage"></div>
+  <p class="hint">Tasti: spazio per girare, freccia destra "Lo so", freccia sinistra "Da rivedere". I progressi restano salvati in questo browser.</p>
+</div>
+
+<footer>Fonte: appunti su successioni e limiti notevoli.</footer>
+
+<script>
+(function () {
+  var R = String.raw;
+  var CARDS = [
+    { id: 'sin-ratio', c: 'Trigonometrici', q: R`$\dfrac{\sin a_n}{a_n}$ con $a_n\to0$`, a: R`$\to1$`, h: R`Carabinieri tra $\cos a_n$ e $1$, dalla disuguaglianza $\cos x\lt\frac{\sin x}{x}\lt1$.` },
+    { id: 'cos', c: 'Trigonometrici', q: R`$\cos a_n$ con $a_n\to0$`, a: R`$\to1$`, h: R`$0\le1-\cos a_n=\frac{\sin^2a_n}{1+\cos a_n}\le\sin^2a_n\to0$.` },
+    { id: 'sin', c: 'Trigonometrici', q: R`$\sin a_n$ con $a_n\to0$`, a: R`$\to0$`, h: R`$0\le|\sin a_n|\le|a_n|$, carabinieri.` },
+    { id: 'cos-quad', c: 'Trigonometrici', q: R`$\dfrac{1-\cos a_n}{a_n^2}$ con $a_n\to0$`, a: R`$\to\dfrac12$`, h: R`Moltiplico e divido per $1+\cos a_n$: $\left(\frac{\sin a_n}{a_n}\right)^2\cdot\frac1{1+\cos a_n}\to1\cdot\frac12$.` },
+    { id: 'ineq', c: 'Trigonometrici', q: R`Disuguaglianza fondamentale per $0\lt|x|\lt\frac\pi2$`, a: R`$\cos x\lt\dfrac{\sin x}{x}\lt1$`, h: R`Confronto di aree sulla circonferenza goniometrica: $\sin x\lt x\lt\tan x$. Il rapporto è pari, quindi vale anche per $x\lt0$.` },
+    { id: 'e-def', c: 'Nepero', q: R`$\left(1+\dfrac1n\right)^n$`, a: R`$\to e\approx2{,}718$`, h: R`Crescente e limitata da $3$: per il teorema sulle monotone converge.` },
+    { id: 'e-gen', c: 'Nepero', q: R`$\left(1+\dfrac{\alpha}{a_n}\right)^{a_n}$ con $a_n\to\pm\infty$`, a: R`$\to e^{\alpha}$` },
+    { id: 'e-zero', c: 'Nepero', q: R`$(1+a_n)^{1/a_n}$ con $a_n\to0$`, a: R`$\to e$`, h: R`Pongo $b_n=\frac1{a_n}\to\pm\infty$ e uso la generalizzazione con $\alpha=1$.` },
+    { id: 'log1p', c: 'Exp e log', q: R`$\dfrac{\log(1+a_n)}{a_n}$ con $a_n\to0$`, a: R`$\to1$`, h: R`$=\log\left[(1+a_n)^{1/a_n}\right]\to\log e=1$.` },
+    { id: 'expm1', c: 'Exp e log', q: R`$\dfrac{e^{a_n}-1}{a_n}$ con $a_n\to0$`, a: R`$\to1$`, h: R`Pongo $b_n=e^{a_n}-1$, quindi $a_n=\log(1+b_n)$: è il reciproco del limite del logaritmo.` },
+    { id: 'trap-exp', c: 'Exp e log', q: R`$\dfrac{e^{3a_n}-1}{a_n}$ con $a_n\to0$`, a: R`$\to3$`, h: R`Moltiplico e divido per $3a_n$: $\frac{e^{3a_n}-1}{3a_n}\cdot3\to1\cdot3$. L'argomento dell'esponenziale deve coincidere con il denominatore.` },
+    { id: 'trap-log', c: 'Exp e log', q: R`$\dfrac{\log(1+5a_n)}{a_n}$ con $a_n\to0$`, a: R`$\to5$`, h: R`$\frac{\log(1+5a_n)}{5a_n}\cdot5\to1\cdot5$.` },
+    { id: 'trap-mix', c: 'Exp e log', q: R`$\dfrac{e^{2a_n}-1}{\sin a_n}$ con $a_n\to0$`, a: R`$\to2$`, h: R`$\frac{e^{2a_n}-1}{2a_n}\cdot2\cdot\frac{a_n}{\sin a_n}\to1\cdot2\cdot1$.` },
+    { id: 'powm1', c: 'Exp e log', q: R`$\dfrac{(1+a_n)^\alpha-1}{a_n}$ con $a_n\to0$`, a: R`$\to\alpha$`, h: R`$(1+a_n)^\alpha=e^{\alpha\log(1+a_n)}$: prodotto di $\frac{e^{t_n}-1}{t_n}\to1$ e $\alpha\frac{\log(1+a_n)}{a_n}\to\alpha$.` },
+    { id: 'geom', c: 'Base', q: R`$a^n$ al variare di $a$`, a: R`$+\infty$ se $a\gt1$<br>$1$ se $a=1$<br>$0$ se $-1\lt a\lt1$<br>non esiste se $a\le-1$`, h: R`Per $a\le-1$ le sottosuccessioni pari e dispari hanno limiti diversi.` },
+    { id: 'geom-dim', c: 'Dimostrazioni', q: R`Perché $a^n\to+\infty$ per $a\gt1$?`, a: R`Bernoulli con $x=a-1\gt0$: $a^n\ge1+n(a-1)\to+\infty$. Poi confronto per limiti infiniti.` },
+    { id: 'root', c: 'Base', q: R`$\sqrt[n]{a}$ con $a\gt0$`, a: R`$\to1$`, h: R`Per $a\ge1$: $b_n=\sqrt[n]{a}-1$ e Bernoulli danno $0\le b_n\le\frac{a-1}{n}$. Per $a\lt1$ uso il reciproco.` },
+    { id: 'root-n', c: 'Base', q: R`$\sqrt[n]{n^b}$ con $b\in\mathbb{R}$`, a: R`$\to1$`, h: R`$=(\sqrt[n]{n})^b$ e $\sqrt[n]{n}\to1$.` },
+    { id: 'poly', c: 'Polinomi', q: R`$\dfrac{P(n)}{Q(n)}$ con $\deg P=k$, $\deg Q=h$, coefficienti direttori $a_k$, $b_h$`, a: R`$k\gt h$: $\pm\infty$ col segno di $\frac{a_k}{b_h}$<br>$k=h$: $\frac{a_k}{b_h}$<br>$k\lt h$: $0$`, h: R`Raccolgo $n^k$ e $n^h$: $\frac{P}{Q}=n^{k-h}\frac{a_k+o(1)}{b_h+o(1)}$.` },
+    { id: 'poly-ex', c: 'Polinomi', q: R`$\displaystyle\lim\frac{n^5+n^4-2n^2}{-2n^3-n^2-2n}$`, a: R`$-\infty$`, h: R`$k=5\gt h=3$ e $\frac{a_k}{b_h}=-\frac12\lt0$.` },
+    { id: 'pow-exp', c: 'Gerarchia', q: R`$\dfrac{n^b}{\alpha^n}$ con $b\gt0$, $\alpha\gt1$`, a: R`$\to0$`, h: R`Criterio del rapporto: $\left(1+\frac1n\right)^b\frac1\alpha\to\frac1\alpha\lt1$.` },
+    { id: 'exp-fact', c: 'Gerarchia', q: R`$\dfrac{\alpha^n}{n!}$ con $\alpha\gt1$`, a: R`$\to0$`, h: R`Rapporto: $\frac{\alpha}{n+1}\to0$.` },
+    { id: 'fact-nn', c: 'Gerarchia', q: R`$\dfrac{n!}{n^n}$`, a: R`$\to0$`, h: R`Rapporto: $\left(\frac{n}{n+1}\right)^n=\frac1{(1+\frac1n)^n}\to\frac1e\lt1$.` },
+    { id: 'log-pow', c: 'Gerarchia', q: R`$\dfrac{\log_an}{n^b}$ con $a\gt1$, $b\gt0$`, a: R`$\to0$`, h: R`Da $2^x\gt x$ segue $\log_an\lt\frac2b\log_a2\cdot n^{b/2}$. Divido per $n^b$ e uso i carabinieri.` },
+    { id: 'scala', c: 'Gerarchia', q: R`Ordine di crescita di $\log_an$, $n^b$, $\alpha^n$, $n!$, $n^n$`, a: R`$\log_an\ll n^b\ll\alpha^n\ll n!\ll n^n$`, h: R`$x_n\ll y_n$ significa $\frac{x_n}{y_n}\to0$.` },
+    { id: 'carab', c: 'Strumenti', q: R`Teorema dei due carabinieri`, a: R`$a_n\le b_n\le c_n$ e $a_n\to L$, $c_n\to L$ implicano $b_n\to L$.` },
+    { id: 'conf-inf', c: 'Strumenti', q: R`Confronto per limiti infiniti, con $a_n\le b_n$`, a: R`$a_n\to+\infty\Rightarrow b_n\to+\infty$<br>$b_n\to-\infty\Rightarrow a_n\to-\infty$`, h: R`Da $b_n\to+\infty$ non si deduce nulla su $a_n$.` },
+    { id: 'lim-inf', c: 'Strumenti', q: R`Limitata per infinitesima`, a: R`$|a_n|\le M$ e $b_n\to0$ implicano $a_nb_n\to0$.`, h: R`Controesempio senza limitatezza: $a_n=n$, $b_n=\frac1n$, prodotto $1$.` },
+    { id: 'monot', c: 'Strumenti', q: R`Teorema sulle successioni monotone`, a: R`Crescente: $a_n\to\sup a_n$. Decrescente: $a_n\to\inf a_n$. Crescente e limitata superiormente converge.`, h: R`Si usa la caratterizzazione del sup: $\forall\varepsilon\ \exists\nu$ con $a_\nu\gt\lambda-\varepsilon$.` },
+    { id: 'rapporto', c: 'Strumenti', q: R`Criterio del rapporto per $a_n\to0$`, a: R`$a_n\gt0$ e $\frac{a_{n+1}}{a_n}\to b\lt1$ implicano $a_n\to0$.`, h: R`Definitivamente $a_n\lt C\,q^n$ con $b\lt q\lt1$.` },
+    { id: 'bernoulli', c: 'Strumenti', q: R`Disuguaglianza di Bernoulli`, a: R`$(1+x)^n\ge1+nx$ per $x\gt-1$, $n\in\mathbb{N}$.` }
+  ];
+  var KEY = 'limiti-notevoli-sapute';
+  var known = {};
+  try { known = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { known = {}; }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(known)); } catch (e) {} }
+  function $(id) { return document.getElementById(id); }
+  var byId = {};
+  CARDS.forEach(function (c) { byId[c.id] = c; });
+  var order = CARDS.map(function (c) { return c.id; });
+  var deck = 'all', queue = [], pos = 0, revealed = false, resetArmed = false, resetTimer = null;
+  var stage = $('stage');
+
+  function typeset() {
+    var m = window.MathJax;
+    if (!m) return;
+    var ready = (m.startup && m.startup.promise) ? m.startup.promise : Promise.resolve();
+    ready.then(function () { if (m.typesetPromise) return m.typesetPromise([stage]); }).catch(function () {});
+  }
+  function countKnown() { return CARDS.filter(function (c) { return known[c.id]; }).length; }
+  function build() {
+    queue = order.filter(function (id) { return deck === 'all' || !known[id]; });
+    pos = 0; revealed = false; render();
+  }
+  function render() {
+    var k = countKnown(), total = CARDS.length;
+    $('stats').textContent = k + ' su ' + total + ' sapute, ' + (total - k) + ' da ripassare';
+    $('barKnown').style.width = (100 * k / total) + '%';
+    $('deckAll').textContent = 'Tutte (' + total + ')';
+    $('deckReview').textContent = 'Da ripassare (' + (total - k) + ')';
+    $('deckAll').setAttribute('aria-pressed', deck === 'all');
+    $('deckReview').setAttribute('aria-pressed', deck === 'review');
+    if (!queue.length) {
+      stage.innerHTML = '<div class="done"><p><b>Niente da ripassare.</b> Hai segnato tutte le schede come sapute.</p><div class="row"><button class="btn" data-act="all">Rivedi tutte</button></div></div>';
+      return;
+    }
+    if (pos >= queue.length) {
+      var left = total - k;
+      stage.innerHTML = '<div class="done"><p><b>Giro finito.</b> Sapute: ' + k + ' su ' + total + '.</p><div class="row">' +
+        (left ? '<button class="btn" data-act="review">Ripassa le ' + left + ' da rivedere</button>' : '') +
+        '<button class="btn" data-act="restart">Ricomincia</button></div></div>';
+      return;
+    }
+    var c = byId[queue[pos]];
+    var html = '<div class="flash" id="flash" role="button" tabindex="0" aria-label="Gira la scheda">' +
+      '<div class="meta"><span>' + c.c + '</span><span>' + (pos + 1) + ' / ' + queue.length + '</span></div>' +
+      '<div class="q">' + c.q + '</div>';
+    if (revealed) {
+      html += '<div class="ans">' + c.a + '</div>' + (c.h ? '<p class="how2">' + c.h + '</p>' : '');
+    } else {
+      html += '<div class="tapto">Prova a rispondere a mente, poi gira la scheda.</div>';
+    }
+    html += '</div><div class="actions">';
+    if (revealed) {
+      html += '<button class="big no" data-act="no">Da rivedere</button><button class="big yes" data-act="yes">Lo so</button>';
+    } else {
+      html += '<button class="big solo" data-act="flip">Mostra risposta</button>';
+    }
+    html += '</div>';
+    stage.innerHTML = html;
+    typeset();
+  }
+  function flip() { if (pos < queue.length) { revealed = !revealed; render(); } }
+  function rate(ok) {
+    if (!revealed || pos >= queue.length) return;
+    var id = queue[pos];
+    if (ok) known[id] = true; else delete known[id];
+    save(); pos++; revealed = false; render();
+  }
+  stage.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-act]');
+    if (b) {
+      var a = b.getAttribute('data-act');
+      if (a === 'flip') flip();
+      else if (a === 'yes') rate(true);
+      else if (a === 'no') rate(false);
+      else if (a === 'review') { deck = 'review'; build(); }
+      else if (a === 'all') { deck = 'all'; build(); }
+      else if (a === 'restart') build();
+      return;
+    }
+    if (e.target.closest('#flash')) flip();
+  });
+  stage.addEventListener('keydown', function (e) {
+    if ((e.key === 'Enter' || e.key === ' ') && e.target.id === 'flash') { e.preventDefault(); flip(); }
+  });
+  document.addEventListener('keydown', function (e) {
+    if ($('study').hidden) return;
+    var t = e.target.tagName;
+    if (e.key === ' ' && t !== 'BUTTON' && t !== 'A') { e.preventDefault(); flip(); }
+    else if (e.key === 'ArrowRight') rate(true);
+    else if (e.key === 'ArrowLeft') rate(false);
+  });
+  $('deckAll').addEventListener('click', function () { deck = 'all'; build(); });
+  $('deckReview').addEventListener('click', function () { deck = 'review'; build(); });
+  $('shuffle').addEventListener('click', function () {
+    for (var i = order.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1)), t = order[i]; order[i] = order[j]; order[j] = t;
+    }
+    build();
+  });
+  $('reset').addEventListener('click', function () {
+    var b = $('reset');
+    if (!resetArmed) {
+      resetArmed = true; b.textContent = 'Conferma azzeramento';
+      resetTimer = setTimeout(function () { resetArmed = false; b.textContent = 'Azzera progressi'; }, 3000);
+      return;
+    }
+    clearTimeout(resetTimer); resetArmed = false; b.textContent = 'Azzera progressi';
+    known = {}; save(); build();
+  });
+
+  function setMode(study) {
+    $('sheet').hidden = study; $('secnav').hidden = study; $('study').hidden = !study;
+    $('tabSheet').setAttribute('aria-selected', !study);
+    $('tabStudy').setAttribute('aria-selected', study);
+    if (study) build();
+  }
+  $('tabSheet').addEventListener('click', function () { setMode(false); });
+  $('tabStudy').addEventListener('click', function () { setMode(true); });
+})();
+</script>
+</div>
+
+</body></html>

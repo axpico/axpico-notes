@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -209,9 +208,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1792852354684-upabzlp",
-                      "conversationId": null,
-                      "draftModel": "opus",
-                      "providerId": "claude"
+                      "conversationId": "conv-1792853062131-nlbfythsi"
                     }
                   ],
                   "activeTabId": "tab-1792852354684-upabzlp"
@@ -253,19 +250,19 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "41c9241263f38e27",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/HTML/Limiti notevoli.html",
+    "Politecnico/Analisi 1/Formulario AM1 - asintotici.pdf",
+    "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html",
     "Politecnico/Analisi 1/HTML/sedGHkJsD",
     "Politecnico/Analisi 1/HTML/sedxtobzQ",
     "Politecnico/Analisi 1/HTML/sedmOKh8v",
-    "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html",
     "Politecnico/Analisi 1/HTML/sedlA5nef",
     "Politecnico/Analisi 1/HTML/sedCmvFOc",
     "Politecnico/Analisi 1/HTML/sedWQdxXv",
     "Politecnico/Analisi 1/HTML/sedazjLtL",
     "Politecnico/Analisi 1/HTML/sedXy7g4A",
-    "Politecnico/Analisi 1/HTML/sedIY8euq",
-    "Politecnico/Analisi 1/HTML/sedsAL3vT",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
     "Politecnico/Analisi 1/Indice.md",
