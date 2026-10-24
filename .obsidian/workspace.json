@@ -44,7 +44,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Esplora file"
             }
           },
           {
@@ -182,7 +182,7 @@
               "type": "empty",
               "state": {},
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Nuova scheda"
             }
           },
           {
@@ -207,11 +207,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792757791838-dunng0d",
-                      "conversationId": "conv-1792838827526-qh5q67j9x"
+                      "tabId": "tab-1792850646059-iyt6rl9",
+                      "conversationId": null,
+                      "draftModel": "opus",
+                      "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1792757791838-dunng0d"
+                  "activeTabId": "tab-1792850646059-iyt6rl9"
                 }
               },
               "icon": "bot",
@@ -232,25 +234,26 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 326.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "audio-recorder:Start/stop recording": false,
-      "bases:Create new base": false,
+      "switcher:Apri selettore rapido": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota giornaliera": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "audio-recorder:Avvia/ferma registrazione": false,
+      "bases:Crea nuova Base": false,
       "omnisearch:Omnisearch": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "8795db8831cc8f72",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/HTML/1 - Successioni.html",
     "Politecnico/Analisi 1/HTML/sedgkuld6",
