@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analisi 1 · 3 — Serie numeriche</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<style>
+:root{--bg:#f5f2ea;--paper:#fffdf8;--ink:#1c1a16;--mute:#6b6558;--line:#d9d2c3;--acc:#1f4fbf;--red:#c2412d;--grn:#2f7d4f;--amb:#a86b00}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{border-bottom:1px solid var(--line);background:var(--paper)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header .wrap{display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;padding:18px 24px}
+header b{font:600 13px/1 ui-monospace,monospace;letter-spacing:.08em;color:var(--mute);text-transform:uppercase}
+header a{color:var(--ink);text-decoration:none;font-size:15px;padding:4px 0;border-bottom:2px solid transparent}
+header a.on{border-color:var(--acc);font-weight:600}
+h1{font:600 44px/1.1 "Iowan Old Style",Georgia,serif;margin:48px 0 8px}
+.lead{color:var(--mute);max-width:720px;font-size:18px}
+h2{font:600 28px/1.2 "Iowan Old Style",Georgia,serif;margin:64px 0 12px;padding-top:12px;border-top:1px solid var(--line)}
+h2 small{font:500 13px ui-monospace,monospace;color:var(--mute);display:block;margin-bottom:6px}
+h3{font:600 19px/1.3 Georgia,serif;margin:28px 0 8px}
+.layout{display:grid;grid-template-columns:200px 1fr;gap:40px}
+nav.toc{position:sticky;top:16px;align-self:start;font-size:14px;margin-top:56px}
+nav.toc a{display:block;color:var(--mute);text-decoration:none;padding:3px 0}
+nav.toc a:hover{color:var(--acc)}
+@media(max-width:860px){.layout{grid-template-columns:1fr}nav.toc{display:none}}
+.box{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--acc);padding:14px 18px;margin:16px 0;border-radius:4px}
+.box>.t{font:700 12px ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px;color:var(--acc)}
+.thm{border-left-color:var(--grn)}.thm>.t{color:var(--grn)}
+.warn{border-left-color:var(--red)}.warn>.t{color:var(--red)}
+.tip{border-left-color:var(--amb)}.tip>.t{color:var(--amb)}
+details{background:var(--paper);border:1px solid var(--line);border-radius:4px;margin:10px 0;padding:0 16px}
+details>summary{cursor:pointer;padding:10px 0;font-weight:600}
+details[open]>summary{border-bottom:1px dashed var(--line);margin-bottom:8px}
+details.proof>summary{color:var(--grn)}
+.lab{background:#fff;border:1px solid var(--ink);border-radius:6px;padding:16px 18px;margin:22px 0;box-shadow:4px 4px 0 var(--ink)}
+.lab>.t{font:700 12px ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.lab>.t::before{content:"▶ LAB · "}
+.ctl{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:10px;font-size:14px}
+.ctl label{display:flex;gap:8px;align-items:center}
+select,input,button{font:inherit;font-size:14px;padding:4px 8px;border:1px solid var(--line);border-radius:4px;background:#fff}
+input[type=range]{padding:0;width:180px;accent-color:var(--acc)}
+button{cursor:pointer;background:var(--ink);color:#fff;border-color:var(--ink)}
+canvas{width:100%;height:320px;display:block;border:1px solid var(--line);border-radius:4px;background:#fffefb}
+.out{font:14px/1.6 ui-monospace,monospace;background:#f3f0e8;border-radius:4px;padding:10px 12px;margin-top:10px;white-space:pre-wrap;overflow-x:auto}
+table{border-collapse:collapse;margin:12px 0;font-size:15px;background:var(--paper)}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#ece7da}
+.ok{color:var(--grn);font-weight:600}.no{color:var(--red);font-weight:600}
+footer{margin:80px 0 40px;color:var(--mute);font-size:14px}
+/* --- fix layout pannelli stretti --- */
+.layout>main{min-width:0}
+main table{display:block;overflow-x:auto;max-width:100%}
+.katex-display{overflow-x:auto;overflow-y:hidden;padding:2px 0}
+.out{max-width:100%;white-space:pre;overflow-x:auto}
+@media(max-width:860px){
+  .wrap{padding:0 14px}
+  header .wrap{padding:12px 14px;gap:12px}
+  h1{font-size:32px;margin-top:28px}
+  h2{font-size:23px;margin-top:44px}
+  .lead{font-size:16px}
+  .lab{padding:12px;box-shadow:3px 3px 0 var(--ink)}
+  canvas{height:240px}
+  input[type=range]{width:130px}
+}
+/* --- esercizi con autovalutazione --- */
+.score{position:sticky;top:0;z-index:5;background:var(--ink);color:#fff;border-radius:4px;padding:8px 14px;margin:14px 0;display:flex;gap:14px;align-items:center;flex-wrap:wrap;font:14px ui-monospace,monospace}
+.score .bar{flex:1;min-width:120px;height:8px;background:#444;border-radius:4px;overflow:hidden}
+.score .bar i{display:block;height:100%;background:#5fbf86;width:0;transition:width .3s}
+.score button{background:#fff;color:var(--ink);padding:2px 10px}
+.ex{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:12px 16px;margin:14px 0}
+.ex.right{border-color:var(--grn);box-shadow:inset 4px 0 0 var(--grn)}
+.ex.wrong{border-color:var(--red);box-shadow:inset 4px 0 0 var(--red)}
+.ex .q b:first-child{font-family:ui-monospace,monospace;margin-right:6px}
+.ex .lv{color:var(--amb);font-size:13px;margin-left:4px}
+.ex .ctrl{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0}
+.ex .ctrl input{width:190px}
+.ex .fb{font-weight:600}
+.ex ol.opts{list-style:upper-alpha;padding-left:28px}
+.ex ol.opts li{cursor:pointer;padding:3px 8px;border-radius:4px;margin:2px 0}
+.ex ol.opts li:hover{background:#ece7da}
+.ex ol.opts li.pick-ok{background:rgba(47,125,79,.18)}
+.ex ol.opts li.pick-ko{background:rgba(194,65,45,.15);text-decoration:line-through}
+.ex .hint{font-size:13px;color:var(--mute)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <b>Analisi 1 · interattivo</b>
+  <a href="1 - Successioni.html">1 · Successioni</a>
+  <a href="2 - Limiti di successioni.html">2 · Limiti</a>
+  <a class="on" href="3 - Serie numeriche.html">3 · Serie</a>
+</div></header>
+
+<div class="wrap layout">
+<nav class="toc">
+  <a href="#def">1. Definizioni</a>
+  <a href="#tel">2. Telescopiche</a>
+  <a href="#geo">3. Geometrica</a>
+  <a href="#arm">4. Armonica gen.</a>
+  <a href="#nec">5. Condizione necessaria</a>
+  <a href="#lin">6. Linearità</a>
+  <a href="#pos">7. Termini ≥ 0, confronto</a>
+  <a href="#asi">8. Confronto asintotico</a>
+  <a href="#ese">9. Esercizi svolti</a>
+  <a href="#rap">10. Rapporto e radice</a>
+  <a href="#lei">11. Leibniz</a>
+  <a href="#ass">12. Convergenza assoluta</a>
+  <a href="#par">13. Serie con parametro</a>
+  <a href="#str">14. Strategia</a>
+  <a href="#quiz">15. Autoverifica</a>
+  <a href="#eser"><b>✎ Esercizi</b></a>
+</nav>
+<main>
+<h1>Serie numeriche</h1>
+<p class="lead">Una serie è una "somma di infiniti termini". Poiché non si possono sommare infiniti numeri uno alla volta, la somma si <em>definisce</em> come limite delle somme parziali: lo studio delle serie è quindi lo studio di una particolare successione.</p>
+
+<!-- ===== 1 ===== -->
+<h2 id="def"><small>§1</small>Definizioni</h2>
+<div class="box"><div class="t">Definizione</div>
+Data $\{a_k\}$, le <b>somme parziali</b> sono $S_n:=\sum_{k=1}^na_k$ (ricorsivamente $S_n=S_{n-1}+a_n$). La successione $\{S_n\}$ è la <b>serie di termine generale $a_k$</b>, e la sua <b>somma</b> è
+$$\sum_{k=1}^\infty a_k:=\lim_{n\to\infty}S_n .$$
+La serie è <b>convergente</b> se il limite è finito, <b>divergente</b> se è $\pm\infty$, <b>indeterminata</b> se non esiste. Questa proprietà è il <b>carattere</b> della serie.
+</div>
+<div class="box warn"><div class="t">Non confondere</div>$a_n$ (termine generale) e $S_n$ (somma parziale) sono <b>due successioni diverse</b>. Il carattere della serie è il comportamento di $S_n$. Esempio: $a_n=\frac1n\to0$, ma $S_n\to+\infty$.</div>
+
+<div class="lab"><div class="t">Somme parziali in diretta</div>
+  <div class="ctl">
+    <label>$a_k=$ <select id="P1"></select></label>
+    <label>$n$ fino a <input type="range" id="P2" min="10" max="500" value="60"> <span id="P2v"></span></label>
+    <label><input type="checkbox" id="P3" checked> mostra anche $a_k$</label>
+  </div>
+  <canvas id="cP"></canvas>
+  <div class="out" id="oP"></div>
+</div>
+
+<!-- ===== 2 ===== -->
+<h2 id="tel"><small>§2</small>Serie telescopiche</h2>
+<p>$a_k=\frac1{k(k+1)}=\frac1k-\frac1{k+1}$ (fratti semplici). Le somme parziali "si accorciano":
+$$S_n=\left(1-\tfrac12\right)+\left(\tfrac12-\tfrac13\right)+\dots+\left(\tfrac1n-\tfrac1{n+1}\right)=1-\frac1{n+1}\to1 .$$</p>
+<div class="box"><div class="t">Caso generale</div>
+Se $a_k=A_{k+1}-A_k$, allora $S_n=A_{n+1}-A_1$ (si cancellano tutti i termini intermedi). Quindi la serie converge $\iff A_k$ ha limite finito $L$, e la somma è $L-A_1$.
+</div>
+<p>Nell'esempio $a_k=A_k-A_{k+1}$ con $A_k=\frac1k\to0$: segno opposto, somma $=A_1-0=1$. È uno dei pochi casi in cui si calcola la <b>somma esatta</b>, non solo il carattere.</p>
+
+<!-- ===== 3 ===== -->
+<h2 id="geo"><small>§3</small>Serie geometrica</h2>
+<p>$\sum_{k=0}^\infty x^k$, con ragione $x\in\mathbb R$. Da $(1-x)S_n=\sum_{k=0}^nx^k-\sum_{k=0}^nx^{k+1}=1-x^{n+1}$ (stesso meccanismo di cancellazione):
+$$S_n=\begin{cases}\dfrac{1-x^{n+1}}{1-x}&x\ne1\\[1mm]n+1&x=1\end{cases}\qquad\Longrightarrow\qquad \sum_{k=0}^\infty x^k=\begin{cases}\dfrac1{1-x}&|x|\lt1\ \text{(converge)}\\+\infty&x\ge1\ \text{(diverge)}\\\nexists&x\le-1\ \text{(indeterminata)}\end{cases}$$</p>
+<p>Il passaggio al limite usa la successione geometrica $x^{n+1}$ (vedi file 2, §9a). È la serie di riferimento dei criteri del rapporto e della radice.</p>
+<div class="lab"><div class="t">Ragione x</div>
+  <div class="ctl"><label>$x$ = <input type="range" id="Q1" min="-1.2" max="1.1" step="0.01" value="0.6"> <span id="Q1v"></span></label></div>
+  <canvas id="cQ"></canvas>
+  <div class="out" id="oQ"></div>
+</div>
+
+<!-- ===== 4 ===== -->
+<h2 id="arm"><small>§4</small>Serie armonica e armonica generalizzata</h2>
+$$\sum_{k=1}^\infty\frac1k=+\infty,\qquad\qquad \sum_{k=1}^\infty\frac1{k^\alpha}\ \text{ converge}\iff\alpha\gt1 .$$
+<p>Per $\alpha\le0$ il termine non è infinitesimo; per $0\lt\alpha\le1$ i termini sono positivi e la somma è $+\infty$. Le dimostrazioni (criterio dell'integrale o di condensazione) si assumono note; l'idea è che $\sum\frac1{k^\alpha}$ si comporta come $\int_1^\infty\frac{dx}{x^\alpha}$. In particolare $S_n=\sum_{k\le n}\frac1k\approx\log n+0{,}5772$: diverge, ma lentissimamente.</p>
+<div class="box tip"><div class="t">Da sapere a memoria</div>$\sum\frac1{k^\alpha}$ converge $\iff\alpha\gt1$. Il caso limite $\alpha=1$ <b>diverge</b>, anche se $\frac1k\to0$.</div>
+<div class="lab"><div class="t">S_n per 1/k^α su scale enormi</div>
+  <div class="ctl"><label>$\alpha$ = <input type="range" id="H1" min="0.5" max="2.5" step="0.05" value="1"> <span id="H1v"></span></label></div>
+  <div class="out" id="oH"></div>
+</div>
+
+<!-- ===== 5 ===== -->
+<h2 id="nec"><small>§5</small>Condizione necessaria di convergenza</h2>
+<div class="box thm"><div class="t">Teorema</div>$\displaystyle\sum a_n$ converge ⟹ $a_n\to0$.</div>
+<details class="proof"><summary>Dimostrazione</summary>Sia $S=\lim S_n\in\mathbb R$. Poiché $a_n=S_n-S_{n-1}$ e $S_{n-1}$ (successione traslata) ha lo stesso limite, $a_n\to S-S=0$. ∎</details>
+<p><b>Uso pratico (contronominale):</b> se $a_n\not\to0$ la serie <b>non converge</b>; se inoltre $a_n\ge0$, diverge a $+\infty$. Es.: $\sum\arctan\sqrt{k^3+2}$ ha $a_k\to\frac\pi2\ne0$, quindi diverge.</p>
+<div class="box warn"><div class="t">Necessaria, non sufficiente</div>$a_n\to0$ non conclude nulla: $\frac1k\to0$ ma $\sum\frac1k=+\infty$.</div>
+
+<!-- ===== 6 ===== -->
+<h2 id="lin"><small>§6</small>Linearità</h2>
+<p>Se $\sum a_k$, $\sum b_k$ sono regolari e la somma non è della forma $+\infty-\infty$: $\sum(a_k+b_k)=\sum a_k+\sum b_k$. Per $c\ne0$: $\sum ca_k=c\sum a_k$. (Segue dall'algebra dei limiti applicata alle somme parziali; $c=0$ è escluso per evitare $0\cdot\infty$.)</p>
+<div class="box tip"><div class="t">Conseguenza</div>Modificare un numero finito di termini cambia il valore della somma ma <b>non il carattere</b>. Per questo tutti i criteri valgono con ipotesi "definitivamente".</div>
+
+<!-- ===== 7 ===== -->
+<h2 id="pos"><small>§7</small>Serie a termini non negativi e criterio del confronto</h2>
+<div class="box thm"><div class="t">Teorema (regolarità)</div>Se $a_k\ge0$, la serie converge oppure diverge a $+\infty$: <b>non è mai indeterminata</b>.</div>
+<details class="proof"><summary>Dimostrazione</summary>$S_{n+1}=S_n+a_{n+1}\ge S_n$: $\{S_n\}$ è crescente, quindi regolare per il teorema sulle successioni monotone (limite $=\sup S_n$). ∎</details>
+<p>Per i termini $\ge0$ l'unica domanda è quindi: <b>$S_n$ è limitata?</b> Limitata ⟹ converge; illimitata ⟹ $+\infty$.</p>
+
+<div class="box thm"><div class="t">Criterio del confronto</div>
+$0\le a_n\le b_n$ definitivamente. Allora: (1) $\sum b_n$ converge ⟹ $\sum a_n$ converge; (2) $\sum a_n$ diverge ⟹ $\sum b_n$ diverge.
+</div>
+<details class="proof"><summary>Dimostrazione</summary>
+$S_n=\sum^na_k\le T_n=\sum^nb_k$; entrambe crescenti, quindi regolari, con limiti $S\le T$ (confronto). Se $T\lt\infty$ allora $0\le S\le T$ è finito. Se $S=+\infty$ allora $T=+\infty$. ∎
+</details>
+<div class="box warn"><div class="t">Direzione delle implicazioni</div>Per <b>convergere</b> serve un <b>maggiorante</b> convergente; per <b>divergere</b> un <b>minorante</b> divergente. Un maggiorante divergente o un minorante convergente non dicono nulla.</div>
+<p><b>Es. 1.</b> $\sum\frac{\arctan\sqrt{k+2}}{k^4}$: $0\le a_k\lt\frac{\pi/2}{k^4}$, maggiorante convergente ($\alpha=4$) ⟹ <span class="ok">converge</span>.<br>
+<b>Es. 2.</b> $\sum\frac{\sin k+3}{\sqrt k}$: $\sin k+3\ge2$, quindi $a_k\ge\frac2{\sqrt k}$, minorante divergente ($\alpha=\frac12$) ⟹ <span class="no">diverge</span>.</p>
+
+<!-- ===== 8 ===== -->
+<h2 id="asi"><small>§8</small>Criterio del confronto asintotico</h2>
+<div class="box thm"><div class="t">Teorema</div>
+$a_n\ge0$, $b_n\gt0$, $\exists\,\ell=\lim\frac{a_n}{b_n}\in[0,+\infty]$.<br>
+(1) $\sum b_n$ converge e $\ell\lt+\infty$ ⟹ $\sum a_n$ converge. &nbsp;(2) $\sum b_n$ diverge e $\ell\gt0$ ⟹ $\sum a_n$ diverge.
+</div>
+<details class="proof"><summary>Dimostrazione</summary>
+(1) Definitivamente $\frac{a_n}{b_n}\lt\ell+\varepsilon$, cioè $a_n\lt(\ell+\varepsilon)b_n$: maggiorante convergente.<br>
+(2) Se $\ell\in(0,\infty)$, con $\varepsilon=\frac\ell3$: $a_n\gt\frac{2\ell}3b_n$, minorante divergente. Se $\ell=+\infty$: con $M=1$, $a_n\gt b_n$ definitivamente. ∎
+</details>
+<p><b>Corollario:</b> $a_n\sim b_n$ (termini positivi) ⟹ <b>stesso carattere</b>. Il caso pratico è $b_n=\frac1{n^\alpha}$, con $\ell=\lim n^\alpha a_n$:</p>
+<table><tr><th>condizione</th><th>conclusione</th></tr>
+<tr><td>$\ell\in[0,+\infty)$ e $\alpha\gt1$</td><td class="ok">converge</td></tr>
+<tr><td>$\ell\in(0,+\infty]$ e $\alpha\le1$</td><td class="no">diverge</td></tr>
+<tr><td>$\ell=0$ e $\alpha\le1$, oppure $\ell=\infty$ e $\alpha\gt1$</td><td>nulla: cambia $\alpha$</td></tr></table>
+
+<!-- ===== 9 ===== -->
+<h2 id="ese"><small>§9</small>Esercizi svolti (confronto)</h2>
+<details><summary>1. $\sum\log\left(1+\frac1{n^2}\right)$</summary>$a_n\gt0$, $a_n\sim\frac1{n^2}$ ($\log(1+\varepsilon_n)\sim\varepsilon_n$). $\alpha=2\gt1$ ⟹ <span class="ok">converge</span> (corollario).</details>
+<details><summary>2. $\sum\frac{\sqrt{n+1}-\sqrt n}{\sqrt{n^2+n+1}}$</summary>Il numeratore è $\infty-\infty$: si razionalizza, $a_n=\frac1{\sqrt{n^2+n+1}(\sqrt{n+1}+\sqrt n)}$. Poi $\sqrt{n^2+n+1}\sim n$ e $\sqrt{n+1}+\sqrt n\sim2\sqrt n$ (verificato direttamente sul rapporto, non sommando equivalenze). $a_n\sim\frac1{2n^{3/2}}$: $\ell=\frac12$, $\alpha=\frac32$ ⟹ <span class="ok">converge</span>.</details>
+<details><summary>3. $\sum\sin\frac1n\arctan\left(n^2+\sqrt{e^n-1}\right)$</summary>$a_n\gt0$; $\frac{a_n}{1/n}=\frac{\sin(1/n)}{1/n}\cdot\arctan(\dots)\to\frac\pi2\in(0,\infty)$ e $\sum\frac1n$ diverge ⟹ <span class="no">diverge</span>.</details>
+<details><summary>4. $\sum\frac1{n!}$</summary>Con $b_n=\frac1{n^2}$: $\frac{a_n}{b_n}=\frac{n^2}{n!}\to0$ (gerarchia), $\ell=0$ e $\sum b_n$ converge ⟹ <span class="ok">converge</span>. ($\ell=0$ funziona solo in direzione "converge".) La somma è $e-1$.</details>
+<details><summary>5. $\sum\frac{\log(n+3)}{n^3}$</summary>Con $b_n=\frac1{n^\alpha}$, $1\lt\alpha\lt3$ (es. 2): $\frac{a_n}{b_n}=\frac{\log(n+3)}{n^{3-\alpha}}\to0$ ⟹ <span class="ok">converge</span>. Serve $\alpha\gt1$ per la convergenza di $\sum b_n$ e $\alpha\lt3$ perché il rapporto vada a $0$: il log si "assorbe" sacrificando un po' di esponente.</details>
+
+<!-- ===== 10 ===== -->
+<h2 id="rap"><small>§10</small>Criteri del rapporto e della radice</h2>
+<p>Il confronto richiede di <em>trovare</em> la serie di paragone. Rapporto e radice la costruiscono da soli: confrontano con una <b>geometrica</b>.</p>
+<div class="box thm"><div class="t">Criterio del rapporto</div>
+$a_n\gt0$ e $\exists\,\ell=\lim\frac{a_{n+1}}{a_n}\in[0,+\infty]$. Se $\ell\lt1$ la serie <b>converge</b>; se $\ell\gt1$ <b>diverge</b> (anzi $a_n\not\to0$).
+</div>
+<details class="proof"><summary>Dimostrazione</summary>
+<b>$\ell\lt1$:</b> scelgo $x\in(\ell,1)$. Definitivamente $\frac{a_{n+1}}{a_n}\lt x$, quindi iterando $a_{\bar n+k}\lt a_{\bar n}x^k$, cioè $a_n\lt(a_{\bar n}x^{-\bar n})x^n$: maggiorante geometrico di ragione $x\lt1$, convergente. Confronto.<br>
+<b>$\ell\gt1$:</b> definitivamente $\frac{a_{n+1}}{a_n}\gt1$: $a_n$ è crescente e positiva, quindi $a_n\ge a_{\bar n+1}\gt0$ non è infinitesima. Per la condizione necessaria non converge; essendo a termini positivi, $\sum a_n=+\infty$. ∎
+</details>
+<div class="box thm"><div class="t">Criterio della radice</div>
+$a_n\ge0$ e $\exists\,\ell=\lim\sqrt[n]{a_n}$. Se $\ell\lt1$ converge ($a_n\lt x^n$ definitivamente); se $\ell\gt1$ diverge ($a_n\gt1$ definitivamente).
+</div>
+<div class="box warn"><div class="t">ℓ = 1 non decide</div>$\sum\frac1n$ (diverge) e $\sum\frac1{n^2}$ (converge) hanno entrambe rapporto e radice $\to1$. Rapporto e radice "vedono" solo comportamenti esponenziali, non le potenze. Se il limite non esiste, il criterio non si applica.</div>
+<p><b>Quando usarli:</b> rapporto con fattoriali ed esponenziali (si semplifica quasi tutto); radice con potenze $n$-esime. Se $\frac{a_{n+1}}{a_n}\to\ell$ allora anche $\sqrt[n]{a_n}\to\ell$: la radice è almeno altrettanto potente.</p>
+<p><b>Esempi:</b> $\sum\frac1{n!}$: rapporto $\frac1{n+1}\to0$ ⟹ converge. $\ \sum\frac n{3^n}$: radice $\frac{\sqrt[n]n}3\to\frac13$ ⟹ converge.</p>
+<div class="lab"><div class="t">Calcolatore rapporto / radice</div>
+  <div class="ctl"><label>$a_n=$ <select id="R1"></select></label></div>
+  <div class="out" id="oR"></div>
+</div>
+
+<!-- ===== 11 ===== -->
+<h2 id="lei"><small>§11</small>Serie a segni alterni: criterio di Leibniz</h2>
+<div class="box thm"><div class="t">Teorema (Leibniz)</div>
+Se $a_n\gt0$, $a_n\to0$ e $a_n$ è <b>decrescente</b>, allora $\sum(-1)^na_n$ converge, e
+$$|S_n-S|\le a_{n+1}\qquad\text{(l'errore è al più il primo termine trascurato).}$$
+</div>
+<p><b>Idea:</b> le somme parziali pari e dispari sono monotone in versi opposti e la loro distanza è $a_{n+1}\to0$: "si stringono" attorno a $S$ oscillando. Tutte e tre le ipotesi servono (soprattutto la monotonia), e Leibniz dà solo convergenza <b>semplice</b>.</p>
+<p><b>Es.</b> $\sum\frac{(-1)^n}n$: $\frac1n\gt0$, $\to0$, decrescente ⟹ converge (a $-\log2$). $\ \sum(-1)^n\arctan\frac1{\sqrt n}$: $\arctan$ è crescente, quindi $a_n$ decresce come $\frac1{\sqrt n}$ ⟹ converge.</p>
+<div class="lab"><div class="t">Oscillazione e stima dell'errore</div>
+  <div class="ctl"><label>serie <select id="L1"><option value="0">Σ (−1)ⁿ / n</option><option value="1">Σ (−1)ⁿ arctan(1/√n)</option><option value="2">Σ (−1)ⁿ / n²</option></select></label>
+  <label>$n$ fino a <input type="range" id="L2" min="10" max="200" value="40"></label></div>
+  <canvas id="cL"></canvas>
+  <div class="out" id="oL"></div>
+</div>
+
+<!-- ===== 12 ===== -->
+<h2 id="ass"><small>§12</small>Convergenza assoluta</h2>
+<div class="box"><div class="t">Definizione</div>$\sum a_n$ <b>converge assolutamente</b> se $\sum|a_n|$ converge.</div>
+<div class="box thm"><div class="t">Teorema</div>Convergenza assoluta ⟹ convergenza semplice.</div>
+<details class="proof"><summary>Dimostrazione</summary>
+Da $-|a_n|\le a_n\le|a_n|$: $0\le a_n+|a_n|\le2|a_n|$. Per confronto $\sum(a_n+|a_n|)$ converge, e $\sum a_n=\sum(a_n+|a_n|)-\sum|a_n|$ è differenza di serie convergenti (linearità). ∎
+</details>
+<div class="box warn"><div class="t">Il viceversa è falso</div>$\sum\frac{(-1)^n}n$ converge (Leibniz) ma $\sum\frac1n$ diverge: la serie è <b>condizionatamente convergente</b>. (Curiosità: per Riemann, riordinando una serie condizionatamente convergente si può ottenere qualunque somma; le assolutamente convergenti invece sono stabili per riordinamento.)</div>
+
+<!-- ===== 13 ===== -->
+<h2 id="par"><small>§13</small>Esercizio con parametro</h2>
+<p>Carattere di $\displaystyle\sum_{n=1}^\infty\frac{(\tan\alpha)^n}{n^2}\log n$, $\alpha\in\left(-\frac\pi2,\frac\pi2\right)$. Poiché $\tan$ è crescente con $\tan(\pm\frac\pi4)=\pm1$, i casi sono separati da $\alpha=\pm\frac\pi4$.</p>
+<ol>
+<li><b>$|\tan\alpha|\gt1$:</b> l'esponenziale batte il polinomio, $|a_n|\to\infty$. Se $\alpha\gt\frac\pi4$, $a_n\gt0$ ⟹ diverge a $+\infty$; se $\alpha\lt-\frac\pi4$, $a_n$ oscilla con modulo $\to\infty$ ⟹ non converge (indeterminata).</li>
+<li><b>$|\tan\alpha|\lt1$:</b> rapporto su $|a_n|$: $|\tan\alpha|\frac{n^2}{(n+1)^2}\frac{\log(n+1)}{\log n}\to|\tan\alpha|\lt1$ ⟹ converge assolutamente.</li>
+<li><b>$\alpha=\pm\frac\pi4$:</b> il rapporto dà $1$, si studia a mano. $\sum\frac{\log n}{n^2}$ converge (confronto asintotico con $\frac1{n^p}$, $1\lt p\lt2$), quindi per $\alpha=-\frac\pi4$ converge assolutamente.</li>
+</ol>
+<div class="lab"><div class="t">Muovi α</div>
+  <div class="ctl"><label>$\alpha$ (gradi) = <input type="range" id="T1" min="-89" max="89" step="0.5" value="30"> <span id="T1v"></span></label></div>
+  <div class="out" id="oT"></div>
+</div>
+
+<!-- ===== 14 ===== -->
+<h2 id="str"><small>§14</small>Strategia d'esame</h2>
+<ol>
+<li><b>Condizione necessaria:</b> $a_n\to0$? Se no, la serie non converge (fine).</li>
+<li><b>Segno:</b> termini $\ge0$ definitivamente? Allora la serie è regolare: basta decidere se $S_n$ è limitata.</li>
+<li><b>Termini ≥ 0:</b> trova il termine dominante con le stime asintotiche e fai confronto asintotico con $\frac1{n^\alpha}$; con fattoriali/esponenziali usa rapporto; con potenze $n$-esime la radice.</li>
+<li><b>Segno qualunque:</b> studia prima $\sum|a_n|$. Se converge, hai convergenza assoluta. Altrimenti, se è alternata, prova Leibniz (verifica la monotonia!).</li>
+<li><b>Parametri:</b> casi in cui rapporto/radice danno $\ell=1$ vanno studiati a parte.</li>
+</ol>
+<table>
+<tr><th>Strumento</th><th>Ipotesi</th><th>Conclusione</th></tr>
+<tr><td>definizione</td><td>telescopiche, geometriche</td><td>somma esatta</td></tr>
+<tr><td>$a_n\not\to0$</td><td>sempre</td><td>non converge</td></tr>
+<tr><td>confronto</td><td>$0\le a_n\le b_n$</td><td>$b$ conv ⟹ $a$ conv; $a$ div ⟹ $b$ div</td></tr>
+<tr><td>confronto asintotico</td><td>$\ell=\lim a_n/b_n$</td><td>$\ell\lt\infty$ + $b$ conv ⟹ conv; $\ell\gt0$ + $b$ div ⟹ div</td></tr>
+<tr><td>rapporto / radice</td><td>$a_n\gt0$ / $\ge0$</td><td>$\ell\lt1$ conv, $\ell\gt1$ div, $\ell=1$ ?</td></tr>
+<tr><td>Leibniz</td><td>$(-1)^na_n$, $a_n\downarrow0$</td><td>converge, $|S_n-S|\le a_{n+1}$</td></tr>
+<tr><td>assoluta</td><td>$\sum|a_n|\lt\infty$</td><td>converge</td></tr>
+</table>
+
+<!-- ===== 15 ===== -->
+<h2 id="quiz"><small>§15</small>Autoverifica</h2>
+<details><summary>1. $\sum\frac{n^2+1}{n^4+3n}$</summary>$a_n\sim\frac1{n^2}$ ⟹ converge (corollario del confronto asintotico).</details>
+<details><summary>2. $\sum\frac{2^n}{n!}$</summary>Rapporto $\frac2{n+1}\to0$ ⟹ converge (somma $e^2-1$).</details>
+<details><summary>3. $\sum\left(\frac{n}{2n+1}\right)^n$</summary>Radice: $\frac n{2n+1}\to\frac12\lt1$ ⟹ converge.</details>
+<details><summary>4. $\sum\frac{(-1)^n}{\sqrt n}$: assoluta o semplice?</summary>$\sum\frac1{\sqrt n}$ diverge ($\alpha=\frac12$): non assoluta. Leibniz ($\frac1{\sqrt n}\downarrow0$) ⟹ converge semplicemente: condizionatamente convergente.</details>
+<details><summary>5. $\sum\left(1-\cos\frac1n\right)$</summary>$1-\cos\frac1n\sim\frac1{2n^2}$ ⟹ converge.</details>
+<details><summary>6. $\sum\frac{\sin n}{n^2}$</summary>Segno variabile: $\left|\frac{\sin n}{n^2}\right|\le\frac1{n^2}$, quindi converge assolutamente (confronto su $|a_n|$), dunque converge.</details>
+<details><summary>7. $\sum n\sin\frac1n$</summary>$a_n\to1\ne0$: non soddisfa la condizione necessaria; $a_n\gt0$ ⟹ diverge.</details>
+<details><summary>8. Perché il rapporto non decide per $\sum\frac{1}{n\log^2 n}$?</summary>$\frac{a_{n+1}}{a_n}\to1$. Serve un confronto più fine (condensazione o integrale): converge, perché $\int^\infty\frac{dx}{x\log^2x}=\left[-\frac1{\log x}\right]$ è finito.</details>
+
+<h2 id="eser"><small>§16</small>Esercizi con autovalutazione</h2>
+<p>Somme esatte: risposta numerica (accetta <code>3/4</code>, <code>e-1</code>, <code>log(2)</code>...). Carattere: scelta multipla. Dimostrazioni: su carta, poi ti valuti. ★ base · ★★ medio · ★★★ da esame.</p>
+<div class="score"><span></span><div class="bar"><i></i></div><button>azzera</button></div>
+
+<div class="ex" data-ans="3/4"><div class="q"><b>E1</b><span class="lv">★★</span> Calcola $\displaystyle\sum_{k=1}^\infty\frac1{k(k+2)}$.</div>
+<details><summary>Soluzione</summary>Fratti semplici: $\frac1{k(k+2)}=\frac12\left(\frac1k-\frac1{k+2}\right)$. Telescopica "di passo 2": restano i primi due termini positivi, $S_n=\frac12\left(1+\frac12-\frac1{n+1}-\frac1{n+2}\right)\to\frac12\cdot\frac32=\frac34$.</details></div>
+
+<div class="ex" data-ans="4/3"><div class="q"><b>E2</b><span class="lv">★</span> Calcola $\displaystyle\sum_{k=2}^\infty\left(\frac23\right)^k$.</div>
+<details><summary>Soluzione</summary>Geometrica che parte da $k=2$: $\sum_{k\ge2}x^k=\frac{x^2}{1-x}=\frac{4/9}{1/3}=\frac43$. (Oppure $\frac1{1-x}-1-x=3-1-\frac23$.)</details></div>
+
+<div class="ex" data-ans="2/3"><div class="q"><b>E3</b><span class="lv">★</span> Calcola $\displaystyle\sum_{k=0}^\infty\left(-\frac12\right)^k$.</div>
+<details><summary>Soluzione</summary>$|x|=\frac12\lt1$: $\frac1{1-(-1/2)}=\frac23$.</details></div>
+
+<div class="ex" data-ans="e-2"><div class="q"><b>E4</b><span class="lv">★★</span> Sapendo che $\sum_{k=0}^\infty\frac1{k!}=e$, calcola $\displaystyle\sum_{k=2}^\infty\frac1{k!}$.</div>
+<details><summary>Soluzione</summary>Tolgo i termini $k=0,1$ (entrambi $=1$): $e-2\approx0{,}718$. Togliere un numero finito di termini cambia la somma ma non il carattere.</details></div>
+
+<p style="margin-top:24px"><b>Carattere della serie.</b> Per ciascuna scegli tra le opzioni.</p>
+
+<div class="ex" data-mc="0"><div class="q"><b>E5</b><span class="lv">★</span> $\displaystyle\sum\frac{n+1}{n^3+2}$</div>
+<ol class="opts"><li>converge</li><li>diverge a $+\infty$</li><li>indeterminata</li></ol>
+<details><summary>Soluzione</summary>Termini positivi, $a_n\sim\frac{n}{n^3}=\frac1{n^2}$, $\alpha=2\gt1$ ⟹ converge (corollario del confronto asintotico).</details></div>
+
+<div class="ex" data-mc="1"><div class="q"><b>E6</b><span class="lv">★</span> $\displaystyle\sum\frac1{\sqrt{n(n+1)}}$</div>
+<ol class="opts"><li>converge</li><li>diverge a $+\infty$</li><li>indeterminata</li></ol>
+<details><summary>Soluzione</summary>$\sqrt{n(n+1)}\sim n$ ⟹ $a_n\sim\frac1n$: come l'armonica, diverge. (Nota: $a_n\to0$, ma non basta.)</details></div>
+
+<div class="ex" data-mc="0"><div class="q"><b>E7</b><span class="lv">★</span> $\displaystyle\sum\frac{n^2}{2^n}$</div>
+<ol class="opts"><li>converge</li><li>diverge a $+\infty$</li><li>indeterminata</li></ol>
+<details><summary>Soluzione</summary>Rapporto: $\frac{(n+1)^2}{n^2}\cdot\frac12\to\frac12\lt1$ ⟹ converge (la somma vale $6$).</details></div>
+
+<div class="ex" data-mc="1"><div class="q"><b>E8</b><span class="lv">★</span> $\displaystyle\sum\frac{n!}{5^n}$</div>
+<ol class="opts"><li>converge</li><li>diverge a $+\infty$</li><li>indeterminata</li></ol>
+<details><summary>Soluzione</summary>Rapporto: $\frac{n+1}5\to+\infty\gt1$ ⟹ diverge; anzi $a_n\to+\infty$, già la condizione necessaria fallisce.</details></div>
+
+<div class="ex" data-mc="1"><div class="q"><b>E9</b><span class="lv">★★</span> $\displaystyle\sum_{n\ge1}\frac{(-1)^n}{\log(n+1)}$</div>
+<ol class="opts"><li>converge assolutamente</li><li>converge semplicemente ma non assolutamente</li><li>diverge</li><li>indeterminata</li></ol>
+<details><summary>Soluzione</summary>Assoluta: $\frac1{\log(n+1)}\gt\frac1{n}$ definitivamente (log ≪ n), confronto con l'armonica ⟹ $\sum|a_n|$ diverge. Leibniz: $\frac1{\log(n+1)}\gt0$, $\to0$, decrescente (log crescente) ⟹ converge. Condizionatamente convergente.</details></div>
+
+<div class="ex" data-mc="3"><div class="q"><b>E10</b><span class="lv">★★</span> $\displaystyle\sum_{n\ge1}(-1)^n\frac{n}{n+1}$</div>
+<ol class="opts"><li>converge assolutamente</li><li>converge semplicemente ma non assolutamente</li><li>diverge</li><li>non converge (indeterminata)</li></ol>
+<details><summary>Soluzione</summary>$|a_n|\to1$, quindi $a_n\not\to0$: niente convergenza. Leibniz non si applica (manca $a_n\to0$). Le somme parziali saltano di circa $\pm1$ a ogni passo: oscillano, la serie è indeterminata (non può divergere perché il segno alterna).</details></div>
+
+<div class="ex" data-mc="0"><div class="q"><b>E11</b><span class="lv">★★</span> $\displaystyle\sum\frac{\sin n}{n^3}$</div>
+<ol class="opts"><li>converge assolutamente</li><li>converge semplicemente ma non assolutamente</li><li>diverge</li><li>indeterminata</li></ol>
+<details><summary>Soluzione</summary>Segno variabile ma non alterno (Leibniz non serve). $\left|\frac{\sin n}{n^3}\right|\le\frac1{n^3}$, confronto ⟹ $\sum|a_n|$ converge ⟹ converge assolutamente.</details></div>
+
+<div class="ex" data-mc="1"><div class="q"><b>E12</b><span class="lv">★★</span> $\displaystyle\sum\left(1-\cos\frac1{\sqrt n}\right)$</div>
+<ol class="opts"><li>converge</li><li>diverge a $+\infty$</li><li>indeterminata</li></ol>
+<details><summary>Soluzione</summary>$1-\cos\varepsilon_n\sim\frac{\varepsilon_n^2}2$ con $\varepsilon_n=\frac1{\sqrt n}$: $a_n\sim\frac1{2n}$ ⟹ diverge. Trappola: con $\frac1n$ al posto di $\frac1{\sqrt n}$ avrebbe converso.</details></div>
+
+<div class="ex" data-mc="0"><div class="q"><b>E13</b><span class="lv">★★★</span> $\displaystyle\sum\left(\frac{n}{n+1}\right)^{n^2}$</div>
+<ol class="opts"><li>converge</li><li>diverge a $+\infty$</li><li>indeterminata</li></ol>
+<details><summary>Soluzione</summary>Radice: $\sqrt[n]{a_n}=\left(\frac n{n+1}\right)^n=\frac1{(1+\frac1n)^n}\to\frac1e\lt1$ ⟹ converge. La radice è naturale qui perché l'esponente è $n\cdot n$.</details></div>
+
+<div class="ex" data-mc="0"><div class="q"><b>E14</b><span class="lv">★★★</span> $\displaystyle\sum\frac{\log n}{n^{3/2}}$</div>
+<ol class="opts"><li>converge</li><li>diverge a $+\infty$</li><li>indeterminata</li></ol>
+<details><summary>Soluzione</summary>Rapporto e radice danno $1$. Confronto asintotico con $\frac1{n^p}$, $1\lt p\lt\frac32$ (es. $p=\frac54$): $\frac{\log n}{n^{3/2-5/4}}=\frac{\log n}{n^{1/4}}\to0$, $\ell=0$ e $\sum\frac1{n^{5/4}}$ converge ⟹ converge.</details></div>
+
+<div class="ex" data-ans="99"><div class="q"><b>E15</b><span class="lv">★★</span> Per $\sum_{n\ge1}\frac{(-1)^n}{n}$, qual è il più piccolo $n$ per cui la stima di Leibniz garantisce $|S_n-S|\le0{,}01$?</div>
+<details><summary>Soluzione</summary>$|S_n-S|\le a_{n+1}=\frac1{n+1}\le0{,}01\iff n+1\ge100\iff n\ge99$. (La stima è conservativa: l'errore vero è circa la metà.)</details></div>
+
+<div class="ex" data-ans="1"><div class="q"><b>E16</b><span class="lv">★★</span> $\sum_{n\ge1}\dfrac1{n^{2\beta-1}}$ converge se e solo se $\beta\gt\beta_0$. Quanto vale $\beta_0$?</div>
+<details><summary>Soluzione</summary>Armonica generalizzata con $\alpha=2\beta-1$: converge $\iff2\beta-1\gt1\iff\beta\gt1$. Quindi $\beta_0=1$.</details></div>
+
+<div class="ex" data-mc="2"><div class="q"><b>E17</b><span class="lv">★★★</span> $\displaystyle\sum_{n\ge1}\frac{x^n}{n}$, $x\gt0$, converge per:</div>
+<ol class="opts"><li>$x\le1$</li><li>$x\gt1$</li><li>$0\lt x\lt1$</li><li>ogni $x\gt0$</li></ol>
+<details><summary>Soluzione</summary>Rapporto: $x\frac n{n+1}\to x$. Se $x\lt1$ converge, se $x\gt1$ diverge. Caso $x=1$ (il rapporto non decide): $\sum\frac1n$, armonica, diverge. Risposta: $0\lt x\lt1$.</details></div>
+
+<div class="ex" data-self><div class="q"><b>E18</b><span class="lv">★★</span> Dimostra la condizione necessaria di convergenza e spiega perché non è sufficiente.</div>
+<details><summary>Soluzione</summary>
+Se $S_n\to S\in\mathbb R$, anche $S_{n-1}\to S$; poiché $a_n=S_n-S_{n-1}$, $a_n\to S-S=0$. ∎ Non sufficiente: $\frac1n\to0$ ma $\sum\frac1n=+\infty$.<br>
+Controlla di aver detto <em>perché</em> $S_{n-1}$ ha lo stesso limite (è una sottosuccessione/traslata) e che serve $S$ finito (con $S=+\infty$ si otterrebbe $\infty-\infty$).
+</details></div>
+
+<div class="ex" data-self><div class="q"><b>E19</b><span class="lv">★★★</span> Dimostra il criterio del rapporto (caso $\ell\lt1$).</div>
+<details><summary>Soluzione</summary>
+Sia $x\in(\ell,1)$. Per definizione di limite con $\varepsilon=x-\ell$, esiste $\bar n$ con $\frac{a_{n+1}}{a_n}\lt x$ per $n\ge\bar n$. Per induzione $a_{\bar n+k}\lt x^ka_{\bar n}$, cioè $a_n\lt Cx^n$ con $C=a_{\bar n}x^{-\bar n}$, per $n\gt\bar n$. $\sum Cx^n$ converge (geometrica, $0\lt x\lt1$), quindi per confronto $\sum a_n$ converge. ∎<br>
+Punto chiave: perché serve $x$ <em>strettamente</em> tra $\ell$ e $1$, e non $x=\ell$? (Perché la disuguaglianza $\frac{a_{n+1}}{a_n}\lt\ell$ in generale è falsa.)
+</details></div>
+
+<div class="ex" data-self><div class="q"><b>E20</b><span class="lv">★★★</span> Dimostra che la convergenza assoluta implica quella semplice.</div>
+<details><summary>Soluzione</summary>
+$0\le a_n+|a_n|\le2|a_n|$. Per confronto $\sum(a_n+|a_n|)$ converge; $\sum a_n=\sum(a_n+|a_n|)-\sum|a_n|$ è differenza di due serie convergenti ⟹ converge. ∎<br>
+Controlla: hai usato il confronto su una serie a termini <b>non negativi</b> (unica situazione in cui vale)?
+</details></div>
+
+<footer>Fonti: note <i>Serie numeriche</i> e <i>Criteri per le serie, serie alternate e convergenza assoluta</i>. ← <a href="2 - Limiti di successioni.html">Limiti di successioni</a></footer>
+</main>
+</div>
+
+<script>
+const fmt = (x, d = 6) => !isFinite(x) ? (x > 0 ? '+∞' : x < 0 ? '−∞' : 'NaN')
+  : Math.abs(x) >= 1e7 || (Math.abs(x) < 1e-5 && x !== 0) ? x.toExponential(3) : +x.toFixed(d) + '';
+const $ = id => document.getElementById(id);
+const LF = [0]; for (let i = 1; i <= 20001; i++) LF[i] = LF[i - 1] + Math.log(i); // log n!
+// ponytail: un solo plotter canvas minimale per tutti i lab della pagina
+function plot(cv, o) {
+  const dpr = devicePixelRatio || 1, W = cv.clientWidth, H = cv.clientHeight;
+  cv.width = W * dpr; cv.height = H * dpr;
+  const c = cv.getContext('2d'); c.scale(dpr, dpr); c.clearRect(0, 0, W, H);
+  const L = 48, B = 26, X = x => L + (x - o.x0) / (o.x1 - o.x0) * (W - L - 12),
+        Y = y => H - B - (y - o.y0) / (o.y1 - o.y0) * (H - B - 12);
+  c.font = '11px ui-monospace,monospace'; c.fillStyle = '#6b6558'; c.strokeStyle = '#ece6d8'; c.lineWidth = 1;
+  const step = (a, b) => { const r = (b - a) / 6, p = 10 ** Math.floor(Math.log10(r)), m = r / p; return (m < 2 ? 1 : m < 5 ? 2 : 5) * p; };
+  const sx = step(o.x0, o.x1), sy = step(o.y0, o.y1);
+  for (let x = Math.ceil(o.x0 / sx) * sx; x <= o.x1; x += sx) { c.beginPath(); c.moveTo(X(x), 12); c.lineTo(X(x), H - B); c.stroke(); c.fillText(+x.toFixed(6), X(x) - 6, H - 8); }
+  for (let y = Math.ceil(o.y0 / sy) * sy; y <= o.y1; y += sy) { c.beginPath(); c.moveTo(L, Y(y)); c.lineTo(W - 12, Y(y)); c.stroke(); c.fillText(o.ylab ? o.ylab(y) : +y.toFixed(6), 4, Y(y) + 4); }
+  c.strokeStyle = '#1c1a16'; c.beginPath();
+  if (o.y0 <= 0 && o.y1 >= 0) { c.moveTo(L, Y(0)); c.lineTo(W - 12, Y(0)); }
+  c.moveTo(L, 12); c.lineTo(L, H - B); c.stroke();
+  (o.bands || []).forEach(b => { c.fillStyle = b.color; c.fillRect(L, Y(b.y1), W - L - 12, Y(b.y0) - Y(b.y1)); });
+  (o.hl || []).forEach(h => { c.strokeStyle = h.color; c.setLineDash(h.dash ? [6, 4] : []); c.beginPath(); c.moveTo(L, Y(h.y)); c.lineTo(W - 12, Y(h.y)); c.stroke(); c.setLineDash([]);
+    if (h.label) { c.fillStyle = h.color; c.fillText(h.label, W - 12 - c.measureText(h.label).width, Y(h.y) - 4); } });
+  (o.series || []).forEach(s => { c.fillStyle = c.strokeStyle = s.color;
+    if (s.line) { c.beginPath(); s.pts.forEach(([x, y], i) => isFinite(y) && (i ? c.lineTo(X(x), Y(y)) : c.moveTo(X(x), Y(y)))); c.stroke(); }
+    s.pts.forEach(([x, y], i) => { if (!isFinite(y) || y < o.y0 - 1e9) return; c.fillStyle = s.colorAt ? s.colorAt(i, x, y) : s.color;
+      c.beginPath(); c.arc(X(x), Y(Math.max(o.y0, Math.min(o.y1, y))), s.r || 3.5, 0, 7); c.fill(); });
+    if (s.label) { c.fillStyle = s.color; c.fillText(s.label, X(s.pts.at(-1)[0]) - 60, Y(Math.min(o.y1, s.pts.at(-1)[1])) - 8); } });
+}
+
+// ---------- P: somme parziali ----------
+// [termine, indice iniziale, somma nota (o null), commento]
+const SER = {
+  '1/(k(k+1))  telescopica': [k => 1 / (k * (k + 1)), 1, 1, 'S_n = 1 − 1/(n+1) → 1'],
+  '1/2^k  (k ≥ 0)': [k => 0.5 ** k, 0, 2, 'geometrica x = 1/2: somma 1/(1−x) = 2'],
+  '1/k²': [k => 1 / k ** 2, 1, Math.PI ** 2 / 6, 'converge (α = 2) a π²/6 (Eulero)'],
+  '1/k  armonica': [k => 1 / k, 1, null, 'diverge, ma S_n ≈ log n + 0.577: lentissima'],
+  '1/k!  (k ≥ 1)': [k => Math.exp(-LF[k]), 1, Math.E - 1, 'converge a e − 1'],
+  'k/3^k': [k => k / 3 ** k, 1, 0.75, 'converge a 3/4 (Σ k xᵏ = x/(1−x)²)'],
+  'log(1+1/k²)': [k => Math.log1p(1 / k ** 2), 1, Math.log(Math.sinh(Math.PI) / Math.PI), '~ 1/k²: converge (a log(sinh π / π))'],
+  '(−1)^k/k': [k => (-1) ** k / k, 1, -Math.LN2, 'Leibniz: converge a −log 2'],
+  '(−1)^k  (k ≥ 0)': [k => (-1) ** k, 0, null, 'S_n = 1,0,1,0,…: indeterminata (a_k ↛ 0)'],
+  '(sin k + 3)/√k': [k => (Math.sin(k) + 3) / Math.sqrt(k), 1, null, '≥ 2/√k: diverge per confronto'],
+  'arctan(√(k³+2))': [k => Math.atan(Math.sqrt(k ** 3 + 2)), 1, null, 'a_k → π/2 ≠ 0: diverge']
+};
+Object.keys(SER).forEach(k => $('P1').add(new Option(k, k)));
+function labP() {
+  const [f, k0, S, note] = SER[$('P1').value], N = +$('P2').value; $('P2v').textContent = N;
+  let s = 0; const Sp = [], Ap = [];
+  for (let k = k0; k < k0 + N; k++) { s += f(k); Sp.push([k, s]); Ap.push([k, f(k)]); }
+  const ys = Sp.map(p => p[1]).concat($('P3').checked ? Ap.map(p => p[1]) : [], S ?? []);
+  const lo = Math.min(0, ...ys), hi = Math.max(...ys), pad = (hi - lo) * .07 || 1;
+  const series = [{ pts: Sp, color: '#1f4fbf', r: N > 200 ? 1.8 : 3, label: 'S_n' }];
+  if ($('P3').checked) series.push({ pts: Ap, color: '#a86b00', r: N > 200 ? 1.5 : 2.5, label: 'a_k' });
+  plot($('cP'), { x0: k0 - 1, x1: k0 + N, y0: lo - pad, y1: hi + pad, hl: S == null ? [] : [{ y: S, color: '#c2412d', dash: 1, label: 'S = ' + fmt(S, 4) }], series });
+  $('oP').textContent = `${note}\nS_${k0 + N - 1} = ${fmt(s)}` + (S == null ? '' : `     S = ${fmt(S)}     errore = ${fmt(Math.abs(S - s))}`) + `\nultimo termine a_${k0 + N - 1} = ${fmt(f(k0 + N - 1))}`;
+}
+['P1', 'P2', 'P3'].forEach(id => $(id).addEventListener('input', labP));
+
+// ---------- Q: geometrica ----------
+function labQ() {
+  const x = +$('Q1').value; $('Q1v').textContent = x;
+  let s = 0; const pts = []; for (let n = 0; n < 40; n++) { s += x ** n; pts.push([n, s]); }
+  const lim = Math.abs(x) < 1 ? 1 / (1 - x) : null, ys = pts.map(p => p[1]);
+  const hi = Math.min(Math.max(...ys, lim ?? 0), 40), lo = Math.max(Math.min(...ys, 0), -40);
+  plot($('cQ'), { x0: -0.5, x1: 40, y0: lo - 0.5, y1: hi + 0.5, hl: lim == null ? [] : [{ y: lim, color: '#c2412d', dash: 1, label: '1/(1−x) = ' + fmt(lim, 3) }], series: [{ pts, color: '#1f4fbf', r: 3 }] });
+  $('oQ').textContent = Math.abs(x) < 1 ? `|x| < 1 ⟹ converge a 1/(1−x) = ${fmt(lim)}` + (x < 0 ? '  (S_n oscilla attorno al limite)' : '')
+    : x >= 1 ? 'x ≥ 1 ⟹ S_n → +∞ (diverge)' : x === -1 ? 'x = −1 ⟹ S_n = 1,0,1,0,…: indeterminata' : 'x < −1 ⟹ S_n oscilla con ampiezza crescente: indeterminata';
+}
+$('Q1').addEventListener('input', labQ);
+
+// ---------- H: armonica generalizzata ----------
+function labH() {
+  const a = +$('H1').value; $('H1v').textContent = a;
+  const checkpoints = [10, 100, 1e3, 1e4, 1e5, 1e6]; let s = 0, j = 0; const rows = [];
+  for (let k = 1; k <= 1e6; k++) { s += k ** -a; if (k === checkpoints[j]) { rows.push(`n = ${fmt(k).padEnd(8)} S_n = ${fmt(s)}`); j++; } }
+  const tail = a > 1 ? `\ncoda stimata ∑_{k>n} ≈ n^(1−α)/(α−1): a n = 10⁶ manca ≈ ${fmt(1e6 ** (1 - a) / (a - 1))}` : '';
+  $('oH').textContent = rows.join('\n') + (a > 1 ? '\n⟹ α > 1: CONVERGE (S_n si stabilizza)' : a === 1 ? '\n⟹ α = 1: DIVERGE come log n (+2.3 per ogni fattore 10)' : '\n⟹ α < 1: DIVERGE come n^(1−α)/(1−α)') + tail;
+}
+$('H1').addEventListener('input', labH);
+
+// ---------- R: rapporto e radice (in logaritmi) ----------
+const RR = {
+  '1/n!': [n => -LF[n], 'ℓ = 0 < 1: converge'], 'n/3ⁿ': [n => Math.log(n) - n * Math.log(3), 'ℓ = 1/3: converge'],
+  'n!/nⁿ': [n => LF[n] - n * Math.log(n), 'ℓ = 1/e: converge'], '2ⁿ/n¹⁰': [n => n * Math.LN2 - 10 * Math.log(n), 'ℓ = 2 > 1: diverge'],
+  'nⁿ/n!': [n => n * Math.log(n) - LF[n], 'ℓ = e > 1: diverge'], '1/n': [n => -Math.log(n), 'ℓ = 1: il criterio NON decide (diverge)'],
+  '1/n²': [n => -2 * Math.log(n), 'ℓ = 1: il criterio NON decide (converge)'], '(n/(2n+1))ⁿ': [n => n * Math.log(n / (2 * n + 1)), 'ℓ = 1/2: converge']
+};
+Object.keys(RR).forEach(k => $('R1').add(new Option(k, k)));
+function labR() {
+  const [la, v] = RR[$('R1').value];
+  $('oR').textContent = 'n'.padEnd(8) + 'a_{n+1}/a_n'.padStart(16) + 'ⁿ√a_n'.padStart(16) + '\n' +
+    [10, 100, 1000, 10000].map(n => fmt(n).padEnd(8) + fmt(Math.exp(la(n + 1) - la(n))).padStart(16) + fmt(Math.exp(la(n) / n)).padStart(16)).join('\n') + '\n⟹ ' + v +
+    '\n(nota: la radice converge più lentamente del rapporto, ma allo stesso ℓ)';
+}
+$('R1').addEventListener('input', labR);
+
+// ---------- L: Leibniz ----------
+const LB = [n => 1 / n, n => Math.atan(1 / Math.sqrt(n)), n => 1 / n ** 2];
+const LS = [-Math.LN2, (() => { let s = 0, N = 2e6; for (let n = 1; n <= N; n++) s += (-1) ** n * Math.atan(1 / Math.sqrt(n));
+  return s - (-1) ** N * Math.atan(1 / Math.sqrt(N + 1)) / 2; })(), -(Math.PI ** 2) / 12]; // ponytail: media di S_N e S_{N+1}, errore ~1e-9
+function labL() {
+  const i = +$('L1').value, a = LB[i], S = LS[i], N = +$('L2').value;
+  let s = 0; const pts = [], up = [], dn = [];
+  for (let n = 1; n <= N; n++) { s += (-1) ** n * a(n); pts.push([n, s]); up.push([n, s + a(n + 1)]); dn.push([n, s - a(n + 1)]); }
+  plot($('cL'), { x0: 0, x1: N + 1, y0: Math.min(...dn.map(p => p[1])) - .05, y1: Math.max(...up.map(p => p[1]), 0) + .05,
+    hl: [{ y: S, color: '#c2412d', dash: 1, label: 'S ≈ ' + fmt(S, 5) }],
+    series: [{ pts: up, color: 'rgba(47,125,79,.5)', line: 1, r: 0.1 }, { pts: dn, color: 'rgba(47,125,79,.5)', line: 1, r: 0.1 },
+             { pts, color: '#1f4fbf', r: N > 120 ? 2 : 3, colorAt: (j, n) => n % 2 ? '#1f4fbf' : '#a86b00' }] });
+  $('oL').textContent = 'blu = S_n con n dispari, arancio = n pari, fascia verde = S_n ± a_{n+1}\n' +
+    [5, 10, 20, N].map(n => { let t = 0; for (let k = 1; k <= n; k++) t += (-1) ** k * a(k);
+      return `n=${String(n).padEnd(4)} |S_n − S| = ${fmt(Math.abs(t - S)).padEnd(12)} ≤ a_{n+1} = ${fmt(a(n + 1))}  ${Math.abs(t - S) <= a(n + 1) ? '✓' : '✗'}`; }).join('\n');
+}
+['L1', 'L2'].forEach(id => $(id).addEventListener('input', labL));
+
+// ---------- T: parametro ----------
+function labT() {
+  const deg = +$('T1').value, al = deg * Math.PI / 180, t = Math.tan(al); $('T1v').textContent = deg + '°';
+  let s = 0; const part = [];
+  for (let n = 1; n <= 1000; n++) { s += t ** n * Math.log(n) / n ** 2; if ([10, 100, 1000].includes(n)) part.push(`S_${n} = ${fmt(s)}`); }
+  const verdict = Math.abs(Math.abs(t) - 1) < 1e-9 ? (t > 0 ? 'α = π/4: Σ log n / n² converge (confronto con 1/n^p, 1<p<2)' : 'α = −π/4: converge assolutamente')
+    : Math.abs(t) < 1 ? '|tan α| < 1: criterio del rapporto su |a_n| → |tan α| < 1 ⟹ converge assolutamente'
+    : t > 1 ? 'tan α > 1: a_n → +∞ ⟹ diverge a +∞' : 'tan α < −1: |a_n| → ∞ con segni alterni ⟹ non converge (indeterminata)';
+  $('oT').textContent = `α = ${deg}° = ${fmt(al, 4)} rad   tan α = ${fmt(t, 4)}\n${verdict}\n${part.join('   ')}`;
+}
+$('T1').addEventListener('input', labT);
+
+const all = () => { labP(); labQ(); labH(); labR(); labL(); labT(); };
+addEventListener('load', all); addEventListener('resize', all);
+
+// ---------- esercizi con autovalutazione ----------
+// Tipi: data-ans="espr" (risposta numerica), data-mc="indice" (scelta multipla, 0-based), data-self (autovalutazione dopo la soluzione)
+(() => {
+  const KEY = 'am1-ex-' + document.title, exs = [...document.querySelectorAll('.ex')];
+  let st = {}; try { st = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { /* storage non disponibile: punteggio solo in sessione */ }
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) { /* idem */ } };
+  // ponytail: valutatore locale con with(Math); accetta 3/5, e^6, sqrt(2), pi, inf, -inf
+  const val = s => {
+    const t = s.trim().toLowerCase().replace(/,/g, '.').replace(/π/g, 'pi').replace(/√(\d+(?:\.\d+)?)/g, 'sqrt($1)').replace(/√/g, 'sqrt').replace(/[−–]/g, '-')
+      .replace(/\+?∞|\+?\binf(inity)?\b/g, 'Infinity').replace(/\bpi\b/g, 'PI').replace(/\be\b/g, 'E').replace(/\^/g, '**');
+    if (!t || /[^0-9a-z.+\-*/() ]/i.test(t)) return NaN;
+    try { return +new Function(`with(Math){return (${t})}`)(); } catch (e) { return NaN; }
+  };
+  const same = (x, a) => !isFinite(a) ? x === a : Math.abs(x - a) <= 2e-3 * Math.max(1, Math.abs(a));
+  const score = document.querySelector('.score');
+  const paint = () => {
+    exs.forEach((ex, i) => { ex.classList.toggle('right', st[i] === 1); ex.classList.toggle('wrong', st[i] === 0); });
+    const done = Object.keys(st).length, ok = Object.values(st).filter(v => v === 1).length;
+    score.querySelector('span').textContent = `✓ ${ok} / ${exs.length}   ·   svolti ${done}`;
+    score.querySelector('i').style.width = (100 * ok / exs.length) + '%';
+  };
+  const set = (i, v) => { if (st[i] === undefined || v === 1) st[i] = v; save(); paint(); }; // il primo errore resta, ma un successo successivo corregge
+  exs.forEach((ex, i) => {
+    const sol = ex.querySelector('details'), ctrl = document.createElement('div'); ctrl.className = 'ctrl';
+    if (ex.dataset.ans !== undefined) {
+      const a = val(ex.dataset.ans);
+      ctrl.innerHTML = '<input placeholder="es. 3/5, e^2, inf"> <button>Verifica</button> <span class="fb"></span>';
+      const [inp, btn, fb] = ctrl.children;
+      const check = () => { const x = val(inp.value);
+        if (isNaN(x)) { fb.textContent = 'formato non riconosciuto'; fb.style.color = 'var(--amb)'; return; }
+        const ok = same(x, a); fb.textContent = ok ? '✓ corretto' : '✗ riprova o guarda la soluzione'; fb.style.color = ok ? 'var(--grn)' : 'var(--red)'; set(i, ok ? 1 : 0); };
+      btn.onclick = check; inp.onkeydown = e => e.key === 'Enter' && check();
+    } else if (ex.dataset.mc !== undefined) {
+      const lis = [...ex.querySelectorAll('ol.opts li')];
+      lis.forEach((li, j) => li.onclick = () => { const ok = j === +ex.dataset.mc;
+        li.classList.add(ok ? 'pick-ok' : 'pick-ko'); set(i, ok ? 1 : 0); });
+      ctrl.innerHTML = '<span class="hint">clicca sulla risposta</span>';
+    } else {
+      ctrl.innerHTML = '<span class="hint">Scrivi la dimostrazione su carta, poi apri la soluzione e valutati:</span> <button>✓ Corretta</button> <button>✗ Da rivedere</button>';
+      ctrl.children[1].onclick = () => { st[i] = 1; save(); paint(); };
+      ctrl.children[2].onclick = () => { st[i] = 0; save(); paint(); };
+    }
+    ex.insertBefore(ctrl, sol);
+  });
+  score.querySelector('button').onclick = () => { st = {}; save();
+    document.querySelectorAll('.pick-ok,.pick-ko').forEach(li => li.classList.remove('pick-ok', 'pick-ko'));
+    document.querySelectorAll('.ex .ctrl input').forEach(x => x.value = '');
+    document.querySelectorAll('.ex .fb').forEach(x => x.textContent = ''); paint(); };
+  paint();
+})();
+</script>
+</body>
+</html>

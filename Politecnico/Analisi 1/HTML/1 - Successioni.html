@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analisi 1 · 1 — Successioni</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<style>
+:root{--bg:#f5f2ea;--paper:#fffdf8;--ink:#1c1a16;--mute:#6b6558;--line:#d9d2c3;--acc:#1f4fbf;--red:#c2412d;--grn:#2f7d4f;--amb:#a86b00}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{border-bottom:1px solid var(--line);background:var(--paper)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header .wrap{display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;padding:18px 24px}
+header b{font:600 13px/1 ui-monospace,monospace;letter-spacing:.08em;color:var(--mute);text-transform:uppercase}
+header a{color:var(--ink);text-decoration:none;font-size:15px;padding:4px 0;border-bottom:2px solid transparent}
+header a.on{border-color:var(--acc);font-weight:600}
+h1{font:600 44px/1.1 "Iowan Old Style",Georgia,serif;margin:48px 0 8px}
+.lead{color:var(--mute);max-width:720px;font-size:18px}
+h2{font:600 28px/1.2 "Iowan Old Style",Georgia,serif;margin:64px 0 12px;padding-top:12px;border-top:1px solid var(--line)}
+h2 small{font:500 13px ui-monospace,monospace;color:var(--mute);display:block;margin-bottom:6px}
+h3{font:600 19px/1.3 Georgia,serif;margin:28px 0 8px}
+.layout{display:grid;grid-template-columns:200px 1fr;gap:40px}
+nav.toc{position:sticky;top:16px;align-self:start;font-size:14px;margin-top:56px}
+nav.toc a{display:block;color:var(--mute);text-decoration:none;padding:3px 0}
+nav.toc a:hover{color:var(--acc)}
+@media(max-width:860px){.layout{grid-template-columns:1fr}nav.toc{display:none}}
+.box{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--acc);padding:14px 18px;margin:16px 0;border-radius:4px}
+.box>.t{font:700 12px ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px;color:var(--acc)}
+.thm{border-left-color:var(--grn)}.thm>.t{color:var(--grn)}
+.warn{border-left-color:var(--red)}.warn>.t{color:var(--red)}
+.tip{border-left-color:var(--amb)}.tip>.t{color:var(--amb)}
+details{background:var(--paper);border:1px solid var(--line);border-radius:4px;margin:10px 0;padding:0 16px}
+details>summary{cursor:pointer;padding:10px 0;font-weight:600}
+details[open]>summary{border-bottom:1px dashed var(--line);margin-bottom:8px}
+details.proof>summary{color:var(--grn)}
+.lab{background:#fff;border:1px solid var(--ink);border-radius:6px;padding:16px 18px;margin:22px 0;box-shadow:4px 4px 0 var(--ink)}
+.lab>.t{font:700 12px ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.lab>.t::before{content:"▶ LAB · "}
+.ctl{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:10px;font-size:14px}
+.ctl label{display:flex;gap:8px;align-items:center}
+select,input,button{font:inherit;font-size:14px;padding:4px 8px;border:1px solid var(--line);border-radius:4px;background:#fff}
+input[type=range]{padding:0;width:180px;accent-color:var(--acc)}
+button{cursor:pointer;background:var(--ink);color:#fff;border-color:var(--ink)}
+canvas{width:100%;height:320px;display:block;border:1px solid var(--line);border-radius:4px;background:#fffefb}
+.out{font:14px/1.6 ui-monospace,monospace;background:#f3f0e8;border-radius:4px;padding:10px 12px;margin-top:10px;white-space:pre-wrap;overflow-x:auto}
+table{border-collapse:collapse;margin:12px 0;font-size:15px;background:var(--paper)}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#ece7da}
+.ok{color:var(--grn);font-weight:600}.no{color:var(--red);font-weight:600}
+footer{margin:80px 0 40px;color:var(--mute);font-size:14px}
+/* --- fix layout pannelli stretti --- */
+.layout>main{min-width:0}
+main table{display:block;overflow-x:auto;max-width:100%}
+.katex-display{overflow-x:auto;overflow-y:hidden;padding:2px 0}
+.out{max-width:100%;white-space:pre;overflow-x:auto}
+@media(max-width:860px){
+  .wrap{padding:0 14px}
+  header .wrap{padding:12px 14px;gap:12px}
+  h1{font-size:32px;margin-top:28px}
+  h2{font-size:23px;margin-top:44px}
+  .lead{font-size:16px}
+  .lab{padding:12px;box-shadow:3px 3px 0 var(--ink)}
+  canvas{height:240px}
+  input[type=range]{width:130px}
+}
+/* --- esercizi con autovalutazione --- */
+.score{position:sticky;top:0;z-index:5;background:var(--ink);color:#fff;border-radius:4px;padding:8px 14px;margin:14px 0;display:flex;gap:14px;align-items:center;flex-wrap:wrap;font:14px ui-monospace,monospace}
+.score .bar{flex:1;min-width:120px;height:8px;background:#444;border-radius:4px;overflow:hidden}
+.score .bar i{display:block;height:100%;background:#5fbf86;width:0;transition:width .3s}
+.score button{background:#fff;color:var(--ink);padding:2px 10px}
+.ex{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:12px 16px;margin:14px 0}
+.ex.right{border-color:var(--grn);box-shadow:inset 4px 0 0 var(--grn)}
+.ex.wrong{border-color:var(--red);box-shadow:inset 4px 0 0 var(--red)}
+.ex .q b:first-child{font-family:ui-monospace,monospace;margin-right:6px}
+.ex .lv{color:var(--amb);font-size:13px;margin-left:4px}
+.ex .ctrl{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0}
+.ex .ctrl input{width:190px}
+.ex .fb{font-weight:600}
+.ex ol.opts{list-style:upper-alpha;padding-left:28px}
+.ex ol.opts li{cursor:pointer;padding:3px 8px;border-radius:4px;margin:2px 0}
+.ex ol.opts li:hover{background:#ece7da}
+.ex ol.opts li.pick-ok{background:rgba(47,125,79,.18)}
+.ex ol.opts li.pick-ko{background:rgba(194,65,45,.15);text-decoration:line-through}
+.ex .hint{font-size:13px;color:var(--mute)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <b>Analisi 1 · interattivo</b>
+  <a class="on" href="1 - Successioni.html">1 · Successioni</a>
+  <a href="2 - Limiti di successioni.html">2 · Limiti</a>
+  <a href="3 - Serie numeriche.html">3 · Serie</a>
+</div></header>
+
+<div class="wrap layout">
+<nav class="toc">
+  <a href="#def">1. Definizione</a>
+  <a href="#fatt">2. Fattoriale</a>
+  <a href="#lim">3. Limitatezza</a>
+  <a href="#mono">4. Monotonia</a>
+  <a href="#estr">5. Estremi</a>
+  <a href="#quiz">6. Autoverifica</a>
+  <a href="#eser"><b>✎ Esercizi</b></a>
+</nav>
+<main>
+<h1>Successioni</h1>
+<p class="lead">Una successione è il modo più semplice per parlare di "infinito" in analisi: una lista ordinata di numeri reali, indicizzata dai naturali. Qui vediamo il linguaggio di base (immagine, limitatezza, monotonia, estremi) che serve poi per i limiti e per le serie.</p>
+
+<!-- ============ 1 ============ -->
+<h2 id="def"><small>§1</small>Definizione di successione</h2>
+<div class="box"><div class="t">Definizione</div>
+Una <b>successione</b> è una funzione con dominio $\mathbb N$:
+$$a:\mathbb N\to\mathbb R,\qquad n\mapsto a_n:=a(n).$$
+L'intero $n$ si chiama <b>indice</b>; i valori $a_n$ sono i <b>termini</b> (o elementi). La successione si indica con $\{a_n\}_{n\in\mathbb N}$.
+</div>
+<p>Il punto concettuale è che una successione è <em>una funzione</em>, non un insieme. Per questo bisogna distinguere due oggetti:</p>
+<ul>
+  <li>la successione $\{a_n\}_{n\in\mathbb N}=\{a_0,a_1,a_2,\dots\}$: sequenza <b>ordinata</b>, con <b>ripetizioni</b>;</li>
+  <li>l'<b>immagine</b> $I_{a_n}:=\{a_n:n\in\mathbb N\}\subseteq\mathbb R$: insieme dei valori effettivamente assunti, <b>senza ordine né ripetizioni</b>.</li>
+</ul>
+<p><b>Esempio.</b> $a_n=(-1)^n$: la successione è $\{1,-1,1,-1,\dots\}$ (infiniti termini), ma l'immagine è $I_{a_n}=\{-1,1\}$ (due soli elementi). Il grafico di una successione è un insieme <em>discreto</em> di punti $P_n=(n,a_n)$, non una curva continua.</p>
+
+<div class="lab"><div class="t">Esploratore di successioni</div>
+  <div class="ctl">
+    <label>$a_n=$ <select id="s1"></select></label>
+    <label>oppure scrivi: <input id="s1c" placeholder="es. sin(n)/n , n^2-3n" size="18"></label>
+    <label>termini mostrati <input type="range" id="s1N" min="5" max="60" value="20"> <span id="s1Nv"></span></label>
+  </div>
+  <canvas id="c1"></canvas>
+  <div class="out" id="o1"></div>
+</div>
+<p style="font-size:14px;color:var(--mute)">Nella formula personalizzata puoi usare <code>n</code>, <code>^</code>, <code>sin cos tan log exp sqrt abs atan</code>, <code>PI</code>, <code>E</code>, <code>fact(n)</code>. Le diagnosi numeriche (monotonia, max/min sui termini mostrati) sono <em>indizi</em>, non dimostrazioni: guardano solo un numero finito di termini.</p>
+
+<!-- ============ 2 ============ -->
+<h2 id="fatt"><small>§2</small>Il fattoriale</h2>
+<div class="box"><div class="t">Definizione</div>
+$$n!:=n(n-1)(n-2)\cdots 2\cdot 1,\qquad 0!:=1 .$$
+Equivalentemente, in forma <b>ricorsiva</b>: $0!=1$, $\;n!=n\cdot(n-1)!$ per $n\ge1$.
+</div>
+<p>La convenzione $0!=1$ non è arbitraria: è l'unico valore che rende vera la relazione ricorsiva per $n=1$ ($1!=1\cdot0!$), ed è coerente con il fatto che esiste esattamente un modo di ordinare zero oggetti.</p>
+<p>Il fattoriale ha crescita <b>superesponenziale</b>. Confronta i meccanismi: $n^k$ moltiplica per un fattore $\left(\frac{n+1}{n}\right)^k\to1$; $c^n$ moltiplica a ogni passo per la <em>costante</em> $c$; $n!$ moltiplica per $n+1$, un fattore <em>che cresce esso stesso</em>. Per questo prima o poi supera qualsiasi esponenziale.</p>
+
+<div class="lab"><div class="t">Corsa della crescita (scala logaritmica)</div>
+  <div class="ctl"><label>$n$ fino a <input type="range" id="f1" min="5" max="25" value="15"> <span id="f1v"></span></label>
+  <label>base esponenziale $c$ <input type="range" id="f2" min="2" max="10" value="3"> <span id="f2v"></span></label></div>
+  <canvas id="c2"></canvas>
+  <div class="out" id="o2"></div>
+</div>
+
+<!-- ============ 3 ============ -->
+<h2 id="lim"><small>§3</small>Limitatezza</h2>
+<p>Una successione è una funzione con dominio $A=\mathbb N$, quindi le nozioni di limitatezza sono quelle delle funzioni, applicate all'immagine.</p>
+<div class="box"><div class="t">Definizione</div>
+$\{a_n\}$ è <b>limitata superiormente</b> se $\exists\,M\in\mathbb R:\ a_n\le M\ \ \forall n\in\mathbb N$;<br>
+<b>limitata inferiormente</b> se $\exists\,m\in\mathbb R:\ a_n\ge m\ \ \forall n\in\mathbb N$;<br>
+<b>limitata</b> se lo è in entrambi i sensi, cioè (equivalentemente) $\exists\,K>0:\ |a_n|\le K\ \ \forall n$.
+</div>
+<p>L'equivalenza dell'ultima riga si ottiene con $K:=\max\{|m|,|M|\}$: da $m\le a_n\le M$ segue $-K\le a_n\le K$.</p>
+<p><b>Negazione</b> (importante per le dimostrazioni): $a_n$ è <b>illimitata superiormente</b> se
+$$\forall M\in\mathbb R\ \ \exists\,n_0\in\mathbb N:\ a_{n_0}\gt M.$$
+L'ordine dei quantificatori conta: $n_0$ può dipendere da $M$.</p>
+
+<h3>Esercizio svolto: $a_n=n^3$</h3>
+<ul>
+<li><b>Limitata inferiormente:</b> $n^3\ge0$ per ogni $n\in\mathbb N$, quindi $m=0$ va bene.</li>
+<li><b>Illimitata superiormente:</b> fissato $M$ arbitrario, si cerca $n$ con $n^3\gt M\iff n\gt\sqrt[3]M$. Si sceglie
+$$n_0=\left[\sqrt[3]M\right]+1$$
+(parte intera più uno): è un naturale e $n_0\gt\sqrt[3]M$ per costruzione, quindi $a_{n_0}=n_0^3\gt M$. Per quanto grande sia $M$, un termine lo supera.</li>
+</ul>
+<div class="lab"><div class="t">Il testimone $n_0(M)$ per $n^3$</div>
+  <div class="ctl"><label>$M=10^{k}$, $k$ = <input type="range" id="m1" min="0" max="12" step="0.1" value="3"> <span id="m1v"></span></label></div>
+  <div class="out" id="o3"></div>
+</div>
+
+<!-- ============ 4 ============ -->
+<h2 id="mono"><small>§4</small>Monotonia</h2>
+<div class="box"><div class="t">Definizione</div>
+$\{a_n\}$ è
+<b>strettamente crescente</b> se $a_n\lt a_{n+1}$, <b>strettamente decrescente</b> se $a_n\gt a_{n+1}$,
+<b>crescente</b> se $a_n\le a_{n+1}$, <b>decrescente</b> se $a_n\ge a_{n+1}$, per ogni $n\in\mathbb N$.
+È <b>monotona</b> se vale una delle quattro, <b>strettamente monotona</b> se vale una delle due strette.
+</div>
+<div class="box tip"><div class="t">Perché basta il passo $n\to n+1$</div>
+Il dominio $\mathbb N$ è discreto: da $a_n\lt a_{n+1}$ per ogni $n$ segue, per transitività (formalmente per induzione su $m-n$), $a_n\lt a_m$ per ogni $m\gt n$. Per una funzione su un intervallo di $\mathbb R$ non esiste un "successivo", e servirebbe il confronto fra ogni coppia di punti (o la derivata).
+</div>
+<p><b>Tecniche standard</b> per verificare la monotonia: studiare il segno di $a_{n+1}-a_n$; se $a_n\gt0$, confrontare $\frac{a_{n+1}}{a_n}$ con $1$; oppure riconoscere $a_n=f(n)$ con $f$ monotona.</p>
+<ol>
+<li>$a_n=n^3$: $(n+1)^3-n^3=3n^2+3n+1\gt0$ ⟹ strettamente crescente.</li>
+<li>$b_n=\frac1n$ ($n\ge1$): $\frac1n\gt\frac1{n+1}\iff n+1\gt n$, sempre vero ⟹ strettamente decrescente.</li>
+<li>$c_n=(-1)^n$: sale e scende ⟹ <b>non monotona</b>.</li>
+</ol>
+<p>Nell'esploratore del §1 la riga "monotonia numerica" applica proprio il test $a_{n+1}-a_n$ ai termini mostrati.</p>
+
+<!-- ============ 5 ============ -->
+<h2 id="estr"><small>§5</small>Estremi di una successione</h2>
+<p>$\max,\min,\sup,\inf$ si definiscono sull'immagine: $\sup\{a_n\}:=\sup I_{a_n}$, ecc. (per l'esistenza del $\sup$ di un insieme limitato serve la <b>completezza di $\mathbb R$</b>).</p>
+<table>
+<tr><th>Estremo</th><th>(i) disuguaglianza</th><th>(ii) "ottimalità"</th></tr>
+<tr><td>$\max\{a_n\}=M$</td><td>$a_n\le M\ \forall n$</td><td>$\exists\,n_0:\ a_{n_0}=M$</td></tr>
+<tr><td>$\min\{a_n\}=m$</td><td>$a_n\ge m\ \forall n$</td><td>$\exists\,n_0:\ a_{n_0}=m$</td></tr>
+<tr><td>$\sup\{a_n\}=\Lambda$</td><td>$a_n\le\Lambda\ \forall n$</td><td>$\forall\varepsilon\gt0\ \exists\,n_\varepsilon:\ a_{n_\varepsilon}\gt\Lambda-\varepsilon$</td></tr>
+<tr><td>$\inf\{a_n\}=\lambda$</td><td>$a_n\ge\lambda\ \forall n$</td><td>$\forall\varepsilon\gt0\ \exists\,n_\varepsilon:\ a_{n_\varepsilon}\lt\lambda+\varepsilon$</td></tr>
+</table>
+<p>Lettura di (ii) per il $\sup$: $\Lambda$ è il <em>più piccolo</em> maggiorante, quindi $\Lambda-\varepsilon$ non è più un maggiorante, cioè qualche termine lo supera. Se $\Lambda$ è <em>assunto</em> da un termine, allora $\sup=\max$; altrimenti il massimo non esiste.</p>
+
+<h3>Esempio: $b_n=\frac1n$, $n\ge1$</h3>
+<ul>
+<li>$\sup=\max=1$: $b_1=1$ e $\frac1n\le1$ per ogni $n\ge1$.</li>
+<li>$\inf=0$, ma <b>non è un minimo</b>: (i) $\frac1n\gt0$ ⟹ $0$ è minorante; (ii) dato $\varepsilon\gt0$, $\frac1{n}\lt\varepsilon\iff n\gt\frac1\varepsilon$, e basta $n_\varepsilon=\left[\frac1\varepsilon\right]+1$. Poiché nessun $n$ dà $\frac1n=0$, $0\notin I_{b_n}$.</li>
+</ul>
+<p>Modo alternativo: l'insieme dei minoranti di $I_{b_n}$ è $(-\infty,0]$, e $\inf=\max(-\infty,0]=0$.</p>
+
+<div class="lab"><div class="t">Caratterizzazione dell'inf: il gioco dell'ε</div>
+  <p style="margin:0 0 8px;font-size:14px">Tu scegli $\varepsilon$ (l'avversario); la dimostrazione deve rispondere con un indice $n_\varepsilon$ tale che $b_{n_\varepsilon}\lt0+\varepsilon$.</p>
+  <div class="ctl"><label>$\varepsilon$ = <input type="range" id="e1" min="0.02" max="0.6" step="0.01" value="0.15"> <span id="e1v"></span></label></div>
+  <canvas id="c3"></canvas>
+  <div class="out" id="o4"></div>
+</div>
+
+<!-- ============ 6 ============ -->
+<h2 id="quiz"><small>§6</small>Autoverifica</h2>
+<details><summary>1. Qual è l'immagine di $a_n=\sin\left(n\frac\pi2\right)$?</summary>
+I termini sono $0,1,0,-1,0,1,\dots$ (periodo 4), quindi $I_{a_n}=\{-1,0,1\}$. La successione è limitata ($|a_n|\le1$), non monotona, $\max=1$, $\min=-1$.</details>
+<details><summary>2. $a_n=\frac{n-1}{n}$ ($n\ge1$): monotona? estremi?</summary>
+$a_n=1-\frac1n$; poiché $\frac1n$ è strettamente decrescente, $a_n$ è strettamente crescente. $\min=a_1=0$; $\sup=1$ (per ogni $\varepsilon$, $1-\frac1n\gt1-\varepsilon$ per $n\gt\frac1\varepsilon$), ma $1$ non è assunto ⟹ il massimo non esiste.</details>
+<details><summary>3. Vero o falso: "se $a_n$ è limitata superiormente allora ha massimo".</summary>
+Falso. Limitata superiormente garantisce (per completezza) solo l'esistenza del <b>sup</b>. Controesempio: $1-\frac1n$ ha $\sup=1$ ma nessun massimo.</details>
+<details><summary>4. Dimostra che $a_n=2^n$ è illimitata superiormente.</summary>
+Per Bernoulli $2^n=(1+1)^n\ge1+n\gt n$. Dato $M$, con $n_0=[M]+1$ si ha $2^{n_0}\gt n_0\gt M$. (Alternativa: $n_0=[\log_2 M]+1$ per $M\gt0$.)</details>
+<details><summary>5. Perché nella negazione di "limitata superiormente" $n_0$ dipende da $M$?</summary>
+Perché la frase è $\forall M\ \exists n_0$: l'esistenziale è dentro l'universale. Scrivere $\exists n_0\ \forall M:\ a_{n_0}\gt M$ significherebbe che un singolo numero reale $a_{n_0}$ supera ogni $M$, il che è impossibile.</details>
+
+<h2 id="eser"><small>§7</small>Esercizi con autovalutazione</h2>
+<p>Tre tipi: <b>numerici</b> (scrivi il risultato: accetta frazioni come <code>3/5</code>, <code>sqrt(2)</code>, <code>e^2</code>, <code>pi</code>, <code>inf</code>), <b>a scelta multipla</b> (clicca la risposta) e <b>dimostrazioni</b> (le scrivi su carta, confronti con la soluzione e ti valuti). ★ = base, ★★ = medio, ★★★ = da esame. Il punteggio resta salvato.</p>
+<div class="score"><span></span><div class="bar"><i></i></div><button>azzera</button></div>
+
+<div class="ex" data-mc="1"><div class="q"><b>E1</b><span class="lv">★</span> Qual è l'immagine di $a_n=(-1)^n+1$, $n\in\mathbb N$?</div>
+<ol class="opts"><li>$\{1,-1\}$</li><li>$\{0,2\}$</li><li>$\{0,1,2\}$</li><li>$\{2,0,2,0,\dots\}$</li></ol>
+<details><summary>Soluzione</summary>$n$ pari: $1+1=2$; $n$ dispari: $-1+1=0$. L'immagine è l'insieme dei valori assunti, senza ripetizioni: $\{0,2\}$. La D è la successione, non l'immagine.</details></div>
+
+<div class="ex" data-ans="1"><div class="q"><b>E2</b><span class="lv">★</span> Calcola $\sup\left\{\dfrac{n}{n+1}\right\}_{n\in\mathbb N}$.</div>
+<details><summary>Soluzione</summary>$\frac n{n+1}=1-\frac1{n+1}\lt1$, quindi $1$ è maggiorante. Dato $\varepsilon\gt0$, $1-\frac1{n+1}\gt1-\varepsilon\iff n+1\gt\frac1\varepsilon$: esiste sempre un tale $n$. Quindi $\sup=1$, non assunto ⟹ niente massimo.</details></div>
+
+<div class="ex" data-ans="-1"><div class="q"><b>E3</b><span class="lv">★★</span> Calcola $\inf\left\{\dfrac{(-1)^n}{n}\right\}_{n\ge1}$.</div>
+<details><summary>Soluzione</summary>Termini: $-1,\ \frac12,\ -\frac13,\ \frac14,\dots$. I termini dispari $-\frac1n$ crescono verso $0$, i pari sono positivi. Il più piccolo è $a_1=-1$: è un <b>minimo</b>, quindi $\inf=\min=-1$.</details></div>
+
+<div class="ex" data-ans="1/2"><div class="q"><b>E4</b><span class="lv">★★</span> Calcola $\max\left\{\dfrac{(-1)^n}{n}\right\}_{n\ge1}$.</div>
+<details><summary>Soluzione</summary>I termini positivi sono quelli pari: $\frac1{2k}$, decrescenti in $k$. Il più grande è $a_2=\frac12$, e tutti i dispari sono negativi. $\max=\frac12$.</details></div>
+
+<div class="ex" data-mc="2"><div class="q"><b>E5</b><span class="lv">★★</span> La successione $a_n=\dfrac{n}{2^n}$, $n\ge1$, è:</div>
+<ol class="opts"><li>strettamente crescente</li><li>strettamente decrescente</li><li>decrescente ma non strettamente</li><li>non monotona</li></ol>
+<details><summary>Soluzione</summary>$\dfrac{a_{n+1}}{a_n}=\dfrac{n+1}{2^{n+1}}\cdot\dfrac{2^n}{n}=\dfrac{n+1}{2n}\le1\iff n+1\le2n\iff n\ge1$, con <b>uguaglianza per $n=1$</b>: $a_1=a_2=\frac12$. Quindi $a_{n+1}\le a_n$ sempre, ma non strettamente.</details></div>
+
+<div class="ex" data-ans="-25"><div class="q"><b>E6</b><span class="lv">★★</span> Calcola $\min\{n^2-10n\}_{n\in\mathbb N}$.</div>
+<details><summary>Soluzione</summary>$n^2-10n=(n-5)^2-25\ge-25$, con uguaglianza per $n=5\in\mathbb N$. Quindi $\min=-25$. (Se il vertice della parabola non fosse intero, si confronterebbero i due interi più vicini.)</details></div>
+
+<div class="ex" data-mc="1"><div class="q"><b>E7</b><span class="lv">★★</span> $a_n=n+(-1)^nn$ è:</div>
+<ol class="opts"><li>limitata</li><li>limitata inferiormente ma non superiormente</li><li>limitata superiormente ma non inferiormente</li><li>né l'una né l'altra</li></ol>
+<details><summary>Soluzione</summary>$n$ dispari: $a_n=0$; $n$ pari: $a_n=2n$. Quindi $a_n\ge0$ (limitata inferiormente) e $a_{2k}=4k$ supera ogni $M$ (illimitata superiormente). Non è nemmeno monotona: $0,0,4,0,8,0,\dots$</details></div>
+
+<div class="ex" data-ans="42"><div class="q"><b>E8</b><span class="lv">★</span> Semplifica $\dfrac{(n+2)!}{n!}$ e valutalo per $n=5$.</div>
+<details><summary>Soluzione</summary>$(n+2)!=(n+2)(n+1)n!$, quindi $\frac{(n+2)!}{n!}=(n+2)(n+1)$. Per $n=5$: $7\cdot6=42$. Questa semplificazione è il cuore del criterio del rapporto con i fattoriali.</details></div>
+
+<div class="ex" data-ans="334"><div class="q"><b>E9</b><span class="lv">★</span> Per $b_n=\frac1n$ e $\varepsilon=0{,}003$, calcola $n_\varepsilon=\left[\frac1\varepsilon\right]+1$ (il testimone della caratterizzazione dell'inf).</div>
+<details><summary>Soluzione</summary>$\frac1\varepsilon=333{,}\overline3$, parte intera $333$, quindi $n_\varepsilon=334$ e $b_{334}=0{,}00299\ldots\lt0{,}003$ ✓.</details></div>
+
+<div class="ex" data-mc="1"><div class="q"><b>E10</b><span class="lv">★★</span> Vero o falso: "una successione strettamente decrescente e limitata inferiormente ha minimo".</div>
+<ol class="opts"><li>Vero</li><li>Falso</li></ol>
+<details><summary>Soluzione</summary>Falso. Controesempio: $\frac1n$ è strettamente decrescente, limitata inferiormente da $0$, ha $\inf=0$ ma nessun termine vale $0$. Anzi: una successione <em>strettamente</em> decrescente non ha mai minimo (ogni termine è superato in basso dal successivo).</details></div>
+
+<div class="ex" data-self><div class="q"><b>E11</b><span class="lv">★★</span> Dimostra che $a_n=\dfrac{n-1}{n+1}$ è strettamente crescente e determina $\sup$, $\inf$, ed eventuali $\max$, $\min$.</div>
+<details><summary>Soluzione</summary>
+$a_n=1-\frac2{n+1}$. Poiché $\frac2{n+1}$ è strettamente decrescente, $a_n$ è strettamente crescente (verifica diretta: $a_{n+1}-a_n=\frac2{n+1}-\frac2{n+2}=\frac2{(n+1)(n+2)}\gt0$).<br>
+<b>min</b> $=a_0=-1$ (crescente ⟹ il primo termine è il minimo), quindi $\inf=\min=-1$.<br>
+<b>sup</b> $=1$: (i) $a_n\lt1$; (ii) dato $\varepsilon$, $1-\frac2{n+1}\gt1-\varepsilon\iff n\gt\frac2\varepsilon-1$. Non assunto ⟹ niente massimo.<br>
+Punti da controllare nella tua: hai verificato <em>entrambe</em> le condizioni (i) e (ii) del sup? hai giustificato che il max non esiste?
+</details></div>
+
+<div class="ex" data-self><div class="q"><b>E12</b><span class="lv">★★★</span> Dimostra con la caratterizzazione che $\inf\left\{\dfrac1{n^2}\right\}_{n\ge1}=0$ e che il minimo non esiste.</div>
+<details><summary>Soluzione</summary>
+(i) $\frac1{n^2}\gt0$ per ogni $n$: $0$ è minorante.<br>
+(ii) Sia $\varepsilon\gt0$. Si cerca $n_\varepsilon$ con $\frac1{n_\varepsilon^2}\lt\varepsilon\iff n_\varepsilon\gt\frac1{\sqrt\varepsilon}$. Basta $n_\varepsilon=\left[\frac1{\sqrt\varepsilon}\right]+1$. Quindi $0$ è il massimo dei minoranti: $\inf=0$.<br>
+Minimo: servirebbe $n$ con $\frac1{n^2}=0$, impossibile ⟹ $0\notin I_{a_n}$, il minimo non esiste.
+</details></div>
+
+<footer>Fonte: note <i>Successioni</i> (Teoria). Prosegue in <a href="2 - Limiti di successioni.html">2 · Limiti di successioni</a>.</footer>
+</main>
+</div>
+
+<script>
+// ---------- utilità condivise ----------
+const fact = n => { let r = 1; for (let i = 2; i <= n; i++) r *= i; return r; };
+const fmt = (x, d = 4) => !isFinite(x) ? (x > 0 ? '+∞' : x < 0 ? '−∞' : 'NaN')
+  : Math.abs(x) >= 1e6 || (Math.abs(x) < 1e-4 && x !== 0) ? x.toExponential(3) : +x.toFixed(d) + '';
+const $ = id => document.getElementById(id);
+
+// ponytail: un solo plotter canvas minimale per tutti i lab della pagina
+function plot(cv, o) {
+  const dpr = devicePixelRatio || 1, W = cv.clientWidth, H = cv.clientHeight;
+  cv.width = W * dpr; cv.height = H * dpr;
+  const c = cv.getContext('2d'); c.scale(dpr, dpr); c.clearRect(0, 0, W, H);
+  const L = 48, B = 26, X = x => L + (x - o.x0) / (o.x1 - o.x0) * (W - L - 12),
+        Y = y => H - B - (y - o.y0) / (o.y1 - o.y0) * (H - B - 12);
+  c.font = '11px ui-monospace,monospace'; c.fillStyle = '#6b6558'; c.strokeStyle = '#ece6d8'; c.lineWidth = 1;
+  const step = (a, b) => { const r = (b - a) / 6, p = 10 ** Math.floor(Math.log10(r)), m = r / p; return (m < 2 ? 1 : m < 5 ? 2 : 5) * p; };
+  const sx = step(o.x0, o.x1), sy = step(o.y0, o.y1);
+  for (let x = Math.ceil(o.x0 / sx) * sx; x <= o.x1; x += sx) { c.beginPath(); c.moveTo(X(x), 12); c.lineTo(X(x), H - B); c.stroke(); c.fillText(+x.toFixed(6), X(x) - 6, H - 8); }
+  for (let y = Math.ceil(o.y0 / sy) * sy; y <= o.y1; y += sy) { c.beginPath(); c.moveTo(L, Y(y)); c.lineTo(W - 12, Y(y)); c.stroke(); c.fillText(o.ylab ? o.ylab(y) : +y.toFixed(6), 4, Y(y) + 4); }
+  c.strokeStyle = '#1c1a16'; c.beginPath();
+  if (o.y0 <= 0 && o.y1 >= 0) { c.moveTo(L, Y(0)); c.lineTo(W - 12, Y(0)); }
+  c.moveTo(L, 12); c.lineTo(L, H - B); c.stroke();
+  (o.bands || []).forEach(b => { c.fillStyle = b.color; c.fillRect(L, Y(b.y1), W - L - 12, Y(b.y0) - Y(b.y1)); });
+  (o.hl || []).forEach(h => { c.strokeStyle = h.color; c.setLineDash(h.dash ? [6, 4] : []); c.beginPath(); c.moveTo(L, Y(h.y)); c.lineTo(W - 12, Y(h.y)); c.stroke(); c.setLineDash([]);
+    if (h.label) { c.fillStyle = h.color; c.fillText(h.label, W - 12 - c.measureText(h.label).width, Y(h.y) - 4); } });
+  (o.series || []).forEach(s => { c.fillStyle = c.strokeStyle = s.color;
+    if (s.line) { c.beginPath(); s.pts.forEach(([x, y], i) => isFinite(y) && (i ? c.lineTo(X(x), Y(y)) : c.moveTo(X(x), Y(y)))); c.stroke(); }
+    s.pts.forEach(([x, y], i) => { if (!isFinite(y) || y < o.y0 - 1e9) return; c.fillStyle = s.colorAt ? s.colorAt(i, x, y) : s.color;
+      c.beginPath(); c.arc(X(x), Y(Math.max(o.y0, Math.min(o.y1, y))), s.r || 3.5, 0, 7); c.fill(); });
+    if (s.label) { c.fillStyle = s.color; c.fillText(s.label, X(s.pts.at(-1)[0]) - 60, Y(Math.min(o.y1, s.pts.at(-1)[1])) - 8); } });
+}
+
+// ---------- LAB 1: esploratore ----------
+const SEQ = {
+  'n^2': [n => n * n, 0], '1/n': [n => 1 / n, 1], '(-1)^n': [n => (-1) ** n, 0],
+  'n!': [fact, 0], 'sin(nπ/2)': [n => Math.round(Math.sin(n * Math.PI / 2) * 1e9) / 1e9, 0],
+  '(n-1)/n': [n => (n - 1) / n, 1], '(1+1/n)^n': [n => (1 + 1 / n) ** n, 1],
+  '(-1)^n / n': [n => (-1) ** n / n, 1], 'sin(n)': [n => Math.sin(n), 0], 'n^3': [n => n ** 3, 0]
+};
+Object.keys(SEQ).forEach(k => $('s1').add(new Option(k, k)));
+function custom(expr) {
+  const body = expr.replace(/\^/g, '**');
+  // ponytail: input locale dell'utente, nessun confine di fiducia; with(Math) per scrivere sin(n) invece di Math.sin(n)
+  return new Function('n', 'fact', `with(Math){return (${body})}`);
+}
+function lab1() {
+  const N = +$('s1N').value; $('s1Nv').textContent = N;
+  let f, n0 = 1, name;
+  try {
+    if ($('s1c').value.trim()) { const g = custom($('s1c').value); f = n => g(n, fact); name = $('s1c').value; g(1, fact); }
+    else { [f, n0] = SEQ[$('s1').value]; name = $('s1').value; }
+  } catch (e) { $('o1').textContent = 'Espressione non valida: ' + e.message; return; }
+  const pts = []; for (let n = n0; n < n0 + N; n++) pts.push([n, f(n)]);
+  const ys = pts.map(p => p[1]).filter(isFinite);
+  if (!ys.length) { $('o1').textContent = 'Nessun valore finito.'; return; }
+  let y0 = Math.min(0, ...ys), y1 = Math.max(...ys); if (y1 - y0 < 1e-9) { y0 -= 1; y1 += 1; }
+  const pad = (y1 - y0) * .08;
+  plot($('c1'), { x0: n0 - 0.5, x1: n0 + N, y0: y0 - pad, y1: y1 + pad, series: [{ pts, color: '#1f4fbf' }] });
+  const d = []; for (let i = 0; i + 1 < pts.length; i++) d.push(pts[i + 1][1] - pts[i][1]);
+  const mono = d.every(x => x > 0) ? 'strettamente crescente' : d.every(x => x < 0) ? 'strettamente decrescente'
+    : d.every(x => x >= 0) ? 'crescente' : d.every(x => x <= 0) ? 'decrescente' : 'NON monotona (a_{n+1}-a_n cambia segno)';
+  const img = [...new Set(ys.map(y => +y.toFixed(9)))];
+  $('o1').textContent =
+    `a_n = ${name}\nprimi termini: ${pts.slice(0, 10).map(([n, y]) => `a_${n}=${fmt(y)}`).join(', ')}${N > 10 ? ', …' : ''}\n` +
+    `immagine (sui ${N} termini): ${img.length <= 12 ? '{' + img.map(y => fmt(y)).join(', ') + '}' : img.length + ' valori distinti'}\n` +
+    `max / min fra i termini mostrati: ${fmt(Math.max(...ys))} / ${fmt(Math.min(...ys))}\n` +
+    `monotonia numerica: ${mono}`;
+}
+['s1', 's1N', 's1c'].forEach(id => $(id).addEventListener('input', lab1));
+
+// ---------- LAB 2: crescita ----------
+function lab2() {
+  const N = +$('f1').value, cB = +$('f2').value; $('f1v').textContent = N; $('f2v').textContent = cB;
+  const mk = f => Array.from({ length: N }, (_, i) => [i + 1, Math.log10(f(i + 1))]);
+  const s = [{ pts: mk(n => n ** 3), color: '#2f7d4f', line: 1, label: 'n³' },
+             { pts: mk(n => cB ** n), color: '#a86b00', line: 1, label: cB + 'ⁿ' },
+             { pts: mk(fact), color: '#c2412d', line: 1, label: 'n!' }];
+  plot($('c2'), { x0: 0, x1: N + 0.5, y0: 0, y1: Math.max(Math.log10(fact(N)), N * Math.log10(cB)) * 1.05, series: s, ylab: y => '1e' + Math.round(y) });
+  const cross = Array.from({ length: 60 }, (_, i) => i + 1).find(n => fact(n) > cB ** n);
+  $('o2').textContent = `asse y = log10 del valore.  Per n = ${N}:  n³ = ${fmt(N ** 3)},  ${cB}ⁿ = ${fmt(cB ** N)},  n! = ${fmt(fact(N))}\n` +
+    `n! supera ${cB}ⁿ definitivamente da n = ${cross} in poi (rapporto ${cB}ⁿ⁺¹/(n+1)! ÷ ${cB}ⁿ/n! = ${cB}/(n+1) < 1 per n ≥ ${cB}).`;
+}
+['f1', 'f2'].forEach(id => $(id).addEventListener('input', lab2));
+
+// ---------- LAB 3: n0(M) ----------
+function lab3() {
+  const k = +$('m1').value, M = 10 ** k; $('m1v').textContent = k;
+  const n0 = Math.floor(Math.cbrt(M)) + 1;
+  $('o3').textContent = `M = ${fmt(M)}\n∛M = ${fmt(Math.cbrt(M))}\nn₀ = [∛M] + 1 = ${n0}\n` +
+    `a_{n₀} = ${n0}³ = ${fmt(n0 ** 3)}  >  M  ✓      (e a_{n₀−1} = ${fmt((n0 - 1) ** 3)} ≤ M: n₀ è il minimo testimone)`;
+}
+$('m1').addEventListener('input', lab3);
+
+// ---------- LAB 4: inf di 1/n ----------
+function lab4() {
+  const e = +$('e1').value; $('e1v').textContent = e;
+  const ne = Math.floor(1 / e) + 1, N = Math.max(12, ne + 4);
+  const pts = Array.from({ length: N }, (_, i) => [i + 1, 1 / (i + 1)]);
+  plot($('c3'), { x0: 0, x1: N + 0.5, y0: -0.1, y1: 1.1, bands: [{ y0: 0, y1: e, color: 'rgba(47,125,79,.13)' }],
+    hl: [{ y: e, color: '#2f7d4f', dash: 1, label: 'λ + ε = ' + e }],
+    series: [{ pts, color: '#1f4fbf', colorAt: (i, x) => x === ne ? '#c2412d' : x > ne ? '#2f7d4f' : '#1f4fbf', r: 4 }] });
+  $('o4').textContent = `n_ε = [1/ε] + 1 = [${fmt(1 / e)}] + 1 = ${ne}\nb_{n_ε} = 1/${ne} = ${fmt(1 / ne)} < ε = ${e}  ✓  (punto rosso)\n` +
+    `Tutti i successivi (verdi) stanno sotto 0+ε, ma nessun termine vale 0: inf = 0, min non esiste.`;
+}
+$('e1').addEventListener('input', lab4);
+
+const all = () => { lab1(); lab2(); lab3(); lab4(); };
+addEventListener('load', all); addEventListener('resize', all);
+
+// ---------- esercizi con autovalutazione ----------
+// Tipi: data-ans="espr" (risposta numerica), data-mc="indice" (scelta multipla, 0-based), data-self (autovalutazione dopo la soluzione)
+(() => {
+  const KEY = 'am1-ex-' + document.title, exs = [...document.querySelectorAll('.ex')];
+  let st = {}; try { st = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { /* storage non disponibile: punteggio solo in sessione */ }
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) { /* idem */ } };
+  // ponytail: valutatore locale con with(Math); accetta 3/5, e^6, sqrt(2), pi, inf, -inf
+  const val = s => {
+    const t = s.trim().toLowerCase().replace(/,/g, '.').replace(/π/g, 'pi').replace(/√(\d+(?:\.\d+)?)/g, 'sqrt($1)').replace(/√/g, 'sqrt').replace(/[−–]/g, '-')
+      .replace(/\+?∞|\+?\binf(inity)?\b/g, 'Infinity').replace(/\bpi\b/g, 'PI').replace(/\be\b/g, 'E').replace(/\^/g, '**');
+    if (!t || /[^0-9a-z.+\-*/() ]/i.test(t)) return NaN;
+    try { return +new Function(`with(Math){return (${t})}`)(); } catch (e) { return NaN; }
+  };
+  const same = (x, a) => !isFinite(a) ? x === a : Math.abs(x - a) <= 2e-3 * Math.max(1, Math.abs(a));
+  const score = document.querySelector('.score');
+  const paint = () => {
+    exs.forEach((ex, i) => { ex.classList.toggle('right', st[i] === 1); ex.classList.toggle('wrong', st[i] === 0); });
+    const done = Object.keys(st).length, ok = Object.values(st).filter(v => v === 1).length;
+    score.querySelector('span').textContent = `✓ ${ok} / ${exs.length}   ·   svolti ${done}`;
+    score.querySelector('i').style.width = (100 * ok / exs.length) + '%';
+  };
+  const set = (i, v) => { if (st[i] === undefined || v === 1) st[i] = v; save(); paint(); }; // il primo errore resta, ma un successo successivo corregge
+  exs.forEach((ex, i) => {
+    const sol = ex.querySelector('details'), ctrl = document.createElement('div'); ctrl.className = 'ctrl';
+    if (ex.dataset.ans !== undefined) {
+      const a = val(ex.dataset.ans);
+      ctrl.innerHTML = '<input placeholder="es. 3/5, e^2, inf"> <button>Verifica</button> <span class="fb"></span>';
+      const [inp, btn, fb] = ctrl.children;
+      const check = () => { const x = val(inp.value);
+        if (isNaN(x)) { fb.textContent = 'formato non riconosciuto'; fb.style.color = 'var(--amb)'; return; }
+        const ok = same(x, a); fb.textContent = ok ? '✓ corretto' : '✗ riprova o guarda la soluzione'; fb.style.color = ok ? 'var(--grn)' : 'var(--red)'; set(i, ok ? 1 : 0); };
+      btn.onclick = check; inp.onkeydown = e => e.key === 'Enter' && check();
+    } else if (ex.dataset.mc !== undefined) {
+      const lis = [...ex.querySelectorAll('ol.opts li')];
+      lis.forEach((li, j) => li.onclick = () => { const ok = j === +ex.dataset.mc;
+        li.classList.add(ok ? 'pick-ok' : 'pick-ko'); set(i, ok ? 1 : 0); });
+      ctrl.innerHTML = '<span class="hint">clicca sulla risposta</span>';
+    } else {
+      ctrl.innerHTML = '<span class="hint">Scrivi la dimostrazione su carta, poi apri la soluzione e valutati:</span> <button>✓ Corretta</button> <button>✗ Da rivedere</button>';
+      ctrl.children[1].onclick = () => { st[i] = 1; save(); paint(); };
+      ctrl.children[2].onclick = () => { st[i] = 0; save(); paint(); };
+    }
+    ex.insertBefore(ctrl, sol);
+  });
+  score.querySelector('button').onclick = () => { st = {}; save();
+    document.querySelectorAll('.pick-ok,.pick-ko').forEach(li => li.classList.remove('pick-ok', 'pick-ko'));
+    document.querySelectorAll('.ex .ctrl input').forEach(x => x.value = '');
+    document.querySelectorAll('.ex .fb').forEach(x => x.textContent = ''); paint(); };
+  paint();
+})();
+</script>
+</body>
+</html>

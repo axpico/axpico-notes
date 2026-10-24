@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "ec9f3917d478ed5e",
+        "id": "41e23344568f0360",
         "type": "tabs",
         "children": [
           {
-            "id": "04579fa5d75719b4",
+            "id": "0a88cb54a42e69a9",
             "type": "leaf",
             "state": {
               "type": "html-viewer",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html"
+                "file": "Politecnico/Analisi 1/HTML/1 - Successioni.html"
               },
               "icon": "code",
-              "title": "Lezione 7 — Rette, piani, ortogonalità e fasci"
+              "title": "1 - Successioni"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -209,9 +208,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1792757791838-dunng0d",
-                      "conversationId": null,
-                      "draftModel": "opus",
-                      "providerId": "claude"
+                      "conversationId": "conv-1792838827526-qh5q67j9x"
                     }
                   ],
                   "activeTabId": "tab-1792757791838-dunng0d"
@@ -231,12 +228,12 @@
               "title": "Excalidraw Sidepanel"
             }
           }
-        ]
+        ],
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 326.5,
-    "collapsed": true
+    "width": 326.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -254,26 +251,26 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "04579fa5d75719b4",
+  "active": "0a88cb54a42e69a9",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/HTML/sedgkuld6",
+    "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html",
+    "Politecnico/Analisi 1/HTML/1 - Successioni.html",
+    "Politecnico/Analisi 1/HTML/3 - Serie numeriche.html",
+    "Politecnico/Analisi 1/HTML/sediVkF4f",
+    "Politecnico/Analisi 1/HTML/sedohDM3D",
+    "Politecnico/Analisi 1/HTML/sedDVp60c",
+    "Politecnico/Analisi 1/Indice.md",
+    "Politecnico/Analisi 1/HTML/1 - Successioni.html.tmp.11494.5b1f3c68a1e9",
+    "Politecnico/Analisi 1/HTML",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 8 — Completamento, somma di sottospazi e Grassmann.html",
-    "Politecnico/Geometria e Algebra Lineare/HTML/sedPsqGk1",
-    "Politecnico/Geometria e Algebra Lineare/HTML/sedAp1W3i",
-    "Politecnico/Geometria e Algebra Lineare/HTML/sedMsYCyq",
-    "Politecnico/Geometria e Algebra Lineare/HTML/sedciQq1x",
-    "Politecnico/Geometria e Algebra Lineare/HTML/sedZibquB",
-    "Politecnico/Geometria e Algebra Lineare/HTML/sedXMTETg",
-    "Politecnico/Geometria e Algebra Lineare/HTML/sedghLPID",
-    "Politecnico/Geometria e Algebra Lineare/HTML/sedDKoNxq",
-    "Politecnico/Geometria e Algebra Lineare/HTML/sedtqfVlE",
-    "Politecnico/Geometria e Algebra Lineare/HTML/sedpTrbJr",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Intersezione, somma e somma diretta di sottospazi — formula di Grassmann.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Completamento a base.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Ortogonalità e fasci di rette e piani.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Posizione reciproca di rette e piani.md",
     "Excalidraw/Drawing 2026-10-22 16.29.00.excalidraw.md",
-    "Politecnico/Analisi 1/Indice.md",
     "Excalidraw/Drawing 2026-10-22 13.11.56.excalidraw.md",
     "Excalidraw/Drawing 2026-10-21 15.29.58.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta.md",

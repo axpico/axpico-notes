@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analisi 1 · 2 — Limiti di successioni</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<style>
+:root{--bg:#f5f2ea;--paper:#fffdf8;--ink:#1c1a16;--mute:#6b6558;--line:#d9d2c3;--acc:#1f4fbf;--red:#c2412d;--grn:#2f7d4f;--amb:#a86b00}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{border-bottom:1px solid var(--line);background:var(--paper)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header .wrap{display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;padding:18px 24px}
+header b{font:600 13px/1 ui-monospace,monospace;letter-spacing:.08em;color:var(--mute);text-transform:uppercase}
+header a{color:var(--ink);text-decoration:none;font-size:15px;padding:4px 0;border-bottom:2px solid transparent}
+header a.on{border-color:var(--acc);font-weight:600}
+h1{font:600 44px/1.1 "Iowan Old Style",Georgia,serif;margin:48px 0 8px}
+.lead{color:var(--mute);max-width:720px;font-size:18px}
+h2{font:600 28px/1.2 "Iowan Old Style",Georgia,serif;margin:64px 0 12px;padding-top:12px;border-top:1px solid var(--line)}
+h2 small{font:500 13px ui-monospace,monospace;color:var(--mute);display:block;margin-bottom:6px}
+h3{font:600 19px/1.3 Georgia,serif;margin:28px 0 8px}
+.layout{display:grid;grid-template-columns:200px 1fr;gap:40px}
+nav.toc{position:sticky;top:16px;align-self:start;font-size:14px;margin-top:56px}
+nav.toc a{display:block;color:var(--mute);text-decoration:none;padding:3px 0}
+nav.toc a:hover{color:var(--acc)}
+@media(max-width:860px){.layout{grid-template-columns:1fr}nav.toc{display:none}}
+.box{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--acc);padding:14px 18px;margin:16px 0;border-radius:4px}
+.box>.t{font:700 12px ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px;color:var(--acc)}
+.thm{border-left-color:var(--grn)}.thm>.t{color:var(--grn)}
+.warn{border-left-color:var(--red)}.warn>.t{color:var(--red)}
+.tip{border-left-color:var(--amb)}.tip>.t{color:var(--amb)}
+details{background:var(--paper);border:1px solid var(--line);border-radius:4px;margin:10px 0;padding:0 16px}
+details>summary{cursor:pointer;padding:10px 0;font-weight:600}
+details[open]>summary{border-bottom:1px dashed var(--line);margin-bottom:8px}
+details.proof>summary{color:var(--grn)}
+.lab{background:#fff;border:1px solid var(--ink);border-radius:6px;padding:16px 18px;margin:22px 0;box-shadow:4px 4px 0 var(--ink)}
+.lab>.t{font:700 12px ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.lab>.t::before{content:"▶ LAB · "}
+.ctl{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:10px;font-size:14px}
+.ctl label{display:flex;gap:8px;align-items:center}
+select,input,button{font:inherit;font-size:14px;padding:4px 8px;border:1px solid var(--line);border-radius:4px;background:#fff}
+input[type=range]{padding:0;width:180px;accent-color:var(--acc)}
+button{cursor:pointer;background:var(--ink);color:#fff;border-color:var(--ink)}
+canvas{width:100%;height:320px;display:block;border:1px solid var(--line);border-radius:4px;background:#fffefb}
+.out{font:14px/1.6 ui-monospace,monospace;background:#f3f0e8;border-radius:4px;padding:10px 12px;margin-top:10px;white-space:pre-wrap;overflow-x:auto}
+table{border-collapse:collapse;margin:12px 0;font-size:15px;background:var(--paper)}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#ece7da}
+.ok{color:var(--grn);font-weight:600}.no{color:var(--red);font-weight:600}
+footer{margin:80px 0 40px;color:var(--mute);font-size:14px}
+/* --- fix layout pannelli stretti --- */
+.layout>main{min-width:0}
+main table{display:block;overflow-x:auto;max-width:100%}
+.katex-display{overflow-x:auto;overflow-y:hidden;padding:2px 0}
+.out{max-width:100%;white-space:pre;overflow-x:auto}
+@media(max-width:860px){
+  .wrap{padding:0 14px}
+  header .wrap{padding:12px 14px;gap:12px}
+  h1{font-size:32px;margin-top:28px}
+  h2{font-size:23px;margin-top:44px}
+  .lead{font-size:16px}
+  .lab{padding:12px;box-shadow:3px 3px 0 var(--ink)}
+  canvas{height:240px}
+  input[type=range]{width:130px}
+}
+/* --- esercizi con autovalutazione --- */
+.score{position:sticky;top:0;z-index:5;background:var(--ink);color:#fff;border-radius:4px;padding:8px 14px;margin:14px 0;display:flex;gap:14px;align-items:center;flex-wrap:wrap;font:14px ui-monospace,monospace}
+.score .bar{flex:1;min-width:120px;height:8px;background:#444;border-radius:4px;overflow:hidden}
+.score .bar i{display:block;height:100%;background:#5fbf86;width:0;transition:width .3s}
+.score button{background:#fff;color:var(--ink);padding:2px 10px}
+.ex{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:12px 16px;margin:14px 0}
+.ex.right{border-color:var(--grn);box-shadow:inset 4px 0 0 var(--grn)}
+.ex.wrong{border-color:var(--red);box-shadow:inset 4px 0 0 var(--red)}
+.ex .q b:first-child{font-family:ui-monospace,monospace;margin-right:6px}
+.ex .lv{color:var(--amb);font-size:13px;margin-left:4px}
+.ex .ctrl{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0}
+.ex .ctrl input{width:190px}
+.ex .fb{font-weight:600}
+.ex ol.opts{list-style:upper-alpha;padding-left:28px}
+.ex ol.opts li{cursor:pointer;padding:3px 8px;border-radius:4px;margin:2px 0}
+.ex ol.opts li:hover{background:#ece7da}
+.ex ol.opts li.pick-ok{background:rgba(47,125,79,.18)}
+.ex ol.opts li.pick-ko{background:rgba(194,65,45,.15);text-decoration:line-through}
+.ex .hint{font-size:13px;color:var(--mute)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <b>Analisi 1 · interattivo</b>
+  <a href="1 - Successioni.html">1 · Successioni</a>
+  <a class="on" href="2 - Limiti di successioni.html">2 · Limiti</a>
+  <a href="3 - Serie numeriche.html">3 · Serie</a>
+</div></header>
+
+<div class="wrap layout">
+<nav class="toc">
+  <a href="#def">1. Definitivamente</a>
+  <a href="#lim">2. Definizione di limite</a>
+  <a href="#uni">3. Unicità e limitatezza</a>
+  <a href="#nex">4. Non esistenza</a>
+  <a href="#inf">5. Limiti infiniti</a>
+  <a href="#alg">6. Algebra dei limiti</a>
+  <a href="#teo">7. Teoremi di confronto</a>
+  <a href="#mon">8. Monotone e Nepero</a>
+  <a href="#not">9. Limiti notevoli</a>
+  <a href="#ger">10. Gerarchia infiniti</a>
+  <a href="#asi">11. Stime asintotiche</a>
+  <a href="#es">12. Esempi svolti</a>
+  <a href="#quiz">13. Autoverifica</a>
+  <a href="#eser"><b>✎ Esercizi</b></a>
+</nav>
+<main>
+<h1>Limiti di successioni</h1>
+<p class="lead">Il limite formalizza l'idea "per $n$ grande, $a_n$ è vicino a $\ell$". Tutta l'analisi successiva (serie, continuità, derivate) è costruita su questa definizione con $\varepsilon$ e $\nu_\varepsilon$, quindi conviene capirla a fondo, anche geometricamente.</p>
+
+<!-- ===== 1 ===== -->
+<h2 id="def"><small>§1</small>La proprietà "definitivamente"</h2>
+<div class="box"><div class="t">Definizione</div>
+Una proprietà $P(n)$ vale <b>definitivamente</b> se $\exists\,n_0\in\mathbb N$ tale che $P(n)$ è vera $\forall n\ge n_0$.
+</div>
+<p>Si ammette quindi un numero <b>finito</b> di eccezioni iniziali. La negazione è: $P(n)$ è falsa per <b>infiniti</b> indici (non "falsa da qualche parte"). Esempio: "$n\gt100$" vale definitivamente; "$n$ è pari" no, perché è falsa per tutti gli infiniti dispari. Il comportamento al limite dipende solo dalla coda della successione.</p>
+
+<!-- ===== 2 ===== -->
+<h2 id="lim"><small>§2</small>Definizione di limite</h2>
+<p><b>Striscia</b> di centro $a$ e semiampiezza $r\gt0$: $S_{a,r}:=\{(x,y)\in\mathbb R^2:|y-a|\lt r\}$, cioè la fascia orizzontale $a-r\lt y\lt a+r$.</p>
+<div class="box"><div class="t">Definizione (limite finito)</div>
+$\ell\in\mathbb R$ è il limite di $\{a_n\}$, e si scrive $\displaystyle\lim_{n\to\infty}a_n=\ell$ oppure $a_n\to\ell$, se
+$$\forall\varepsilon\gt0\ \ \exists\,\nu_\varepsilon\in\mathbb N:\quad |a_n-\ell|\lt\varepsilon\quad\forall n\gt\nu_\varepsilon .$$
+</div>
+<p><b>Lettura geometrica:</b> per ogni striscia $S_{\ell,\varepsilon}$, per quanto sottile, i punti $P_n=(n,a_n)$ vi appartengono <em>definitivamente</em>; solo un numero finito ne resta fuori. In generale $\nu_\varepsilon$ dipende da $\varepsilon$: più la striscia è stretta, più bisogna andare avanti.</p>
+<p><b>Esempio:</b> $\frac1n\to0$. Dato $\varepsilon$, $\left|\frac1n\right|\lt\varepsilon\iff n\gt\frac1\varepsilon$; basta $\nu_\varepsilon=\left[\frac1\varepsilon\right]+1$. ∎</p>
+
+<div class="lab"><div class="t">La striscia ε e il testimone ν_ε</div>
+  <div class="ctl">
+    <label>$a_n=$ <select id="A1"></select></label>
+    <label>$\varepsilon=10^{k}$, $k$ = <input type="range" id="A2" min="-2.5" max="0" step="0.05" value="-1"> <span id="A2v"></span></label>
+  </div>
+  <canvas id="cA"></canvas>
+  <div class="out" id="oA"></div>
+</div>
+<p style="font-size:14px;color:var(--mute)">ν_ε è calcolato numericamente come l'ultimo indice (entro $n\le 20000$) con $|a_n-\ell|\ge\varepsilon$. In un esercizio va invece <em>trovato analiticamente</em>, risolvendo $|a_n-\ell|\lt\varepsilon$ in $n$.</p>
+
+<!-- ===== 3 ===== -->
+<h2 id="uni"><small>§3</small>Unicità del limite e limitatezza</h2>
+<div class="box thm"><div class="t">Teorema (unicità)</div>Se $\{a_n\}$ ammette limite, questo è unico.</div>
+<details class="proof"><summary>Dimostrazione (per assurdo)</summary>
+Siano $\ell_1\ne\ell_2$ due limiti. Per ogni $\varepsilon$ esistono $\nu_{\varepsilon,1},\nu_{\varepsilon,2}$ con $|a_n-\ell_1|\lt\varepsilon$ per $n\gt\nu_{\varepsilon,1}$ e $|a_n-\ell_2|\lt\varepsilon$ per $n\gt\nu_{\varepsilon,2}$. Con $\nu_\varepsilon=\max\{\nu_{\varepsilon,1},\nu_{\varepsilon,2}\}$ valgono entrambe. Scelgo $\varepsilon=\frac{|\ell_1-\ell_2|}2\gt0$; per la disuguaglianza triangolare
+$$|\ell_1-\ell_2|=|\ell_1-a_n+a_n-\ell_2|\le|\ell_1-a_n|+|a_n-\ell_2|\lt2\varepsilon=|\ell_1-\ell_2|,$$
+assurdo. <i>Geometricamente:</i> i punti dovrebbero stare definitivamente in due strisce disgiunte. ∎
+</details>
+
+<div class="box thm"><div class="t">Teorema</div>Ogni successione convergente è limitata.</div>
+<details class="proof"><summary>Dimostrazione</summary>
+Sia $a_n\to\ell$. Con $\varepsilon=1$: $\ell-1\lt a_n\lt\ell+1$ per $n\gt\nu_1$, quindi $|a_n|\le1+|\ell|$ definitivamente. Restano fuori solo i termini $a_0,\dots,a_{\nu_1}$, in numero finito. Posto
+$$K=\max\{1+|\ell|,\ |a_0|,\ |a_1|,\dots,|a_{\nu_1}|\}$$
+(massimo di un insieme finito, quindi esiste), si ha $|a_n|\le K$ per ogni $n$. ∎
+</details>
+<div class="box warn"><div class="t">Il viceversa è falso</div>Limitata $\not\Rightarrow$ convergente: $(-1)^n$ è limitata ma non ha limite.</div>
+
+<!-- ===== 4 ===== -->
+<h2 id="nex"><small>§4</small>Non esistenza del limite</h2>
+<p>Negando la definizione: $a_n\not\to\ell\iff\exists\,\varepsilon\gt0$ tale che $P_n\notin S_{\ell,\varepsilon}$ per <b>infiniti</b> $n$. Se ciò accade per <b>ogni</b> $\ell\in\mathbb R$ (e la successione non diverge), il limite non esiste.</p>
+<div class="box tip"><div class="t">Criterio delle sottosuccessioni</div>
+Se $a_n\to\ell$, ogni sottosuccessione $a_{n_k}$ tende a $\ell$. Contronominale: <b>se due sottosuccessioni hanno limiti diversi, $\nexists\lim a_n$</b>.
+</div>
+<ul>
+<li>$(-1)^n$: $a_{2k}=1\to1$, $a_{2k+1}=-1\to-1$ ⟹ irregolare.</li>
+<li>$\sin(\pi n)\equiv0$: costante, $\to0$.</li>
+<li>$\sin\left(n\frac\pi2\right)$: $a_{2k}=0$, $a_{4k+1}=1$, $a_{4k+3}=-1$ ⟹ irregolare.</li>
+</ul>
+<div class="lab"><div class="t">Prova un candidato limite per (−1)ⁿ</div>
+  <div class="ctl">
+    <label>candidato $\ell$ <input type="range" id="B1" min="-2" max="2" step="0.05" value="1"> <span id="B1v"></span></label>
+    <label>$\varepsilon$ <input type="range" id="B2" min="0.05" max="1.5" step="0.05" value="0.5"> <span id="B2v"></span></label>
+  </div>
+  <canvas id="cB"></canvas>
+  <div class="out" id="oB"></div>
+</div>
+
+<!-- ===== 5 ===== -->
+<h2 id="inf"><small>§5</small>Limiti infiniti</h2>
+<div class="box"><div class="t">Definizione</div>
+$a_n\to+\infty$ se $\ \forall M\gt0\ \exists\,\nu_M:\ a_n\gt M\ \ \forall n\gt\nu_M$ (i punti stanno definitivamente nel semipiano $y\gt M$).<br>
+$a_n\to-\infty$ se $\ \forall M\gt0\ \exists\,\nu_M:\ a_n\lt-M\ \ \forall n\gt\nu_M$.
+</div>
+<p><b>Esempio:</b> $n^2\to+\infty$. $n^2\gt M\iff n\gt\sqrt M$ (la radice negativa si scarta perché $n\ge0$), e basta $\nu_M=[\sqrt M]+1$.</p>
+<div class="lab"><div class="t">ν_M per n²</div>
+  <div class="ctl"><label>$M=10^{k}$, $k$ = <input type="range" id="C1" min="0" max="10" step="0.1" value="2"> <span id="C1v"></span></label></div>
+  <div class="out" id="oC"></div>
+</div>
+<table>
+<tr><th>Comportamento</th><th>Definizione</th><th>Esempio</th></tr>
+<tr><td>converge a $\ell\in\mathbb R$</td><td>$\forall\varepsilon\ \exists\nu_\varepsilon:\ |a_n-\ell|\lt\varepsilon\ \forall n\gt\nu_\varepsilon$</td><td>$\frac1n\to0$</td></tr>
+<tr><td>diverge a $+\infty$</td><td>$\forall M\ \exists\nu_M:\ a_n\gt M\ \forall n\gt\nu_M$</td><td>$n^2$</td></tr>
+<tr><td>diverge a $-\infty$</td><td>$\forall M\ \exists\nu_M:\ a_n\lt-M\ \forall n\gt\nu_M$</td><td>$-n^2$</td></tr>
+<tr><td>irregolare</td><td>nessuna delle precedenti</td><td>$(-1)^n$, $\sin\frac{n\pi}2$</td></tr>
+</table>
+<p>Una successione è <b>regolare</b> se ammette limite (finito o infinito), <b>irregolare</b> altrimenti.</p>
+
+<!-- ===== 6 ===== -->
+<h2 id="alg"><small>§6</small>Algebra dei limiti e forme indeterminate</h2>
+<p>Siano $a_n\to a$, $b_n\to b$ con $a,b\in\overline{\mathbb R}=\mathbb R\cup\{\pm\infty\}$. Le tabelle dicono quando il limite di un'operazione è <b>determinato</b> dai soli limiti $a,b$.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px">
+<table><tr><th colspan="3">Somma $a_n+b_n$</th></tr>
+<tr><td>$a$</td><td>$b$</td><td>$a+b$</td></tr>
+<tr><td>$\pm\infty$</td><td>$b\in\mathbb R$</td><td>$\pm\infty$</td></tr>
+<tr><td>$+\infty$</td><td>$+\infty$</td><td>$+\infty$</td></tr>
+<tr><td>$-\infty$</td><td>$-\infty$</td><td>$-\infty$</td></tr>
+<tr><td>$+\infty$</td><td>$-\infty$</td><td class="no">FI</td></tr></table>
+<table><tr><th colspan="3">Prodotto $a_nb_n$</th></tr>
+<tr><td>$a$</td><td>$b$</td><td>$ab$</td></tr>
+<tr><td>$\pm\infty$</td><td>$b\ne0$</td><td>$\pm\infty$ (regola dei segni)</td></tr>
+<tr><td>$\pm\infty$</td><td>$\pm\infty$</td><td>$\pm\infty$ (segni)</td></tr>
+<tr><td>$0$</td><td>$\pm\infty$</td><td class="no">FI</td></tr></table>
+<table><tr><th colspan="3">Quoziente $a_n/b_n$ ($b_n\ne0$)</th></tr>
+<tr><td>$a$</td><td>$b\ne0$</td><td>$a/b$</td></tr>
+<tr><td>$a\in\mathbb R$</td><td>$\pm\infty$</td><td>$0$</td></tr>
+<tr><td>$\pm\infty$</td><td>$b\ne0$ finito</td><td>$\pm\infty$ (segni)</td></tr>
+<tr><td>$a\ne0$</td><td>$0$</td><td>$\pm\infty$ se $b_n$ ha segno definitivo, altrimenti irregolare</td></tr>
+<tr><td>$0$ / $\pm\infty$</td><td>$0$ / $\pm\infty$</td><td class="no">FI</td></tr></table>
+<table><tr><th colspan="3">Potenza $a_n^{b_n}$ ($a_n\gt0$)</th></tr>
+<tr><td>$a\gt0$</td><td>$b$</td><td>$a^b$</td></tr>
+<tr><td>$0\le a\lt1$</td><td>$\pm\infty$</td><td>$0$ / $+\infty$</td></tr>
+<tr><td>$a\gt1$</td><td>$\pm\infty$</td><td>$+\infty$ / $0$</td></tr>
+<tr><td>$+\infty$</td><td>$b\gt0$ / $b\lt0$</td><td>$+\infty$ / $0$</td></tr>
+<tr><td>$+\infty$</td><td>$\pm\infty$</td><td>$+\infty$ / $0$</td></tr></table>
+</div>
+<div class="box warn"><div class="t">Le sette forme indeterminate</div>
+$$+\infty-\infty,\quad 0\cdot(\pm\infty),\quad \frac00,\quad \frac{\pm\infty}{\pm\infty},\quad 0^0,\quad 1^{\pm\infty},\quad (+\infty)^0 .$$
+"Indeterminata" non vuol dire che il limite non esiste: vuol dire che <b>non è determinato dai limiti dei pezzi</b>; dipende dalle successioni specifiche e va risolto con manipolazioni (raccoglimenti, razionalizzazioni, limiti notevoli, asintotici). Le ultime tre si riducono a $0\cdot\infty$ scrivendo $a_n^{b_n}=e^{b_n\log a_n}$.
+</div>
+<p><b>Quoziente irregolare.</b> $a_n=1$, $b_n=\frac{(-1)^n}n\to0$: $\frac{a_n}{b_n}=(-1)^nn$ ha $c_{2n}\to+\infty$, $c_{2n+1}\to-\infty$. Qui $b_n$ cambia segno infinite volte.</p>
+
+<div class="lab"><div class="t">Stessa forma indeterminata, risultati diversi</div>
+  <div class="ctl"><label>forma <select id="D1"></select></label></div>
+  <div class="out" id="oD"></div>
+</div>
+
+<h3>Esempi di risoluzione (dagli appunti)</h3>
+<ol>
+<li>$(n+1)^2-(n-1)^2=4n\to+\infty$ (FI $\infty-\infty$, si sviluppa).</li>
+<li>$(n+1)^2-(n+3)^2=-4n-8\to-\infty$.</li>
+<li>$\frac{n+1}{n^2}=\frac{1+\frac1n}{n}\to0$; $\ \frac{n-1}{n}=1-\frac1n\to1$ (FI $\frac\infty\infty$, si raccoglie).</li>
+<li>$\frac{1/n^2}{1/n}=\frac1n\to0$; $\ \frac{1/n^2}{1/n^3}=n\to+\infty$ (FI $\frac00$).</li>
+</ol>
+
+<!-- ===== 7 ===== -->
+<h2 id="teo"><small>§7</small>Teoremi: somma, segno, confronto</h2>
+<div class="box thm"><div class="t">Teorema (limite della somma)</div>$a_n\to a\in\mathbb R$, $b_n\to b\in\mathbb R$ ⟹ $a_n+b_n\to a+b$.</div>
+<details class="proof"><summary>Dimostrazione</summary>
+Con $\nu_\varepsilon=\max\{\nu_{\varepsilon,1},\nu_{\varepsilon,2}\}$, per $n\gt\nu_\varepsilon$:
+$$|(a_n+b_n)-(a+b)|\le|a_n-a|+|b_n-b|\lt2\varepsilon .$$
+Poiché $\varepsilon$ è arbitrario, basta applicare le ipotesi con $\varepsilon/2$ per ottenere esattamente $\lt\varepsilon$. ∎ (La tecnica "max dei due $\nu$ + disuguaglianza triangolare" è il cuore di quasi tutte le dimostrazioni con due successioni.)
+</details>
+
+<div class="box thm"><div class="t">Teorema (permanenza del segno)</div>$a_n\to a\gt0$ ⟹ $a_n\gt0$ definitivamente.</div>
+<details class="proof"><summary>Dimostrazione e corollario</summary>
+Con $\varepsilon=\frac a2\gt0$: $a-\frac a2\lt a_n\lt a+\frac a2$, cioè $a_n\gt\frac a2\gt0$ per $n\gt\nu_{a/2}$. ∎<br><br>
+<b>Corollario.</b> $a_n\ge0$ (definitivamente) e $a_n\to a$ ⟹ $a\ge0$. Per assurdo: se $a\lt0$, applicando il teorema a $-a_n\to-a\gt0$ si avrebbe $a_n\lt0$ definitivamente. ∎
+</details>
+<div class="box warn"><div class="t">Il segno stretto non passa al limite</div>$a_n\gt0\ \forall n$ dà solo $a\ge0$: $\frac1n\gt0$ ma $\frac1n\to0$.</div>
+
+<div class="box thm"><div class="t">Teorema (confronto)</div>$a_n\to a$, $b_n\to b$, $a_n\ge b_n$ definitivamente ⟹ $a\ge b$.</div>
+<details class="proof"><summary>Dimostrazione</summary>$c_n:=a_n-b_n\ge0$ e $c_n\to a-b$ (algebra dei limiti); per il corollario $a-b\ge0$. ∎</details>
+
+<div class="box thm"><div class="t">Teorema dei due carabinieri</div>
+$a_n\le c_n\le b_n$ definitivamente e $a_n\to\ell$, $b_n\to\ell$ con $\ell\in\mathbb R$ ⟹ $c_n\to\ell$.
+</div>
+<details class="proof"><summary>Dimostrazione</summary>
+Per $n\gt\nu_\varepsilon=\max\{\nu_{\varepsilon,1},\nu_{\varepsilon,2}\}$:
+$$\ell-\varepsilon\lt a_n\le c_n\le b_n\lt\ell+\varepsilon\ \Longrightarrow\ |c_n-\ell|\lt\varepsilon. \ \blacksquare$$
+Nota la differenza col teorema di confronto: qui l'<b>esistenza</b> del limite di $c_n$ è una conclusione, non un'ipotesi.
+</details>
+<div class="lab"><div class="t">Due carabinieri</div>
+  <div class="ctl"><label>$c_n=$ <select id="E1"><option value="0">sin(n)/n  tra ±1/n</option><option value="1">cos(n²)/√n  tra ±1/√n</option><option value="2">1 + (−1)ⁿ/n²  tra 1 ± 1/n²</option></select></label>
+  <label>termini <input type="range" id="E2" min="10" max="150" value="50"></label></div>
+  <canvas id="cE"></canvas>
+</div>
+
+<div class="box thm"><div class="t">Confronto per limiti infiniti</div>
+$a_n\le b_n$ definitivamente: $a_n\to+\infty$ ⟹ $b_n\to+\infty$; $\ b_n\to-\infty$ ⟹ $a_n\to-\infty$.<br>
+<i>Dim.</i> $b_n\ge a_n\gt M$ per $n\gt\nu_M$. ∎ &nbsp;Attenzione alla direzione: da $b_n\to+\infty$ non si deduce nulla su $a_n$.
+</div>
+
+<h3>Infinitesimi</h3>
+<p>$a_n$ è <b>infinitesima</b> se $a_n\to0$. <b>Lemma:</b> $a_n\to0\iff|a_n|\to0$ (infatti $|a_n-0|=||a_n|-0|$).</p>
+<div class="box thm"><div class="t">Teorema (limitata × infinitesima)</div>$|a_n|\le M$ e $b_n\to0$ ⟹ $a_nb_n\to0$.</div>
+<details class="proof"><summary>Dimostrazione</summary>$0\le|a_nb_n|\le M|b_n|\to0$; carabinieri e lemma. ∎<br>
+Esempio: $\frac{\sin n}{n}\to0$. L'ipotesi di limitatezza è essenziale: $n\cdot\frac1n=1\not\to0$.</details>
+
+<!-- ===== 8 ===== -->
+<h2 id="mon"><small>§8</small>Successioni monotone e il numero $e$</h2>
+<div class="box thm"><div class="t">Teorema (regolarità delle monotone)</div>
+Ogni successione monotona ammette limite: se crescente, $a_n\to\sup\{a_n\}$ ($=+\infty$ se illimitata); se decrescente, $a_n\to\inf\{a_n\}$.
+</div>
+<details class="proof"><summary>Dimostrazione (caso crescente)</summary>
+<i>Limitata superiormente.</i> Per la <b>completezza di $\mathbb R$</b> esiste $\lambda=\sup\{a_n\}\in\mathbb R$. Per la caratterizzazione del sup, $\forall\varepsilon\ \exists\nu:\ a_\nu\gt\lambda-\varepsilon$. Per monotonia e definizione di sup, per $n\gt\nu$:
+$$\lambda-\varepsilon\lt a_\nu\le a_n\le\lambda\lt\lambda+\varepsilon\ \Rightarrow\ |a_n-\lambda|\lt\varepsilon .$$
+<i>Illimitata.</i> $\forall M\ \exists\nu:\ a_\nu\gt M$, e per monotonia $a_n\ge a_\nu\gt M$ per $n\gt\nu$. ∎ Il caso decrescente si ottiene da $-a_n$.
+</details>
+<div class="box tip"><div class="t">Perché è importante</div>È il primo strumento che prova l'<b>esistenza</b> di un limite senza conoscerlo a priori. È qui che la completezza di $\mathbb R$ entra in gioco: in $\mathbb Q$ è falso (le approssimazioni decimali di $\sqrt2$ crescono e sono limitate, ma non hanno limite in $\mathbb Q$).</div>
+<p>$a_n=\left(1+\frac1n\right)^n$ è crescente e limitata (da 3), quindi converge. Per definizione
+$$e:=\lim_{n\to\infty}\left(1+\frac1n\right)^n=\sup_n\left(1+\frac1n\right)^n\approx2{,}71828,\qquad e\notin\mathbb Q .$$</p>
+<div class="lab"><div class="t">(1 + 1/n)ⁿ sale verso e</div>
+  <div class="ctl"><label>termini <input type="range" id="F1" min="5" max="200" value="40"> <span id="F1v"></span></label></div>
+  <canvas id="cF"></canvas>
+  <div class="out" id="oF"></div>
+</div>
+
+<!-- ===== 9 ===== -->
+<h2 id="not"><small>§9</small>Limiti notevoli</h2>
+<h3>(a) Successione geometrica</h3>
+$$\lim_{n\to\infty}a^n=\begin{cases}+\infty&a\gt1\\1&a=1\\0&-1\lt a\lt1\\\nexists&a\le-1\end{cases}$$
+<details class="proof"><summary>Dimostrazione</summary>
+<b>$a\gt1$:</b> con $x=a-1\gt0$, Bernoulli dà $a^n=(1+x)^n\ge1+nx\to+\infty$; confronto. <b>$0\lt|a|\lt1$:</b> $|a|^n=\frac1{(1/|a|)^n}$ con $\frac1{|a|}\gt1$, quindi $\to0$ e per il lemma $a^n\to0$. <b>$a\le-1$:</b> $a^{2k}$ e $a^{2k+1}$ hanno limiti diversi ($1,-1$ oppure $+\infty,-\infty$). ∎
+</details>
+<div class="lab"><div class="t">aⁿ al variare di a</div>
+  <div class="ctl"><label>$a$ = <input type="range" id="G1" min="-1.4" max="1.4" step="0.01" value="0.8"> <span id="G1v"></span></label></div>
+  <canvas id="cG"></canvas>
+  <div class="out" id="oG"></div>
+</div>
+
+<h3>(b) Radice $n$-esima</h3>
+<p>Per $a\gt0$: $\sqrt[n]a\to1$. Inoltre $\sqrt[n]n\to1$ e quindi $\sqrt[n]{n^b}\to1$ per ogni $b$.</p>
+<details class="proof"><summary>Dimostrazione</summary>
+$a\ge1$: $b_n:=\sqrt[n]a-1\ge0$, e per Bernoulli $a=(1+b_n)^n\ge1+nb_n$, quindi $0\le b_n\le\frac{a-1}n\to0$ (carabinieri). $0\lt a\lt1$: $\sqrt[n]a=1/\sqrt[n]{1/a}\to1$. ∎
+</details>
+
+<h3>(c) Nepero generalizzato</h3>
+<p>Se $a_n\to\pm\infty$: $\left(1+\frac\alpha{a_n}\right)^{a_n}\to e^\alpha$ per ogni $\alpha\in\mathbb R$ (forma $1^\infty$).</p>
+
+<h3>Disuguaglianza fondamentale</h3>
+<p>Per $0\lt|x|\lt\frac\pi2$: $\ \cos x\lt\frac{\sin x}x\lt1$.</p>
+<details class="proof"><summary>Dimostrazione (aree)</summary>
+Nella circonferenza goniometrica, con $A=(1,0)$, $B$ di angolo $x$, $D$ intersezione di $OB$ con la tangente in $A$: $\triangle OAB\subset$ settore $\subset\triangle OAD$, quindi $\frac{\sin x}2\lt\frac x2\lt\frac{\tan x}2$. Dividendo per $\sin x\gt0$ e prendendo i reciproci: $\cos x\lt\frac{\sin x}x\lt1$. Per $x\lt0$ si usa la parità di $\frac{\sin x}x$. ∎
+</details>
+
+<h3>(d), (e) Limiti con $a_n\to0$, $a_n\ne0$</h3>
+<table>
+<tr><th>limite</th><th>idea della dimostrazione</th></tr>
+<tr><td>$\sin a_n\to0$</td><td>$0\le|\sin a_n|\le|a_n|$, carabinieri</td></tr>
+<tr><td>$\cos a_n\to1$</td><td>$0\le1-\cos a_n=\frac{\sin^2a_n}{1+\cos a_n}\le\sin^2a_n\to0$</td></tr>
+<tr><td>$\dfrac{\sin a_n}{a_n}\to1$</td><td>$\cos a_n\lt\frac{\sin a_n}{a_n}\lt1$, carabinieri</td></tr>
+<tr><td>$\dfrac{1-\cos a_n}{a_n^2}\to\dfrac12$</td><td>$=\left(\frac{\sin a_n}{a_n}\right)^2\frac1{1+\cos a_n}$</td></tr>
+<tr><td>$(1+a_n)^{1/a_n}\to e$</td><td>$b_n=\frac1{a_n}\to\pm\infty$ e (c)</td></tr>
+<tr><td>$\dfrac{\log(1+a_n)}{a_n}\to1$</td><td>$=\log\left[(1+a_n)^{1/a_n}\right]\to\log e$</td></tr>
+<tr><td>$\dfrac{e^{a_n}-1}{a_n}\to1$</td><td>$b_n=e^{a_n}-1$, $a_n=\log(1+b_n)$, reciproco del precedente</td></tr>
+<tr><td>$\dfrac{(1+a_n)^\alpha-1}{a_n}\to\alpha$</td><td>$(1+a_n)^\alpha=e^{\alpha\log(1+a_n)}$, prodotto dei due precedenti</td></tr>
+</table>
+
+<h3>(f) Rapporto di polinomi</h3>
+<p>Con $P$ di grado $k$ (coeff. $a_k$) e $Q$ di grado $h$ (coeff. $b_h$), raccogliendo i monomi di grado massimo $\frac{P(n)}{Q(n)}=n^{k-h}\frac{a_k+o(1)}{b_h+o(1)}$, quindi il limite è $\pm\infty$ se $k\gt h$ (segno di $\frac{a_k}{b_h}$), $\frac{a_k}{b_h}$ se $k=h$, $0$ se $k\lt h$. Es.: $\frac{n^5+n^4-2n^2}{-2n^3-n^2-2n}\to-\infty$.</p>
+
+<h3>Criterio del rapporto (per successioni)</h3>
+<div class="box thm"><div class="t">Teorema</div>$a_n\gt0$ e $\frac{a_{n+1}}{a_n}\to b\lt1$ ⟹ $a_n\to0$.</div>
+<details class="proof"><summary>Idea</summary>Preso $b\lt q\lt1$, definitivamente $a_{n+1}\lt qa_n$, quindi $a_n\lt Cq^n\to0$; carabinieri. ∎</details>
+
+<!-- ===== 10 ===== -->
+<h2 id="ger"><small>§10</small>Gerarchia degli infiniti</h2>
+$$\log_an\ \ll\ n^b\ \ll\ \alpha^n\ \ll\ n!\ \ll\ n^n\qquad(a,\alpha\gt1,\ b\gt0),\qquad x_n\ll y_n\iff\frac{x_n}{y_n}\to0 .$$
+<details class="proof"><summary>Dimostrazioni (criterio del rapporto e Bernoulli)</summary>
+<b>(g1)</b> $\frac{n^b}{\alpha^n}$: rapporto $\left(1+\frac1n\right)^b\frac1\alpha\to\frac1\alpha\lt1$.<br>
+<b>(g2)</b> $\frac{\alpha^n}{n!}$: rapporto $\frac\alpha{n+1}\to0$.<br>
+<b>(g3)</b> $\frac{n!}{n^n}$: rapporto $\left(\frac n{n+1}\right)^n=\frac1{(1+1/n)^n}\to\frac1e\lt1$.<br>
+<b>(h)</b> $\frac{\log_an}{n^b}$: dal lemma $2^x\gt x$ ($x\gt0$, via Bernoulli sulla parte intera) segue $\log_ax\lt x\log_a2$; con $x=n^{b/2}$: $\log_an\lt\frac2b\log_a2\,n^{b/2}$, quindi $0\lt\frac{\log_an}{n^b}\lt\frac{C}{n^{b/2}}\to0$. ∎
+</details>
+<div class="lab"><div class="t">Chi vince, e quando? (n fino a 10³⁰⁰)</div>
+  <div class="ctl">
+    <label>$n=10^{k}$, $k$ = <input type="range" id="I1" min="0.3" max="300" step="0.1" value="2"> <span id="I1v"></span></label>
+    <label>$b$ = <input type="range" id="I2" min="0.05" max="3" step="0.05" value="0.1"> <span id="I2v"></span></label>
+    <label>$\alpha$ = <input type="range" id="I3" min="1.01" max="5" step="0.01" value="1.05"> <span id="I3v"></span></label>
+  </div>
+  <div class="out" id="oI"></div>
+</div>
+<p style="font-size:14px;color:var(--mute)">Con $b=0.1$ il rapporto $\frac{\log n}{n^{0.1}}$ cresce a lungo prima di scendere: "$\to0$" è un'affermazione sulla coda, non sui primi termini. I valori sono calcolati in logaritmi (Stirling per $n!$), quindi niente overflow.</p>
+
+<!-- ===== 11 ===== -->
+<h2 id="asi"><small>§11</small>Confronti e stime asintotiche</h2>
+<p>Per calcolare un limite non serve tutta la successione, ma solo il suo <b>comportamento dominante</b>. Il rapporto $\frac{a_n}{b_n}$ misura "chi vince".</p>
+<table>
+<tr><th>$\lim\frac{a_n}{b_n}$</th><th>infiniti ($a_n,b_n\to\infty$)</th><th>infinitesimi ($a_n,b_n\to0$)</th></tr>
+<tr><td>$0$</td><td>$a_n$ di ordine <b>inferiore</b></td><td>$a_n$ di ordine <b>superiore</b> (va a 0 più in fretta)</td></tr>
+<tr><td>$\ell\ne0$ finito</td><td colspan="2">stesso ordine</td></tr>
+<tr><td>$\pm\infty$</td><td>ordine superiore</td><td>ordine inferiore</td></tr>
+<tr><td>$\nexists$</td><td colspan="2">non confrontabili</td></tr>
+</table>
+<div class="box warn"><div class="t">Gli aggettivi si invertono</div>In entrambi i casi $\frac{a_n}{b_n}\to0$ si scrive $a_n=o(b_n)$: conta la formula, non la parola.</div>
+
+<div class="box"><div class="t">Definizioni</div>
+$a_n\sim b_n$ (asintotiche) se $\dfrac{a_n}{b_n}\to1$; $\qquad a_n=o(b_n)$ ("o piccolo") se $\dfrac{a_n}{b_n}\to0$.<br>
+<b>Collegamento:</b> $a_n\sim b_n\iff a_n=b_n+o(b_n)$, perché $\frac{a_n-b_n}{b_n}=\frac{a_n}{b_n}-1$.
+</div>
+<p>$\sim$ è una relazione di equivalenza (riflessiva, simmetrica, transitiva: $\frac{a_n}{c_n}=\frac{a_n}{b_n}\frac{b_n}{c_n}\to1$) e <b>conserva il comportamento</b>: due successioni equivalenti convergono allo stesso limite, divergono con lo stesso segno, o sono entrambe irregolari. È per questo che si possono sostituire pezzi con equivalenti più semplici.</p>
+<table>
+<tr><th>Se $a_n\sim a_n'$, $b_n\sim b_n'$</th><th>vale?</th><th>motivo / controesempio</th></tr>
+<tr><td>prodotto, quoziente</td><td class="ok">sì</td><td>$\frac{a_nb_n}{a_n'b_n'}=\frac{a_n}{a_n'}\frac{b_n}{b_n'}\to1$</td></tr>
+<tr><td>potenza $(a_n)^\alpha$</td><td class="ok">sì</td><td>($a_n,a_n'\gt0$)</td></tr>
+<tr><td>somma / differenza</td><td class="no">no</td><td>$n+1\sim n$, $-n\sim-n$, ma $1\not\sim0$</td></tr>
+<tr><td>$e^{a_n}$</td><td class="no">no</td><td>$n+1\sim n$, ma $\frac{e^{n+1}}{e^n}=e$. Vale $e^{a_n}\sim e^{b_n}\iff a_n-b_n\to0$</td></tr>
+<tr><td>$\log a_n$</td><td>sì se $a_n\not\to1$</td><td>$1+\frac1n\sim1+\frac1{n^2}$ ma i log hanno rapporto $\sim n$</td></tr>
+</table>
+<details class="proof"><summary>Teorema: $a_n\sim b_n$, $b_n\not\to1$ ⟹ $\log a_n\sim\log b_n$</summary>
+$\dfrac{\log a_n}{\log b_n}=1+\dfrac{\log(a_n/b_n)}{\log b_n}$. Il numeratore $\to\log1=0$; il denominatore non è infinitesimo perché $b_n\not\to1$ (tende a $\log\ell\ne0$ o diverge). Quindi il rapporto $\to1$. ∎ Il log "legge" differenze <em>relative</em>: se anche $\log b_n\to0$ la differenza relativa può pesare.
+</details>
+<p><b>Algebra degli o piccoli</b> ($c\ne0$): $o(a_n)\pm o(a_n)=o(a_n)$; $\ c\,o(a_n)=o(a_n)$; $\ a_n\,o(b_n)=o(a_nb_n)$; se $b_n=o(a_n)$ allora $o(a_n)+o(b_n)=o(a_n)$ (domina il più grande). Es.: $o(n)+o(n^2)=o(n^2)$, $\ o(\frac1n)+o(\frac1{n^2})=o(\frac1n)$. Attenzione: $a_n\sim b_n\Rightarrow a_n-b_n=o(b_n)$, <b>non</b> $o(1)$.</p>
+<div class="box tip"><div class="t">Equivalenze notevoli (εₙ → 0)</div>
+$$\sin\varepsilon_n\sim\varepsilon_n,\quad e^{\varepsilon_n}-1\sim\varepsilon_n,\quad\log(1+\varepsilon_n)\sim\varepsilon_n,\quad(1+\varepsilon_n)^a-1\sim a\varepsilon_n,\quad1-\cos\varepsilon_n\sim\tfrac12\varepsilon_n^2 .$$
+Solo con argomento infinitesimo, e mai dentro somme/differenze di termini dello stesso ordine.
+</div>
+<div class="lab"><div class="t">Verifica numerica di un'equivalenza</div>
+  <div class="ctl"><label>coppia <select id="J1"></select></label></div>
+  <div class="out" id="oJ"></div>
+</div>
+
+<!-- ===== 12 ===== -->
+<h2 id="es"><small>§12</small>Esempi svolti</h2>
+<details><summary>Es. 1 — $\displaystyle\frac{3n^3+2n^2-\sin(n^2)}{5n^3+n+\arctan n}\to\frac35$</summary>
+Ogni addendo diverso da $n^3$ è $o(n^3)$: $\frac{2n^2}{n^3}\to0$; $\left|\frac{\sin n^2}{n^3}\right|\le\frac1{n^3}$; $\frac n{n^3}\to0$; $\left|\frac{\arctan n}{n^3}\right|\le\frac\pi{2n^3}$. Quindi $a_n=\frac{3n^3+o(n^3)}{5n^3+o(n^3)}=\frac{3+o(1)}{5+o(1)}\to\frac35$.</details>
+<details><summary>Es. 2 — $\displaystyle\frac{(\sqrt[3]{n+1}-\sqrt[3]n)\sin\frac1{n^2}}{1-e^{2/n}}\to0$</summary>
+La differenza è $\infty-\infty$: non si sostituisce, si raccoglie: $\sqrt[3]{n+1}-\sqrt[3]n=n^{1/3}\left[(1+\frac1n)^{1/3}-1\right]\sim n^{1/3}\cdot\frac1{3n}=\frac13n^{-2/3}$. Poi $\sin\frac1{n^2}\sim\frac1{n^2}$, $1-e^{2/n}\sim-\frac2n$. Prodotto/quoziente: $a_n\sim-\frac16n^{-5/3}\to0^-$.</details>
+<details><summary>Es. 3 — $\displaystyle\frac{e^{\sin[\log(1+1/n)]}-1}{1/n}\to1$</summary>
+Dall'esterno verso l'interno, ogni argomento è infinitesimo: $e^{x_n}-1\sim x_n=\sin y_n\sim y_n=\log(1+\frac1n)\sim\frac1n$. Transitività: numeratore $\sim\frac1n$, rapporto $\to1$.</details>
+<details><summary>Es. 4 — $\left(n^3+n^2\right)^{1/3}-\left(n^3-n^2\right)^{1/3}\to\frac23$</summary>
+Sostituire entrambi con $n$ darebbe $0$: <b>sbagliato</b>, l'equivalenza perde proprio il termine che conta. Si sviluppa: $(n^3\pm n^2)^{1/3}=n(1\pm\frac1n)^{1/3}=n\left(1\pm\frac1{3n}+o(\frac1n)\right)$. Differenza: $n\left[\frac2{3n}+o(\frac1n)\right]=\frac23+o(1)$.</details>
+<details><summary>Es. 5 — $\displaystyle\frac{n^3[\log(n^2+7)-2\log n]\log(1+\sin\frac1{n^2})}{e^{1/(3n)}-1}\to21$</summary>
+$\log(n^2+7)-2\log n=\log(1+\frac7{n^2})\sim\frac7{n^2}$; $\log(1+\sin\frac1{n^2})\sim\sin\frac1{n^2}\sim\frac1{n^2}$; $e^{1/(3n)}-1\sim\frac1{3n}$. Totale: $\frac{n^3\cdot\frac7{n^2}\cdot\frac1{n^2}}{\frac1{3n}}=21$.</details>
+<div class="box tip"><div class="t">Riepilogo operativo</div>
+1. Identifica la parte dominante di ogni fattore. 2. Sostituisci con equivalenti <b>solo</b> in prodotti, quozienti, potenze. 3. Per somme/differenze con possibile cancellazione: raccogli, razionalizza o scrivi gli $o$. 4. Composizioni: dall'interno verso l'esterno, verificando che l'argomento sia infinitesimo.
+</div>
+
+<!-- ===== 13 ===== -->
+<h2 id="quiz"><small>§13</small>Autoverifica</h2>
+<details><summary>1. Scrivi la negazione di "$a_n\to\ell$".</summary>$\exists\,\varepsilon\gt0\ \forall\nu\in\mathbb N\ \exists\,n\gt\nu:\ |a_n-\ell|\ge\varepsilon$, cioè infiniti termini fuori dalla striscia $S_{\ell,\varepsilon}$.</details>
+<details><summary>2. $\lim\left(\sqrt{n^2+n}-n\right)$?</summary>FI $\infty-\infty$. Razionalizzando: $\frac{n}{\sqrt{n^2+n}+n}=\frac1{\sqrt{1+1/n}+1}\to\frac12$.</details>
+<details><summary>3. $\lim\left(1+\frac3n\right)^{2n}$?</summary>$\left[\left(1+\frac3n\right)^{n}\right]^2\to(e^3)^2=e^6$ (Nepero generalizzato con $\alpha=3$).</details>
+<details><summary>4. $\lim\frac{n^{100}+2^n}{3^n-n!}$?</summary>Gerarchia: numeratore $\sim2^n$, denominatore $\sim-n!$. Rapporto $\sim-\frac{2^n}{n!}\to0$.</details>
+<details><summary>5. Vero o falso: $a_n\gt b_n\ \forall n$ e convergono ⟹ $\lim a_n\gt\lim b_n$.</summary>Falso: si ha solo $\ge$. Es. $a_n=\frac1n$, $b_n=0$.</details>
+<details><summary>6. $n\sin\frac1n$ e $n\sin n$: limiti?</summary>$n\sin\frac1n=\frac{\sin(1/n)}{1/n}\to1$. $n\sin n$ è irregolare (non limitata × limitata: il teorema non si applica; $\sin n$ si avvicina infinite volte sia a $1$ sia a $-1$).</details>
+
+<h2 id="eser"><small>§14</small>Esercizi con autovalutazione</h2>
+<p>Numerici: scrivi il valore del limite (accetta <code>-3/5</code>, <code>e^6</code>, <code>sqrt(2)</code>, <code>inf</code>, <code>-inf</code>); se il limite non esiste, l'esercizio è a scelta multipla. Dimostrazioni: su carta, poi ti valuti. ★ base · ★★ medio · ★★★ da esame.</p>
+<div class="score"><span></span><div class="bar"><i></i></div><button>azzera</button></div>
+
+<div class="ex" data-ans="-3/5"><div class="q"><b>E1</b><span class="lv">★</span> $\displaystyle\lim_{n\to\infty}\frac{3n^2-n}{1-5n^2}$</div>
+<details><summary>Soluzione</summary>Stesso grado: rapporto dei coefficienti direttivi, $\frac{3}{-5}=-\frac35$. Formalmente: $\frac{n^2(3-\frac1n)}{n^2(\frac1{n^2}-5)}\to-\frac35$.</details></div>
+
+<div class="ex" data-ans="3/2"><div class="q"><b>E2</b><span class="lv">★</span> $\displaystyle\lim_{n\to\infty}\left(\sqrt{n^2+3n}-n\right)$</div>
+<details><summary>Soluzione</summary>FI $\infty-\infty$: razionalizzo. $\frac{3n}{\sqrt{n^2+3n}+n}=\frac{3}{\sqrt{1+3/n}+1}\to\frac32$.</details></div>
+
+<div class="ex" data-ans="e^6"><div class="q"><b>E3</b><span class="lv">★</span> $\displaystyle\lim_{n\to\infty}\left(1+\frac2n\right)^{3n}$</div>
+<details><summary>Soluzione</summary>$\left[\left(1+\frac2n\right)^n\right]^3\to(e^2)^3=e^6\approx403{,}4$ (Nepero generalizzato con $\alpha=2$).</details></div>
+
+<div class="ex" data-ans="1"><div class="q"><b>E4</b><span class="lv">★</span> $\displaystyle\lim_{n\to\infty}n\left(e^{1/n}-1\right)$</div>
+<details><summary>Soluzione</summary>$\frac1n\to0$ ⟹ $e^{1/n}-1\sim\frac1n$, quindi $n\cdot\frac1n=1$.</details></div>
+
+<div class="ex" data-ans="1/2"><div class="q"><b>E5</b><span class="lv">★</span> $\displaystyle\lim_{n\to\infty}n^2\left(1-\cos\frac1n\right)$</div>
+<details><summary>Soluzione</summary>$1-\cos\varepsilon_n\sim\frac{\varepsilon_n^2}2$ con $\varepsilon_n=\frac1n$: $n^2\cdot\frac1{2n^2}=\frac12$.</details></div>
+
+<div class="ex" data-ans="1"><div class="q"><b>E6</b><span class="lv">★★</span> $\displaystyle\lim_{n\to\infty}n\left[\log(n+1)-\log n\right]$</div>
+<details><summary>Soluzione</summary>Differenza di infiniti: combino i log. $n\log\left(1+\frac1n\right)\sim n\cdot\frac1n=1$. (Oppure: $=\log\left(1+\frac1n\right)^n\to\log e=1$.)</details></div>
+
+<div class="ex" data-ans="0"><div class="q"><b>E7</b><span class="lv">★★</span> $\displaystyle\lim_{n\to\infty}\frac{n!+2^n}{n^n}$</div>
+<details><summary>Soluzione</summary>Gerarchia: $2^n\ll n!\ll n^n$. Numeratore $\sim n!$, e $\frac{n!}{n^n}\to0$ (rapporto $\to\frac1e$).</details></div>
+
+<div class="ex" data-ans="3"><div class="q"><b>E8</b><span class="lv">★★</span> $\displaystyle\lim_{n\to\infty}\sqrt[n]{3^n+n^5}$</div>
+<details><summary>Soluzione</summary>Raccolgo $3^n$: $3\sqrt[n]{1+\frac{n^5}{3^n}}$. L'argomento della radice tende a $1$ ed è compreso tra $1$ e $2$ definitivamente, quindi $\sqrt[n]{\cdot}\to1$ (carabinieri con $\sqrt[n]2\to1$). Limite $3$.</details></div>
+
+<div class="ex" data-mc="3"><div class="q"><b>E9</b><span class="lv">★★</span> $\displaystyle\lim_{n\to\infty}(-1)^n\frac{n}{n+1}$:</div>
+<ol class="opts"><li>$0$</li><li>$1$</li><li>$-1$</li><li>non esiste</li></ol>
+<details><summary>Soluzione</summary>Sottosuccessioni: $a_{2k}=\frac{2k}{2k+1}\to1$, $a_{2k+1}=-\frac{2k+1}{2k+2}\to-1$. Limiti diversi ⟹ non esiste. (Attenzione: "limitata × qualcosa che tende a 1" non è il teorema limitata × infinitesima.)</details></div>
+
+<div class="ex" data-ans="1/3"><div class="q"><b>E10</b><span class="lv">★★</span> $\displaystyle\lim_{n\to\infty}\left(\sqrt[3]{n^3+n^2}-n\right)$</div>
+<details><summary>Soluzione</summary>$n\left[(1+\frac1n)^{1/3}-1\right]\sim n\cdot\frac1{3n}=\frac13$. Qui la sostituzione è lecita perché, dopo il raccoglimento, è un <b>prodotto</b>.</details></div>
+
+<div class="ex" data-ans="e^(-1/6)"><div class="q"><b>E11</b><span class="lv">★★★</span> $\displaystyle\lim_{n\to\infty}\left(n\sin\frac1n\right)^{n^2}$</div>
+<details><summary>Soluzione</summary>FI $1^\infty$. Scrivo $e^{n^2\log(n\sin\frac1n)}$. Con lo sviluppo $\sin x=x-\frac{x^3}6+o(x^3)$: $n\sin\frac1n=1-\frac1{6n^2}+o\left(\frac1{n^2}\right)$. Allora $\log(\cdot)\sim-\frac1{6n^2}$ e l'esponente $\to-\frac16$. Risultato $e^{-1/6}\approx0{,}846$.<br><i>Lezione:</i> per le forme $1^\infty$ serve il primo termine non nullo di $a_n-1$; l'equivalenza $\sin x\sim x$ da sola darebbe $1^\infty$ senza informazione.</details></div>
+
+<div class="ex" data-ans="0"><div class="q"><b>E12</b><span class="lv">★★</span> $\displaystyle\lim_{n\to\infty}\frac{\cos(n^2)+\log n}{\sqrt n}$</div>
+<details><summary>Soluzione</summary>$\frac{\cos n^2}{\sqrt n}\to0$ (limitata × infinitesima) e $\frac{\log n}{\sqrt n}\to0$ (gerarchia, log ≪ potenza). Somma $\to0$.</details></div>
+
+<div class="ex" data-mc="1"><div class="q"><b>E13</b><span class="lv">★★</span> Quale tra queste è $o(n^2)$?</div>
+<ol class="opts"><li>$n^2\log n$</li><li>$\dfrac{n^2}{\log n}$</li><li>$n^2+1$</li><li>$2n^2$</li></ol>
+<details><summary>Soluzione</summary>Serve $\frac{a_n}{n^2}\to0$: solo $\frac{1}{\log n}\to0$. A tende a $\infty$, C e D a costanti non nulle (stesso ordine).</details></div>
+
+<div class="ex" data-mc="2"><div class="q"><b>E14</b><span class="lv">★★★</span> $a_n\sim b_n$, entrambe $\to+\infty$. Allora $a_n-b_n$:</div>
+<ol class="opts"><li>tende a $0$</li><li>è limitata</li><li>può fare qualunque cosa: $0$, finito, $\pm\infty$, irregolare</li><li>tende a $+\infty$</li></ol>
+<details><summary>Soluzione</summary>$a_n\sim b_n$ dice solo $a_n-b_n=o(b_n)$, non $o(1)$. Esempi con $b_n=n$: $a_n=n+\frac1n$ (diff. $\to0$), $n+5$ ($\to5$), $n+\sqrt n$ ($\to+\infty$), $n+\sqrt n\sin n$ (irregolare). È esattamente il motivo per cui non si sostituiscono equivalenti nelle differenze.</details></div>
+
+<div class="ex" data-ans="100"><div class="q"><b>E15</b><span class="lv">★</span> Per $a_n=\frac1{n^2}\to0$ e $\varepsilon=10^{-4}$, qual è il più piccolo $\nu_\varepsilon$ tale che $|a_n|\lt\varepsilon$ per ogni $n\gt\nu_\varepsilon$?</div>
+<details><summary>Soluzione</summary>$\frac1{n^2}\lt10^{-4}\iff n^2\gt10^4\iff n\gt100$. Il più piccolo $\nu$ è $100$ (per $n=100$ si ha uguaglianza, quindi $100$ va escluso, e "$n\gt100$" lo fa).</details></div>
+
+<div class="ex" data-self><div class="q"><b>E16</b><span class="lv">★★</span> Dimostra con la definizione $\varepsilon$–$\nu$ che $\dfrac{2n+1}{n+1}\to2$.</div>
+<details><summary>Soluzione</summary>
+$\left|\frac{2n+1}{n+1}-2\right|=\left|\frac{2n+1-2n-2}{n+1}\right|=\frac1{n+1}$. Dato $\varepsilon\gt0$: $\frac1{n+1}\lt\varepsilon\iff n\gt\frac1\varepsilon-1$. Con $\nu_\varepsilon=\left[\frac1\varepsilon\right]$ si ha $|a_n-2|\lt\varepsilon$ per ogni $n\gt\nu_\varepsilon$. ∎<br>
+Controlla: hai fissato $\varepsilon$ <em>arbitrario</em> all'inizio? hai esibito un $\nu_\varepsilon$ esplicito?
+</details></div>
+
+<div class="ex" data-self><div class="q"><b>E17</b><span class="lv">★★★</span> Dimostra il teorema dei due carabinieri.</div>
+<details><summary>Soluzione</summary>
+Ipotesi: $a_n\le c_n\le b_n$ definitivamente (diciamo per $n\gt n_0$), $a_n\to\ell$, $b_n\to\ell$. Fisso $\varepsilon$; esistono $\nu_1,\nu_2$ con $\ell-\varepsilon\lt a_n$ per $n\gt\nu_1$ e $b_n\lt\ell+\varepsilon$ per $n\gt\nu_2$. Con $\nu=\max\{n_0,\nu_1,\nu_2\}$, per $n\gt\nu$: $\ell-\varepsilon\lt a_n\le c_n\le b_n\lt\ell+\varepsilon$, cioè $|c_n-\ell|\lt\varepsilon$. ∎<br>
+Errore tipico: dimenticare $n_0$ nel massimo (la disuguaglianza vale solo definitivamente).
+</details></div>
+
+<div class="ex" data-self><div class="q"><b>E18</b><span class="lv">★★★</span> Dimostra che $\dfrac{n!}{n^n}\to0$.</div>
+<details><summary>Soluzione</summary>
+$a_n\gt0$, $\frac{a_{n+1}}{a_n}=\frac{(n+1)!}{(n+1)^{n+1}}\cdot\frac{n^n}{n!}=\left(\frac{n}{n+1}\right)^n=\frac1{(1+\frac1n)^n}\to\frac1e\lt1$. Per il criterio del rapporto per successioni, $a_n\to0$. ∎<br>
+Alternativa elementare: $\frac{n!}{n^n}=\frac1n\cdot\frac2n\cdots\frac nn\le\frac1n\to0$ (ogni fattore dopo il primo è $\le1$), carabinieri.
+</details></div>
+
+<footer>Fonti: note <i>Limiti di successioni</i>, <i>Algebra dei limiti e teoremi sui limiti</i>, <i>Successioni monotone, infinitesimi e limiti notevoli</i>, <i>Confronti e stime asintotiche</i>. ← <a href="1 - Successioni.html">Successioni</a> · <a href="3 - Serie numeriche.html">Serie numeriche</a> →</footer>
+</main>
+</div>
+
+<script>
+const fact = n => { let r = 1; for (let i = 2; i <= n; i++) r *= i; return r; };
+const fmt = (x, d = 5) => !isFinite(x) ? (x > 0 ? '+∞' : x < 0 ? '−∞' : 'NaN')
+  : Math.abs(x) >= 1e6 || (Math.abs(x) < 1e-4 && x !== 0) ? x.toExponential(3) : +x.toFixed(d) + '';
+const $ = id => document.getElementById(id);
+// ponytail: un solo plotter canvas minimale per tutti i lab della pagina
+function plot(cv, o) {
+  const dpr = devicePixelRatio || 1, W = cv.clientWidth, H = cv.clientHeight;
+  cv.width = W * dpr; cv.height = H * dpr;
+  const c = cv.getContext('2d'); c.scale(dpr, dpr); c.clearRect(0, 0, W, H);
+  const L = 48, B = 26, X = x => L + (x - o.x0) / (o.x1 - o.x0) * (W - L - 12),
+        Y = y => H - B - (y - o.y0) / (o.y1 - o.y0) * (H - B - 12);
+  c.font = '11px ui-monospace,monospace'; c.fillStyle = '#6b6558'; c.strokeStyle = '#ece6d8'; c.lineWidth = 1;
+  const step = (a, b) => { const r = (b - a) / 6, p = 10 ** Math.floor(Math.log10(r)), m = r / p; return (m < 2 ? 1 : m < 5 ? 2 : 5) * p; };
+  const sx = step(o.x0, o.x1), sy = step(o.y0, o.y1);
+  for (let x = Math.ceil(o.x0 / sx) * sx; x <= o.x1; x += sx) { c.beginPath(); c.moveTo(X(x), 12); c.lineTo(X(x), H - B); c.stroke(); c.fillText(+x.toFixed(6), X(x) - 6, H - 8); }
+  for (let y = Math.ceil(o.y0 / sy) * sy; y <= o.y1; y += sy) { c.beginPath(); c.moveTo(L, Y(y)); c.lineTo(W - 12, Y(y)); c.stroke(); c.fillText(o.ylab ? o.ylab(y) : +y.toFixed(6), 4, Y(y) + 4); }
+  c.strokeStyle = '#1c1a16'; c.beginPath();
+  if (o.y0 <= 0 && o.y1 >= 0) { c.moveTo(L, Y(0)); c.lineTo(W - 12, Y(0)); }
+  c.moveTo(L, 12); c.lineTo(L, H - B); c.stroke();
+  (o.bands || []).forEach(b => { c.fillStyle = b.color; c.fillRect(L, Y(b.y1), W - L - 12, Y(b.y0) - Y(b.y1)); });
+  (o.hl || []).forEach(h => { c.strokeStyle = h.color; c.setLineDash(h.dash ? [6, 4] : []); c.beginPath(); c.moveTo(L, Y(h.y)); c.lineTo(W - 12, Y(h.y)); c.stroke(); c.setLineDash([]);
+    if (h.label) { c.fillStyle = h.color; c.fillText(h.label, W - 12 - c.measureText(h.label).width, Y(h.y) - 4); } });
+  (o.series || []).forEach(s => { c.fillStyle = c.strokeStyle = s.color;
+    if (s.line) { c.beginPath(); s.pts.forEach(([x, y], i) => isFinite(y) && (i ? c.lineTo(X(x), Y(y)) : c.moveTo(X(x), Y(y)))); c.stroke(); }
+    s.pts.forEach(([x, y], i) => { if (!isFinite(y) || y < o.y0 - 1e9) return; c.fillStyle = s.colorAt ? s.colorAt(i, x, y) : s.color;
+      c.beginPath(); c.arc(X(x), Y(Math.max(o.y0, Math.min(o.y1, y))), s.r || 3.5, 0, 7); c.fill(); });
+    if (s.label) { c.fillStyle = s.color; c.fillText(s.label, X(s.pts.at(-1)[0]) - 60, Y(Math.min(o.y1, s.pts.at(-1)[1])) - 8); } });
+}
+
+// ---------- A: striscia ----------
+const SA = {
+  '1/n → 0': [n => 1 / n, 0], '(n−1)/n → 1': [n => (n - 1) / n, 1], 'sin(n)/n → 0': [n => Math.sin(n) / n, 0],
+  '(−1)ⁿ/√n → 0': [n => (-1) ** n / Math.sqrt(n), 0], '(1+1/n)ⁿ → e': [n => (1 + 1 / n) ** n, Math.E],
+  'n·sin(1/n) → 1': [n => n * Math.sin(1 / n), 1]
+};
+Object.keys(SA).forEach(k => $('A1').add(new Option(k, k)));
+function labA() {
+  const [f, l] = SA[$('A1').value], e = 10 ** +$('A2').value; $('A2v').textContent = fmt(e);
+  let nu = 0; for (let n = 1; n <= 20000; n++) if (Math.abs(f(n) - l) >= e) nu = n;
+  const N = Math.min(400, Math.max(30, Math.ceil(nu * 1.3) + 5));
+  const pts = Array.from({ length: N }, (_, i) => [i + 1, f(i + 1)]);
+  const ys = pts.map(p => p[1]), lo = Math.min(...ys, l - e), hi = Math.max(...ys, l + e), pad = (hi - lo) * .06;
+  plot($('cA'), { x0: 0, x1: N + 1, y0: lo - pad, y1: hi + pad, bands: [{ y0: l - e, y1: l + e, color: 'rgba(31,79,191,.12)' }],
+    hl: [{ y: l, color: '#1f4fbf', dash: 1, label: 'ℓ' }],
+    series: [{ pts, color: '#2f7d4f', r: N > 150 ? 2 : 3.5, colorAt: (i, x, y) => Math.abs(y - l) >= e ? '#c2412d' : '#2f7d4f' }] });
+  $('oA').textContent = `ε = ${fmt(e)}    ν_ε = ${nu}\npunti fuori dalla striscia (rossi): ${pts.filter(([, y]) => Math.abs(y - l) >= e).length} — sempre in numero FINITO\n` +
+    `per ogni n > ${nu}: |a_n − ℓ| < ε   (verificato fino a n = 20000)`;
+}
+['A1', 'A2'].forEach(id => $(id).addEventListener('input', labA));
+
+// ---------- B: (-1)^n ----------
+function labB() {
+  const l = +$('B1').value, e = +$('B2').value; $('B1v').textContent = l; $('B2v').textContent = e;
+  const pts = Array.from({ length: 30 }, (_, n) => [n, (-1) ** n]);
+  plot($('cB'), { x0: -0.5, x1: 30, y0: -2.2, y1: 2.2, bands: [{ y0: l - e, y1: l + e, color: 'rgba(31,79,191,.12)' }],
+    hl: [{ y: l, color: '#1f4fbf', dash: 1, label: 'ℓ = ' + l }],
+    series: [{ pts, color: '#2f7d4f', r: 4, colorAt: (i, x, y) => Math.abs(y - l) >= e ? '#c2412d' : '#2f7d4f' }] });
+  const outE = Math.abs(1 - l) >= e, outO = Math.abs(-1 - l) >= e;
+  $('oB').textContent = (outE && outO ? 'TUTTI i termini sono fuori' : outE ? 'tutti gli n PARI sono fuori (infiniti)' : outO ? 'tutti gli n DISPARI sono fuori (infiniti)' : 'tutti dentro: aumenta la precisione (riduci ε)') +
+    `\n${outE || outO ? '⟹ ℓ = ' + l + ' NON è il limite.' : 'Con ε ≥ 1 una striscia può contenere sia 1 sia −1; ma la definizione chiede OGNI ε: per ε < 1 nessun ℓ funziona.'}`;
+}
+['B1', 'B2'].forEach(id => $(id).addEventListener('input', labB));
+
+// ---------- C: n^2 ----------
+function labC() {
+  const M = 10 ** +$('C1').value, nu = Math.floor(Math.sqrt(M)) + 1; $('C1v').textContent = $('C1').value;
+  $('oC').textContent = `M = ${fmt(M)}    √M = ${fmt(Math.sqrt(M))}    ν_M = [√M] + 1 = ${nu}\n(ν_M+1)² = ${fmt((nu + 1) ** 2)} > M ✓   e per ogni n > ν_M vale n² > M`;
+}
+$('C1').addEventListener('input', labC);
+
+// ---------- D: forme indeterminate ----------
+const FI = {
+  '0/0': [['(1/n²)/(1/n)', n => n ** -1, '0'], ['sin(1/n)/(1/n)', n => Math.sin(1 / n) * n, '1'], ['(1/n)/(1/n²)', n => n, '+∞']],
+  '∞/∞': [['(n+1)/n²', n => (n + 1) / n ** 2, '0'], ['(n−1)/n', n => (n - 1) / n, '1'], ['n²/(n+1)', n => n * n / (n + 1), '+∞']],
+  '∞−∞': [['√(n+1) − √n', n => 1 / (Math.sqrt(n + 1) + Math.sqrt(n)), '0  (razionalizzato)'], ['√(n²+n) − n', n => n / (Math.sqrt(n * n + n) + n), '1/2'], ['(n+1)² − (n−1)²', n => 4 * n, '+∞'], ['(n+1)² − (n+3)²', n => -4 * n - 8, '−∞']],
+  '0·∞': [['n · 1/n²', n => 1 / n, '0'], ['n · sin(1/n)', n => n * Math.sin(1 / n), '1'], ['n² · 1/n', n => n, '+∞']],
+  '1^∞': [['(1+1/n²)ⁿ', n => Math.exp(n * Math.log1p(1 / n ** 2)), '1'], ['(1+1/n)ⁿ', n => Math.exp(n * Math.log1p(1 / n)), 'e'], ['(1+2/n)ⁿ', n => Math.exp(n * Math.log1p(2 / n)), 'e²'], ['(1+1/n)^(n²)', n => Math.exp(n * n * Math.log1p(1 / n)), '+∞']],
+  '∞^0': [['n^(1/n)', n => n ** (1 / n), '1'], ['(eⁿ)^(1/n)', n => Math.E, 'e'], ['n^(1/log n)', n => n ** (1 / Math.log(n)), 'e']],
+  '0^0': [['(1/n)^(1/n)', n => (1 / n) ** (1 / n), '1'], ['(e^(−n))^(1/n)', n => 1 / Math.E, '1/e']]
+};
+Object.keys(FI).forEach(k => $('D1').add(new Option(k, k)));
+function labD() {
+  const ns = [10, 100, 1e4, 1e6];
+  $('oD').textContent = 'a_n'.padEnd(22) + ns.map(n => ('n=' + fmt(n)).padStart(12)).join('') + '   limite\n' +
+    FI[$('D1').value].map(([t, f, L]) => t.padEnd(22) + ns.map(n => fmt(f(n), 4).padStart(12)).join('') + '   ' + L).join('\n');
+}
+$('D1').addEventListener('input', labD);
+
+// ---------- E: carabinieri ----------
+const CAR = [[n => Math.sin(n) / n, n => -1 / n, n => 1 / n, 0], [n => Math.cos(n * n) / Math.sqrt(n), n => -1 / Math.sqrt(n), n => 1 / Math.sqrt(n), 0],
+  [n => 1 + (-1) ** n / n ** 2, n => 1 - 1 / n ** 2, n => 1 + 1 / n ** 2, 1]];
+function labE() {
+  const [c, a, b, l] = CAR[+$('E1').value], N = +$('E2').value, r = k => Array.from({ length: N }, (_, i) => [i + 1, k(i + 1)]);
+  plot($('cE'), { x0: 0, x1: N + 1, y0: l - 1.1, y1: l + 1.1, hl: [{ y: l, color: '#1c1a16', dash: 1, label: 'ℓ' }],
+    series: [{ pts: r(a), color: '#c2412d', line: 1, r: 0.1 }, { pts: r(b), color: '#c2412d', line: 1, r: 0.1 }, { pts: r(c), color: '#1f4fbf', r: 3 }] });
+}
+['E1', 'E2'].forEach(id => $(id).addEventListener('input', labE));
+
+// ---------- F: Nepero ----------
+function labF() {
+  const N = +$('F1').value; $('F1v').textContent = N;
+  const pts = Array.from({ length: N }, (_, i) => [i + 1, (1 + 1 / (i + 1)) ** (i + 1)]);
+  plot($('cF'), { x0: 0, x1: N + 1, y0: 1.9, y1: 2.85, hl: [{ y: Math.E, color: '#c2412d', dash: 1, label: 'e = sup' }], series: [{ pts, color: '#1f4fbf', r: N > 100 ? 2 : 3 }] });
+  $('oF').textContent = [1, 2, 5, 10, 100, 1000, 1e6].map(n => `n=${fmt(n)}: ${(1 + 1 / n) ** n} (e − a_n = ${fmt(Math.E - (1 + 1 / n) ** n)})`).join('\n') +
+    '\nL\'errore decresce come e/(2n): convergenza lenta.';
+}
+$('F1').addEventListener('input', labF);
+
+// ---------- G: a^n ----------
+function labG() {
+  const a = +$('G1').value; $('G1v').textContent = a;
+  const pts = Array.from({ length: 30 }, (_, n) => [n, a ** n]);
+  const ys = pts.map(p => p[1]), M = Math.min(6, Math.max(1.2, ...ys.map(Math.abs)));
+  plot($('cG'), { x0: -0.5, x1: 30, y0: -M, y1: M, series: [{ pts, color: '#1f4fbf', r: 3.5 }] });
+  $('oG').textContent = a > 1 ? 'a > 1 ⟹ aⁿ ≥ 1 + n(a−1) → +∞ (Bernoulli)' : a === 1 ? 'a = 1 ⟹ costante 1' :
+    a > -1 ? '|a| < 1 ⟹ aⁿ → 0' + (a < 0 ? ' (oscillando in segno)' : '') : a === -1 ? 'a = −1 ⟹ 1,−1,1,… irregolare' : 'a < −1 ⟹ a²ᵏ → +∞, a²ᵏ⁺¹ → −∞: irregolare';
+}
+$('G1').addEventListener('input', labG);
+
+// ---------- I: gerarchia in log ----------
+function labI() {
+  const k = +$('I1').value, b = +$('I2').value, al = +$('I3').value;
+  $('I1v').textContent = k; $('I2v').textContent = b; $('I3v').textContent = al;
+  const L10 = Math.LN10, n = 10 ** k, ln = k * L10;                  // ln n
+  const lnFact = n < 170 ? Math.log(fact(Math.round(n))) : n * ln - n + 0.5 * Math.log(2 * Math.PI * n); // Stirling
+  const rows = [['log n / n^b', Math.log(ln) - b * ln], [`n^b / ${al}^n`, b * ln - n * Math.log(al)],
+                [`${al}^n / n!`, n * Math.log(al) - lnFact], ['n! / n^n', lnFact - n * ln]];
+  $('oI').textContent = `n = 10^${k}\n` + rows.map(([t, v]) => `${t.padEnd(16)} = 10^${(v / L10).toFixed(2).padStart(10)}   ${v < 0 ? '(< 1: il denominatore sta vincendo)' : '(> 1: il numeratore è ancora avanti)'}`).join('\n');
+}
+['I1', 'I2', 'I3'].forEach(id => $(id).addEventListener('input', labI));
+
+// ---------- J: equivalenze ----------
+const EQ = {
+  'sin(1/n)  ~  1/n': n => Math.sin(1 / n) * n, 'e^(1/n) − 1  ~  1/n': n => Math.expm1(1 / n) * n,
+  'log(1+1/n)  ~  1/n': n => Math.log1p(1 / n) * n, '(1+1/n)^(1/3) − 1  ~  1/(3n)': n => Math.expm1(Math.log1p(1 / n) / 3) * 3 * n,
+  '1 − cos(1/n)  ~  1/(2n²)': n => 2 * Math.sin(0.5 / n) ** 2 * 2 * n * n, '√(n+1) + √n  ~  2√n': n => (Math.sqrt(n + 1) + Math.sqrt(n)) / (2 * Math.sqrt(n)),
+  '✗ e^(n+1)  vs  e^n': n => Math.E, '✗ log(1+1/n)  vs  log(1+1/n²)': n => Math.log1p(1 / n) / Math.log1p(1 / n ** 2),
+  '✗ e^(n²+n)  vs  e^(n²)': n => Math.exp(Math.min(n, 709))
+};
+Object.keys(EQ).forEach(k => $('J1').add(new Option(k, k)));
+function labJ() {
+  const f = EQ[$('J1').value];
+  $('oJ').textContent = 'rapporto a_n / b_n:\n' + [10, 100, 1e3, 1e4, 1e5].map(n => `n = ${fmt(n).padEnd(7)} ${fmt(f(n), 8)}`).join('\n') +
+    ($('J1').value.startsWith('✗') ? '\n⟹ il rapporto NON tende a 1: non equivalenti (vedi tabella sopra).' : '\n⟹ il rapporto tende a 1 ✓');
+}
+$('J1').addEventListener('input', labJ);
+
+const all = () => { labA(); labB(); labC(); labD(); labE(); labF(); labG(); labI(); labJ(); };
+addEventListener('load', all); addEventListener('resize', all);
+
+// ---------- esercizi con autovalutazione ----------
+// Tipi: data-ans="espr" (risposta numerica), data-mc="indice" (scelta multipla, 0-based), data-self (autovalutazione dopo la soluzione)
+(() => {
+  const KEY = 'am1-ex-' + document.title, exs = [...document.querySelectorAll('.ex')];
+  let st = {}; try { st = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { /* storage non disponibile: punteggio solo in sessione */ }
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) { /* idem */ } };
+  // ponytail: valutatore locale con with(Math); accetta 3/5, e^6, sqrt(2), pi, inf, -inf
+  const val = s => {
+    const t = s.trim().toLowerCase().replace(/,/g, '.').replace(/π/g, 'pi').replace(/√(\d+(?:\.\d+)?)/g, 'sqrt($1)').replace(/√/g, 'sqrt').replace(/[−–]/g, '-')
+      .replace(/\+?∞|\+?\binf(inity)?\b/g, 'Infinity').replace(/\bpi\b/g, 'PI').replace(/\be\b/g, 'E').replace(/\^/g, '**');
+    if (!t || /[^0-9a-z.+\-*/() ]/i.test(t)) return NaN;
+    try { return +new Function(`with(Math){return (${t})}`)(); } catch (e) { return NaN; }
+  };
+  const same = (x, a) => !isFinite(a) ? x === a : Math.abs(x - a) <= 2e-3 * Math.max(1, Math.abs(a));
+  const score = document.querySelector('.score');
+  const paint = () => {
+    exs.forEach((ex, i) => { ex.classList.toggle('right', st[i] === 1); ex.classList.toggle('wrong', st[i] === 0); });
+    const done = Object.keys(st).length, ok = Object.values(st).filter(v => v === 1).length;
+    score.querySelector('span').textContent = `✓ ${ok} / ${exs.length}   ·   svolti ${done}`;
+    score.querySelector('i').style.width = (100 * ok / exs.length) + '%';
+  };
+  const set = (i, v) => { if (st[i] === undefined || v === 1) st[i] = v; save(); paint(); }; // il primo errore resta, ma un successo successivo corregge
+  exs.forEach((ex, i) => {
+    const sol = ex.querySelector('details'), ctrl = document.createElement('div'); ctrl.className = 'ctrl';
+    if (ex.dataset.ans !== undefined) {
+      const a = val(ex.dataset.ans);
+      ctrl.innerHTML = '<input placeholder="es. 3/5, e^2, inf"> <button>Verifica</button> <span class="fb"></span>';
+      const [inp, btn, fb] = ctrl.children;
+      const check = () => { const x = val(inp.value);
+        if (isNaN(x)) { fb.textContent = 'formato non riconosciuto'; fb.style.color = 'var(--amb)'; return; }
+        const ok = same(x, a); fb.textContent = ok ? '✓ corretto' : '✗ riprova o guarda la soluzione'; fb.style.color = ok ? 'var(--grn)' : 'var(--red)'; set(i, ok ? 1 : 0); };
+      btn.onclick = check; inp.onkeydown = e => e.key === 'Enter' && check();
+    } else if (ex.dataset.mc !== undefined) {
+      const lis = [...ex.querySelectorAll('ol.opts li')];
+      lis.forEach((li, j) => li.onclick = () => { const ok = j === +ex.dataset.mc;
+        li.classList.add(ok ? 'pick-ok' : 'pick-ko'); set(i, ok ? 1 : 0); });
+      ctrl.innerHTML = '<span class="hint">clicca sulla risposta</span>';
+    } else {
+      ctrl.innerHTML = '<span class="hint">Scrivi la dimostrazione su carta, poi apri la soluzione e valutati:</span> <button>✓ Corretta</button> <button>✗ Da rivedere</button>';
+      ctrl.children[1].onclick = () => { st[i] = 1; save(); paint(); };
+      ctrl.children[2].onclick = () => { st[i] = 0; save(); paint(); };
+    }
+    ex.insertBefore(ctrl, sol);
+  });
+  score.querySelector('button').onclick = () => { st = {}; save();
+    document.querySelectorAll('.pick-ok,.pick-ko').forEach(li => li.classList.remove('pick-ok', 'pick-ko'));
+    document.querySelectorAll('.ex .ctrl input').forEach(x => x.value = '');
+    document.querySelectorAll('.ex .fb').forEach(x => x.textContent = ''); paint(); };
+  paint();
+})();
+</script>
+</body>
+</html>
