@@ -11,12 +11,12 @@
             "id": "8795db8831cc8f72",
             "type": "leaf",
             "state": {
-              "type": "html-viewer",
+              "type": "pdf",
               "state": {
-                "file": "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html"
+                "file": "Politecnico/Analisi 1/Esami/Vecchi/2025/Giugno2025-Soluzioni.pdf"
               },
-              "icon": "code",
-              "title": "2 - Limiti di successioni"
+              "icon": "lucide-file-text",
+              "title": "Giugno2025-Soluzioni"
             }
           }
         ]
@@ -208,9 +208,7 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1792850646059-iyt6rl9",
-                      "conversationId": null,
-                      "draftModel": "opus",
-                      "providerId": "claude"
+                      "conversationId": "conv-1792850911369-qui7iklxj"
                     }
                   ],
                   "activeTabId": "tab-1792850646059-iyt6rl9"
@@ -256,8 +254,10 @@
   "active": "8795db8831cc8f72",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/HTML/1 - Successioni.html",
-    "Politecnico/Analisi 1/HTML/sedgkuld6",
     "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html",
+    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
+    "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
+    "Politecnico/Analisi 1/HTML/sedgkuld6",
     "Politecnico/Analisi 1/HTML/3 - Serie numeriche.html",
     "Politecnico/Analisi 1/HTML/sediVkF4f",
     "Politecnico/Analisi 1/HTML/sedohDM3D",
@@ -266,7 +266,6 @@
     "Politecnico/Analisi 1/HTML/1 - Successioni.html.tmp.11494.5b1f3c68a1e9",
     "Politecnico/Analisi 1/HTML",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 8 — Completamento, somma di sottospazi e Grassmann.html",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Intersezione, somma e somma diretta di sottospazi — formula di Grassmann.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Completamento a base.md",
@@ -289,8 +288,6 @@
     "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2018 (primo parziale).md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md",
     "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2022 (I prova in itinere).md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2025.md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Giugno 2022 (II appello, 27 giugno).md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
