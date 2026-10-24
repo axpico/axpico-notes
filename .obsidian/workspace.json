@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "41e23344568f0360",
+        "id": "a0fbc6244267ca4a",
         "type": "tabs",
         "children": [
           {
-            "id": "0a88cb54a42e69a9",
+            "id": "8795db8831cc8f72",
             "type": "leaf",
             "state": {
               "type": "html-viewer",
               "state": {
-                "file": "Politecnico/Analisi 1/HTML/1 - Successioni.html"
+                "file": "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html"
               },
               "icon": "code",
-              "title": "1 - Successioni"
+              "title": "2 - Limiti di successioni"
             }
           }
         ]
@@ -228,8 +228,7 @@
               "title": "Excalidraw Sidepanel"
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "horizontal",
@@ -251,11 +250,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "0a88cb54a42e69a9",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/HTML/1 - Successioni.html",
     "Politecnico/Analisi 1/HTML/sedgkuld6",
     "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html",
-    "Politecnico/Analisi 1/HTML/1 - Successioni.html",
     "Politecnico/Analisi 1/HTML/3 - Serie numeriche.html",
     "Politecnico/Analisi 1/HTML/sediVkF4f",
     "Politecnico/Analisi 1/HTML/sedohDM3D",

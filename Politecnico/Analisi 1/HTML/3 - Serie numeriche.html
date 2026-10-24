@@ -395,7 +395,32 @@ $0\le a_n+|a_n|\le2|a_n|$. Per confronto $\sum(a_n+|a_n|)$ converge; $\sum a_n=\
 Controlla: hai usato il confronto su una serie a termini <b>non negativi</b> (unica situazione in cui vale)?
 </details></div>
 
-<footer>Fonti: note <i>Serie numeriche</i> e <i>Criteri per le serie, serie alternate e convergenza assoluta</i>. ← <a href="2 - Limiti di successioni.html">Limiti di successioni</a></footer>
+<h3 style="margin-top:40px">Dagli appunti di esercitazione — Serie a termini non negativi</h3>
+<p class="hint">Gli esercizi della nota <i>Esercizi/Asintotici, o piccolo e serie a termini non negativi</i> (parte B). Nelle soluzioni conta il <b>criterio scelto</b>: confrontalo con il tuo.</p>
+
+<div class="ex" data-ans="2"><div class="q"><b>S1</b><span class="lv">★</span> $\displaystyle\sum_{n\ge1}\frac2{n^2+n}$: converge? Se sì, quanto vale la somma?</div>
+<details><summary>Soluzione</summary>Confronto: $0\le\frac2{n^2+n}\le\frac2{n^2}$, e $\sum\frac2{n^2}$ converge ⟹ converge. Somma: è telescopica, $2\left(\frac1n-\frac1{n+1}\right)$, quindi $S=2$.</details></div>
+
+<div class="ex" data-mc="0"><div class="q"><b>S2</b><span class="lv">★</span> $\displaystyle\sum_{n\ge0}\frac{n^2}{3^n}$</div>
+<ol class="opts"><li>converge</li><li>diverge a $+\infty$</li><li>indeterminata</li></ol>
+<details><summary>Soluzione</summary>Definitivamente $n^2\le2^n$ (per $n\ge4$, gerarchia), quindi $0\le\frac{n^2}{3^n}\le\left(\frac23\right)^n$: geometrica convergente, confronto ⟹ converge. (Anche il rapporto, $\to\frac13$, funziona.)</details></div>
+
+<div class="ex" data-mc="1"><div class="q"><b>S3</b><span class="lv">★</span> $\displaystyle\sum_{n\ge2}\frac{\log n}n$</div>
+<ol class="opts"><li>converge</li><li>diverge a $+\infty$</li><li>indeterminata</li></ol>
+<details><summary>Soluzione</summary>Per $n\ge3$, $\log n\ge1$, quindi $\frac{\log n}n\ge\frac1n$: minorante divergente ⟹ diverge.</details></div>
+
+<div class="ex" data-mc="0"><div class="q"><b>S4</b><span class="lv">★★</span> $\displaystyle\sum_{n\ge1}\frac{n^4-3\sin n}{3^n+4n}$</div>
+<ol class="opts"><li>converge</li><li>diverge a $+\infty$</li><li>indeterminata</li></ol>
+<details><summary>Soluzione</summary>Segno: $n^4-3\sin n\ge n^4-3\gt0$ per $n\ge2$. Asintotici: $n^4-3\sin n\sim n^4$, $3^n+4n\sim3^n$, quindi $a_n\sim\frac{n^4}{3^n}$. E $\frac{n^4}{3^n}\le\left(\frac23\right)^n$ definitivamente ($n^4\le2^n$ per $n\ge16$). Confronto + confronto asintotico ⟹ converge.</details></div>
+
+<div class="ex" data-mc="1"><div class="q"><b>S5</b><span class="lv">★★</span> $\displaystyle\sum_{n\ge1}\frac{(n+1)(2+\sin n)}{\sqrt[3]{n^5}}$</div>
+<ol class="opts"><li>converge</li><li>diverge a $+\infty$</li><li>indeterminata</li></ol>
+<details><summary>Soluzione</summary>$1\le2+\sin n\le3$. La maggiorazione con $\frac{3n+3}{n^{5/3}}$ non conclude (maggiorante divergente). La <b>minorazione</b> sì: $a_n\ge\frac{n+1}{n^{5/3}}\ge\frac1{n^{2/3}}$, armonica con $p=\frac23\le1$ divergente ⟹ diverge. Il confronto asintotico diretto non si applica perché $\sin n$ non ha limite.</details></div>
+
+<div class="ex" data-ans="0"><div class="q"><b>S6</b><span class="lv">★★★</span> $\displaystyle\sum_{n\ge1}\left(e^{1/n}-1\right)\log n\left[1-\cos\frac1n\right]^\alpha$ converge se e solo se $\alpha\gt\alpha_0$. Quanto vale $\alpha_0$?</div>
+<details><summary>Soluzione</summary>$a_n\sim\frac1n\cdot\log n\cdot\left(\frac1{2n^2}\right)^\alpha=\frac{\log n}{2^\alpha n^{2\alpha+1}}$.<br>$\alpha\le0$: $\log n\ge1$ ⟹ $a_n\ge\frac{c}{n^{2\alpha+1}}$ con esponente $\le1$: diverge.<br>$\alpha\gt0$: con $b_n=\frac1{n^{\alpha+1}}$ (convergente), $\frac{a_n}{b_n}\sim\frac{\log n}{2^\alpha n^\alpha}\to0$ ⟹ converge.<br>Quindi converge $\iff\alpha\gt0$: $\alpha_0=0$. Nota il trucco: il $\log n$ si assorbe "rubando" metà dell'esponente in eccesso.</details></div>
+
+<footer>Fonti: note <i>Serie numeriche</i> e <i>Criteri per le serie, serie alternate e convergenza assoluta</i>; esercizi: <i>Esercizi/Asintotici, o piccolo e serie a termini non negativi</i> (parte B). ← <a href="2 - Limiti di successioni.html">Limiti di successioni</a></footer>
 </main>
 </div>
 

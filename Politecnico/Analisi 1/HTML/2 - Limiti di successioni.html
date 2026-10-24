@@ -361,7 +361,7 @@ Nella circonferenza goniometrica, con $A=(1,0)$, $B$ di angolo $x$, $D$ intersez
 
 <!-- ===== 10 ===== -->
 <h2 id="ger"><small>§10</small>Gerarchia degli infiniti</h2>
-$$\log_an\ \ll\ n^b\ \ll\ \alpha^n\ \ll\ n!\ \ll\ n^n\qquad(a,\alpha\gt1,\ b\gt0),\qquad x_n\ll y_n\iff\frac{x_n}{y_n}\to0 .$$
+$$(\log_an)^\gamma\ \ll\ n^b\ \ll\ \alpha^n\ \ll\ n!\ \ll\ n^n\qquad(a,\alpha\gt1,\ b,\gamma\gt0),\qquad x_n\ll y_n\iff\frac{x_n}{y_n}\to0 .$$
 <details class="proof"><summary>Dimostrazioni (criterio del rapporto e Bernoulli)</summary>
 <b>(g1)</b> $\frac{n^b}{\alpha^n}$: rapporto $\left(1+\frac1n\right)^b\frac1\alpha\to\frac1\alpha\lt1$.<br>
 <b>(g2)</b> $\frac{\alpha^n}{n!}$: rapporto $\frac\alpha{n+1}\to0$.<br>
@@ -410,6 +410,32 @@ $\dfrac{\log a_n}{\log b_n}=1+\dfrac{\log(a_n/b_n)}{\log b_n}$. Il numeratore $\
 <div class="box tip"><div class="t">Equivalenze notevoli (εₙ → 0)</div>
 $$\sin\varepsilon_n\sim\varepsilon_n,\quad e^{\varepsilon_n}-1\sim\varepsilon_n,\quad\log(1+\varepsilon_n)\sim\varepsilon_n,\quad(1+\varepsilon_n)^a-1\sim a\varepsilon_n,\quad1-\cos\varepsilon_n\sim\tfrac12\varepsilon_n^2 .$$
 Solo con argomento infinitesimo, e mai dentro somme/differenze di termini dello stesso ordine.
+</div>
+<h3>Esponenziale e logaritmo: i due teoremi di passaggio</h3>
+<div class="box thm"><div class="t">Teorema (esponenziale)</div>Se $a_n\sim b_n$ e $a_n\to\ell\in\mathbb R$ (<b>finito</b>), allora $e^{a_n}\sim e^{b_n}$. Più in generale: $e^{a_n}\sim e^{b_n}\iff a_n-b_n\to0$.</div>
+<details class="proof"><summary>Dimostrazione e controesempio</summary>
+$a_n=b_n+c_n$ con $c_n=o(b_n)$. Se $a_n\to\ell$ finito, anche $b_n\to\ell$ e $c_n=a_n-b_n\to0$, quindi $\frac{e^{a_n}}{e^{b_n}}=e^{c_n}\to1$. ∎<br>
+Se $a_n\to\infty$ la dimostrazione cade: $a_n=n^2+n\sim b_n=n^2$, ma $c_n=n\not\to0$ e $\frac{e^{a_n}}{e^{b_n}}=e^n\to+\infty$. L'esponenziale trasforma un errore <em>additivo</em> in uno <em>moltiplicativo</em>.
+</details>
+<div class="box thm"><div class="t">Teorema (logaritmo)</div>Se $a_n\sim b_n$ e $a_n\to\ell\in[0,+\infty]$ con $\ell\ne1$, allora $\log a_n\sim\log b_n$.</div>
+<p><b>Il logaritmo "schiaccia" gli ordini delle potenze:</b> con $\beta\gt\alpha\gt0$, $n^\beta\gg n^\alpha$, ma $\frac{\log n^\beta}{\log n^\alpha}=\frac\beta\alpha$: i logaritmi sono infiniti <b>dello stesso ordine</b>. Per questo, ad esempio, $\frac{\log(n^5+n^3+\arctan n)}{\log(n^4+2)}\to\frac54$.</p>
+
+<h3>Proprietà complete dell'o piccolo</h3>
+<table>
+<tr><th>#</th><th>proprietà</th><th>nota</th></tr>
+<tr><td>1</td><td>$a_n\cdot o(b_n)=o(a_nb_n)$</td><td>$\frac{a_nc_n}{a_nb_n}=\frac{c_n}{b_n}\to0$</td></tr>
+<tr><td>2</td><td>$o(o(a_n))=o(a_n)$</td><td>transitività del "trascurabile"</td></tr>
+<tr><td>3</td><td>$c\,o(a_n)=o(c\,a_n)=o(a_n)$, $c\ne0$</td><td>le costanti non cambiano l'ordine</td></tr>
+<tr><td>4</td><td>$o(a_n)\pm o(a_n)=o(a_n)$</td><td>segno e numero di addendi non contano</td></tr>
+<tr><td>5</td><td class="no">$o(a_n)+o(b_n)\ne o(a_n+b_n)$</td><td>falsa: $a_n=n$, $b_n=1-n$; $1=o(n)$, $1=o(1-n)$, ma $2\notin o(1)$</td></tr>
+<tr><td>6</td><td>$o(a_n)\cdot o(b_n)=o(a_nb_n)$</td><td></td></tr>
+<tr><td>7</td><td>$(a_n+o(a_n))^k=a_n^k+o(a_n^k)$</td><td>per $k=2$: $a_n^2+2a_no(a_n)+o(a_n)^2$ e si usano 1, 6</td></tr>
+<tr><td>8</td><td>se $b_n=o(a_n)$: $o(a_n)+o(b_n)=o(a_n)$</td><td>domina il più grande</td></tr>
+</table>
+<p>$o(1)$ = qualsiasi successione infinitesima. Equivalenze notevoli scritte con $o$ (utili quando serve sommare): $\sin\frac1n=\frac1n+o\left(\frac1n\right)$, $e^{1/n}=1+\frac1n+o\left(\frac1n\right)$, $\log\left(1+\frac1n\right)=\frac1n+o\left(\frac1n\right)$, $\arctan\varepsilon_n\sim\varepsilon_n$.</p>
+
+<div class="box warn"><div class="t">Errore classico: asintotico dentro una somma</div>
+$\displaystyle\lim n^3\left[\sin\tfrac1n-\tfrac1n+\tfrac1{3n^3}\right]$. Sostituendo $\sin\frac1n\sim\frac1n$ si otterrebbe $\frac13$: <b>sbagliato</b>. Con $\sin\frac1n=\frac1n+o\left(\frac1n\right)$ resta $n^3\cdot o\left(\frac1n\right)+\frac13=o(n^2)+\frac13$, che non dice nulla. Serve un termine in più: $\sin x=x-\frac{x^3}6+o(x^3)$, quindi $n^3\left[-\frac1{6n^3}+\frac1{3n^3}+o\left(\frac1{n^3}\right)\right]\to\frac16$.
 </div>
 <div class="lab"><div class="t">Verifica numerica di un'equivalenza</div>
   <div class="ctl"><label>coppia <select id="J1"></select></label></div>
@@ -511,7 +537,75 @@ $a_n\gt0$, $\frac{a_{n+1}}{a_n}=\frac{(n+1)!}{(n+1)^{n+1}}\cdot\frac{n^n}{n!}=\l
 Alternativa elementare: $\frac{n!}{n^n}=\frac1n\cdot\frac2n\cdots\frac nn\le\frac1n\to0$ (ogni fattore dopo il primo è $\le1$), carabinieri.
 </details></div>
 
-<footer>Fonti: note <i>Limiti di successioni</i>, <i>Algebra dei limiti e teoremi sui limiti</i>, <i>Successioni monotone, infinitesimi e limiti notevoli</i>, <i>Confronti e stime asintotiche</i>. ← <a href="1 - Successioni.html">Successioni</a> · <a href="3 - Serie numeriche.html">Serie numeriche</a> →</footer>
+<h3 style="margin-top:40px">Dagli appunti di esercitazione — Limiti di successioni</h3>
+<p class="hint">Gli esercizi della nota <i>Esercizi/Limiti di successioni</i>, nello stesso ordine.</p>
+
+<div class="ex" data-ans="3/2"><div class="q"><b>A1</b><span class="lv">★</span> $\displaystyle\lim\frac{\log\left(1+\frac3{n^2}\right)}{\sin\left(\frac2{n^2}\right)}$</div>
+<details><summary>Soluzione</summary>Forma $\frac00$, argomenti infinitesimi: $\log(1+\frac3{n^2})\sim\frac3{n^2}$, $\sin\frac2{n^2}\sim\frac2{n^2}$. Rapporto $\sim\frac{3/n^2}{2/n^2}=\frac32$.</details></div>
+
+<div class="ex" data-ans="-9/20"><div class="q"><b>A2</b><span class="lv">★★</span> $\displaystyle\lim\frac{\log\left(\frac1{n^5}\right)+\log\sqrt n}{2\log\left(n^5+n^2\right)}$</div>
+<details><summary>Soluzione</summary>Numeratore: $-5\log n+\frac12\log n=-\frac92\log n$. Denominatore: $2\log\left(n^5(1+n^{-3})\right)=10\log n+2\log(1+n^{-3})\sim10\log n$. Limite $-\frac9{20}$.</details></div>
+
+<div class="ex" data-ans="0"><div class="q"><b>A3</b><span class="lv">★★</span> $\displaystyle\lim\frac{1}{\sqrt[n]{2^{2^n}}}\left[n\log\left(\left(\frac{n+3}n\right)^2\right)\right]$</div>
+<details><summary>Soluzione</summary>Parentesi: $2n\log(1+\frac3n)\sim2n\cdot\frac3n=6$. Radice: $\left(2^{2^n}\right)^{1/n}=2^{2^n/n}\to+\infty$ perché $\frac{2^n}n\to+\infty$. Limite $\frac6{+\infty}=0$. (Se il radicando fosse $2^n$, il risultato sarebbe $3$.)</details></div>
+
+<div class="ex" data-ans="2"><div class="q"><b>A4</b><span class="lv">★★</span> $\displaystyle\lim\frac{\sqrt{1+\sin^2\left(\frac1{n^4+1}\right)}-1}{\frac1{4n^8+5n^2}}$</div>
+<details><summary>Soluzione</summary>Dall'interno: $\sin\frac1{n^4+1}\sim\frac1{n^4}$, al quadrato $\sim\frac1{n^8}=:x_n$; $\sqrt{1+x_n}-1\sim\frac{x_n}2=\frac1{2n^8}$. Denominatore $\sim\frac1{4n^8}$. Rapporto $2$.</details></div>
+
+<div class="ex" data-ans="0"><div class="q"><b>A5</b><span class="lv">★★</span> $\displaystyle\lim\frac{\sqrt{n^3-n^2-1}-\sqrt{n^3-n^2+n}}{n-\sqrt{n^2-n}}$</div>
+<details><summary>Soluzione</summary>Due differenze $\infty-\infty$: razionalizzo entrambe. Numeratore: $\frac{-n-1}{\sqrt{\cdots}+\sqrt{\cdots}}\sim\frac{-n}{2n^{3/2}}=-\frac1{2\sqrt n}$. Denominatore: $\frac{n}{n+\sqrt{n^2-n}}\to\frac12$. Rapporto $-\frac1{\sqrt n}\to0$.</details></div>
+
+<div class="ex" data-ans="0"><div class="q"><b>A6</b><span class="lv">★</span> $\displaystyle\lim\frac{n!\sqrt n\sin\frac1n}{(n+1)!-n!}$</div>
+<details><summary>Soluzione</summary>$(n+1)!-n!=n!\,n$. Numeratore $\sim n!\,n^{1/2}n^{-1}$. Rapporto $n^{-3/2}\to0$.</details></div>
+
+<div class="ex" data-ans="e^6"><div class="q"><b>A7</b><span class="lv">★★</span> $\displaystyle\lim\left(\frac{n^2+3n}{n^2+n+1}\right)^{3n}$</div>
+<details><summary>Soluzione</summary>$1^\infty$. Base $=1+a_n$ con $a_n=\frac{2n-1}{n^2+n+1}\to0$; $(1+a_n)^{b_n}=e^{b_n\log(1+a_n)}$ e $b_n\log(1+a_n)\sim a_nb_n=\frac{3n(2n-1)}{n^2+n+1}\to6$. Limite $e^6$.</details></div>
+
+<div class="ex" data-ans="4"><div class="q"><b>A8</b><span class="lv">★★★</span> $\displaystyle\lim\sqrt[n]{3^n+\left(1+\frac{2\log2}n\right)^{n^2}}$</div>
+<details><summary>Soluzione</summary>$\left(1+\frac{2\log2}n\right)^{n^2}=\exp\left(n^2\left[\frac{2\log2}n-\frac{2\log^22}{n^2}+o\left(\frac1{n^2}\right)\right]\right)=\exp(2n\log2-2\log^22+o(1))\sim4^ne^{-2\log^22}$: domina su $3^n$. Quindi $\sqrt[n]{\cdot}=4\left(e^{-2\log^22}(1+o(1))\right)^{1/n}\to4$.<br><b>Attenzione:</b> $(1+\frac cn)^{n^2}\not\sim e^{cn}$; vale $\sim e^{cn-c^2/2}$. Qui la costante sparisce solo grazie alla radice $n$-esima.</details></div>
+
+<div class="ex" data-mc="1"><div class="q"><b>A9</b><span class="lv">★★★</span> $\displaystyle\lim\frac{\sin\left(\frac2{\sqrt n}\right)\log\left(1+\frac1n\right)}{\sqrt n\left[1-\cos\left(\frac4n\right)\right]^\alpha}$ al variare di $\alpha\in\mathbb R$:</div>
+<ol class="opts"><li>$0$ se $\alpha\gt1$; $\frac14$ se $\alpha=1$; $+\infty$ se $\alpha\lt1$</li><li>$+\infty$ se $\alpha\gt1$; $\frac14$ se $\alpha=1$; $0$ se $\alpha\lt1$</li><li>$+\infty$ se $\alpha\gt1$; $\frac12$ se $\alpha=1$; $0$ se $\alpha\lt1$</li><li>$0$ per ogni $\alpha$</li></ol>
+<details><summary>Soluzione</summary>Numeratore $\sim\frac2{\sqrt n}\cdot\frac1n=2n^{-3/2}$. $1-\cos\frac4n\sim\frac8{n^2}$, quindi denominatore $\sim8^\alpha n^{1/2-2\alpha}$. Rapporto $\frac2{8^\alpha}n^{2\alpha-2}$: $+\infty$ per $\alpha\gt1$, $\frac28=\frac14$ per $\alpha=1$, $0$ per $\alpha\lt1$.</details></div>
+
+<div class="ex" data-mc="2"><div class="q"><b>A10</b><span class="lv">★★★</span> $\displaystyle\lim\frac{(e^{2n}-1)\cos^3n}{n\,e^{\alpha n}}$ al variare di $\alpha$:</div>
+<ol class="opts"><li>$0$ per ogni $\alpha$</li><li>$0$ se $\alpha\gt2$, $+\infty$ se $\alpha\le2$</li><li>$0$ se $\alpha\ge2$, non esiste se $\alpha\lt2$</li><li>non esiste per ogni $\alpha$</li></ol>
+<details><summary>Soluzione</summary>$\approx\frac{e^{(2-\alpha)n}}n\cos^3n$. Per $\alpha\ge2$ il fattore $\frac{e^{(2-\alpha)n}}n\to0$ (per $\alpha=2$ è $\frac1n$) e $|\cos^3n|\le1$: limitata × infinitesima $\to0$. Per $\alpha\lt2$ il fattore diverge e $\cos^3n$ oscilla: poiché $\{n\bmod2\pi\}$ è denso, infiniti $n$ hanno $\cos n\gt\frac12$ (successione $\to+\infty$) e infiniti $\cos n\lt-\frac12$ ($\to-\infty$). Il limite non esiste.</details></div>
+
+<h3 style="margin-top:40px">Dagli appunti di esercitazione — Asintotici e o piccolo</h3>
+<p class="hint">Gli esercizi della nota <i>Esercizi/Asintotici, o piccolo e serie a termini non negativi</i> (parte A).</p>
+
+<div class="ex" data-ans="1/6"><div class="q"><b>B0</b><span class="lv">★★★</span> $\displaystyle\lim n^3\left[\sin\frac1n-\frac1n+\frac1{3n^3}\right]$ (attenzione alla trappola)</div>
+<details><summary>Soluzione</summary>Non si può sostituire $\sin\frac1n\sim\frac1n$ nella somma (darebbe $\frac13$, sbagliato). Con $\sin x=x-\frac{x^3}6+o(x^3)$: $n^3\left[\frac1{3n^3}-\frac1{6n^3}+o\left(\frac1{n^3}\right)\right]\to\frac16$.</details></div>
+
+<div class="ex" data-ans="3"><div class="q"><b>B1</b><span class="lv">★★</span> $\displaystyle\lim n^2\left[\log^2\left(1+\frac2n\right)-\frac1{n^2}\right]$</div>
+<details><summary>Soluzione</summary>Differenza di infinitesimi dello stesso ordine: uso gli $o$. $\log(1+\frac2n)=\frac2n+o(\frac1n)$, al quadrato (prop. 7) $\frac4{n^2}+o(\frac1{n^2})$. Quindi $n^2\left[\frac3{n^2}+o(\frac1{n^2})\right]=3+o(1)\to3$.</details></div>
+
+<div class="ex" data-ans="5/4"><div class="q"><b>B2</b><span class="lv">★</span> $\displaystyle\lim\frac{\log\left(n^5+n^3+\arctan n\right)}{\log\left(n^4+2\right)}$</div>
+<details><summary>Soluzione</summary>Argomenti $\to+\infty\ne1$: per il teorema sul logaritmo $\log(\dots)\sim\log n^5=5\log n$ e $\log(n^4+2)\sim4\log n$. Limite $\frac54$.</details></div>
+
+<div class="ex" data-ans="1"><div class="q"><b>B3</b><span class="lv">★★</span> $\displaystyle\lim\left[1-\cos\frac1n\right]^{\tan\frac1n}$</div>
+<details><summary>Soluzione</summary>Forma $0^0$: $e^{\tan\frac1n\log(1-\cos\frac1n)}$. $\tan\frac1n\sim\frac1n$; $1-\cos\frac1n\sim\frac1{2n^2}\to0\ne1$, quindi $\log(\cdot)\sim\log\frac1{2n^2}=-2\log(\sqrt2n)$. Esponente $\sim-\frac{2\log(\sqrt2n)}n\to0$ (log ≪ n). Limite $e^0=1$.</details></div>
+
+<div class="ex" data-ans="1"><div class="q"><b>B3.1</b><span class="lv">★★</span> $\displaystyle\lim\left(\sin\frac1n\right)^{1-\cos\frac1n}$ <span class="hint">(non svolto negli appunti: soluzione aggiunta)</span></div>
+<details><summary>Soluzione</summary>Forma $0^0$: $\exp\left[(1-\cos\frac1n)\log\sin\frac1n\right]$. $1-\cos\frac1n\sim\frac1{2n^2}$; $\sin\frac1n\to0\ne1$, quindi $\log\sin\frac1n\sim\log\frac1n=-\log n$. Esponente $\sim-\frac{\log n}{2n^2}\to0$. Limite $1$.</details></div>
+
+<div class="ex" data-ans="0"><div class="q"><b>B3.2</b><span class="lv">★★</span> $\displaystyle\lim\left[1-\cos\left(\log\left(1+\frac3{n^2}\right)\right)\right]^{n^2}$ <span class="hint">(non svolto negli appunti: soluzione aggiunta; il coefficiente 3 è una lettura incerta della foto)</span></div>
+<details><summary>Soluzione</summary>Non è una forma indeterminata: la base $\sim\frac12\left(\frac3{n^2}\right)^2=\frac9{2n^4}\to0$ e l'esponente $\to+\infty$. Forma $0^{+\infty}=0$ (definitivamente base $\lt\frac12$, quindi $0\le a_n\le(\frac12)^{n^2}\to0$).</details></div>
+
+<div class="ex" data-ans="-1/6"><div class="q"><b>B4</b><span class="lv">★★</span> $\displaystyle\lim\arctan\left(\frac1n+\frac1{n^2}\right)\left(\sqrt{n^4-\frac{n^3}3}-n^2\right)$</div>
+<details><summary>Soluzione</summary>Primo fattore: argomento $\to0$ e $\sim\frac1n$, quindi $\arctan(\cdot)\sim\frac1n$. Secondo: $n^2\left[(1-\frac1{3n})^{1/2}-1\right]\sim n^2\cdot\left(-\frac1{6n}\right)=-\frac n6$. Prodotto $-\frac16$.</details></div>
+
+<div class="ex" data-mc="0"><div class="q"><b>B5</b><span class="lv">★★★</span> $\displaystyle\lim\frac{\arctan(n^\alpha)}{\sqrt{n+2}-\sqrt{n-2}}$ al variare di $\alpha$:</div>
+<ol class="opts"><li>$+\infty$ se $\alpha\gt-\frac12$; $\frac12$ se $\alpha=-\frac12$; $0$ se $\alpha\lt-\frac12$</li><li>$+\infty$ se $\alpha\ge0$; $0$ se $\alpha\lt0$</li><li>$\frac\pi4$ se $\alpha=0$; $+\infty$ altrimenti</li><li>$0$ se $\alpha\gt-\frac12$; $+\infty$ se $\alpha\lt-\frac12$</li></ol>
+<details><summary>Soluzione</summary>Denominatore razionalizzato: $\frac{4}{\sqrt{n+2}+\sqrt{n-2}}$, quindi il reciproco $\sim\frac12n^{1/2}$. Numeratore: $\frac\pi2$ ($\alpha\gt0$), $\frac\pi4$ ($\alpha=0$), $\sim n^\alpha$ ($\alpha\lt0$). Per $\alpha\ge0$: costante·$n^{1/2}\to+\infty$. Per $\alpha\lt0$: $\frac12n^{\alpha+1/2}$, che dà $+\infty$, $\frac12$, $0$ secondo il segno di $\alpha+\frac12$.</details></div>
+
+<div class="ex" data-mc="3"><div class="q"><b>B6</b><span class="lv">★★★</span> $\displaystyle\lim\frac{\sin\left(\frac1{n^3}\right)}{\sqrt[3]{1+\frac1{n^\alpha}}-1}$ al variare di $\alpha$:</div>
+<ol class="opts"><li>$0$ per ogni $\alpha$</li><li>$3$ per ogni $\alpha\gt0$</li><li>$0$ se $\alpha\gt3$; $3$ se $\alpha=3$; $+\infty$ se $\alpha\lt3$</li><li>$0$ se $\alpha\lt3$; $3$ se $\alpha=3$; $+\infty$ se $\alpha\gt3$</li></ol>
+<details><summary>Soluzione</summary>Numeratore $\sim\frac1{n^3}$. Denominatore: $\sqrt[3]2-1$ ($\alpha=0$), $\to+\infty$ ($\alpha\lt0$), $\sim\frac1{3n^\alpha}$ ($\alpha\gt0$). Per $\alpha\le0$ il limite è $0$; per $\alpha\gt0$ il rapporto è $3n^{\alpha-3}$: $0$, $3$, $+\infty$ per $\alpha\lt3$, $=3$, $\gt3$.</details></div>
+<p class="hint">L'esercizio 6.1 della nota non è riportato: la lettura della foto è incerta (esponente dentro il seno) e non è svolto negli appunti.</p>
+
+<footer>Fonti: note <i>Limiti di successioni</i>, <i>Algebra dei limiti e teoremi sui limiti</i>, <i>Successioni monotone, infinitesimi e limiti notevoli</i>, <i>Confronti e stime asintotiche</i>; esercizi: <i>Esercizi/Limiti di successioni</i>, <i>Esercizi/Asintotici, o piccolo e serie a termini non negativi</i> (parte A). ← <a href="1 - Successioni.html">Successioni</a> · <a href="3 - Serie numeriche.html">Serie numeriche</a> →</footer>
 </main>
 </div>
 
