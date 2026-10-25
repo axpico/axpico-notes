@@ -11,10 +11,12 @@
             "id": "6ed4f8c9416592fd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "html-viewer",
+              "state": {
+                "file": "Politecnico/Analisi 1/HTML/3 - Serie numeriche.html"
+              },
+              "icon": "code",
+              "title": "3 - Serie numeriche"
             }
           }
         ]
@@ -76,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 282.5,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -252,11 +255,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "41c9241263f38e27",
+  "active": "6ed4f8c9416592fd",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html",
     "Politecnico/Analisi 1/HTML/Limiti notevoli.html",
     "Politecnico/Analisi 1/Formulario AM1 - asintotici.pdf",
-    "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html",
     "Politecnico/Analisi 1/HTML/sedGHkJsD",
     "Politecnico/Analisi 1/HTML/sedxtobzQ",
     "Politecnico/Analisi 1/HTML/sedmOKh8v",
