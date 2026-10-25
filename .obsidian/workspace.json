@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "807f9689cdfcddbd",
+        "id": "7c4f13ea20bc866e",
         "type": "tabs",
         "children": [
           {
-            "id": "92abd4a12302b661",
+            "id": "6ed4f8c9416592fd",
             "type": "leaf",
             "state": {
-              "type": "html-viewer",
-              "state": {
-                "file": "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html"
-              },
-              "icon": "code",
-              "title": "2 - Limiti di successioni"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -207,11 +205,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792852354684-upabzlp",
-                      "conversationId": "conv-1792853062131-nlbfythsi"
+                      "tabId": "tab-1792933033828-lmggued",
+                      "conversationId": null,
+                      "draftModel": "opus",
+                      "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1792852354684-upabzlp"
+                  "activeTabId": "tab-1792933033828-lmggued"
                 }
               },
               "icon": "bot",
@@ -228,11 +228,13 @@
               "title": "Excalidraw Sidepanel"
             }
           }
-        ]
+        ],
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 326.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
