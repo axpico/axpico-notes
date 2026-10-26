@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1772afe2f42098fd",
+        "id": "2b25b25b59109d1d",
         "type": "tabs",
         "children": [
           {
-            "id": "b59f8bcfe8e8b975",
+            "id": "5cdd2da63ae4e287",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -76,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 356.2109375
+    "width": 356.2109375,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -249,9 +250,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "b59f8bcfe8e8b975",
+  "active": "5cdd2da63ae4e287",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
+    "Politecnico/Geometria e Algebra Lineare/HTML/esercizi_matrice_inversa.html",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL1.pdf",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL1 1.pdf",
     "Excalidraw/Drawing 2026-10-26 08.11.32.excalidraw.md",
@@ -261,8 +264,6 @@
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/Esercizi di algebra lineare e geometria..pdf",
     "Politecnico/Analisi 1/HTML/3 - Serie numeriche.html",
     "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html",
-    "Politecnico/Analisi 1/HTML/Limiti notevoli.html",
-    "Politecnico/Analisi 1/Formulario AM1 - asintotici.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
     "Politecnico/Analisi 1/Indice.md",
