@@ -216,8 +216,8 @@
                   "activeTabId": "tab-1792933033828-lmggued"
                 }
               },
-              "icon": "bot",
-              "title": "Claudian"
+              "icon": "lucide-ghost",
+              "title": "claudian-view"
             }
           },
           {
@@ -226,8 +226,8 @@
             "state": {
               "type": "excalidraw-sidepanel",
               "state": {},
-              "icon": "excalidraw-icon",
-              "title": "Excalidraw Sidepanel"
+              "icon": "lucide-ghost",
+              "title": "excalidraw-sidepanel"
             }
           }
         ]
@@ -246,13 +246,13 @@
       "command-palette:Open command palette": false,
       "audio-recorder:Start/stop recording": false,
       "bases:Create new base": false,
-      "omnisearch:Omnisearch": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "omnisearch:Omnisearch": false,
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "3840379627085887",
   "lastOpenFiles": [
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/Esercizi di algebra lineare e geometria..pdf",
     "Politecnico/Analisi 1/HTML/3 - Serie numeriche.html",
