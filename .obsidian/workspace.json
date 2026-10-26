@@ -8,15 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6ed4f8c9416592fd",
+            "id": "3840379627085887",
             "type": "leaf",
             "state": {
-              "type": "html-viewer",
+              "type": "excalidraw",
               "state": {
-                "file": "Politecnico/Analisi 1/HTML/3 - Serie numeriche.html"
+                "file": "Excalidraw/Drawing 2026-10-26 08.11.32.excalidraw.md"
               },
-              "icon": "code",
-              "title": "3 - Serie numeriche"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-10-26 08.11.32.excalidraw"
             }
           }
         ]
@@ -255,8 +255,10 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "6ed4f8c9416592fd",
+  "active": "3840379627085887",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/HTML/3 - Serie numeriche.html",
+    "Excalidraw/Drawing 2026-10-26 08.11.32.excalidraw.md",
     "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html",
     "Politecnico/Analisi 1/HTML/Limiti notevoli.html",
     "Politecnico/Analisi 1/Formulario AM1 - asintotici.pdf",
@@ -267,7 +269,6 @@
     "Politecnico/Analisi 1/HTML/sedCmvFOc",
     "Politecnico/Analisi 1/HTML/sedWQdxXv",
     "Politecnico/Analisi 1/HTML/sedazjLtL",
-    "Politecnico/Analisi 1/HTML/sedXy7g4A",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
     "Politecnico/Analisi 1/Indice.md",
@@ -292,7 +293,6 @@
     "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
     "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2018 (primo parziale).md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2022 (I prova in itinere).md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
