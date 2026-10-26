@@ -11,10 +11,12 @@
             "id": "5cdd2da63ae4e287",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "html-viewer",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html"
+              },
+              "icon": "code",
+              "title": "Esercizi GAL1-4 da svolgere"
             }
           }
         ]
@@ -227,8 +229,7 @@
               "title": "excalidraw-sidepanel"
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "horizontal",
@@ -250,7 +251,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "5cdd2da63ae4e287",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
     "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
