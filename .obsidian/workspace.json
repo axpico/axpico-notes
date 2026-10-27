@@ -208,15 +208,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1792933033828-lmggued",
-                      "conversationId": "conv-1793045360715-nwax6y7ai"
-                    },
-                    {
-                      "tabId": "tab-1793092695994-bmac03f",
-                      "conversationId": "conv-1793092716060-4qvmds0k3"
+                      "tabId": "tab-1793094317015-df7vsap",
+                      "conversationId": null,
+                      "draftModel": "opus",
+                      "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1793092695994-bmac03f"
+                  "activeTabId": "tab-1793094317015-df7vsap"
                 }
               },
               "icon": "bot",
@@ -238,7 +236,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 405.98828125
+    "width": 405.98828125,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -256,8 +255,12 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "278df55cbb664f14",
+  "active": "5cdd2da63ae4e287",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Video/TEST-gal3_3.mp4",
+    "Politecnico/Geometria e Algebra Lineare/Video/TEST-gal3_2.mp4",
+    "Politecnico/Geometria e Algebra Lineare/Video/GAL3-1 Nucleo e immagine.mp4",
+    "Politecnico/Geometria e Algebra Lineare/Video",
     "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/esercizi_matrice_inversa.html",
@@ -266,10 +269,6 @@
     "Excalidraw/Drawing 2026-10-26 08.11.32.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL2 1.pdf",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL3.pdf",
-    "Politecnico/Geometria e Algebra Lineare/Esercizi/EserciziGAL4.pdf",
-    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/Esercizi di algebra lineare e geometria..pdf",
-    "Politecnico/Analisi 1/HTML/3 - Serie numeriche.html",
-    "Politecnico/Analisi 1/HTML/2 - Limiti di successioni.html",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
     "Politecnico/Analisi 1/Indice.md",
