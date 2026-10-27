@@ -192,10 +192,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni lineari, nucleo e immagine.md"
+                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html"
               },
               "icon": "lucide-info",
-              "title": "Proprietà file"
+              "title": "File properties"
             }
           },
           {
@@ -210,9 +210,13 @@
                     {
                       "tabId": "tab-1792933033828-lmggued",
                       "conversationId": "conv-1793045360715-nwax6y7ai"
+                    },
+                    {
+                      "tabId": "tab-1793092695994-bmac03f",
+                      "conversationId": "conv-1793092716060-4qvmds0k3"
                     }
                   ],
-                  "activeTabId": "tab-1792933033828-lmggued"
+                  "activeTabId": "tab-1793092695994-bmac03f"
                 }
               },
               "icon": "bot",
@@ -229,7 +233,8 @@
               "title": "excalidraw-sidepanel"
             }
           }
-        ]
+        ],
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -251,7 +256,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "278df55cbb664f14",
   "lastOpenFiles": [
     "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
