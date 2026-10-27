@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "6aaa83ea15bfad72",
+        "id": "2dc243c9ee97a240",
         "type": "tabs",
         "children": [
           {
-            "id": "7a3df412353d9e4e",
+            "id": "de2258c134c24ec7",
             "type": "leaf",
             "state": {
-              "type": "html-viewer",
+              "type": "pdf",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html"
+                "file": "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/0. Prova parziale 11 nov 2025.pdf"
               },
-              "icon": "code",
-              "title": "Lezione 7 — Rette, piani, ortogonalità e fasci"
+              "icon": "lucide-file-text",
+              "title": "0. Prova parziale 11 nov 2025"
             }
           }
         ]
@@ -254,8 +254,13 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "7a3df412353d9e4e",
+  "active": "de2258c134c24ec7",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/1. Parte-AB 20.01.2026.pdf",
+    "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/0. Prova parziale 11 nov 2025.pdf",
+    "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/2. GAL-AB-feb2026 con soluzioni.pdf",
+    "Politecnico/Geometria e Algebra Lineare/Esami/Non svolti/Prova in itinere 11-11-2025.md",
+    "Piano di Studio — Maturità 2026/Piano di Studio — Maturità 2026.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/XXjbfU1C",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.1269369.73dcf8b9b0ce",
@@ -264,9 +269,6 @@
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.1269369.26354546606b",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.1269369.2ee2c80b5498",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.1269369.90d15bd2e299",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.1269369.18fbac2e86da",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.1269369.72f080e4e425",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
     "Untitled.canvas",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Excalidraw/Drawing 2026-10-26 08.11.32.excalidraw.md",
@@ -291,8 +293,6 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Dipendenza lineare.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
     "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
-    "Politecnico/Analisi 1/Esami/Non svolti/Novembre 2018 (primo parziale).md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Sistemi di riferimento nel piano.md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
