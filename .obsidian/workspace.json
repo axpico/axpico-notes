@@ -11,14 +11,12 @@
             "id": "bd9551caf8869a15",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "html-viewer",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Indice.md",
-                "mode": "source",
-                "source": false
+                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 8 — Completamento, somma di sottospazi e Grassmann.html"
               },
-              "icon": "lucide-file",
-              "title": "Indice"
+              "icon": "code",
+              "title": "Lezione 8 — Completamento, somma di sottospazi e Grassmann"
             }
           }
         ]
@@ -80,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.6171875
+    "width": 258.6171875,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -236,7 +235,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.8125
+    "width": 272.8125,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -256,10 +256,10 @@
   },
   "active": "bd9551caf8869a15",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
+    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Analisi 1/Indice.md.tmp.239169.d42376248b41",
     "Politecnico/Analisi 1/HTML/1 - Successioni.html",
-    "Politecnico/Geometria e Algebra Lineare/Indice.md",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-1 Nucleo e immagine.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL4-4 Fasci di piani.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-5 Rango.mp4",
@@ -267,7 +267,6 @@
     "Politecnico/Geometria e Algebra Lineare/Video/GAL4-3 Ortogonalita e posizione reciproca.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL4-1 Somma e intersezione di sottospazi.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-7 Geometria analitica.mp4",
-    "Politecnico/Geometria e Algebra Lineare/Video/GAL3-3 Dimensione e basi.mp4",
     "Excalidraw/Drawing 2026-10-26 08.11.32.excalidraw.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
