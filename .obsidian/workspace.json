@@ -11,10 +11,14 @@
             "id": "bd9551caf8869a15",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/Indice.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Indice"
             }
           }
         ]
@@ -250,7 +254,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "bd9551caf8869a15",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/Indice.md.tmp.239169.d42376248b41",
     "Politecnico/Analisi 1/HTML/1 - Successioni.html",
