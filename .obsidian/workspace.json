@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2b25b25b59109d1d",
+        "id": "acb6d689bc9c52ee",
         "type": "tabs",
         "children": [
           {
-            "id": "5cdd2da63ae4e287",
+            "id": "c4be34b1d7d9d55f",
             "type": "leaf",
             "state": {
-              "type": "video",
-              "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Video/GAL3-1 Nucleo e immagine.mp4"
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "GAL3-1 Nucleo e immagine"
+              "title": "New tab"
             }
           }
         ]
@@ -191,9 +189,7 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Video/GAL3-1 Nucleo e immagine.mp4"
-              },
+              "state": {},
               "icon": "lucide-info",
               "title": "File properties"
             }
@@ -231,13 +227,11 @@
               "title": "excalidraw-sidepanel"
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 405.98828125,
-    "collapsed": true
+    "width": 405.98828125
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -255,8 +249,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "5cdd2da63ae4e287",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Video/GAL3-1 Nucleo e immagine.mp4",
     "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL4-4 Fasci di piani.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-5 Rango.mp4",
@@ -267,7 +262,6 @@
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-3 Dimensione e basi.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-4 Cambio di base.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-2 Dipendenza lineare.mp4",
-    "Politecnico/Geometria e Algebra Lineare/Video/GAL3-6 Rango piu nullita e supplementari.mp4",
     "Excalidraw/Drawing 2026-10-26 08.11.32.excalidraw.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
