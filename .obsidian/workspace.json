@@ -11,12 +11,12 @@
             "id": "5cdd2da63ae4e287",
             "type": "leaf",
             "state": {
-              "type": "html-viewer",
+              "type": "video",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html"
+                "file": "Politecnico/Geometria e Algebra Lineare/Video/GAL3-1 Nucleo e immagine.mp4"
               },
-              "icon": "code",
-              "title": "Esercizi GAL1-4 da svolgere"
+              "icon": "lucide-file",
+              "title": "GAL3-1 Nucleo e immagine"
             }
           }
         ]
@@ -192,7 +192,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html"
+                "file": "Politecnico/Geometria e Algebra Lineare/Video/GAL3-1 Nucleo e immagine.mp4"
               },
               "icon": "lucide-info",
               "title": "File properties"
@@ -257,6 +257,8 @@
   },
   "active": "5cdd2da63ae4e287",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
+    "Politecnico/Geometria e Algebra Lineare/Video/GAL4-4 Fasci di piani.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-5 Rango.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL4-2 Rette e piani.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL4-3 Ortogonalita e posizione reciproca.mp4",
@@ -266,8 +268,6 @@
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-4 Cambio di base.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-2 Dipendenza lineare.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-6 Rango piu nullita e supplementari.mp4",
-    "Politecnico/Geometria e Algebra Lineare/Video/TEST-gal4_1.mp4",
-    "Politecnico/Geometria e Algebra Lineare/Video/TEST-gal3_7.mp4",
     "Excalidraw/Drawing 2026-10-26 08.11.32.excalidraw.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
