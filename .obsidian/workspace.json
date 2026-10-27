@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e116d6c272f191df",
+        "id": "9ed7421d10d808dc",
         "type": "tabs",
         "children": [
           {
-            "id": "76ae1077039ee12e",
+            "id": "8cb1a6eb8d6fdb16",
             "type": "leaf",
             "state": {
-              "type": "video",
-              "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Video/GAL3-7 Geometria analitica.mp4"
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "GAL3-7 Geometria analitica"
+              "title": "New tab"
             }
           }
         ]
@@ -253,8 +251,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "76ae1077039ee12e",
+  "active": "41c9241263f38e27",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Video/GAL3-7 Geometria analitica.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL4-1 Somma e intersezione di sottospazi.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-6 Rango piu nullita e supplementari.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL4-4 Fasci di piani.mp4",
@@ -267,7 +266,6 @@
     "Politecnico/Analisi 1/HTML/1 - Successioni.html",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-1 Nucleo e immagine.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-5 Rango.mp4",
-    "Politecnico/Geometria e Algebra Lineare/Video/GAL4-2 Rette e piani.mp4",
     "Excalidraw/Drawing 2026-10-26 08.11.32.excalidraw.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
