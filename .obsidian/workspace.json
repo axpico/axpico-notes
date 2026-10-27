@@ -4,17 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9ed7421d10d808dc",
+        "id": "6aaa83ea15bfad72",
         "type": "tabs",
         "children": [
           {
-            "id": "8cb1a6eb8d6fdb16",
+            "id": "7a3df412353d9e4e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "html-viewer",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html"
+              },
+              "icon": "code",
+              "title": "Lezione 7 — Rette, piani, ortogonalità e fasci"
             }
           }
         ]
@@ -76,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.6171875
+    "width": 258.6171875,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -251,21 +254,21 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "41c9241263f38e27",
+  "active": "7a3df412353d9e4e",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/Video/GAL3-7 Geometria analitica.mp4",
-    "Politecnico/Geometria e Algebra Lineare/Video/GAL4-1 Somma e intersezione di sottospazi.mp4",
-    "Politecnico/Geometria e Algebra Lineare/Video/GAL3-6 Rango piu nullita e supplementari.mp4",
-    "Politecnico/Geometria e Algebra Lineare/Video/GAL4-4 Fasci di piani.mp4",
-    "Untitled.canvas",
-    "Politecnico/Geometria e Algebra Lineare/Video/GAL4-3 Ortogonalita e posizione reciproca.mp4",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 8 — Completamento, somma di sottospazi e Grassmann.html",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html",
+    "Politecnico/Geometria e Algebra Lineare/HTML/XXjbfU1C",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.1269369.73dcf8b9b0ce",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.1269369.b51d238252e2",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.1269369.a98770d1a63e",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.1269369.26354546606b",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.1269369.2ee2c80b5498",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.1269369.90d15bd2e299",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.1269369.18fbac2e86da",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html.tmp.1269369.72f080e4e425",
     "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
+    "Untitled.canvas",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
-    "Politecnico/Analisi 1/Indice.md.tmp.239169.d42376248b41",
-    "Politecnico/Analisi 1/HTML/1 - Successioni.html",
-    "Politecnico/Geometria e Algebra Lineare/Video/GAL3-1 Nucleo e immagine.mp4",
-    "Politecnico/Geometria e Algebra Lineare/Video/GAL3-5 Rango.mp4",
     "Excalidraw/Drawing 2026-10-26 08.11.32.excalidraw.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",

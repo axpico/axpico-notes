@@ -34,6 +34,7 @@ h2 .tag{font-size:12px;font-weight:600;color:var(--acc);background:var(--acc-sof
 .tldr.warn{border-color:var(--warn);background:var(--warn-soft)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:10px 0}
 .grid.two{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.grid>*{min-width:0}
 figure{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:8px;text-align:center}
 figure canvas{width:100%;height:210px;display:block;cursor:grab;touch-action:none}
 figure canvas.big{height:340px}
@@ -101,8 +102,14 @@ summary{cursor:pointer;font-weight:600;color:var(--acc)}
     <figure><canvas data-s="p_coi"></canvas><figcaption><b>Coincidenti</b><span class="rk">$r(A)=1,\ r'=1$ · infiniti punti</span></figcaption></figure>
   </div>
   <details><summary>Esempio svolto: $\ell_1:\binom76+t\binom12$, $\ell_2:\binom0{-6}+s\binom34$</summary>
-    $$\left(\begin{array}{cc|c}1&-3&-7\\2&-4&-12\end{array}\right)\xrightarrow{R_2-2R_1}\left(\begin{array}{cc|c}1&-3&-7\\0&2&2\end{array}\right)\Rightarrow s=1,\ t=-4,\quad P(3,-2).$$
-    <p>In forma cartesiana basta risolvere le due equazioni: $2x-y=3$ e $x+2y=-1$ hanno $\det=5\ne0$, quindi le rette sono incidenti in $(1,-1)$.</p>
+    <ul class="steps col">
+      <li><b>Cerco un punto comune:</b> uguaglio le due parametriche, $\binom76+t\binom12=\binom0{-6}+s\binom34$.</li>
+      <li><b>Porto le incognite a sinistra:</b> $t\binom12-s\binom34=\binom0{-6}-\binom76=\binom{-7}{-12}$. Quindi $A=[\mathbf v_1|-\mathbf v_2]=\begin{pmatrix}1&-3\\2&-4\end{pmatrix}$ e $\mathbf b=\binom{-7}{-12}$.</li>
+      <li><b>Riduco:</b> $$\left(\begin{array}{cc|c}1&-3&-7\\2&-4&-12\end{array}\right)\xrightarrow{R_2-2R_1}\left(\begin{array}{cc|c}1&-3&-7\\0&2&2\end{array}\right)$$ $r(A)=r'=2$: soluzione unica, le rette sono <b>incidenti</b>.</li>
+      <li><b>Risolvo dal basso:</b> $2s=2\Rightarrow s=1$; poi $t-3s=-7\Rightarrow t=-4$.</li>
+      <li><b>Trovo il punto</b> (in una delle due rette): $\binom76-4\binom12=\binom3{-2}$. Controllo con $\ell_2$: $\binom0{-6}+1\binom34=\binom3{-2}$ ✓. Quindi $\boxed{P(3,-2)}$.</li>
+    </ul>
+    <p><b>Stesso esempio in forma cartesiana.</b> Elimino il parametro: da $\ell_1$, $t=x-7$ e $y=6+2t$, quindi $2x-y=8$. Da $\ell_2$, $s=x/3$ e $y=-6+4s$, quindi $4x-3y=18$. Il determinante è $\det\begin{pmatrix}2&-1\\4&-3\end{pmatrix}=-2\ne0$: incidenti. Sostituendo $y=2x-8$ nella seconda: $-2x+24=18$, quindi $x=3,\ y=-2$ ✓.</p>
   </details>
 </section>
 
@@ -117,8 +124,18 @@ summary{cursor:pointer;font-weight:600;color:var(--acc)}
   </div>
   <details><summary>Esempi della lezione (sono quelli disegnati)</summary>
     <p><b>Sghembe:</b> $\ell_1:(1,2,3)+t(1,-1,0)$, $\ell_2:(3,2,1)+s(2,1,1)$.</p>
-    $$\left(\begin{array}{cc|c}1&-2&2\\-1&-1&0\\0&-1&-2\end{array}\right)\to\left(\begin{array}{cc|c}1&-2&2\\0&-1&-2\\0&0&8\end{array}\right)\Rightarrow r'=3.$$
-    <p><b>Incidenti:</b> con $\ell_2:(3,2,1)+s(2,1,-3)$ si trova $s=-\frac23,\ t=\frac23$, quindi il punto è $P\left(\frac53,\frac43,3\right)$.</p>
+    <ul class="steps col">
+      <li><b>Direzioni:</b> $(1,-1,0)$ e $(2,1,1)$ non sono proporzionali, quindi le rette <b>non</b> sono parallele: $r(A)=2$.</li>
+      <li><b>Sistema</b> $t\mathbf v_1-s\mathbf v_2=\mathbf r_2-\mathbf r_1=(2,0,-2)$, con colonne $\mathbf v_1=(1,-1,0)$ e $-\mathbf v_2=(-2,-1,-1)$.</li>
+      <li><b>Riduco</b> ($R_2+R_1$, poi scambio $R_2\leftrightarrow R_3$, poi $R_3-3R_2$): $$\left(\begin{array}{cc|c}1&-2&2\\-1&-1&0\\0&-1&-2\end{array}\right)\to\left(\begin{array}{cc|c}1&-2&2\\0&-1&-2\\0&-3&2\end{array}\right)$$ $$\to\left(\begin{array}{cc|c}1&-2&2\\0&-1&-2\\0&0&8\end{array}\right)$$</li>
+      <li>L'ultima riga dice $0=8$: impossibile, $r'=3\ne r=2$. Niente punti comuni e non parallele, quindi <b>sghembe</b>.</li>
+    </ul>
+    <p><b>Incidenti:</b> $\ell_1$ uguale, $\ell_2:(3,2,1)+s(2,1,-3)$.</p>
+    <ul class="steps col">
+      <li><b>Sistema:</b> stesse prime due righe; la terza ora è $0\cdot t+3s=-2$. $$\left(\begin{array}{cc|c}1&-2&2\\-1&-1&0\\0&3&-2\end{array}\right)$$</li>
+      <li><b>Risolvo:</b> riga 3: $s=-\frac23$. Riga 2: $-t-s=0\Rightarrow t=\frac23$. Riga 1 (controllo): $\frac23+\frac43=2$ ✓, quindi $r=r'=2$.</li>
+      <li><b>Punto:</b> $(1,2,3)+\frac23(1,-1,0)=\boxed{P\left(\frac53,\frac43,3\right)}$.</li>
+    </ul>
   </details>
 </section>
 
@@ -133,7 +150,12 @@ summary{cursor:pointer;font-weight:600;color:var(--acc)}
   <table><tr><th>$r(A)$</th><th>$r'$</th><th>Posizione</th></tr>
     <tr><td>1</td><td>2</td><td>paralleli distinti</td></tr><tr><td>1</td><td>1</td><td>coincidenti</td></tr><tr><td>2</td><td>2</td><td>retta $\ell=\Pi_1\cap\Pi_2$</td></tr></table>
   <details><summary>Calcolo della retta (caso incidente)</summary>
-    $$\left(\begin{array}{ccc|c}1&1&1&0\\0&1&-1&1\end{array}\right),\ z=t\ \Rightarrow\ \ell:\ (-1,1,0)+t(-2,1,1).$$
+    <ul class="steps col">
+      <li><b>Riduco</b> il sistema delle due equazioni: $$\left(\begin{array}{ccc|c}1&1&1&0\\2&3&1&1\end{array}\right)\xrightarrow{R_2-2R_1}\left(\begin{array}{ccc|c}1&1&1&0\\0&1&-1&1\end{array}\right)$$ $r=r'=2$ e 3 incognite: $3-2=1$ parametro libero, quindi una <b>retta</b>.</li>
+      <li><b>Scelgo il parametro</b> sulla colonna senza pivot: $z=t$.</li>
+      <li><b>Risolvo dal basso:</b> $y-z=1\Rightarrow y=1+t$; $x+y+z=0\Rightarrow x=-1-2t$.</li>
+      <li><b>Scrivo in forma parametrica:</b> $(x,y,z)=(-1,1,0)+t(-2,1,1)$, cioè $\boxed{\ell:\ (-1,1,0)+t(-2,1,1)}$.</li>
+    </ul>
   </details>
 </section>
 
@@ -142,10 +164,19 @@ summary{cursor:pointer;font-weight:600;color:var(--acc)}
   <div class="tldr">Si sostituisce la parametrica di $\ell$ nella cartesiana di $\Pi$: un'equazione in $t$.</div>
   <div class="grid">
     <figure><canvas data-s="rp_inc"></canvas><figcaption><b>Incidente</b><span class="rk">$t=-1$ → $P(0,2,1)$</span></figcaption></figure>
-    <figure><canvas data-s="rp_par"></canvas><figcaption><b>Parallela</b><span class="rk">$0\cdot t=1$ impossibile</span></figcaption></figure>
+    <figure><canvas data-s="rp_par"></canvas><figcaption><b>Parallela</b><span class="rk">$0\cdot t=-1$ impossibile</span></figcaption></figure>
     <figure><canvas data-s="rp_cont"></canvas><figcaption><b>Contenuta</b><span class="rk">$0\cdot t=0$ · infinite soluzioni</span></figcaption></figure>
   </div>
   <p class="legend">Piano $\Pi:\ x+z=1$ in tutte e tre le scene.</p>
+  <details><summary>Esempi svolti: i tre casi disegnati</summary>
+    <p>Metodo: prendo $x$ e $z$ dalla parametrica di $\ell$ e li sostituisco in $x+z=1$.</p>
+    <ul class="steps col">
+      <li><b>Incidente</b> — $\ell:(1,3,2)+t(1,1,1)$, cioè $x=1+t,\ z=2+t$. Sostituisco: $(1+t)+(2+t)=1\Rightarrow 2t=-2\Rightarrow t=-1$. Una sola soluzione: $P=(1,3,2)-(1,1,1)=(0,2,1)$.</li>
+      <li><b>Parallela</b> — $\ell:(1,1,1)+t(1,0,-1)$, cioè $x=1+t,\ z=1-t$. Sostituisco: $(1+t)+(1-t)=1\Rightarrow 2=1$, cioè $0\cdot t=-1$. Nessuna soluzione: $\ell\cap\Pi=\emptyset$.</li>
+      <li><b>Contenuta</b> — $\ell:(1,2,0)+t(-1,0,1)$, cioè $x=1-t,\ z=t$. Sostituisco: $(1-t)+t=1\Rightarrow 0\cdot t=0$. Vale per ogni $t$: tutta $\ell$ sta in $\Pi$.</li>
+    </ul>
+    <p class="rk">Il coefficiente di $t$ è $\mathbf n\cdot\vec v$: quando vale $0$ la retta è parallela al piano (o contenuta), altrimenti lo incontra in un punto.</p>
+  </details>
 </section>
 
 <!-- ============ PARTE 2 ============ -->
@@ -194,14 +225,30 @@ summary{cursor:pointer;font-weight:600;color:var(--acc)}
       <figcaption><b>Rette incidenti e ortogonali</b>
       <span class="rk">$\ell_1:(1,3,2)+t(1,2,1)$ · $\ell_2:(1,0,2)+s(1,-1,1)$ · punto $(0,1,1)$ · $1-2+1=0$</span></figcaption></figure>
   </div>
-  <details><summary>Dettagli esempio 1 (incluso il controllo del senso stretto)</summary>
-    <p>$\ell_2:(1,2,3)+t(1,1,1)$: la direzione risolve l'omogenea, e $(1,2,3)$ dà $-1-2+6=3\ne2$. Quindi $\ell_2$ è parallela a $\Pi$ <b>in senso stretto</b>. Per $\ell_3:(1,1,2)+t(1,0,1)$ si ha $-1+0+2=1\ne0$: la retta incontra il piano in un punto.</p>
+  <details><summary>Esempio 1 svolto: tre rette e il piano $-x-y+2z=2$</summary>
+    <p>Normale: $\mathbf n=(-1,-1,2)$ (i coefficienti di $x,y,z$). Per ogni retta calcolo $\mathbf n\cdot\vec v$.</p>
+    <ul class="steps col">
+      <li><b>$\ell_1:(1,0,1)+t(1,1,-2)$</b> — $\vec v_1=(1,1,-2)=-\mathbf n$: è proporzionale alla normale, quindi $\boxed{\ell_1\perp\Pi}$.</li>
+      <li><b>$\ell_2:(1,2,3)+t(1,1,1)$</b> — $\mathbf n\cdot\vec v_2=-1-1+2=0$: la direzione è parallela al piano. Controllo se $\ell_2$ sta dentro $\Pi$: il punto $(1,2,3)$ dà $-1-2+6=3\ne2$, quindi non ci sta. $\ell_2$ è parallela <b>in senso stretto</b>.</li>
+      <li><b>$\ell_3:(1,1,2)+t(1,0,1)$</b> — $\mathbf n\cdot\vec v_3=-1+0+2=1\ne0$: non è parallela, quindi <b>incontra</b> $\Pi$ in un punto. Non è nemmeno ortogonale, perché $(1,0,1)\not\propto(-1,-1,2)$.</li>
+    </ul>
   </details>
-  <details><summary>Esempio 2: retta per $P(0,1,2)$ ortogonale a $x+y+z=1$</summary>
-    <p>La direzione è $(1,1,1)$: $x=t,\ y=1+t,\ z=2+t$. Eliminando il parametro, $\boxed{x-y+1=x-z+2=0}$.</p>
+  <details><summary>Esempio 2 svolto: retta per $P(0,1,2)$ ortogonale a $x+y+z=1$</summary>
+    <ul class="steps col">
+      <li><b>Direzione:</b> la retta è $\perp\Pi$, quindi usa la normale: $\vec v=\mathbf n=(1,1,1)$.</li>
+      <li><b>Parametrica:</b> $P+t\vec v$, cioè $x=t,\ y=1+t,\ z=2+t$.</li>
+      <li><b>Elimino $t$:</b> dalla prima $t=x$. Allora $y=1+x\Rightarrow x-y+1=0$ e $z=2+x\Rightarrow x-z+2=0$.</li>
+      <li><b>Cartesiana:</b> $\boxed{x-y+1=x-z+2=0}$. Controllo con $P$: $0-1+1=0$ ✓, $0-2+2=0$ ✓.</li>
+    </ul>
   </details>
-  <details><summary>Esempio 3: il sistema</summary>
-    $$\left(\begin{array}{cc|c}1&-1&0\\2&1&-3\\1&-1&0\end{array}\right)\to\left(\begin{array}{cc|c}1&-1&0\\0&3&-3\\0&0&0\end{array}\right)\Rightarrow t=s=-1.$$
+  <details><summary>Esempio 3 svolto: $\ell_1$ e $\ell_2$ sono incidenti e ortogonali?</summary>
+    <p>$\ell_1:(1,3,2)+t(1,2,1)$, $\ell_2:(1,0,2)+s(1,-1,1)$. Le due proprietà si verificano <b>separatamente</b>.</p>
+    <ul class="steps col">
+      <li><b>Ortogonali?</b> $\vec v_1\cdot\vec v_2=1\cdot1+2\cdot(-1)+1\cdot1=0$ ✓.</li>
+      <li><b>Incidenti?</b> Sistema $t\vec v_1-s\vec v_2=\mathbf r_2-\mathbf r_1=(0,-3,0)$: $$\left(\begin{array}{cc|c}1&-1&0\\2&1&-3\\1&-1&0\end{array}\right)\xrightarrow[R_3-R_1]{R_2-2R_1}\left(\begin{array}{cc|c}1&-1&0\\0&3&-3\\0&0&0\end{array}\right)$$</li>
+      <li>$r=r'=2$: soluzione unica. $3s=-3\Rightarrow s=-1$; $t-s=0\Rightarrow t=-1$.</li>
+      <li><b>Punto:</b> $(1,3,2)-(1,2,1)=(0,1,1)$, e anche $(1,0,2)-(1,-1,1)=(0,1,1)$ ✓. Quindi incidenti in $(0,1,1)$ <b>e</b> ortogonali.</li>
+    </ul>
   </details>
   <div class="tldr warn">Nello spazio «ortogonali» riguarda le <b>direzioni</b>: anche due rette sghembe possono esserlo. Incidenza e ortogonalità vanno verificate <b>separatamente</b>.</div>
 </section>
@@ -231,8 +278,12 @@ summary{cursor:pointer;font-weight:600;color:var(--acc)}
     <div>
       <div class="tldr ok">$$ax+by+cz=g,\qquad g\in\mathbb R$$ Stessa normale, termine noto libero (<b>fascio improprio</b>).</div>
       <p><b>Esempio:</b> il piano $\parallel x+y+z=1$ che contiene $\ell:\ x+2y-1=x+2z+1=0$.</p>
-      $$\left(\begin{array}{ccc|c}1&2&0&1\\1&0&2&-1\\1&1&1&g\end{array}\right)\to\left(\begin{array}{ccc|c}1&2&0&1\\0&-2&2&-2\\0&0&0&g\end{array}\right)$$
-      <p>Per avere infinite soluzioni serve $g=0$, quindi $\boxed{x+y+z=0}$.</p>
+      <ul class="steps col">
+        <li><b>Fascio:</b> i piani paralleli a $x+y+z=1$ sono $x+y+z=g$. Resta da trovare $g$.</li>
+        <li><b>Condizione:</b> $\ell\subset\Pi$ vuol dire che ogni punto di $\ell$ soddisfa anche $\Pi$, cioè il sistema delle tre equazioni deve essere <b>compatibile</b> (ha la retta come soluzione).</li>
+        <li><b>Riduco</b> ($R_2-R_1$, $R_3-R_1$, poi $R_3-\frac12R_2$): $$\left(\begin{array}{ccc|c}1&2&0&1\\1&0&2&-1\\1&1&1&g\end{array}\right)\to\left(\begin{array}{ccc|c}1&2&0&1\\0&-2&2&-2\\0&-1&1&g-1\end{array}\right)$$ $$\to\left(\begin{array}{ccc|c}1&2&0&1\\0&-2&2&-2\\0&0&0&g\end{array}\right)$$</li>
+        <li>L'ultima riga è $0=g$. Se $g\ne0$ il sistema è impossibile ($\ell\parallel\Pi$ ma fuori). Serve $g=0$, quindi $\boxed{x+y+z=0}$.</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -243,7 +294,12 @@ summary{cursor:pointer;font-weight:600;color:var(--acc)}
     <div>
       <div class="tldr ok">$$pE_1+qE_2=0,\qquad (p,q)\ne(0,0)$$ È il <b>fascio proprio</b>: tutti e soli i piani che contengono $\ell$.</div>
       <p><b>Esempio:</b> per $\ell:\ x+2y-1=x+2z+1=0$ e $P_0(1,2,3)$.</p>
-      <p>Imponendo $P_0$: $4p+8q=0$. Con $p=2,\ q=-1$ si ottiene $\boxed{x+4y-2z=3}$.</p>
+      <ul class="steps col">
+        <li><b>Fascio:</b> $E_1=x+2y-1$, $E_2=x+2z+1$, quindi $p(x+2y-1)+q(x+2z+1)=0$.</li>
+        <li><b>Impongo $P_0(1,2,3)$:</b> $E_1(P_0)=1+4-1=4$, $E_2(P_0)=1+6+1=8$, quindi $4p+8q=0\Rightarrow p=-2q$.</li>
+        <li><b>Scelgo una soluzione non nulla:</b> $q=-1,\ p=2$ (va bene qualunque multiplo).</li>
+        <li><b>Sostituisco:</b> $2(x+2y-1)-(x+2z+1)=x+4y-2z-3=0$, cioè $\boxed{x+4y-2z=3}$. Controllo con $P_0$: $1+8-6=3$ ✓.</li>
+      </ul>
       <details><summary>Perché sono <em>tutti</em> i piani per $\ell$?</summary>
         <p>Se $\Pi\supset\ell$, il sistema $\{E_1,E_2,E_\Pi\}$ ha le stesse soluzioni di $\{E_1,E_2\}$. Per Rouché–Capelli $r'=r=2$, quindi la riga di $E_\Pi$ è combinazione di quelle di $E_1$ ed $E_2$.</p>
       </details>
@@ -259,10 +315,12 @@ summary{cursor:pointer;font-weight:600;color:var(--acc)}
   <div class="grid two">
     <div>
       <ul class="steps col">
-        <li>Piani per $P$: $ax+by+cz=a-c$</li>
-        <li>Passaggio per $Q$: $c=-b$, quindi $ax+by-bz=a+b$</li>
-        <li>$\ell_0\cap\Pi=\emptyset$: $$\left(\begin{array}{ccc|c}1&0&-1&-2\\0&-1&2&6\\0&0&a+b&3a+7b\end{array}\right)$$</li>
-        <li>$a+b=0$ e $b\ne0$ ⇒ $\boxed{x-y+z=0}$</li>
+        <li><b>Piani per $P$:</b> $a(x-1)+b(y-0)+c(z+1)=0$, cioè $ax+by+cz=a-c$.</li>
+        <li><b>Passaggio per $Q(1,1,0)$:</b> $a+b=a-c\Rightarrow c=-b$, quindi $ax+by-bz=a+b$.</li>
+        <li><b>$\ell_0\parallel\Pi$ (in senso stretto)</b> vuol dire $\ell_0\cap\Pi=\emptyset$: il sistema $\{x-z=-2,\ 3x-y-z=0,\ ax+by-bz=a+b\}$ deve essere <b>impossibile</b>.</li>
+        <li><b>Riduco</b> ($R_2-3R_1$, $R_3-aR_1$, poi $R_3+bR_2$): $$\left(\begin{array}{ccc|c}1&0&-1&-2\\3&-1&-1&0\\a&b&-b&a+b\end{array}\right)\to\left(\begin{array}{ccc|c}1&0&-1&-2\\0&-1&2&6\\0&b&a-b&3a+b\end{array}\right)$$ $$\to\left(\begin{array}{ccc|c}1&0&-1&-2\\0&-1&2&6\\0&0&a+b&3a+7b\end{array}\right)$$</li>
+        <li><b>Impossibile</b> se l'ultima riga è $0=\text{non zero}$: $a+b=0$ e $3a+7b\ne0$. Con $a=-b$ diventa $4b\ne0$, cioè $b\ne0$.</li>
+        <li><b>Scelgo</b> $b=-1,\ a=1$: $x-y+z=0$, cioè $\boxed{x-y+z=0}$. Controllo: $P$: $1-0-1=0$ ✓, $Q$: $1-1+0=0$ ✓.</li>
       </ul>
       <div class="tldr warn">⚠️ PDF p. 29: compare $3a+6b$, ma il valore corretto è $3a+7b$. La risposta non cambia.</div>
       <details><summary>Metodo rapido</summary><p>$\mathbf n\perp(1,2,1)$ (direzione di $\ell_0$) e $\mathbf n\perp\overrightarrow{PQ}=(0,1,1)$ danno $\mathbf n\propto(1,-1,1)$. Imponendo il passaggio per $P$ si ottiene $x-y+z=0$.</p></details>
