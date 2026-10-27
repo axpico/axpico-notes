@@ -11,10 +11,12 @@
             "id": "c4be34b1d7d9d55f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "html-viewer",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html"
+              },
+              "icon": "code",
+              "title": "Esercizi GAL1-4 da svolgere"
             }
           }
         ]
@@ -189,7 +191,9 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {},
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html"
+              },
               "icon": "lucide-info",
               "title": "File properties"
             }
@@ -231,7 +235,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 405.98828125
+    "width": 405.98828125,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -249,7 +254,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "c4be34b1d7d9d55f",
   "lastOpenFiles": [
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-1 Nucleo e immagine.mp4",
     "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
