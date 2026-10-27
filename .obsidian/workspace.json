@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "acb6d689bc9c52ee",
+        "id": "f0d8171f7c6a9d6e",
         "type": "tabs",
         "children": [
           {
-            "id": "c4be34b1d7d9d55f",
+            "id": "bd9551caf8869a15",
             "type": "leaf",
             "state": {
-              "type": "html-viewer",
-              "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html"
-              },
-              "icon": "code",
-              "title": "Esercizi GAL1-4 da svolgere"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -78,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 356.2109375,
-    "collapsed": true
+    "width": 258.6171875
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -208,13 +205,13 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1793096824989-2px2a7n",
+                      "tabId": "tab-1793102960619-cha4m60",
                       "conversationId": null,
                       "draftModel": "opus",
                       "providerId": "claude"
                     }
                   ],
-                  "activeTabId": "tab-1793096824989-2px2a7n"
+                  "activeTabId": "tab-1793102960619-cha4m60"
                 }
               },
               "icon": "bot",
@@ -235,8 +232,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 405.98828125,
-    "collapsed": true
+    "width": 272.8125
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -254,10 +250,13 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "c4be34b1d7d9d55f",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/Video/GAL3-1 Nucleo e immagine.mp4",
+    "Politecnico/Analisi 1/Indice.md.tmp.239169.d42376248b41",
+    "Politecnico/Analisi 1/HTML/1 - Successioni.html",
+    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
+    "Politecnico/Geometria e Algebra Lineare/Video/GAL3-1 Nucleo e immagine.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL4-4 Fasci di piani.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-5 Rango.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL4-2 Rette e piani.mp4",
@@ -265,13 +264,10 @@
     "Politecnico/Geometria e Algebra Lineare/Video/GAL4-1 Somma e intersezione di sottospazi.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-7 Geometria analitica.mp4",
     "Politecnico/Geometria e Algebra Lineare/Video/GAL3-3 Dimensione e basi.mp4",
-    "Politecnico/Geometria e Algebra Lineare/Video/GAL3-4 Cambio di base.mp4",
-    "Politecnico/Geometria e Algebra Lineare/Video/GAL3-2 Dipendenza lineare.mp4",
     "Excalidraw/Drawing 2026-10-26 08.11.32.excalidraw.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
     "Politecnico/Analisi 1/Indice.md",
-    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Intersezione, somma e somma diretta di sottospazi — formula di Grassmann.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Completamento a base.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Ortogonalità e fasci di rette e piani.md",

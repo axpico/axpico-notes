@@ -35,6 +35,12 @@ Formulario (asintotici, limiti notevoli): [[Formulario AM1 - asintotici.pdf|Form
 10. [[Serie numeriche|Serie numeriche]] (telescopiche, geometrica, armonica, criteri del confronto)
 11. [[Criteri per le serie, serie alternate e convergenza assoluta|Criteri per le serie, serie alternate e convergenza assoluta]] (rapporto, radice, Leibniz, convergenza assoluta)
 
+## HTML
+- [[1 - Successioni.html|1 - Successioni]]
+- [[2 - Limiti di successioni.html|2 - Limiti di successioni]]
+- [[3 - Serie numeriche.html|3 - Serie numeriche]]
+- [[Limiti notevoli.html|Limiti notevoli]]
+
 ## Repository
 - [PoliNetwork info1y — Analisi I (GitLab)](https://gitlab.com/polinetwork/info1y/-/tree/main/ANALISI%20I?ref_type=heads) — appunti, esercizi ed esami condivisi
 

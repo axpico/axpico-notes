@@ -56,6 +56,17 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
     - HTML interattivo: [[Lezione 8 — Completamento, somma di sottospazi e Grassmann.html|Lezione 8 completa (completamento, somma, Grassmann, complementi)]]
 
 ## Video
+- [[GAL3-1 Nucleo e immagine.mp4|GAL3-1 Nucleo e immagine]]
+- [[GAL3-2 Dipendenza lineare.mp4|GAL3-2 Dipendenza lineare]]
+- [[GAL3-3 Dimensione e basi.mp4|GAL3-3 Dimensione e basi]]
+- [[GAL3-4 Cambio di base.mp4|GAL3-4 Cambio di base]]
+- [[GAL3-5 Rango.mp4|GAL3-5 Rango]]
+- [[GAL3-6 Rango piu nullita e supplementari.mp4|GAL3-6 Rango piu nullita e supplementari]]
+- [[GAL3-7 Geometria analitica.mp4|GAL3-7 Geometria analitica]]
+- [[GAL4-1 Somma e intersezione di sottospazi.mp4|GAL4-1 Somma e intersezione di sottospazi]]
+- [[GAL4-2 Rette e piani.mp4|GAL4-2 Rette e piani]]
+- [[GAL4-3 Ortogonalita e posizione reciproca.mp4|GAL4-3 Ortogonalita e posizione reciproca]]
+- [[GAL4-4 Fasci di piani.mp4|GAL4-4 Fasci di piani]]
 - [Playlist YouTube — Essence of linear algebra (3Blue1Brown)](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) — intuizione geometrica su vettori, basi, applicazioni lineari, cambio di base
 
 ## Repository
@@ -71,6 +82,10 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 ## PDF — Esercizi
 - [[EserciziGAL1.pdf|EserciziGAL1]]
 - [[EserciziGAL2.pdf|EserciziGAL2]]
+- [[EserciziGAL3.pdf|EserciziGAL3]]
+- [[EserciziGAL4.pdf|EserciziGAL4]]
+- [[Esercizi di algebra lineare e geometria..pdf|Esercizi di algebra lineare e geometria]]
+- [[Esercizi GAL1-4 da svolgere.html|Esercizi GAL1-4 da svolgere (HTML interattivo)]]
 
 ## PDF — Esami vecchi
 - [[Esempio Parte C con soluzioni.pdf|Esempio Parte C con soluzioni]]

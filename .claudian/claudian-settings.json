@@ -46,10 +46,10 @@
       ],
       "modelAliases": {},
       "visibleModels": [
-        "haiku",
         "sonnet",
         "opus",
-        "claude-fable-5-1"
+        "haiku",
+        "fable"
       ],
       "selectedModels": [
         {
