@@ -25,13 +25,14 @@
             "state": {
               "type": "html-viewer",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 8 — Completamento, somma di sottospazi e Grassmann.html"
+                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html"
               },
               "icon": "code",
-              "title": "Lezione 8 — Completamento, somma di sottospazi e Grassmann"
+              "title": "Lezione 7 — Rette, piani, ortogonalità e fasci"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -266,11 +267,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "de2258c134c24ec7",
+  "active": "2068601ce851bfab",
   "lastOpenFiles": [
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 8 — Completamento, somma di sottospazi e Grassmann.html",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html",
     "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/0. Prova parziale 11 nov 2025.pdf",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html",
     "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/1. Parte-AB 20.01.2026.pdf",
     "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/2. GAL-AB-feb2026 con soluzioni.pdf",
     "Politecnico/Geometria e Algebra Lineare/Esami/Non svolti/Prova in itinere 11-11-2025.md",
