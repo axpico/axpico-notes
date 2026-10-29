@@ -3,7 +3,7 @@ tags:
   - geometria-algebra-lineare
   - indice
 ---
-# Geometria e Algebra Lineare — Indice (ordine di studio)
+w# Geometria e Algebra Lineare — Indice (ordine di studio)
 
 Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 ## 1. Fondamenti
