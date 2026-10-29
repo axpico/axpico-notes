@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cf2d8363f8058c01",
+        "id": "bf0768dd79cb6d7c",
         "type": "tabs",
         "children": [
           {
-            "id": "2aa474dd5e830cf7",
+            "id": "0881fbd30f9e8300",
             "type": "leaf",
             "state": {
               "type": "html-viewer",
@@ -254,7 +254,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "2aa474dd5e830cf7",
+  "active": "0881fbd30f9e8300",
   "lastOpenFiles": [
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Guida con esempi.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Guida con esempi.html.tmp.209329.18b6e45f9764",
