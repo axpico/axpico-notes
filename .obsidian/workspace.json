@@ -18,8 +18,21 @@
               "icon": "lucide-file-text",
               "title": "0. Prova parziale 11 nov 2025"
             }
+          },
+          {
+            "id": "0c1c106219818509",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-10-30 09.30.13.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-10-30 09.30.13.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -254,20 +267,20 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "0881fbd30f9e8300",
+  "active": "0c1c106219818509",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/0. Prova parziale 11 nov 2025.pdf",
+    "Excalidraw/Drawing 2026-10-30 09.30.13.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2024-2025/1. Parte A gennaio 2025.pdf",
     "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2024-2025/0. Prova in itinere 2024.pdf",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Guida con esempi.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Guida con esempi.html.tmp.209329.18b6e45f9764",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Rette, piani, ortogonalità e fasci.html",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/0. Prova parziale 11 nov 2025.pdf",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Guida con esempi.html.tmp.209329.70debdc8e0d1",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Guida con esempi.html.tmp.209329.330c65c59175",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Guida con esempi.html.tmp.209329.012c0bcc391f",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Guida con esempi.html.tmp.209329.99b5a723bb94",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 8 — Completamento, somma di sottospazi e Grassmann.html",
     "Politecnico/Geometria e Algebra Lineare/Esami/Non svolti/Prova in itinere 11-11-2025.md",
     "Piano di Studio — Maturità 2026/Piano di Studio — Maturità 2026.md",
     "Untitled.canvas",
@@ -292,7 +305,6 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Cambio di base e matrice di passaggio.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Dipendenza lineare.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
-    "Politecnico/Analisi 1/Teoria/Successioni monotone, infinitesimi e limiti notevoli.md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
