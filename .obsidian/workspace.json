@@ -116,7 +116,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.6171875
+    "width": 258.6171875,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -293,11 +294,11 @@
   },
   "active": "5804bd4648dacd84",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/Indice.md",
-    "Politecnico/Geometria e Algebra Lineare/Ripasso parziale.md",
     "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/0. Prova parziale 11 nov 2025.pdf",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
     "Excalidraw/Drawing 2026-10-30 09.30.13.excalidraw.md",
+    "Politecnico/Geometria e Algebra Lineare/Ripasso parziale.md",
+    "Politecnico/Geometria e Algebra Lineare/Indice.md",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/Due sottospazi in R1, R2, R3.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg",
