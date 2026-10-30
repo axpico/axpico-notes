@@ -1,0 +1,206 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Parte B simulata di GAL</title>
+<style>
+/* Stessa veste scura delle altre lezioni HTML: una colonna che si legge dall'inizio alla fine. */
+:root{--bg:#0f1220;--card:#181c2f;--card2:#20253d;--code:#11152a;--line:#2a3050;--txt:#e6e8f2;--mut:#9aa0bd;--acc:#7c9cff;--ok:#4fd1a5;--warn:#ffb454;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 system-ui,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding-block:28px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:36px}
+.wrap>*,section>*{min-width:0}
+header,section{display:grid;gap:12px}
+h1{margin:0;font-size:1.7rem;line-height:1.2;text-wrap:balance}
+h2{margin:0;font-size:1.3rem;text-wrap:balance;scroll-margin-top:12px}
+h3{margin:8px 0 0;font-size:1rem;color:var(--acc)}
+p{margin:0}
+.mut{color:var(--mut)}
+code{font-family:ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace;font-size:.92em;overflow-wrap:anywhere}
+pre{margin:0;background:var(--code);border:1px solid var(--line);border-radius:10px;padding:12px 14px;overflow-x:auto;font:15px/1.6 ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace}
+nav{display:flex;flex-wrap:wrap;gap:8px}
+nav a{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:5px 12px;color:var(--txt);text-decoration:none;font-size:.92rem}
+nav a:hover,nav a:focus-visible{border-color:var(--acc)}
+a:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.task{background:var(--card2);border-radius:10px;padding:10px 14px}
+.idea{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;gap:6px}
+.lab{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.res{border:1px solid var(--ok);border-radius:10px;padding:10px 14px}
+.res .lab{color:var(--ok)}
+.warn{border:1px solid var(--warn);border-radius:10px;padding:10px 14px}
+.warn .lab{color:var(--warn)}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;white-space:nowrap}
+th{color:var(--mut);font-weight:500}
+ul{margin:0;padding-left:20px;display:grid;gap:4px}
+figure{margin:0;display:grid;gap:8px}
+figure svg{display:block;width:100%;height:auto;background:var(--code);border-radius:10px}
+figcaption{font-size:.9rem;color:var(--mut)}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Parte B simulata di GAL</h1>
+    <p class="mut">Svolgimento completo dell'esercizio, con il motivo di ogni passaggio.</p>
+    <div class="task">Sia <code>L: ℝ³ → ℝ[t]≤2</code> definita da<br><code>L(a,b,c) = (a−b) + (b−c)t + (a−c)t²</code></div>
+    <nav aria-label="Punti dell'esercizio">
+      <a href="#a">a) Immagine e nucleo</a><a href="#b">b) H</a><a href="#c">c) H∩K</a><a href="#d">d) Rette</a><a href="#e">e) Condizione su p</a>
+    </nav>
+    <div class="idea">
+      <div class="lab">L'idea che serve ovunque</div>
+      <p>Un polinomio <code>c₀+c₁t+c₂t²</code> è identificato dai suoi coefficienti, cioè dal vettore <code>(c₀,c₁,c₂)</code>. Così i conti sui polinomi diventano conti su vettori di ℝ³.</p>
+      <p>Due polinomi sono uguali solo se hanno tutti i coefficienti uguali. Da questo nascono tutti i sistemi dell'esercizio.</p>
+    </div>
+  </header>
+
+  <section>
+    <h2 id="a">a) Immagine e nucleo</h2>
+    <div class="task">Trova una base di <code>Im L</code> e la dimensione di <code>ker L</code>.</div>
+    <div class="idea">
+      <div class="lab">L'idea</div>
+      <p>L'immagine è l'insieme dei polinomi che <code>L</code> può produrre. Ogni vettore si scrive <code>a·e₁+b·e₂+c·e₃</code> e <code>L</code> è lineare, quindi <code>L(a,b,c) = a·L(e₁)+b·L(e₂)+c·L(e₃)</code>. Le tre immagini generano tutta <code>Im L</code>.</p>
+    </div>
+
+    <h3>Passo 1: calcolo le immagini</h3>
+    <div class="tw"><table>
+      <tr><th>Vettore</th><th>a−b</th><th>b−c</th><th>a−c</th><th>Polinomio</th><th>Coordinate</th></tr>
+      <tr><td><code>e₁=(1,0,0)</code></td><td>1</td><td>0</td><td>1</td><td><code>1+t²</code></td><td><code>(1,0,1)</code></td></tr>
+      <tr><td><code>e₂=(0,1,0)</code></td><td>−1</td><td>1</td><td>0</td><td><code>−1+t</code></td><td><code>(−1,1,0)</code></td></tr>
+      <tr><td><code>e₃=(0,0,1)</code></td><td>0</td><td>−1</td><td>−1</td><td><code>−t−t²</code></td><td><code>(0,−1,−1)</code></td></tr>
+    </table></div>
+
+    <h3>Passo 2: tolgo i generatori superflui</h3>
+    <p>Metto le coordinate in colonna e riduco per righe.</p>
+<pre>[1 −1  0]    R3←R3−R1    [1 −1  0]    R3←R3−R2    [1 −1  0]
+[0  1 −1]    ───────→    [0  1 −1]    ───────→    [0  1 −1]
+[1  0 −1]                [0  1 −1]                [0  0  0]</pre>
+    <p>I pivot sono nelle colonne 1 e 2, quindi il rango è 2 e la colonna 3 dipende dalle altre.</p>
+
+    <h3>Passo 3: leggo la base</h3>
+    <p>Prendo le colonne dei pivot dalla matrice di partenza, perché le operazioni sulle righe cambiano le colonne.</p>
+    <p>Verifica: <code>−t−t² = −(1+t²) − (−1+t)</code>, quindi il terzo polinomio è davvero superfluo.</p>
+
+    <h3>Il nucleo</h3>
+    <p>Il nucleo contiene i vettori che <code>L</code> manda nel polinomio nullo. La dimensione viene dal teorema di nullità più rango: <code>dim ker L = 3 − 2 = 1</code>.</p>
+    <p>Calcolo diretto, con tutti i coefficienti uguali a zero:</p>
+<pre>a−b=0  ⇒  a=b
+b−c=0  ⇒  b=c
+a−c=0  già implicata dalle prime due</pre>
+    <p>Quindi <code>a=b=c</code> e i vettori sono <code>a(1,1,1)</code>.</p>
+    <div class="res"><div class="lab">Risultato</div>Base di <code>Im L</code>: <code>{1+t², −1+t}</code>. <code>dim ker L = 1</code>, con <code>ker L = span(1,1,1)</code>.</div>
+  </section>
+
+  <section>
+    <h2 id="b">b) Il sottospazio H</h2>
+    <div class="task">Sia <code>F(a,b,c) = b + (b−c)t + (a+b)t²</code>. Trova una base di <code>H = {v : L(v)=F(v)}</code>.</div>
+    <div class="idea">
+      <div class="lab">L'idea</div>
+      <p><code>H</code> contiene i vettori su cui <code>L</code> e <code>F</code> danno lo stesso polinomio. Uguaglio i coefficienti, potenza per potenza.</p>
+    </div>
+<pre>L(v) = (a−b) + (b−c)t + (a−c)t²
+F(v) =   b   + (b−c)t + (a+b)t²
+
+costante:  a−b = b     ⇒  a = 2b
+t:         b−c = b−c   ⇒  sempre vera, nessuna condizione
+t²:        a−c = a+b   ⇒  −c = b  ⇒  c = −b</pre>
+    <p>Restano due condizioni su tre variabili, quindi una variabile è libera: <code>b</code>. Scrivo tutto in funzione di <code>b</code>: <code>v = (2b, b, −b) = b(2,1,−1)</code>.</p>
+    <p>Verifica con <code>v=(2,1,−1)</code>: <code>L(v) = 1+2t+3t²</code> e anche <code>F(v) = 1+2t+3t²</code>.</p>
+    <div class="res"><div class="lab">Risultato</div>Base di <code>H</code>: <code>{(2,1,−1)}</code>, quindi <code>dim H = 1</code>.</div>
+  </section>
+
+  <section>
+    <h2 id="c">c) L'intersezione H∩K</h2>
+    <div class="task">Sia <code>K = span{(1,1,0), (1,0,−1)}</code>. Trova una base di <code>H∩K</code>.</div>
+    <div class="idea">
+      <div class="lab">L'idea</div>
+      <p><code>H∩K</code> sta dentro <code>H</code>, che ha dimensione 1. Quindi ci sono solo due possibilità: se <code>(2,1,−1)</code> sta in <code>K</code> allora <code>H∩K=H</code>, altrimenti <code>H∩K={0}</code>.</p>
+    </div>
+    <p>Un vettore sta in <code>K</code> se è combinazione lineare dei suoi generatori:</p>
+<pre>α(1,1,0) + β(1,0,−1) = (α+β, α, −β) = (2,1,−1)
+
+α+β = 2
+α   = 1
+−β  = −1  ⇒  β = 1</pre>
+    <p>La seconda e la terza danno i valori. La prima è il controllo: <code>1+1=2</code>, vera. Quindi <code>(2,1,−1) = (1,1,0)+(1,0,−1)</code> sta in <code>K</code>.</p>
+    <div class="warn"><div class="lab">Se il controllo fallisse</div>Il vettore non starebbe in <code>K</code> e l'intersezione sarebbe <code>{0}</code>, che ha base vuota.</div>
+    <div class="res"><div class="lab">Risultato</div><code>H∩K = H</code>. Base: <code>{(2,1,−1)}</code>.</div>
+  </section>
+
+  <section>
+    <h2 id="d">d) La retta ℓ₁ e la posizione reciproca</h2>
+    <div class="task">Verifica che <code>ℓ₁ = {v : L(v)=1+t+2t²}</code> è una retta. Determina la posizione reciproca con <code>ℓ₂: (0,0,1)+u(1,−1,0)</code>.</div>
+
+    <h3>Perché è una retta</h3>
+<pre>a−b = 1
+b−c = 1
+a−c = 2</pre>
+    <p>La terza è la somma delle prime due: <code>(a−b)+(b−c) = a−c</code> e <code>1+1=2</code>. Non aggiunge nessuna condizione, quindi il sistema ha soluzione. Restano due equazioni indipendenti su tre variabili, e una variabile è libera.</p>
+    <p>Pongo <code>c=s</code>. Allora <code>b=1+s</code> e <code>a=2+s</code>:</p>
+<pre>(a,b,c) = (2+s, 1+s, s) = (2,1,0) + s(1,1,1)</pre>
+    <p>È una retta con punto <code>(2,1,0)</code> e direzione <code>(1,1,1)</code>. Verifica: <code>L(2,1,0) = 1+t+2t²</code>.</p>
+    <div class="idea">
+      <div class="lab">Perché la direzione è proprio ker L</div>
+      <p>Le soluzioni di <code>L(v)=p</code> sono sempre una soluzione particolare più il nucleo. Con <code>dim ker L = 1</code> si ottiene una retta.</p>
+    </div>
+
+    <h3>Domanda 1: sono parallele?</h3>
+    <p>Cerco <code>λ</code> con <code>(1,−1,0) = λ(1,1,1)</code>. La prima componente dà <code>λ=1</code>, la seconda <code>λ=−1</code>. È impossibile, quindi non sono parallele.</p>
+
+    <h3>Domanda 2: si incontrano?</h3>
+    <p>Uso due parametri diversi, <code>s</code> e <code>u</code>, perché il punto comune può trovarsi a valori diversi sulle due rette.</p>
+<pre>ℓ₁: (2+s, 1+s, s)
+ℓ₂: (u, −u, 1)
+
+2+s = u
+1+s = −u
+s   = 1</pre>
+    <p>Dalla terza <code>s=1</code>. Nella prima <code>u=3</code>. Nella seconda <code>1+1 = −3</code>, cioè <code>2 = −3</code>, falso.</p>
+
+    <figure>
+      <svg viewBox="0 0 520 290" role="img" aria-label="Le due rette in vista obliqua, con il segmento tratteggiato tra i punti (3,2,1) e (3,−3,1)">
+        <g stroke="#3a4266" stroke-width="1">
+          <line x1="176" y1="107" x2="344" y2="233"/>
+          <line x1="120" y1="170" x2="400" y2="170"/>
+          <line x1="260" y1="30" x2="260" y2="280"/>
+        </g>
+        <line x1="220.8" y1="241.4" x2="299" y2="133.6" stroke="#7c9cff" stroke-width="3" stroke-linecap="round"/>
+        <line x1="394" y1="104" x2="81" y2="192" stroke="#ffb454" stroke-width="3" stroke-linecap="round"/>
+        <line x1="125.6" y1="179.8" x2="265.6" y2="179.8" stroke="#e6e8f2" stroke-width="1.5" stroke-dasharray="5 5"/>
+        <circle cx="265.6" cy="179.8" r="5" fill="#7c9cff"/>
+        <circle cx="125.6" cy="179.8" r="5" fill="#ffb454"/>
+        <text x="308" y="130" fill="#7c9cff" font-size="15" font-weight="700">ℓ₁</text>
+        <text x="402" y="100" fill="#ffb454" font-size="15" font-weight="700">ℓ₂</text>
+        <text x="278" y="200" fill="#7c9cff" font-size="13">s=1: (3, 2, 1)</text>
+        <text x="60" y="215" fill="#ffb454" font-size="13">u=3: (3, −3, 1)</text>
+      </svg>
+      <figcaption>Nel disegno le rette sembrano incrociarsi, ma è un effetto della vista: non si toccano. Il tratteggio mostra la contraddizione del sistema. Con <code>s=1</code> e <code>u=3</code> i punti hanno stessa <code>x</code> e stessa <code>z</code>, ma <code>y</code> vale 2 su ℓ₁ e −3 su ℓ₂.</figcaption>
+    </figure>
+    <div class="res"><div class="lab">Risultato</div>Le rette non sono parallele e non si incontrano, quindi sono <b>sghembe</b>.</div>
+  </section>
+
+  <section>
+    <h2 id="e">e) La condizione su p</h2>
+    <div class="task">Per quali <code>p = c₀+c₁t+c₂t²</code> l'insieme <code>{v : L(v)=p}</code> è non vuoto?</div>
+    <div class="idea">
+      <div class="lab">L'idea</div>
+      <p>La domanda equivale a chiedere per quali <code>p</code> il sistema ha soluzione, cioè quali <code>p</code> stanno in <code>Im L</code>.</p>
+    </div>
+<pre>a−b = c₀
+b−c = c₁
+a−c = c₂</pre>
+    <p>Sommo le prime due: <code>b</code> si cancella e resta <code>a−c = c₀+c₁</code>. La terza dice invece <code>a−c = c₂</code>. Lo stesso numero deve soddisfare entrambe, quindi <code>c₀+c₁ = c₂</code>.</p>
+    <ul>
+      <li><b>Se vale:</b> la terza equazione è ridondante e il sistema ha infinite soluzioni, come in d).</li>
+      <li><b>Se non vale:</b> il sistema è impossibile e l'insieme è vuoto.</li>
+    </ul>
+    <div class="tw"><table>
+      <tr><th>Polinomio</th><th>c₀+c₁</th><th>c₂</th><th>Insieme</th></tr>
+      <tr><td><code>1+t+2t²</code></td><td>2</td><td>2</td><td>non vuoto: è la retta di d)</td></tr>
+      <tr><td><code>1+t+t²</code></td><td>2</td><td>1</td><td>vuoto</td></tr>
+    </table></div>
+    <p>Controllo con il punto a): una condizione su 3 coefficienti dà dimensione <code>3−1 = 2</code>, cioè <code>dim Im L</code>. Anche i polinomi di base la soddisfano: <code>1+t²</code> dà <code>1+0=1</code> e <code>−1+t</code> dà <code>−1+1=0</code>.</p>
+    <div class="res"><div class="lab">Risultato</div>L'insieme è non vuoto se e solo se <code>c₀+c₁ = c₂</code>.</div>
+  </section>
+</div>
