@@ -32,8 +32,21 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-10-30 09.30.13.excalidraw"
             }
+          },
+          {
+            "id": "830f210562834f4b",
+            "type": "leaf",
+            "state": {
+              "type": "html-viewer",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html"
+              },
+              "icon": "code",
+              "title": "Esercizi GAL1-4 da svolgere"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -280,14 +293,19 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "5804bd4648dacd84",
+  "active": "830f210562834f4b",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/HTML/Due sottospazi in R1, R2, R3.html",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 7 — Guida con esempi.html",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Iniettiva suriettiva.svg",
+    "Politecnico/Geometria e Algebra Lineare/HTML/esercizi_matrice_inversa.html",
+    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/Esercizi di algebra lineare e geometria..pdf",
     "Excalidraw/Drawing 2026-10-30 09.30.13.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Ripasso parziale.md",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg",
     "file:/tmp/claude-1000/-home-axpico-axpico-notes-Politecnico-Geometria-e-Algebra-Lineare/6cf524f5-cdc4-46d2-b37b-944cc8d09b8a/scratchpad/grassmann.md",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Iniettiva suriettiva.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg.tmp.492523.3b4731fb5cba",
     "Politecnico/Geometria e Algebra Lineare/HTML/Iniettiva suriettiva.svg.tmp.492523.98571dfa9aa9",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
@@ -297,10 +315,6 @@
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Parte B simulata — Esercizio svolto.md.tmp.479612.cacbd024dfb7",
     "Politecnico/Geometria e Algebra Lineare/HTML/Parte B simulata — svolgimento.html.tmp.479612.e0ee7585e99f",
     "Politecnico/Geometria e Algebra Lineare/HTML/Parte B simulata — svolgimento.html",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Parte B simulata — svolgimento.html.tmp.479612.6b1133c29df7",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Due sottospazi in R1, R2, R3.html.tmp.374768.c812f03267c0",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Due sottospazi in R1, R2, R3.html.tmp.374768.aa65a45b972f",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Due sottospazi in R1, R2, R3.html.tmp.374768.b6ae5380b169",
     "Politecnico/Geometria e Algebra Lineare/Esami/Non svolti/Prova in itinere 11-11-2025.md",
     "Piano di Studio — Maturità 2026/Piano di Studio — Maturità 2026.md",
     "Untitled.canvas",
@@ -321,7 +335,6 @@
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Excalidraw/Drawing 2026-10-17 15.05.03.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Serie numeriche.md",
-    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.3 Serie geometrica (★★).md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
