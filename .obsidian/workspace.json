@@ -45,8 +45,7 @@
               "title": "0. Prova parziale 11 nov 2025"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -80,7 +79,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#geometria-algebra-lineare",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +87,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Ricerca"
+              "title": "Search"
             }
           },
           {
@@ -117,8 +116,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.6171875,
-    "collapsed": true
+    "width": 258.6171875
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -293,10 +291,12 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "830f210562834f4b",
+  "active": "5804bd4648dacd84",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
+    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Ripasso parziale.md",
+    "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/0. Prova parziale 11 nov 2025.pdf",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Esercizi GAL1-4 da svolgere.html",
     "Excalidraw/Drawing 2026-10-30 09.30.13.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Due sottospazi in R1, R2, R3.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
@@ -309,11 +309,9 @@
     "file:/tmp/claude-1000/-home-axpico-axpico-notes-Politecnico-Geometria-e-Algebra-Lineare/6cf524f5-cdc4-46d2-b37b-944cc8d09b8a/scratchpad/grassmann.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg.tmp.492523.3b4731fb5cba",
     "Politecnico/Geometria e Algebra Lineare/HTML/Iniettiva suriettiva.svg.tmp.492523.98571dfa9aa9",
-    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Giro matrice rappresentativa.svg",
     "Politecnico/Geometria e Algebra Lineare/Ripasso parziale.md.tmp.479612.dd9809eae2be",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Parte B simulata — Esercizio svolto.md",
-    "Politecnico/Geometria e Algebra Lineare/Esercizi/Parte B simulata — Esercizio svolto.md.tmp.479612.cacbd024dfb7",
     "Politecnico/Geometria e Algebra Lineare/Esami/Non svolti/Prova in itinere 11-11-2025.md",
     "Piano di Studio — Maturità 2026/Piano di Studio — Maturità 2026.md",
     "Untitled.canvas",
