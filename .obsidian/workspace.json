@@ -11,12 +11,12 @@
             "id": "0881fbd30f9e8300",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "image",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/0. Prova parziale 11 nov 2025.pdf"
+                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Giro matrice rappresentativa.svg"
               },
-              "icon": "lucide-file-text",
-              "title": "0. Prova parziale 11 nov 2025"
+              "icon": "lucide-image",
+              "title": "Giro matrice rappresentativa"
             }
           },
           {
@@ -269,6 +269,7 @@
   },
   "active": "0c1c106219818509",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/HTML/Giro matrice rappresentativa.svg",
     "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2025-2026/0. Prova parziale 11 nov 2025.pdf",
     "Excalidraw/Drawing 2026-10-30 09.30.13.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2024-2025/1. Parte A gennaio 2025.pdf",
@@ -314,7 +315,6 @@
     "Ripasso uni/POK/Img/Campo elettrico/Principio di sovrapposizione 1.png",
     "Ripasso uni/POK/Img/Campo elettrico/Linne di forza.png",
     "Ripasso uni/POK/Img/Campo elettrico/Confronto con forza gravitazionale 2.png",
-    "Ripasso uni/POK/Img/Campo elettrico/Atomo di idrogeno 2.png",
-    "Ripasso uni/POK/Img/Campo elettrico/Confronto con forza gravitazionale 1.png"
+    "Ripasso uni/POK/Img/Campo elettrico/Atomo di idrogeno 2.png"
   ]
 }

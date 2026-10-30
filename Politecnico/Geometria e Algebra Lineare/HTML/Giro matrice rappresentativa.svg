@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" font-family="DejaVu Sans, Arial, sans-serif" role="img" aria-label="Schema del giro per calcolare F(3,1) con la matrice rispetto alla base B">
+  <title>Il giro per calcolare F(3,1)</title>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1f4e79"/></marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#777"/></marker>
+  </defs>
+  <rect width="900" height="560" fill="#fff"/>
+  <text x="450" y="36" text-anchor="middle" font-size="21" font-weight="700" fill="#222">Il giro per calcolare F(3,1)</text>
+
+  <text x="450" y="84" text-anchor="middle" font-size="14" fill="#555">VETTORI NORMALI</text>
+  <text x="450" y="526" text-anchor="middle" font-size="14" fill="#555">COORDINATE IN B = {(1,0), (1,1)}</text>
+
+  <!-- freccia diretta -->
+  <line x1="280" y1="145" x2="618" y2="145" stroke="#777" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#g)"/>
+  <text x="450" y="133" text-anchor="middle" font-size="15" fill="#555">F (non conosco la sua matrice qui)</text>
+
+  <!-- i tre passi -->
+  <line x1="170" y1="200" x2="170" y2="388" stroke="#1f4e79" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="280" y1="445" x2="618" y2="445" stroke="#1f4e79" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="730" y1="390" x2="730" y2="202" stroke="#1f4e79" stroke-width="3" marker-end="url(#a)"/>
+
+  <!-- caselle -->
+  <g fill="#eaf1f8" stroke="#1f4e79" stroke-width="2">
+    <rect x="60" y="100" width="220" height="100" rx="10"/>
+    <rect x="620" y="100" width="220" height="100" rx="10"/>
+    <rect x="60" y="390" width="220" height="100" rx="10"/>
+    <rect x="620" y="390" width="220" height="100" rx="10"/>
+  </g>
+  <g text-anchor="middle" fill="#222">
+    <text x="170" y="142" font-size="15">vettore di partenza</text>
+    <text x="170" y="177" font-size="24" font-weight="700">(3, 1)</text>
+    <text x="730" y="142" font-size="15">risultato</text>
+    <text x="730" y="177" font-size="24" font-weight="700">F(3,1) = (5, 1)</text>
+    <text x="170" y="432" font-size="15">coordinate in B</text>
+    <text x="170" y="467" font-size="24" font-weight="700">(2, 1)</text>
+    <text x="730" y="432" font-size="15">coordinate in B</text>
+    <text x="730" y="467" font-size="24" font-weight="700">(4, 1)</text>
+  </g>
+
+  <!-- etichette -->
+  <g font-size="15" fill="#222">
+    <text x="188" y="262" font-weight="700" fill="#1f4e79">1. Traduco in B</text>
+    <text x="188" y="286">α(1,0) + β(1,1) = (3,1)</text>
+    <text x="188" y="310">β = 1, α = 2</text>
+    <text x="712" y="262" text-anchor="end" font-weight="700" fill="#1f4e79">3. Ritraduco</text>
+    <text x="712" y="286" text-anchor="end">4(1,0) + 1(1,1)</text>
+    <text x="712" y="310" text-anchor="end">= (5, 1)</text>
+    <text x="450" y="433" text-anchor="middle" font-weight="700" fill="#1f4e79">2. Applico la matrice</text>
+    <text x="450" y="472" text-anchor="middle">[1 2; 0 1] · (2,1) = (4,1)</text>
+  </g>
+</svg>
