@@ -1,0 +1,171 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Due sottospazi in ℝ¹, ℝ², ℝ³</title>
+<style>
+/* Stessa veste scura delle altre lezioni HTML: schede con figura, una per ogni caso. */
+:root{--bg:#0f1220;--card:#181c2f;--card2:#20253d;--line:#2a3050;--txt:#e6e8f2;--mut:#9aa0bd;--u:#7c9cff;--w:#ffb454;--i:#4fd1a5;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.55 system-ui,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:32px}
+header,section{display:grid;gap:12px;min-width:0}
+h1{margin:0;font-size:1.7rem;line-height:1.2;text-wrap:balance}
+h2{margin:0;font-size:1.25rem;text-wrap:balance}
+h3{margin:0;font-size:1rem}
+p{margin:0;max-width:65ch}
+.mut{color:var(--mut)}
+.rule{background:var(--card2);border-radius:12px;padding:12px 16px;font-size:1.05rem;text-align:center;overflow-x:auto}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.9rem;color:var(--mut)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.case{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;gap:8px;grid-template-rows:auto auto auto 1fr auto;min-width:0}
+.case svg{display:block;width:100%;height:auto;background:#11152a;border-radius:10px}
+.ex{font-size:.9rem;color:var(--mut)}
+.ex b{font-weight:600}
+.why{font-size:.92rem}
+.dims{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-variant-numeric:tabular-nums}
+.dims div{background:var(--card2);border-radius:8px;padding:4px 8px;font-size:.9rem;display:flex;justify-content:space-between;gap:8px}
+.dims b{font-size:1rem}
+.check{grid-column:1/-1;background:none!important;padding:0 2px!important;color:var(--mut);font-size:.85rem!important}
+ol{margin:0;padding-left:22px;display:grid;gap:10px;max-width:65ch}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:10px;min-width:0}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Due sottospazi in ℝ¹, ℝ², ℝ³</h1>
+    <p class="mut">Tutti i modi in cui possono stare due sottospazi U e W, con un esempio per ciascuno.</p>
+    <div class="rule">dim(U+W) = dim U + dim W − dim(U∩W)</div>
+    <p>I sottospazi passano sempre per l'origine, quindi hanno sempre in comune almeno lo 0. Per questo due sottospazi non sono mai paralleli in senso stretto né sghembi: quei casi riguardano rette e piani che non passano per l'origine.</p>
+    <div class="legend" aria-hidden="true">
+      <span><i style="background:var(--u)"></i>U</span>
+      <span><i style="background:var(--w)"></i>W</span>
+      <span><i style="background:var(--i)"></i>U∩W</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>In ℝ¹</h2>
+    <p>Gli unici sottospazi sono {0} e ℝ¹, cioè un punto e tutta la retta.</p>
+    <div class="grid" id="r1"></div>
+  </section>
+
+  <section>
+    <h2>In ℝ²</h2>
+    <p>I sottospazi sono {0}, le rette per l'origine e ℝ².</p>
+    <div class="grid" id="r2"></div>
+  </section>
+
+  <section>
+    <h2>In ℝ³</h2>
+    <p>I sottospazi sono {0}, le rette e i piani per l'origine e ℝ³. Queste sono le sei coppie di rette e piani.</p>
+    <div class="grid" id="r3"></div>
+  </section>
+
+  <section>
+    <h2>I casi sempre uguali</h2>
+    <div class="card">
+      <p><b>Con {0}:</b> U∩{0} = {0} e U+{0} = U, quindi ∩ vale 0 e + vale dim U.</p>
+      <p><b>Con tutto lo spazio:</b> U∩ℝⁿ = U e U+ℝⁿ = ℝⁿ, quindi ∩ vale dim U e + vale n.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Come riconoscere il caso in un esercizio</h2>
+    <div class="card">
+      <ol>
+        <li><b>Calcola dim U e dim W.</b> Con i generatori, riduci la matrice: tre generatori non significano dimensione 3. Con le equazioni, dim = n − rango.</li>
+        <li><b>Calcola dim(U∩W).</b> Prendi il vettore generico di U e sostituiscilo nelle equazioni di W.</li>
+        <li><b>Ricava dim(U+W) con Grassmann.</b></li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3>Esempio: domanda 10</h3>
+      <p>U = span{(1,1,0), (0,1,1), (1,2,1)} e W: x−y+z = 0.</p>
+      <ol>
+        <li>(1,2,1) = (1,1,0) + (0,1,1), quindi dim U = 2. Una equazione in ℝ³ dà dim W = 3−1 = 2.</li>
+        <li>Il vettore generico di U è (α, α+β, β). Sostituito in W dà α−(α+β)+β = 0, sempre vero. Quindi U ⊆ W e dim(U∩W) = 2.</li>
+        <li>dim(U+W) = 2+2−2 = 2. È il caso «due piani uguali».</li>
+      </ol>
+    </div>
+  </section>
+</div>
+
+<script>
+// Vista obliqua: x verso il basso a sinistra, y a destra, z in alto.
+const S=26, CX=120, CY=85;
+const P={
+  1:([x])=>[CX+x*S*1.6,CY],
+  2:([x,y])=>[CX+x*S,CY-y*S],
+  3:([x,y,z])=>[CX+(y-.6*x)*S,CY+(.45*x-z)*S]
+};
+const C={U:'var(--u)',W:'var(--w)',I:'var(--i)'};
+const f=n=>n.toFixed(1);
+
+function draw(dim,items){
+  const p=P[dim];
+  const seg=(a,b,attrs)=>{const[A,B]=[p(a),p(b)];return `<line x1="${f(A[0])}" y1="${f(A[1])}" x2="${f(B[0])}" y2="${f(B[1])}" ${attrs}/>`};
+  const axes=[...Array(dim).keys()].map(i=>{
+    const e=Array(dim).fill(0);e[i]=dim===1?2.6:dim===2?2.8:2.6;
+    const n=e.map(v=>-v);
+    return seg(n,e,'stroke="#3a4266" stroke-width="1"');
+  }).join('');
+  let out=axes;
+  for(const it of items){
+    const col=C[it.c];
+    if(it.plane){
+      const[a,b]=it.plane,k=it.k||1.5;
+      const pts=[[1,1],[1,-1],[-1,-1],[-1,1]].map(([s,t])=>p(a.map((v,i)=>k*(s*v+t*b[i]))).map(f).join(',')).join(' ');
+      out+=`<polygon points="${pts}" fill="${col}" fill-opacity=".28" stroke="${col}" stroke-width="1.2"/>`;
+    }
+    if(it.line){
+      const k=it.k||2.2,e=it.line.map(v=>k*v);
+      out+=seg(e.map(v=>-v),e,`stroke="${col}" stroke-width="${it.c==='I'?4:2.5}" stroke-linecap="round"`);
+    }
+    if(it.label){
+      const[x,y]=p(it.at);
+      out+=`<text x="${f(x)}" y="${f(y+(it.dy||0))}" fill="${col}" font-size="13" font-weight="700" text-anchor="middle">${it.label}</text>`;
+    }
+  }
+  const[ox,oy]=p(Array(dim).fill(0));
+  out+=`<circle cx="${f(ox)}" cy="${f(oy)}" r="4" fill="var(--i)"/>`;
+  return `<svg viewBox="0 0 240 170" role="img" aria-hidden="true">${out}</svg>`;
+}
+
+const CASES={
+r1:[
+ {t:'{0} e {0}',u:'{0}',w:'{0}',d:[0,0,0,0],why:'Solo l\'origine, da entrambe le parti.',g:[]},
+ {t:'{0} e ℝ¹',u:'{0}',w:'ℝ¹',d:[0,1,0,1],why:'L\'unico punto in comune è l\'origine, e la somma è tutta la retta.',g:[{line:[1],c:'W',k:2.4},{label:'W',at:[2],dy:-12,c:'W'}]},
+ {t:'ℝ¹ e ℝ¹',u:'ℝ¹',w:'ℝ¹',d:[1,1,1,1],why:'È la stessa retta: intersezione e somma coincidono con essa.',g:[{line:[1],c:'I',k:2.4},{label:'U = W',at:[1.9],dy:-12,c:'I'}]}
+],
+r2:[
+ {t:'Due rette uguali',u:'span(1,1)',w:'span(2,2)',d:[1,1,1,1],why:'I generatori sono proporzionali, quindi è la stessa retta.',g:[{line:[1,1],c:'I',k:2.1},{label:'U = W',at:[1.2,2.5],c:'I'}]},
+ {t:'Due rette diverse',u:'span(1,0)',w:'span(0,1)',d:[1,1,0,2],why:'Si incontrano solo nell\'origine, e insieme generano tutto il piano.',g:[{line:[1,0],c:'U',k:3},{line:[0,1],c:'W',k:2.5},{label:'U',at:[3.4,.3],c:'U'},{label:'W',at:[.5,2.7],c:'W'}]},
+ {t:'Retta e ℝ²',u:'span(1,1)',w:'ℝ²',d:[1,2,1,2],why:'La retta è dentro il piano, quindi l\'intersezione è la retta e la somma è il piano.',g:[{plane:[[1,0],[0,1]],c:'W',k:2.7},{line:[1,1],c:'I',k:2.1},{label:'U',at:[2.5,2],c:'I'},{label:'W',at:[-3.3,-2.3],c:'W'}]}
+],
+r3:[
+ {t:'Due rette uguali',u:'span(1,0,0)',w:'span(2,0,0)',d:[1,1,1,1],why:'I generatori sono proporzionali, quindi è la stessa retta.',g:[{line:[1,0,0],c:'I',k:2.6},{label:'U = W',at:[1.5,2,0],c:'I'}]},
+ {t:'Due rette diverse',u:'span(1,0,0)',w:'span(0,1,0)',d:[1,1,0,2],why:'Si incontrano solo nell\'origine, e insieme generano un piano.',g:[{line:[1,0,0],c:'U',k:2.6},{line:[0,1,0],c:'W',k:2.6},{label:'U',at:[2.6,.8,0],c:'U'},{label:'W',at:[0,3,.2],c:'W'}]},
+ {t:'Retta dentro il piano',u:'span(1,0,0)',w:'z = 0',d:[1,2,1,2],why:'La retta sta tutta nel piano, quindi la somma non esce dal piano.',g:[{plane:[[1,0,0],[0,1,0]],c:'W',k:2.2},{line:[1,0,0],c:'I',k:2.2},{label:'U',at:[2.6,1,0],c:'I'},{label:'W',at:[0,3,.3],c:'W'}]},
+ {t:'Retta fuori dal piano',u:'span(0,0,1)',w:'z = 0',d:[1,2,0,3],why:'La retta buca il piano solo nell\'origine, e insieme generano tutto ℝ³.',g:[{plane:[[1,0,0],[0,1,0]],c:'W',k:2.2},{line:[0,0,1],c:'U',k:2.5},{label:'U',at:[0,.5,2.5],c:'U'},{label:'W',at:[0,3,.3],c:'W'}]},
+ {t:'Due piani uguali',u:'span{(1,1,0),(0,1,1)}',w:'x−y+z = 0',d:[2,2,2,2],why:'I generatori di U soddisfano l\'equazione di W, e le dimensioni sono uguali.',g:[{plane:[[1,1,0],[0,1,1]],c:'I',k:1.2},{label:'U = W',at:[0,-3.6,-1.5],c:'I'}]},
+ {t:'Due piani diversi',u:'x = 0',w:'z = 0',d:[2,2,1,3],why:'Due piani distinti per l\'origine si tagliano sempre in una retta.',g:[{plane:[[1,0,0],[0,1,0]],c:'W',k:2.2},{plane:[[0,1,0],[0,0,1]],c:'U',k:2.2},{line:[0,1,0],c:'I',k:2.2},{label:'U',at:[0,1.6,2.5],c:'U'},{label:'W',at:[0,3.2,.3],c:'W'}]}
+]};
+
+for(const[id,list]of Object.entries(CASES)){
+  const dim=+id[1];
+  document.getElementById(id).innerHTML=list.map(c=>{
+    const[du,dw,i,s]=c.d;
+    return `<article class="case">
+      <h3>${c.t}</h3>
+      ${draw(dim,c.g)}
+      <div class="ex"><b>U</b> = ${c.u} · <b>W</b>: ${c.w}</div>
+      <p class="why">${c.why}</p>
+      <div class="dims">
+        <div>dim U<b>${du}</b></div><div>dim W<b>${dw}</b></div>
+        <div>dim(U∩W)<b>${i}</b></div><div>dim(U+W)<b>${s}</b></div>
+        <div class="check">Grassmann: ${du}+${dw}−${i} = ${s}</div>
+      </div>
+    </article>`}).join('');
+}
+</script>
