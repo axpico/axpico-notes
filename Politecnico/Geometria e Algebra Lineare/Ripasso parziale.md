@@ -13,20 +13,20 @@ Tutti gli argomenti, con formule, metodi e trappole. Ogni sezione rimanda alla t
 
 Priorità ricavate dalle due prove in itinere ([[Prova in itinere 11-11-2025|11-11-2025]] e [[Prova in itinere 13-11-2024 (Parte A)|13-11-2024]]). Sono solo due prove, quindi è un'indicazione e non una garanzia.
 
-| Priorità | Argomento | Sezione |
-|---|---|---|
-| Alta | Mappa lineare: base dell'immagine, nucleo, controimmagine | 1 |
-| Alta | Matrice rappresentativa con basi non canoniche | 2 |
-| Alta | Intersezione e somma di sottospazi, Grassmann | 3 |
-| Alta | Posizione reciproca di rette | 4 |
-| Alta | Rette e piani: passare tra parametrica e cartesiana | 5 |
-| Alta | Sistemi con parametro, rango, Rouché-Capelli | 6 |
-| Media | Inversa, dimensioni dei prodotti | 7 |
-| Media | Coordinate rispetto a una base | 8 |
-| Media | Riconoscere un sottospazio | 9 |
-| Bassa | Determinante e Cramer come teoria a sé | 10 |
-| Bassa | Cambio di base con la formula completa | 11 |
-| Bassa | Ortogonalità e fasci (non compaiono nelle due prove) | 12 |
+| Priorità | Argomento                                                 | Sezione |
+| -------- | --------------------------------------------------------- | ------- |
+| Alta     | Mappa lineare: base dell'immagine, nucleo, controimmagine | 1       |
+| Alta     | Matrice rappresentativa con basi non canoniche            | 2       |
+| Alta     | Intersezione e somma di sottospazi, Grassmann             | 3       |
+| Alta     | Posizione reciproca di rette                              | 4       |
+| Alta     | Rette e piani: passare tra parametrica e cartesiana       | 5       |
+| Alta     | Sistemi con parametro, rango, Rouché-Capelli              | 6       |
+| Media    | Inversa, dimensioni dei prodotti                          | 7       |
+| Media    | Coordinate rispetto a una base                            | 8       |
+| Media    | Riconoscere un sottospazio                                | 9       |
+| Bassa    | Determinante e Cramer come teoria a sé                    | 10      |
+| Bassa    | Cambio di base con la formula completa                    | 11      |
+| Bassa    | Ortogonalità e fasci (non compaiono nelle due prove)      | 12      |
 
 ---
 
