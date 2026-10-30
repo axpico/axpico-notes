@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="1000" height="800" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2563eb"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#dc2626"/></marker>
+    <style>
+      .panel { fill: #f8fafc; stroke: #cbd5e1; }
+      .set { fill: #e2e8f0; stroke: #64748b; }
+      .dot { fill: #1e293b; }
+      .bad { fill: #dc2626; }
+      .a { stroke: #2563eb; stroke-width: 2.5; marker-end: url(#b); }
+      .x { stroke: #dc2626; stroke-width: 2.5; marker-end: url(#r); }
+      .t { font-size: 22px; font-weight: 700; fill: #0f172a; text-anchor: middle; }
+      .s { font-size: 18px; fill: #334155; text-anchor: middle; }
+      .l { font-size: 18px; font-style: italic; fill: #475569; text-anchor: middle; }
+      .h { font-size: 26px; font-weight: 700; fill: #0f172a; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect width="1000" height="800" fill="#ffffff"/>
+  <text class="h" x="500" y="42">f: V → W, A con n colonne (dim V) e m righe (dim W)</text>
+
+  <g transform="translate(20 70)">
+    <rect class="panel" width="470" height="340" rx="12"/>
+    <text class="t" x="235" y="34">Iniettiva, non suriettiva</text>
+    <ellipse class="set" cx="125" cy="180" rx="60" ry="115"/><ellipse class="set" cx="345" cy="180" rx="60" ry="115"/>
+    <text class="l" x="125" y="60">V</text><text class="l" x="345" y="60">W</text>
+    <line class="a" x1="125" y1="120" x2="335" y2="92"/><line class="a" x1="125" y1="180" x2="335" y2="152"/><line class="a" x1="125" y1="240" x2="335" y2="212"/>
+    <circle class="dot" cx="125" cy="120" r="7"/><circle class="dot" cx="125" cy="180" r="7"/><circle class="dot" cx="125" cy="240" r="7"/>
+    <circle class="dot" cx="345" cy="90" r="7"/><circle class="dot" cx="345" cy="150" r="7"/><circle class="dot" cx="345" cy="210" r="7"/><circle class="bad" cx="345" cy="270" r="7"/>
+    <text class="s" x="235" y="322">rg A = n &lt; m   ·   Ker f = {0}</text>
+  </g>
+
+  <g transform="translate(510 70)">
+    <rect class="panel" width="470" height="340" rx="12"/>
+    <text class="t" x="235" y="34">Suriettiva, non iniettiva</text>
+    <ellipse class="set" cx="125" cy="180" rx="60" ry="115"/><ellipse class="set" cx="345" cy="180" rx="60" ry="115"/>
+    <text class="l" x="125" y="60">V</text><text class="l" x="345" y="60">W</text>
+    <line class="x" x1="125" y1="90" x2="335" y2="118"/><line class="x" x1="125" y1="150" x2="335" y2="122"/><line class="a" x1="125" y1="210" x2="335" y2="182"/><line class="a" x1="125" y1="270" x2="335" y2="242"/>
+    <circle class="dot" cx="125" cy="90" r="7"/><circle class="dot" cx="125" cy="150" r="7"/><circle class="dot" cx="125" cy="210" r="7"/><circle class="dot" cx="125" cy="270" r="7"/>
+    <circle class="bad" cx="345" cy="120" r="7"/><circle class="dot" cx="345" cy="180" r="7"/><circle class="dot" cx="345" cy="240" r="7"/>
+    <text class="s" x="235" y="322">rg A = m &lt; n   ·   Im f = W</text>
+  </g>
+
+  <g transform="translate(20 420)">
+    <rect class="panel" width="470" height="340" rx="12"/>
+    <text class="t" x="235" y="34">Biiettiva</text>
+    <ellipse class="set" cx="125" cy="180" rx="60" ry="115"/><ellipse class="set" cx="345" cy="180" rx="60" ry="115"/>
+    <text class="l" x="125" y="60">V</text><text class="l" x="345" y="60">W</text>
+    <line class="a" x1="125" y1="120" x2="335" y2="120"/><line class="a" x1="125" y1="180" x2="335" y2="180"/><line class="a" x1="125" y1="240" x2="335" y2="240"/>
+    <circle class="dot" cx="125" cy="120" r="7"/><circle class="dot" cx="125" cy="180" r="7"/><circle class="dot" cx="125" cy="240" r="7"/>
+    <circle class="dot" cx="345" cy="120" r="7"/><circle class="dot" cx="345" cy="180" r="7"/><circle class="dot" cx="345" cy="240" r="7"/>
+    <text class="s" x="235" y="322">rg A = n = m   ·   det A ≠ 0</text>
+  </g>
+
+  <g transform="translate(510 420)">
+    <rect class="panel" width="470" height="340" rx="12"/>
+    <text class="t" x="235" y="34">Né iniettiva né suriettiva</text>
+    <ellipse class="set" cx="125" cy="180" rx="60" ry="115"/><ellipse class="set" cx="345" cy="180" rx="60" ry="115"/>
+    <text class="l" x="125" y="60">V</text><text class="l" x="345" y="60">W</text>
+    <line class="x" x1="125" y1="120" x2="335" y2="120"/><line class="x" x1="125" y1="180" x2="335" y2="124"/><line class="a" x1="125" y1="240" x2="335" y2="240"/>
+    <circle class="dot" cx="125" cy="120" r="7"/><circle class="dot" cx="125" cy="180" r="7"/><circle class="dot" cx="125" cy="240" r="7"/>
+    <circle class="bad" cx="345" cy="120" r="7"/><circle class="bad" cx="345" cy="180" r="7"/><circle class="dot" cx="345" cy="240" r="7"/>
+    <text class="s" x="235" y="322">rg A &lt; n   e   rg A &lt; m</text>
+  </g>
+
+  <text class="s" x="500" y="788">In rosso: punto non raggiunto, oppure punto raggiunto da due frecce.</text>
+</svg>

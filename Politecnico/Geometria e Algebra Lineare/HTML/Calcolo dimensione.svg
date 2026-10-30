@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="1000" height="800" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#475569"/></marker>
+    <style>
+      .panel { fill: #f8fafc; stroke: #cbd5e1; }
+      .h { font-size: 26px; font-weight: 700; fill: #0f172a; text-anchor: middle; }
+      .t { font-size: 22px; font-weight: 700; fill: #0f172a; }
+      .s { font-size: 18px; fill: #334155; }
+      .n { font-size: 20px; fill: #1e293b; text-anchor: middle; }
+      .p { font-size: 20px; font-weight: 700; fill: #dc2626; text-anchor: middle; }
+      .o { font-size: 15px; fill: #475569; text-anchor: middle; }
+      .r { font-size: 19px; font-weight: 700; fill: #2563eb; }
+      .br { fill: none; stroke: #1e293b; stroke-width: 2; }
+      .a { stroke: #475569; stroke-width: 2; marker-end: url(#b); }
+    </style>
+  </defs>
+  <rect width="1000" height="800" fill="#ffffff"/>
+  <text class="h" x="500" y="42">Calcolo della dimensione: esempi</text>
+
+  <g transform="translate(20 70)">
+    <rect class="panel" width="470" height="340" rx="12"/>
+    <text class="t" x="24" y="36">1. Da generatori</text>
+    <text class="s" x="24" y="68">U = ⟨(1,2,3), (2,4,6), (0,1,1)⟩</text>
+    <path class="br" d="M58 88H50V192H58M162 88H170V192H162"/>
+    <text class="n" x="70" y="115">1</text><text class="n" x="110" y="115">2</text><text class="n" x="150" y="115">3</text>
+    <text class="n" x="70" y="150">2</text><text class="n" x="110" y="150">4</text><text class="n" x="150" y="150">6</text>
+    <text class="n" x="70" y="185">0</text><text class="n" x="110" y="185">1</text><text class="n" x="150" y="185">1</text>
+    <line class="a" x1="190" y1="145" x2="260" y2="145"/>
+    <text class="o" x="225" y="134">R₂ − 2R₁</text>
+    <path class="br" d="M288 88H280V192H288M392 88H400V192H392"/>
+    <text class="p" x="300" y="115">1</text><text class="n" x="340" y="115">2</text><text class="n" x="380" y="115">3</text>
+    <text class="n" x="300" y="150">0</text><text class="n" x="340" y="150">0</text><text class="n" x="380" y="150">0</text>
+    <text class="n" x="300" y="185">0</text><text class="p" x="340" y="185">1</text><text class="n" x="380" y="185">1</text>
+    <text class="r" x="24" y="240">2 pivot, quindi dim U = 2</text>
+    <text class="s" x="24" y="275">Base: (1,2,3), (0,1,1)</text>
+  </g>
+
+  <g transform="translate(510 70)">
+    <rect class="panel" width="470" height="340" rx="12"/>
+    <text class="t" x="24" y="36">2. Da equazioni</text>
+    <text class="s" x="24" y="68">U ⊂ ℝ⁴:   x + y − z = 0,   y + t = 0</text>
+    <text class="s" x="24" y="110">4 incognite, 2 equazioni indipendenti: rango 2</text>
+    <text class="s" x="24" y="145">z, t libere:   y = −t,   x = z + t</text>
+    <text class="r" x="24" y="240">dim U = 4 − 2 = 2</text>
+    <text class="s" x="24" y="275">Base: (1,0,1,0), (1,−1,0,1)</text>
+  </g>
+
+  <g transform="translate(20 420)">
+    <rect class="panel" width="470" height="340" rx="12"/>
+    <text class="t" x="24" y="36">3. Ker e Im</text>
+    <text class="s" x="24" y="68">f: ℝ³ → ℝ²</text>
+    <path class="br" d="M58 88H50V158H58M162 88H170V158H162"/>
+    <text class="n" x="70" y="115">1</text><text class="n" x="110" y="115">2</text><text class="n" x="150" y="115">1</text>
+    <text class="n" x="70" y="150">2</text><text class="n" x="110" y="150">4</text><text class="n" x="150" y="150">0</text>
+    <line class="a" x1="190" y1="128" x2="260" y2="128"/>
+    <text class="o" x="225" y="117">R₂ − 2R₁</text>
+    <path class="br" d="M288 88H280V158H288M392 88H400V158H392"/>
+    <text class="p" x="300" y="115">1</text><text class="n" x="340" y="115">2</text><text class="n" x="380" y="115">1</text>
+    <text class="n" x="300" y="150">0</text><text class="n" x="340" y="150">0</text><text class="p" x="380" y="150">−2</text>
+    <text class="r" x="24" y="205">rg A = 2</text>
+    <text class="s" x="24" y="240">dim Im f = 2 = m: suriettiva</text>
+    <text class="s" x="24" y="275">dim Ker f = 3 − 2 = 1: non iniettiva</text>
+    <text class="s" x="24" y="310">Base di Ker f: (−2,1,0)</text>
+  </g>
+
+  <g transform="translate(510 420)">
+    <rect class="panel" width="470" height="340" rx="12"/>
+    <text class="t" x="24" y="36">4. Polinomi</text>
+    <text class="s" x="24" y="68">U = { p ∈ ℝ₂[x] : p(1) = 0 }</text>
+    <text class="s" x="24" y="110">dim ℝ₂[x] = 3</text>
+    <text class="s" x="24" y="145">p(1) = 0 è una sola condizione</text>
+    <text class="r" x="24" y="240">dim U = 3 − 1 = 2</text>
+    <text class="s" x="24" y="275">Base: x − 1, x² − 1</text>
+  </g>
+
+  <text class="o" x="500" y="788">In rosso: i pivot.</text>
+</svg>
