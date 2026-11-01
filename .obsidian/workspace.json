@@ -11,14 +11,12 @@
             "id": "29de12d513e9fc49",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
-                "mode": "source",
-                "source": false
+                "file": "Politecnico/Analisi 1/Formulario AM1 - asintotici.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Limiti di successioni"
+              "icon": "lucide-file-text",
+              "title": "Formulario AM1 - asintotici"
             }
           }
         ]
@@ -269,8 +267,8 @@
   },
   "active": "29de12d513e9fc49",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/Ripasso parziale.md",
     "Politecnico/Analisi 1/Teoria/Limiti di successioni.md",
+    "Politecnico/Geometria e Algebra Lineare/Ripasso parziale.md",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Politecnico/Analisi 1/Dimostrazioni/Programma di massima e bibliografia.pdf",
     "Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta.md",
