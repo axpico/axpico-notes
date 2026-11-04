@@ -11,10 +11,12 @@
             "id": "dcadb35de4aa911a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-11-04 10.02.31.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-11-04 10.02.31.excalidraw"
             }
           }
         ]
@@ -89,7 +91,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.6171875
+    "width": 258.6171875,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -264,8 +267,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "77bc0d509a2da546",
+  "active": "dcadb35de4aa911a",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-11-04 10.02.31.excalidraw.md",
     "Politecnico/Analisi 1/Formulario AM1 - asintotici.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Excalidraw/Drawing 2026-11-02 10.05.01.excalidraw.md",
