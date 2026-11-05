@@ -104,7 +104,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.6171875
+    "width": 258.6171875,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -244,16 +245,6 @@
               },
               "icon": "bot",
               "title": "Claudian"
-            }
-          },
-          {
-            "id": "dd5eebc713973aa2",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw-sidepanel",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "excalidraw-sidepanel"
             }
           }
         ]
