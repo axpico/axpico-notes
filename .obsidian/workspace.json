@@ -99,13 +99,11 @@
               "title": "0. Prova parziale 11 nov 2025"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 258.6171875,
-    "collapsed": true
+    "width": 258.6171875
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -270,8 +268,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "6170af0678468499",
+  "active": "41c9241263f38e27",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/09 parte 1a. Determinanti (definizione).pdf",
     "Excalidraw/Drawing 2026-11-05 15.18.39.excalidraw.md",
     "Excalidraw/Drawing 2026-11-04 10.02.31.excalidraw.md",
     "Politecnico/Analisi 1/Formulario AM1 - asintotici.pdf",
@@ -311,7 +310,6 @@
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 1 - Numeri reali e complessi/1.4 Disuguaglianza di Bernoulli (★).md",
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Intersezione, somma e somma diretta di sottospazi — formula di Grassmann.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Completamento a base.md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
