@@ -18,8 +18,21 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-11-04 10.02.31.excalidraw"
             }
+          },
+          {
+            "id": "6170af0678468499",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-11-05 15.18.39.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-11-05 15.18.39.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -267,8 +280,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "dcadb35de4aa911a",
+  "active": "6170af0678468499",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-11-05 15.18.39.excalidraw.md",
     "Excalidraw/Drawing 2026-11-04 10.02.31.excalidraw.md",
     "Politecnico/Analisi 1/Formulario AM1 - asintotici.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
@@ -308,7 +322,6 @@
     "Formulario/Meccanica dei fluidi/Equazione di Bernoulli.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Intersezione, somma e somma diretta di sottospazi — formula di Grassmann.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Completamento a base.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Ortogonalità e fasci di rette e piani.md",
     "Pasted Image 20260927165845_769.png",
     "Politecnico/Fondamenti di Informatica/Diagrammi di flusso/Diagramma di flusso - minimo.canvas",
     "Pasted Image 20260909152139_057.png",
