@@ -157,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Rette e piani — equazioni parametriche e cartesiane.md",
+                "file": "Excalidraw/Drawing 2026-11-06 15.02.34.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +167,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti"
+              "title": "Backlinks"
             }
           },
           {
@@ -258,7 +258,8 @@
               "title": "Claudian"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
