@@ -103,8 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.6171875,
-    "collapsed": true
+    "width": 258.6171875
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -271,6 +270,7 @@
   },
   "active": "6170af0678468499",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/09 parte 3. Similitudine e potenze di una matrice quadrata. Ipervolumi e determinanti.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/09 parte 2. Applicazioni dei determinanti - Invertibilita e dipendenza lineare. Teorema di Binet. La formula di Laplace e regola di Cramer. Calcolo del rango di una matrice con il Teorema di Kronecker.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/09 parte 1b. Sviluppi di Laplace.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/09 parte 1a. Determinanti (definizione).pdf",
@@ -297,7 +297,6 @@
     "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Excalidraw/Drawing 2026-10-30 09.30.13.excalidraw.md",
-    "Politecnico/Geometria e Algebra Lineare/Esami/Vecchi/2024-2025/0. Prova in itinere 2024.pdf",
     "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Iniettiva suriettiva.svg",
     "Excalidraw/Drawing 2026-09-09 13.50.54.excalidraw.md",
