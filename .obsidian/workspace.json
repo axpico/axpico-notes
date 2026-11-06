@@ -30,9 +30,21 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-11-05 15.18.39.excalidraw"
             }
+          },
+          {
+            "id": "8392b86a87da6cfb",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-11-06 15.02.34.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-11-06 15.02.34.excalidraw"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -103,7 +115,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.6171875
+    "width": 258.6171875,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -268,13 +281,14 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "6170af0678468499",
+  "active": "8392b86a87da6cfb",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-11-05 15.18.39.excalidraw.md",
+    "Excalidraw/Drawing 2026-11-06 15.02.34.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/09 parte 3. Similitudine e potenze di una matrice quadrata. Ipervolumi e determinanti.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/09 parte 2. Applicazioni dei determinanti - Invertibilita e dipendenza lineare. Teorema di Binet. La formula di Laplace e regola di Cramer. Calcolo del rango di una matrice con il Teorema di Kronecker.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/09 parte 1b. Sviluppi di Laplace.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/09 parte 1a. Determinanti (definizione).pdf",
-    "Excalidraw/Drawing 2026-11-05 15.18.39.excalidraw.md",
     "Excalidraw/Drawing 2026-11-04 10.02.31.excalidraw.md",
     "Politecnico/Analisi 1/Formulario AM1 - asintotici.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
@@ -294,7 +308,6 @@
     "Politecnico/Geometria e Algebra Lineare/Ripasso parziale.md",
     "Politecnico/Analisi 1/Teoria/Criteri per le serie, serie alternate e convergenza assoluta.md",
     "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.7 Convergenza assoluta ⟹ convergenza semplice (★).md",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Cambio di base.html",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Excalidraw/Drawing 2026-10-30 09.30.13.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg",
