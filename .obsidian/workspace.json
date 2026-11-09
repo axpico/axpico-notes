@@ -270,13 +270,11 @@
               "title": "Claudian"
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 272.8125,
-    "collapsed": true
+    "width": 272.8125
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -294,7 +292,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "d468c8dbc617656b",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-11-09 08.11.22.excalidraw.md",
     "Excalidraw/Drawing 2026-11-06 15.02.34.excalidraw.md",
