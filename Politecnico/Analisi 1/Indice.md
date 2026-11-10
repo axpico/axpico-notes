@@ -35,11 +35,21 @@ Formulario (asintotici, limiti notevoli): [[Formulario AM1 - asintotici.pdf|Form
 10. [[Serie numeriche|Serie numeriche]] (telescopiche, geometrica, armonica, criteri del confronto)
 11. [[Criteri per le serie, serie alternate e convergenza assoluta|Criteri per le serie, serie alternate e convergenza assoluta]] (rapporto, radice, Leibniz, convergenza assoluta)
 
+## 5. Limiti di funzioni e continuità (seconda parte)
+12. [[Limiti di funzioni|Limiti di funzioni]] (Lezioni 12–13: definizioni, teorema ponte, limiti notevoli, infinitesimi, asintoti)
+13. [[Funzioni continue e punti di discontinuità|Funzioni continue e punti di discontinuità]] (Lezione 13 + 9/11: discontinuità, teorema degli zeri, valori intermedi)
+    - Esercizi: [[Limiti di funzioni — Esercizi|Limiti di funzioni — Esercizi]]
+    - Dimostrazioni: [[4.1 Asintoti (★★)|4.1]] · [[4.2 Continuità di sin e cos (★★)|4.2]] · [[4.3 Teorema di esistenza degli zeri (★)|4.3]] · [[4.4 Teorema dei valori intermedi (★)|4.4]]
+
 ## HTML
 - [[1 - Successioni.html|1 - Successioni]]
 - [[2 - Limiti di successioni.html|2 - Limiti di successioni]]
 - [[3 - Serie numeriche.html|3 - Serie numeriche]]
 - [[Limiti notevoli.html|Limiti notevoli]]
+
+## PDF — Lezioni
+- [[Lezione 12 (26 ottobre) AM1 2026-27.pdf|Lezione 12 (26 ottobre)]]
+- [[Lezione 13 (4 novembre) AM1 2026-27.pdf|Lezione 13 (4 novembre)]]
 
 ## Repository
 - [PoliNetwork info1y — Analisi I (GitLab)](https://gitlab.com/polinetwork/info1y/-/tree/main/ANALISI%20I?ref_type=heads) — appunti, esercizi ed esami condivisi

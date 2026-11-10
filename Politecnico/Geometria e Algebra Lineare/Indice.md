@@ -55,6 +55,12 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 24. [[Intersezione, somma e somma diretta di sottospazi — formula di Grassmann|Intersezione, somma, somma diretta e formula di Grassmann]] (Lezione 8, pp. 18–77; include complementi e complemento ortogonale)
     - HTML interattivo: [[Lezione 8 — Completamento, somma di sottospazi e Grassmann.html|Lezione 8 completa (completamento, somma, Grassmann, complementi)]]
 
+## 8. Determinanti (Lezione 9)
+25. [[Determinante — definizione, proprietà e sviluppi di Laplace|Determinante — definizione, proprietà e sviluppi di Laplace]] (parti 1a–1b)
+26. [[Applicazioni dei determinanti — Binet, inversa, Cramer, Kronecker|Applicazioni dei determinanti — Binet, inversa, Cramer, Kronecker]] (parte 2)
+27. [[Similitudine, potenze e interpretazione geometrica del determinante|Similitudine, potenze e interpretazione geometrica del determinante]] (parte 3)
+    - Riepilogo: [[Determinante, sviluppo di Laplace e formula di Cramer|Determinante, Laplace e Cramer]] · Esercizi: [[Determinanti, Cramer e inversa — Esercizi svolti|Determinanti, Cramer e inversa — Esercizi svolti]]
+
 ## Video
 - [[GAL3-1 Nucleo e immagine.mp4|GAL3-1 Nucleo e immagine]]
 - [[GAL3-2 Dipendenza lineare.mp4|GAL3-2 Dipendenza lineare]]
@@ -78,6 +84,10 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 - [[07 Lezione 7 NUOVA (parte 2).pdf|Lezione 7 (parte 2)]]
 - [[07 Lezione 7 NUOVA (parte 3).pdf|Lezione 7 (parte 3)]]
 - [[08 completa.pdf|Lezione 8]]
+- [[09 parte 1a. Determinanti (definizione).pdf|Lezione 9 (parte 1a)]]
+- [[09 parte 1b. Sviluppi di Laplace.pdf|Lezione 9 (parte 1b)]]
+- [[09 parte 2. Applicazioni dei determinanti - Invertibilita e dipendenza lineare. Teorema di Binet. La formula di Laplace e regola di Cramer. Calcolo del rango di una matrice con il Teorema di Kronecker.pdf|Lezione 9 (parte 2)]]
+- [[09 parte 3. Similitudine e potenze di una matrice quadrata. Ipervolumi e determinanti.pdf|Lezione 9 (parte 3)]]
 
 ## PDF — Esercizi
 - [[EserciziGAL1.pdf|EserciziGAL1]]
