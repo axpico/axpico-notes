@@ -55,8 +55,7 @@
               "title": "Drawing 2026-11-09 08.11.22.excalidraw"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -274,7 +273,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.8125
+    "width": 272.8125,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -292,7 +292,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a4a367f756b05e11",
+  "active": "dcadb35de4aa911a",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-11-09 08.11.22.excalidraw.md",
     "Excalidraw/Drawing 2026-11-06 15.02.34.excalidraw.md",
