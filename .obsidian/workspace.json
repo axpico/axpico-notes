@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dcadb35de4aa911a",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-11-04 10.02.31.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-11-04 10.02.31.excalidraw"
-            }
-          },
-          {
-            "id": "6170af0678468499",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-11-05 15.18.39.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-11-05 15.18.39.excalidraw"
-            }
-          },
-          {
             "id": "8392b86a87da6cfb",
             "type": "leaf",
             "state": {
@@ -292,16 +268,16 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "dcadb35de4aa911a",
+  "active": "8392b86a87da6cfb",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-11-05 15.18.39.excalidraw.md",
     "Excalidraw/Drawing 2026-11-09 08.11.22.excalidraw.md",
     "Excalidraw/Drawing 2026-11-06 15.02.34.excalidraw.md",
-    "Excalidraw/Drawing 2026-11-05 15.18.39.excalidraw.md",
+    "Excalidraw/Drawing 2026-11-04 10.02.31.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/09 parte 3. Similitudine e potenze di una matrice quadrata. Ipervolumi e determinanti.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/09 parte 2. Applicazioni dei determinanti - Invertibilita e dipendenza lineare. Teorema di Binet. La formula di Laplace e regola di Cramer. Calcolo del rango di una matrice con il Teorema di Kronecker.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/09 parte 1b. Sviluppi di Laplace.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/09 parte 1a. Determinanti (definizione).pdf",
-    "Excalidraw/Drawing 2026-11-04 10.02.31.excalidraw.md",
     "Politecnico/Analisi 1/Formulario AM1 - asintotici.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Excalidraw/Drawing 2026-11-02 10.05.01.excalidraw.md",
