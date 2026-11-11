@@ -232,10 +232,22 @@ y=\frac{1}{x}\{0<x\le1\}
 
 ### Dimostrazione
 
-Si usa il **teorema di Bolzano–Weierstrass**: ogni successione a valori in $[a,b]$ ammette una sottosuccessione convergente a un punto di $[a,b]$.
+Serve un lemma, che non compare nelle altre note di teoria. Lo dimostro usando solo il [[Successioni monotone, infinitesimi e limiti notevoli#Teorema sulle successioni monotone|teorema sulle successioni monotone]].
+
+> [!important] Lemma (Bolzano–Weierstrass)
+> Ogni successione $\{x_n\}\subseteq[a,b]$ ammette una sottosuccessione $\{x_{n_k}\}$ convergente a un punto $x_0\in[a,b]$.
+
+*Dim. (bisezione).* Divido $[a,b]$ in $\big[a,\frac{a+b}2\big]$ e $\big[\frac{a+b}2,b\big]$: almeno una delle due metà contiene $x_n$ per infiniti indici $n$. La chiamo $[a_1,b_1]$. Ripeto e ottengo intervalli incapsulati
+$$[a,b]\supseteq[a_1,b_1]\supseteq\dots\supseteq[a_k,b_k]\supseteq\dots,\qquad b_k-a_k=\frac{b-a}{2^k},$$
+ognuno contenente $x_n$ per infiniti $n$.
+- $\{a_k\}$ è crescente e $\{b_k\}$ decrescente. Entrambe sono limitate ($a\le a_k\le b_k\le b$), quindi per il teorema sulle successioni monotone $a_k\to\alpha$ e $b_k\to\beta$.
+- $\beta-\alpha=\lim_k(b_k-a_k)=\lim_k\frac{b-a}{2^k}=0$, quindi $\alpha=\beta=:x_0$, e $x_0\in[a,b]$ (passando al limite in $a\le a_k\le b$).
+- Scelgo $n_1<n_2<\dots$ con $x_{n_k}\in[a_k,b_k]$ (si può sempre, perché ogni intervallo contiene infiniti termini). Da $a_k\le x_{n_k}\le b_k$ e dai due carabinieri segue $x_{n_k}\to x_0$. $\blacksquare$
+
+Uso anche la caratterizzazione della continuità per successioni (§3): se $f$ è continua in $x_0$ e $x_n\to x_0$, allora $f(x_n)\to f(x_0)$.
 
 1. **$f$ è limitata superiormente.** Per assurdo no: allora $\forall n\ \exists x_n\in[a,b]$ con $f(x_n)>n$. Per Bolzano–Weierstrass una sottosuccessione $x_{n_k}\to x_0\in[a,b]$; per continuità $f(x_{n_k})\to f(x_0)\in\mathbb R$, ma $f(x_{n_k})>n_k\to+\infty$. Assurdo.
-2. **$f$ ha massimo.** Per il punto 1, $M=\sup_{[a,b]}f\in\mathbb R$; per le proprietà del sup esistono $x_n\in[a,b]$ con $f(x_n)\to M$. Una sottosuccessione $x_{n_k}\to x_0\in[a,b]$; per continuità $f(x_{n_k})\to f(x_0)$, ma anche $f(x_{n_k})\to M$. Per unicità del limite $f(x_0)=M$: $x_0$ è punto di massimo.
+2. **$f$ ha massimo.** Per il punto 1, $M=\sup_{[a,b]}f\in\mathbb R$; per la caratterizzazione del sup, $\forall n\ \exists x_n\in[a,b]$ con $M-\frac1n<f(x_n)\le M$, quindi $f(x_n)\to M$ (carabinieri). Una sottosuccessione $x_{n_k}\to x_0\in[a,b]$; per continuità $f(x_{n_k})\to f(x_0)$, ma anche $f(x_{n_k})\to M$. Per unicità del limite $f(x_0)=M$: $x_0$ è punto di massimo.
 3. **$f$ ha minimo.** Applico il punto 2 a $h=-f$ (continua): esiste $x_m$ con $-f(x_m)\ge-f(x)\ \forall x$, cioè $f(x_m)\le f(x)\ \forall x$. $\blacksquare$
 
 Versione d'esame con esercizi: [[4.5 Teorema di Weierstrass (★)]].

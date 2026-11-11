@@ -10,7 +10,7 @@ Programma: [[Programma di massima e bibliografia.pdf|Programma di massima e bibl
 
 **★** = richiesta per scritto e orale (`*`) · **★★** = solo per l'eventuale orale (`**`). Ogni nota ha: definizione/enunciato → dimostrazione → 3 esercizi → 3 soluzioni. Indice generale: [[Politecnico/Analisi 1/Indice|Indice Analisi 1]]
 
-> [!note] Per le sezioni 4–6 non esistono ancora note di teoria nel vault: nelle note si rimanda alle teorie più vicine e alle dimostrazioni precedenti.
+> [!note] Per la sezione 6 non esistono ancora note di teoria nel vault: nelle note si rimanda alle teorie più vicine e alle dimostrazioni precedenti.
 
 ## Prima parte
 

@@ -51,6 +51,7 @@ y=2(x-1)+1
 
 **Def.** Sia $f:(a,b)\to\mathbb R$, $x_0\in(a,b)$. $f$ è **differenziabile in $x_0$** se $\exists\lambda\in\mathbb R$ t.c.
 $$f(x)=f(x_0)+\lambda(x-x_0)+o(x-x_0)\qquad(x\to x_0).$$
+($o$ piccolo per funzioni: [[Limiti di funzioni#7. Infinitesimi e infiniti|Limiti di funzioni §7]].)
 
 Cioè: vicino a $x_0$, $f$ si approssima con una funzione affine (la tangente) a meno di un errore infinitesimo di ordine superiore a $x-x_0$.
 
@@ -81,7 +82,7 @@ Versione d'esame: [[5.1 Derivabile ⟹ continua (★)]].
 
 ## 5. Derivate delle funzioni elementari
 
-Calcolate dalla definizione ($h\to0$):
+Calcolate dalla definizione ($h\to0$), usando i [[Limiti di funzioni#6. Limiti notevoli|limiti notevoli]] $\frac{\sin h}h\to1$, $\frac{1-\cos h}{h^2}\to\frac12$, $\frac{e^h-1}h\to1$, $\frac{\log(1+t)}t\to1$:
 
 - **Costante** $c\in\mathbb R$: $\dfrac{c-c}h=0\to0$, quindi $Dc=0$.
 - **Identità**: $\dfrac{(x+h)-x}h=1\to1$, quindi $Dx=1$.
@@ -89,11 +90,13 @@ Calcolate dalla definizione ($h\to0$):
 $$\frac{(x+h)^n-x^n}h=nx^{n-1}+O(h)\to nx^{n-1}.$$
 Ad esempio $D x^2=2x$: $\dfrac{(x+h)^2-x^2}h=\dfrac{2xh+h^2}h=2x+h\to2x$.
 - **Seno**: con la formula di addizione $\sin(x+h)=\sin x\cos h+\cos x\sin h$,
-$$\frac{\sin(x+h)-\sin x}h=\sin x\,\underbrace{\frac{\cos h-1}h}_{\to0}+\cos x\,\underbrace{\frac{\sin h}h}_{\to1}\to\cos x .$$
+$$\frac{\sin(x+h)-\sin x}h=\sin x\,\underbrace{\frac{\cos h-1}h}_{\to0}+\cos x\,\underbrace{\frac{\sin h}h}_{\to1}\to\cos x ,$$
+dove $\frac{\cos h-1}h=-h\cdot\frac{1-\cos h}{h^2}\to-0\cdot\frac12=0$.
 - **Coseno**: analogamente con $\cos(x+h)=\cos x\cos h-\sin x\sin h$, $D\cos x=-\sin x$.
 - **Esponenziale**: $\dfrac{e^{x+h}-e^x}h=e^x\,\dfrac{e^h-1}h\to e^x$.
 - **Logaritmo** $\log_a x$ ($x>0$):
-$$\frac{\log_a(x+h)-\log_a x}h=\frac{\log_a\!\big(1+\frac hx\big)}{\frac hx}\cdot\frac1x\to\frac{\log_a e}{x}=\frac1{x\ln a}.$$
+$$\frac{\log_a(x+h)-\log_a x}h=\frac{\log_a\!\big(1+\frac hx\big)}{\frac hx}\cdot\frac1x\to\frac{\log_a e}{x}=\frac1{x\ln a},$$
+perché, con $t=\frac hx\to0$ e il cambio di base $\log_a(1+t)=\frac{\ln(1+t)}{\ln a}$: $\frac{\log_a(1+t)}t=\frac1{\ln a}\cdot\frac{\ln(1+t)}t\to\frac1{\ln a}=\log_a e$.
 In particolare $D\ln x=\dfrac1x$.
 
 Versione d'esame (sin, $x^n$, $e^x$): [[5.2 Derivate di alcune funzioni elementari (★★)]].
@@ -133,12 +136,12 @@ $$D\tan x=D\frac{\sin x}{\cos x}=\frac{\cos x\cos x+\sin x\sin x}{\cos^2x}=\frac
 - $(f\circ g)(x)=(\sin x)^2\ \Rightarrow\ D=2\sin x\cos x$;
 - $(g\circ f)(x)=\sin(x^2)\ \Rightarrow\ D=2x\cos(x^2)$.
 
-Nota: $f\circ g\ne g\circ f$ in generale, quindi l'ordine conta.
+Nota: $f\circ g\ne g\circ f$ in generale, quindi l'ordine conta (vedi [[Funzioni#Funzione composta|Funzione composta]]; continuità della composta: [[Funzioni continue e punti di discontinuità#3. Funzione composta|§3]]).
 
 ## 8. Derivata della funzione inversa
 
 > [!important] Teorema
-> Sia $f$ continua e strettamente monotona su un intervallo (quindi invertibile, con $f^{-1}$ continua). Se $f$ è derivabile in $x$ con $f'(x)\ne0$, allora $f^{-1}$ è derivabile in $y=f(x)$ e
+> Sia $I$ un intervallo e $f:I\to\mathbb R$ continua e invertibile (quindi $f^{-1}$ è continua su $f(I)$, per il [[Funzioni continue e punti di discontinuità#4. Funzione inversa|teorema di continuità dell'inversa]]). Se $f$ è derivabile in $x$ interno a $I$ con $f'(x)\ne0$, allora $f^{-1}$ è derivabile in $y=f(x)$ e
 > $$D[f^{-1}](y)=\frac1{f'(x)}\Bigg|_{x=f^{-1}(y)} .$$
 
 Geometricamente: il grafico di $f^{-1}$ è il simmetrico di quello di $f$ rispetto a $y=x$, quindi la tangente ha pendenza reciproca. Se $f'(x)=0$ la tangente a $f^{-1}$ è verticale e $f^{-1}$ non è derivabile.
@@ -149,7 +152,7 @@ $$D[a^x]=\frac1{D[\log_a y]}\Bigg|_{y=a^x}=\frac{y}{\log_a e}\Bigg|_{y=a^x}=\fra
 perché $\log_a e=\dfrac1{\ln a}$. Per $a=e$: $D[e^x]=e^x$.
 - **Potenza reale** $x^\alpha$, $\alpha\in\mathbb R$, $x>0$: scrivo $x^\alpha=e^{\alpha\ln x}$ e uso la regola della catena:
 $$D[x^\alpha]=e^{\alpha\ln x}\cdot\frac\alpha x=x^\alpha\,\frac\alpha x=\alpha x^{\alpha-1}.$$
-- **Arcoseno** ($\arcsin:[-1,1]\to[-\frac\pi2,\frac\pi2]$, inversa di $\sin$):
+- **Arcoseno** ($\arcsin:[-1,1]\to[-\frac\pi2,\frac\pi2]$, inversa di $\sin$ ristretto, vedi [[Funzioni#d) Funzioni circolari inverse|funzioni circolari inverse]]):
 $$D[\arcsin x]=\frac1{\cos y}\Bigg|_{y=\arcsin x}.$$
 Per $y\in(-\frac\pi2,\frac\pi2)$ è $\cos y>0$, quindi $\cos y=+\sqrt{1-\sin^2y}$ e
 $$D[\arcsin x]=\frac1{\sqrt{1-\sin^2(\arcsin x)}}=\frac1{\sqrt{1-x^2}},\qquad x\in(-1,1).$$
@@ -178,6 +181,7 @@ $$D[\arctan x]=\frac1{1+\tan^2y}\Bigg|_{y=\arctan x}=\frac1{1+x^2},\qquad x\in\m
 
 ## Collegamenti
 - Teoria precedente: [[Funzioni continue e punti di discontinuità]]
-- o-piccolo: [[Confronti e stime asintotiche]]
+- o-piccolo e limiti notevoli: [[Limiti di funzioni]] · [[Confronti e stime asintotiche]]
+- Funzione inversa e composta: [[Funzioni]]
 - Dimostrazioni: [[5.1 Derivabile ⟹ continua (★)|5.1]] · [[5.2 Derivate di alcune funzioni elementari (★★)|5.2]] · [[5.3 Differenziabilità ⟺ derivabilità (★)|5.3]] · [[5.4 Algebra delle derivate - prodotto e quoziente (★★)|5.4]]
 - Appunti a mano: [[Drawing 2026-11-11 10.12.34.excalidraw]]
