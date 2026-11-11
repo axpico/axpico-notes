@@ -198,7 +198,50 @@ Pongo $g(x)=f(x)-y_0$: è continua in $I$ e $g(a)<0<g(b)$. Poiché $I$ è un int
 
 Versione d'esame: [[4.4 Teorema dei valori intermedi (★)]]. Prossimo: [[4.5 Teorema di Weierstrass (★)]].
 
+## 9. Teorema di Weierstrass
+
+Fonte: appunti a mano [[Drawing 2026-11-11 10.12.34.excalidraw|lezione dell'11/11]].
+
+**Def.** Sia $f:A\subseteq\mathbb R\to\mathbb R$, $x_0\in A$. $x_0$ è **punto di massimo (minimo) assoluto** per $f$ in $A$ se
+$$f(x)\le f(x_0)\quad\big(f(x)\ge f(x_0)\big)\qquad\forall x\in A .$$
+$f(x_0)$ si chiama **valore di massimo (minimo) assoluto** di $f$ in $A$.
+
+> [!important] Teorema (Weierstrass)
+> Sia $f:[a,b]\to\mathbb R$ continua in $[a,b]$. Allora $f$ ammette **massimo e minimo assoluti** in $[a,b]$:
+> $$\exists\,x_M,x_m\in[a,b]\ \text{t.c.}\ f(x_m)\le f(x)\le f(x_M)\quad\forall x\in[a,b].$$
+
+### Le ipotesi sono necessarie
+
+1. **Intervallo non chiuso.** $f(x)=x$ in $(-1,1)$: $\sup f=1$, $\inf f=-1$, ma non sono assunti ⇒ $\nexists\max,\ \nexists\min$.
+2. **Insieme chiuso ma illimitato.** $f(x)=x$ in $\mathbb R$: è continua ma $\sup_{\mathbb R}f=+\infty$, $\inf_{\mathbb R}f=-\infty$ ⇒ niente max né min.
+3. **Senza continuità.** In $[0,1]$
+$$f(x)=\begin{cases}\dfrac1x & x\ne0\\[4pt] 1 & x=0\end{cases}$$
+$f$ non è continua in $0$ e $\sup_{[0,1]}f=+\infty$ ⇒ niente massimo (il minimo c'è: $f(0)=f(1)=1$).
+
+```desmos-graph
+left=-0.5; right=2;
+top=6; bottom=-0.5;
+---
+y=\frac{1}{x}\{0<x\le1\}
+(0,1)
+(1,1)
+```
+
+> [!note] N.B. — il dominio non deve per forza essere un intervallo
+> Se $f:A\to\mathbb R$ è continua con $A=[a_1,b_1]\cup[a_2,b_2]$ ($b_1<a_2$), $A$ non è un intervallo ma $f$ ammette comunque max e min assoluti: $A$ è **chiuso e limitato** (su ciascun pezzo vale Weierstrass, poi si prende il più grande dei due massimi e il più piccolo dei due minimi). Ciò che conta è "chiuso **e limitato**", non "intervallo".
+
+### Dimostrazione
+
+Si usa il **teorema di Bolzano–Weierstrass**: ogni successione a valori in $[a,b]$ ammette una sottosuccessione convergente a un punto di $[a,b]$.
+
+1. **$f$ è limitata superiormente.** Per assurdo no: allora $\forall n\ \exists x_n\in[a,b]$ con $f(x_n)>n$. Per Bolzano–Weierstrass una sottosuccessione $x_{n_k}\to x_0\in[a,b]$; per continuità $f(x_{n_k})\to f(x_0)\in\mathbb R$, ma $f(x_{n_k})>n_k\to+\infty$. Assurdo.
+2. **$f$ ha massimo.** Per il punto 1, $M=\sup_{[a,b]}f\in\mathbb R$; per le proprietà del sup esistono $x_n\in[a,b]$ con $f(x_n)\to M$. Una sottosuccessione $x_{n_k}\to x_0\in[a,b]$; per continuità $f(x_{n_k})\to f(x_0)$, ma anche $f(x_{n_k})\to M$. Per unicità del limite $f(x_0)=M$: $x_0$ è punto di massimo.
+3. **$f$ ha minimo.** Applico il punto 2 a $h=-f$ (continua): esiste $x_m$ con $-f(x_m)\ge-f(x)\ \forall x$, cioè $f(x_m)\le f(x)\ \forall x$. $\blacksquare$
+
+Versione d'esame con esercizi: [[4.5 Teorema di Weierstrass (★)]].
+
 ## Collegamenti
 - Teoria precedente: [[Limiti di funzioni]]
 - Esercizi: [[Limiti di funzioni — Esercizi]] (sezione continuità)
-- Appunti a mano: [[Drawing 2026-11-09 08.11.22.excalidraw]]
+- Appunti a mano: [[Drawing 2026-11-09 08.11.22.excalidraw]] · [[Drawing 2026-11-11 10.12.34.excalidraw]]
+- Teoria successiva: [[Derivate]]

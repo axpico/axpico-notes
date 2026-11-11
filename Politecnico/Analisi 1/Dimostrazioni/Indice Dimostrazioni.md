@@ -53,7 +53,7 @@ Teoria: [[Serie numeriche|Serie numeriche]] · [[Criteri per le serie, serie alt
 ## Seconda parte
 
 ### Sezione 4 - Limiti di funzioni e continuità
-Teoria: [[Funzioni|Funzioni]] · [[Estremo superiore ed estremo inferiore, completezza di ℝ|Estremo superiore ed estremo inferiore, completezza di ℝ]]
+Teoria: [[Funzioni continue e punti di discontinuità|Funzioni continue]] · [[Funzioni|Funzioni]] · [[Estremo superiore ed estremo inferiore, completezza di ℝ|Estremo superiore ed estremo inferiore, completezza di ℝ]]
 
 - [[4.1 Asintoti (★★)|4.1 Asintoti (★★)]]
 - [[4.2 Continuità di sin e cos (★★)|4.2 Continuità di sin e cos (★★)]]
@@ -62,7 +62,7 @@ Teoria: [[Funzioni|Funzioni]] · [[Estremo superiore ed estremo inferiore, compl
 - [[4.5 Teorema di Weierstrass (★)|4.5 Teorema di Weierstrass (★)]]
 
 ### Sezione 5 - Calcolo differenziale
-Teoria: [[Confronti e stime asintotiche|Confronti e stime asintotiche]]
+Teoria: [[Derivate|Derivate]] · [[Confronti e stime asintotiche|Confronti e stime asintotiche]]
 
 - [[5.1 Derivabile ⟹ continua (★)|5.1 Derivabile ⟹ continua (★)]]
 - [[5.2 Derivate di alcune funzioni elementari (★★)|5.2 Derivate di alcune funzioni elementari (★★)]]

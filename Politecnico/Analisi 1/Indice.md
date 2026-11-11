@@ -37,9 +37,13 @@ Formulario (asintotici, limiti notevoli): [[Formulario AM1 - asintotici.pdf|Form
 
 ## 5. Limiti di funzioni e continuità (seconda parte)
 12. [[Limiti di funzioni|Limiti di funzioni]] (Lezioni 12–13: definizioni, teorema ponte, limiti notevoli, infinitesimi, asintoti)
-13. [[Funzioni continue e punti di discontinuità|Funzioni continue e punti di discontinuità]] (Lezione 13 + 9/11: discontinuità, teorema degli zeri, valori intermedi)
+13. [[Funzioni continue e punti di discontinuità|Funzioni continue e punti di discontinuità]] (Lezione 13 + 9/11 + 11/11: discontinuità, teorema degli zeri, valori intermedi, Weierstrass)
     - Esercizi: [[Limiti di funzioni — Esercizi|Limiti di funzioni — Esercizi]]
-    - Dimostrazioni: [[4.1 Asintoti (★★)|4.1]] · [[4.2 Continuità di sin e cos (★★)|4.2]] · [[4.3 Teorema di esistenza degli zeri (★)|4.3]] · [[4.4 Teorema dei valori intermedi (★)|4.4]]
+    - Dimostrazioni: [[4.1 Asintoti (★★)|4.1]] · [[4.2 Continuità di sin e cos (★★)|4.2]] · [[4.3 Teorema di esistenza degli zeri (★)|4.3]] · [[4.4 Teorema dei valori intermedi (★)|4.4]] · [[4.5 Teorema di Weierstrass (★)|4.5]]
+
+## 6. Calcolo differenziale
+14. [[Derivate|Derivate]] (11/11: definizione, significato geometrico, differenziabilità, regole, composta, inversa)
+    - Dimostrazioni: [[5.1 Derivabile ⟹ continua (★)|5.1]] · [[5.2 Derivate di alcune funzioni elementari (★★)|5.2]] · [[5.3 Differenziabilità ⟺ derivabilità (★)|5.3]] · [[5.4 Algebra delle derivate - prodotto e quoziente (★★)|5.4]]
 
 ## HTML
 - [[1 - Successioni.html|1 - Successioni]]
