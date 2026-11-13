@@ -11,10 +11,12 @@
             "id": "81b9ee858433c860",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-11-13 16.48.57.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-11-13 16.48.57.excalidraw"
             }
           }
         ]
@@ -253,8 +255,10 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "41c9241263f38e27",
+  "active": "81b9ee858433c860",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-11-11 15.31.26.excalidraw.md",
+    "Excalidraw/Drawing 2026-11-13 16.48.57.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 10 — Autovalori, autovettori e autospazi.html.tmp.62397.6aa990cc9da6",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 10 — Autovalori, autovettori e autospazi.html",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 10 — Autovalori, autovettori e autospazi.html.tmp.62397.b136a3bc7447",
@@ -267,9 +271,7 @@
     "Politecnico/Analisi 1/Teoria/Derivate.md.tmp.494248.51f41ce7e12d",
     "Politecnico/Analisi 1/Teoria/Derivate.md.tmp.494248.49f461d11184",
     "Politecnico/Analisi 1/Teoria/Derivate.md.tmp.494248.3bbaa4320f10",
-    "Politecnico/Analisi 1/Teoria/Derivate.md.tmp.494248.53beebc5d328",
     "Politecnico/Analisi 1/Teoria/Derivate.md",
-    "Excalidraw/Drawing 2026-11-11 15.31.26.excalidraw.md",
     "Excalidraw/Drawing 2026-11-11 10.12.34.excalidraw.md",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Formulario/Cinematica/Spostamento come area sotto v(t).md",
