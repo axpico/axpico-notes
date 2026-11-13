@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lezione 10 — Autovalori e autospazi</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+:root{--bg:#0f1220;--card:#181c2f;--card2:#20253d;--txt:#e6e8f2;--mut:#9aa0bd;--acc:#7c9cff;--ok:#4fd1a5;--warn:#ffb454;--bad:#ff6b81;--r:14px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{padding:22px 16px 6px;text-align:center}
+header h1{margin:0;font-size:1.5rem}
+header p{margin:4px 0 0;color:var(--mut)}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;flex-wrap:wrap;gap:6px;justify-content:center;padding:10px 16px;border-bottom:1px solid #2a3050}
+nav button{background:var(--card);color:var(--txt);border:1px solid #2a3050;border-radius:999px;padding:6px 12px;cursor:pointer;font-size:.9rem}
+nav button.on{background:var(--acc);color:#0f1220;border-color:var(--acc);font-weight:600}
+main{max-width:900px;margin:0 auto;padding:16px}
+section{display:none}section.on{display:block}
+h2{margin:6px 0 10px;text-align:center}
+h3{margin:4px 0 8px;color:var(--acc);font-size:1.05rem}
+.card{background:var(--card);border-radius:var(--r);padding:16px 18px;margin:14px 0;overflow-x:auto}
+.def{border-left:4px solid var(--acc)}
+.thm{border-left:4px solid var(--ok)}
+.warn{border-left:4px solid var(--warn)}
+.bug{border-left:4px solid var(--bad)}
+.tag{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--mut);margin-bottom:4px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tile{background:var(--card);border:1px solid #2a3050;border-radius:12px;padding:14px;cursor:pointer;transition:.15s}
+.tile:hover{border-color:var(--acc);transform:translateY(-2px)}
+.tile b{display:block;margin-bottom:4px}.tile small{color:var(--mut)}
+details{background:var(--card2);border-radius:10px;padding:10px 14px;margin:10px 0}
+summary{cursor:pointer;font-weight:600}
+table{border-collapse:collapse;width:100%}
+td,th{border-bottom:1px solid #2a3050;padding:8px;text-align:left;vertical-align:top}
+th{color:var(--mut);font-weight:500}
+.screen{min-height:170px;display:flex;flex-direction:column;justify-content:center;text-align:center;background:#11152a;border-radius:10px;padding:12px;overflow-x:auto}
+.cap{color:var(--mut);margin-top:8px;text-align:center}
+.ctrl{display:flex;gap:8px;justify-content:center;align-items:center;margin-top:10px;flex-wrap:wrap}
+.ctrl button,.btn{background:var(--acc);color:#0f1220;border:0;border-radius:8px;padding:7px 14px;font-weight:600;cursor:pointer}
+.ctrl button:disabled{opacity:.35;cursor:default}
+.seg button{background:var(--card2);color:var(--txt);border:1px solid #2a3050}
+.seg button.on{background:var(--acc);color:#0f1220}
+.dots{color:var(--mut);font-size:.85rem}
+label{color:var(--mut);font-size:.9rem}
+input[type=number]{width:64px;background:#11152a;color:var(--txt);border:1px solid #2a3050;border-radius:6px;padding:5px}
+input[type=range]{width:100%}
+.out{margin-top:12px;padding:12px;border-radius:10px;background:#11152a}
+.pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:.85rem;font-weight:600}
+.p-ok{background:#163b30;color:var(--ok)}.p-bad{background:#3b1620;color:var(--bad)}.p-w{background:#3b2f16;color:var(--warn)}
+canvas{width:100%;max-width:420px;display:block;margin:auto;background:#11152a;border-radius:12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.q{margin:14px 0}
+.q .opts button{display:block;width:100%;text-align:left;margin:6px 0;background:var(--card2);color:var(--txt);border:1px solid #2a3050;border-radius:8px;padding:9px 12px;cursor:pointer}
+.q .opts button.right{border-color:var(--ok);background:#163b30}
+.q .opts button.wrong{border-color:var(--bad);background:#3b1620}
+.q .why{display:none;color:var(--mut);margin-top:4px}
+ol.steps li{margin:6px 0}
+@media(max-width:700px){.grid{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Lezione 10 · parte 1 — Autovalori, autovettori, autospazi</h1>
+  <p>GAL · diagonalizzazione, polinomio caratteristico, molteplicità algebrica e geometrica</p>
+</header>
+
+<nav>
+  <button data-s="mappa" class="on">🗺️ Mappa</button>
+  <button data-s="prob">1 · Il problema</button>
+  <button data-s="def">2 · Definizioni</button>
+  <button data-s="t1">3 · Teorema 1</button>
+  <button data-s="calc">4 · Come si calcolano</button>
+  <button data-s="lab">🧪 Lab 2×2</button>
+  <button data-s="es">5 · Esempi</button>
+  <button data-s="mult">6 · Molteplicità</button>
+  <button data-s="err">7 · Errori tipici</button>
+  <button data-s="quiz">✅ Quiz</button>
+</nav>
+
+<main>
+
+<!-- MAPPA -->
+<section id="mappa" class="on">
+  <div class="card">Una matrice $A$ "muove" i vettori. Quasi tutti cambiano direzione, ma alcuni speciali vengono solo <b>allungati, accorciati o ribaltati</b>: sono gli <b>autovettori</b>, e il fattore di allungamento è l'<b>autovalore</b>. Se ce ne sono abbastanza da formare una base, in quella base $A$ diventa <b>diagonale</b>.</div>
+  <div class="grid">
+    <div class="tile" data-go="prob"><b>1 · Il problema</b><small>perché cerchiamo $L(\mathbf v)=\lambda\mathbf v$</small></div>
+    <div class="tile" data-go="def"><b>2 · Definizioni</b><small>autovalore, autovettore, esempi strani</small></div>
+    <div class="tile" data-go="t1"><b>3 · Teorema 1</b><small>diagonalizzabile ⇔ base di autovettori</small></div>
+    <div class="tile" data-go="calc"><b>4 · Come si calcolano</b><small>$\det(A-\lambda I)=0$ e $\ker(A-\lambda I)$</small></div>
+    <div class="tile" data-go="lab"><b>🧪 Lab 2×2</b><small>guarda gli autovettori muovendo un vettore</small></div>
+    <div class="tile" data-go="es"><b>5 · Esempi</b><small>i tre esempi del PDF, passo per passo</small></div>
+    <div class="tile" data-go="mult"><b>6 · Molteplicità</b><small>$1\le m_g\le m_a$, regolare/irregolare</small></div>
+    <div class="tile" data-go="err"><b>7 · Errori tipici</b><small>Gauss non conserva gli autovalori!</small></div>
+    <div class="tile" data-go="quiz"><b>✅ Quiz</b><small>8 domande per verificarti</small></div>
+  </div>
+  <div class="card">
+    <h3>La catena in una riga</h3>
+    $$\lambda\text{ autovalore}\iff A\mathbf x=\lambda\mathbf x,\ \mathbf x\ne\mathbf 0\iff(A-\lambda I)\mathbf x=\mathbf 0\text{ non banale}\iff\det(A-\lambda I)=0$$
+  </div>
+</section>
+
+<!-- 1 PROBLEMA -->
+<section id="prob">
+  <h2>1 · Il problema di diagonalizzazione</h2>
+  <div class="card def"><span class="tag">Problema</span><br>
+  Dato un endomorfismo $L:V\to V$ con $\dim V=n<\infty$, trovare una base $\mathcal B$ di $V$ (<b>se esiste!</b>) in cui la matrice rappresentativa di $L$ sia diagonale.</div>
+  <div class="card">
+    <h3>Cosa vuol dire "matrice diagonale" sui vettori di base</h3>
+    Supponiamo che $\mathcal B=\{\mathbf v_1,\dots,\mathbf v_n\}$ funzioni e $A=\mathrm{diag}(\lambda_1,\dots,\lambda_n)$. La colonna $j$ di $A$ contiene le coordinate di $L(\mathbf v_j)$, e quella colonna è $\lambda_j\mathbf e_j$:
+    $$L(\mathbf v_j)=0\,\mathbf v_1+\dots+\lambda_j\mathbf v_j+\dots+0\,\mathbf v_n=\lambda_j\mathbf v_j .$$
+    Quindi <b>ogni vettore della base viene solo moltiplicato per un numero</b>.
+  </div>
+  <div class="card thm"><span class="tag">Conclusione</span><br>
+  Diagonalizzare significa trovare vettori <b>non nulli</b> $\mathbf v$ (quelli di una base lo sono sempre) e scalari $\lambda$ tali che
+  $$L(\mathbf v)=\lambda\mathbf v .$$</div>
+  <div class="card"><h3>Perché ci interessa</h3>
+  Se $A=SDS^{-1}$ con $D$ diagonale, allora $A^k=SD^kS^{-1}$ e $D^k=\mathrm{diag}(\lambda_1^k,\dots,\lambda_n^k)$: le potenze diventano facili (vedi Fibonacci nella Lezione 9, parte 3).</div>
+</section>
+
+<!-- 2 DEFINIZIONI -->
+<section id="def">
+  <h2>2 · Autovalori e autovettori</h2>
+  <div class="card def"><span class="tag">Definizione (endomorfismo)</span><br>
+  $L:V\to V$ lineare, $\mathbf v\in V$, $\lambda\in\mathbb K$. Se $\mathbf v\ne\mathbf 0$ e $L(\mathbf v)=\lambda\mathbf v$, allora $\lambda$ è un <b>autovalore</b> di $L$ e $\mathbf v$ è un <b>autovettore</b> relativo a $\lambda$.</div>
+  <div class="card def"><span class="tag">Definizione (matrice)</span><br>
+  $\lambda\in\mathbb C$ è autovalore di $A$ (quadrata di ordine $n$) se esiste $\mathbf x\in\mathbb C^n$, $\mathbf x\neq\mathbf 0$, con $A\mathbf x=\lambda\mathbf x$. Ogni tale $\mathbf x$ è un autovettore relativo a $\lambda$.</div>
+  <div class="card warn"><span class="tag">Attenzione</span><br>
+  • Il vettore $\mathbf 0$ <b>non è mai</b> un autovettore ($A\mathbf 0=\lambda\mathbf 0$ per ogni $\lambda$: non direbbe nulla).<br>
+  • Lo scalare $\lambda=0$ <b>può</b> essere un autovalore: succede esattamente quando $\ker L\ne\{\mathbf 0\}$, e allora gli autovettori di $0$ sono i vettori non nulli del nucleo.</div>
+  <div class="card"><h3>Esempi</h3>
+  <details open><summary>Proiezione sul piano $xy$: $\lambda=0$ è autovalore</summary>
+  $L(x,y,z)=(x,y,0)$. Per $\mathbf v=(0,0,1)$: $L(\mathbf v)=\mathbf 0=0\cdot\mathbf v$. Inoltre ogni $(x,y,0)\ne\mathbf 0$ soddisfa $L(\mathbf v)=1\cdot\mathbf v$: anche $\lambda=1$ è autovalore.</details>
+  <details><summary>Derivata su $C^\infty(\mathbb R)$: ogni $\lambda$ è autovalore</summary>
+  $L(f)=f'$. Gli autovettori di $\lambda$ risolvono $f'=\lambda f$, quindi sono $f(x)=c\,e^{\lambda x}$ con $c\ne0$ ("autofunzioni"). Esempio in dimensione infinita.</details>
+  <details><summary>Moltiplicazione per $x$ su $C(\mathbb R)$: nessun autovettore</summary>
+  $L(f)(x)=x f(x)$. Se $xf(x)=\lambda f(x)$ per ogni $x$, allora $f(x)=0$ per ogni $x\ne\lambda$. Per continuità anche $f(\lambda)=0$, quindi $f\equiv0$, che non è un autovettore.</details>
+  <details><summary>Fisica</summary>
+  I livelli di energia di un atomo sono gli autovalori dell'operatore hamiltoniano; gli autovettori sono gli stati stazionari.</details>
+  </div>
+</section>
+
+<!-- 3 TEOREMA 1 -->
+<section id="t1">
+  <h2>3 · Teorema 1: dall'endomorfismo alla matrice</h2>
+  <div class="card">Fissiamo una base qualsiasi $\mathcal B_0$ di $V$ e chiamiamo $A$ la matrice rappresentativa di $L$.</div>
+  <div class="card thm"><span class="tag">Teorema 1</span><br>
+  Sono equivalenti:<br>
+  (i) $L$ è diagonalizzabile;<br>
+  (ii) esiste $S$ invertibile a coefficienti in $\mathbb K$ con $\ S^{-1}AS=D\ $ diagonale.<br>
+  In tal caso (iii): se $\mathbf x_j$ è la colonna $j$ di $S$ e $\lambda_j=d_{jj}$, allora $A\mathbf x_j=\lambda_j\mathbf x_j$.</div>
+  <div class="card"><h3>Dimostrazione</h3>
+  <details><summary>(i) ⇒ (ii)</summary>
+  Sia $\mathcal B$ la base in cui $L$ ha matrice $D$ e $S$ la matrice di passaggio da $\mathcal B_0$ a $\mathcal B$. Il teorema del cambio di base dà $D=S^{-1}AS$. Le entrate di $S$ sono coordinate di vettori di $V$, quindi stanno in $\mathbb K$.</details>
+  <details><summary>(ii) ⇒ (i)</summary>
+  Le colonne $\mathbf x_j$ di $S$ sono le coordinate (in $\mathcal B_0=\{\mathbf u_i\}$) di vettori $\mathbf v_j=\sum_i s_{ij}\mathbf u_i$. $S$ invertibile ⇒ $r(S)=n$ ⇒ colonne indipendenti ⇒ i $\mathbf v_j$ sono indipendenti ⇒ $\mathcal B=\{\mathbf v_j\}$ è una base. La matrice di passaggio da $\mathcal B_0$ a $\mathcal B$ è $S$, quindi la matrice di $L$ in $\mathcal B$ è $S^{-1}AS=D$.</details>
+  <details><summary>(iii): le colonne di $S$ sono autovettori</summary>
+  Da $S^{-1}AS=D$: $A=SDS^{-1}$. Poiché $S^{-1}\mathbf x_j=\mathbf e_j$ (è la colonna $j$ di $S^{-1}S=I$) e $D\mathbf e_j=\lambda_j\mathbf e_j$:
+  $$A\mathbf x_j=SDS^{-1}\mathbf x_j=SD\mathbf e_j=\lambda_jS\mathbf e_j=\lambda_j\mathbf x_j .\ \blacksquare$$</details>
+  </div>
+  <div class="card def"><span class="tag">Definizione</span><br>
+  $A\in M_{\mathbb K}(n,n)$ è <b>diagonalizzabile su $\mathbb K$</b> se esistono $S$ invertibile e $D$ diagonale in $M_{\mathbb K}(n,n)$ con $S^{-1}AS=D$.
+  <div class="dots" style="margin-top:6px">Il PDF a p. 14 scrive $SAS^{-1}=D$: è la stessa cosa scambiando $S$ con $S^{-1}$. Conviene $S^{-1}AS=D$, così le colonne di $S$ sono gli autovettori.</div></div>
+  <div class="card thm"><span class="tag">Il messaggio da ricordare</span>
+  $$A\text{ diagonalizzabile su }\mathbb K\iff\mathbb K^n\text{ ha una base di autovettori di }A$$
+  $S=[\mathbf x_1|\cdots|\mathbf x_n]$ (autovettori in colonna), $D=\mathrm{diag}(\lambda_1,\dots,\lambda_n)$ (autovalori <b>nello stesso ordine</b>).<br>
+  Inoltre: autovalori di $L$ = autovalori di $A$ che stanno in $\mathbb K$, e gli autovettori di $A$ sono le coordinate di quelli di $L$.</div>
+  <div class="card warn"><span class="tag">$\mathbb R$ vs $\mathbb C$</span><br>
+  Diagonalizzabile su $\mathbb R$ ⇒ su $\mathbb C$, ma non il contrario: la rotazione $\begin{bmatrix}0&-1\\1&0\end{bmatrix}$ ha autovalori $\pm i$. "Diagonalizzabile" senza altro = su $\mathbb C$.</div>
+</section>
+
+<!-- 4 CALCOLO -->
+<section id="calc">
+  <h2>4 · Come si calcolano</h2>
+  <div class="card thm"><span class="tag">Proposizione 1</span><br>
+  $\lambda$ è autovalore di $A$ $\iff\ker(A-\lambda I)\ne\{\mathbf 0\}$. In tal caso gli autovettori di $\lambda$ sono $\ker(A-\lambda I)\setminus\{\mathbf 0\}$.
+  <details><summary>Dimostrazione</summary>
+  $A\mathbf x=\lambda\mathbf x\iff A\mathbf x=\lambda I\mathbf x\iff(A-\lambda I)\mathbf x=\mathbf 0$. Gli autovettori sono quindi le soluzioni non nulle di un sistema omogeneo, e ce ne sono solo se il nucleo non è banale. $\blacksquare$</details></div>
+  <div class="card def"><span class="tag">Autospazio</span><br>
+  $V_\lambda:=\ker(A-\lambda I)$ è l'<b>autospazio</b> di $\lambda$: tutti gli autovettori di $\lambda$ più il vettore nullo. È un sottospazio.</div>
+  <div class="card thm"><span class="tag">Condizione col determinante</span><br>
+  Il sistema omogeneo ha soluzioni non banali $\iff r(A-\lambda I)<n\iff$
+  $$\det(A-\lambda I)=0 .$$
+  <b>Proposizione 2.</b> $p(\lambda):=\det(A-\lambda I)$ è un polinomio di grado $n$: il <b>polinomio caratteristico</b>. Su $\mathbb C$: $p(\lambda)=(\lambda_1-\lambda)\cdots(\lambda_n-\lambda)$.</div>
+  <div class="card"><h3>Ricetta</h3>
+  <ol class="steps">
+    <li>Calcola $p(\lambda)=\det(A-\lambda I)$. Laplace sulla riga/colonna con più zeri, oppure operazioni di riga che fanno uscire un fattore comune.</li>
+    <li>Radici di $p$ = autovalori, ciascuno con la sua molteplicità.</li>
+    <li>Per ogni $\lambda$: Gauss su $A-\lambda I$, risolvi il sistema omogeneo ⇒ base di $V_\lambda$.</li>
+    <li><b>Verifica</b> $A\mathbf x=\lambda\mathbf x$ su ogni vettore trovato.</li>
+  </ol>
+  Scorciatoie: matrice <b>triangolare</b> ⇒ autovalori sulla diagonale. Controlli: $\operatorname{tr}A=\sum\lambda_i$, $\det A=\prod\lambda_i$.</div>
+</section>
+
+<!-- LAB -->
+<section id="lab">
+  <h2>🧪 Lab 2×2 — vedere gli autovettori</h2>
+  <div class="card">Scegli $A$ e ruota il vettore <span style="color:var(--acc)">$\mathbf v$</span> (unitario). Il vettore <span style="color:var(--warn)">$A\mathbf v$</span> di solito punta altrove; quando è <b>parallelo</b> a $\mathbf v$ hai trovato un autovettore. Le rette tratteggiate verdi sono gli autospazi reali.</div>
+  <div class="two">
+    <div class="card" style="margin:0">
+      <div style="display:grid;grid-template-columns:auto auto;gap:6px;justify-content:center;font-size:1.2rem;align-items:center">
+        <input type="number" id="a11" value="4" step="0.5"><input type="number" id="a12" value="1" step="0.5">
+        <input type="number" id="a21" value="2" step="0.5"><input type="number" id="a22" value="3" step="0.5">
+      </div>
+      <div class="ctrl seg" id="presets">
+        <button data-m="4,1,2,3">2 distinti</button>
+        <button data-m="1,1,0,1">irregolare</button>
+        <button data-m="0,-1,1,0">rotazione</button>
+        <button data-m="2,0,0,2">scalare</button>
+      </div>
+      <label for="ang">angolo di $\mathbf v$: <span id="angv">30°</span></label>
+      <input type="range" id="ang" min="0" max="359" value="30">
+      <div class="out" id="labout"></div>
+    </div>
+    <div class="card" style="margin:0;display:flex;align-items:center"><canvas id="cv" width="420" height="420" aria-label="piano con v, Av e autospazi"></canvas></div>
+  </div>
+</section>
+
+<!-- 5 ESEMPI -->
+<section id="es">
+  <h2>5 · Esempi del PDF, passo per passo</h2>
+  <div class="ctrl seg" id="exsel">
+    <button data-e="A" class="on">Esempio A (triangolare)</button>
+    <button data-e="E1">Esempio 1</button>
+    <button data-e="E2">Esempio 2</button>
+  </div>
+  <div class="card">
+    <div class="screen" id="exscr"></div>
+    <div class="cap" id="excap"></div>
+    <div class="ctrl"><button id="prev">◀</button><span class="dots" id="exdots"></span><button id="next">▶</button></div>
+  </div>
+  <div class="card bug"><span class="tag">Errori nel PDF (verificati)</span><br>
+  • <b>p. 38</b>, Esempio A, $\lambda=-1$: l'entrata $(1,1)$ di $A+I$ è $3$, non $2$ ⇒ $V_{-1}=\mathrm{span}\{(-1,0,3)^T\}$, non $(-\tfrac12,0,1)^T$.<br>
+  • <b>p. 43</b>, Esempio 2, $\lambda=2$: l'entrata $(2,2)$ di $A-2I$ è $0$, non $-1$ ⇒ $V_2=\mathrm{span}\{(2,1,1)^T\}$, non $(5,1,2)^T$.<br>
+  Qui sopra trovi le versioni corrette.</div>
+</section>
+
+<!-- 6 MOLTEPLICITA -->
+<section id="mult">
+  <h2>6 · Molteplicità algebrica e geometrica</h2>
+  <div class="card def"><span class="tag">Definizioni</span><br>
+  Sia $\lambda_0$ un autovalore di $A$.<br>
+  • <b>Molteplicità algebrica</b> $m_a(\lambda_0)$: quante volte $\lambda_0$ è radice di $p(\lambda)$.<br>
+  • <b>Molteplicità geometrica</b> $m_g(\lambda_0)=\dim\ker(A-\lambda_0I)=n-r(A-\lambda_0I)$.<br>
+  • <b>Semplice</b> se $m_a=1$, <b>multiplo</b> se $m_a>1$.<br>
+  • <b>Regolare</b> se $m_g=m_a$, <b>irregolare</b> se $m_g<m_a$.</div>
+  <div class="card thm"><span class="tag">Proposizione 3</span>
+  $$1\le m_g(\lambda_0)\le m_a(\lambda_0)$$
+  Quindi <b>ogni autovalore semplice è regolare</b>: i controlli servono solo sugli autovalori multipli.</div>
+  <div class="card"><h3>Stesso polinomio, comportamento diverso</h3>
+  <table>
+    <tr><th></th><th>Esempio 1</th><th>Esempio 2</th></tr>
+    <tr><td>$p(\lambda)$</td><td>$(2-\lambda)(1-\lambda)^2$</td><td>$(2-\lambda)(1-\lambda)^2$</td></tr>
+    <tr><td>$\lambda=2$</td><td>$m_a=m_g=1$ <span class="pill p-ok">regolare</span></td><td>$m_a=m_g=1$ <span class="pill p-ok">regolare</span></td></tr>
+    <tr><td>$\lambda=1$</td><td>$m_a=2,\ m_g=2$ <span class="pill p-ok">regolare</span></td><td>$m_a=2,\ m_g=1$ <span class="pill p-bad">irregolare</span></td></tr>
+    <tr><td>Autovettori indip.</td><td>3 ⇒ base di $\mathbb R^3$</td><td>solo 2 ⇒ niente base</td></tr>
+  </table>
+  <div class="dots" style="margin-top:8px">Il criterio completo di diagonalizzabilità (tutti gli autovalori in $\mathbb K$ e tutti regolari) è nella parte 2 della lezione.</div></div>
+</section>
+
+<!-- 7 ERRORI -->
+<section id="err">
+  <h2>7 · Errori tipici e controlli</h2>
+  <div class="card bad warn"><span class="tag">1 · Gauss non conserva gli autovalori</span><br>
+  La matrice dell'Esempio 2 ha autovalori $2,1,1$. Riducendola:
+  $$\begin{bmatrix}3&1&-3\\1&2&-2\\1&1&-1\end{bmatrix}\to\begin{bmatrix}1&1&-1\\0&1&-1\\0&0&-2\end{bmatrix}$$
+  la ridotta (triangolare) ha autovalori $1,1,-2$. <b>Sbagliato.</b> Gauss si fa su $A-\lambda I$, <i>dopo</i> aver scelto $\lambda$.</div>
+  <div class="card warn"><span class="tag">2 · Verifica sempre</span><br>
+  Trovata una base di $V_\lambda$, controlla $A\mathbf x=\lambda\mathbf x$. Esempio 1, $\lambda=2$: $A(2,1,1)^T=(4,2,2)^T=2(2,1,1)^T$ ✓. È esattamente il controllo che avrebbe trovato i due errori del PDF.</div>
+  <div class="card warn"><span class="tag">3 · Un autospazio non è mai banale</span><br>
+  Se ottieni $\ker(A-\lambda I)=\{\mathbf 0\}$, o $\lambda$ non è autovalore o hai sbagliato un conto.</div>
+  <div class="card warn"><span class="tag">4 · Dimensione</span><br>
+  $\dim V_\lambda=$ numero di variabili libere $=n-r(A-\lambda I)$ (rango + nullità).</div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz">
+  <h2>✅ Quiz veloce</h2>
+  <div class="card" id="quizbox"></div>
+  <div class="card" style="text-align:center">Punteggio: <b id="score">0</b> / <span id="tot"></span></div>
+</section>
+
+</main>
+
+<script>
+// ---------- navigazione ----------
+const R=el=>window.renderMathInElement&&renderMathInElement(el,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});
+const show=id=>{document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===id));
+  document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.s===id));
+  window.scrollTo({top:0,behavior:'smooth'}); if(id==='lab')lab();};
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>show(b.dataset.s));
+document.querySelectorAll('.tile').forEach(t=>t.onclick=()=>show(t.dataset.go));
+
+// ---------- LAB 2x2 ----------
+const $=id=>document.getElementById(id);
+const fmt=x=>Math.abs(x-Math.round(x))<1e-9?String(Math.round(x)):x.toFixed(3).replace(/0+$/,'');
+function eig(a,b,c,d){ // autovalori reali e autovettori di [[a,b],[c,d]]
+  const tr=a+d,det=a*d-b*c,disc=tr*tr-4*det;
+  if(disc<-1e-12)return{tr,det,disc,vals:[],complex:[tr/2,Math.sqrt(-disc)/2]};
+  const s=Math.sqrt(Math.max(disc,0)),ls=disc<1e-12?[tr/2]:[(tr+s)/2,(tr-s)/2];
+  const vals=ls.map(l=>{ // base di ker(A-lI)
+    const p=a-l,q=b,r=c,t=d-l,eps=1e-9;
+    if([p,q,r,t].every(x=>Math.abs(x)<eps))return{l,vecs:[[1,0],[0,1]]};
+    const v=(Math.abs(p)>eps||Math.abs(q)>eps)?[-q,p]:[-t,r];
+    return{l,vecs:[v]};});
+  return{tr,det,disc,vals};
+}
+function lab(){
+  const a=+$('a11').value,b=+$('a12').value,c=+$('a21').value,d=+$('a22').value;
+  const th=$('ang').value*Math.PI/180,v=[Math.cos(th),Math.sin(th)],Av=[a*v[0]+b*v[1],c*v[0]+d*v[1]];
+  $('angv').textContent=$('ang').value+'°';
+  const E=eig(a,b,c,d),cv=$('cv'),g=cv.getContext('2d'),W=cv.width,H=cv.height,cx=W/2,cy=H/2;
+  const m=Math.max(1.2,Math.hypot(...Av)*1.15),sc=(W/2-14)/m;
+  g.clearRect(0,0,W,H);g.strokeStyle='#2a3050';g.lineWidth=1;
+  for(let k=-Math.ceil(m);k<=Math.ceil(m);k++){g.beginPath();g.moveTo(cx+k*sc,0);g.lineTo(cx+k*sc,H);g.stroke();g.beginPath();g.moveTo(0,cy-k*sc);g.lineTo(W,cy-k*sc);g.stroke();}
+  g.strokeStyle='#4a5070';g.beginPath();g.moveTo(0,cy);g.lineTo(W,cy);g.moveTo(cx,0);g.lineTo(cx,H);g.stroke();
+  g.setLineDash([6,6]);g.strokeStyle='#4fd1a5';g.lineWidth=2;
+  E.vals.forEach(e=>{ if(e.vecs.length===2){g.fillStyle='rgba(79,209,165,.08)';g.fillRect(0,0,W,H);return;}
+    const u=e.vecs[0],n=Math.hypot(...u),L=3*m;g.beginPath();g.moveTo(cx-u[0]/n*L*sc,cy+u[1]/n*L*sc);g.lineTo(cx+u[0]/n*L*sc,cy-u[1]/n*L*sc);g.stroke();});
+  g.setLineDash([]);
+  const arrow=(p,col)=>{const x=cx+p[0]*sc,y=cy-p[1]*sc,an=Math.atan2(y-cy,x-cx);g.strokeStyle=g.fillStyle=col;g.lineWidth=3;g.beginPath();g.moveTo(cx,cy);g.lineTo(x,y);g.stroke();
+    g.beginPath();g.moveTo(x,y);g.lineTo(x-10*Math.cos(an-.4),y-10*Math.sin(an-.4));g.lineTo(x-10*Math.cos(an+.4),y-10*Math.sin(an+.4));g.fill();};
+  arrow(Av,'#ffb454');arrow(v,'#7c9cff');
+  const cross=v[0]*Av[1]-v[1]*Av[0],par=Math.abs(cross)<0.02*Math.max(1,Math.hypot(...Av));
+  const sg=x=>(x<0?'+':'-')+fmt(Math.abs(x)),sg2=x=>(x<0?'-':'+')+fmt(Math.abs(x));
+  let h=`$p(\\lambda)=\\lambda^2${sg(E.tr)}\\lambda${sg2(E.det)}$ &nbsp; (tr $=${fmt(E.tr)}$, det $=${fmt(E.det)}$)<br>`;
+  if(E.complex)h+=`Nessun autovalore reale: $\\lambda=${fmt(E.complex[0])}\\pm${fmt(E.complex[1])}i$. <span class="pill p-w">nessun autovettore in ℝ²</span>`;
+  else E.vals.forEach(e=>{const ma=E.vals.length===1?2:1,mg=e.vecs.length;
+    h+=`$\\lambda=${fmt(e.l)}$: $m_a=${ma}$, $m_g=${mg}$, $V_\\lambda=\\mathrm{span}\\{${e.vecs.map(u=>`(${fmt(u[0])},${fmt(u[1])})`).join(',')}\\}$ <span class="pill ${mg===ma?'p-ok':'p-bad'}">${mg===ma?'regolare':'irregolare'}</span><br>`;});
+  h+=`<div style="margin-top:6px">${par&&Math.hypot(...Av)>1e-9?`<span class="pill p-ok">$A\\mathbf v\\parallel\\mathbf v$: autovettore! $\\lambda\\approx${fmt(Math.round((Av[0]*v[0]+Av[1]*v[1])*1000)/1000)}$</span>`:par?`<span class="pill p-ok">$A\\mathbf v=\\mathbf 0$: autovettore con $\\lambda=0$</span>`:'<span class="pill p-w">$A\\mathbf v$ non è parallelo a $\\mathbf v$</span>'}</div>`;
+  $('labout').innerHTML=h;R($('labout'));
+}
+['a11','a12','a21','a22','ang'].forEach(id=>$(id).addEventListener('input',lab));
+document.querySelectorAll('#presets button').forEach(b=>b.onclick=()=>{const m=b.dataset.m.split(',');['a11','a12','a21','a22'].forEach((id,i)=>$(id).value=m[i]);lab();});
+
+// ---------- ESEMPI (stepper) ----------
+const M=s=>`\\begin{bmatrix}${s}\\end{bmatrix}`;
+const EX={
+ A:[
+  [`$$A=${M('2&1&1\\\\0&3&0\\\\0&0&-1')}$$`,'Matrice triangolare superiore.'],
+  [`$$p(\\lambda)=\\begin{vmatrix}2-\\lambda&1&1\\\\0&3-\\lambda&0\\\\0&0&-1-\\lambda\\end{vmatrix}=(2-\\lambda)(3-\\lambda)(-1-\\lambda)$$`,'Triangolare ⇒ determinante = prodotto della diagonale. Autovalori: 2, 3, −1 (tutti semplici).'],
+  [`$$A-2I=${M('0&1&1\\\\0&1&0\\\\0&0&-3')}\\to${M('0&1&1\\\\0&0&-1\\\\0&0&0')}$$ $$y=z=0,\\ x\\text{ libera}\\Rightarrow V_2=\\mathrm{span}\\{(1,0,0)^T\\}$$`,'λ = 2'],
+  [`$$A-3I=${M('-1&1&1\\\\0&0&0\\\\0&0&-4')}$$ $$z=0,\\ x=y\\Rightarrow V_3=\\mathrm{span}\\{(1,1,0)^T\\}$$`,'λ = 3'],
+  [`$$A+I=${M('3&1&1\\\\0&4&0\\\\0&0&0')}$$ $$y=0,\\ 3x+z=0\\Rightarrow V_{-1}=\\mathrm{span}\\{(-1,0,3)^T\\}$$`,'λ = −1 (corretto: il PDF mette 2 invece di 3 in alto a sinistra).'],
+  [`$$A${M('-1\\\\0\\\\3')}=${M('1\\\\0\\\\-3')}=-1\\cdot${M('-1\\\\0\\\\3')}\\ ✓$$`,'Verifica. Tre autovalori distinti ⇒ tre autovettori indipendenti ⇒ base di autovettori.']
+ ],
+ E1:[
+  [`$$A=${M('3&0&-2\\\\1&1&-1\\\\1&0&0')}$$`,'La seconda colonna ha un solo elemento non nullo: Laplace lì.'],
+  [`$$p(\\lambda)=(1-\\lambda)\\begin{vmatrix}3-\\lambda&-2\\\\1&-\\lambda\\end{vmatrix}=(1-\\lambda)(\\lambda^2-3\\lambda+2)=(2-\\lambda)(1-\\lambda)^2$$`,'λ₁ = 2 semplice, λ₂,₃ = 1 doppio. Controllo: tr = 4 = 2+1+1, det = 2 = 2·1·1.'],
+  [`$$A-2I=${M('1&0&-2\\\\1&-1&-1\\\\1&0&-2')}\\to${M('1&0&-2\\\\0&-1&1\\\\0&0&0')}$$ $$x=2z,\\ y=z\\Rightarrow V_2=\\mathrm{span}\\{(2,1,1)^T\\}$$`,'λ = 2. Verifica: A(2,1,1)ᵀ = (4,2,2)ᵀ ✓'],
+  [`$$A-I=${M('2&0&-2\\\\1&0&-1\\\\1&0&-1')}\\quad r=1\\Rightarrow x-z=0,\\ y,z\\text{ libere}$$`,'λ = 1: una sola equazione, due variabili libere.'],
+  [`$$(y,z)=(1,0)\\Rightarrow(0,1,0)^T,\\quad(y,z)=(0,1)\\Rightarrow(1,0,1)^T$$ $$V_1=\\mathrm{span}\\{(0,1,0)^T,(1,0,1)^T\\},\\quad m_g=2=m_a$$`,'Regolare. In totale 3 autovettori indipendenti ⇒ diagonalizzabile.'],
+  [`$$S=${M('2&0&1\\\\1&1&0\\\\1&0&1')},\\qquad S^{-1}AS=${M('2&0&0\\\\0&1&0\\\\0&0&1')}$$`,'Autovettori in colonna, autovalori nello stesso ordine.']
+ ],
+ E2:[
+  [`$$A=${M('3&1&-3\\\\1&2&-2\\\\1&1&-1')}$$`,'Nessuno zero comodo: prima operazioni di riga su A − λI.'],
+  [`$$R_1-R_3,\\ R_2-R_3:\\ \\begin{vmatrix}2-\\lambda&0&\\lambda-2\\\\0&1-\\lambda&\\lambda-1\\\\1&1&-1-\\lambda\\end{vmatrix}$$`,'Ora la riga 1 ha il fattore (2−λ) e la riga 2 il fattore (1−λ).'],
+  [`$$=(2-\\lambda)(1-\\lambda)\\begin{vmatrix}1&0&-1\\\\0&1&-1\\\\1&1&-1-\\lambda\\end{vmatrix}=(2-\\lambda)(1-\\lambda)(1-\\lambda)$$`,'Stesso polinomio dell\'Esempio 1: λ = 2 semplice, λ = 1 doppio.'],
+  [`$$A-2I=${M('1&1&-3\\\\1&0&-2\\\\1&1&-3')}\\to${M('1&1&-3\\\\0&-1&1\\\\0&0&0')}$$ $$y=z,\\ x=2z\\Rightarrow V_2=\\mathrm{span}\\{(2,1,1)^T\\}$$`,'λ = 2 (corretto: il PDF scrive −1 al posto di 2−2 = 0 e ottiene (5,1,2), che non è autovettore).'],
+  [`$$A-I=${M('2&1&-3\\\\1&1&-2\\\\1&1&-2')}\\to${M('1&1&-2\\\\0&-1&1\\\\0&0&0')}$$ $$x=y=z\\Rightarrow V_1=\\mathrm{span}\\{(1,1,1)^T\\}$$`,'λ = 1: rango 2 ⇒ una sola variabile libera.'],
+  [`$$m_a(1)=2,\\quad m_g(1)=1\\ \\Rightarrow\\ \\text{irregolare}$$`,'Solo 2 autovettori indipendenti in ℝ³: niente base di autovettori ⇒ A NON è diagonalizzabile.']
+ ]};
+let cur='A',st=0;
+function draw(){const s=EX[cur];$('exscr').innerHTML=s[st][0];$('excap').textContent=s[st][1];$('exdots').textContent=(st+1)+' / '+s.length;
+  $('prev').disabled=st===0;$('next').disabled=st===s.length-1;R($('exscr'));}
+$('prev').onclick=()=>{st--;draw();};$('next').onclick=()=>{st++;draw();};
+document.querySelectorAll('#exsel button').forEach(b=>b.onclick=()=>{cur=b.dataset.e;st=0;document.querySelectorAll('#exsel button').forEach(x=>x.classList.toggle('on',x===b));draw();});
+
+// ---------- QUIZ ----------
+const Q=[
+ ['Il vettore nullo può essere un autovettore?',['Sì, relativo a λ = 0','No, mai','Solo se A è singolare'],1,'Per definizione un autovettore è non nullo: A0 = λ0 per ogni λ.'],
+ ['λ = 0 è autovalore di A se e solo se…',['A è invertibile','ker A ≠ {0}','tr A = 0'],1,'A x = 0 x con x ≠ 0 vuol dire x ∈ ker A non banale (equivalentemente det A = 0).'],
+ ['Gli autovalori di una matrice triangolare sono…',['gli elementi della diagonale','sempre distinti','le somme delle righe'],0,'det(A − λI) = prodotto degli (aᵢᵢ − λ).'],
+ ['Riduco A con Gauss e leggo la diagonale. Ho gli autovalori?',['Sì','No','Solo se A è 2×2'],1,'Le operazioni di riga cambiano gli autovalori (Esempio 2: 2,1,1 diventano 1,1,−2).'],
+ ['Se m_a(λ) = 1 allora…',['m_g(λ) = 1','m_g(λ) può essere 0','m_g(λ) può essere 2'],0,'1 ≤ m_g ≤ m_a = 1: ogni autovalore semplice è regolare.'],
+ ['Esempio 1 ed Esempio 2 hanno lo stesso p(λ). Quale si diagonalizza?',['Entrambi','Solo l\'Esempio 1','Solo l\'Esempio 2'],1,'Nell\'Esempio 2 λ = 1 ha m_g = 1 < 2: mancano autovettori.'],
+ ['dim ker(A − λI) per A di ordine n è…',['r(A − λI)','n − r(A − λI)','n + r(A − λI)'],1,'Teorema di nullità più rango.'],
+ ['Se S⁻¹AS = D, le colonne di S sono…',['gli autovalori','autovettori di A','righe di D'],1,'Teorema 1 (iii): A xⱼ = λⱼ xⱼ.']
+];
+let score=0;$('tot').textContent=Q.length;
+$('quizbox').innerHTML=Q.map((q,i)=>`<div class="q" data-i="${i}"><b>${i+1}. ${q[0]}</b><div class="opts">${q[1].map((o,j)=>`<button data-j="${j}">${o}</button>`).join('')}</div><div class="why">${q[3]}</div></div>`).join('');
+document.querySelectorAll('.q').forEach(div=>{const q=Q[div.dataset.i];div.querySelectorAll('.opts button').forEach(b=>b.onclick=()=>{
+  if(div.dataset.done)return;div.dataset.done=1;const ok=+b.dataset.j===q[2];b.classList.add(ok?'right':'wrong');
+  if(!ok)div.querySelectorAll('.opts button')[q[2]].classList.add('right');if(ok)$('score').textContent=++score;div.querySelector('.why').style.display='block';});});
+
+window.addEventListener('load',()=>{R(document.body);draw();lab();});
+</script>
+</body>
+</html>

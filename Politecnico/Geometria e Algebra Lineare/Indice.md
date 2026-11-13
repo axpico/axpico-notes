@@ -61,6 +61,11 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 27. [[Similitudine, potenze e interpretazione geometrica del determinante|Similitudine, potenze e interpretazione geometrica del determinante]] (parte 3)
     - Riepilogo: [[Determinante, sviluppo di Laplace e formula di Cramer|Determinante, Laplace e Cramer]] · Esercizi: [[Determinanti, Cramer e inversa — Esercizi svolti|Determinanti, Cramer e inversa — Esercizi svolti]]
 
+## 9. Diagonalizzazione (Lezione 10)
+28. [[Autovalori, autovettori, autospazi e molteplicità|Autovalori, autovettori, autospazi e molteplicità]] (parte 1)
+    - Esercizi: [[Autovalori e autospazi — Esercizi svolti|Autovalori e autospazi — Esercizi svolti]] (include esercitazione 11-11)
+    - HTML interattivo: [[Lezione 10 — Autovalori, autovettori e autospazi.html|Lezione 10 parte 1 (definizioni, Teorema 1, lab 2×2, esempi, quiz)]]
+
 ## Video
 - [[GAL3-1 Nucleo e immagine.mp4|GAL3-1 Nucleo e immagine]]
 - [[GAL3-2 Dipendenza lineare.mp4|GAL3-2 Dipendenza lineare]]
@@ -88,6 +93,7 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 - [[09 parte 1b. Sviluppi di Laplace.pdf|Lezione 9 (parte 1b)]]
 - [[09 parte 2. Applicazioni dei determinanti - Invertibilita e dipendenza lineare. Teorema di Binet. La formula di Laplace e regola di Cramer. Calcolo del rango di una matrice con il Teorema di Kronecker.pdf|Lezione 9 (parte 2)]]
 - [[09 parte 3. Similitudine e potenze di una matrice quadrata. Ipervolumi e determinanti.pdf|Lezione 9 (parte 3)]]
+- [[10 parte 1. Diagonalizzazione Ver.2024 Autovettori ed autovalori. Autospazi, molteplicita algebrica e geometrica.pdf|Lezione 10 (parte 1)]]
 
 ## PDF — Esercizi
 - [[EserciziGAL1.pdf|EserciziGAL1]]

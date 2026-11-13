@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7c5dfb55b3a688aa",
+        "id": "fb0e9f64e4860038",
         "type": "tabs",
         "children": [
           {
-            "id": "2d8e8e5c445729ea",
+            "id": "81b9ee858433c860",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-11-11 15.31.26.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-11-11 15.31.26.excalidraw"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -90,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.01171875,
-    "collapsed": true
+    "width": 266.01171875
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -256,19 +253,21 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "2d8e8e5c445729ea",
+  "active": "41c9241263f38e27",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 10 — Autovalori, autovettori e autospazi.html.tmp.62397.6aa990cc9da6",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 10 — Autovalori, autovettori e autospazi.html",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 10 — Autovalori, autovettori e autospazi.html.tmp.62397.b136a3bc7447",
+    "Politecnico/Geometria e Algebra Lineare/Esercizi/Autovalori e autospazi — Esercizi svolti.md",
+    "Politecnico/Geometria e Algebra Lineare/Esercizi/Autovalori e autospazi — Esercizi svolti.md.tmp.62397.38b30448149b",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Autovalori, autovettori, autospazi e molteplicità.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Autovalori, autovettori, autospazi e molteplicità.md.tmp.62397.74c22b8f9ac2",
+    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/10 parte 1. Diagonalizzazione Ver.2024 Autovettori ed autovalori. Autospazi, molteplicita algebrica e geometrica.pdf",
     "Politecnico/Analisi 1/Dimostrazioni/Seconda parte/Sezione 4 - Limiti di funzioni e continuità/4.5 Teorema di Weierstrass (★).md.tmp.494248.42fc50ed49a7",
     "Politecnico/Analisi 1/Teoria/Derivate.md.tmp.494248.51f41ce7e12d",
     "Politecnico/Analisi 1/Teoria/Derivate.md.tmp.494248.49f461d11184",
     "Politecnico/Analisi 1/Teoria/Derivate.md.tmp.494248.3bbaa4320f10",
     "Politecnico/Analisi 1/Teoria/Derivate.md.tmp.494248.53beebc5d328",
-    "Politecnico/Analisi 1/Teoria/Derivate.md.tmp.494248.28b86776161d",
-    "Politecnico/Analisi 1/Teoria/Derivate.md.tmp.494248.e64eb35a7d6b",
-    "Politecnico/Analisi 1/Teoria/Derivate.md.tmp.494248.6889c0971ae3",
-    "Politecnico/Analisi 1/Teoria/Derivate.md.tmp.494248.2f55358dd5dc",
-    "Politecnico/Analisi 1/Teoria/Funzioni continue e punti di discontinuità.md.tmp.494248.c22702a345b5",
-    "Politecnico/Analisi 1/Teoria/Funzioni continue e punti di discontinuità.md.tmp.494248.07cdf00335bf",
     "Politecnico/Analisi 1/Teoria/Derivate.md",
     "Excalidraw/Drawing 2026-11-11 15.31.26.excalidraw.md",
     "Excalidraw/Drawing 2026-11-11 10.12.34.excalidraw.md",
@@ -292,8 +291,6 @@
     "Excalidraw/Drawing 2026-11-05 15.18.39.excalidraw.md",
     "Excalidraw/Drawing 2026-11-04 10.02.31.excalidraw.md",
     "Excalidraw/Drawing 2026-11-02 10.05.01.excalidraw.md",
-    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.6 Criterio del rapporto (★).md",
-    "Politecnico/Analisi 1/Dimostrazioni/Prima parte/Sezione 3 - Serie numeriche/3.4 Criterio del confronto (★).md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Iniettiva suriettiva.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Giro matrice rappresentativa.svg",
