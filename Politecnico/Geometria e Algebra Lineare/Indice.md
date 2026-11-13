@@ -65,6 +65,9 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 28. [[Autovalori, autovettori, autospazi e molteplicità|Autovalori, autovettori, autospazi e molteplicità]] (parte 1)
     - Esercizi: [[Autovalori e autospazi — Esercizi svolti|Autovalori e autospazi — Esercizi svolti]] (include esercitazione 11-11)
     - HTML interattivo: [[Lezione 10 — Autovalori, autovettori e autospazi.html|Lezione 10 parte 1 (definizioni, Teorema 1, lab 2×2, esempi, quiz)]]
+29. [[Criterio di diagonalizzabilità e invarianza del polinomio caratteristico|Criterio di diagonalizzabilità e invarianza del polinomio caratteristico]] (parte 2)
+    - Esercizi: [[Diagonalizzazione — Esercizi svolti|Diagonalizzazione — Esercizi svolti]] (include esercizi con parametro, potenze, EDO)
+    - HTML interattivo: [[Lezione 10 parte 2 — Criterio di diagonalizzabilità.html|Lezione 10 parte 2 (criterio, diagonalizzatore 2×2, Fibonacci, similitudine, e^{tA}, quiz)]]
 
 ## Video
 - [[GAL3-1 Nucleo e immagine.mp4|GAL3-1 Nucleo e immagine]]
@@ -94,6 +97,7 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 - [[09 parte 2. Applicazioni dei determinanti - Invertibilita e dipendenza lineare. Teorema di Binet. La formula di Laplace e regola di Cramer. Calcolo del rango di una matrice con il Teorema di Kronecker.pdf|Lezione 9 (parte 2)]]
 - [[09 parte 3. Similitudine e potenze di una matrice quadrata. Ipervolumi e determinanti.pdf|Lezione 9 (parte 3)]]
 - [[10 parte 1. Diagonalizzazione Ver.2024 Autovettori ed autovalori. Autospazi, molteplicita algebrica e geometrica.pdf|Lezione 10 (parte 1)]]
+- [[10 parte 2. Diagonalizzazione (continuata). Criterio di diagonalibilita. Invarianza del polinomio caratteristico rispetto a similitudine.pdf|Lezione 10 (parte 2)]]
 
 ## PDF — Esercizi
 - [[EserciziGAL1.pdf|EserciziGAL1]]

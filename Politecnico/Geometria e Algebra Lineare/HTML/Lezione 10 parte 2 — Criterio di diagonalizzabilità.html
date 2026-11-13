@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lezione 10 — Diagonalizzabilità</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+:root{--bg:#0f1220;--card:#181c2f;--card2:#20253d;--txt:#e6e8f2;--mut:#9aa0bd;--acc:#7c9cff;--ok:#4fd1a5;--warn:#ffb454;--bad:#ff6b81;--r:14px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{padding:22px 16px 6px;text-align:center}
+header h1{margin:0;font-size:1.5rem}
+header p{margin:4px 0 0;color:var(--mut)}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;flex-wrap:wrap;gap:6px;justify-content:center;padding:10px 16px;border-bottom:1px solid #2a3050}
+nav button{background:var(--card);color:var(--txt);border:1px solid #2a3050;border-radius:999px;padding:6px 12px;cursor:pointer;font-size:.9rem}
+nav button.on{background:var(--acc);color:#0f1220;border-color:var(--acc);font-weight:600}
+main{max-width:900px;margin:0 auto;padding:16px}
+section{display:none}section.on{display:block}
+h2{margin:6px 0 10px;text-align:center}
+h3{margin:4px 0 8px;color:var(--acc);font-size:1.05rem}
+.card{background:var(--card);border-radius:var(--r);padding:16px 18px;margin:14px 0;overflow-x:auto}
+.def{border-left:4px solid var(--acc)}
+.thm{border-left:4px solid var(--ok)}
+.warn{border-left:4px solid var(--warn)}
+.bug{border-left:4px solid var(--bad)}
+.tag{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--mut);margin-bottom:4px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tile{background:var(--card);border:1px solid #2a3050;border-radius:12px;padding:14px;cursor:pointer;transition:.15s}
+.tile:hover{border-color:var(--acc);transform:translateY(-2px)}
+.tile b{display:block;margin-bottom:4px}.tile small{color:var(--mut)}
+details{background:var(--card2);border-radius:10px;padding:10px 14px;margin:10px 0}
+summary{cursor:pointer;font-weight:600}
+table{border-collapse:collapse;width:100%}
+td,th{border-bottom:1px solid #2a3050;padding:8px;text-align:left;vertical-align:top}
+th{color:var(--mut);font-weight:500}
+.screen{min-height:170px;display:flex;flex-direction:column;justify-content:center;text-align:center;background:#11152a;border-radius:10px;padding:12px;overflow-x:auto}
+.cap{color:var(--mut);margin-top:8px;text-align:center}
+.ctrl{display:flex;gap:8px;justify-content:center;align-items:center;margin-top:10px;flex-wrap:wrap}
+.ctrl button,.btn{background:var(--acc);color:#0f1220;border:0;border-radius:8px;padding:7px 14px;font-weight:600;cursor:pointer}
+.ctrl button:disabled{opacity:.35;cursor:default}
+.seg button{background:var(--card2);color:var(--txt);border:1px solid #2a3050}
+.seg button.on{background:var(--acc);color:#0f1220}
+.dots{color:var(--mut);font-size:.85rem}
+label{color:var(--mut);font-size:.9rem}
+input[type=number]{width:64px;background:#11152a;color:var(--txt);border:1px solid #2a3050;border-radius:6px;padding:5px}
+input[type=range]{width:100%}
+.out{margin-top:12px;padding:12px;border-radius:10px;background:#11152a}
+.pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:.85rem;font-weight:600}
+.p-ok{background:#163b30;color:var(--ok)}.p-bad{background:#3b1620;color:var(--bad)}.p-w{background:#3b2f16;color:var(--warn)}
+canvas{width:100%;max-width:420px;display:block;margin:auto;background:#11152a;border-radius:12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.q{margin:14px 0}
+.q .opts button{display:block;width:100%;text-align:left;margin:6px 0;background:var(--card2);color:var(--txt);border:1px solid #2a3050;border-radius:8px;padding:9px 12px;cursor:pointer}
+.q .opts button.right{border-color:var(--ok);background:#163b30}
+.q .opts button.wrong{border-color:var(--bad);background:#3b1620}
+.q .why{display:none;color:var(--mut);margin-top:4px}
+ol.steps li{margin:6px 0}
+@media(max-width:700px){.grid{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Lezione 10 · parte 2 — Criterio di diagonalizzabilità</h1>
+  <p>GAL · regolarità, costruzione di S e D, Fibonacci, traccia, invarianza per similitudine, esponenziale di matrice</p>
+</header>
+
+<nav>
+  <button data-s="mappa" class="on">🗺️ Mappa</button>
+  <button data-s="crit">1 · Criterio</button>
+  <button data-s="lab">🧪 Diagonalizzatore 2×2</button>
+  <button data-s="es">2 · Esempi</button>
+  <button data-s="perche">3 · Perché funziona</button>
+  <button data-s="fib">4 · Fibonacci</button>
+  <button data-s="trdet">5 · Traccia e det</button>
+  <button data-s="simil">6 · Similitudine</button>
+  <button data-s="exp">7 · $e^{tA}$ ed EDO</button>
+  <button data-s="quiz">✅ Quiz</button>
+</nav>
+
+<main>
+
+<section id="mappa" class="on">
+  <div class="card">Nella parte 1 abbiamo imparato a trovare autovalori e autospazi. Ora la domanda finale: <b>quando</b> esiste una base di autovettori? Risposta: quando <b>nessun autovalore "perde" autovettori</b>, cioè quando ogni autovalore ha tanti autovettori indipendenti ($m_g$) quante volte è radice di $p_A$ ($m_a$).</div>
+  <div class="grid">
+    <div class="tile" data-go="crit"><b>1 · Criterio</b><small>diagonalizzabile ⇔ tutti regolari</small></div>
+    <div class="tile" data-go="lab"><b>🧪 Diagonalizzatore</b><small>inserisci una 2×2: S, D, $A^k$</small></div>
+    <div class="tile" data-go="es"><b>2 · Esempi</b><small>sì / no / solo su ℂ, passo per passo</small></div>
+    <div class="tile" data-go="perche"><b>3 · Perché funziona</b><small>il Lemma sugli autospazi</small></div>
+    <div class="tile" data-go="fib"><b>4 · Fibonacci</b><small>potenze ⇒ formula di Binet</small></div>
+    <div class="tile" data-go="trdet"><b>5 · Traccia e det</b><small>somma e prodotto degli autovalori</small></div>
+    <div class="tile" data-go="simil"><b>6 · Similitudine</b><small>stesso $p_A$, ma non viceversa</small></div>
+    <div class="tile" data-go="exp"><b>7 · $e^{tA}$ ed EDO</b><small>sistemi di equazioni differenziali</small></div>
+    <div class="tile" data-go="quiz"><b>✅ Quiz</b><small>8 domande</small></div>
+  </div>
+  <div class="card"><h3>In una riga</h3>
+  $$A\text{ diagonalizzabile}\iff\sum_\lambda m_g(\lambda)=n\iff m_g(\lambda)=m_a(\lambda)\ \ \forall\lambda$$</div>
+</section>
+
+<section id="crit">
+  <h2>1 · Il criterio di diagonalizzabilità</h2>
+  <div class="card def"><span class="tag">Richiamo</span><br>
+  $1\le m_g(\lambda_0)\le m_a(\lambda_0)$. <b>Regolare</b>: $m_g=m_a$. <b>Irregolare</b>: $m_g&lt;m_a$. Ogni autovalore <b>semplice</b> è regolare.</div>
+  <div class="card thm"><span class="tag">Teorema 1 (su ℂ)</span><br>
+  $A$ è diagonalizzabile $\iff$ <b>ogni</b> autovalore di $A$ è regolare.</div>
+  <div class="card thm"><span class="tag">Teorema 1a (su ℝ)</span><br>
+  $A$ reale è diagonalizzabile su $\mathbb R$ $\iff$ ogni autovalore è regolare <b>e reale</b>.</div>
+  <div class="card thm"><span class="tag">Corollario</span><br>
+  $n$ autovalori distinti ⇒ diagonalizzabile (su $\mathbb C$). $n$ autovalori distinti <b>reali</b> ⇒ diagonalizzabile su $\mathbb R$.<br>
+  <span class="dots">Perché: $\deg p_A=n$, quindi $n$ radici distinte sono tutte semplici, dunque regolari.</span></div>
+  <div class="card warn"><span class="tag">Solo sufficiente</span><br>
+  $I_3$ ha l'autovalore $1$ triplo ed è già diagonale. Autovalori ripetuti <b>non</b> vogliono dire "non diagonalizzabile": si controlla $m_g$.</div>
+  <div class="card"><h3>Diagramma di decisione</h3>
+  <ol class="steps">
+    <li>Calcola $p_A(\lambda)$ e i suoi autovalori con $m_a$.</li>
+    <li>Lavori su $\mathbb R$ e c'è una radice non reale? ⇒ <span class="pill p-bad">no su ℝ</span></li>
+    <li>Tutti semplici? ⇒ <span class="pill p-ok">sì</span> (Corollario)</li>
+    <li>Per ogni autovalore <b>multiplo</b>: $m_g=n-r(A-\lambda I)$. Basta il <b>rango</b>.</li>
+    <li>Tutti con $m_g=m_a$ ⇒ <span class="pill p-ok">sì</span>; anche uno solo con $m_g&lt;m_a$ ⇒ <span class="pill p-bad">no</span></li>
+  </ol></div>
+</section>
+
+<section id="lab">
+  <h2>🧪 Diagonalizzatore 2×2</h2>
+  <div class="card">Inserisci $A$. La pagina applica il criterio, costruisce $S$ e $D$ (se esistono) e calcola $A^k=SD^kS^{-1}$.</div>
+  <div class="two">
+    <div class="card" style="margin:0">
+      <div style="display:grid;grid-template-columns:auto auto;gap:6px;justify-content:center">
+        <input type="number" id="a11" value="2" step="1"><input type="number" id="a12" value="1" step="1">
+        <input type="number" id="a21" value="1" step="1"><input type="number" id="a22" value="2" step="1">
+      </div>
+      <div class="ctrl seg" id="presets">
+        <button data-m="2,1,1,2">distinti</button>
+        <button data-m="1,1,1,0">Fibonacci</button>
+        <button data-m="1,1,0,1">irregolare</button>
+        <button data-m="1,-1,4,1">complessi</button>
+        <button data-m="3,0,0,3">scalare</button>
+      </div>
+      <label for="kk">esponente $k$: <span id="kv">5</span></label>
+      <input type="range" id="kk" min="0" max="20" value="5">
+    </div>
+    <div class="card" style="margin:0"><div class="out" id="dout" style="margin:0"></div></div>
+  </div>
+</section>
+
+<section id="es">
+  <h2>2 · Esempi passo per passo</h2>
+  <div class="ctrl seg" id="exsel">
+    <button data-e="E1" class="on">Es.1 triangolare</button>
+    <button data-e="E2">Es.2 rotazione</button>
+    <button data-e="E3">Es.3 sì</button>
+    <button data-e="E4">Es.4 no</button>
+  </div>
+  <div class="card">
+    <div class="screen" id="exscr"></div>
+    <div class="cap" id="excap"></div>
+    <div class="ctrl"><button id="prev">◀</button><span class="dots" id="exdots"></span><button id="next">▶</button></div>
+  </div>
+</section>
+
+<section id="perche">
+  <h2>3 · Perché il criterio funziona</h2>
+  <div class="card">Siano $\lambda_1,\dots,\lambda_k$ gli autovalori <b>distinti</b> e $W_{\lambda_j}=\ker(A-\lambda_jI)$.</div>
+  <div class="card thm"><span class="tag">Lemma</span><br>
+  Se $\mathbf u_1\in W_{\lambda_1},\dots,\mathbf u_k\in W_{\lambda_k}$ e $\mathbf u_1+\dots+\mathbf u_k=\mathbf 0$, allora $\mathbf u_1=\dots=\mathbf u_k=\mathbf 0$.<br>
+  <span class="dots">= gli autospazi sono in somma diretta = autovettori di autovalori distinti sono indipendenti.</span></div>
+  <div class="card"><h3>Dimostrazione: "uccidere" un pezzo alla volta</h3>
+    <div class="screen" id="lscr"></div>
+    <div class="cap" id="lcap"></div>
+    <div class="ctrl"><button id="lprev">◀</button><span class="dots" id="ldots"></span><button id="lnext">▶</button></div>
+  </div>
+  <div class="card thm"><span class="tag">Sufficienza del Teorema 1</span><br>
+  Unisci una base di ogni autospazio: $\mathcal B=\mathcal B_1\cup\dots\cup\mathcal B_k$.<br>
+  • <b>Indipendente</b>: una combinazione nulla si spezza in $\mathbf u_1+\dots+\mathbf u_k=\mathbf 0$ con $\mathbf u_j\in W_{\lambda_j}$ ⇒ (Lemma) ogni $\mathbf u_j=\mathbf 0$ ⇒ (base) coefficienti nulli.<br>
+  • <b>Abbastanza vettori</b>: $|\mathcal B|=\sum m_g\overset{\text{regolari}}=\sum m_a=\deg p_A=n$.<br>
+  ⇒ base di autovettori. $\blacksquare$</div>
+  <div class="card"><h3>Costruire S e D</h3>
+  (a) base di autovettori e (b) $A=SDS^{-1}$ sono lo <b>stesso</b> problema: colonne di $S$ = autovettori, $D$ = autovalori nello stesso ordine. La soluzione <b>non è mai unica</b> (ordine, multipli, altre basi).
+  $$\text{Es.3: }S=\begin{bmatrix}2&0&1\\1&1&0\\1&0&1\end{bmatrix},\quad D=\mathrm{diag}(2,1,1)$$</div>
+</section>
+
+<section id="fib">
+  <h2>4 · Potenze e Fibonacci</h2>
+  <div class="card">Se $A=SDS^{-1}$: $\ A^k=SD^kS^{-1}$, e $D^k=\mathrm{diag}(\lambda_1^k,\dots,\lambda_n^k)$. Le potenze di una diagonale si fanno elemento per elemento.</div>
+  <div class="card"><h3>Fibonacci</h3>
+  $$\begin{bmatrix}F_k\\F_{k-1}\end{bmatrix}=A^{k-1}\begin{bmatrix}1\\0\end{bmatrix},\quad A=\begin{bmatrix}1&1\\1&0\end{bmatrix},\quad p_A=\lambda^2-\lambda-1,\quad\lambda_{1,2}=\tfrac{1\mp\sqrt5}2$$
+  $$S=\begin{bmatrix}-1&\lambda_2\\\lambda_2&1\end{bmatrix},\quad S^{-1}=\frac1{\sqrt5}\begin{bmatrix}\lambda_1&1\\1&-\lambda_1\end{bmatrix}$$
+  $$A^k=\frac1{\sqrt5}\begin{bmatrix}\lambda_2^{k+1}-\lambda_1^{k+1}&\lambda_2^k-\lambda_1^k\\\lambda_2^k-\lambda_1^k&\lambda_2^{k-1}-\lambda_1^{k-1}\end{bmatrix}\ \Rightarrow\ \boxed{F_k=\frac{\varphi^k-(1-\varphi)^k}{\sqrt5}},\ \varphi=\tfrac{1+\sqrt5}2$$</div>
+  <div class="card"><h3>Prova tu</h3>
+  <label for="fk">$k$ = <span id="fkv">10</span></label><input type="range" id="fk" min="1" max="40" value="10">
+  <div class="out" id="fout"></div></div>
+</section>
+
+<section id="trdet">
+  <h2>5 · Traccia, determinante e autovalori</h2>
+  <div class="card def"><span class="tag">Traccia</span> $\ \operatorname{tr}A=\sum_i a_{ii}$ (somma della diagonale).</div>
+  <div class="card thm"><span class="tag">Teorema</span><br>
+  $$\det A=\lambda_1\lambda_2\cdots\lambda_n,\qquad\operatorname{tr}A=\lambda_1+\dots+\lambda_n$$
+  <details><summary>Dimostrazione (parte det)</summary>$p_A(\lambda)=\prod(\lambda_i-\lambda)$, quindi $p_A(0)=\prod\lambda_i$; ma anche $p_A(0)=\det(A-0I)=\det A$. $\blacksquare$</details></div>
+  <div class="card"><h3>2×2: autovalori "a occhio"</h3>
+  $$p_A(\lambda)=\lambda^2-(\operatorname{tr}A)\lambda+\det A$$
+  $\begin{bmatrix}4&2\\-1&1\end{bmatrix}$: tr $=5$, det $=6$ ⇒ cerco due numeri con somma 5 e prodotto 6 ⇒ $\lambda=2,3$.<br>
+  Per matrici più grandi è un ottimo <b>controllo</b> dei conti.</div>
+</section>
+
+<section id="simil">
+  <h2>6 · Invarianza per similitudine</h2>
+  <div class="card thm"><span class="tag">Teorema 2</span><br>
+  $A,B$ simili ⇒ $p_A(\lambda)=p_B(\lambda)$.
+  $$p_B=\det(S^{-1}AS-S^{-1}\lambda IS)=\det\big(S^{-1}(A-\lambda I)S\big)\overset{\text{Binet}}=\det(A-\lambda I)=p_A$$</div>
+  <div class="card"><h3>Conseguenze</h3>
+  <b>(A)</b> Simili ⇒ stessi autovalori, stesse $m_a$, stessi tr e det. Gli autovettori si trasportano: $B\mathbf v=\lambda\mathbf v\Rightarrow A(S\mathbf v)=\lambda(S\mathbf v)$.<br>
+  <b>(B)</b> Le matrici di uno stesso endomorfismo $L$ in basi diverse sono simili ⇒ esiste il <b>polinomio caratteristico di $L$</b>, indipendente dalla base.<br>
+  <b>(C)</b> <span class="pill p-bad">Il viceversa è falso</span> Es.3 ed Es.4 hanno lo stesso $p$, ma una è diagonalizzabile e l'altra no ⇒ non simili.</div>
+  <div class="card"><h3>Sono simili? Allenati</h3><div id="simq"></div></div>
+</section>
+
+<section id="exp">
+  <h2>7 · Esponenziale di matrice ed EDO</h2>
+  <div class="card">
+  $$e^{tA}=\sum_{k\ge0}\frac{t^k}{k!}A^k,\qquad\frac{d}{dt}e^{tA}=Ae^{tA}$$
+  Il sistema $\mathbf y'=A\mathbf y$, $\mathbf y(0)=\mathbf y_0$ ha come unica soluzione $\mathbf y(t)=e^{tA}\mathbf y_0$. Se $A=SDS^{-1}$:
+  $$e^{tA}=S\,\mathrm{diag}(e^{t\lambda_1},\dots,e^{t\lambda_n})\,S^{-1}.$$</div>
+  <div class="card"><h3>Esempio del PDF</h3>
+  $y_1'=y_1-y_2,\ y_2'=4y_1+y_2,\ \mathbf y(0)=(1,0)$. $A=\begin{bmatrix}1&-1\\4&1\end{bmatrix}$: tr $2$, det $5$ ⇒ $\lambda=1\pm2i$.
+  $$S=\begin{bmatrix}i&-i\\2&2\end{bmatrix},\quad e^{tA}=\begin{bmatrix}e^t\cos2t&-\tfrac12e^t\sin2t\\2e^t\sin2t&e^t\cos2t\end{bmatrix},\quad\mathbf y(t)=\begin{bmatrix}e^t\cos2t\\2e^t\sin2t\end{bmatrix}$$
+  Parte reale $1$ ⇒ crescita $e^t$; parte immaginaria $2$ ⇒ rotazione $\cos2t,\sin2t$: la traiettoria è una <b>spirale</b> che si allarga.<br>
+  <label for="tt">$t$ = <span id="ttv">1.50</span></label><input type="range" id="tt" min="0" max="300" value="150">
+  <canvas id="cv" width="420" height="420" aria-label="traiettoria della soluzione nel piano y1 y2"></canvas></div>
+  <div class="card warn"><span class="tag">Refusi nel PDF</span><br>p. 63: $e^{(1-2it)}$ va letto $e^{(1-2i)t}$ · p. 27: indice $j\in\{1,\dots,k\}$, non $\{1,\dots,n\}$ · p. 47: il teorema su det/tr si chiama di nuovo "Teorema 1".</div>
+</section>
+
+<section id="quiz">
+  <h2>✅ Quiz veloce</h2>
+  <div class="card" id="quizbox"></div>
+  <div class="card" style="text-align:center">Punteggio: <b id="score">0</b> / <span id="tot"></span></div>
+</section>
+</main>
+
+<script>
+const R=el=>window.renderMathInElement&&renderMathInElement(el,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});
+const $=id=>document.getElementById(id);
+const show=id=>{document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===id));
+  document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.s===id));
+  window.scrollTo({top:0,behavior:'smooth'});if(id==='exp')drawExp();};
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>show(b.dataset.s));
+document.querySelectorAll('.tile').forEach(t=>t.onclick=()=>show(t.dataset.go));
+const fmt=x=>Math.abs(x)<1e-9?'0':Math.abs(x-Math.round(x))<1e-9?String(Math.round(x)):(+x.toFixed(4)).toString();
+const mat=m=>`\\begin{bmatrix}${m.map(r=>r.map(fmt).join('&')).join('\\\\')}\\end{bmatrix}`;
+
+// ---------- Diagonalizzatore 2x2 ----------
+function diag2(){
+  const a=+$('a11').value,b=+$('a12').value,c=+$('a21').value,d=+$('a22').value,k=+$('kk').value;$('kv').textContent=k;
+  const tr=a+d,det=a*d-b*c,disc=tr*tr-4*det,A=[[a,b],[c,d]];
+  const sg=x=>(x<0?'+':'-')+fmt(Math.abs(x)),sg2=x=>(x<0?'-':'+')+fmt(Math.abs(x));
+  let h=`$A=${mat(A)}$, tr $=${fmt(tr)}$, det $=${fmt(det)}$<br>$p_A(\\lambda)=\\lambda^2${sg(tr)}\\lambda${sg2(det)}$, $\\Delta=${fmt(disc)}$<br>`;
+  if(disc<-1e-12){h+=`Autovalori $${fmt(tr/2)}\\pm${fmt(Math.sqrt(-disc)/2)}i$, distinti ma non reali.<br><span class="pill p-bad">non diagonalizzabile su ℝ</span> <span class="pill p-ok">diagonalizzabile su ℂ</span>`;}
+  else if(Math.abs(disc)<1e-12){const l=tr/2,z=[a-l,b,c,d-l].every(x=>Math.abs(x)<1e-12);
+    h+=`$\\lambda=${fmt(l)}$ doppio ($m_a=2$). $r(A-\\lambda I)=${z?0:1}$ ⇒ $m_g=${z?2:1}$.<br>`;
+    h+=z?`<span class="pill p-ok">regolare ⇒ diagonalizzabile</span> (è già $${fmt(l)}I$)<br>$A^{${k}}=${mat([[l**k,0],[0,l**k]])}$`:`<span class="pill p-bad">irregolare ⇒ NON diagonalizzabile</span>`;}
+  else{const s=Math.sqrt(disc),L=[(tr-s)/2,(tr+s)/2];
+    const V=L.map(l=>(Math.abs(b)>1e-12||Math.abs(a-l)>1e-12)?[b,l-a]:[l-d,c]);
+    const S=[[V[0][0],V[1][0]],[V[0][1],V[1][1]]],dS=S[0][0]*S[1][1]-S[0][1]*S[1][0];
+    const Si=[[S[1][1]/dS,-S[0][1]/dS],[-S[1][0]/dS,S[0][0]/dS]],Dk=[L[0]**k,L[1]**k];
+    const Ak=[[0,0],[0,0]];for(let i=0;i<2;i++)for(let j=0;j<2;j++)Ak[i][j]=S[i][0]*Dk[0]*Si[0][j]+S[i][1]*Dk[1]*Si[1][j];
+    h+=`Due autovalori reali distinti $\\lambda_1=${fmt(L[0])},\\ \\lambda_2=${fmt(L[1])}$ <span class="pill p-ok">diagonalizzabile (Corollario)</span><br>`;
+    h+=`$$S=${mat(S)},\\quad D=${mat([[L[0],0],[0,L[1]]])}$$ $$A^{${k}}=SD^{${k}}S^{-1}=${mat(Ak.map(r=>r.map(x=>Math.round(x*1e6)/1e6)))}$$`;}
+  $('dout').innerHTML=h;R($('dout'));
+}
+['a11','a12','a21','a22','kk'].forEach(id=>$(id).addEventListener('input',diag2));
+document.querySelectorAll('#presets button').forEach(b=>b.onclick=()=>{b.dataset.m.split(',').forEach((v,i)=>$(['a11','a12','a21','a22'][i]).value=v);diag2();});
+
+// ---------- Esempi ----------
+const M=s=>`\\begin{bmatrix}${s}\\end{bmatrix}`;
+const EX={
+ E1:[[`$$A=${M('2&1&1\\\\0&3&0\\\\0&0&-1')}$$`,'Triangolare: autovalori sulla diagonale.'],
+     [`$$\\lambda=2,\\ 3,\\ -1\\quad\\text{reali e distinti}$$`,'3 autovalori distinti in una 3×3 ⇒ tutti semplici ⇒ tutti regolari.'],
+     [`$$\\text{diagonalizzabile su }\\mathbb R:\\ S=${M('1&1&-1\\\\0&1&0\\\\0&0&3')},\\ D=\\mathrm{diag}(2,3,-1)$$`,'Corollario (II). Nessun rango da calcolare.']],
+ E2:[[`$$A=${M('0&-1\\\\1&0')}\\quad(\\text{rotazione di }90°)$$`,'Nessuna direzione resta fissa ⇒ nessun autovettore reale.'],
+     [`$$p_A=\\begin{vmatrix}-\\lambda&-1\\\\1&-\\lambda\\end{vmatrix}=\\lambda^2+1,\\quad\\lambda=\\pm i$$`,'Radici distinte ma non reali.'],
+     [`$$\\text{non diag. su }\\mathbb R\\ (\\text{Teor. 1a}),\\qquad\\text{diag. su }\\mathbb C\\ (\\text{Corollario I})$$`,'La risposta dipende dal campo!']],
+ E3:[[`$$A=${M('3&0&-2\\\\1&1&-1\\\\1&0&0')},\\quad p_A=(2-\\lambda)(1-\\lambda)^2$$`,'λ = 2 semplice (regolare gratis); λ = 1 doppio: va controllato.'],
+     [`$$A-I=${M('2&0&-2\\\\1&0&-1\\\\1&0&-1')}$$`,'Le colonne sono tutte multiple della prima ⇒ rango 1, senza Gauss.'],
+     [`$$m_g(1)=3-r(A-I)=3-1=2=m_a(1)$$`,'Regolare ⇒ tutti regolari ⇒ diagonalizzabile.'],
+     [`$$S=${M('2&0&1\\\\1&1&0\\\\1&0&1')},\\quad D=\\mathrm{diag}(2,1,1)$$`,'Colonne: base di W₂ e poi base di W₁ (dalla parte 1).']],
+ E4:[[`$$A=${M('3&1&-3\\\\1&2&-2\\\\1&1&-1')},\\quad p_A=(2-\\lambda)(1-\\lambda)^2$$`,'Stesso polinomio dell\'Es.3!'],
+     [`$$A-I=${M('2&1&-3\\\\1&1&-2\\\\1&1&-2')}\\to${M('1&1&-2\\\\0&-1&1\\\\0&0&0')}$$`,'Rango 2.'],
+     [`$$m_g(1)=3-2=1<2=m_a(1)$$`,'Irregolare ⇒ NON diagonalizzabile, né su ℝ né su ℂ.'],
+     [`$$\\text{Es.3 e Es.4: stesso }p_A,\\ \\text{ma non simili}$$`,'Il polinomio caratteristico non basta a decidere la similitudine.']]};
+function stepper(data,scr,cap,dots,pv,nx){let cur=Object.keys(data)[0],st=0;
+  const draw=()=>{const s=data[cur];$(scr).innerHTML=s[st][0];$(cap).textContent=s[st][1];$(dots).textContent=(st+1)+' / '+s.length;$(pv).disabled=st===0;$(nx).disabled=st===s.length-1;R($(scr));};
+  $(pv).onclick=()=>{st--;draw();};$(nx).onclick=()=>{st++;draw();};return{draw,set:k=>{cur=k;st=0;draw();}};}
+const ex=stepper(EX,'exscr','excap','exdots','prev','next');
+document.querySelectorAll('#exsel button').forEach(b=>b.onclick=()=>{ex.set(b.dataset.e);document.querySelectorAll('#exsel button').forEach(x=>x.classList.toggle('on',x===b));});
+const LM={L:[
+ ['$$\\mathbf u_1+\\mathbf u_2+\\dots+\\mathbf u_k=\\mathbf 0,\\qquad A\\mathbf u_i=\\lambda_i\\mathbf u_i$$','Vogliamo mostrare che un pezzo fissato, u_{i₀}, è nullo.'],
+ ['$$(A-\\lambda_jI)\\sum_i\\mathbf u_i=\\sum_i(\\lambda_i-\\lambda_j)\\mathbf u_i=\\mathbf 0$$','Applico (A − λⱼI) con j ≠ i₀: il termine uⱼ sparisce (coefficiente λⱼ − λⱼ = 0).'],
+ ['$$\\sum_i\\Big(\\prod_{j\\ne i_0}(\\lambda_i-\\lambda_j)\\Big)\\mathbf u_i=\\mathbf 0$$','Ripeto per ogni j ≠ i₀: spariscono tutti i termini tranne quello di i₀.'],
+ ['$$\\underbrace{\\prod_{j\\ne i_0}(\\lambda_{i_0}-\\lambda_j)}_{\\neq0}\\,\\mathbf u_{i_0}=\\mathbf 0\\ \\Rightarrow\\ \\mathbf u_{i_0}=\\mathbf 0\\quad\\blacksquare$$','Il coefficiente non è zero perché gli autovalori sono distinti. i₀ era arbitrario.']]};
+stepper(LM,'lscr','lcap','ldots','lprev','lnext').draw();
+
+// ---------- Fibonacci ----------
+function fib(){const k=+$('fk').value;$('fkv').textContent=k;let a=0n,b=1n;for(let i=0;i<k;i++)[a,b]=[b,a+b];
+  const p=(1+Math.sqrt(5))/2,bin=(p**k-(1-p)**k)/Math.sqrt(5),ap=p**k/Math.sqrt(5);
+  $('fout').innerHTML=`Ricorrenza: $F_{${k}}=${a}$<br>Binet: $\\dfrac{\\varphi^{${k}}-(1-\\varphi)^{${k}}}{\\sqrt5}\\approx${bin.toFixed(4)}$<br>Solo $\\varphi^{${k}}/\\sqrt5\\approx${ap.toFixed(5)}$ → intero più vicino $${Math.round(ap)}$ ${BigInt(Math.round(ap))===a?'<span class="pill p-ok">coincide</span>':'<span class="pill p-w">errore di arrotondamento (k grande)</span>'}`;R($('fout'));}
+$('fk').addEventListener('input',fib);
+
+// ---------- Similitudine quiz ----------
+const SQ=[['$\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}$ e $\\begin{bmatrix}1&0\\\\0&4\\end{bmatrix}$',0,'det −2 ≠ 4 ⇒ polinomi diversi ⇒ non simili.'],
+ ['$\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}$ e $I_2$',0,'Stesso p, ma S⁻¹IS = I per ogni S: I è simile solo a se stessa.'],
+ ['$\\begin{bmatrix}2&1\\\\1&2\\end{bmatrix}$ e $\\begin{bmatrix}1&0\\\\0&3\\end{bmatrix}$',1,'Autovalori 1 e 3 distinti ⇒ la prima è diagonalizzabile e simile a diag(1,3).'],
+ ['Es.3 e Es.4',0,'Stesso p, ma una è diagonalizzabile e l\'altra no.']];
+$('simq').innerHTML=SQ.map((q,i)=>`<div class="q" data-i="${i}">${q[0]}<div class="ctrl" style="justify-content:flex-start"><button class="btn" data-a="1">simili</button><button class="btn" data-a="0">non simili</button></div><div class="why"></div></div>`).join('');
+document.querySelectorAll('#simq .q').forEach(d=>d.querySelectorAll('button').forEach(b=>b.onclick=()=>{const q=SQ[d.dataset.i],ok=+b.dataset.a===q[1];const w=d.querySelector('.why');w.style.display='block';w.innerHTML=(ok?'<span class="pill p-ok">giusto</span> ':'<span class="pill p-bad">no</span> ')+q[2];}));
+
+// ---------- e^{tA} ----------
+function drawExp(){const T=$('tt').value/100;$('ttv').textContent=T.toFixed(2);const cv=$('cv'),g=cv.getContext('2d'),W=cv.width,H=cv.height,cx=W/2,cy=H/2;
+  const y=t=>[Math.exp(t)*Math.cos(2*t),2*Math.exp(t)*Math.sin(2*t)];let m=1;for(let t=0;t<=T;t+=0.01){const p=y(t);m=Math.max(m,Math.abs(p[0]),Math.abs(p[1]));}
+  const sc=(W/2-16)/(m*1.1);g.clearRect(0,0,W,H);g.strokeStyle='#4a5070';g.lineWidth=1;g.beginPath();g.moveTo(0,cy);g.lineTo(W,cy);g.moveTo(cx,0);g.lineTo(cx,H);g.stroke();
+  g.strokeStyle='#7c9cff';g.lineWidth=2.5;g.beginPath();for(let t=0;t<=T+1e-9;t+=0.01){const p=y(t);t?g.lineTo(cx+p[0]*sc,cy-p[1]*sc):g.moveTo(cx+p[0]*sc,cy-p[1]*sc);}g.stroke();
+  const p=y(T);g.fillStyle='#ffb454';g.beginPath();g.arc(cx+p[0]*sc,cy-p[1]*sc,6,0,7);g.fill();
+  g.fillStyle='#9aa0bd';g.font='13px system-ui';g.fillText('y₁',W-22,cy-6);g.fillText('y₂',cx+6,14);g.fillText(`y(${T.toFixed(2)}) = (${p[0].toFixed(2)}, ${p[1].toFixed(2)})`,10,H-10);}
+$('tt').addEventListener('input',drawExp);
+
+// ---------- Quiz ----------
+const Q=[
+ ['A ha autovalori 1, 1, 4 e r(A − I) = 1. È diagonalizzabile?',['Sì','No','Non si può dire'],0,'m_g(1) = 3 − 1 = 2 = m_a(1), e 4 è semplice ⇒ tutti regolari.'],
+ ['A ha autovalori 1, 1, 4 e r(A − I) = 2. È diagonalizzabile?',['Sì','No','Solo su ℂ'],1,'m_g(1) = 1 < 2: irregolare, né su ℝ né su ℂ.'],
+ ['Una 3×3 reale con autovalori 2, i, −i è diagonalizzabile su ℝ?',['Sì','No'],1,'Teorema 1a: servono autovalori tutti reali. Su ℂ invece sì (3 distinti).'],
+ ['Autovalori ripetuti ⇒ …',['non diagonalizzabile','bisogna controllare m_g','diagonalizzabile'],1,'Es. I₃: autovalore triplo, già diagonale.'],
+ ['Una 3×3 con tr = 6 e autovalori 1, 2, λ. Quanto vale λ?',['3','6','2'],0,'tr = somma degli autovalori: 1 + 2 + λ = 6.'],
+ ['A e B hanno lo stesso polinomio caratteristico. Allora…',['sono simili','possono non essere simili','hanno gli stessi autovettori'],1,'Teorema 2 vale solo in un verso (Osservazione C).'],
+ ['Se A = SDS⁻¹, allora A¹⁰ = …',['S¹⁰D¹⁰S⁻¹⁰','SD¹⁰S⁻¹','D¹⁰'],1,'Gli S⁻¹S interni si cancellano.'],
+ ['Gli autovalori 1 ± 2i nell\'EDO producono…',['crescita esponenziale pura','una spirale (eᵗ per la rotazione di 2t)','oscillazione senza crescita'],1,'La parte reale 1 dà eᵗ, quella immaginaria 2 dà cos 2t e sin 2t.']];
+let score=0;$('tot').textContent=Q.length;
+$('quizbox').innerHTML=Q.map((q,i)=>`<div class="q" data-i="${i}"><b>${i+1}. ${q[0]}</b><div class="opts">${q[1].map((o,j)=>`<button data-j="${j}">${o}</button>`).join('')}</div><div class="why">${q[3]}</div></div>`).join('');
+document.querySelectorAll('#quizbox .q').forEach(div=>{const q=Q[div.dataset.i];div.querySelectorAll('.opts button').forEach(b=>b.onclick=()=>{
+  if(div.dataset.done)return;div.dataset.done=1;const ok=+b.dataset.j===q[2];b.classList.add(ok?'right':'wrong');
+  if(!ok)div.querySelectorAll('.opts button')[q[2]].classList.add('right');if(ok)$('score').textContent=++score;div.querySelector('.why').style.display='block';});});
+
+window.addEventListener('load',()=>{R(document.body);ex.draw();diag2();fib();drawExp();});
+</script>
+</body>
+</html>
