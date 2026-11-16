@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Politecnico/Analisi 1/Teoria/Derivate.md",
+                "file": "Politecnico/Analisi 1/Teoria/Funzioni continue e punti di discontinuità.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Derivate"
+              "title": "Funzioni continue e punti di discontinuità"
             }
           }
         ]
@@ -261,6 +261,7 @@
   "active": "81b9ee858433c860",
   "lastOpenFiles": [
     "Politecnico/Analisi 1/Indice.md",
+    "Politecnico/Analisi 1/Teoria/Derivate.md",
     "Excalidraw/Drawing 2026-11-13 16.48.57.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 10 parte 2 — Criterio di diagonalizzabilità.html.tmp.1281586.12eff4237d77",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 10 parte 2 — Criterio di diagonalizzabilità.html",
@@ -277,7 +278,6 @@
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Autovalori e autospazi — Esercizi svolti.md.tmp.62397.38b30448149b",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Autovalori, autovettori, autospazi e molteplicità.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Autovalori, autovettori, autospazi e molteplicità.md.tmp.62397.74c22b8f9ac2",
-    "Politecnico/Analisi 1/Teoria/Derivate.md",
     "Excalidraw/Drawing 2026-11-11 10.12.34.excalidraw.md",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Formulario/Cinematica/Spostamento come area sotto v(t).md",
