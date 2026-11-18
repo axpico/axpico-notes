@@ -11,10 +11,12 @@
             "id": "2755e3968a25b763",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-11-18 10.28.05.excalidraw"
             }
           }
         ]
@@ -256,6 +258,7 @@
   },
   "active": "2755e3968a25b763",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 10 parte 2 — Criterio di diagonalizzabilità.html",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Analisi 1/Teoria/Funzioni continue e punti di discontinuità.md",
