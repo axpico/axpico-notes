@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fb0e9f64e4860038",
+        "id": "da06e93916cdbb55",
         "type": "tabs",
         "children": [
           {
-            "id": "81b9ee858433c860",
+            "id": "2755e3968a25b763",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Politecnico/Analisi 1/Teoria/Funzioni continue e punti di discontinuità.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Funzioni continue e punti di discontinuità"
+              "title": "New tab"
             }
           }
         ]
@@ -258,15 +254,16 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "81b9ee858433c860",
+  "active": "2755e3968a25b763",
   "lastOpenFiles": [
-    "file:/home/axpico/Projects/nova-and-friends/README.md",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 10 parte 2 — Criterio di diagonalizzabilità.html",
+    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Analisi 1/Teoria/Funzioni continue e punti di discontinuità.md",
+    "file:/home/axpico/Projects/nova-and-friends/README.md",
     "Politecnico/Analisi 1/Indice.md",
     "Politecnico/Analisi 1/Teoria/Derivate.md",
     "Excalidraw/Drawing 2026-11-13 16.48.57.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 10 parte 2 — Criterio di diagonalizzabilità.html.tmp.1281586.12eff4237d77",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 10 parte 2 — Criterio di diagonalizzabilità.html",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Diagonalizzazione — Esercizi svolti.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Diagonalizzazione — Esercizi svolti.md.tmp.1281586.e7834c497191",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md",
@@ -289,13 +286,11 @@
     "Formulario/Cinematica/Moto Rettilineo Uniforme (MRU).md",
     "Formulario/Cinematica/Moto Circolare Uniforme (MCU).md",
     "Excalidraw/Drawing 2026-11-09 08.11.22.excalidraw.md",
-    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Excalidraw/Drawing 2026-11-06 15.02.34.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Similitudine, potenze e interpretazione geometrica del determinante.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni dei determinanti — Binet, inversa, Cramer, Kronecker.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Determinante — definizione, proprietà e sviluppi di Laplace.md",
     "Politecnico/Analisi 1/Esercizi/Limiti di funzioni — Esercizi.md",
-    "Politecnico/Analisi 1/Teoria/Limiti di funzioni.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Iniettiva suriettiva.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Giro matrice rappresentativa.svg",
