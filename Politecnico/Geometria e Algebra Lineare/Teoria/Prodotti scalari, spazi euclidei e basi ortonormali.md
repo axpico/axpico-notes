@@ -11,7 +11,39 @@ tags:
 Fonte: Lezione 11 (PDF "Prodotti scalari…", 57 pp.). Testo: ALG (Mauri–Schlesinger) cap. 7 §§2–4, pp. 348–367.
 Prerequisito: [[Spazi vettoriali e sottospazi]], [[Basi, dimensione e coordinate]], [[Dipendenza lineare]]. Per il caso geometrico di $\mathbb R^2,\mathbb R^3$ vedi anche [[Vettori geometrici liberi]] e [[Ortogonalità e fasci di rette e piani]]; per il complemento ortogonale vedi [[Intersezione, somma e somma diretta di sottospazi — formula di Grassmann]].
 
+## 0. L'idea in parole povere (leggi prima questo)
+
+Fino ad ora gli spazi vettoriali sapevano fare solo due cose: **sommare** vettori e **moltiplicarli per un numero**. Non sapevano misurare nulla: in uno spazio vettoriale "nudo" non esiste la **lunghezza** di un vettore e non esiste l'**angolo** tra due vettori.
+
+Il **prodotto scalare** è lo strumento che aggiunge la misura. È una regola che prende **due vettori** e restituisce **un numero**. Da quel numero si ricava tutto il resto:
+
+$$\text{prodotto scalare}\ \longrightarrow\ \text{lunghezza (norma)}\ \longrightarrow\ \text{distanza}\ \longrightarrow\ \text{angolo}\ \longrightarrow\ \text{perpendicolarità}$$
+
+Uno **spazio euclideo** è semplicemente uno spazio vettoriale a cui abbiamo dato un prodotto scalare, cioè uno spazio in cui si può misurare. Il nome viene da Euclide: è la geometria "di scuola" (lunghezze, angoli retti, Pitagora) estesa a spazi qualsiasi.
+
+**Il caso che conosci già.** In $\mathbb R^2$ il prodotto scalare standard è
+$$\langle(x_1,x_2),(y_1,y_2)\rangle=x_1y_1+x_2y_2.$$
+Esempio: $\langle(3,4),(3,4)\rangle=9+16=25$, e $\sqrt{25}=5$ è proprio la lunghezza del vettore $(3,4)$ (il triangolo 3-4-5). Ancora: $\langle(1,0),(0,1)\rangle=0$, e infatti i due vettori sono perpendicolari.
+
+**Le tre idee da portare via:**
+1. $\langle\underline v,\underline v\rangle$ è il **quadrato della lunghezza** di $\underline v$.
+2. $\langle\underline u,\underline v\rangle=0$ significa **perpendicolari** (ortogonali).
+3. Il segno di $\langle\underline u,\underline v\rangle$ dice com'è l'angolo: **positivo** = angolo acuto (i vettori "vanno nella stessa direzione"), **zero** = angolo retto, **negativo** = angolo ottuso.
+
+**Perché serve tutto questo.** L'obiettivo finale della lezione (§10) è pratico: se scegli una base fatta di vettori **perpendicolari tra loro**, trovare le coordinate di un vettore diventa banale, basta un prodotto scalare per coordinata, senza risolvere sistemi né invertire matrici. Tutto il resto della lezione costruisce gli strumenti per arrivarci.
+
+> [!tip] Mappa della lezione
+> - §1–2: cos'è esattamente una "regola di prodotto scalare" e come si verifica che una regola lo sia.
+> - §3: dalla regola ricavo la lunghezza.
+> - §4: Pitagora e Carnot valgono in qualsiasi spazio euclideo, non solo nel piano.
+> - §5: proiettare un vettore su una retta ("l'ombra" del vettore).
+> - §6–7: due disuguaglianze che garantiscono che l'angolo abbia senso.
+> - §8–10: basi di vettori perpendicolari e come calcolare le coordinate in un colpo solo.
+
 ## 1. Forme bilineari (pp. 2–5)
+
+> [!tip] In parole povere
+> Una forma bilineare è una "macchina" che prende due vettori e dà un numero, e che si comporta bene con somme e multipli **in ciascuno dei due ingressi separatamente**. Se raddoppi il primo vettore, il risultato raddoppia; se sommi due vettori al primo posto, il risultato è la somma dei due risultati. Lo stesso vale per il secondo posto. È come la proprietà distributiva del prodotto tra numeri: $(a+b)\cdot c=ac+bc$.
 
 Il **prodotto cartesiano** di due insiemi $X,Y$ è $X\times Y:=\{(x,y):x\in X,\,y\in Y\}$, l'insieme delle coppie ordinate. Esempi: $\mathbb R\times\mathbb R=\mathbb R^2$; $[0,1]\times[0,2]=\{(x,y)\in\mathbb R^2: 0\le x\le 1,\ 0\le y\le 2\}$ è un rettangolo del piano.
 
@@ -33,6 +65,16 @@ Conseguenza della linearità: $L(\underline 0,\underline v)=L(\underline v,\unde
 > - è **definita positiva**: $\langle\underline x,\underline x\rangle=\sum x_i^2\ge0$, con uguaglianza solo per $\underline x=\underline 0$.
 
 ## 2. Prodotto scalare e spazio euclideo (pp. 7–17)
+
+> [!tip] In parole povere
+> Un prodotto scalare è una forma bilineare con due richieste in più, entrambe naturali se pensi a "lunghezze":
+> - **simmetria**: l'ordine non conta, $\langle\underline u,\underline v\rangle=\langle\underline v,\underline u\rangle$ (l'angolo tra $\underline u$ e $\underline v$ è lo stesso di quello tra $\underline v$ e $\underline u$);
+> - **definita positività**: $\langle\underline v,\underline v\rangle$ deve essere un quadrato di lunghezza, quindi $\ge0$, e vale $0$ **solo** per il vettore nullo (l'unico vettore lungo zero è $\underline 0$).
+>
+> **Come verifichi in pratica** che una formula $L(\underline x,\underline y)$ è un prodotto scalare:
+> 1. *Bilineare?* Se è un polinomio in cui ogni termine contiene esattamente una $x_i$ e una $y_j$ (tipo $x_1y_2$), sì. Termini come $x_1^2$, $x_1+y_1$ o costanti la rendono non bilineare.
+> 2. *Simmetrica?* Scambia tutte le $x$ con le $y$: se ottieni la stessa formula, sì.
+> 3. *Definita positiva?* Calcola $L(\underline x,\underline x)$ (metti $y=x$) e chiediti se può venire $\le0$ con $\underline x\ne\underline 0$. Trucco: prova vettori semplici come $(1,0)$, $(0,1)$, $(1,1)$, $(1,-1)$. Se trovi un controesempio hai finito (non è prodotto scalare); se non lo trovi, prova a scrivere $L(\underline x,\underline x)$ come somma di quadrati.
 
 > [!important] Definizione (prodotto scalare = prodotto interno)
 > In uno spazio vettoriale $V$ su $\mathbb R$ (non necessariamente $\mathbb R^n$) un **prodotto scalare** è una forma bilineare $L:V\times V\to\mathbb R$ che soddisfa:
@@ -69,6 +111,9 @@ Per mostrare che una forma bilineare simmetrica **non** è un prodotto scalare b
 
 Il prodotto scalare permette di introdurre in uno spazio vettoriale concetti geometrici (lunghezza, angolo).
 
+> [!tip] In parole povere
+> Norma = lunghezza. Si ottiene facendo il prodotto scalare del vettore **con sé stesso** e prendendo la radice. Esempio in $\mathbb R^3$: $\|(1,2,2)\|=\sqrt{1+4+4}=3$. La distanza tra due punti è la lunghezza del vettore che va dall'uno all'altro.
+
 > [!important] Definizione (norma)
 > In uno spazio euclideo $V$ la **norma** di $\underline v\in V$ è
 > $$\|\underline v\|:=\sqrt{\langle\underline v,\underline v\rangle}.$$
@@ -87,6 +132,10 @@ Il prodotto scalare permette di introdurre in uno spazio vettoriale concetti geo
 > Il coefficiente esce dalla norma **in valore assoluto**: $\|-3\underline v\|=3\|\underline v\|$, non $-3\|\underline v\|$. Inoltre la norma dipende dal prodotto scalare scelto: lo stesso vettore può avere norme diverse in prodotti diversi.
 
 ## 4. Ortogonalità, Carnot e Pitagora (pp. 22–26)
+
+> [!tip] In parole povere
+> "Ortogonale" è il nome generale di "perpendicolare": prodotto scalare $=0$. Carnot è solo il quadrato di un binomio, $(a+b)^2=a^2+b^2+2ab$, scritto con i vettori: il termine misto $2ab$ diventa $2\langle\underline u,\underline v\rangle$. Se i vettori sono perpendicolari il termine misto sparisce e resta Pitagora.
+> Esempio: $\underline u=(3,0)$, $\underline v=(0,4)$. Sono perpendicolari, $\underline u+\underline v=(3,4)$ e $\|\underline u+\underline v\|^2=25=9+16$.
 
 > [!important] Definizione (ortogonalità)
 > Due vettori $\underline v,\underline u$ di uno spazio euclideo sono **ortogonali**, $\underline v\perp\underline u$, se $\langle\underline v,\underline u\rangle=0$.
@@ -108,9 +157,14 @@ Per la simmetria $\langle\underline v,\underline u\rangle=\langle\underline u,\u
   cioè il **teorema del coseno**, usando che nel piano $\langle\vec u,\vec v\rangle=\|\vec u\|\,\|\vec v\|\cos\alpha$.
 
 > [!warning] Segno nel termine misto
-> Carnot per la somma ha $+2\langle\underline u,\underline v\rangle$; per la differenza si sostituisce $\underline v\to-\underline v$ e il segno diventa $-$: $\|\underline u-\underline v\|^2=\|\underline u\|^2+\|\underline v\|^2-2\langle\underline u,\underline v\rangle$. Pitagora vale solo con $\underline u\perp\underline v$; il viceversa vale **per $\|\underline u+\underline v\|$**: se $\|\underline u+\underline v\|^2=\|\underline u\|^2+\|\underline v\|^2$, da Carnot segue $\langle\underline u,\underline v\rangle=0$.
+> Carnot per la somma ha $+2\langle\underline u,\underline v\rangle$; per la differenza si sostituisce $\underline v\to-\underline v$ e il segno diventa $-$: $\|\underline u-\underline v\|^2=\|\underline u\|^2+\|\underline v\|^2-2\langle\underline u,\underline v\rangle$. Pitagora vale solo con $\underline u\perp\underline v$. Vale anche il viceversa: se $\|\underline u+\underline v\|^2=\|\underline u\|^2+\|\underline v\|^2$, confrontando con Carnot si ottiene $\langle\underline u,\underline v\rangle=0$.
 
 ## 5. Proiezione ortogonale su una retta (pp. 26–32)
+
+> [!tip] In parole povere
+> Immagina il sole a picco sopra una retta: la proiezione di $\underline v$ sulla retta è **l'ombra** di $\underline v$. È il punto della retta più vicino alla punta di $\underline v$, e il segmento che va dall'ombra alla punta è **perpendicolare** alla retta. La formula
+> $$\text{ombra}=\frac{\langle\underline v,\underline w\rangle}{\langle\underline w,\underline w\rangle}\,\underline w$$
+> dice "quante volte $\underline w$" ci sta nell'ombra. Se $\underline v$ è già perpendicolare alla retta, il numeratore è $0$ e l'ombra è il vettore nullo.
 
 Sia $W\subseteq V$ sottospazio con $\dim W=1$, $\underline w\ne\underline 0$ in $W$ (quindi $W=\mathrm{span}\{\underline w\}$) e $\underline v\in V\setminus W$.
 
@@ -135,16 +189,28 @@ $$t_0=\frac{\langle\underline v,\underline w\rangle}{\|\underline w\|^2}.$$
 > Controllo: $\underline v-\underline v_0=\begin{bmatrix}1/2\\-1/2\end{bmatrix}$ è ortogonale alla retta $y=x$ (prodotto con $\underline w$: $\tfrac12-\tfrac12=0$).
 
 ```desmos-graph
+left=-1; right=6;
+top=5; bottom=-1;
+---
 y=x
 y=-x+5
+(3,2)|label:v=(3,2)
+(2.5,2.5)|label:proiezione v_0=(5/2,5/2)
+(1,1)|label:w=(1,1)
+(0,0)|label:O
 ```
 
-La retta $y=x$ è $W$; la retta $y=-x+5$ è la perpendicolare per $(3,2)$: interseca $W$ nel punto $(5/2,5/2)$, la proiezione.
+La retta $y=x$ è $W$; la retta $y=-x+5$ è la perpendicolare per $(3,2)$: interseca $W$ nel punto $(5/2,5/2)$, la proiezione ("l'ombra" di $\underline v$).
 
 > [!warning] Dividere per $\|\underline w\|^2$, non per $\|\underline w\|$
 > La formula ha $\|\underline w\|^2$ al denominatore (e $\underline w$ al numeratore). Dividere per $\|\underline w\|$ è corretto solo se si usa un versore: con $\|\underline w\|=1$ la formula diventa $\underline v_0=\langle\underline v,\underline w\rangle\underline w$. Un versore è un vettore di norma $1$ (p. 56).
 
 ## 6. Disuguaglianza di Cauchy–Schwarz–Bunjakovskij (pp. 33–37)
+
+> [!tip] In parole povere
+> Nel piano sai che $\langle\underline v,\underline w\rangle=\|\underline v\|\|\underline w\|\cos\alpha$, e siccome $|\cos\alpha|\le1$ il prodotto scalare non supera mai in valore assoluto il prodotto delle lunghezze. La C.S.B. dice che questo resta vero in **ogni** spazio euclideo. È proprio ciò che permette di **definire** l'angolo ovunque: il rapporto $\frac{\langle\underline v,\underline w\rangle}{\|\underline v\|\|\underline w\|}$ sta sempre tra $-1$ e $1$, quindi è il coseno di qualche angolo.
+> L'idea della dimostrazione: l'ombra di $\underline v$ (§5) non può essere più lunga di $\underline v$ stesso. Si ha uguaglianza solo quando $\underline v$ sta già sulla retta, cioè $\underline v$ e $\underline w$ sono paralleli.
+> Esempio: $\underline v=(1,2)$, $\underline w=(3,1)$: $|\langle\underline v,\underline w\rangle|=5\le\sqrt5\cdot\sqrt{10}\approx7{,}07$. Angolo: $\arccos\frac{5}{\sqrt{50}}=\arccos\frac{1}{\sqrt2}=\pi/4$.
 
 > [!important] Teorema 2 (Schwarz, o Cauchy–Schwarz–Bunjakovskij, C.S.B.)
 > Per ogni $\underline v,\underline w$ di uno spazio euclideo
@@ -169,12 +235,18 @@ La retta $y=x$ è $W$; la retta $y=-x+5$ è la perpendicolare per $(3,2)$: inter
 
 ## 7. Dimostrazione della disuguaglianza triangolare (pp. 38–39)
 
+> [!tip] In parole povere
+> In un triangolo un lato non è mai più lungo della somma degli altri due: la strada dritta è la più corta.
+
 Per Carnot e poi C.S.B. ($\langle\underline u,\underline v\rangle\le\|\underline u\|\|\underline v\|$):
 $$\|\underline u+\underline v\|^2=\|\underline u\|^2+\|\underline v\|^2+2\langle\underline u,\underline v\rangle\le\|\underline u\|^2+\|\underline v\|^2+2\|\underline u\|\|\underline v\|=(\|\underline u\|+\|\underline v\|)^2.$$
 Poiché le norme sono $\ge0$, estraendo la radice: $\|\underline u+\underline v\|\le\|\underline u\|+\|\underline v\|$.
 Versione con la differenza: $\|\underline u-\underline v\|=\|\underline u+(-\underline v)\|\le\|\underline u\|+\|-\underline v\|=\|\underline u\|+\|\underline v\|$.
 
 ## 8. Sistemi ortogonali e indipendenza lineare (pp. 39–43)
+
+> [!tip] In parole povere
+> Vettori tutti perpendicolari tra loro (e non nulli) puntano in direzioni "completamente diverse": nessuno si può ottenere combinando gli altri. Per questo sono automaticamente indipendenti, e non serve fare la riduzione a scala per verificarlo. Pensa agli assi $x,y,z$: nessuno è combinazione degli altri due.
 
 > [!important] Definizione (sistema ortogonale)
 > Un sistema $S=\{\underline v_1,\dots,\underline v_k\}$ in uno spazio euclideo è **ortogonale** se $\underline v_i\perp\underline v_j$ per ogni $i\ne j$.
@@ -199,6 +271,11 @@ Versione con la differenza: $\|\underline u-\underline v\|=\|\underline u+(-\und
 
 ## 9. Basi ortogonali e ortonormali (pp. 43–49)
 
+> [!tip] In parole povere
+> - **Ortogonale**: vettori a due a due perpendicolari.
+> - **Ortonormale**: perpendicolari **e** tutti di lunghezza $1$ (come gli assi $\underline e_1,\underline e_2,\underline e_3$).
+> Da ortogonale a ortonormale si passa dividendo ogni vettore per la propria lunghezza ("normalizzare"). Esempio: $(3,4)$ diventa $(3/5,4/5)$.
+
 > [!important] Definizione (base ortogonale, base ortonormale)
 > Una base $\mathcal B=\{\underline v_1,\dots,\underline v_n\}$ di uno spazio euclideo è **ortogonale** se è un sistema ortogonale ($\underline v_i\perp\underline v_j$ per $i\ne j$). È **ortonormale** se inoltre $\|\underline v_i\|=1$ per ogni $i$; equivalentemente
 > $$\langle\underline v_i,\underline v_j\rangle=\begin{cases}0&i\ne j,\\1&i=j.\end{cases}$$
@@ -218,6 +295,12 @@ Esempio: la base canonica di $\mathbb R^n$ col prodotto standard è ortonormale.
 > $\{\underline v_i\}$ ortogonale richiede solo prodotti nulli; per l'ortonormalità servono anche norme $=1$. Trappola tipica: dimenticare di normalizzare, oppure normalizzare con $\|\underline v\|^2$ invece di $\|\underline v\|$.
 
 ## 10. Coordinate rispetto a una base ortogonale (pp. 50–56)
+
+> [!tip] In parole povere
+> Con una base qualsiasi, per trovare le coordinate di $\underline v$ devi risolvere un sistema lineare. Con una base ortogonale ogni coordinata è semplicemente **l'ombra di $\underline v$ sul vettore di base corrispondente** (§5): un prodotto scalare e una divisione. Con una base ortonormale non serve neanche la divisione.
+> Confronto rapido, $\underline v=(3,2)$ nella base $\{(1,1),(1,-1)\}$ (ortogonale):
+> - metodo generale: risolvi $c_1(1,1)+c_2(1,-1)=(3,2)$, cioè $c_1+c_2=3$, $c_1-c_2=2$;
+> - metodo ortogonale: $c_1=\frac{3+2}{2}=\frac52$, $c_2=\frac{3-2}{2}=\frac12$. Fatto.
 
 Vantaggio enorme delle basi ortogonali: le coordinate si trovano **senza risolvere un sistema lineare**. Questo conta per spazi di dimensione grande (esempio citato: la compressione MP3 passa dalla base canonica di $\mathbb R^n$, tipicamente $n=576$, a un'altra base utile per l'analisi psicoacustica; la nuova base è ortogonale).
 
@@ -264,3 +347,23 @@ perché l'unico termine non nullo è $i=j$ (ortogonalità). Gli elementi di una 
 **Trappole riassunte.** Semidefinita $\ne$ definita; l'angolo richiede vettori non nulli; ortogonale $\ne$ ortonormale; formula delle coordinate valida solo per basi ortogonali; $\|\alpha\underline v\|=|\alpha|\|\underline v\|$; nella proiezione il denominatore è $\|\underline w\|^2$.
 
 Esercizi consigliati (p. 57): ALG §7.1, Esercizi 7.1, 7.2, 7.10 (p. 385); §7.2, Esercizi 7.11–7.17.
+
+## 12. Mini-quiz di autoverifica
+
+> [!question]- 1. $L(\underline x,\underline y)=2x_1y_1+x_2y_2$ è un prodotto scalare su $\mathbb R^2$?
+> Sì. È bilineare (ogni termine ha una $x$ e una $y$), simmetrica (scambiando $x$ e $y$ non cambia) e $L(\underline x,\underline x)=2x_1^2+x_2^2$ è una somma di quadrati con coefficienti positivi: vale $0$ solo se $x_1=x_2=0$.
+
+> [!question]- 2. $L(\underline x,\underline y)=x_1y_1-x_2y_2$ è un prodotto scalare?
+> No. $L\big((0,1),(0,1)\big)=-1<0$: la definita positività cade.
+
+> [!question]- 3. Quanto vale l'angolo tra $(1,0)$ e $(1,1)$?
+> $\cos\alpha=\frac{1}{1\cdot\sqrt2}$, quindi $\alpha=\pi/4$.
+
+> [!question]- 4. Proietta $\underline v=(2,3)$ sulla retta generata da $\underline w=(1,0)$.
+> $t_0=\frac{2}{1}=2$, proiezione $(2,0)$. Il resto $(0,3)$ è perpendicolare a $(1,0)$. Ha senso: l'ombra sull'asse $x$ è la sola componente $x$.
+
+> [!question]- 5. $\{(1,1,0),(1,-1,0),(0,0,2)\}$ è una base ortogonale di $\mathbb R^3$? È ortonormale?
+> Prodotti: $1-1+0=0$, $0$, $0$. Tre vettori non nulli a due a due ortogonali in dimensione $3$: base ortogonale. Non ortonormale, perché le norme sono $\sqrt2,\sqrt2,2$. Normalizzata: $\big(\tfrac1{\sqrt2},\tfrac1{\sqrt2},0\big),\big(\tfrac1{\sqrt2},-\tfrac1{\sqrt2},0\big),(0,0,1)$.
+
+> [!question]- 6. Coordinate di $\underline v=(4,2,6)$ nella base ortogonale della domanda 5.
+> $c_1=\frac{4+2}{2}=3$, $c_2=\frac{4-2}{2}=1$, $c_3=\frac{12}{4}=3$. Verifica: $3(1,1,0)+1(1,-1,0)+3(0,0,2)=(4,2,6)$.

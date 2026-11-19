@@ -20,17 +20,17 @@
             }
           },
           {
-            "id": "b836c46228cda9eb",
+            "id": "2e869d608ca0f958",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md",
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Criterio di diagonalizzabilità e invarianza del polinomio caratteristico"
+              "title": "Prodotti scalari, spazi euclidei e basi ortonormali"
             }
           }
         ],
@@ -105,7 +105,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.01171875
+    "width": 266.01171875,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -270,20 +271,21 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "b836c46228cda9eb",
+  "active": "2e869d608ca0f958",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.611672.dc257dd6fbc6",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md.tmp.611672.b23f33083304",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md.tmp.611672.6618e40ea53d",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md.tmp.611672.227aef23842c",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md.tmp.611672.e7074a703c06",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md.tmp.611672.7c5d1ab66cf5",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Autovalori, autovettori, autospazi e molteplicità.md.tmp.611672.45e2ca743470",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md.tmp.611672.45aa20a64168",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Autovalori, autovettori, autospazi e molteplicità.md.tmp.611672.483b2cb0b813",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md.tmp.611672.4a6b7d7a3594",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.98f98749f63e",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.4a486eb73a52",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.5c8407be428e",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.e7789b4b4b72",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.608ed04b0ce0",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.512f8aeca9f6",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.befef6f7da23",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.ffce1e47b4ec",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.9a30feed498f",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.0eedbc15861c",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md",
     "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Funzioni continue e punti di discontinuità.md",
     "file:/home/axpico/Projects/nova-and-friends/README.md",
@@ -291,7 +293,6 @@
     "Politecnico/Analisi 1/Teoria/Derivate.md",
     "Excalidraw/Drawing 2026-11-13 16.48.57.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Diagonalizzazione — Esercizi svolti.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md",
     "Excalidraw/Drawing 2026-11-11 15.31.26.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Autovalori e autospazi — Esercizi svolti.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Autovalori, autovettori, autospazi e molteplicità.md",
@@ -307,7 +308,6 @@
     "Excalidraw/Drawing 2026-11-06 15.02.34.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Similitudine, potenze e interpretazione geometrica del determinante.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni dei determinanti — Binet, inversa, Cramer, Kronecker.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Determinante — definizione, proprietà e sviluppi di Laplace.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Iniettiva suriettiva.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Giro matrice rappresentativa.svg",
