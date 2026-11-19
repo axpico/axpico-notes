@@ -50,7 +50,12 @@ Per ogni autovalore $\lambda_0$: $\;1\le m_g(\lambda_0)\le m_a(\lambda_0)$.
 | 3. $\begin{bmatrix}3&0&-2\\1&1&-1\\1&0&0\end{bmatrix}$ | $(2-\lambda)(1-\lambda)^2$ | $r(A-I)=1$ ⇒ $m_g(1)=2$ | diagonalizzabile |
 | 4. $\begin{bmatrix}3&1&-3\\1&2&-2\\1&1&-1\end{bmatrix}$ | $(2-\lambda)(1-\lambda)^2$ | $r(A-I)=2$ ⇒ $m_g(1)=1$ | **non** diagonalizzabile |
 
-Es. 2 (geometria): una rotazione di $90°$ non lascia fissa nessuna direzione ⇒ nessun autovettore reale.
+Es. 1 (pp. 7–8): $A$ è **triangolare**, quindi i suoi autovalori sono gli elementi sulla diagonale principale ($2,3,-1$): tre autovalori reali distinti, senza calcolare il determinante.
+
+Es. 2 (geometria, pp. 8–10): $A=[L(\underline e_1)\mid L(\underline e_2)]$ è la matrice della rotazione $L$ di $90°$ antioraria rispetto alla base canonica. $L$ è un endomorfismo di uno spazio vettoriale **su $\mathbb R$** e non ha autovettori (nessun vettore del piano mantiene la propria direzione), quindi non esiste una base di autovettori: $L$ non è diagonalizzabile, e dunque nemmeno la sua matrice $A$ lo è su $\mathbb R$. Algebricamente: $p_A(\lambda)=\begin{vmatrix}-\lambda&-1\\1&-\lambda\end{vmatrix}=\lambda^2+1$ ha due radici distinte non reali, per cui $A$ è diagonalizzabile su $\mathbb C$ ma non su $\mathbb R$.
+
+Nei due esempi con autovalore doppio $\lambda=1$ (pp. 10–16) si applica il Teorema 1/1a: l'autovalore semplice $2$ è regolare gratis, e tutto dipende dalla regolarità di $1$ (gli autovalori sono reali, quindi la diagonalizzabilità, se c'è, è anche su $\mathbb R$). Per calcolare $m_g(1)=\dim\ker(A-I)$ basta il **rango**, grazie al teorema rango + nullità (rango + nullità $=$ numero di colonne): $m_g=3-r(A-I)$.
+Es. 4: $A-I=\begin{bmatrix}2&1&-3\\1&1&-2\\1&1&-2\end{bmatrix}$ si riduce a scala in $\begin{bmatrix}1&1&-2\\0&-1&1\\0&0&0\end{bmatrix}$, quindi $r=2$, $m_g(1)=3-2=1\neq2=m_a(1)$: $\lambda=1$ è irregolare e $A$ non è diagonalizzabile né su $\mathbb R$ né su $\mathbb C$.
 Es. 3: in $A-I=\begin{bmatrix}2&0&-2\\1&0&-1\\1&0&-1\end{bmatrix}$ le colonne sono tutte multiple della prima ⇒ rango 1 senza fare Gauss.
 
 ## 3. Come trovare $S$ e $D$ (pp. 17–19, 30–33)
@@ -98,10 +103,14 @@ $$A^k=SD^kS^{-1},\qquad D^k=\mathrm{diag}(\lambda_1^k,\dots,\lambda_n^k)$$
 
 **Fibonacci.** $\begin{bmatrix}F_k\\F_{k-1}\end{bmatrix}=A^{k-1}\begin{bmatrix}1\\0\end{bmatrix}$, $A=\begin{bmatrix}1&1\\1&0\end{bmatrix}$, $p_A=\lambda^2-\lambda-1$:
 $$\lambda_1=\tfrac{1-\sqrt5}2,\quad\lambda_2=\tfrac{1+\sqrt5}2=\varphi .$$
-Autovettori: $\underline v_1=\big(-1,\tfrac{1+\sqrt5}2\big)^T$, $\underline v_2=\big(\tfrac{1+\sqrt5}2,1\big)^T$.
+I due autovalori sono semplici, quindi $A$ è diagonalizzabile e ogni autospazio ha dimensione 1 (basta un vettore per autospazio).
+Autovettori (riduzione a scala di $A-\lambda_jI$, dopo lo scambio $R_1\leftrightarrow R_2$; si usa $\tfrac{\sqrt5-1}2\cdot\tfrac{\sqrt5+1}2=1$ per annullare la seconda riga): per $\lambda_1$ resta $x+\tfrac{\sqrt5-1}2y=0$, e con $y=\tfrac{\sqrt5+1}2$ si ottiene $x=-1$; per $\lambda_2$ resta $x-\tfrac{\sqrt5+1}2y=0$, e con $y=1$ si ottiene $x=\tfrac{\sqrt5+1}2$. Ogni multiplo non nullo va bene:
+$\underline v_1=\big(-1,\tfrac{1+\sqrt5}2\big)^T$, $\underline v_2=\big(\tfrac{1+\sqrt5}2,1\big)^T$.
 $$S=\begin{bmatrix}-1&\lambda_2\\\lambda_2&1\end{bmatrix},\quad S^{-1}=\frac1{\sqrt5}\begin{bmatrix}\lambda_1&1\\1&-\lambda_1\end{bmatrix},\quad A^k=\frac1{\sqrt5}\begin{bmatrix}\lambda_2^{k+1}-\lambda_1^{k+1}&\lambda_2^k-\lambda_1^k\\\lambda_2^k-\lambda_1^k&\lambda_2^{k-1}-\lambda_1^{k-1}\end{bmatrix}$$
 (si usa $\lambda_1\lambda_2=\det A=-1$). Da $F_k=(A^{k-1})_{11}$, la **formula di Binet**:
 $$\boxed{F_k=\frac{\varphi^k-\left(\frac{1-\sqrt5}2\right)^k}{\sqrt5}=\frac{(1+\sqrt5)^k-(1-\sqrt5)^k}{2^k\sqrt5}}$$
+Con $\varphi=\tfrac{1+\sqrt5}2$ e $\lambda_1=-1/\varphi$ (perché $\lambda_1\lambda_2=-1$) la formula si scrive anche
+$$F_k=\frac1{\sqrt5}\Big(\varphi^k+\frac{(-1)^{k+1}}{\varphi^k}\Big).$$
 Siccome $|\lambda_1|<1$, $F_k$ è l'intero più vicino a $\varphi^k/\sqrt5$: $\varphi^{10}/\sqrt5\approx55{,}0036\Rightarrow F_{10}=55$; $\varphi^{15}/\sqrt5\approx609{,}9997\Rightarrow F_{15}=610$.
 
 ## 6. Traccia, determinante e autovalori (pp. 47–49)
@@ -112,7 +121,7 @@ Siccome $|\lambda_1|<1$, $F_k$ è l'intero più vicino a $\varphi^k/\sqrt5$: $\v
 > Se $p_A(\lambda)=(\lambda_1-\lambda)\cdots(\lambda_n-\lambda)$, allora
 > $$\det A=\prod_i\lambda_i,\qquad\operatorname{tr}A=\sum_i\lambda_i .$$
 
-*Dim. (det).* $p_A(0)=\lambda_1\cdots\lambda_n$ e $p_A(0)=\det(A-0I)=\det A$. $\blacksquare$ (Nel PDF anche questo si chiama "Teorema 1": non è il criterio.)
+*Dim. (det).* $p_A(0)=\lambda_1\cdots\lambda_n$ e $p_A(0)=\det(A-0I)=\det A$. $\blacksquare$ (Nel PDF anche questo si chiama "Teorema 1": non è il criterio.) Si dimostra solo la parte sul determinante; quella sulla traccia (coefficiente di $\lambda^{n-1}$) si accetta. Il teorema serve soprattutto a **controllare i calcoli** degli autovalori.
 
 **Caso $2\times2$:** $p_A(\lambda)=\lambda^2-(\operatorname{tr}A)\lambda+\det A$. Esempio $\begin{bmatrix}4&2\\-1&1\end{bmatrix}$: tr $=5$, det $=6$ ⇒ $\lambda=2,3$ a occhio.
 
@@ -135,9 +144,11 @@ $$p_B(\lambda)=\det\big(S^{-1}AS-S^{-1}\lambda IS\big)=\det\big(S^{-1}(A-\lambda
 ## 8. Matrice esponenziale ed EDO lineari (pp. 55–64)
 
 $$e^{A}:=\sum_{k=0}^{\infty}\frac{A^k}{k!},\qquad e^{tA}=\sum_{k=0}^{\infty}\frac{t^k}{k!}A^k,\qquad\frac{d}{dt}e^{tA}=Ae^{tA}.$$
-Il sistema $\underline y'(t)=A\underline y(t)$, $\underline y(0)=\underline y_0$ ha come unica soluzione $\underline y(t)=e^{tA}\underline y_0$.
+(È la serie di Maclaurin di $e^x$ con la matrice $A$ al posto di $x$; $t$ può essere reale o complesso. Gli elementi di $e^{tA}$ sono derivabili in $t$.)
+Il sistema $\underline y'(t)=A\underline y(t)$ (EDO lineare a **coefficienti costanti**: $A$ non dipende da $t$), $\underline y(0)=\underline y_0$ ha come unica soluzione $\underline y(t)=e^{tA}\underline y_0$.
 Se $A=SDS^{-1}$:
 $$e^{tA}=S\,\mathrm{diag}(e^{t\lambda_1},\dots,e^{t\lambda_n})\,S^{-1}.$$
+*Perché.* $(SDS^{-1})^k=SD^kS^{-1}$, quindi $e^{tA}=\sum_k\frac{t^k}{k!}SD^kS^{-1}=S\big[\sum_k\frac{t^k}{k!}D^k\big]S^{-1}$; la somma di matrici diagonali agisce elemento per elemento e $\sum_k\frac{(t\lambda_j)^k}{k!}=e^{t\lambda_j}$.
 
 **Esempio.** $y_1'=y_1-y_2$, $y_2'=4y_1+y_2$, $\underline y(0)=(1,0)$. $A=\begin{bmatrix}1&-1\\4&1\end{bmatrix}$, autovalori $1\pm2i$,
 $$S=\begin{bmatrix}i&-i\\2&2\end{bmatrix},\quad e^{tA}=\begin{bmatrix}e^t\cos2t&-\tfrac12e^t\sin2t\\2e^t\sin2t&e^t\cos2t\end{bmatrix}\Rightarrow\ y_1=e^t\cos2t,\ \ y_2=2e^t\sin2t .$$

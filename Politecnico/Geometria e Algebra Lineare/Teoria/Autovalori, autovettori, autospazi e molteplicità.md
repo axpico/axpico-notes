@@ -57,7 +57,7 @@ Fissata una base $\mathcal B_0$ di $V$, sia $A\in M_{\mathbb K}(n,n)$ la matrice
 
 *Dim.*
 - **(i)⇒(ii).** $\mathcal B$ base in cui $L$ ha matrice $D$; $S$ = matrice di passaggio da $\mathcal B_0$ a $\mathcal B$. Per il teorema del cambio di base $D=S^{-1}AS$; gli elementi di $S$ sono coordinate ⇒ stanno in $\mathbb K$.
-- **(ii)⇒(i).** Le colonne $\underline x_j$ di $S$ sono coordinate (rispetto a $\mathcal B_0$) di vettori $\underline v_j=\sum_i s_{ij}\underline u_i$. $S$ invertibile ⇒ $r(S)=n$ ⇒ colonne indipendenti ⇒ i $\underline v_j$ sono indipendenti ⇒ $\mathcal B=\{\underline v_j\}$ è una base. La matrice di passaggio $\mathcal B_0\to\mathcal B$ è $S$, quindi la matrice di $L$ in $\mathcal B$ è $S^{-1}AS=D$.
+- **(ii)⇒(i).** Le colonne $\underline x_j$ di $S$ sono coordinate (rispetto a $\mathcal B_0=\{\underline u_1,\dots,\underline u_n\}$) di vettori $\underline v_j=\sum_i s_{ij}\underline u_i$. $S$ invertibile ⇒ $r(S)=n$ ⇒ colonne indipendenti ⇒ i $\underline v_j$ sono indipendenti (un sistema finito di vettori in dimensione finita è indipendente se e solo se lo sono i suoi vettori delle coordinate rispetto a una qualsiasi base) ⇒ $\mathcal B=\{\underline v_j\}$, formato da $n=\dim V$ vettori indipendenti, è una base. La matrice di passaggio $\mathcal B_0\to\mathcal B$ è $S$, quindi la matrice di $L$ in $\mathcal B$ è $S^{-1}AS=D$.
 - **(iii).** Da $S^{-1}AS=D$ segue $A=SDS^{-1}$. Poiché $S^{-1}\underline x_j=\underline e_j$ e $D\underline e_j=\lambda_j\underline e_j$:
 $$A\underline x_j=SDS^{-1}\underline x_j=SD\underline e_j=\lambda_jS\underline e_j=\lambda_j\underline x_j.\ \blacksquare$$
 
@@ -87,14 +87,19 @@ $$A\underline x_j=SDS^{-1}\underline x_j=SD\underline e_j=\lambda_jS\underline e
 > [!note] Definizione (autospazio)
 > $V_\lambda:=\ker(A-\lambda I)$ è l'**autospazio** relativo all'autovalore $\lambda$. È un sottospazio (contiene $\underline 0$ e tutti gli autovettori di $\lambda$).
 
-**Condizione col determinante.** $(A-\lambda I)\underline x=\underline 0$ ha soluzioni non banali $\iff r(A-\lambda I)<n\iff$
+**Condizione col determinante.** Per il teorema di Cramer il sistema omogeneo $(A-\lambda I)\underline x=\underline 0$ ha soluzioni non banali $\iff r(A-\lambda I)<n$, e un quadrato di ordine $n$ ha rango $n$ se e solo se il determinante è non nullo. Quindi $(A-\lambda I)\underline x=\underline 0$ ha soluzioni non banali $\iff r(A-\lambda I)<n\iff$
 $$\boxed{\det(A-\lambda I)=0}$$
 
 > [!important] Proposizione 2 + Definizione
 > $p(\lambda):=\det(A-\lambda I)$ è un polinomio di grado $n$, il **polinomio caratteristico** di $A$. Gli autovalori sono le sue radici, e su $\mathbb C$:
 > $$p(\lambda)=(\lambda_1-\lambda)(\lambda_2-\lambda)\cdots(\lambda_n-\lambda).$$
 
-**Matrici triangolari:** $\det(A-\lambda I)=\prod(a_{ii}-\lambda)$ ⇒ gli autovalori sono gli **elementi diagonali**.
+**Matrici triangolari:** $\det(A-\lambda I)=\prod(a_{ii}-\lambda)$ ⇒ gli autovalori sono gli **elementi diagonali** (vale per triangolari alte e basse).
+
+**Esempio A svolto (pp. 34–38).** $A=\begin{bmatrix}2&1&1\\0&3&0\\0&0&-1\end{bmatrix}$ è triangolare alta, quindi $p(\lambda)=(2-\lambda)(3-\lambda)(-1-\lambda)$ e i tre autovalori distinti sono $2,3,-1$. Autospazi (con Gauss su $A-\lambda I$):
+- $\lambda=2$: $A-2I=\begin{bmatrix}0&1&1\\0&1&0\\0&0&-3\end{bmatrix}\to$ $y=z=0$, $x$ libera ⇒ $V_2=\mathrm{span}\{(1,0,0)^T\}$.
+- $\lambda=3$: $A-3I=\begin{bmatrix}-1&1&1\\0&0&0\\0&0&-4\end{bmatrix}$ ⇒ $z=0$, $x=y$ ⇒ $V_3=\mathrm{span}\{(1,1,0)^T\}$.
+- $\lambda=-1$: vedi la tabella al §6 e l'errore segnalato.
 
 ### Procedura (ricetta d'esame)
 1. Calcola $p(\lambda)=\det(A-\lambda I)$ (Laplace sulla riga/colonna con più zeri, oppure operazioni di riga per raccogliere un fattore).
@@ -135,6 +140,11 @@ Quindi i controlli servono solo sugli autovalori **multipli**. (Il criterio di d
 | A: $\begin{bmatrix}2&1&1\\0&3&0\\0&0&-1\end{bmatrix}$ | $(2-\lambda)(3-\lambda)(-1-\lambda)$ | $2,3,-1$ (tutti 1) | $(1,0,0)$; $(1,1,0)$; $(-1,0,3)$ | 1,1,1 |
 | Es.1: $\begin{bmatrix}3&0&-2\\1&1&-1\\1&0&0\end{bmatrix}$ | $(2-\lambda)(1-\lambda)^2$ | $2\,(1)$, $1\,(2)$ | $(2,1,1)$; $\{(0,1,0),(1,0,1)\}$ | 1, **2** → regolari |
 | Es.2: $\begin{bmatrix}3&1&-3\\1&2&-2\\1&1&-1\end{bmatrix}$ | $(2-\lambda)(1-\lambda)^2$ | $2\,(1)$, $1\,(2)$ | $(2,1,1)$; $(1,1,1)$ | 1, **1** → $\lambda=1$ irregolare |
+
+**Come si arriva ai risultati (pp. 38–46).**
+- *Es.1.* $\det(A-\lambda I)$ con Laplace rispetto alla seconda colonna: $(1-\lambda)\begin{vmatrix}3-\lambda&-2\\1&-\lambda\end{vmatrix}=(1-\lambda)(\lambda^2-3\lambda+2)=(1-\lambda)(\lambda-2)(\lambda-1)$. Per $\lambda=2$: $A-2I\to\begin{bmatrix}1&0&-2\\0&-1&1\\0&0&0\end{bmatrix}$, $z$ libera, $x=2z$, $y=z$ ⇒ $(2,1,1)^T$. Per $\lambda=1$: $A-I\to\begin{bmatrix}1&0&-1\\0&0&0\\0&0&0\end{bmatrix}$, una sola equazione $x-z=0$ con $y,z$ libere ⇒ $\dim V_1=2$; scegliendo $(y,z)=(1,0)$ e $(0,1)$ si ottiene la base $\{(0,1,0)^T,(1,0,1)^T\}$ (sono generatori **e** indipendenti, quindi base).
+- *Es.2.* $p(\lambda)$ si calcola con $R_1\to R_1-R_3$, $R_2\to R_2-R_3$, raccogliendo $(2-\lambda)$ e $(1-\lambda)$ e poi Sarrus sul $3\times3$ residuo (che vale $\lambda-1$): $p(\lambda)=(2-\lambda)(1-\lambda)^2$. Per $\lambda=1$: $A-I\to\begin{bmatrix}1&1&-2\\0&-1&1\\0&0&0\end{bmatrix}$, solo $z$ libera, $x=y=z$ ⇒ $V_1=\mathrm{span}\{(1,1,1)^T\}$, di dimensione 1 anche se $m_a=2$.
+- Verifica proposta dal PDF (p. 48–49) per l'Es.1: $A(2,1,1)^T=(6-2,\,2+1-1,\,2)^T=(4,2,2)^T=2(2,1,1)^T$.
 
 Es.1 ed Es.2 hanno **lo stesso** polinomio caratteristico ma comportamento diverso: gli autovalori da soli non bastano, serve $m_g$.
 

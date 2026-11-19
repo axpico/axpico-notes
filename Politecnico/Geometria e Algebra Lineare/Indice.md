@@ -69,6 +69,9 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
     - Esercizi: [[Diagonalizzazione — Esercizi svolti|Diagonalizzazione — Esercizi svolti]] (include esercizi con parametro, potenze, EDO)
     - HTML interattivo: [[Lezione 10 parte 2 — Criterio di diagonalizzabilità.html|Lezione 10 parte 2 (criterio, diagonalizzatore 2×2, Fibonacci, similitudine, e^{tA}, quiz)]]
 
+## 10. Prodotti scalari (Lezione 11)
+30. [[Prodotti scalari, spazi euclidei e basi ortonormali|Prodotti scalari, spazi euclidei e basi ortonormali]] (Pitagora, Carnot, C.S.B., basi ortogonali e ortonormali)
+
 ## Video
 - [[GAL3-1 Nucleo e immagine.mp4|GAL3-1 Nucleo e immagine]]
 - [[GAL3-2 Dipendenza lineare.mp4|GAL3-2 Dipendenza lineare]]
@@ -98,6 +101,7 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 - [[09 parte 3. Similitudine e potenze di una matrice quadrata. Ipervolumi e determinanti.pdf|Lezione 9 (parte 3)]]
 - [[10 parte 1. Diagonalizzazione Ver.2024 Autovettori ed autovalori. Autospazi, molteplicita algebrica e geometrica.pdf|Lezione 10 (parte 1)]]
 - [[10 parte 2. Diagonalizzazione (continuata). Criterio di diagonalibilita. Invarianza del polinomio caratteristico rispetto a similitudine.pdf|Lezione 10 (parte 2)]]
+- [[11 Prodotti scalari. Spazi euclidei. Teoremi di Pitagora e di Carnot. Disuguaglianza di C.S.B. Basi ortogonali ed ortonormali.pdf|Lezione 11]]
 
 ## PDF — Esercizi
 - [[EserciziGAL1.pdf|EserciziGAL1]]
