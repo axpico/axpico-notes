@@ -23,10 +23,14 @@
             "id": "3b35c50a84f3d3b1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Gram-Schmidt, matrici ortogonali e teorema spettrale.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Gram-Schmidt, matrici ortogonali e teorema spettrale"
             }
           }
         ],
@@ -101,7 +105,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.01171875
+    "width": 266.01171875,
+    "collapsed": true
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -266,22 +271,22 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "41c9241263f38e27",
+  "active": "3b35c50a84f3d3b1",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Indice.md",
+    "Politecnico/Geometria e Algebra Lineare/Indice.md.tmp.46219.359c67fd7f0c",
+    "Politecnico/Geometria e Algebra Lineare/Indice.md.tmp.46219.ab8f9f8a1b90",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Gram-Schmidt, matrici ortogonali e teorema spettrale.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Gram-Schmidt, matrici ortogonali e teorema spettrale.md.tmp.46219.7ee4e6f7d4b4",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12 Ortogonalizzazione di Gram-Schmidt. Matrici ortogonali. Matrici simmetriche. Teorema spettrale.pdf",
     "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md",
-    "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.98f98749f63e",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.4a486eb73a52",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.5c8407be428e",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.e7789b4b4b72",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.608ed04b0ce0",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.512f8aeca9f6",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.befef6f7da23",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.ffce1e47b4ec",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.9a30feed498f",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.0eedbc15861c",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md",
     "Politecnico/Analisi 1/Teoria/Funzioni continue e punti di discontinuità.md",
     "file:/home/axpico/Projects/nova-and-friends/README.md",
@@ -303,7 +308,6 @@
     "Excalidraw/Drawing 2026-11-09 08.11.22.excalidraw.md",
     "Excalidraw/Drawing 2026-11-06 15.02.34.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Similitudine, potenze e interpretazione geometrica del determinante.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Applicazioni dei determinanti — Binet, inversa, Cramer, Kronecker.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Iniettiva suriettiva.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Giro matrice rappresentativa.svg",

@@ -72,6 +72,9 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 ## 10. Prodotti scalari (Lezione 11)
 30. [[Prodotti scalari, spazi euclidei e basi ortonormali|Prodotti scalari, spazi euclidei e basi ortonormali]] (Pitagora, Carnot, C.S.B., basi ortogonali e ortonormali)
 
+## 11. Gram-Schmidt e teorema spettrale (Lezione 12)
+31. [[Gram-Schmidt, matrici ortogonali e teorema spettrale|Gram-Schmidt, matrici ortogonali e teorema spettrale]] (proiezione su sottospazi, Gram-Schmidt, matrici ortogonali, diagonalizzazione ortogonale, matrici simmetriche)
+
 ## Video
 - [[GAL3-1 Nucleo e immagine.mp4|GAL3-1 Nucleo e immagine]]
 - [[GAL3-2 Dipendenza lineare.mp4|GAL3-2 Dipendenza lineare]]
@@ -102,6 +105,7 @@ Per ogni tappa: prima la **teoria**, poi gli **esercizi** collegati.
 - [[10 parte 1. Diagonalizzazione Ver.2024 Autovettori ed autovalori. Autospazi, molteplicita algebrica e geometrica.pdf|Lezione 10 (parte 1)]]
 - [[10 parte 2. Diagonalizzazione (continuata). Criterio di diagonalibilita. Invarianza del polinomio caratteristico rispetto a similitudine.pdf|Lezione 10 (parte 2)]]
 - [[11 Prodotti scalari. Spazi euclidei. Teoremi di Pitagora e di Carnot. Disuguaglianza di C.S.B. Basi ortogonali ed ortonormali.pdf|Lezione 11]]
+- [[12 Ortogonalizzazione di Gram-Schmidt. Matrici ortogonali. Matrici simmetriche. Teorema spettrale.pdf|Lezione 12]]
 
 ## PDF — Esercizi
 - [[EserciziGAL1.pdf|EserciziGAL1]]
