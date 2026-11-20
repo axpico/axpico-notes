@@ -20,17 +20,13 @@
             }
           },
           {
-            "id": "2e869d608ca0f958",
+            "id": "3b35c50a84f3d3b1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Prodotti scalari, spazi euclidei e basi ortonormali"
+              "title": "New tab"
             }
           }
         ],
@@ -105,8 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.01171875,
-    "collapsed": true
+    "width": 266.01171875
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -271,8 +266,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "2e869d608ca0f958",
+  "active": "41c9241263f38e27",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12 Ortogonalizzazione di Gram-Schmidt. Matrici ortogonali. Matrici simmetriche. Teorema spettrale.pdf",
+    "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md",
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.98f98749f63e",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.4a486eb73a52",
@@ -284,9 +282,7 @@
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.ffce1e47b4ec",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.9a30feed498f",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.0eedbc15861c",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md",
-    "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md",
     "Politecnico/Analisi 1/Teoria/Funzioni continue e punti di discontinuità.md",
     "file:/home/axpico/Projects/nova-and-friends/README.md",
     "Politecnico/Analisi 1/Indice.md",
