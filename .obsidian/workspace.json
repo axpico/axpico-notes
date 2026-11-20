@@ -32,9 +32,21 @@
               "icon": "lucide-file",
               "title": "Gram-Schmidt, matrici ortogonali e teorema spettrale"
             }
+          },
+          {
+            "id": "48f3580318133ae7",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-11-20 15.01.11.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-11-20 15.01.11.excalidraw"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -271,12 +283,13 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "3b35c50a84f3d3b1",
+  "active": "48f3580318133ae7",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/Teoria/Gram-Schmidt, matrici ortogonali e teorema spettrale.md",
+    "Excalidraw/Drawing 2026-11-20 15.01.11.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md.tmp.46219.359c67fd7f0c",
     "Politecnico/Geometria e Algebra Lineare/Indice.md.tmp.46219.ab8f9f8a1b90",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Gram-Schmidt, matrici ortogonali e teorema spettrale.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Gram-Schmidt, matrici ortogonali e teorema spettrale.md.tmp.46219.7ee4e6f7d4b4",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12 Ortogonalizzazione di Gram-Schmidt. Matrici ortogonali. Matrici simmetriche. Teorema spettrale.pdf",
     "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md",
