@@ -111,12 +111,42 @@ canvas:active{cursor:grabbing}
  h2{font-size:1.45rem}
  .lab,.two{grid-template-columns:1fr}
 }
+
+input[type=range]{width:100%;accent-color:var(--acc);cursor:pointer}
+input[type=range]:disabled{opacity:.35;cursor:default}
+.sl{display:grid;grid-template-columns:4.6em 1fr 3em;gap:10px;align-items:center;margin:2px 0;font-size:.92rem}
+.sl output{text-align:right;font-variant-numeric:tabular-nums;color:var(--mut)}
+.chk{display:flex;gap:8px;align-items:center;margin:8px 0;font-size:.92rem;cursor:pointer}
+.widget{border-top:3px solid var(--acc)}
+.widget>p{margin:.2em 0 14px}
+.widget .out{padding:0;margin-top:6px}
+.out .k{margin-bottom:2px}
+.bars{display:grid;gap:8px;margin-top:4px}
+.bars .b{display:grid;grid-template-columns:7.6em 1fr 3em;gap:8px;align-items:center;font-size:.88rem}
+.bars .b b{text-align:right;font-variant-numeric:tabular-nums}
+.bars .t{height:14px;background:var(--s2);border-radius:7px;overflow:hidden}
+.bars .t i{display:block;height:100%;width:0;border-radius:7px;transition:width .15s,background .3s}
+.phase{display:flex;gap:4px;margin:12px 0 8px}.phase span{flex:1;height:5px;border-radius:3px;background:var(--s2);transition:background .3s}.phase span.on{background:var(--acc)}
+.capbox{min-height:4.5em;font-size:.95rem}
+.prog{height:4px;background:var(--s2);border-radius:4px;margin:14px 0 4px;overflow:hidden}.prog i{display:block;height:100%;width:0;background:var(--ok);transition:width .5s}
+nav button.seen:not(.on) .n{background:var(--ok-s);color:var(--ok)}
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity .5s ease var(--d,0s),transform .5s ease var(--d,0s)}
+.js .rv.vis{opacity:1;transform:none}
+@keyframes swap{from{opacity:0;transform:translateX(16px)}}
+@keyframes pop{40%{transform:scale(1.035)}}
+@keyframes shake{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+@keyframes bump{40%{transform:scale(1.35)}}
+.swap{animation:swap .35s ease}.pop{animation:pop .4s ease}.shake{animation:shake .35s}.bump{display:inline-block;animation:bump .4s ease}
+.path li .n{transition:transform .25s}.path li:hover .n{transform:rotate(-10deg) scale(1.12)}
+.ctrl button{transition:background .15s,border-color .15s,transform .1s}.ctrl button:active{transform:scale(.96)}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.swap,.pop,.shake,.bump{animation:none}}
+@media(max-width:900px){.brand .prog,.brand small{display:none}}
 </style>
 </head>
 <body>
 <div class="app">
 <aside>
-  <div class="brand"><div class="eyebrow">GAL · Lezioni 11–12</div><h1>Misurare i vettori</h1><p>Prodotto scalare, ortogonalità, Gram-Schmidt, teorema spettrale</p></div>
+  <div class="brand"><div class="eyebrow">GAL · Lezioni 11–12</div><h1>Misurare i vettori</h1><p>Prodotto scalare, ortogonalità, Gram-Schmidt, teorema spettrale</p><div class="prog"><i id="progbar"></i></div><small class="dots" id="progtxt"></small></div>
   <nav>
     <button data-s="mappa" class="on"><span class="n">★</span>Mappa</button>
     <div class="grp">Lezione 11</div>
@@ -201,6 +231,12 @@ canvas:active{cursor:grabbing}
      <li>Se non trovi controesempi, scrivi $L(\mathbf x,\mathbf x)$ come somma di quadrati.</li></ul></li>
   </ol></div>
 
+  <div class="card widget"><span class="tag">Prova tu · il "cerchio" di una regola</span>
+  <p>Scegli i coefficienti di $L(\mathbf x,\mathbf y)=a\,x_1y_1+b\,(x_1y_2+x_2y_1)+c\,x_2y_2$, che è già bilineare e simmetrica. La curva <span style="color:var(--acc)"><b>blu</b></span> contiene i vettori "lunghi 1" per questa regola, cioè quelli con $L(\mathbf x,\mathbf x)=1$. Il tratteggio è il cerchio normale. Se la curva è un'<b>ellisse chiusa</b>, la regola è definita positiva. Le direzioni <span style="color:var(--bad)"><b>rosse</b></span> danno $L(\mathbf x,\mathbf x)\le0$: lì non si può misurare.</p>
+  <div class="ctrl" id="fpre"><button data-f="1,0.5,1">PDF: con ½ ✓</button><button data-f="1,3,1">PDF: con 3 ✗</button><button data-f="1,1,1">PDF: semidefinita</button><button data-f="2,0,1">$2x_1y_1+x_2y_2$</button><button data-f="3,1.4,0.5">trappola</button></div>
+  <div class="lab"><canvas id="cvF"></canvas><div>
+    <div class="sl"><label for="fa">$a$</label><input type="range" id="fa" min="-2" max="4" step="0.1" value="1"><output id="fav"></output></div><div class="sl"><label for="fb">$b$</label><input type="range" id="fb" min="-3" max="3" step="0.1" value="0.5"><output id="fbv"></output></div><div class="sl"><label for="fc">$c$</label><input type="range" id="fc" min="-2" max="4" step="0.1" value="1"><output id="fcv"></output></div>
+    <div class="out" id="fout"></div></div></div></div>
   <div class="card"><h3>Gli esempi del PDF</h3>
   <table>
    <tr><th>$L(\mathbf x,\mathbf y)$</th><th>Esito</th><th>Perché</th></tr>
@@ -236,6 +272,17 @@ canvas:active{cursor:grabbing}
   $$\langle\mathbf u+\mathbf v,\mathbf u+\mathbf v\rangle\overset{\text{bilin.}}=\langle\mathbf u,\mathbf u\rangle+\langle\mathbf u,\mathbf v\rangle+\langle\mathbf v,\mathbf u\rangle+\langle\mathbf v,\mathbf v\rangle\overset{\text{simm.}}=\|\mathbf u\|^2+2\langle\mathbf u,\mathbf v\rangle+\|\mathbf v\|^2.$$
   Con la differenza: $\|\mathbf u-\mathbf v\|^2=\|\mathbf u\|^2+\|\mathbf v\|^2-2\langle\mathbf u,\mathbf v\rangle$. Nel piano $\langle\mathbf u,\mathbf v\rangle=ab\cos\alpha$, e ritrovi il teorema del coseno $c^2=a^2+b^2-2ab\cos\alpha$.</details></div>
 
+  <div class="card widget"><span class="tag">Prova tu · Carnot diventa Pitagora</span>
+  <p>Cambia l'angolo tra <span class="cw">$\mathbf u$</span> e <span class="cv">$\mathbf v$</span>. La barra in mezzo è il termine misto $2\langle\mathbf u,\mathbf v\rangle$. È <span style="color:var(--ok)"><b>verde</b></span> se l'angolo è acuto e si aggiunge, <span style="color:var(--bad)"><b>rossa</b></span> se è ottuso e si toglie. A $90^\circ$ sparisce.</p>
+  <div class="lab"><canvas id="cvC"></canvas><div>
+    <div class="sl"><label for="cu">$\|\mathbf u\|$</label><input type="range" id="cu" min="0.5" max="2.7" step="0.1" value="2.5"><output id="cuv"></output></div><div class="sl"><label for="cn">$\|\mathbf v\|$</label><input type="range" id="cn" min="0.5" max="2.7" step="0.1" value="2"><output id="cnv"></output></div><div class="sl"><label for="ct">angolo</label><input type="range" id="ct" min="0" max="180" step="any" value="60"><output id="ctv"></output></div>
+    <div class="ctrl" style="margin:10px 0"><button id="cplay"></button><button id="c90">Metti 90°</button></div>
+    <div class="bars">
+      <div class="b"><span>$\|\mathbf u\|^2+\|\mathbf v\|^2$</span><div class="t"><i id="cb1"></i></div><b id="cbv1"></b></div>
+      <div class="b"><span>$2\langle\mathbf u,\mathbf v\rangle$</span><div class="t"><i id="cb2"></i></div><b id="cbv2"></b></div>
+      <div class="b"><span>$\|\mathbf u+\mathbf v\|^2$</span><div class="t"><i id="cb3"></i></div><b id="cbv3"></b></div>
+    </div>
+    <div id="cmsg" style="margin-top:12px"></div></div></div></div>
   <div class="card thm"><span class="tag">Teorema 2 · Cauchy–Schwarz–Bunjakovskij (C.S.B.)</span>
   $$|\langle\mathbf v,\mathbf w\rangle|\le\|\mathbf v\|\,\|\mathbf w\|,\qquad\text{con uguaglianza}\iff\mathbf v,\mathbf w\text{ linearmente dipendenti (paralleli).}$$
   <b>Perché ci interessa:</b> il rapporto $\frac{\langle\mathbf v,\mathbf w\rangle}{\|\mathbf v\|\|\mathbf w\|}$ sta sempre tra $-1$ e $1$. Quindi si può <b>definire l'angolo</b> in qualsiasi spazio euclideo:
@@ -261,6 +308,7 @@ canvas:active{cursor:grabbing}
     <button data-p="2,2,3,1">L12: G-S $(3,1),(2,2)$</button>
     <button data-p="-2,3,3,2">perpendicolari</button>
     <button data-p="-2,-1,4,2">paralleli</button>
+    <button id="labplay"></button>
   </div>
   <div class="lab">
     <canvas id="cv"></canvas>
@@ -290,6 +338,12 @@ canvas:active{cursor:grabbing}
   $$c_i=\frac{\langle\mathbf v,\mathbf v_i\rangle}{\|\mathbf v_i\|^2}\qquad\text{(se ortonormale: }c_i=\langle\mathbf v,\mathbf v_i\rangle).$$
   La dimostrazione è la stessa del Teorema 3: fai il prodotto scalare di $\mathbf v=\sum c_i\mathbf v_i$ con $\mathbf v_j$.</div>
 
+  <div class="card widget"><span class="tag">Prova tu · coordinate come ombre</span>
+  <p>Trascina <span class="cv">$\mathbf v$</span>, ruota la base e allunga $\mathbf b_1$. Le ombre di $\mathbf v$ sulle due rette, calcolate con $c_i=\frac{\langle\mathbf v,\mathbf b_i\rangle}{\|\mathbf b_i\|^2}$, ricostruiscono $\mathbf v$ esattamente. Poi passa alla base <b>storta</b> e guarda la formula sbagliare.</p>
+  <div class="ctrl" id="kmode"><button data-k="90" class="on">Base ortogonale</button><button data-k="60">Base storta (60°)</button></div>
+  <div class="lab"><canvas id="cvK"></canvas><div>
+    <div class="sl"><label for="kp">rotazione</label><input type="range" id="kp" min="0" max="180" step="1" value="30"><output id="kpv"></output></div><div class="sl"><label for="kl">$\|\mathbf b_1\|$</label><input type="range" id="kl" min="0.5" max="2.5" step="0.1" value="1.5"><output id="klv"></output></div>
+    <div class="out" id="kout"></div></div></div></div>
   <div class="card"><h3>Confronto: $\mathbf v=(3,2)$ nella base $\{(1,1),(1,-1)\}$</h3>
   <div class="two">
    <div><b>Metodo generale</b><br>Risolvi $c_1+c_2=3$, $c_1-c_2=2$.<br>Due equazioni, sostituzioni.</div>
@@ -327,6 +381,14 @@ canvas:active{cursor:grabbing}
   \end{aligned}$$
   Se ti serve ortonormale, alla fine normalizzi: $\mathbf u_i=\mathbf w_i/\|\mathbf w_i\|$.</div>
 
+  <div class="card widget"><span class="tag">Guarda Gram-Schmidt al rallentatore</span>
+  <p>Premi play oppure trascina la barra avanti e indietro. Puoi anche spostare le punte di $\mathbf v_1$ e $\mathbf v_2$ sul disegno.</p>
+  <div class="lab"><canvas id="cvG"></canvas><div>
+    <div class="ctrl" style="margin:0 0 10px"><button id="gplay" class="primary"></button><button id="greset">↺ Da capo</button></div>
+    <input type="range" id="gt" min="0" max="5" step="any" value="0" aria-label="avanzamento">
+    <div class="phase" id="gph"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="capbox" id="gcap"></div>
+    <div class="out" id="gout"></div></div></div></div>
   <div class="card"><h3>Trucchi che salvano l'esame</h3>
   <ul>
    <li>Nelle formule usa sempre i <b>$\mathbf w$</b> già trovati, al denominatore e come direzione. Mai i $\mathbf v$ originali.</li>
@@ -351,6 +413,13 @@ canvas:active{cursor:grabbing}
   L'elemento $(i,j)$ di $Q^TQ$ si ottiene come riga $i$ di $Q^T$ per colonna $j$ di $Q$, cioè colonna $i$ per colonna $j$ di $Q$:
   $$(Q^TQ)_{ij}=\langle\mathbf u_i,\mathbf u_j\rangle=\begin{cases}1&i=j\\0&i\ne j\end{cases}\quad\Longrightarrow\quad Q^TQ=I.$$</div>
 
+  <div class="card widget"><span class="tag">Prova tu · cosa fa una matrice ortogonale</span>
+  <p>La F grigia è l'originale, quella blu è dopo la matrice. Rotazioni e riflessioni (ortogonali) la spostano <b>senza deformarla</b>: il cerchio resta un cerchio. Dilatazione e taglio non sono ortogonali, e la figura si stira.</p>
+  <div class="ctrl" id="omode"><button data-o="rot" class="on">Rotazione</button><button data-o="rif">Riflessione</button><button data-o="sca">Dilatazione</button><button data-o="she">Taglio</button></div>
+  <div class="lab"><canvas id="cvO"></canvas><div>
+    <div class="sl"><label for="ot">angolo</label><input type="range" id="ot" min="0" max="360" step="1" value="60"><output id="otv"></output></div><div class="sl"><label for="om">applica</label><input type="range" id="om" min="0" max="1" step="any" value="1"><output id="omv"></output></div>
+    <div class="ctrl" style="margin:10px 0"><button id="oplay"></button></div>
+    <div class="out" id="oout"></div></div></div></div>
   <div class="card thm"><span class="tag">Proposizione</span><br>
   Sono equivalenti: <b>(1)</b> $Q$ ortogonale; <b>(2)</b> le colonne sono una base ortonormale; <b>(3)</b> le righe sono una base ortonormale.</div>
 
@@ -387,6 +456,15 @@ canvas:active{cursor:grabbing}
   $$\lambda_1\langle\mathbf v,\mathbf w\rangle=\langle A\mathbf v,\mathbf w\rangle\overset{A^T=A}=\langle\mathbf v,A\mathbf w\rangle=\lambda_2\langle\mathbf v,\mathbf w\rangle.$$
   Quindi $(\lambda_1-\lambda_2)\langle\mathbf v,\mathbf w\rangle=0$, e siccome $\lambda_1\ne\lambda_2$ si ha $\langle\mathbf v,\mathbf w\rangle=0$. $\blacksquare$</details></div>
 
+  <div class="card widget"><span class="tag">Prova tu · gli autovettori di una simmetrica</span>
+  <p>La matrice trasforma il cerchio in un'ellisse. Le rette verdi sono gli autospazi: lungo di esse i vettori vengono solo allungati. Se $A$ è simmetrica sono sempre <b>perpendicolari</b> e coincidono con gli assi dell'ellisse. Prova a rompere la simmetria.</p>
+  <div class="lab"><canvas id="cvS"></canvas><div>
+    <div class="sl"><label for="sa">$a_{{11}}$</label><input type="range" id="sa" min="-2" max="3" step="0.1" value="2"><output id="sav"></output></div><div class="sl"><label for="sb">$a_{{12}}$</label><input type="range" id="sb" min="-2" max="2" step="0.1" value="1"><output id="sbv"></output></div><div class="sl"><label for="sc">$a_{{22}}$</label><input type="range" id="sc" min="-2" max="3" step="0.1" value="1"><output id="scv"></output></div>
+    <label class="chk"><input type="checkbox" id="sbreak"> rompi la simmetria ($a_{21}\ne a_{12}$)</label>
+    <div id="sdrow"><div class="sl"><label for="sd">$a_{{21}}$</label><input type="range" id="sd" min="-2" max="2" step="0.1" value="0"><output id="sdv"></output></div></div>
+    <div class="sl"><label for="st">applica</label><input type="range" id="st" min="0" max="1" step="any" value="1"><output id="stv"></output></div>
+    <div class="ctrl" style="margin:10px 0"><button id="splay"></button></div>
+    <div class="out" id="sout"></div></div></div></div>
   <div class="card"><h3>Ricetta: diagonalizzare ortogonalmente</h3>
   <ol class="steps">
    <li><b>Controlla</b> $A^T=A$. Se non vale, la risposta è "non si può" e hai finito.</li>
@@ -439,6 +517,8 @@ canvas:active{cursor:grabbing}
   <h2>Quiz</h2>
   <div class="card score"><span>Punteggio</span><b><span id="score">0</span> / <span id="tot"></span></b></div>
   <div class="card" id="quizbox"></div>
+  <div class="card" id="qend" style="display:none"></div>
+  <div class="ctrl"><button id="qreset">↺ Ricomincia il quiz</button></div>
 </section>
 
 </main>
@@ -450,7 +530,7 @@ const R=el=>window.renderMathInElement&&renderMathInElement(el,{delimiters:[{lef
 const NAV=[...document.querySelectorAll('nav button')],name=id=>NAV.find(b=>b.dataset.s===id).lastChild.textContent;
 const show=id=>{document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===id));
   NAV.forEach(b=>{const on=b.dataset.s===id;b.classList.toggle('on',on);if(on&&innerWidth<=900)b.scrollIntoView({inline:'center',block:'nearest'});});
-  history.replaceState(null,'','#'+id);window.scrollTo({top:0}); if(id==='lab')lab();};
+  history.replaceState(null,'','#'+id);document.dispatchEvent(new CustomEvent('sec',{detail:id}));window.scrollTo({top:0}); if(id==='lab')lab();};
 NAV.forEach(b=>b.onclick=()=>show(b.dataset.s));
 document.querySelectorAll('[data-go]').forEach(t=>{t.onclick=()=>show(t.dataset.go);t.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();show(t.dataset.go);}};});
 // pulsanti precedente/successivo in fondo a ogni sezione
@@ -594,5 +674,220 @@ document.querySelectorAll('.q').forEach(div=>{const q=Q[div.dataset.i];div.query
 
 window.addEventListener('load',()=>{R(document.body);draw();lab();const h=location.hash.slice(1);if(h&&document.getElementById(h)&&NAV.some(x=>x.dataset.s===h))show(h);});
 </script>
+<script>
+// =============== INTERATTIVITÀ E ANIMAZIONI ===============
+(()=>{
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const ease=x=>x<=0?0:x>=1?1:x*x*(3-2*x),lerp=(a,b,t)=>a+(b-a)*t;
+const add=(a,b)=>[a[0]+b[0],a[1]+b[1]],sc=(k,a)=>[k*a[0],k*a[1]],sub2=(a,b)=>[a[0]-b[0],a[1]-b[1]];
+const V=a=>`(${fmt(a[0])},\\,${fmt(a[1])})`,sv=id=>+$(id).value,deg=x=>x*Math.PI/180;
+const circle=(r=1)=>Array.from({length:97},(_,i)=>[r*Math.cos(i*Math.PI/48),r*Math.sin(i*Math.PI/48)]);
+const ap=(M,p)=>[M[0][0]*p[0]+M[0][1]*p[1],M[1][0]*p[0]+M[1][1]*p[1]];
+const Mx=m=>`\\begin{bmatrix}${fmt(m[0][0])}&${fmt(m[0][1])}\\\\${fmt(m[1][0])}&${fmt(m[1][1])}\\end{bmatrix}`;
+const row=(k,h)=>`<div class="row"><span class="k">${k}</span>${h}</div>`;
+const put=(id,html)=>{const e=$(id);if(e.dataset.h===html)return;e.dataset.h=html;e.innerHTML=html;R(e);}; // ri-renderizza KaTeX solo se cambia
+
+// ---- piano cartesiano riutilizzabile (logico 440px, disegnato a 2x) ----
+function plane(id,range,center=[0,0]){
+  const cv=$(id),g=cv.getContext('2d'),W=440,H=440,S=W/(2*range);cv.width=cv.height=880;g.scale(2,2);
+  const px=p=>[W/2+(p[0]-center[0])*S,H/2-(p[1]-center[1])*S];
+  const P={cv,g,S,px,
+    wd(e){const b=cv.getBoundingClientRect(),x=(e.clientX-b.left)*W/b.width,y=(e.clientY-b.top)*H/b.height;return[(x-W/2)/S+center[0],(H/2-y)/S+center[1]];},
+    clear(){g.clearRect(0,0,W,H);g.lineWidth=1;g.strokeStyle=C('--grid');g.beginPath();
+      for(let k=Math.ceil(center[0]-range);k<=center[0]+range;k++){const[x]=px([k,0]);g.moveTo(x,0);g.lineTo(x,H);}
+      for(let k=Math.ceil(center[1]-range);k<=center[1]+range;k++){const[,y]=px([0,k]);g.moveTo(0,y);g.lineTo(W,y);}
+      g.stroke();const[ox,oy]=px([0,0]);g.strokeStyle=C('--axis');g.lineWidth=1.5;g.beginPath();g.moveTo(0,oy);g.lineTo(W,oy);g.moveTo(ox,0);g.lineTo(ox,H);g.stroke();},
+    st(col,o){g.globalAlpha=o.alpha??1;g.strokeStyle=g.fillStyle=col;g.lineWidth=o.w??3;g.lineCap=g.lineJoin='round';g.setLineDash(o.dash||[]);},
+    end(){g.globalAlpha=1;g.setLineDash([]);},
+    seg(a,b,col,o={}){P.st(col,o);g.beginPath();g.moveTo(...px(a));g.lineTo(...px(b));g.stroke();P.end();},
+    arrow(p,col,o={}){const f=o.from||[0,0],[x0,y0]=px(f),[x,y]=px(add(f,p));P.st(col,o);g.beginPath();g.moveTo(x0,y0);g.lineTo(x,y);g.stroke();g.setLineDash([]);
+      if(Math.hypot(x-x0,y-y0)>4){const an=Math.atan2(y-y0,x-x0);g.beginPath();g.moveTo(x,y);g.lineTo(x-12*Math.cos(an-.4),y-12*Math.sin(an-.4));g.lineTo(x-12*Math.cos(an+.4),y-12*Math.sin(an+.4));g.fill();}
+      if(o.label){g.font='600 15px system-ui';g.fillText(o.label,x+8,y-8);}P.end();},
+    line(d,col,o={}){const n=Math.hypot(...d)||1,u=[d[0]/n*99,d[1]/n*99];P.seg(sc(-1,u),u,col,{w:2,dash:[4,6],alpha:.5,...o});},
+    dot(p,col,r=5){g.fillStyle=col;g.beginPath();g.arc(...px(p),r,0,7);g.fill();},
+    text(s,p,col,dx=8,dy=-8){g.font='600 14px system-ui';g.fillStyle=col;const[x,y]=px(p);g.fillText(s,x+dx,y+dy);},
+    path(pts,col,o={}){P.st(col,o);g.beginPath();pts.forEach((p,i)=>i?g.lineTo(...px(p)):g.moveTo(...px(p)));if(o.close)g.closePath();
+      if(o.fill){g.globalAlpha=o.fa??.15;g.fill();g.globalAlpha=o.alpha??1;}g.stroke();P.end();},
+    rightAngle(at,d1,d2,col){const s=12/S,n=d=>sc(s/(Math.hypot(...d)||1),d),a=n(d1),b=n(d2);P.path([add(at,a),add(add(at,a),b),add(at,b)],col,{w:1.3});}
+  };return P;}
+
+// trascinamento della punta più vicina
+function draggable(P,pts,onMove,lim=5,snap=0.5){let k=null;
+  P.cv.addEventListener('pointerdown',e=>{const p=P.wd(e),o=pts();let best=1.3;k=null;
+    for(const n in o){const d=Math.hypot(o[n][0]-p[0],o[n][1]-p[1]);if(d<best){best=d;k=n;}}if(k)P.cv.setPointerCapture(e.pointerId);});
+  P.cv.addEventListener('pointermove',e=>{if(!k)return;onMove(k,P.wd(e).map(c=>Math.max(-lim,Math.min(lim,Math.round(c/snap)*snap))));});
+  P.cv.addEventListener('pointerup',()=>k=null);}
+
+// pulsante play/pausa con requestAnimationFrame
+function player(btn,step,label=['▶ Anima','⏸ Pausa'],onStart){let on=false,last=0;
+  const stop=()=>{on=false;btn.textContent=label[0];btn.classList.remove('on');};
+  const tick=ts=>{if(!on)return;const dt=last?Math.min(ts-last,50)/1000:0;last=ts;if(step(dt)===false)return stop();requestAnimationFrame(tick);};
+  btn.textContent=label[0];btn.onclick=()=>{if(on)return stop();on=true;last=0;btn.textContent=label[1];btn.classList.add('on');onStart&&onStart();requestAnimationFrame(tick);};
+  return{stop};}
+const morph=(btn,id,draw,speed=.6)=>player(btn,dt=>{const t=Math.min(1,sv(id)+dt*speed);$(id).value=t;draw();if(t>=1)return false;},undefined,()=>{if(sv(id)>=1)$(id).value=0;});
+const bind=(ids,f)=>ids.forEach(i=>$(i).addEventListener('input',f));
+
+// ---- A · il "cerchio" di una forma bilineare ----
+const PF=plane('cvF',3);
+function wForm(){const a=sv('fa'),b=sv('fb'),c=sv('fc');['fa','fb','fc'].forEach(k=>$(k+'v').textContent=fmt(sv(k)));
+  const q=t=>a*Math.cos(t)**2+2*b*Math.cos(t)*Math.sin(t)+c*Math.sin(t)**2;PF.clear();
+  for(let i=0;i<180;i+=1.5){const t=deg(i);if(q(t)<=1e-9){const d=[Math.cos(t),Math.sin(t)];PF.seg(sc(-9,d),sc(9,d),C('--bad'),{w:2.5,alpha:.2});}}
+  PF.path(circle(),C('--mut'),{w:1.5,dash:[4,5],alpha:.7});
+  const g=PF.g;g.strokeStyle=C('--acc');g.lineWidth=3;g.beginPath();let pen=false;
+  for(let i=0;i<=720;i++){const t=i*Math.PI/360,v=q(t);if(v>1e-4&&1/Math.sqrt(v)<6){const r=1/Math.sqrt(v),[x,y]=PF.px([r*Math.cos(t),r*Math.sin(t)]);pen?g.lineTo(x,y):g.moveTo(x,y);pen=true;}else pen=false;}
+  g.stroke();
+  const tests=[[[1,0],a],[[0,1],c],[[1,1],a+2*b+c],[[1,-1],a-2*b+c]],pd=a>0&&a*c-b*b>0,allPass=tests.every(t=>t[1]>0);
+  const lmin=(a+c)/2-Math.sqrt(((a-c)/2)**2+b*b);let w=Math.abs(b)>1e-9?[b,lmin-a]:(a<=c?[1,0]:[0,1]);w=sc(1/Math.max(Math.abs(w[0]),Math.abs(w[1])),w);
+  if(!pd){PF.arrow(w,C('--bad'),{label:'x'});PF.arrow(sc(-1,w),C('--bad'),{alpha:.35});}
+  const sg=x=>x<0?'-':'+';
+  put('fout',row('La regola',`$L(\\mathbf x,\\mathbf y)=${fmt(a)}\\,x_1y_1${sg(b)}${fmt(Math.abs(b))}(x_1y_2+x_2y_1)${sg(c)}${fmt(Math.abs(c))}\\,x_2y_2$`)+
+    row('I 4 vettori di prova',tests.map(([x,v])=>`$L(${V(x)},${V(x)})=${fmt(v)}$ <span class="pill ${v>0?'p-ok':'p-bad'}">${v>0?'&gt; 0':'≤ 0'}</span>`).join('<br>'))+
+    (pd?row('Verdetto','<span class="pill p-ok">È un prodotto scalare</span> I vettori "lunghi 1" formano un\'ellisse chiusa.')
+       :row('Verdetto',`<span class="pill p-bad">Non è un prodotto scalare</span> Controesempio: $\\mathbf x=${V(w)}$ dà $L(\\mathbf x,\\mathbf x)=${fmt(lmin*(w[0]**2+w[1]**2))}\\le0$.`+
+         (allPass?'<br><b>Trappola:</b> i 4 vettori di prova passano tutti, eppure la regola non è definita positiva. Servono a trovare controesempi, non a dimostrare che va bene.':''))));}
+bind(['fa','fb','fc'],wForm);
+document.querySelectorAll('#fpre button').forEach(b=>b.onclick=()=>{const m=b.dataset.f.split(',');['fa','fb','fc'].forEach((k,i)=>$(k).value=m[i]);wForm();});
+
+// ---- B · Carnot e Pitagora ----
+const PC=plane('cvC',4.2,[1.5,1.2]);
+const bar=(id,v,mx,col)=>{const e=$(id);e.style.width=Math.min(100,v/mx*100)+'%';e.style.background=col;};
+function wCarnot(){const nu=sv('cu'),nv=sv('cn'),th=deg(sv('ct'));$('cuv').textContent=fmt(nu);$('cnv').textContent=fmt(nv);$('ctv').textContent=Math.round(sv('ct'))+'°';
+  const u=[nu,0],v=[nv*Math.cos(th),nv*Math.sin(th)],s=add(u,v),uv=dot(u,v),zero=Math.abs(uv)<0.02;PC.clear();
+  PC.path([[0,0],u,s,v],C('--mut'),{w:1,dash:[3,5],alpha:.6,close:true});
+  const col=zero?C('--warn'):uv>0?C('--ok'):C('--bad'),g=PC.g,[ox,oy]=PC.px([0,0]);
+  g.fillStyle=g.strokeStyle=col;g.globalAlpha=.22;g.beginPath();g.moveTo(ox,oy);g.arc(ox,oy,36,-th,0);g.closePath();g.fill();g.globalAlpha=1;g.lineWidth=2;g.beginPath();g.arc(ox,oy,36,-th,0);g.stroke();
+  if(zero)PC.rightAngle([0,0],u,v,C('--txt'));
+  PC.arrow(s,C('--txt'),{label:'u+v',w:2.5});PC.arrow(u,C('--cw'),{label:'u'});PC.arrow(v,C('--cv'),{label:'v'});
+  const A=nu*nu+nv*nv,M=2*uv,T=dot(s,s),mx=(nu+nv)**2;
+  bar('cb1',A,mx,C('--acc'));bar('cb2',Math.abs(M),mx,M>=0?C('--ok'):C('--bad'));bar('cb3',T,mx,C('--txt'));
+  $('cbv1').textContent=fmt(A);$('cbv2').textContent=(zero?'':M>0?'+':'−')+fmt(zero?0:Math.abs(M));$('cbv3').textContent=fmt(T);
+  $('cmsg').innerHTML=zero?'<span class="pill p-w">90°: il termine misto è 0, resta Pitagora</span>':uv>0?'<span class="pill p-ok">angolo acuto: il termine misto allunga la somma</span>':'<span class="pill p-bad">angolo ottuso: il termine misto accorcia la somma</span>';}
+bind(['cu','cn','ct'],wCarnot);
+let cdir=1;const cpl=player($('cplay'),dt=>{let t=sv('ct')+cdir*50*dt;if(t>=180){t=180;cdir=-1;}if(t<=0){t=0;cdir=1;}$('ct').value=t;wCarnot();},['▶ Anima l\'angolo','⏸ Pausa']);
+$('c90').onclick=()=>{cpl.stop();$('ct').value=90;wCarnot();};
+
+// ---- Lab: fai girare v ----
+const lpl=player($('labplay'),dt=>{const r=Math.hypot(...P.v)||3,a=Math.atan2(P.v[1],P.v[0])+dt*.8;P.v=[r*Math.cos(a),r*Math.sin(a)];lab();},['▶ Fai girare v','⏸ Ferma']);
+$('cv').addEventListener('pointerdown',()=>lpl.stop());
+
+// ---- D · coordinate come ombre ----
+const PK=plane('cvK',5),K={v:[3,2],ang:90};
+function wCoord(){const ph=deg(sv('kp')),l1=sv('kl');$('kpv').textContent=Math.round(sv('kp'))+'°';$('klv').textContent=fmt(l1);
+  const a2=ph+deg(K.ang),b1=[l1*Math.cos(ph),l1*Math.sin(ph)],b2=[Math.cos(a2),Math.sin(a2)],v=K.v;
+  const f1=dot(v,b1)/dot(b1,b1),f2=dot(v,b2)/dot(b2,b2),rec=add(sc(f1,b1),sc(f2,b2)),ok=Math.hypot(...sub2(rec,v))<1e-6;
+  PK.clear();PK.line(b1,C('--cw'));PK.line(b2,C('--acc'));
+  PK.seg(v,sc(f1,b1),C('--mut'),{w:1.3,dash:[3,4]});PK.seg(v,sc(f2,b2),C('--mut'),{w:1.3,dash:[3,4]});
+  PK.path([[0,0],sc(f1,b1),rec,sc(f2,b2)],ok?C('--ok'):C('--bad'),{w:1.5,close:true,fill:true,fa:.1});
+  PK.arrow(sc(f1,b1),C('--cw'),{alpha:.4,w:6});PK.arrow(sc(f2,b2),C('--acc'),{alpha:.4,w:6});
+  PK.arrow(b1,C('--cw'),{label:'b₁'});PK.arrow(b2,C('--acc'),{label:'b₂'});PK.arrow(v,C('--cv'),{label:'v'});
+  if(!ok){PK.dot(rec,C('--bad'),6);PK.text('formula',rec,C('--bad'),8,18);}
+  const det=b1[0]*b2[1]-b1[1]*b2[0],t1=(v[0]*b2[1]-v[1]*b2[0])/det,t2=(b1[0]*v[1]-b1[1]*v[0])/det;
+  put('kout',row('Formula delle ombre',`$c_1=\\dfrac{\\langle\\mathbf v,\\mathbf b_1\\rangle}{\\|\\mathbf b_1\\|^2}=\\dfrac{${fmt(dot(v,b1))}}{${fmt(dot(b1,b1))}}=${fmt(f1)}$<br>$c_2=\\dfrac{\\langle\\mathbf v,\\mathbf b_2\\rangle}{\\|\\mathbf b_2\\|^2}=\\dfrac{${fmt(dot(v,b2))}}{${fmt(dot(b2,b2))}}=${fmt(f2)}$`)+
+    row('Ricostruzione',`$c_1\\mathbf b_1+c_2\\mathbf b_2=${V(rec)}$ `+(ok?'<span class="pill p-ok">= v ✓</span>':'<span class="pill p-bad">≠ v ✗</span>'))+
+    (ok?'':row('Coordinate vere (con il sistema)',`$(${fmt(t1)},\\ ${fmt(t2)})$. Con una base storta le ombre si sovrappongono: la formula non vale.`)));}
+bind(['kp','kl'],wCoord);draggable(PK,()=>({v:K.v}),(k,p)=>{K.v=p;wCoord();});
+document.querySelectorAll('#kmode button').forEach(b=>b.onclick=()=>{K.ang=+b.dataset.k;document.querySelectorAll('#kmode button').forEach(x=>x.classList.toggle('on',x===b));wCoord();});
+
+// ---- E · Gram-Schmidt al rallentatore ----
+const PG=plane('cvG',4.5,[1,1]),G={v1:[3,1],v2:[2,2]};
+const GCAP=['<b>Passo 1.</b> Il primo vettore resta com\'è: $\\mathbf w_1=\\mathbf v_1$.',
+ '<b>Passo 2.</b> Calcolo l\'<b>ombra</b> di $\\mathbf v_2$ sulla retta di $\\mathbf w_1$: $\\frac{\\langle\\mathbf v_2,\\mathbf w_1\\rangle}{\\|\\mathbf w_1\\|^2}\\mathbf w_1$.',
+ '<b>Passo 3.</b> Il <b>resto</b>, dall\'ombra alla punta di $\\mathbf v_2$, è perpendicolare a $\\mathbf w_1$.',
+ '<b>Passo 4.</b> Riporto il resto nell\'origine: è $\\mathbf w_2=\\mathbf v_2-\\text{ombra}$.',
+ '<b>Passo 5 (se serve ortonormale).</b> Divido ciascuno per la sua lunghezza: finiscono sul cerchio di raggio 1.'];
+function wGS(){const t=sv('gt'),v1=G.v1,v2=G.v2,n1=dot(v1,v1);PG.clear();
+  if(n1<1e-9){PG.arrow(v2,C('--cv'),{label:'v₂'});put('gout',row('Attenzione','$\\mathbf v_1=\\mathbf 0$: spostalo.'));return;}
+  const k=dot(v2,v1)/n1,v0=sc(k,v1),r=sub2(v2,v0),nr=Math.hypot(...r),ph=Math.min(4,Math.floor(t)),e=x=>ease(t-x),z=e(4);
+  const s1=lerp(1,1/Math.sqrt(n1),z),s2=nr>1e-9?lerp(1,1/nr,z):1;
+  PG.line(v1,C('--cw'),{alpha:.3});
+  if(z>0)PG.path(circle(),C('--mut'),{w:1.3,dash:[4,5],alpha:z*.8});
+  PG.arrow(v2,C('--cv'),{label:'v₂',alpha:1-.75*e(3)});
+  if(t>1){const sh=sc(e(1),v0);PG.arrow(sh,C('--txt'),{w:2,alpha:.85*(1-z)});PG.dot(sh,C('--txt'),4.5);if(e(1)>.9&&z<.5)PG.text('ombra',v0,C('--txt'),8,18);}
+  if(t>2&&z<1){PG.seg(v0,add(v0,sc(e(2),r)),C('--cg'),{w:3,alpha:(1-z)*(1-.6*e(3))});if(e(2)>.95&&t<3.3&&nr>.2)PG.rightAngle(v0,v1,r,C('--txt'));}
+  if(t>3)PG.arrow(sc(s2,r),C('--cg'),{from:sc(1-e(3),v0),label:z>.5?'u₂':'w₂'});
+  PG.arrow(sc(s1,v1),C('--cw'),{label:t<1?'v₁':z>.5?'u₁':'w₁'});
+  if(t>=3.95&&nr>.2)PG.rightAngle([0,0],v1,r,C('--txt'));
+  [...$('gph').children].forEach((s,i)=>s.classList.toggle('on',i<=ph));
+  if($('gcap').dataset.ph!=ph){$('gcap').dataset.ph=ph;$('gcap').innerHTML=GCAP[ph];R($('gcap'));anim($('gcap'),'swap');}
+  put('gout',row('Il conto',`$\\mathbf w_2=${V(v2)}-\\dfrac{${fmt(dot(v2,v1))}}{${fmt(n1)}}${V(v1)}=${V(r)}$`)+
+    row('Controllo',nr<1e-9?'<span class="pill p-bad">$\\mathbf w_2=\\mathbf 0$</span> $\\mathbf v_2$ è parallelo a $\\mathbf v_1$: va scartato.':`$\\langle\\mathbf w_1,\\mathbf w_2\\rangle=${fmt(dot(v1,r))}$ <span class="pill p-ok">perpendicolari ✓</span>`));}
+bind(['gt'],()=>{gpl.stop();wGS();});
+const gpl=player($('gplay'),dt=>{const t=Math.min(5,sv('gt')+dt*.75);$('gt').value=t;wGS();if(t>=5)return false;},['▶ Play','⏸ Pausa'],()=>{if(sv('gt')>=5)$('gt').value=0;});
+$('greset').onclick=()=>{gpl.stop();$('gt').value=0;wGS();};
+draggable(PG,()=>({v1:G.v1,v2:G.v2}),(k,p)=>{G[k]=p;wGS();},3.5);
+
+// ---- F · matrici ortogonali ----
+const PO=plane('cvO',2.6),OM={m:'rot'};
+const FSH=[[0,0],[0,1.2],[.8,1.2],[.8,1],[.25,1],[.25,.7],[.6,.7],[.6,.5],[.25,.5],[.25,0]];
+const rotM=a=>[[Math.cos(a),-Math.sin(a)],[Math.sin(a),Math.cos(a)]];
+function wOrto(){const t=sv('om'),th=deg(sv('ot'));$('otv').textContent=Math.round(sv('ot'))+'°';$('omv').textContent=Math.round(t*100)+'%';
+  $('ot').disabled=OM.m==='sca'||OM.m==='she';
+  const c=Math.cos(th),s=Math.sin(th),Q={rot:rotM(th),rif:[[c,s],[s,-c]],sca:[[1.8,0],[0,1]],she:[[1,1],[0,1]]}[OM.m];
+  const Mt=OM.m==='rot'?rotM(th*t):[[lerp(1,Q[0][0],t),lerp(0,Q[0][1],t)],[lerp(0,Q[1][0],t),lerp(1,Q[1][1],t)]];
+  PO.clear();PO.path(circle(),C('--mut'),{w:1.2,dash:[4,5],alpha:.7});
+  PO.path(FSH,C('--mut'),{w:1.5,close:true,fill:true,fa:.12,alpha:.55});
+  if(OM.m==='rif')PO.line([Math.cos(th/2),Math.sin(th/2)],C('--warn'),{alpha:.7});
+  PO.path(circle().map(p=>ap(Mt,p)),C('--acc'),{w:2,alpha:.8});
+  PO.path(FSH.map(p=>ap(Mt,p)),C('--acc'),{w:2.5,close:true,fill:true,fa:.22});
+  PO.arrow(ap(Mt,[1,0]),C('--cw'),{label:'Qe₁'});PO.arrow(ap(Mt,[0,1]),C('--cg'),{label:'Qe₂'});
+  const q1=[Q[0][0],Q[1][0]],q2=[Q[0][1],Q[1][1]],n1=Math.hypot(...q1),n2=Math.hypot(...q2),p=dot(q1,q2),ok=Math.abs(n1-1)<1e-9&&Math.abs(n2-1)<1e-9&&Math.abs(p)<1e-9,det=Q[0][0]*Q[1][1]-Q[0][1]*Q[1][0];
+  put('oout',row('La matrice',`$Q=${Mx(Q)}$`)+row('Le colonne',`$\\|\\mathbf q_1\\|=${fmt(n1)}$, $\\|\\mathbf q_2\\|=${fmt(n2)}$, $\\langle\\mathbf q_1,\\mathbf q_2\\rangle=${fmt(p)}$`)+
+    row('Controllo',`$Q^TQ=${Mx([[n1*n1,p],[p,n2*n2]])}$ `+(ok?'<span class="pill p-ok">= I: ortogonale</span>':'<span class="pill p-bad">≠ I: non ortogonale</span>')+`<br>$\\det Q=${fmt(det)}$`+(ok?(det>0?' · rotazione':' · riflessione: la F si specchia'):' · la figura si deforma')));}
+bind(['ot','om'],wOrto);const opl=morph($('oplay'),'om',wOrto);
+document.querySelectorAll('#omode button').forEach(b=>b.onclick=()=>{OM.m=b.dataset.o;document.querySelectorAll('#omode button').forEach(x=>x.classList.toggle('on',x===b));$('om').value=0;opl.stop();$('oplay').click();});
+
+// ---- G · teorema spettrale ----
+const PS=plane('cvS',3.6);
+function eig2(a,b,c,d){if(Math.abs(b)<1e-9&&Math.abs(c)<1e-9)return[{l:a,v:[1,0]},{l:d,v:[0,1]}];
+  const tr=a+d,disc=tr*tr/4-(a*d-b*c);if(disc<-1e-12)return null;const s=Math.sqrt(Math.max(0,disc));
+  return[tr/2+s,tr/2-s].map(l=>{const v=Math.abs(b)>1e-9?[b,l-a]:[l-d,c],n=Math.hypot(...v);return{l,v:[v[0]/n,v[1]/n]};});}
+function wSpet(){const br=$('sbreak').checked,a=sv('sa'),b=sv('sb'),c=sv('sc'),d=br?sv('sd'):b,t=sv('st');
+  ['sa','sb','sc','sd'].forEach(k=>$(k+'v').textContent=fmt(sv(k)));$('stv').textContent=Math.round(t*100)+'%';$('sdrow').style.display=br?'':'none';
+  const A=[[a,b],[d,c]],Mt=[[lerp(1,a,t),lerp(0,b,t)],[lerp(0,d,t),lerp(1,c,t)]],E=eig2(a,b,d,c),sym=Math.abs(b-d)<1e-9;
+  PS.clear();if(E)E.forEach(e=>PS.line(e.v,C('--ok'),{alpha:.75}));
+  PS.path(circle(),C('--mut'),{w:1.2,dash:[4,5],alpha:.7});
+  for(let i=0;i<16;i++){const p=[Math.cos(i*Math.PI/8),Math.sin(i*Math.PI/8)],q=ap(Mt,p);PS.seg(p,q,C('--mut'),{w:1,alpha:.3});PS.dot(q,C('--acc'),2.8);}
+  PS.path(circle().map(p=>ap(Mt,p)),C('--acc'),{w:2.5});
+  if(E)E.forEach((e,i)=>{PS.arrow(e.v,C('--txt'),{w:2,alpha:.45});PS.arrow(ap(Mt,e.v),C('--ok'),{label:i?'Au₂':'Au₁'});});
+  let h=row('La matrice',`$A=${Mx(A)}$ `+(sym?'<span class="pill p-ok">simmetrica</span>':'<span class="pill p-bad">non simmetrica</span>'));
+  if(!E)h+=row('Autovalori','<span class="pill p-w">nessuno reale</span> Nessuna retta resta ferma: ogni vettore viene anche ruotato. A una simmetrica non succede mai.');
+  else{const an=Math.acos(Math.min(1,Math.abs(dot(E[0].v,E[1].v))))*180/Math.PI,perp=Math.abs(an-90)<.05;
+    h+=row('Autovalori e autovettori',`$\\lambda_1=${fmt(E[0].l)}$, $\\mathbf u_1=${V(E[0].v)}$<br>$\\lambda_2=${fmt(E[1].l)}$, $\\mathbf u_2=${V(E[1].v)}$`)+
+      row('Angolo tra gli autospazi',`$\\approx${fmt(Math.round(an*10)/10)}^\\circ$ `+(perp?'<span class="pill p-ok">perpendicolari</span>':'<span class="pill p-bad">non perpendicolari</span>'));
+    if(sym)h+=row('Teorema spettrale',`$Q=${Mx([[E[0].v[0],E[1].v[0]],[E[0].v[1],E[1].v[1]]])}$, $\\ D=${Mx([[E[0].l,0],[0,E[1].l]])}$<br>Gli autospazi sono gli assi dell'ellisse.`);}
+  put('sout',h);}
+bind(['sa','sb','sc','sd','st','sbreak'],wSpet);const spl=morph($('splay'),'st',wSpet);
+
+// ---- globale: comparsa allo scroll, progressi, transizioni ----
+const anim=(el,c)=>{el.classList.remove(c);void el.offsetWidth;el.classList.add(c);};
+window.anim=anim;
+document.documentElement.classList.add('js');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target);
+  e.target.addEventListener('transitionend',()=>e.target.classList.remove('rv','vis','d'),{once:true});}}),{threshold:.08});
+document.querySelectorAll('main section').forEach(s=>[...s.querySelectorAll(':scope>.card,:scope>.chain>span,.path li,:scope>.grp-t')].forEach((el,i)=>{
+  if(RM)return;el.classList.add('rv');el.style.setProperty('--d',Math.min(i,8)*55+'ms');io.observe(el);}));
+let seen=new Set();try{seen=new Set(JSON.parse(localStorage.getItem('gal1112')||'[]'));}catch(e){}
+const mark=id=>{seen.add(id);try{localStorage.setItem('gal1112',JSON.stringify([...seen]));}catch(e){}
+  NAV.forEach(b=>b.classList.toggle('seen',seen.has(b.dataset.s)));const n=NAV.filter(b=>seen.has(b.dataset.s)).length;
+  $('progbar').style.width=n/NAV.length*100+'%';$('progtxt').textContent=`${n} di ${NAV.length} sezioni viste`;};
+document.addEventListener('sec',e=>{mark(e.detail);if(e.detail!=='lab')lpl.stop();});
+mark(document.querySelector('section.on').id);
+// esempi: transizione e frecce da tastiera
+const baseDraw=draw;draw=function(){baseDraw();anim($('exscr'),'swap');anim($('excap'),'swap');};
+document.addEventListener('keydown',e=>{if(!$('es').classList.contains('on')||e.target.tagName==='INPUT')return;
+  if(e.key==='ArrowRight'&&!$('next').disabled)$('next').click();if(e.key==='ArrowLeft'&&!$('prev').disabled)$('prev').click();});
+// quiz: feedback animato e messaggio finale
+document.querySelectorAll('.q').forEach(div=>div.querySelectorAll('.opts button').forEach(b=>b.addEventListener('click',()=>{
+  if(div.dataset.anim)return;div.dataset.anim=1;anim(b,b.classList.contains('right')?'pop':'shake');anim($('score'),'bump');
+  const done=document.querySelectorAll('.q[data-done]').length,tot=document.querySelectorAll('.q').length;
+  if(done===tot){const sc_=+$('score').textContent,m=$('qend');m.innerHTML=sc_===tot?'<span class="pill p-ok">Perfetto!</span> Hai capito le due lezioni.':sc_>=tot*.7?'<span class="pill p-ok">Bene</span> Ripassa le domande sbagliate.':'<span class="pill p-w">Da ripassare</span> Riguarda il Lab e gli esempi passo-passo.';m.style.display='block';anim(m,'pop');}})));
+$('qreset').onclick=()=>location.reload();
+
+const ALL=[wForm,wCarnot,wCoord,wGS,wOrto,wSpet];
+window.addEventListener('load',()=>{ALL.forEach(f=>f());if(!RM)setTimeout(()=>$('oplay').click(),0);});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>ALL.forEach(f=>f()));
+})();
+</script>
+
 </body>
 </html>
