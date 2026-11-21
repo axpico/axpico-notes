@@ -73,7 +73,7 @@ $$f(x)=\begin{cases}x\log|x| & x\in[-1,1]\setminus\{0\}\\ 0 & x=0\end{cases}$$
 left=-1.2; right=1.2;
 top=0.6; bottom=-0.6;
 ---
-y=x\ln(|x|)
+y=x\ln(\operatorname{abs}(x))
 (-0.3679,0.3679)|label:max
 (0.3679,-0.3679)|label:min
 ```

@@ -48,9 +48,9 @@ $$\lim_{h\to0^+}\frac{\sqrt[3]{h}}h=\lim_{h\to0^+}\frac1{h^{2/3}}=+\infty,\qquad
 left=-3; right=3;
 top=2.5; bottom=-2;
 ---
-y=|x|
+y=\operatorname{abs}(x)
 y=\sqrt[3]{x}
-y=\sqrt[3]{|x|}
+y=\sqrt[3]{\operatorname{abs}(x)}
 ```
 
 ### d) Altri casi (misti / limite inesistente)

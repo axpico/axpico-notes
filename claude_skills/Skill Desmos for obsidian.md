@@ -98,7 +98,8 @@ Tutti i grafici hanno la classe `.desmos-graph`, utile per snippet CSS custom (e
 2. Se servono bound custom (utile per grafici fisici — es. moto in un intervallo di tempo specifico), aggiungi la sezione impostazioni con `---`.
 3. Per fisica, imposta `degreeMode=radians` esplicitamente solo se l'utente lavora in gradi (`degrees`) — di default è già radianti, coerente con le formule fisiche standard.
 4. Se il grafico contiene più curve da confrontare (es. posizione vs velocità vs accelerazione), mettile come equazioni separate nello stesso blocco, una per riga.
-5. Verifica che il plugin sia installato (community plugin "Desmos" di Nigecat) prima di assumere che il rendering funzioni — se l'utente lamenta che il blocco non si renderizza, il problema è quasi sempre plugin non installato/non abilitato, non sintassi.
+5. **Mai usare `|` nelle equazioni**: è il separatore dei flag (`|label:`, `|hidden`), quindi `|x|` dà "A piecewise expression must have at least one condition". Per il valore assoluto usa `\operatorname{abs}(x)`.
+6. Verifica che il plugin sia installato (community plugin "Desmos" di Nigecat) prima di assumere che il rendering funzioni — se l'utente lamenta che il blocco non si renderizza, il problema è quasi sempre plugin non installato/non abilitato, non sintassi.
 
 ## Fonte
 
