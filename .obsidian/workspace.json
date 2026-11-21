@@ -23,12 +23,14 @@
             "id": "48f3580318133ae7",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-11-20 15.01.11.excalidraw.md"
+                "file": "Politecnico/Analisi 1/Teoria/Punti di non derivabilità, massimi e minimi relativi.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-11-20 15.01.11.excalidraw"
+              "icon": "lucide-file",
+              "title": "Punti di non derivabilità, massimi e minimi relativi"
             }
           }
         ],
@@ -267,13 +269,19 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "41c9241263f38e27",
+  "active": "48f3580318133ae7",
   "lastOpenFiles": [
+    "Politecnico/Analisi 1/Indice.md",
+    "Excalidraw/Drawing 2026-11-20 15.01.11.excalidraw.md",
+    "Politecnico/Analisi 1/Esercizi/Derivate — Esercizi.md",
+    "Politecnico/Analisi 1/Esercizi/Derivate — Esercizi.md.tmp.97807.2d5f70b9c4a8",
+    "Politecnico/Analisi 1/Teoria/sedD2LNOF",
+    "Politecnico/Analisi 1/Teoria/Teoremi di Rolle e Lagrange, monotonia.md",
+    "Politecnico/Analisi 1/Teoria/Teoremi di Rolle e Lagrange, monotonia.md.tmp.97807.0b2c14dd4498",
     "Politecnico/Analisi 1/Teoria/Punti di non derivabilità, massimi e minimi relativi.md",
     "Politecnico/Analisi 1/Teoria/Punti di non derivabilità, massimi e minimi relativi.md.tmp.97807.87acc7e8df50",
     "Politecnico/Analisi 1/PDF lezioni/Lezione 17 (16 novembre) AM1 2026-27.pdf",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Gram-Schmidt, matrici ortogonali e teorema spettrale.md",
-    "Excalidraw/Drawing 2026-11-20 15.01.11.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md.tmp.46219.359c67fd7f0c",
     "Politecnico/Geometria e Algebra Lineare/Indice.md.tmp.46219.ab8f9f8a1b90",
@@ -282,13 +290,9 @@
     "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.98f98749f63e",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.4a486eb73a52",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.5c8407be428e",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.e7789b4b4b72",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md",
     "Politecnico/Analisi 1/Teoria/Funzioni continue e punti di discontinuità.md",
     "file:/home/axpico/Projects/nova-and-friends/README.md",
-    "Politecnico/Analisi 1/Indice.md",
     "Politecnico/Analisi 1/Teoria/Derivate.md",
     "Excalidraw/Drawing 2026-11-13 16.48.57.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Diagonalizzazione — Esercizi svolti.md",
@@ -303,8 +307,6 @@
     "Formulario/Cinematica/Moto Rettilineo Uniformemente Accelerato (MRUA).md",
     "Formulario/Cinematica/Moto Rettilineo Uniforme (MRU).md",
     "Formulario/Cinematica/Moto Circolare Uniforme (MCU).md",
-    "Excalidraw/Drawing 2026-11-09 08.11.22.excalidraw.md",
-    "Excalidraw/Drawing 2026-11-06 15.02.34.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Iniettiva suriettiva.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Giro matrice rappresentativa.svg",

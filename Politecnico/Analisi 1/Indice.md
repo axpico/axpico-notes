@@ -44,6 +44,11 @@ Formulario (asintotici, limiti notevoli): [[Formulario AM1 - asintotici.pdf|Form
 ## 6. Calcolo differenziale
 14. [[Derivate|Derivate]] (11/11: definizione, significato geometrico, differenziabilità, regole, composta, inversa)
     - Dimostrazioni: [[5.1 Derivabile ⟹ continua (★)|5.1]] · [[5.2 Derivate di alcune funzioni elementari (★★)|5.2]] · [[5.3 Differenziabilità ⟺ derivabilità (★)|5.3]] · [[5.4 Algebra delle derivate - prodotto e quoziente (★★)|5.4]]
+15. [[Punti di non derivabilità, massimi e minimi relativi|Punti di non derivabilità, massimi e minimi relativi]] (Lezione 17, 16/11: angolosi, flessi a tg verticale, cuspidi, funzione derivata, Fermat)
+    - Dimostrazioni: [[5.5 Teorema di Fermat (★)|5.5]]
+16. [[Teoremi di Rolle e Lagrange, monotonia|Teoremi di Rolle e Lagrange, monotonia]] (18/11: max/min su [a,b], Rolle, Lagrange, test di monotonia, punti critici, limite della derivata)
+    - Esercizi: [[Derivate — Esercizi|Derivate — Esercizi]] (esercitazione 20/11)
+    - Dimostrazioni: [[5.6 Teorema di Rolle (★)|5.6]] · [[5.7 Teorema di Lagrange (★)|5.7]] · [[5.8 Test di monotonia e funzioni costanti (★)|5.8]] · [[5.9 Natura dei punti stazionari (★★)|5.9]] · [[5.10 Limite della derivata e derivabilità (★★)|5.10]]
 
 ## HTML
 - [[1 - Successioni.html|1 - Successioni]]
@@ -54,6 +59,7 @@ Formulario (asintotici, limiti notevoli): [[Formulario AM1 - asintotici.pdf|Form
 ## PDF — Lezioni
 - [[Lezione 12 (26 ottobre) AM1 2026-27.pdf|Lezione 12 (26 ottobre)]]
 - [[Lezione 13 (4 novembre) AM1 2026-27.pdf|Lezione 13 (4 novembre)]]
+- [[Lezione 17 (16 novembre) AM1 2026-27.pdf|Lezione 17 (16 novembre)]]
 
 ## Repository
 - [PoliNetwork info1y — Analisi I (GitLab)](https://gitlab.com/polinetwork/info1y/-/tree/main/ANALISI%20I?ref_type=heads) — appunti, esercizi ed esami condivisi

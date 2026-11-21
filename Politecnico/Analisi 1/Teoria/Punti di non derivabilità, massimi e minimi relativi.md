@@ -79,7 +79,7 @@ Quindi $f$ è derivabile su tutto $\mathbb R$ con $f'(x)=\begin{cases}2x\sin\fra
 > [!warning] Oss.
 > $\lim_{x\to0}f'(x)=\lim_{x\to0}\left(2x\sin\frac1x-\cos\frac1x\right)$ **non esiste**, anche se $f'(0)=0$ esiste. Quindi in generale
 > $$\lim_{x\to x_0}f'(x)\ne f'(x_0)$$
-> ($f'$ può non essere continua). Il viceversa parziale è il [[Teoremi di Rolle e Lagrange, monotonia#6. Limite della derivata|teorema del limite della derivata]].
+> ($f'$ può non essere continua). Il viceversa parziale è il [[Teoremi di Rolle e Lagrange, monotonia#7. Limite della derivata|teorema del limite della derivata]].
 
 ## 3. Massimi e minimi relativi
 
