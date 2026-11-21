@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lezioni 11–12 — Prodotti scalari, Gram-Schmidt, teorema spettrale</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+:root{--bg:#f6f5f1;--s1:#fff;--s2:#f1efe9;--line:#e3e0d7;--txt:#1b1f2a;--mut:#656c7b;
+--acc:#3b55d9;--acc-s:rgba(59,85,217,.09);--ok:#13805a;--ok-s:rgba(19,128,90,.1);--warn:#a86400;--warn-s:rgba(168,100,0,.1);
+--bad:#c4304a;--bad-s:rgba(196,48,74,.09);--vio:#7048c8;--vio-s:rgba(112,72,200,.07);
+--cv:#3b55d9;--cw:#d9730d;--cg:#13805a;--grid:#e6e3da;--axis:#c3beb1;--r:12px;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1017;--s1:#151a24;--s2:#1c2230;--line:#273044;--txt:#e7eaf1;--mut:#8f98ad;
+--acc:#8fa3ff;--acc-s:rgba(143,163,255,.12);--ok:#5bd3a2;--ok-s:rgba(91,211,162,.12);--warn:#f3b45c;--warn-s:rgba(243,180,92,.12);
+--bad:#ff7d8e;--bad-s:rgba(255,125,142,.12);--vio:#c2a5ff;--vio-s:rgba(194,165,255,.07);
+--cv:#8fa3ff;--cw:#f3a35c;--cg:#5bd3a2;--grid:#1f2636;--axis:#3a4460;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:16.5px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--acc)}
+.app{display:grid;grid-template-columns:276px minmax(0,1fr);min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow-y:auto;background:var(--s1);border-right:1px solid var(--line);padding:26px 14px}
+.brand{padding:0 10px 18px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.7rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--acc)}
+.brand h1{font-size:1.2rem;line-height:1.25;letter-spacing:-.01em;margin:6px 0}
+.brand p{margin:0;color:var(--mut);font-size:.85rem;line-height:1.45}
+nav{display:flex;flex-direction:column;gap:2px}
+nav .grp{font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--mut);padding:16px 10px 6px}
+nav button{all:unset;display:flex;gap:10px;align-items:center;padding:7px 10px;border-radius:8px;cursor:pointer;font-size:.93rem}
+nav button .n{flex:none;width:22px;height:22px;border-radius:6px;display:grid;place-items:center;font-size:.72rem;font-weight:700;background:var(--s2);color:var(--mut)}
+nav button:hover{background:var(--s2)}
+nav button.on{background:var(--acc-s);color:var(--acc);font-weight:600}
+nav button.on .n{background:var(--acc);color:var(--s1)}
+nav button:focus-visible,.path li:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+main{width:100%;max-width:820px;margin:0 auto;padding:44px 32px 80px}
+section{display:none}section.on{display:block;animation:in .25s ease}
+@keyframes in{from{opacity:0;transform:translateY(6px)}}
+@media(prefers-reduced-motion:reduce){section.on{animation:none}}
+h2{font-size:1.8rem;line-height:1.2;letter-spacing:-.02em;margin:4px 0 22px}
+h3{font-size:1rem;margin:0 0 10px}
+.card{background:var(--s1);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;margin:0 0 14px;overflow-x:auto}
+.def,.thm,.warn,.bug,.easy{border-left-width:4px}
+.def{border-left-color:var(--acc)}.thm{border-left-color:var(--ok)}.warn{border-left-color:var(--warn)}.bug{border-left-color:var(--bad)}
+.easy{border-left-color:var(--vio);background:linear-gradient(var(--vio-s),var(--vio-s)),var(--s1)}
+.tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--mut);margin-bottom:4px}
+.def .tag{color:var(--acc)}.thm .tag{color:var(--ok)}.warn .tag{color:var(--warn)}.bug .tag{color:var(--bad)}.easy .tag{color:var(--vio)}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+ul,ol{padding-left:1.3em}li{margin:5px 0}
+ol.steps li::marker{color:var(--acc);font-weight:700}
+details{margin-top:12px;border:1px solid var(--line);border-radius:10px;background:var(--s2);padding:0 14px}
+details[open]{padding-bottom:12px}
+summary{cursor:pointer;font-weight:600;padding:10px 14px;margin:0 -14px;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--mut);font-weight:400}details[open] summary::after{content:"−"}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+td,th{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{color:var(--mut);font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.07em}
+.pill{display:inline-block;padding:1px 9px;border-radius:999px;font-size:.8rem;font-weight:600;white-space:nowrap}
+.p-ok{background:var(--ok-s);color:var(--ok)}.p-bad{background:var(--bad-s);color:var(--bad)}.p-w{background:var(--warn-s);color:var(--warn)}
+.cv{color:var(--cv);font-weight:600}.cw{color:var(--cw);font-weight:600}.cg{color:var(--cg);font-weight:600}
+.ctrl{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 14px}
+.ctrl button{font:inherit;font-size:.88rem;font-weight:600;border:1px solid var(--line);background:var(--s1);color:var(--txt);border-radius:8px;padding:7px 13px;cursor:pointer}
+.ctrl button:hover{border-color:var(--acc)}
+.ctrl button:disabled{opacity:.35;cursor:default;border-color:var(--line)}
+.ctrl button.on,.ctrl button.primary{background:var(--acc);border-color:var(--acc);color:var(--s1)}
+.dots{color:var(--mut);font-size:.85rem;font-variant-numeric:tabular-nums}
+.chain{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 26px}
+.chain>span{background:var(--s1);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:.9rem}
+.chain>i{color:var(--mut);font-style:normal}
+.grp-t{font-size:.7rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--mut);margin:24px 0 8px}
+.path{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.path li{display:flex;gap:14px;align-items:center;margin:0;background:var(--s1);border:1px solid var(--line);border-radius:10px;padding:12px 16px;cursor:pointer;transition:border-color .15s,transform .15s}
+.path li:hover{border-color:var(--acc);transform:translateX(3px)}
+.path .n{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:.85rem;background:var(--acc-s);color:var(--acc)}
+.path b{display:block}.path small{color:var(--mut);font-size:.88rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.two>div{background:var(--s2);border-radius:10px;padding:12px 14px}
+.lab{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}
+canvas{width:100%;aspect-ratio:1;display:block;background:var(--s1);border:1px solid var(--line);border-radius:var(--r);touch-action:none;cursor:grab}
+canvas:active{cursor:grabbing}
+.out{margin:0;padding:6px 18px;font-size:.94rem}
+.out .row{padding:10px 0;border-bottom:1px solid var(--line)}.out .row:last-child{border:0}
+.out .k{display:block;font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--mut)}
+.screen{min-height:210px;display:flex;flex-direction:column;justify-content:center;text-align:center;background:var(--s2);border-radius:10px;padding:16px;overflow-x:auto}
+.cap{color:var(--mut);margin:12px 0 14px;text-align:center;min-height:3.2em}
+.bar{height:4px;background:var(--s2);border-radius:4px;overflow:hidden;margin:0 0 14px}
+.bar i{display:block;height:100%;width:0;background:var(--acc);transition:width .25s}
+.score{position:sticky;top:12px;z-index:2;display:flex;justify-content:space-between;align-items:center}
+.score b{font-size:1.2rem;font-variant-numeric:tabular-nums}
+.q{padding:16px 0;border-bottom:1px solid var(--line)}.q:first-child{padding-top:0}.q:last-child{border:0;padding-bottom:0}
+.q .opts{display:grid;gap:6px;margin-top:10px}
+.q .opts button{text-align:left;font:inherit;font-size:.95rem;background:var(--s2);color:var(--txt);border:1px solid transparent;border-radius:8px;padding:9px 12px;cursor:pointer}
+.q .opts button:hover{border-color:var(--line)}
+.q .opts button.right{border-color:var(--ok);background:var(--ok-s)}
+.q .opts button.wrong{border-color:var(--bad);background:var(--bad-s)}
+.q .why{display:none;color:var(--mut);margin-top:8px;font-size:.92rem}
+.pager{display:flex;gap:12px;margin-top:32px;padding-top:20px;border-top:1px solid var(--line)}
+.pager button{all:unset;cursor:pointer;flex:1;max-width:50%;border:1px solid var(--line);border-radius:10px;padding:10px 14px;background:var(--s1);font-weight:600}
+.pager button small{display:block;color:var(--mut);font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.pager .nx{text-align:right;margin-left:auto}
+.pager button:hover{border-color:var(--acc)}
+@media(max-width:900px){
+ .app{grid-template-columns:1fr;grid-template-rows:auto 1fr}
+ aside{z-index:10;height:auto;padding:8px 10px;border-right:0;border-bottom:1px solid var(--line)}
+ .brand,nav .grp{display:none}
+ nav{flex-direction:row;overflow-x:auto;gap:4px;scrollbar-width:none}
+ nav button{white-space:nowrap;flex:none}
+ main{padding:26px 16px 60px}
+ h2{font-size:1.45rem}
+ .lab,.two{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="app">
+<aside>
+  <div class="brand"><div class="eyebrow">GAL · Lezioni 11–12</div><h1>Misurare i vettori</h1><p>Prodotto scalare, ortogonalità, Gram-Schmidt, teorema spettrale</p></div>
+  <nav>
+    <button data-s="mappa" class="on"><span class="n">★</span>Mappa</button>
+    <div class="grp">Lezione 11</div>
+    <button data-s="ps"><span class="n">1</span>Prodotto scalare</button>
+    <button data-s="norma"><span class="n">2</span>Lunghezze e angoli</button>
+    <button data-s="lab"><span class="n">↗</span>Lab: l'ombra</button>
+    <button data-s="basi"><span class="n">3</span>Basi ortogonali</button>
+    <div class="grp">Lezione 12</div>
+    <button data-s="gs"><span class="n">4</span>Gram-Schmidt</button>
+    <button data-s="orto"><span class="n">5</span>Matrici ortogonali</button>
+    <button data-s="spet"><span class="n">6</span>Teorema spettrale</button>
+    <button data-s="es"><span class="n">7</span>Esempi passo-passo</button>
+    <div class="grp">Ripasso</div>
+    <button data-s="err"><span class="n">!</span>Errori tipici</button>
+    <button data-s="quiz"><span class="n">✓</span>Quiz</button>
+  </nav>
+</aside>
+
+<main>
+
+<!-- ===================== MAPPA ===================== -->
+<section id="mappa" class="on">
+  <h2>Mappa delle due lezioni</h2>
+  <div class="card easy"><span class="tag">La storia in 30 secondi</span><br>
+  Fino alla lezione 10 i vettori sapevano solo <b>sommarsi</b> e <b>moltiplicarsi per un numero</b>. Non si poteva dire quanto è lungo un vettore, né se due vettori sono perpendicolari.<br><br>
+  <b>Lezione 11</b> aggiunge un attrezzo per misurare: il <b>prodotto scalare</b>. Prende due vettori e dà un numero. Da quel numero si ricavano lunghezze, angoli e perpendicolarità. Il risultato più utile: in una base di vettori <b>perpendicolari</b> le coordinate si trovano senza risolvere sistemi.<br><br>
+  <b>Lezione 12</b> risponde a due domande. Come trasformo una base qualsiasi in una base di vettori perpendicolari? Con <b>Gram-Schmidt</b>. Quando riesco a diagonalizzare una matrice usando autovettori perpendicolari? Esattamente quando la matrice è <b>simmetrica</b>. Questo è il <b>teorema spettrale</b>.</div>
+
+  <div class="chain"><span>prodotto scalare</span><i>→</i><span>lunghezza</span><i>→</i><span>angolo</span><i>→</i><span>perpendicolare</span><i>→</i><span>ombra (proiezione)</span><i>→</i><span>Gram-Schmidt</span><i>→</i><span>$Q^TAQ=D$</span></div>
+
+  <div class="grp-t">Lezione 11 · misurare</div>
+  <ol class="path">
+    <li data-go="ps" tabindex="0"><span class="n">1</span><div><b>Prodotto scalare</b><small>cos'è e come riconoscerlo con 3 controlli</small></div></li>
+    <li data-go="norma" tabindex="0"><span class="n">2</span><div><b>Lunghezze e angoli</b><small>norma, Carnot, Pitagora, Cauchy–Schwarz</small></div></li>
+    <li data-go="lab" tabindex="0"><span class="n">↗</span><div><b>Lab: l'ombra di un vettore</b><small>trascina i vettori e guarda la proiezione</small></div></li>
+    <li data-go="basi" tabindex="0"><span class="n">3</span><div><b>Basi ortogonali</b><small>coordinate con un solo prodotto scalare</small></div></li>
+  </ol>
+  <div class="grp-t">Lezione 12 · raddrizzare e diagonalizzare</div>
+  <ol class="path">
+    <li data-go="gs" tabindex="0"><span class="n">4</span><div><b>Gram-Schmidt</b><small>"togli le ombre" e raddrizzi la base</small></div></li>
+    <li data-go="orto" tabindex="0"><span class="n">5</span><div><b>Matrici ortogonali</b><small>l'inversa è la trasposta</small></div></li>
+    <li data-go="spet" tabindex="0"><span class="n">6</span><div><b>Teorema spettrale</b><small>simmetrica ⇔ base ortonormale di autovettori</small></div></li>
+    <li data-go="es" tabindex="0"><span class="n">7</span><div><b>Esempi passo-passo</b><small>tutti gli esempi dei PDF, uno step alla volta</small></div></li>
+  </ol>
+
+  <div class="card" style="margin-top:26px"><h3>Se hai poco tempo, impara queste 6 righe</h3>
+  <table>
+   <tr><td>Lunghezza</td><td>$\|\mathbf v\|=\sqrt{\langle\mathbf v,\mathbf v\rangle}$</td></tr>
+   <tr><td>Perpendicolari</td><td>$\langle\mathbf u,\mathbf v\rangle=0$</td></tr>
+   <tr><td>Ombra di $\mathbf v$ su $\mathbf w$</td><td>$\dfrac{\langle\mathbf v,\mathbf w\rangle}{\|\mathbf w\|^2}\,\mathbf w$</td></tr>
+   <tr><td>Coordinate in base ortogonale</td><td>$c_i=\dfrac{\langle\mathbf v,\mathbf v_i\rangle}{\|\mathbf v_i\|^2}$</td></tr>
+   <tr><td>Gram-Schmidt</td><td>$\mathbf w_{k}=\mathbf v_{k}-(\text{ombre di }\mathbf v_k\text{ su }\mathbf w_1,\dots,\mathbf w_{k-1})$</td></tr>
+   <tr><td>Teorema spettrale</td><td>$A^T=A\iff A=QDQ^T$ con $Q$ ortogonale</td></tr>
+  </table></div>
+</section>
+
+<!-- ===================== 1 PRODOTTO SCALARE ===================== -->
+<section id="ps">
+  <h2>1 · Il prodotto scalare</h2>
+  <div class="card easy"><span class="tag">In parole povere</span><br>
+  Conosci già quello del liceo: $\langle(x_1,x_2),(y_1,y_2)\rangle=x_1y_1+x_2y_2$. Moltiplichi componente per componente e sommi.<br>
+  Esempio: $\langle(3,4),(3,4)\rangle=9+16=25$, e $\sqrt{25}=5$ è la lunghezza di $(3,4)$. Invece $\langle(1,0),(0,1)\rangle=0$: i due vettori sono perpendicolari.<br><br>
+  La lezione generalizza: un "prodotto scalare" è <b>qualsiasi regola</b> che prende due vettori, dà un numero e si comporta come quello del liceo. Quindi bisogna saper riconoscere quando una regola si comporta così.</div>
+
+  <div class="card def"><span class="tag">Definizione (forma bilineare)</span><br>
+  $L:V\times V\to\mathbb R$ è <b>bilineare</b> se è lineare in ciascun argomento quando tieni fermo l'altro:
+  $$L(\alpha\mathbf u+\beta\mathbf u',\mathbf v)=\alpha L(\mathbf u,\mathbf v)+\beta L(\mathbf u',\mathbf v),\quad\text{e lo stesso nel 2° posto.}$$
+  È la proprietà distributiva $(a+b)c=ac+bc$, scritta per vettori.</div>
+
+  <div class="card def"><span class="tag">Definizione (prodotto scalare, spazio euclideo)</span><br>
+  Un <b>prodotto scalare</b> su $V$ è una forma bilineare che è anche
+  <ol><li><b>simmetrica</b>: $\langle\mathbf u,\mathbf v\rangle=\langle\mathbf v,\mathbf u\rangle$;</li>
+  <li><b>definita positiva</b>: $\langle\mathbf v,\mathbf v\rangle\ge0$, e vale $0$ <b>solo</b> per $\mathbf v=\mathbf 0$.</li></ol>
+  Uno <b>spazio euclideo</b> è uno spazio vettoriale con un prodotto scalare scelto. In pratica è uno spazio dove si può misurare.</div>
+
+  <div class="card"><h3>La ricetta per l'esame: "$L$ è un prodotto scalare?"</h3>
+  <ol class="steps">
+   <li><b>Bilineare?</b> Ogni termine deve contenere <b>esattamente una</b> $x_i$ e <b>una</b> $y_j$ (tipo $x_1y_2$). Se trovi $x_1^2$, $x_1+y_1$ o una costante, la risposta è no.</li>
+   <li><b>Simmetrica?</b> Scambia ogni $x$ con la $y$ corrispondente. Se la formula resta uguale, la risposta è sì.</li>
+   <li><b>Definita positiva?</b> Metti $\mathbf y=\mathbf x$ e guarda $L(\mathbf x,\mathbf x)$.
+     <ul><li>Prova $(1,0),(0,1),(1,1),(1,-1)$. Se uno di questi dà un valore $\le0$, non è un prodotto scalare.</li>
+     <li>Se non trovi controesempi, scrivi $L(\mathbf x,\mathbf x)$ come somma di quadrati.</li></ul></li>
+  </ol></div>
+
+  <div class="card"><h3>Gli esempi del PDF</h3>
+  <table>
+   <tr><th>$L(\mathbf x,\mathbf y)$</th><th>Esito</th><th>Perché</th></tr>
+   <tr><td>$x_1y_2-x_2y_1$ (det)</td><td><span class="pill p-bad">no</span></td><td>bilineare ma <b>antisimmetrica</b>: $L(\mathbf x,\mathbf y)=-L(\mathbf y,\mathbf x)$</td></tr>
+   <tr><td>$x_1y_1+x_2y_2$</td><td><span class="pill p-ok">sì</span></td><td>lo standard: $L(\mathbf x,\mathbf x)=x_1^2+x_2^2$</td></tr>
+   <tr><td>$x_1y_1+x_2y_2+\tfrac12(x_1y_2+x_2y_1)$</td><td><span class="pill p-ok">sì</span></td><td>$L(\mathbf x,\mathbf x)=x_1^2+x_1x_2+x_2^2=x_1^2(t^2+t+1)$ con $t=x_2/x_1$, e $\Delta<0$, quindi è sempre $>0$</td></tr>
+   <tr><td>$x_1y_1+x_2y_2+3(x_1y_2+x_2y_1)$</td><td><span class="pill p-bad">no</span></td><td>$L\big((1,-1),(1,-1)\big)=1+1-6=-4<0$</td></tr>
+   <tr><td>$x_1y_1+x_2y_2+(x_1y_2+x_2y_1)$</td><td><span class="pill p-bad">no</span></td><td>$L(\mathbf x,\mathbf x)=(x_1+x_2)^2\ge0$, ma vale $0$ in $(1,-1)\ne\mathbf 0$. È solo <b>semi</b>definita</td></tr>
+  </table></div>
+
+  <div class="card"><h3>Non solo $\mathbb R^n$</h3>
+  Anche le funzioni hanno un prodotto scalare: $\langle f,g\rangle=\int_a^b f(x)g(x)\,dx$ sullo spazio $L^2[a,b]$, che ha dimensione infinita. Ogni sottospazio di uno spazio euclideo è euclideo, ad esempio i polinomi $P_n$ con lo stesso integrale.
+  <div class="dots">Su $\mathbb C$ esistono gli spazi hermitiani, ma nel corso non si fanno.</div></div>
+</section>
+
+<!-- ===================== 2 NORMA ===================== -->
+<section id="norma">
+  <h2>2 · Lunghezze, angoli e i tre teoremi</h2>
+  <div class="card def"><span class="tag">Norma e distanza</span><br>
+  $$\|\mathbf v\|=\sqrt{\langle\mathbf v,\mathbf v\rangle}\qquad\mathrm{dist}(\mathbf u,\mathbf v)=\|\mathbf v-\mathbf u\|$$
+  Esempio: $\|(1,2,2)\|=\sqrt{1+4+4}=3$.<br>
+  Proprietà: $\|\mathbf v\|=0\iff\mathbf v=\mathbf 0$; $\ \|\alpha\mathbf v\|=|\alpha|\,\|\mathbf v\|$, cioè il numero esce in <b>valore assoluto</b>; $\ \|\mathbf u+\mathbf v\|\le\|\mathbf u\|+\|\mathbf v\|$.</div>
+
+  <div class="card def"><span class="tag">Ortogonalità</span><br>
+  $\mathbf u\perp\mathbf v$ se $\langle\mathbf u,\mathbf v\rangle=0$. Il vettore nullo è ortogonale a tutto.<br>
+  Il <b>segno</b> del prodotto scalare dice com'è l'angolo: <span class="pill p-ok">$>0$ acuto</span> <span class="pill p-w">$=0$ retto</span> <span class="pill p-bad">$<0$ ottuso</span></div>
+
+  <div class="card thm"><span class="tag">Teorema 1 · Carnot e Pitagora</span>
+  $$\|\mathbf u+\mathbf v\|^2=\|\mathbf u\|^2+\|\mathbf v\|^2+2\langle\mathbf u,\mathbf v\rangle\qquad\text{(Carnot)}$$
+  Se $\mathbf u\perp\mathbf v$ il termine misto sparisce: $\|\mathbf u+\mathbf v\|^2=\|\mathbf u\|^2+\|\mathbf v\|^2$ (Pitagora).
+  <details><summary>Dimostrazione (da sapere)</summary>
+  È il quadrato di un binomio, $(a+b)^2=a^2+2ab+b^2$, fatto con i vettori:
+  $$\langle\mathbf u+\mathbf v,\mathbf u+\mathbf v\rangle\overset{\text{bilin.}}=\langle\mathbf u,\mathbf u\rangle+\langle\mathbf u,\mathbf v\rangle+\langle\mathbf v,\mathbf u\rangle+\langle\mathbf v,\mathbf v\rangle\overset{\text{simm.}}=\|\mathbf u\|^2+2\langle\mathbf u,\mathbf v\rangle+\|\mathbf v\|^2.$$
+  Con la differenza: $\|\mathbf u-\mathbf v\|^2=\|\mathbf u\|^2+\|\mathbf v\|^2-2\langle\mathbf u,\mathbf v\rangle$. Nel piano $\langle\mathbf u,\mathbf v\rangle=ab\cos\alpha$, e ritrovi il teorema del coseno $c^2=a^2+b^2-2ab\cos\alpha$.</details></div>
+
+  <div class="card thm"><span class="tag">Teorema 2 · Cauchy–Schwarz–Bunjakovskij (C.S.B.)</span>
+  $$|\langle\mathbf v,\mathbf w\rangle|\le\|\mathbf v\|\,\|\mathbf w\|,\qquad\text{con uguaglianza}\iff\mathbf v,\mathbf w\text{ linearmente dipendenti (paralleli).}$$
+  <b>Perché ci interessa:</b> il rapporto $\frac{\langle\mathbf v,\mathbf w\rangle}{\|\mathbf v\|\|\mathbf w\|}$ sta sempre tra $-1$ e $1$. Quindi si può <b>definire l'angolo</b> in qualsiasi spazio euclideo:
+  $$\widehat{(\mathbf v,\mathbf w)}=\arccos\frac{\langle\mathbf v,\mathbf w\rangle}{\|\mathbf v\|\,\|\mathbf w\|}\in[0,\pi]\qquad(\mathbf v,\mathbf w\neq\mathbf 0)$$
+  Esempio: $(1,2)$ e $(3,1)$: $\cos\alpha=\frac{5}{\sqrt5\sqrt{10}}=\frac1{\sqrt2}$, quindi $\alpha=\pi/4$.
+  <details><summary>Dimostrazione (da sapere): "l'ombra non è più lunga del vettore"</summary>
+  Se $\mathbf w=\mathbf 0$ entrambi i membri valgono $0$. Altrimenti scomponi $\mathbf v=\mathbf v_0+\mathbf v_\perp$, con $\mathbf v_0$ l'ombra di $\mathbf v$ su $\mathbf w$ e $\mathbf v_\perp\perp\mathbf w$ (vedi il Lab). Per Pitagora
+  $$\|\mathbf v\|^2=\|\mathbf v_0\|^2+\|\mathbf v_\perp\|^2\ge\|\mathbf v_0\|^2=\frac{\langle\mathbf v,\mathbf w\rangle^2}{\|\mathbf w\|^2}.$$
+  Moltiplica per $\|\mathbf w\|^2$ e prendi la radice. L'uguaglianza vale solo se $\mathbf v_\perp=\mathbf 0$, cioè $\mathbf v\in\mathrm{span}\{\mathbf w\}$. $\blacksquare$</details></div>
+
+  <div class="card thm"><span class="tag">Disuguaglianza triangolare</span>
+  $$\|\mathbf u+\mathbf v\|^2\overset{\text{Carnot}}=\|\mathbf u\|^2+\|\mathbf v\|^2+2\langle\mathbf u,\mathbf v\rangle\overset{\text{C.S.B.}}\le\|\mathbf u\|^2+\|\mathbf v\|^2+2\|\mathbf u\|\|\mathbf v\|=(\|\mathbf u\|+\|\mathbf v\|)^2$$
+  In un triangolo un lato non supera la somma degli altri due: la strada dritta è la più corta.</div>
+</section>
+
+<!-- ===================== LAB ===================== -->
+<section id="lab">
+  <h2>Lab: l'ombra di un vettore</h2>
+  <div class="card">Trascina le punte di <span class="cv">$\mathbf v$</span> (blu) e <span class="cw">$\mathbf w$</span> (arancione). Il pallino pieno è l'<b>ombra</b> $\mathbf v_0$ di $\mathbf v$ sulla retta di $\mathbf w$. Il segmento <span class="cg">verde</span> va dall'ombra alla punta di $\mathbf v$ ed è sempre perpendicolare alla retta.<br>
+  <b>Questa figura è anche Gram-Schmidt in 2D:</b> con $\mathbf v_1=\mathbf w$ e $\mathbf v_2=\mathbf v$ ottieni $\mathbf w_1=\mathbf w$ e $\mathbf w_2=$ il vettore verde riportato nell'origine (tratteggiato).</div>
+  <div class="ctrl" id="labpre">
+    <button data-p="3,2,1,1">L11: $(3,2)$ su $y=x$</button>
+    <button data-p="2,2,3,1">L12: G-S $(3,1),(2,2)$</button>
+    <button data-p="-2,3,3,2">perpendicolari</button>
+    <button data-p="-2,-1,4,2">paralleli</button>
+  </div>
+  <div class="lab">
+    <canvas id="cv"></canvas>
+    <div class="card out" id="labout"></div>
+  </div>
+</section>
+
+<!-- ===================== 3 BASI ===================== -->
+<section id="basi">
+  <h2>3 · Basi ortogonali e ortonormali</h2>
+  <div class="card easy"><span class="tag">In parole povere</span><br>
+  Gli assi $x,y,z$ sono il modello: tre direzioni perpendicolari, lunghe $1$. Una base così rende tutto facile. Per sapere "quanto $\mathbf v$ va lungo l'asse $i$" basta un prodotto scalare, senza sistemi.</div>
+
+  <div class="card def"><span class="tag">Definizioni</span><br>
+  <b>Sistema ortogonale</b>: vettori a due a due perpendicolari, $\langle\mathbf v_i,\mathbf v_j\rangle=0$ per $i\ne j$.<br>
+  <b>Base ortonormale</b>: base ortogonale con in più $\|\mathbf v_i\|=1$ per ogni $i$. Si scrive $\langle\mathbf v_i,\mathbf v_j\rangle=\delta_{ij}$, cioè $1$ se $i=j$ e $0$ altrimenti.<br>
+  <b>Normalizzare</b>: dividere ogni vettore per la sua lunghezza, $\mathbf u_i=\mathbf v_i/\|\mathbf v_i\|$. Esempio: $(3,4)\to(3/5,4/5)$.</div>
+
+  <div class="card thm"><span class="tag">Teorema 3</span><br>
+  Vettori <b>non nulli</b> a due a due ortogonali sono <b>linearmente indipendenti</b>.<br>
+  <b>Corollario:</b> se $\dim V=n$, allora $n$ vettori non nulli a due a due ortogonali formano una base. Non serve la riduzione a scala.
+  <details><summary>Dimostrazione (da sapere)</summary>
+  Supponi $c_1\mathbf v_1+\dots+c_k\mathbf v_k=\mathbf 0$. Fai il prodotto scalare di entrambi i lati con $\mathbf v_j$. A sinistra sopravvive solo il termine $j$, perché gli altri sono ortogonali: $c_j\|\mathbf v_j\|^2=0$. Siccome $\mathbf v_j\ne\mathbf 0$, segue $c_j=0$. Vale per ogni $j$. $\blacksquare$</details></div>
+
+  <div class="card thm"><span class="tag">Teorema 4 · coordinate gratis</span><br>
+  Se $\{\mathbf v_1,\dots,\mathbf v_n\}$ è una base <b>ortogonale</b>, le coordinate di $\mathbf v$ sono le "ombre":
+  $$c_i=\frac{\langle\mathbf v,\mathbf v_i\rangle}{\|\mathbf v_i\|^2}\qquad\text{(se ortonormale: }c_i=\langle\mathbf v,\mathbf v_i\rangle).$$
+  La dimostrazione è la stessa del Teorema 3: fai il prodotto scalare di $\mathbf v=\sum c_i\mathbf v_i$ con $\mathbf v_j$.</div>
+
+  <div class="card"><h3>Confronto: $\mathbf v=(3,2)$ nella base $\{(1,1),(1,-1)\}$</h3>
+  <div class="two">
+   <div><b>Metodo generale</b><br>Risolvi $c_1+c_2=3$, $c_1-c_2=2$.<br>Due equazioni, sostituzioni.</div>
+   <div><b>Metodo ortogonale</b><br>$c_1=\frac{3+2}{2}=\frac52$, $c_2=\frac{3-2}{2}=\frac12$.<br>Fatto.</div>
+  </div>
+  <div class="dots" style="margin-top:8px">Nota: $\frac52(1,1)=(\frac52,\frac52)$ è proprio l'ombra di $(3,2)$ sulla retta $y=x$, la stessa del Lab.</div></div>
+
+  <div class="card"><h3>Esempio del PDF (pp. 48–49)</h3>
+  $\mathbf v_1=(2,1,1)$, $\mathbf v_2=(-1,1,1)$, $\mathbf v_3=(0,-1,1)$.
+  <ol class="steps">
+   <li>Prodotti scalari: $-2+1+1=0$; $\ 0-1+1=0$; $\ 0-1+1=0$. Sono a due a due ortogonali.</li>
+   <li>Sono 3 vettori non nulli in $\mathbb R^3$, quindi formano una <b>base ortogonale</b> (Corollario).</li>
+   <li>Norme $\sqrt6,\sqrt3,\sqrt2$. Base ortonormale: $\frac1{\sqrt6}(2,1,1),\ \frac1{\sqrt3}(-1,1,1),\ \frac1{\sqrt2}(0,-1,1)$.</li>
+  </ol></div>
+</section>
+
+<!-- ===================== 4 GRAM-SCHMIDT ===================== -->
+<section id="gs">
+  <h2>4 · Gram-Schmidt: raddrizzare una base</h2>
+  <div class="card easy"><span class="tag">L'idea in una frase</span><br>
+  Tieni il primo vettore così com'è. Da ogni vettore successivo <b>togli la sua ombra</b> sui vettori già sistemati. Quello che resta è perpendicolare a tutti loro.<br>
+  Nel <a href="#" data-go2="lab" style="color:var(--acc)">Lab</a> lo vedi in 2D: il vettore verde è "$\mathbf v$ meno la sua ombra".</div>
+
+  <div class="card def"><span class="tag">Passo preliminare: ombra su un sottospazio</span><br>
+  Se $W$ ha una base <b>ortogonale</b> $\{\mathbf w_1,\dots,\mathbf w_k\}$, l'ombra di $\mathbf v$ su $W$ è la somma delle ombre sulle singole rette:
+  $$\mathbf v_0=\sum_{i=1}^{k}\frac{\langle\mathbf v,\mathbf w_i\rangle}{\|\mathbf w_i\|^2}\,\mathbf w_i,\qquad\mathbf v-\mathbf v_0\perp W.$$
+  <span class="pill p-w">Attenzione</span> Con una base non ortogonale la formula è sbagliata, perché le ombre si sovrappongono. Ecco perché serve Gram-Schmidt.</div>
+
+  <div class="card thm"><span class="tag">Algoritmo</span>
+  $$\begin{aligned}
+  \mathbf w_1&=\mathbf v_1\\
+  \mathbf w_2&=\mathbf v_2-\frac{\langle\mathbf v_2,\mathbf w_1\rangle}{\|\mathbf w_1\|^2}\mathbf w_1\\
+  \mathbf w_3&=\mathbf v_3-\frac{\langle\mathbf v_3,\mathbf w_1\rangle}{\|\mathbf w_1\|^2}\mathbf w_1-\frac{\langle\mathbf v_3,\mathbf w_2\rangle}{\|\mathbf w_2\|^2}\mathbf w_2\\
+  &\ \ \vdots
+  \end{aligned}$$
+  Se ti serve ortonormale, alla fine normalizzi: $\mathbf u_i=\mathbf w_i/\|\mathbf w_i\|$.</div>
+
+  <div class="card"><h3>Trucchi che salvano l'esame</h3>
+  <ul>
+   <li>Nelle formule usa sempre i <b>$\mathbf w$</b> già trovati, al denominatore e come direzione. Mai i $\mathbf v$ originali.</li>
+   <li>Puoi <b>moltiplicare</b> un $\mathbf w_i$ per una costante per togliere le frazioni: $(\tfrac12,-\tfrac12,1)\to(1,-1,2)$. Resta perpendicolare agli altri.</li>
+   <li>Se a un passo esce $\mathbf w_k=\mathbf 0$, allora $\mathbf v_k$ dipendeva dai precedenti. <b>Scartalo</b> e vai avanti. Gram-Schmidt fa anche da test di indipendenza.</li>
+   <li>Controllo finale: tutti i $\langle\mathbf w_i,\mathbf w_j\rangle$ con $i\ne j$ devono valere $0$.</li>
+  </ul></div>
+
+  <div class="card">Gli esempi completi del PDF, in $\mathbb R^4$ e con vettori dipendenti, sono in <a href="#" data-go2="es" style="color:var(--acc)">7 · Esempi</a>.</div>
+</section>
+
+<!-- ===================== 5 MATRICI ORTOGONALI ===================== -->
+<section id="orto">
+  <h2>5 · Matrici ortogonali</h2>
+  <div class="card easy"><span class="tag">In parole povere</span><br>
+  Metti in colonna una base ortonormale. La matrice che ottieni ha un superpotere: <b>per invertirla basta trasporla</b>. Geometricamente è una rotazione o una riflessione, cioè non cambia né lunghezze né angoli.</div>
+
+  <div class="card def"><span class="tag">Definizione</span><br>
+  $Q$ quadrata reale è <b>ortogonale</b> se $Q^TQ=I$. Allora $Q^{-1}=Q^T$, e anche $QQ^T=I$.</div>
+
+  <div class="card"><h3>Perché le colonne ortonormali danno $Q^TQ=I$</h3>
+  L'elemento $(i,j)$ di $Q^TQ$ si ottiene come riga $i$ di $Q^T$ per colonna $j$ di $Q$, cioè colonna $i$ per colonna $j$ di $Q$:
+  $$(Q^TQ)_{ij}=\langle\mathbf u_i,\mathbf u_j\rangle=\begin{cases}1&i=j\\0&i\ne j\end{cases}\quad\Longrightarrow\quad Q^TQ=I.$$</div>
+
+  <div class="card thm"><span class="tag">Proposizione</span><br>
+  Sono equivalenti: <b>(1)</b> $Q$ ortogonale; <b>(2)</b> le colonne sono una base ortonormale; <b>(3)</b> le righe sono una base ortonormale.</div>
+
+  <div class="card"><h3>Esempio</h3>
+  $$Q=\begin{bmatrix}3/5&-4/5\\4/5&3/5\end{bmatrix}:\quad\text{norme }\sqrt{\tfrac9{25}+\tfrac{16}{25}}=1,\quad\text{prodotto }-\tfrac{12}{25}+\tfrac{12}{25}=0\ \Rightarrow\ Q^{-1}=Q^T=\begin{bmatrix}3/5&4/5\\-4/5&3/5\end{bmatrix}$$</div>
+
+  <div class="card warn"><span class="tag">Il nome inganna</span><br>
+  "Matrice ortogonale" vuol dire colonne <b>orto<u>normali</u></b>. $\begin{bmatrix}2&0\\0&1\end{bmatrix}$ ha colonne perpendicolari ma <b>non</b> è ortogonale: $Q^TQ=\mathrm{diag}(4,1)\ne I$.</div>
+</section>
+
+<!-- ===================== 6 TEOREMA SPETTRALE ===================== -->
+<section id="spet">
+  <h2>6 · Teorema spettrale</h2>
+  <div class="card easy"><span class="tag">Il collegamento con la Lezione 10</span><br>
+  Nella lezione 10 diagonalizzavi così: $S^{-1}AS=D$, con gli autovettori nelle colonne di $S$. Ora vogliamo che quegli autovettori siano <b>perpendicolari e di lunghezza 1</b>. Allora $S$ diventa una matrice ortogonale $Q$ e $S^{-1}$ diventa $Q^T$:
+  $$Q^TAQ=D\qquad\Longleftrightarrow\qquad A=QDQ^T.$$
+  Una $A$ così si dice <b>ortogonalmente diagonalizzabile</b>. Domanda: quando succede? Risposta: <b>esattamente quando $A$ è simmetrica</b>.</div>
+
+  <div class="card def"><span class="tag">Matrice simmetrica</span><br>
+  $A^T=A$: è "specchiata" rispetto alla diagonale. Esempio: $\begin{bmatrix}1&0&\color{#ffb454}4\\0&2&\color{#4fd1a5}5\\\color{#ffb454}4&\color{#4fd1a5}5&3\end{bmatrix}$ è simmetrica, $\begin{bmatrix}0&-1\\1&1\end{bmatrix}$ no.</div>
+
+  <div class="card thm"><span class="tag">Teorema spettrale</span>
+  $$A\ \text{reale è ortogonalmente diagonalizzabile}\iff A^T=A.$$
+  <details><summary>Dimostrazione di ⇒ (quella in programma)</summary>
+  Se $A=QDQ^T$, allora $A^T=(QDQ^T)^T=(Q^T)^TD^TQ^T=QDQ^T=A$, perché una matrice diagonale ha $D^T=D$. $\blacksquare$<br>
+  Il verso ⇐ è enunciato senza dimostrazione.</details></div>
+
+  <div class="card thm"><span class="tag">Due regali per le matrici simmetriche</span>
+  <ol><li>Gli autovalori sono tutti <b>reali</b> (senza dimostrazione).</li>
+  <li>Autovettori di autovalori <b>diversi</b> sono <b>perpendicolari</b>. Gli autospazi sono quindi ortogonali tra loro.</li></ol>
+  <details><summary>Dimostrazione di 2 (da sapere)</summary>
+  Lemma, vale per ogni $A$: $\langle A\mathbf x,\mathbf y\rangle=(A\mathbf x)^T\mathbf y=\mathbf x^TA^T\mathbf y=\langle\mathbf x,A^T\mathbf y\rangle$.<br>
+  Sia $A\mathbf v=\lambda_1\mathbf v$, $A\mathbf w=\lambda_2\mathbf w$ con $\lambda_1\ne\lambda_2$. Calcolo $\langle A\mathbf v,\mathbf w\rangle$ in due modi:
+  $$\lambda_1\langle\mathbf v,\mathbf w\rangle=\langle A\mathbf v,\mathbf w\rangle\overset{A^T=A}=\langle\mathbf v,A\mathbf w\rangle=\lambda_2\langle\mathbf v,\mathbf w\rangle.$$
+  Quindi $(\lambda_1-\lambda_2)\langle\mathbf v,\mathbf w\rangle=0$, e siccome $\lambda_1\ne\lambda_2$ si ha $\langle\mathbf v,\mathbf w\rangle=0$. $\blacksquare$</details></div>
+
+  <div class="card"><h3>Ricetta: diagonalizzare ortogonalmente</h3>
+  <ol class="steps">
+   <li><b>Controlla</b> $A^T=A$. Se non vale, la risposta è "non si può" e hai finito.</li>
+   <li><b>Autovalori</b>: radici di $\det(A-\lambda I)$, come nella lezione 10.</li>
+   <li><b>Base di ogni autospazio</b> $\ker(A-\lambda I)$.</li>
+   <li><b>Raddrizza dentro ogni autospazio</b>: se ha dimensione 1 non c'è niente da fare; se ha dimensione ≥ 2 applichi Gram-Schmidt <b>solo lì dentro</b>. Tra autospazi diversi sono già perpendicolari (regalo 2).</li>
+   <li><b>Normalizza</b> ogni vettore.</li>
+   <li>$Q=[\mathbf u_1|\cdots|\mathbf u_n]$, $D=\mathrm{diag}(\lambda_1,\dots,\lambda_n)$ <b>nello stesso ordine</b>.</li>
+  </ol></div>
+
+  <div class="card thm"><span class="tag">Trucco in $\mathbb R^3$</span><br>
+  Se un autospazio è un <b>piano</b> $ax+by+cz=0$, l'altro autospazio (una retta) è la sua <b>normale</b> $\mathrm{span}\{(a,b,c)\}$. Non serve risolvere il secondo sistema.</div>
+</section>
+
+<!-- ===================== 7 ESEMPI ===================== -->
+<section id="es">
+  <h2>7 · Esempi passo-passo</h2>
+  <div class="ctrl" id="exsel">
+    <button data-e="P" class="on">L11 · proiezione</button>
+    <button data-e="G1">L12 · G-S in ℝ⁴</button>
+    <button data-e="G2">L12 · G-S dipendenti</button>
+    <button data-e="S1">Spettrale 1</button>
+    <button data-e="S2">Spettrale 2</button>
+    <button data-e="S3">Spettrale 3</button>
+  </div>
+  <div class="card">
+    <div class="bar"><i id="exbar"></i></div>
+    <div class="screen" id="exscr"></div>
+    <div class="cap" id="excap"></div>
+    <div class="ctrl" style="justify-content:space-between;margin:0"><button id="prev">← Indietro</button><span class="dots" id="exdots"></span><button id="next" class="primary">Avanti →</button></div>
+  </div>
+</section>
+
+<!-- ===================== ERRORI ===================== -->
+<section id="err">
+  <h2>Errori tipici</h2>
+  <div class="card bug"><b>Semidefinita non è definita.</b> $L(\mathbf x,\mathbf x)\ge0$ non basta: devi controllare che faccia $0$ <b>solo</b> in $\mathbf 0$. Cerca un $\mathbf x\ne\mathbf 0$ con $L(\mathbf x,\mathbf x)=0$.</div>
+  <div class="card bug"><b>$\|\mathbf w\|^2$, non $\|\mathbf w\|$.</b> Nell'ombra e nelle coordinate il denominatore è la norma <b>al quadrato</b>. Con un versore, cioè $\|\mathbf w\|=1$, il denominatore sparisce.</div>
+  <div class="card bug"><b>$\|-3\mathbf v\|=3\|\mathbf v\|$</b>, non $-3\|\mathbf v\|$: il numero esce in valore assoluto.</div>
+  <div class="card bug"><b>Ortogonale non è ortonormale.</b> Ricordati di normalizzare. Una "matrice ortogonale" ha colonne ortoNORMALI.</div>
+  <div class="card bug"><b>La formula $c_i=\langle\mathbf v,\mathbf v_i\rangle/\|\mathbf v_i\|^2$ vale solo con basi ortogonali.</b> Con una base qualsiasi devi risolvere il sistema.</div>
+  <div class="card bug"><b>In Gram-Schmidt usi i $\mathbf w$, non i $\mathbf v$.</b> Scrivere $\frac{\langle\mathbf v_3,\mathbf v_2\rangle}{\|\mathbf v_2\|^2}\mathbf v_2$ è sbagliato: serve $\mathbf w_2$.</div>
+  <div class="card bug"><b>Gram-Schmidt su tutti gli autovettori insieme.</b> Mescolando autospazi diversi ottieni vettori perpendicolari che <b>non sono più autovettori</b>. Va fatto dentro ogni autospazio separatamente.</div>
+  <div class="card bug"><b>$D$ in ordine sbagliato.</b> Il $k$-esimo elemento di $D$ è l'autovalore della $k$-esima colonna di $Q$.</div>
+  <div class="card warn"><b>Non simmetrica non vuol dire non diagonalizzabile.</b> $\begin{bmatrix}1&2\\0&3\end{bmatrix}$ si diagonalizza (autovalori $1,3$), ma i suoi autovettori $(1,0),(1,1)$ non sono perpendicolari. Il teorema spettrale parla solo di diagonalizzazione <b>ortogonale</b>.</div>
+</section>
+
+<!-- ===================== QUIZ ===================== -->
+<section id="quiz">
+  <h2>Quiz</h2>
+  <div class="card score"><span>Punteggio</span><b><span id="score">0</span> / <span id="tot"></span></b></div>
+  <div class="card" id="quizbox"></div>
+</section>
+
+</main>
+</div>
+
+<script>
+// ---------- navigazione ----------
+const R=el=>window.renderMathInElement&&renderMathInElement(el,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});
+const NAV=[...document.querySelectorAll('nav button')],name=id=>NAV.find(b=>b.dataset.s===id).lastChild.textContent;
+const show=id=>{document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===id));
+  NAV.forEach(b=>{const on=b.dataset.s===id;b.classList.toggle('on',on);if(on&&innerWidth<=900)b.scrollIntoView({inline:'center',block:'nearest'});});
+  history.replaceState(null,'','#'+id);window.scrollTo({top:0}); if(id==='lab')lab();};
+NAV.forEach(b=>b.onclick=()=>show(b.dataset.s));
+document.querySelectorAll('[data-go]').forEach(t=>{t.onclick=()=>show(t.dataset.go);t.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();show(t.dataset.go);}};});
+// pulsanti precedente/successivo in fondo a ogni sezione
+NAV.forEach((b,i)=>{const pv=NAV[i-1],nx=NAV[i+1],d=document.createElement('div');d.className='pager';
+  d.innerHTML=(pv?`<button data-to="${pv.dataset.s}"><small>← Precedente</small>${name(pv.dataset.s)}</button>`:'')+(nx?`<button class="nx" data-to="${nx.dataset.s}"><small>Successivo →</small>${name(nx.dataset.s)}</button>`:'');
+  d.querySelectorAll('button').forEach(x=>x.onclick=()=>show(x.dataset.to));document.getElementById(b.dataset.s).appendChild(d);});
+document.querySelectorAll('[data-go2]').forEach(a=>a.onclick=e=>{e.preventDefault();show(a.dataset.go2);});
+const $=id=>document.getElementById(id);
+const fmt=x=>{if(Math.abs(x)<1e-9)return'0';const r=Math.round(x);return Math.abs(x-r)<1e-9?String(r):(+x.toFixed(3)).toString();};
+
+// ---------- LAB ombra / Gram-Schmidt 2D ----------
+const P={v:[3,2],w:[1,1]},RANGE=5,SNAP=0.5;
+let drag=null;
+// ponytail: canvas logico 440px disegnato a 2x per schermi retina
+const cv=$('cv'),g=cv.getContext('2d'),W=440,H=440,SC=W/(2*RANGE);
+cv.width=cv.height=W*2;g.scale(2,2);
+const C=k=>getComputedStyle(document.documentElement).getPropertyValue(k).trim();
+const toPx=p=>[W/2+p[0]*SC,H/2-p[1]*SC];
+const toW=(x,y)=>[(x-W/2)/SC,(H/2-y)/SC];
+const dot=(a,b)=>a[0]*b[0]+a[1]*b[1],nrm=a=>Math.hypot(a[0],a[1]);
+function arrow(p,col,dash,alpha=1){const[x,y]=toPx(p),[ox,oy]=toPx([0,0]),an=Math.atan2(y-oy,x-ox);
+  g.globalAlpha=alpha;g.strokeStyle=g.fillStyle=col;g.lineWidth=3;g.lineCap='round';g.setLineDash(dash?[6,6]:[]);
+  g.beginPath();g.moveTo(ox,oy);g.lineTo(x,y);g.stroke();g.setLineDash([]);
+  if(nrm(p)>1e-9){g.beginPath();g.moveTo(x,y);g.lineTo(x-12*Math.cos(an-.4),y-12*Math.sin(an-.4));g.lineTo(x-12*Math.cos(an+.4),y-12*Math.sin(an+.4));g.fill();}
+  g.globalAlpha=1;}
+const row=(k,html)=>`<div class="row"><span class="k">${k}</span>${html}</div>`;
+function lab(){
+  const v=P.v,w=P.w,cV=C('--cv'),cW=C('--cw'),cG=C('--cg'),tx=C('--txt');
+  g.clearRect(0,0,W,H);g.strokeStyle=C('--grid');g.lineWidth=1;
+  for(let k=-RANGE;k<=RANGE;k++){const[a]=toPx([k,0]),[,b]=toPx([0,k]);g.beginPath();g.moveTo(a,0);g.lineTo(a,H);g.moveTo(0,b);g.lineTo(W,b);g.stroke();}
+  g.strokeStyle=C('--axis');g.lineWidth=1.5;g.beginPath();g.moveTo(0,H/2);g.lineTo(W,H/2);g.moveTo(W/2,0);g.lineTo(W/2,H);g.stroke();
+  const nw=nrm(w);
+  if(nw<1e-9){arrow(v,cV);$('labout').innerHTML=row('Attenzione','<span class="pill p-w">$\\mathbf w=\\mathbf 0$</span> non genera una retta: l\'ombra non è definita.');R($('labout'));return;}
+  const u=[w[0]/nw,w[1]/nw],L=3*RANGE,[a1,b1]=toPx([-u[0]*L,-u[1]*L]),[a2,b2]=toPx([u[0]*L,u[1]*L]);
+  g.globalAlpha=.45;g.strokeStyle=cW;g.lineWidth=2;g.setLineDash([4,6]);g.beginPath();g.moveTo(a1,b1);g.lineTo(a2,b2);g.stroke();g.setLineDash([]);g.globalAlpha=1;
+  const t=dot(v,w)/dot(w,w),v0=[t*w[0],t*w[1]],r=[v[0]-v0[0],v[1]-v0[1]];
+  arrow(r,cG,true,.55);                                 // w2 = v - ombra, riportato nell'origine
+  const[p0x,p0y]=toPx(v0),[pvx,pvy]=toPx(v);
+  g.strokeStyle=cG;g.lineWidth=3;g.beginPath();g.moveTo(p0x,p0y);g.lineTo(pvx,pvy);g.stroke();
+  if(nrm(r)>0.3){const s=12/SC,sg=t>=0?1:-1,rn=[r[0]/nrm(r),r[1]/nrm(r)],q=[v0[0]-u[0]*s*sg,v0[1]-u[1]*s*sg];
+    g.strokeStyle=tx;g.lineWidth=1.2;g.beginPath();g.moveTo(...toPx(q));g.lineTo(...toPx([q[0]+rn[0]*s,q[1]+rn[1]*s]));g.lineTo(...toPx([v0[0]+rn[0]*s,v0[1]+rn[1]*s]));g.stroke();}
+  arrow(w,cW);arrow(v,cV);
+  g.fillStyle=tx;g.beginPath();g.arc(p0x,p0y,5,0,7);g.fill();
+  g.font='600 15px system-ui';const[pwx,pwy]=toPx(w);
+  g.fillStyle=cV;g.fillText('v',pvx+8,pvy-8);g.fillStyle=cW;g.fillText('w',pwx+8,pwy-8);g.fillStyle=tx;g.fillText('v₀',p0x+8,p0y+18);
+  const pv=dot(v,w),nv=nrm(v),V=a=>`(${fmt(a[0])},\\,${fmt(a[1])})`,par=Math.abs(v[0]*w[1]-v[1]*w[0])<1e-9;
+  let ang='',sign='';
+  if(nv>1e-9){const c=Math.max(-1,Math.min(1,pv/(nv*nw)));ang=`, angolo $\\approx${fmt(Math.round(Math.acos(c)*180/Math.PI*10)/10)}^\\circ$`;
+    sign=Math.abs(pv)<1e-9?'<span class="pill p-w">perpendicolari</span>':pv>0?'<span class="pill p-ok">angolo acuto</span>':'<span class="pill p-bad">angolo ottuso</span>';}
+  $('labout').innerHTML=
+   row('Vettori',`<span class="cv">$\\mathbf v=${V(v)}$</span> &nbsp; <span class="cw">$\\mathbf w=${V(w)}$</span>`)+
+   row('Prodotto scalare',`$\\langle\\mathbf v,\\mathbf w\\rangle=${fmt(pv)}$ &nbsp; ${sign}<br>$\\|\\mathbf v\\|=${fmt(nv)}$, $\\|\\mathbf w\\|=${fmt(nw)}$${ang}`)+
+   row('Ombra',`$t_0=\\dfrac{${fmt(pv)}}{${fmt(dot(w,w))}}=${fmt(t)}$, &nbsp; $\\mathbf v_0=${V(v0)}$`)+
+   row('Resto = w₂ di Gram-Schmidt',`<span class="cg">$\\mathbf v-\\mathbf v_0=${V(r)}$</span><br>controllo: $\\langle\\mathbf v-\\mathbf v_0,\\mathbf w\\rangle=${fmt(dot(r,w))}$ ✓`)+
+   row('Cauchy–Schwarz',`$|${fmt(pv)}|\\le${fmt(nv)}\\cdot${fmt(nw)}=${fmt(nv*nw)}$ ${par?'<br><span class="pill p-ok">uguaglianza: sono paralleli</span>':''}`);
+  R($('labout'));
+}
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',lab);
+function evPos(e){const b=cv.getBoundingClientRect();return toW((e.clientX-b.left)*W/b.width,(e.clientY-b.top)*H/b.height);}
+cv.addEventListener('pointerdown',e=>{const p=evPos(e),d=k=>Math.hypot(P[k][0]-p[0],P[k][1]-p[1]);drag=d('v')<=d('w')?'v':'w';cv.setPointerCapture(e.pointerId);move(e);});
+const move=e=>{if(!drag)return;const p=evPos(e).map(c=>Math.max(-RANGE,Math.min(RANGE,Math.round(c/SNAP)*SNAP)));
+  if(p[0]!==P[drag][0]||p[1]!==P[drag][1]){P[drag]=p;lab();}};
+cv.addEventListener('pointermove',move);
+cv.addEventListener('pointerup',()=>drag=null);
+document.querySelectorAll('#labpre button').forEach(b=>b.onclick=()=>{const m=b.dataset.p.split(',').map(Number);P.v=[m[0],m[1]];P.w=[m[2],m[3]];lab();});
+
+// ---------- ESEMPI (stepper) ----------
+const M=s=>`\\begin{bmatrix}${s}\\end{bmatrix}`;
+const EX={
+ P:[
+  [`$$\\text{Proiettare }\\mathbf v=${M('3\\\\2')}\\text{ sulla retta }y=x$$`,'Lezione 11, pp. 29–31. La retta passa per l\'origine.'],
+  [`$$y=x\\ \\Rightarrow\\ W=\\mathrm{span}\\{\\mathbf w\\},\\quad\\mathbf w=${M('1\\\\1')}$$`,'Primo passo: un vettore che genera la retta.'],
+  [`$$t_0=\\frac{\\langle\\mathbf v,\\mathbf w\\rangle}{\\|\\mathbf w\\|^2}=\\frac{3+2}{1+1}=\\frac52$$`,'Coefficiente di Fourier: "quante volte w" ci sta nell\'ombra.'],
+  [`$$\\mathbf v_0=\\tfrac52\\mathbf w=${M('5/2\\\\5/2')}$$`,'Ecco l\'ombra: è il punto della retta più vicino a v.'],
+  [`$$\\mathbf v-\\mathbf v_0=${M('1/2\\\\-1/2')},\\qquad\\langle\\mathbf v-\\mathbf v_0,\\mathbf w\\rangle=\\tfrac12-\\tfrac12=0\\ ✓$$`,'Controllo: il resto è perpendicolare alla retta. Prova questo esempio nel Lab.']
+ ],
+ G1:[
+  [`$$\\mathbf v_1=(1,0,0,1),\\quad\\mathbf v_2=(1,2,0,0),\\quad\\mathbf v_3=(1,2,2,1)$$`,'Lezione 12, pp. 7–9. Tre vettori indipendenti in ℝ⁴: cerco una base ortogonale del loro span.'],
+  [`$$\\mathbf w_1=\\mathbf v_1=(1,0,0,1),\\qquad\\|\\mathbf w_1\\|^2=2$$`,'Passo 1: il primo vettore resta com\'è.'],
+  [`$$\\langle\\mathbf v_2,\\mathbf w_1\\rangle=1\\ \\Rightarrow\\ \\mathbf w_2=(1,2,0,0)-\\tfrac12(1,0,0,1)=\\left(\\tfrac12,\\,2,\\,0,\\,-\\tfrac12\\right)$$ $$\\|\\mathbf w_2\\|^2=\\tfrac14+4+\\tfrac14=\\tfrac92$$`,'Passo 2: tolgo da v₂ la sua ombra su w₁.'],
+  [`$$\\langle\\mathbf v_3,\\mathbf w_1\\rangle=2,\\qquad\\langle\\mathbf v_3,\\mathbf w_2\\rangle=\\tfrac12+4+0-\\tfrac12=4$$`,'Passo 3a: servono due prodotti scalari, con w₁ e con w₂ (non con v₂!).'],
+  [`$$\\text{ombra}=\\tfrac22\\mathbf w_1+\\tfrac{4}{9/2}\\mathbf w_2=(1,0,0,1)+\\tfrac89\\left(\\tfrac12,2,0,-\\tfrac12\\right)=\\left(\\tfrac{13}9,\\tfrac{16}9,0,\\tfrac59\\right)$$`,'Passo 3b: ombra di v₃ sul piano span{w₁, w₂}.'],
+  [`$$\\mathbf w_3=\\mathbf v_3-\\text{ombra}=\\left(-\\tfrac49,\\,\\tfrac29,\\,2,\\,\\tfrac49\\right)$$`,'Passo 3c: tolgo l\'ombra.'],
+  [`$$\\langle\\mathbf w_1,\\mathbf w_2\\rangle=\\tfrac12-\\tfrac12=0,\\quad\\langle\\mathbf w_1,\\mathbf w_3\\rangle=-\\tfrac49+\\tfrac49=0,\\quad\\langle\\mathbf w_2,\\mathbf w_3\\rangle=-\\tfrac29+\\tfrac49-\\tfrac29=0\\ ✓$$`,'Controllo finale: tutte le coppie sono perpendicolari.']
+ ],
+ G2:[
+  [`$$\\mathbf v_1=(1,2,3),\\ \\mathbf v_2=(3,2,1),\\ \\mathbf v_3=(1,1,1),\\ \\mathbf v_4=(0,1,0)$$`,'Lezione 12, pp. 10–12. Quattro vettori in ℝ³: sono per forza dipendenti. Che fa Gram-Schmidt?'],
+  [`$$\\mathbf w_1=(1,2,3),\\quad\\|\\mathbf w_1\\|^2=14$$`,'Passo 1.'],
+  [`$$\\mathbf w_2=(3,2,1)-\\tfrac{10}{14}(1,2,3)=\\tfrac47(4,1,-2)\\ \\leadsto\\ \\mathbf w_2=(4,1,-2),\\ \\|\\mathbf w_2\\|^2=21$$`,'Passo 2. Tolgo il fattore 4/7 per evitare frazioni: resta perpendicolare.'],
+  [`$$\\text{ombra di }\\mathbf v_3=\\tfrac6{14}(1,2,3)+\\tfrac3{21}(4,1,-2)=(1,1,1)\\ \\Rightarrow\\ \\boxed{\\mathbf w_3=\\mathbf 0}$$`,'v₃ coincide con la sua ombra: stava già nel piano di w₁, w₂. Era dipendente, quindi lo SCARTO.'],
+  [`$$\\text{ombra di }\\mathbf v_4=\\tfrac2{14}(1,2,3)+\\tfrac1{21}(4,1,-2)=\\left(\\tfrac13,\\tfrac13,\\tfrac13\\right)\\Rightarrow\\mathbf w_4=\\tfrac13(-1,2,-1)$$`,'Passo 4: proietto solo su w₁ e w₂ (w₃ è stato scartato).'],
+  [`$$\\{(1,2,3),\\ (4,1,-2),\\ (-1,2,-1)\\}\\ \\text{base ortogonale di }\\mathbb R^3$$`,'Controllo: 4−2−2 = 0, −1+4−3 = 0, −4+2+2 = 0 ✓']
+ ],
+ S1:[
+  [`$$L(x,y,z)=(x+y,\\ x+y,\\ 3z),\\qquad A=${M('1&1&0\\\\1&1&0\\\\0&0&3')}$$`,'Lezione 12, pp. 32–38. A è simmetrica, quindi per il teorema spettrale è ortogonalmente diagonalizzabile.'],
+  [`$$p_A(\\lambda)=(3-\\lambda)\\begin{vmatrix}1-\\lambda&1\\\\1&1-\\lambda\\end{vmatrix}=(3-\\lambda)\\big((1-\\lambda)^2-1\\big)=(3-\\lambda)\\lambda(\\lambda-2)$$`,'Laplace sulla 3ª riga. Autovalori 0, 2, 3, tutti semplici.'],
+  [`$$\\lambda=0:\\ x+y=0,\\ z=0\\ \\Rightarrow\\ W_0=\\mathrm{span}\\{(-1,1,0)\\}$$ $$\\lambda=2:\\ -x+y=0,\\ z=0\\ \\Rightarrow\\ W_2=\\mathrm{span}\\{(1,1,0)\\}$$ $$\\lambda=3:\\ x=y=0\\ \\Rightarrow\\ W_3=\\mathrm{span}\\{(0,0,1)\\}$$`,'Autospazi. Sono tutti di dimensione 1, quindi niente Gram-Schmidt.'],
+  [`$$\\mathbf u_1=\\tfrac1{\\sqrt2}(-1,1,0),\\quad\\mathbf u_2=\\tfrac1{\\sqrt2}(1,1,0),\\quad\\mathbf u_3=(0,0,1)$$`,'Già perpendicolari tra loro (autovalori diversi). Basta normalizzare.'],
+  [`$$Q=${M('-\\frac1{\\sqrt2}&\\frac1{\\sqrt2}&0\\\\\\frac1{\\sqrt2}&\\frac1{\\sqrt2}&0\\\\0&0&1')},\\qquad D=\\mathrm{diag}(0,2,3)$$`,'Colonne di Q e diagonale di D nello stesso ordine.']
+ ],
+ S2:[
+  [`$$A_x=${M('3&0&x\\\\0&1&0\\\\2&0&3')}.\\ \\text{Per quali }x\\text{ è ortogonalmente diagonalizzabile?}$$`,'Lezione 12, pp. 38–48.'],
+  [`$$\\text{Teorema spettrale: serve }A_x^T=A_x\\ \\Rightarrow\\ x=2$$`,'Nessun conto sugli autovalori: basta guardare la simmetria.'],
+  [`$$\\det(A_2-\\lambda I)=(1-\\lambda)\\big((3-\\lambda)^2-4\\big)=(1-\\lambda)^2(5-\\lambda)$$`,'λ = 1 doppio, λ = 5 semplice.'],
+  [`$$A_2-I=${M('2&0&2\\\\0&0&0\\\\2&0&2')}\\Rightarrow x+z=0\\Rightarrow W_1=\\mathrm{span}\\{(0,1,0),(-1,0,1)\\}$$`,'λ = 1: il piano x + z = 0. Questa base è già ortogonale (prodotto 0): fortuna.'],
+  [`$$W_5\\perp W_1=\\{x+z=0\\}\\ \\Rightarrow\\ W_5=\\mathrm{span}\\{(1,0,1)\\}$$ $$A_2(1,0,1)^T=(5,0,5)^T\\ ✓$$`,'Trucco: l\'altro autospazio è la normale al piano. Nessun sistema da risolvere.'],
+  [`$$Q=${M('0&-\\frac{\\sqrt2}2&\\frac{\\sqrt2}2\\\\1&0&0\\\\0&\\frac{\\sqrt2}2&\\frac{\\sqrt2}2')},\\qquad D=\\mathrm{diag}(1,1,5)$$`,'La risposta non è unica: puoi riordinare le colonne (insieme a D) o cambiarne il segno.']
+ ],
+ S3:[
+  [`$$A=${M('2&-1&-1\\\\-1&2&1\\\\-1&1&2')}$$`,'Lezione 12, pp. 48–54. Simmetrica, quindi esiste una base ortonormale di autovettori.'],
+  [`$$\\det(A-\\lambda I)\\overset{R_3-R_2}=(1-\\lambda)\\begin{vmatrix}2-\\lambda&-2\\\\-1&3-\\lambda\\end{vmatrix}=(1-\\lambda)^2(4-\\lambda)$$`,'λ = 1 doppio, λ = 4 semplice.'],
+  [`$$A-I=${M('1&-1&-1\\\\-1&1&1\\\\-1&1&1')}\\Rightarrow x-y-z=0$$ $$\\mathbf v_1=(1,1,0),\\ \\mathbf v_2=(1,0,1),\\quad\\langle\\mathbf v_1,\\mathbf v_2\\rangle=1\\ne0$$`,'λ = 1: un piano. La base trovata NON è ortogonale: stavolta serve Gram-Schmidt.'],
+  [`$$\\mathbf w_1=(1,1,0),\\qquad\\mathbf w_2=(1,0,1)-\\tfrac12(1,1,0)=\\left(\\tfrac12,-\\tfrac12,1\\right)\\leadsto(1,-1,2)$$`,'Gram-Schmidt solo dentro W₁. Controllo: w₂ sta ancora nel piano (1+1−2 = 0) ed è ⊥ a w₁ (1−1+0 = 0).'],
+  [`$$W_4=\\text{normale di }x-y-z=0=\\mathrm{span}\\{(1,-1,-1)\\},\\qquad A(1,-1,-1)^T=(4,-4,-4)^T\\ ✓$$`,'λ = 4 con il trucco della normale.'],
+  [`$$\\mathbf u_1=\\tfrac1{\\sqrt2}(1,1,0),\\quad\\mathbf u_2=\\tfrac1{\\sqrt6}(1,-1,2),\\quad\\mathbf u_3=\\tfrac1{\\sqrt3}(1,-1,-1)$$ $$Q=[\\mathbf u_1|\\mathbf u_2|\\mathbf u_3],\\quad D=\\mathrm{diag}(1,1,4)$$`,'Normalizzo e ho finito.']
+ ]};
+let cur='P',st=0;
+function draw(){const s=EX[cur];$('exscr').innerHTML=s[st][0];$('excap').textContent=s[st][1];$('exdots').textContent=(st+1)+' / '+s.length;
+  $('exbar').style.width=((st+1)/s.length*100)+'%';$('prev').disabled=st===0;$('next').disabled=st===s.length-1;R($('exscr'));}
+$('prev').onclick=()=>{st--;draw();};$('next').onclick=()=>{st++;draw();};
+document.querySelectorAll('#exsel button').forEach(b=>b.onclick=()=>{cur=b.dataset.e;st=0;document.querySelectorAll('#exsel button').forEach(x=>x.classList.toggle('on',x===b));draw();});
+
+// ---------- QUIZ ----------
+const Q=[
+ ['L(x,y) = 2x₁y₁ + x₂y₂ è un prodotto scalare su ℝ²?',['Sì','No, non è simmetrica','No, non è definita positiva'],0,'Bilineare, simmetrica, e L(x,x) = 2x₁² + x₂² vale 0 solo in (0,0).'],
+ ['L(x,y) = x₁y₁ − x₂y₂ è un prodotto scalare?',['Sì','No: L((0,1),(0,1)) = −1','No: non è bilineare'],1,'Un vettore non nullo con L(x,x) < 0 basta a escluderlo.'],
+ ['L(x,x) = (x₁ + x₂)² per ogni x. È definita positiva?',['Sì, è un quadrato','No, vale 0 in (1,−1)'],1,'È solo semidefinita: serve L(x,x) = 0 SOLO per x = 0.'],
+ ['L\'ombra di v = (2,3) sulla retta di w = (1,0) è…',['(2,0)','(0,3)','(2,3)'],0,'t₀ = 2/1 = 2, ombra (2,0). Il resto (0,3) è perpendicolare a (1,0).'],
+ ['{(1,1,0), (1,−1,0), (0,0,2)} è…',['una base ortonormale','una base ortogonale ma non ortonormale','non è una base'],1,'Prodotti tutti nulli, 3 vettori non nulli in ℝ³ ⇒ base ortogonale. Le norme sono √2, √2, 2 ≠ 1.'],
+ ['Coordinate di (4,2,6) nella base della domanda precedente?',['(3, 1, 3)','(6, 2, 12)','(4, 2, 3)'],0,'c₁ = 6/2, c₂ = 2/2, c₃ = 12/4. Verifica: 3(1,1,0) + (1,−1,0) + 3(0,0,2) = (4,2,6).'],
+ ['Gram-Schmidt su (1,2), (2,4) dà w₂ = …',['(0,0): il secondo va scartato','(−2,1)','(2,4)'],0,'w₂ = (2,4) − (10/5)(1,2) = (0,0). Erano paralleli.'],
+ ['[[0,1],[1,0]] è ortogonale? Chi è l\'inversa?',['Sì, Q⁻¹ = Q','Sì, Q⁻¹ = −Q','No'],0,'Colonne (0,1), (1,0) ortonormali; Q⁻¹ = Qᵀ = Q (scambiare due volte le coordinate riporta all\'inizio).'],
+ ['[[1,2],[0,3]] è ortogonalmente diagonalizzabile?',['Sì, ha autovalori distinti','No, non è simmetrica'],1,'È diagonalizzabile, ma non ortogonalmente: gli autovettori (1,0), (1,1) non sono perpendicolari.'],
+ ['A simmetrica 3×3, W₂ è il piano x + 2y − z = 0, l\'altro autovalore è 7. W₇ = ?',['span{(1,2,−1)}','span{(2,−1,0)}','non si può dire senza A'],0,'Autospazi di una simmetrica sono perpendicolari: W₇ è la normale al piano.']
+];
+let score=0;$('tot').textContent=Q.length;
+$('quizbox').innerHTML=Q.map((q,i)=>`<div class="q" data-i="${i}"><b>${i+1}. ${q[0]}</b><div class="opts">${q[1].map((o,j)=>`<button data-j="${j}">${o}</button>`).join('')}</div><div class="why">${q[3]}</div></div>`).join('');
+document.querySelectorAll('.q').forEach(div=>{const q=Q[div.dataset.i];div.querySelectorAll('.opts button').forEach(b=>b.onclick=()=>{
+  if(div.dataset.done)return;div.dataset.done=1;const ok=+b.dataset.j===q[2];b.classList.add(ok?'right':'wrong');
+  if(!ok)div.querySelectorAll('.opts button')[q[2]].classList.add('right');if(ok)$('score').textContent=++score;div.querySelector('.why').style.display='block';});});
+
+window.addEventListener('load',()=>{R(document.body);draw();lab();const h=location.hash.slice(1);if(h&&document.getElementById(h)&&NAV.some(x=>x.dataset.s===h))show(h);});
+</script>
+</body>
+</html>

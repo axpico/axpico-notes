@@ -4,37 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "da06e93916cdbb55",
+        "id": "572a799415067559",
         "type": "tabs",
         "children": [
           {
-            "id": "2755e3968a25b763",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-11-18 10.28.05.excalidraw"
-            }
-          },
-          {
-            "id": "48f3580318133ae7",
+            "id": "146ba32e3ce62856",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Politecnico/Analisi 1/Teoria/Punti di non derivabilità, massimi e minimi relativi.md",
+                "file": "Politecnico/Geometria e Algebra Lineare/Indice.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Punti di non derivabilità, massimi e minimi relativi"
+              "title": "Indice"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -269,8 +256,15 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "48f3580318133ae7",
+  "active": "146ba32e3ce62856",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html.tmp.391577.7dc902deacf0",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html.tmp.391577.0d9b8fe3dd99",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html.tmp.391577.d30f51f42ee0",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html.tmp.391577.7118db22d678",
+    "Politecnico/Analisi 1/Teoria/Punti di non derivabilità, massimi e minimi relativi.md",
+    "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md",
     "Politecnico/Analisi 1/Indice.md",
     "Excalidraw/Drawing 2026-11-20 15.01.11.excalidraw.md",
     "Politecnico/Analisi 1/Esercizi/Derivate — Esercizi.md",
@@ -278,18 +272,12 @@
     "Politecnico/Analisi 1/Teoria/sedD2LNOF",
     "Politecnico/Analisi 1/Teoria/Teoremi di Rolle e Lagrange, monotonia.md",
     "Politecnico/Analisi 1/Teoria/Teoremi di Rolle e Lagrange, monotonia.md.tmp.97807.0b2c14dd4498",
-    "Politecnico/Analisi 1/Teoria/Punti di non derivabilità, massimi e minimi relativi.md",
     "Politecnico/Analisi 1/Teoria/Punti di non derivabilità, massimi e minimi relativi.md.tmp.97807.87acc7e8df50",
     "Politecnico/Analisi 1/PDF lezioni/Lezione 17 (16 novembre) AM1 2026-27.pdf",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Gram-Schmidt, matrici ortogonali e teorema spettrale.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/Indice.md.tmp.46219.359c67fd7f0c",
-    "Politecnico/Geometria e Algebra Lineare/Indice.md.tmp.46219.ab8f9f8a1b90",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Gram-Schmidt, matrici ortogonali e teorema spettrale.md.tmp.46219.7ee4e6f7d4b4",
-    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12 Ortogonalizzazione di Gram-Schmidt. Matrici ortogonali. Matrici simmetriche. Teorema spettrale.pdf",
-    "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md",
-    "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md.tmp.636435.98f98749f63e",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md",
     "Politecnico/Analisi 1/Teoria/Funzioni continue e punti di discontinuità.md",
     "file:/home/axpico/Projects/nova-and-friends/README.md",
@@ -306,7 +294,6 @@
     "Formulario/Cinematica/Moto del proiettile.md",
     "Formulario/Cinematica/Moto Rettilineo Uniformemente Accelerato (MRUA).md",
     "Formulario/Cinematica/Moto Rettilineo Uniforme (MRU).md",
-    "Formulario/Cinematica/Moto Circolare Uniforme (MCU).md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Iniettiva suriettiva.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Giro matrice rappresentativa.svg",
