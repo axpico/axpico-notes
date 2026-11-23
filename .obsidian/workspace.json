@@ -30,8 +30,21 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-11-23 08.02.27.excalidraw"
             }
+          },
+          {
+            "id": "1b7f6ac480d9767f",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-11-18 10.28.05.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -268,9 +281,12 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "146ba32e3ce62856",
+  "active": "1b7f6ac480d9767f",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-11-13 16.48.57.excalidraw.md",
     "Excalidraw/Drawing 2026-11-23 08.02.27.excalidraw.md",
+    "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md",
+    "Excalidraw/Drawing 2026-11-20 15.01.11.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html.tmp.391577.7dc902deacf0",
@@ -278,9 +294,7 @@
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html.tmp.391577.d30f51f42ee0",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html.tmp.391577.7118db22d678",
     "Politecnico/Analisi 1/Teoria/Punti di non derivabilità, massimi e minimi relativi.md",
-    "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md",
     "Politecnico/Analisi 1/Indice.md",
-    "Excalidraw/Drawing 2026-11-20 15.01.11.excalidraw.md",
     "Politecnico/Analisi 1/Esercizi/Derivate — Esercizi.md",
     "Politecnico/Analisi 1/Esercizi/Derivate — Esercizi.md.tmp.97807.2d5f70b9c4a8",
     "Politecnico/Analisi 1/Teoria/sedD2LNOF",
@@ -294,7 +308,6 @@
     "Politecnico/Analisi 1/Teoria/Funzioni continue e punti di discontinuità.md",
     "file:/home/axpico/Projects/nova-and-friends/README.md",
     "Politecnico/Analisi 1/Teoria/Derivate.md",
-    "Excalidraw/Drawing 2026-11-13 16.48.57.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Diagonalizzazione — Esercizi svolti.md",
     "Excalidraw/Drawing 2026-11-11 15.31.26.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/Esercizi/Autovalori e autospazi — Esercizi svolti.md",
