@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "146ba32e3ce62856",
-            "type": "leaf",
-            "state": {
-              "type": "html-viewer",
-              "state": {
-                "file": "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html"
-              },
-              "icon": "code",
-              "title": "Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale"
-            }
-          },
-          {
             "id": "3bfb28ecd89710eb",
             "type": "leaf",
             "state": {
@@ -29,6 +17,16 @@
               },
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-11-23 08.02.27.excalidraw"
+            }
+          },
+          {
+            "id": "30e18f1cdd85f70c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ],
@@ -269,13 +267,13 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "3bfb28ecd89710eb",
+  "active": "30e18f1cdd85f70c",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-11-23 08.02.27.excalidraw.md",
+    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html",
     "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md",
     "Excalidraw/Drawing 2026-11-13 16.48.57.excalidraw.md",
-    "Excalidraw/Drawing 2026-11-23 08.02.27.excalidraw.md",
     "Excalidraw/Drawing 2026-11-20 15.01.11.excalidraw.md",
-    "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html",
     "Politecnico/Geometria e Algebra Lineare/Indice.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html.tmp.391577.7dc902deacf0",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html.tmp.391577.0d9b8fe3dd99",
