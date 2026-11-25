@@ -30,9 +30,19 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-11-25 10.27.25.excalidraw"
             }
+          },
+          {
+            "id": "07ee693468d6a203",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -280,10 +290,10 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "30e18f1cdd85f70c",
+  "active": "07ee693468d6a203",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-11-23 08.02.27.excalidraw.md",
     "Excalidraw/Drawing 2026-11-25 10.27.25.excalidraw.md",
+    "Excalidraw/Drawing 2026-11-23 08.02.27.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html",
     "Excalidraw/Drawing 2026-11-18 10.28.05.excalidraw.md",
     "Excalidraw/Drawing 2026-11-13 16.48.57.excalidraw.md",
