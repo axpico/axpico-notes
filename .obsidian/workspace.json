@@ -245,8 +245,19 @@
               "icon": "bot",
               "title": "Claudian"
             }
+          },
+          {
+            "id": "c8d405af0c3ca2f1",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw-sidepanel",
+              "state": {},
+              "icon": "excalidraw-icon",
+              "title": "Excalidraw Sidepanel"
+            }
           }
-        ]
+        ],
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
