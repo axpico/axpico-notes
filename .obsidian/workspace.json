@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "8a6d90d3dd7dfe89",
+            "id": "80a1905cf916bb17",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -125,8 +125,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.01171875,
-    "collapsed": true
+    "width": 266.01171875
   },
   "right": {
     "id": "b659e220362ddd7a",
@@ -302,9 +301,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "8a6d90d3dd7dfe89",
+  "active": "80a1905cf916bb17",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12bis Forme quadratiche.pdf",
     "Excalidraw/Drawing 2026-11-25 15.31.24.excalidraw.md",
+    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12 Ortogonalizzazione di Gram-Schmidt. Matrici ortogonali. Matrici simmetriche. Teorema spettrale.pdf",
     "Excalidraw/Drawing 2026-11-25 10.27.25.excalidraw.md",
     "Excalidraw/Drawing 2026-11-23 08.02.27.excalidraw.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Lezione 11-12 — Prodotti scalari, Gram-Schmidt e teorema spettrale.html",
@@ -324,7 +325,6 @@
     "Politecnico/Analisi 1/Teoria/Teoremi di Rolle e Lagrange, monotonia.md",
     "Politecnico/Analisi 1/Teoria/Teoremi di Rolle e Lagrange, monotonia.md.tmp.97807.0b2c14dd4498",
     "Politecnico/Analisi 1/Teoria/Punti di non derivabilità, massimi e minimi relativi.md.tmp.97807.87acc7e8df50",
-    "Politecnico/Analisi 1/PDF lezioni/Lezione 17 (16 novembre) AM1 2026-27.pdf",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Gram-Schmidt, matrici ortogonali e teorema spettrale.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md",
@@ -339,7 +339,6 @@
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Formulario/Cinematica/Spostamento come area sotto v(t).md",
     "Formulario/Cinematica/Piano inclinato.md",
-    "Formulario/Cinematica/Moto del proiettile.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Iniettiva suriettiva.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Giro matrice rappresentativa.svg",
