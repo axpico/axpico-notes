@@ -78,9 +78,21 @@
               "icon": "lucide-file-text",
               "title": "12tres Criterio di Sylvester"
             }
+          },
+          {
+            "id": "a8013b7804808aa3",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/PDF lezioni/14 Isomorfismi e isometrie. Orientazione. Completamento ortogonale. Prodotto vettoriale.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "14 Isomorfismi e isometrie. Orientazione. Completamento ortogonale. Prodotto vettoriale"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -328,11 +340,12 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "33fe292bebedce18",
+  "active": "a8013b7804808aa3",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12tres Criterio di Sylvester.pdf",
+    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/14 Isomorfismi e isometrie. Orientazione. Completamento ortogonale. Prodotto vettoriale.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12bis Forme quadratiche.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12 Ortogonalizzazione di Gram-Schmidt. Matrici ortogonali. Matrici simmetriche. Teorema spettrale.pdf",
-    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12tres Criterio di Sylvester.pdf",
     "Excalidraw/Drawing 2026-11-25 15.31.24.excalidraw.md",
     "Excalidraw/Drawing 2026-11-25 10.27.25.excalidraw.md",
     "Excalidraw/Drawing 2026-11-23 08.02.27.excalidraw.md",
@@ -351,7 +364,6 @@
     "Politecnico/Analisi 1/Esercizi/Derivate — Esercizi.md.tmp.97807.2d5f70b9c4a8",
     "Politecnico/Analisi 1/Teoria/sedD2LNOF",
     "Politecnico/Analisi 1/Teoria/Teoremi di Rolle e Lagrange, monotonia.md",
-    "Politecnico/Analisi 1/Teoria/Teoremi di Rolle e Lagrange, monotonia.md.tmp.97807.0b2c14dd4498",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Gram-Schmidt, matrici ortogonali e teorema spettrale.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Criterio di diagonalizzabilità e invarianza del polinomio caratteristico.md",
