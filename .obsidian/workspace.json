@@ -328,13 +328,11 @@
               "title": "Excalidraw Sidepanel"
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 272.8125,
-    "collapsed": true
+    "width": 272.8125
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -352,7 +350,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "1e8938da579bbcce",
+  "active": "a4a367f756b05e11",
   "lastOpenFiles": [
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/14 Isomorfismi e isometrie. Orientazione. Completamento ortogonale. Prodotto vettoriale.pdf",
     "Excalidraw/Drawing 2026-11-27 15.13.33.excalidraw.md",
