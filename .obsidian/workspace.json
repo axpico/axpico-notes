@@ -90,9 +90,21 @@
               "icon": "lucide-file-text",
               "title": "14 Isomorfismi e isometrie. Orientazione. Completamento ortogonale. Prodotto vettoriale"
             }
+          },
+          {
+            "id": "1e8938da579bbcce",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-11-27 15.13.33.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-11-27 15.13.33.excalidraw"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -340,10 +352,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a8013b7804808aa3",
+  "active": "1e8938da579bbcce",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12tres Criterio di Sylvester.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/14 Isomorfismi e isometrie. Orientazione. Completamento ortogonale. Prodotto vettoriale.pdf",
+    "Excalidraw/Drawing 2026-11-27 15.13.33.excalidraw.md",
+    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12tres Criterio di Sylvester.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12bis Forme quadratiche.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12 Ortogonalizzazione di Gram-Schmidt. Matrici ortogonali. Matrici simmetriche. Teorema spettrale.pdf",
     "Excalidraw/Drawing 2026-11-25 15.31.24.excalidraw.md",
@@ -362,7 +375,6 @@
     "Politecnico/Analisi 1/Indice.md",
     "Politecnico/Analisi 1/Esercizi/Derivate — Esercizi.md",
     "Politecnico/Analisi 1/Esercizi/Derivate — Esercizi.md.tmp.97807.2d5f70b9c4a8",
-    "Politecnico/Analisi 1/Teoria/sedD2LNOF",
     "Politecnico/Analisi 1/Teoria/Teoremi di Rolle e Lagrange, monotonia.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Gram-Schmidt, matrici ortogonali e teorema spettrale.md",
     "Politecnico/Geometria e Algebra Lineare/Teoria/Prodotti scalari, spazi euclidei e basi ortonormali.md",
@@ -377,7 +389,6 @@
     "Excalidraw/Drawing 2026-11-11 10.12.34.excalidraw.md",
     "Politecnico/Analisi 1/Dimostrazioni/Indice Dimostrazioni.md",
     "Formulario/Cinematica/Spostamento come area sotto v(t).md",
-    "Formulario/Cinematica/Piano inclinato.md",
     "Politecnico/Geometria e Algebra Lineare/HTML/Calcolo dimensione.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Iniettiva suriettiva.svg",
     "Politecnico/Geometria e Algebra Lineare/HTML/Giro matrice rappresentativa.svg",
