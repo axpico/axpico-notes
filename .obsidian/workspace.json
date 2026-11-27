@@ -59,14 +59,28 @@
             "id": "6a3a6a30a188c661",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "pdf",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12bis Forme quadratiche.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "12bis Forme quadratiche"
+            }
+          },
+          {
+            "id": "33fe292bebedce18",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12tres Criterio di Sylvester.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "12tres Criterio di Sylvester"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -314,11 +328,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "6a3a6a30a188c661",
+  "active": "33fe292bebedce18",
   "lastOpenFiles": [
+    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12bis Forme quadratiche.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12 Ortogonalizzazione di Gram-Schmidt. Matrici ortogonali. Matrici simmetriche. Teorema spettrale.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12tres Criterio di Sylvester.pdf",
-    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12bis Forme quadratiche.pdf",
     "Excalidraw/Drawing 2026-11-25 15.31.24.excalidraw.md",
     "Excalidraw/Drawing 2026-11-25 10.27.25.excalidraw.md",
     "Excalidraw/Drawing 2026-11-23 08.02.27.excalidraw.md",
