@@ -102,9 +102,19 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-11-27 15.13.33.excalidraw"
             }
+          },
+          {
+            "id": "f28d44e18912229c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -351,10 +361,10 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "1e8938da579bbcce",
+  "active": "f28d44e18912229c",
   "lastOpenFiles": [
-    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/14 Isomorfismi e isometrie. Orientazione. Completamento ortogonale. Prodotto vettoriale.pdf",
     "Excalidraw/Drawing 2026-11-27 15.13.33.excalidraw.md",
+    "Politecnico/Geometria e Algebra Lineare/PDF lezioni/14 Isomorfismi e isometrie. Orientazione. Completamento ortogonale. Prodotto vettoriale.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12tres Criterio di Sylvester.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12bis Forme quadratiche.pdf",
     "Politecnico/Geometria e Algebra Lineare/PDF lezioni/12 Ortogonalizzazione di Gram-Schmidt. Matrici ortogonali. Matrici simmetriche. Teorema spettrale.pdf",
